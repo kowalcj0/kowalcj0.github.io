@@ -1,3 +1,71 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://kowalcj0.github.io"
+title = "kowalcj0"
+copyright = ""
+
+theme = "minimo"
+
+disqusShortname = ""
+googleAnalytics = ""
+Paginate = 10
+
+preserveTaxonomyNames = true
+
+[params]
+  description = "kowalcj0's blog"
+  dateFormat = "2006-09-15"
+  copyrightOwner = "kowalcj0"
+  copyrightStartYear = "2017"
+  favicon = "favicon.ico"
+  hideEntryNavigation = false
+  ideSocialMenu = false
+  showReadTime = true
+  customCSS = ["css/prism.css"]
+  customJS = ["js/prism.js"]
+
+
+[params.seo]
+  # Title Separator: - – — · • * ⋆ | ~ « » < >
+  titleSeparator = "•"
+
+[params.opengraph]
+  [params.opengraph.facebook]
+    admins = ""
+    appid = ""
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[social]
+  facebook = ""
+
+[author]
+  name = "kowalcjo"
+
+[author.social]
+  codepen = ""
+  email = ""
+  facebook = ""
+  github = "kowalcj0"
+  instagram = ""
+  twitter = ""
+  linkedin = ""
+
+[permalinks]
+  page = "/:slug/"
+
+[[menu.main]]
+  name = "Blog"
+  weight = -70
+  identifier = "kowalcj0"
+  url = "https://kowalcj0.github.io"
+
+# Language Configuration
+defaultContentLanguage = "en"
+
+[languages]
+  # edit this block for your own language
+  [languages.en]
+    lang = "en"
+    languageName = "English"
+    weight = 1
