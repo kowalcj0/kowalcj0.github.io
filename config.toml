@@ -20,7 +20,7 @@ preserveTaxonomyNames = true
   ideSocialMenu = false
   showReadTime = true
   customCSS = ["css/prism.css"]
-  customJS = ["js/prism.js"]
+  customJS = ["js/prism.js", "js/custom.js"]
 
 
 [params.seo]
