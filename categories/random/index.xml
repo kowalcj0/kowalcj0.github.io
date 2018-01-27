@@ -5,10 +5,24 @@
     <link>https://kowalcj0.github.io/categories/random/</link>
     <description>Recent content in Random on kowalcj0</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 Sep 2017 09:58:50 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jan 2018 22:28:50 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/categories/random/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Syntax Highlighting in Hugo</title>
+      <link>https://kowalcj0.github.io/post/2017/syntax-highlighting-in-hugo/</link>
+      <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2017/syntax-highlighting-in-hugo/</guid>
+      <description>Bye bye Prism. Welcome Chroma. I just learnt that from version 0.28 Hugo comes with a built-in syntax highlighter called Chroma.
+It supports syntax highlighting with GitHub flavoured code fences!
+This is more than great!
+Because of this I could quickly get rid of a bit bulky Prism JS syntax highlighter.
+Enable Chroma Start by choosing your Chrome style from gallery available at https://help.farbox.com/pygments.html
+Then generate a css file:</description>
+    </item>
     
     <item>
       <title>The beginning</title>
@@ -16,7 +30,7 @@
       <pubDate>Thu, 14 Sep 2017 09:58:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/post/2017/beginning/</guid>
-      <description>The beginning Let&amp;rsquo;s see how hard it&amp;rsquo;ll be to migrate from wordpress to hugo&amp;hellip;
+      <description>Let&amp;rsquo;s see how hard it&amp;rsquo;ll be to migrate from wordpress to hugo&amp;hellip;
 I followed tutorial by Guillaume Sempe, to get this page working.</description>
     </item>
     

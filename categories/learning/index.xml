@@ -5,10 +5,24 @@
     <link>https://kowalcj0.github.io/categories/learning/</link>
     <description>Recent content in Learning on kowalcj0</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Jan 2018 14:41:50 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jan 2018 22:28:50 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/categories/learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Syntax Highlighting in Hugo</title>
+      <link>https://kowalcj0.github.io/post/2017/syntax-highlighting-in-hugo/</link>
+      <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2017/syntax-highlighting-in-hugo/</guid>
+      <description>Bye bye Prism. Welcome Chroma. I just learnt that from version 0.28 Hugo comes with a built-in syntax highlighter called Chroma.
+It supports syntax highlighting with GitHub flavoured code fences!
+This is more than great!
+Because of this I could quickly get rid of a bit bulky Prism JS syntax highlighter.
+Enable Chroma Start by choosing your Chrome style from gallery available at https://help.farbox.com/pygments.html
+Then generate a css file:</description>
+    </item>
     
     <item>
       <title>Learning web app secuiry with OWASP Mutillidae II - part 1</title>
@@ -16,11 +30,11 @@
       <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/post/2017/mutillidae-ii-part-1/</guid>
-      <description>Learning web app secuiry with OWASP Mutillidae II - part 1 iNSTALLATION Run nowasp container:
-docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp  Go to http://localhost:8888/, and build the DB.
+      <description>iNSTALLATION Run nowasp container:
+docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp Go to http://localhost:8888/, and build the DB.
 eXCERCICES: OWASP 2013 A1 - Injection (SQL) - SQLi Extract data - User info Submit the form with such query in the Name field:
-admin&#39;-- AND &#39;password=&#39;password&#39;  Response:
-Username=admin Password=adminpass Signature=g0t r00t?  A1 - Injection (SQL) - SQLi Bypass authentication - Login You can use the same query in the Name field:</description>
+admin&amp;#39;-- AND &amp;#39;password=&amp;#39;password&amp;#39; Response should contain:
+Username=admin Password=adminpass Signature=g0t r00t? A1 - Injection (SQL) - SQLi Bypass authentication - Login You can use the same query in the Name field:</description>
     </item>
     
   </channel>
