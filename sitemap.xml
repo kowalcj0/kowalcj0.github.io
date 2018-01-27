@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kowalcj0.github.io/post/2017/mutillidae-ii-part-1/</loc>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kowalcj0.github.io/post/2017/beginning/</loc>
     <lastmod>2017-09-14T09:58:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/authors/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -19,14 +29,38 @@
   </url>
   
   <url>
+    <loc>https://kowalcj0.github.io/tags/mutillidae/</loc>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kowalcj0.github.io/categories/others/</loc>
-    <lastmod>2017-09-14T09:58:50+01:00</lastmod>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/owasp/</loc>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/pentesting/</loc>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/post/</loc>
-    <lastmod>2017-09-14T09:58:50+01:00</lastmod>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/security/</loc>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -44,7 +78,7 @@
   
   <url>
     <loc>https://kowalcj0.github.io/</loc>
-    <lastmod>2017-09-14T09:58:50+01:00</lastmod>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   

