@@ -10,11 +10,29 @@
     
     
     <item>
-      <title>Others</title>
-      <link>https://kowalcj0.github.io/categories/others/</link>
+      <title>Learning</title>
+      <link>https://kowalcj0.github.io/categories/learning/</link>
       <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/categories/others/</guid>
+      <guid>https://kowalcj0.github.io/categories/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random</title>
+      <link>https://kowalcj0.github.io/categories/random/</link>
+      <pubDate>Thu, 14 Sep 2017 09:58:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/categories/random/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://kowalcj0.github.io/categories/security/</link>
+      <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/categories/security/</guid>
       <description></description>
     </item>
     
