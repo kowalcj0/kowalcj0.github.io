@@ -13,7 +13,9 @@ preserveTaxonomyNames = true
 enableRobotsTXT = true # generate robots.txt
 
 # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
-pygmentsCodefences = false
+pygmentsUseClasses = true
+pygmentsUseClassic = false
+pygmentsCodefences = true
 
 # Missing translations will default to this content language
 defaultContentLanguage = "en"
@@ -24,8 +26,8 @@ title404 = "Oops! You've found the Mighty Hipster Jedi Gopher!"
 
 [params.assets]
 favicon = "img/favicon144.ico"
-customCSS = ["css/prism.css"]
-customJS = ["js/prism.js", "js/custom.js"]
+customCSS = ["css/syntax.css"]
+customJS = ["js/custom.js"]
 gopher = "img/gopher.png" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
