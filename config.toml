@@ -38,8 +38,8 @@ suffix = ""
 
 [params.settings]
 # date & time format: https://golang.org/pkg/time/
-dateFormat = "2006-09-15"
-listDateFormat = "2006-09-02"
+dateFormat = "2006-01-02"
+listDateFormat = "2006-01-02"
 hideEntryNavigation = ["page"] # boolean / array of sections
 recentPostsLength = 10
 hideSocialMenu = false
@@ -94,6 +94,8 @@ identifier = "repository"
 url = "https://github.com/kowalcj0/kowalcj0.github.io"
 
 [blackfriday]
+# Blackfriday is Hugo’s built-in Markdown rendering engine.
+# https://gohugo.io/getting-started/configuration/#configure-blackfriday
 hrefTargetBlank = true
 
 [languages]
