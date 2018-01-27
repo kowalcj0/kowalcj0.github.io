@@ -19,14 +19,13 @@ pygmentsCodefences = false
 defaultContentLanguage = "en"
 
 [params.info]
-description = "kowalcj0's blog"
-title404 = "Nothing's here!"
+description = "notes, scribbles, thoughts etc."
+title404 = "Oops! You've found the Mighty Hipster Jedi Gopher!"
 
 [params.assets]
 favicon = "img/favicon144.ico"
 customCSS = ["css/prism.css"]
 customJS = ["js/prism.js", "js/custom.js"]
-# gopher = "static/img/gopher.png" # used in 404 template ( Generator: https://gopherize.me )
 gopher = "img/gopher.png" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
@@ -44,7 +43,7 @@ recentPostsLength = 10
 hideSocialMenu = false
 showReadingTime = true
 noTermCloudShuffle = false
-homepageSections = ["recent_posts"]
+homepageSections = ["recent_posts", "tags", "categories"]
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
