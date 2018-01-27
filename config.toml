@@ -1,5 +1,6 @@
 baseURL = "https://kowalcj0.github.io"
 title = "kowalcj0"
+# for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
 theme = "minimo"
@@ -9,63 +10,94 @@ googleAnalytics = ""
 Paginate = 10
 
 preserveTaxonomyNames = true
+enableRobotsTXT = true # generate robots.txt
 
-[params]
-  description = "kowalcj0's blog"
-  dateFormat = "2006-09-15"
-  copyrightOwner = "kowalcj0"
-  copyrightStartYear = "2017"
-  favicon = "favicon.ico"
-  hideEntryNavigation = false
-  ideSocialMenu = false
-  showReadTime = true
-  customCSS = ["css/prism.css"]
-  customJS = ["js/prism.js", "js/custom.js"]
+# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+pygmentsCodefences = false
 
-
-[params.seo]
-  # Title Separator: - – — · • * ⋆ | ~ « » < >
-  titleSeparator = "•"
-
-[params.opengraph]
-  [params.opengraph.facebook]
-    admins = ""
-    appid = ""
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-
-[social]
-  facebook = ""
-
-[author]
-  name = "kowalcjo"
-
-[author.social]
-  codepen = ""
-  email = ""
-  facebook = ""
-  github = "kowalcj0"
-  instagram = ""
-  twitter = ""
-  linkedin = ""
-
-[permalinks]
-  page = "/:slug/"
-
-[[menu.main]]
-  name = "Blog"
-  weight = -70
-  identifier = "kowalcj0"
-  url = "https://kowalcj0.github.io"
-
-# Language Configuration
+# Missing translations will default to this content language
 defaultContentLanguage = "en"
 
+[params.info]
+description = "kowalcj0's blog"
+title404 = "Nothing's here!"
+
+[params.assets]
+favicon = "img/favicon144.ico"
+customCSS = ["css/prism.css"]
+customJS = ["js/prism.js", "js/custom.js"]
+# gopher = "static/img/gopher.png" # used in 404 template ( Generator: https://gopherize.me )
+gopher = "img/gopher.png" # used in 404 template ( Generator: https://gopherize.me )
+
+[params.copyright]
+prefix = ""
+holder = "kowalcj0"
+startYear = "2017"
+suffix = ""
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "2006-09-15"
+listDateFormat = "2006-09-02"
+hideEntryNavigation = ["page"] # boolean / array of sections
+recentPostsLength = 10
+hideSocialMenu = false
+showReadingTime = true
+noTermCloudShuffle = false
+homepageSections = ["recent_posts"]
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "" # Twitter page username
+
+[params.seo]
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
+
+[params.social]
+codepen = ""
+email = ""
+facebook = ""
+github = "kowalcj0"
+instagram = ""
+linkedin = ""
+twitter = "januszkowalczyk"
+telegram = ""
+google_scholar = ""
+
+[params.social.config]
+platforms = ["github","twitter"]
+
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"
+
+[permalinks]
+page = "/:slug/"
+
+[[menu.main]]
+name = "Home"
+weight = -70
+identifier = "blog"
+url = "/"
+
+[[menu.main]]
+name = "Repo"
+weight = -10
+identifier = "repository"
+url = "https://github.com/kowalcj0/kowalcj0.github.io"
+
+[blackfriday]
+hrefTargetBlank = true
+
 [languages]
-  # edit this block for your own language
-  [languages.en]
-    lang = "en"
-    languageName = "English"
-    weight = 1
+# edit this block for your own language
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
