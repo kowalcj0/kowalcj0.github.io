@@ -1,0 +1,4 @@
+<video width="100%" autoplay loop itemscope itemtype="http://schema.org/VideoObject">
+    <source src="{{ .Get "src" }}" type="{{ if .Get "type" }}{{ .Get "type" }}{{ else }}video/webm{{ end }}" />
+    Your browser does not support the video tag.
+</video>
