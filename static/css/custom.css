@@ -1,0 +1,11 @@
+/* This is for backticked inline code e.g.: `Highlighted sentence` 
+ * for all elements without any style class that are not styled by e.g.: Chroma
+ * https://stackoverflow.com/a/36355674
+ * */
+code:not([class]) {
+    border: 1px solid #D9E7E9;
+    background-color: #F3FAFA;
+    color: #AA4B5E;
+    padding: 2pt;
+}
+

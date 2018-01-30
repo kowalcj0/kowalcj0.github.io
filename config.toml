@@ -26,7 +26,7 @@ title404 = "Oops! You've found the Mighty Hipster Jedi Gopher!"
 
 [params.assets]
 favicon = "img/favicon144.ico"
-customCSS = ["css/syntax.css"]
+customCSS = ["css/syntax.css", "css/custom.css"]
 customJS = ["js/custom.js"]
 gopher = "img/gopher.png" # used in 404 template ( Generator: https://gopherize.me )
 
