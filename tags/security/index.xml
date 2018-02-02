@@ -5,10 +5,21 @@
     <link>https://kowalcj0.github.io/tags/security/</link>
     <description>Recent content in Security on kowalcj0</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Jan 2018 14:41:50 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Feb 2018 19:20:50 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ethical Hacking - Enumeration</title>
+      <link>https://kowalcj0.github.io/post/2017/ethical-hackin-enumeration-course-notes/</link>
+      <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2017/ethical-hackin-enumeration-course-notes/</guid>
+      <description>Not much content here apart from just a bunch of notes I took during learning.
+Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&amp;rsquo;s own set of Protection Rings -&amp;gt; for more see wiki
+Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings: * Ring 0 - kernel * Ring 1 - executive * Ring 2 - supervisor * Ring 3 - user</description>
+    </item>
     
     <item>
       <title>Learning web app secuiry with OWASP Mutillidae II - part 1</title>

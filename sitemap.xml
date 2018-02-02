@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kowalcj0.github.io/post/2017/ethical-hackin-enumeration-course-notes/</loc>
+    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kowalcj0.github.io/post/2017/human-condition-i-no-greater-love/</loc>
     <lastmod>2018-01-29T10:40:50+01:00</lastmod>
   </url>
@@ -51,6 +56,12 @@
   </url>
   
   <url>
+    <loc>https://kowalcj0.github.io/tags/enumeration/</loc>
+    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kowalcj0.github.io/tags/hugo/</loc>
     <lastmod>2018-01-27T22:28:50+01:00</lastmod>
     <priority>0</priority>
@@ -70,7 +81,7 @@
   
   <url>
     <loc>https://kowalcj0.github.io/categories/learning/</loc>
-    <lastmod>2018-01-27T22:28:50+01:00</lastmod>
+    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -94,13 +105,13 @@
   
   <url>
     <loc>https://kowalcj0.github.io/tags/pentesting/</loc>
-    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
+    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/post/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -112,13 +123,13 @@
   
   <url>
     <loc>https://kowalcj0.github.io/categories/security/</loc>
-    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
+    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/tags/security/</loc>
-    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
+    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -148,7 +159,7 @@
   
   <url>
     <loc>https://kowalcj0.github.io/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
