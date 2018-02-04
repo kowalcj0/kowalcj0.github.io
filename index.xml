@@ -5,10 +5,22 @@
     <link>https://kowalcj0.github.io/</link>
     <description>Recent content on kowalcj0</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Feb 2018 19:20:50 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 04 Feb 2018 13:46:30 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Allow GUI applications run by root user to connect to X server</title>
+      <link>https://kowalcj0.github.io/post/2017/allow-application-run-by-root-to-connect-to-x-server/</link>
+      <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2017/allow-application-run-by-root-to-connect-to-x-server/</guid>
+      <description>Recently I had an annoying problem running Wireshark as root user on Fedora 27 (Wayland + Gnome 3.26).
+I was getting following error:
+sudo wireshark QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &amp;#39;/tmp/runtime-root&amp;#39; QXcbConnection: Could not connect to display Aborted (core dumped) To fix this, you need to add root user to the list of users allowed to make connections to the X server.
+xhost si:localuser:root That&amp;rsquo;s it. From now on, you shouldn&amp;rsquo;t have any problems running GUI applications by root user.</description>
+    </item>
     
     <item>
       <title>Ethical Hacking - Enumeration</title>
