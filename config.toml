@@ -7,7 +7,8 @@ theme = "minimo"
 
 disqusShortname = ""
 googleAnalytics = ""
-Paginate = 10
+paginate  = 100
+paginatePath = "page"
 
 preserveTaxonomyNames = true
 enableRobotsTXT = true # generate robots.txt
@@ -41,7 +42,7 @@ suffix = ""
 dateFormat = "2006-01-02"
 listDateFormat = "2006-01-02"
 hideEntryNavigation = ["page"] # boolean / array of sections
-recentPostsLength = 10
+recentPostsLength = 100
 hideSocialMenu = false
 showReadingTime = true
 noTermCloudShuffle = false
