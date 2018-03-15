@@ -6,7 +6,7 @@ $( document ).ready(function() {
         // For some browsers, `attr` is undefined; for others,
         // `attr` is false.  Check for both.
         if (typeof figure_class !== typeof undefined && figure_class !== false) return true;
-		if ($(this).attr('class') == 'pswp-ignore') return true; // ignore any figures where class="pswp-ignore"
+		if ($(this).attr('class') == 'pswp-ignore' || $(this).attr('class') == 'entry-cover') return true; // ignore any figures where class="pswp-ignore"
 		// get properties from child a/img/figcaption elements,
 		var $figure = $(this),
 			$a 		= $figure.find('a'),
