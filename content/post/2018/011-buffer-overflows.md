@@ -2,7 +2,7 @@
 draft: true
 title: "Ethical Hacking - Buffer Overflow - notes"
 slug: "ethical-hackin-buffer-iverflow"
-date: "2018-03-20:20:10:08:00"
+date: "2018-03-20T19:20:10+01:00"
 categories:
   - security
   - learning
