@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sniffing on kowalcj0</title>
+    <link>https://kowalcj0.github.io/tags/sniffing/</link>
+    <description>Recent content in Sniffing on kowalcj0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 05 Feb 2018 09:22:50 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/sniffing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ethical Hacking - Sniffers</title>
+      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</link>
+      <pubDate>Mon, 05 Feb 2018 09:22:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</guid>
+      <description>Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
+Network admins should monitor network traffic for few minutes a day.
+Phases of Packet Analysis  Gather Decode Display Analyze  Note:
+epan - Ethereal Packet Analyzer - it&amp;rsquo;s the packet-analyzing engine for Etheral/Wireshark.
+OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate contact with the network HTTP, FTP, SMTP DATA    6 Presentation Format data , optional compression and encapsulation  Data    5 Session Initiates, maintains and tear down session  Data    4 Transport Transport data TCP, UDP Segment Port   3 Network Addressing and routing IP, ICMP (ARP) Packet IP   2 Data link Frame formation Ethernet II (ARP) Frame MAC   1 Physical Data is transmitter on the media  Bits     IPv4 structure    IPv4 headers                                 Passive vs Active attacks Two types of attacks:</description>
+    </item>
+    
+  </channel>
+</rss>

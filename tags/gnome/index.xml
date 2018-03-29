@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gnome on kowalcj0</title>
+    <link>https://kowalcj0.github.io/tags/gnome/</link>
+    <description>Recent content in Gnome on kowalcj0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 11 Feb 2018 23:08:50 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/gnome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fix &#39;XDG_RUNTIME_DIR not set&#39; error when runnning Wireshark as root</title>
+      <link>https://kowalcj0.github.io/post/2018/run-wireshark-as-root-on-gnome-3.26-fix-xdg-runtime-dir-error/</link>
+      <pubDate>Sun, 11 Feb 2018 23:08:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/run-wireshark-as-root-on-gnome-3.26-fix-xdg-runtime-dir-error/</guid>
+      <description>In case you encounter error like the one below, when trying to run Wireshark as root (e.g.: on Fedora 27, Gnome 3.26 &amp;amp; Wayland):
+$ sudo wireshark QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &amp;#39;/tmp/runtime-root&amp;#39; No protocol specified qt.qpa.screen: QXcbConnection: Could not connect to display :0 Could not connect to any X display. Then to fix this, you need to add root user to the list of users allowed to connect oth X11 server:</description>
+    </item>
+    
+  </channel>
+</rss>

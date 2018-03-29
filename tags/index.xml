@@ -29,6 +29,15 @@
     </item>
     
     <item>
+      <title>Dbus</title>
+      <link>https://kowalcj0.github.io/tags/dbus/</link>
+      <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/dbus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Drama</title>
       <link>https://kowalcj0.github.io/tags/drama/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
@@ -56,11 +65,38 @@
     </item>
     
     <item>
+      <title>Fun</title>
+      <link>https://kowalcj0.github.io/tags/fun/</link>
+      <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/fun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gnome</title>
+      <link>https://kowalcj0.github.io/tags/gnome/</link>
+      <pubDate>Sun, 11 Feb 2018 23:08:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/gnome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Gnome 3.26</title>
       <link>https://kowalcj0.github.io/tags/gnome-3.26/</link>
       <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/gnome-3.26/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hacking</title>
+      <link>https://kowalcj0.github.io/tags/hacking/</link>
+      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/hacking/</guid>
       <description></description>
     </item>
     
@@ -92,11 +128,29 @@
     </item>
     
     <item>
+      <title>Mpv</title>
+      <link>https://kowalcj0.github.io/tags/mpv/</link>
+      <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/mpv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mutillidae</title>
       <link>https://kowalcj0.github.io/tags/mutillidae/</link>
       <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/mutillidae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://kowalcj0.github.io/tags/notes/</link>
+      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/notes/</guid>
       <description></description>
     </item>
     
@@ -112,9 +166,27 @@
     <item>
       <title>Pentesting</title>
       <link>https://kowalcj0.github.io/tags/pentesting/</link>
-      <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
+      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/pentesting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://kowalcj0.github.io/tags/python/</link>
+      <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qt</title>
+      <link>https://kowalcj0.github.io/tags/qt/</link>
+      <pubDate>Sun, 11 Feb 2018 23:08:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/qt/</guid>
       <description></description>
     </item>
     
@@ -130,9 +202,18 @@
     <item>
       <title>Security</title>
       <link>https://kowalcj0.github.io/tags/security/</link>
-      <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
+      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sniffing</title>
+      <link>https://kowalcj0.github.io/tags/sniffing/</link>
+      <pubDate>Mon, 05 Feb 2018 09:22:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/sniffing/</guid>
       <description></description>
     </item>
     
@@ -142,6 +223,15 @@
       <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/syntax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vlc</title>
+      <link>https://kowalcj0.github.io/tags/vlc/</link>
+      <pubDate>Sun, 11 Feb 2018 22:40:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/vlc/</guid>
       <description></description>
     </item>
     
@@ -157,9 +247,18 @@
     <item>
       <title>Wayland</title>
       <link>https://kowalcj0.github.io/tags/wayland/</link>
-      <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
+      <pubDate>Sun, 11 Feb 2018 23:08:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/wayland/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wireshark</title>
+      <link>https://kowalcj0.github.io/tags/wireshark/</link>
+      <pubDate>Sun, 11 Feb 2018 23:08:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/wireshark/</guid>
       <description></description>
     </item>
     

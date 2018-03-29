@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on kowalcj0</title>
+    <link>https://kowalcj0.github.io/tags/python/</link>
+    <description>Recent content in Python on kowalcj0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 29 Mar 2018 15:15:14 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Play videoclip for currently playing song in mpv</title>
+      <link>https://kowalcj0.github.io/post/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</link>
+      <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</guid>
+      <description>Short demo: Your browser does not support the video tag.  Requirements You&amp;rsquo;ll need:
+ python 3.x mpv video player music player that supports MPRIS2 D-Bus interface  mpd + mpDris2 deadbeef + mpris2-plugin  some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel [ddgr]()https://github.com/jarun/ddgr - a CLI client for DuckDuckGo  System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:
+sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packages Next step is to install python packages.</description>
+    </item>
+    
+  </channel>
+</rss>

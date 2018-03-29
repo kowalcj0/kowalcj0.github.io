@@ -5,17 +5,41 @@
     <link>https://kowalcj0.github.io/categories/security/</link>
     <description>Recent content in Security on kowalcj0</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Feb 2018 19:20:50 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 26 Feb 2018 21:20:12 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/categories/security/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Ethical Hacking - Hacking Exposed</title>
+      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-hacking-exposed/</link>
+      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-hacking-exposed/</guid>
+      <description>Questions to ask and answer when deciding on levels of security:
+ What is most confidential to you? What can&amp;rsquo;t you afford to lose? What is irreplaceable? What could cause the most damage? What might impact your reputation?  The answers to those question will specify your security assets that you will protect.
+Privacy vs Anonimity Privacy -&amp;gt; is when someone potentially know who you are, but they don&amp;rsquo;t know what are you doing or with whom you&amp;rsquo;re talking.</description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking - Sniffers</title>
+      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</link>
+      <pubDate>Mon, 05 Feb 2018 09:22:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</guid>
+      <description>Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
+Network admins should monitor network traffic for few minutes a day.
+Phases of Packet Analysis  Gather Decode Display Analyze  Note:
+epan - Ethereal Packet Analyzer - it&amp;rsquo;s the packet-analyzing engine for Etheral/Wireshark.
+OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate contact with the network HTTP, FTP, SMTP DATA    6 Presentation Format data , optional compression and encapsulation  Data    5 Session Initiates, maintains and tear down session  Data    4 Transport Transport data TCP, UDP Segment Port   3 Network Addressing and routing IP, ICMP (ARP) Packet IP   2 Data link Frame formation Ethernet II (ARP) Frame MAC   1 Physical Data is transmitter on the media  Bits     IPv4 structure    IPv4 headers                                 Passive vs Active attacks Two types of attacks:</description>
+    </item>
+    
+    <item>
       <title>Ethical Hacking - Enumeration</title>
-      <link>https://kowalcj0.github.io/post/2017/ethical-hackin-enumeration-course-notes/</link>
+      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-enumeration-course-notes/</link>
       <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/ethical-hackin-enumeration-course-notes/</guid>
+      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-enumeration-course-notes/</guid>
       <description>Not much content here apart from just a bunch of notes I took during learning.
 Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&amp;rsquo;s own set of Protection Rings -&amp;gt; for more see wiki
 Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings: * Ring 0 - kernel * Ring 1 - executive * Ring 2 - supervisor * Ring 3 - user</description>
@@ -23,10 +47,10 @@ Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in wi
     
     <item>
       <title>Learning web app secuiry with OWASP Mutillidae II - part 1</title>
-      <link>https://kowalcj0.github.io/post/2017/mutillidae-ii-part-1/</link>
+      <link>https://kowalcj0.github.io/post/2018/mutillidae-ii-part-1/</link>
       <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/mutillidae-ii-part-1/</guid>
+      <guid>https://kowalcj0.github.io/post/2018/mutillidae-ii-part-1/</guid>
       <description>iNSTALLATION Run nowasp container:
 docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp Go to http://localhost:8888/, and build the DB.
 eXCERCICES: OWASP 2013 A1 - Injection (SQL) - SQLi Extract data - User info Submit the form with such query in the Name field:

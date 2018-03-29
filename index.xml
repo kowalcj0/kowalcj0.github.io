@@ -5,17 +5,72 @@
     <link>https://kowalcj0.github.io/</link>
     <description>Recent content on kowalcj0</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Feb 2018 13:46:30 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 29 Mar 2018 15:15:14 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Play videoclip for currently playing song in mpv</title>
+      <link>https://kowalcj0.github.io/post/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</link>
+      <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</guid>
+      <description>Short demo: Your browser does not support the video tag.  Requirements You&amp;rsquo;ll need:
+ python 3.x mpv video player music player that supports MPRIS2 D-Bus interface  mpd + mpDris2 deadbeef + mpris2-plugin  some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel [ddgr]()https://github.com/jarun/ddgr - a CLI client for DuckDuckGo  System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:
+sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packages Next step is to install python packages.</description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking - Hacking Exposed</title>
+      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-hacking-exposed/</link>
+      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-hacking-exposed/</guid>
+      <description>Questions to ask and answer when deciding on levels of security:
+ What is most confidential to you? What can&amp;rsquo;t you afford to lose? What is irreplaceable? What could cause the most damage? What might impact your reputation?  The answers to those question will specify your security assets that you will protect.
+Privacy vs Anonimity Privacy -&amp;gt; is when someone potentially know who you are, but they don&amp;rsquo;t know what are you doing or with whom you&amp;rsquo;re talking.</description>
+    </item>
+    
+    <item>
+      <title>Fix &#39;XDG_RUNTIME_DIR not set&#39; error when runnning Wireshark as root</title>
+      <link>https://kowalcj0.github.io/post/2018/run-wireshark-as-root-on-gnome-3.26-fix-xdg-runtime-dir-error/</link>
+      <pubDate>Sun, 11 Feb 2018 23:08:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/run-wireshark-as-root-on-gnome-3.26-fix-xdg-runtime-dir-error/</guid>
+      <description>In case you encounter error like the one below, when trying to run Wireshark as root (e.g.: on Fedora 27, Gnome 3.26 &amp;amp; Wayland):
+$ sudo wireshark QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &amp;#39;/tmp/runtime-root&amp;#39; No protocol specified qt.qpa.screen: QXcbConnection: Could not connect to display :0 Could not connect to any X display. Then to fix this, you need to add root user to the list of users allowed to connect oth X11 server:</description>
+    </item>
+    
+    <item>
+      <title>Fix &#39;X11 connection broke&#39; issue in QT based GUI applications like VLC</title>
+      <link>https://kowalcj0.github.io/post/2018/vlc-auto-screen-scale-factor-issue/</link>
+      <pubDate>Sun, 11 Feb 2018 22:40:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/vlc-auto-screen-scale-factor-issue/</guid>
+      <description>If you ever encountered error like this when starting vlc:
+$ vlc VLC media player 3.0.0-rc5 Vetinari (revision 3.0.0-rc5-0-gf53236af09) [0000560cfbe38410] main libvlc: Running vlc with the default interface. Use &amp;#39;cvlc&amp;#39; to use vlc without interface. The X11 connection broke: Maximum allowed requested length exceeded (code 4) XIO: fatal IO error 22 (Invalid argument) on X server &amp;#34;:0&amp;#34; after 447 requests (447 known processed) with 0 events remaining. QMutex: destroying locked mutex Then you can fix it by setting the QT_AUTO_SCREEN_SCALE_FACTOR env variable to 0, i.</description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking - Sniffers</title>
+      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</link>
+      <pubDate>Mon, 05 Feb 2018 09:22:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</guid>
+      <description>Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
+Network admins should monitor network traffic for few minutes a day.
+Phases of Packet Analysis  Gather Decode Display Analyze  Note:
+epan - Ethereal Packet Analyzer - it&amp;rsquo;s the packet-analyzing engine for Etheral/Wireshark.
+OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate contact with the network HTTP, FTP, SMTP DATA    6 Presentation Format data , optional compression and encapsulation  Data    5 Session Initiates, maintains and tear down session  Data    4 Transport Transport data TCP, UDP Segment Port   3 Network Addressing and routing IP, ICMP (ARP) Packet IP   2 Data link Frame formation Ethernet II (ARP) Frame MAC   1 Physical Data is transmitter on the media  Bits     IPv4 structure    IPv4 headers                                 Passive vs Active attacks Two types of attacks:</description>
+    </item>
+    
+    <item>
       <title>Allow GUI applications run by root user to connect to X server</title>
-      <link>https://kowalcj0.github.io/post/2017/allow-application-run-by-root-to-connect-to-x-server/</link>
+      <link>https://kowalcj0.github.io/post/2018/allow-application-run-by-root-to-connect-to-x-server/</link>
       <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/allow-application-run-by-root-to-connect-to-x-server/</guid>
+      <guid>https://kowalcj0.github.io/post/2018/allow-application-run-by-root-to-connect-to-x-server/</guid>
       <description>Recently I had an annoying problem running Wireshark as root user on Fedora 27 (Wayland + Gnome 3.26).
 I was getting following error:
 sudo wireshark QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &amp;#39;/tmp/runtime-root&amp;#39; QXcbConnection: Could not connect to display Aborted (core dumped) To fix this, you need to add root user to the list of users allowed to make connections to the X server.
@@ -24,10 +79,10 @@ xhost si:localuser:root That&amp;rsquo;s it. From now on, you shouldn&amp;rsquo;
     
     <item>
       <title>Ethical Hacking - Enumeration</title>
-      <link>https://kowalcj0.github.io/post/2017/ethical-hackin-enumeration-course-notes/</link>
+      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-enumeration-course-notes/</link>
       <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/ethical-hackin-enumeration-course-notes/</guid>
+      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-enumeration-course-notes/</guid>
       <description>Not much content here apart from just a bunch of notes I took during learning.
 Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&amp;rsquo;s own set of Protection Rings -&amp;gt; for more see wiki
 Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings: * Ring 0 - kernel * Ring 1 - executive * Ring 2 - supervisor * Ring 3 - user</description>
@@ -35,10 +90,10 @@ Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in wi
     
     <item>
       <title>The Human Condition I: No Greater Love</title>
-      <link>https://kowalcj0.github.io/post/2017/human-condition-i-no-greater-love/</link>
+      <link>https://kowalcj0.github.io/post/2018/human-condition-i-no-greater-love/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/human-condition-i-no-greater-love/</guid>
+      <guid>https://kowalcj0.github.io/post/2018/human-condition-i-no-greater-love/</guid>
       <description>Ratings &amp;amp; further reading Runtime: 208 minutes
  IMDb 8.6 / 10 Rotten Tomatoes 89% - avg. rating 7.7 / 10 Wikipedia  Plot  A Japanese pacifist, unable to face the dire consequences of conscientious objection, is transformed by his attempts to compromise with the demands of war-time Japan. 1
  My few cents What I like about this movie:
@@ -47,10 +102,10 @@ Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in wi
     
     <item>
       <title>Syntax Highlighting in Hugo</title>
-      <link>https://kowalcj0.github.io/post/2017/syntax-highlighting-in-hugo/</link>
+      <link>https://kowalcj0.github.io/post/2018/syntax-highlighting-in-hugo/</link>
       <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/syntax-highlighting-in-hugo/</guid>
+      <guid>https://kowalcj0.github.io/post/2018/syntax-highlighting-in-hugo/</guid>
       <description>Bye bye Prism. Welcome Chroma. I just learnt that from version 0.28 Hugo comes with a built-in syntax highlighter called Chroma.
 It supports syntax highlighting with GitHub flavoured code fences!
 This is more than great!
@@ -61,10 +116,10 @@ Then generate a css file:</description>
     
     <item>
       <title>Learning web app secuiry with OWASP Mutillidae II - part 1</title>
-      <link>https://kowalcj0.github.io/post/2017/mutillidae-ii-part-1/</link>
+      <link>https://kowalcj0.github.io/post/2018/mutillidae-ii-part-1/</link>
       <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/mutillidae-ii-part-1/</guid>
+      <guid>https://kowalcj0.github.io/post/2018/mutillidae-ii-part-1/</guid>
       <description>iNSTALLATION Run nowasp container:
 docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp Go to http://localhost:8888/, and build the DB.
 eXCERCICES: OWASP 2013 A1 - Injection (SQL) - SQLi Extract data - User info Submit the form with such query in the Name field:
@@ -73,13 +128,12 @@ Username=admin Password=adminpass Signature=g0t r00t? A1 - Injection (SQL) - SQL
     </item>
     
     <item>
-      <title>The beginning</title>
-      <link>https://kowalcj0.github.io/post/2017/beginning/</link>
+      <title>The beginning with Hugo</title>
+      <link>https://kowalcj0.github.io/post/2017/beginning-with-hugo/</link>
       <pubDate>Thu, 14 Sep 2017 09:58:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/beginning/</guid>
-      <description>Let&amp;rsquo;s see how hard it&amp;rsquo;ll be to migrate from wordpress to hugo&amp;hellip;
-I followed tutorial by Guillaume Sempe, to get this page working.</description>
+      <guid>https://kowalcj0.github.io/post/2017/beginning-with-hugo/</guid>
+      <description>I followed tutorial by Guillaume Sempe, to get this page working.</description>
     </item>
     
   </channel>

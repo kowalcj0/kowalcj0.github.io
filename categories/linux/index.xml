@@ -5,17 +5,48 @@
     <link>https://kowalcj0.github.io/categories/linux/</link>
     <description>Recent content in Linux on kowalcj0</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Feb 2018 13:46:30 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 29 Mar 2018 15:15:14 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Play videoclip for currently playing song in mpv</title>
+      <link>https://kowalcj0.github.io/post/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</link>
+      <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</guid>
+      <description>Short demo: Your browser does not support the video tag.  Requirements You&amp;rsquo;ll need:
+ python 3.x mpv video player music player that supports MPRIS2 D-Bus interface  mpd + mpDris2 deadbeef + mpris2-plugin  some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel [ddgr]()https://github.com/jarun/ddgr - a CLI client for DuckDuckGo  System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:
+sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packages Next step is to install python packages.</description>
+    </item>
+    
+    <item>
+      <title>Fix &#39;XDG_RUNTIME_DIR not set&#39; error when runnning Wireshark as root</title>
+      <link>https://kowalcj0.github.io/post/2018/run-wireshark-as-root-on-gnome-3.26-fix-xdg-runtime-dir-error/</link>
+      <pubDate>Sun, 11 Feb 2018 23:08:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/run-wireshark-as-root-on-gnome-3.26-fix-xdg-runtime-dir-error/</guid>
+      <description>In case you encounter error like the one below, when trying to run Wireshark as root (e.g.: on Fedora 27, Gnome 3.26 &amp;amp; Wayland):
+$ sudo wireshark QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &amp;#39;/tmp/runtime-root&amp;#39; No protocol specified qt.qpa.screen: QXcbConnection: Could not connect to display :0 Could not connect to any X display. Then to fix this, you need to add root user to the list of users allowed to connect oth X11 server:</description>
+    </item>
+    
+    <item>
+      <title>Fix &#39;X11 connection broke&#39; issue in QT based GUI applications like VLC</title>
+      <link>https://kowalcj0.github.io/post/2018/vlc-auto-screen-scale-factor-issue/</link>
+      <pubDate>Sun, 11 Feb 2018 22:40:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/vlc-auto-screen-scale-factor-issue/</guid>
+      <description>If you ever encountered error like this when starting vlc:
+$ vlc VLC media player 3.0.0-rc5 Vetinari (revision 3.0.0-rc5-0-gf53236af09) [0000560cfbe38410] main libvlc: Running vlc with the default interface. Use &amp;#39;cvlc&amp;#39; to use vlc without interface. The X11 connection broke: Maximum allowed requested length exceeded (code 4) XIO: fatal IO error 22 (Invalid argument) on X server &amp;#34;:0&amp;#34; after 447 requests (447 known processed) with 0 events remaining. QMutex: destroying locked mutex Then you can fix it by setting the QT_AUTO_SCREEN_SCALE_FACTOR env variable to 0, i.</description>
+    </item>
+    
+    <item>
       <title>Allow GUI applications run by root user to connect to X server</title>
-      <link>https://kowalcj0.github.io/post/2017/allow-application-run-by-root-to-connect-to-x-server/</link>
+      <link>https://kowalcj0.github.io/post/2018/allow-application-run-by-root-to-connect-to-x-server/</link>
       <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/allow-application-run-by-root-to-connect-to-x-server/</guid>
+      <guid>https://kowalcj0.github.io/post/2018/allow-application-run-by-root-to-connect-to-x-server/</guid>
       <description>Recently I had an annoying problem running Wireshark as root user on Fedora 27 (Wayland + Gnome 3.26).
 I was getting following error:
 sudo wireshark QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &amp;#39;/tmp/runtime-root&amp;#39; QXcbConnection: Could not connect to display Aborted (core dumped) To fix this, you need to add root user to the list of users allowed to make connections to the X server.

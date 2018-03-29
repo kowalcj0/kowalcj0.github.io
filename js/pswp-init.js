@@ -2,7 +2,11 @@ $( document ).ready(function() {
 	var items = []; // array of slide objects that will be passed to PhotoSwipe()
 	// for every figure element on the page:
 	$('figure').each( function() {
-		if ($(this).attr('class') == 'pswp-ignore') return true; // ignore any figures where class="pswp-ignore"
+        var figure_class = $(this).attr('class');
+        // For some browsers, `attr` is undefined; for others,
+        // `attr` is false.  Check for both.
+        if (typeof figure_class !== typeof undefined && figure_class !== false) return true;
+		if ($(this).attr('class') == 'pswp-ignore' || $(this).attr('class') == 'entry-cover') return true; // ignore any figures where class="pswp-ignore"
 		// get properties from child a/img/figcaption elements,
 		var $figure = $(this),
 			$a 		= $figure.find('a'),

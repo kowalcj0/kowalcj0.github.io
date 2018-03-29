@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacking on kowalcj0</title>
+    <link>https://kowalcj0.github.io/tags/hacking/</link>
+    <description>Recent content in Hacking on kowalcj0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Feb 2018 21:20:12 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ethical Hacking - Hacking Exposed</title>
+      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-hacking-exposed/</link>
+      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-hacking-exposed/</guid>
+      <description>Questions to ask and answer when deciding on levels of security:
+ What is most confidential to you? What can&amp;rsquo;t you afford to lose? What is irreplaceable? What could cause the most damage? What might impact your reputation?  The answers to those question will specify your security assets that you will protect.
+Privacy vs Anonimity Privacy -&amp;gt; is when someone potentially know who you are, but they don&amp;rsquo;t know what are you doing or with whom you&amp;rsquo;re talking.</description>
+    </item>
+    
+  </channel>
+</rss>

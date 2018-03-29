@@ -11,13 +11,12 @@
     
     
     <item>
-      <title>The beginning</title>
-      <link>https://kowalcj0.github.io/post/2017/beginning/</link>
+      <title>The beginning with Hugo</title>
+      <link>https://kowalcj0.github.io/post/2017/beginning-with-hugo/</link>
       <pubDate>Thu, 14 Sep 2017 09:58:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/beginning/</guid>
-      <description>Let&amp;rsquo;s see how hard it&amp;rsquo;ll be to migrate from wordpress to hugo&amp;hellip;
-I followed tutorial by Guillaume Sempe, to get this page working.</description>
+      <guid>https://kowalcj0.github.io/post/2017/beginning-with-hugo/</guid>
+      <description>I followed tutorial by Guillaume Sempe, to get this page working.</description>
     </item>
     
   </channel>

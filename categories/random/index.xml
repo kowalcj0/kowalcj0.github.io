@@ -12,10 +12,10 @@
     
     <item>
       <title>Syntax Highlighting in Hugo</title>
-      <link>https://kowalcj0.github.io/post/2017/syntax-highlighting-in-hugo/</link>
+      <link>https://kowalcj0.github.io/post/2018/syntax-highlighting-in-hugo/</link>
       <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/syntax-highlighting-in-hugo/</guid>
+      <guid>https://kowalcj0.github.io/post/2018/syntax-highlighting-in-hugo/</guid>
       <description>Bye bye Prism. Welcome Chroma. I just learnt that from version 0.28 Hugo comes with a built-in syntax highlighter called Chroma.
 It supports syntax highlighting with GitHub flavoured code fences!
 This is more than great!
@@ -25,13 +25,12 @@ Then generate a css file:</description>
     </item>
     
     <item>
-      <title>The beginning</title>
-      <link>https://kowalcj0.github.io/post/2017/beginning/</link>
+      <title>The beginning with Hugo</title>
+      <link>https://kowalcj0.github.io/post/2017/beginning-with-hugo/</link>
       <pubDate>Thu, 14 Sep 2017 09:58:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2017/beginning/</guid>
-      <description>Let&amp;rsquo;s see how hard it&amp;rsquo;ll be to migrate from wordpress to hugo&amp;hellip;
-I followed tutorial by Guillaume Sempe, to get this page working.</description>
+      <guid>https://kowalcj0.github.io/post/2017/beginning-with-hugo/</guid>
+      <description>I followed tutorial by Guillaume Sempe, to get this page working.</description>
     </item>
     
   </channel>
