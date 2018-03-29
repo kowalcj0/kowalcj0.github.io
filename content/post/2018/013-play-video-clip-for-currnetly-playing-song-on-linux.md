@@ -16,6 +16,10 @@ cover:
   style: normal
 ---
 
+Short demo:
+{{< videoloop src="/vid/2018/013/mpd2mpv.mp4" >}}
+
+
 # Requirements
 
 You'll need:
@@ -85,4 +89,3 @@ Now, siply run `vid` in your terminal an (if you're lucky) you'll see
 videoclip for the currently playing song played in `mpv`.
 
 Ta-da! you can now quicky find videclips from the comfort of your terminal.
-
