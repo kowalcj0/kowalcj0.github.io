@@ -16,6 +16,9 @@ cover:
   style: normal
 ---
 
+Below are my notes from the Pluralsight course: "Ethical Hacking: Buffer 
+Overflows" by James Murray.
+
 
 # Stack pointers
 
@@ -394,4 +397,314 @@ d3%u7801%u9090%u6858%ucbd3%u7801%u9090%u6858%ucbd3%u7801%u9090%u
 * http://resources.infosecinstitute.com/intro-to-fuzzing/ 
 * "All input is eveil until proven otherwise" - Michael Howard, "Writing Secure
     Code"
+
+
+# Mitigating BoF
+
+In information security nomenclature, `mitigation` refers to act of reducing
+the potential harmful effect of a threat. Whereas `remediation` or `disaster
+recovery` is about recovering from the effects of a threat and restoring normal
+operation.
+
+
+**BoF - typical plans of attack:**
+
+* Input field
+* API
+* Malware / Email Attachments
+* Malicious insider
+
+
+**BoF attack payoff:**
+
+* Reconnaissance and surveillance of system and network operations
+* Privilege escalation for the attacker
+* Creation of unauthorized, privileged user accounts
+* Command and control of the local system
+* Multiple systems compromised and open to remote access
+* Alteration, exfiltration, or destruction of critical information
+* Temporary or permanent disablement of the system
+
+
+**Mitigating potential BoF:**
+
+* `BoF` vulnerabilities are easy for programmers to accidentally create
+* Posiible losses due to BoF exploitation
+    * System penetration and privilege escalation
+    * Data alteration, exfiltration, or destruction
+    * System instability and denial of service
+* Active and passive mitigation
+    * Active mitigation relies on detecting buffer overflow conditions
+    * Passive mitiation does not rely on detection of a threat
+
+
+**BoF safeguards:**
+
+* *Safegyueards* are proactive security controls that attempt to prevent a
+    threat from causing harm
+* Kernel and firmware anti-BoF features
+    * `DEP` - Data Execution Prevention
+    * `ASLR` - Address Space Layout Randomization
+    * `KASLR` - Kernel Address Space Layout Randomization
+* OS and kernel security configurations
+    * `EMET` - Enhanced Mitigation Experience Toolkit
+* Unistall unneeded programs
+* Patch all installed programs
+
+
+**BoF Contermeasures:**
+
+* *Countermeasures* are reactive security controls that attempt to mitigate the
+    harm caused by an active threat
+* Host-based security monitoring software: Firewalls, anti-Malware software
+* Network monitoring tools: fireawall, proxies, `IDS`/`IDP`
+* *Countermeasures* cannot prevent all possible loss from a threat
+
+
+# Detecting BoF
+
+
+**Extenal BoF Detection:**
+
+* e.g detect BoF exploit patterns in data payload sent to web server
+* `NIDS` → Network Intrustion Detection Systems
+    * `NIDS` can be placed inline or in-band with the network trafiic.
+        (They analyse the network traffic that passed through firewalls)
+    * `NIDS` can also be placed out-of-band, where the firewall sends a copy of
+        the network traffic to the `NIDS` for the inspection and reporting.
+    * `NIDS` should never interfere with the flow of the network traffic
+    * [SNORT](www.snort.org) is an `NIDS` that incorporates signatures into 
+        the rules it uses to detect and react to attack traffic
+    * If a `NIDS` detects a potential attack then it notifies `SIEM` [Security
+        Information Event Management] system, like [splunk>](www.splunk.com)
+
+**Local BoF Detection:**
+
+* should happen on the host behind firewall and` NIDS`
+* anti-virus should check:
+    * files
+    * email attachments
+* anti-malware solutions should:
+    * scan email & IM
+    * look for suspicious program behaviour
+    * malware running in memory
+* [ClamAV](www.clamav.net) → is a freee AV for variours OSes, that can detect
+    potential BoF tools and possible attacks.
+
+
+**Host-based Intrusion Detection Systems (IDS):**
+
+* HIDS are a hybrid of multiple security systems, like:
+* network firewall
+* web browser site & content filtering
+* detect unusual or threating system behaviour
+* system file changes monitoring
+* periperal device monitoring
+* application montoring
+* [OSSEC](ossec.github.io) is a good open-source HIDS tool for many OSes
+
+
+**System Event logs:**
+
+* do you know where your system's events are logged?
+* do you occasionally review those logs?
+* backup your logs and secure them against alteration
+* don't rely on unreliable UDP syslog protocol
+
+
+# DEP - Data Execution Prevention
+
+* `DEP` - flags a memory page as non-executable (containing just data)
+* it sets the `NX` bit to true, which designates a non-executable memory page
+* if a process tries to execute code in DEP-protected memory page then an
+    exception is thrown and the process is terminated.
+* it's a handy feature do combat stack & heap BoF 
+* `DEP` is a hardware & software feature
+    * Intel calls is `XD` bit (eXecuted Disabled) & `EDB` (Execute Disable Bit)
+    * in IBM ARM CPUs it's called `XN` bit (eXecute Never)
+    * AMD64 CPUs → `NX` bit (No eXecute) and Enhanced Virus Protection
+* `DEP` can usually be toggled in `BIOS`
+* Software `DEP` is supported:
+    * since Windows XP SP2, Windows Server 2003 SP1
+    * OS X 10.4.4 (Tiger), 10.5 (Leopard), 10.7 (Lion)
+    * by Linux, UNIX - PaX (Linux), Exec Shield (Red Hat Linux), W^X (OpenBSD)
+* Even if hardware DEP is not available, software counterpart can still provide
+    some protection
+
+
+**Defeating DEP:**
+
+* `DEP` can be defeated by anything with administrator (root) privileges
+* Most of the time attack will disable DEP only for few processes, which is
+    enoug to perform it
+* Prevent access to admin/root accounts
+    * use complex passwords/phrases
+    * 2FA
+    * limit number of people with admin privileges
+* Mitigate privilege escalation vulnerabilities
+    * Remove unnecessary programs
+    * patch & update OS/programs regularly
+    * Audit system and access logs
+
+
+## Set DEP in Windows 7/8/10 CLI
+
+```shell
+C:\> bcdedit.exe /set {current} nx OptIn  # default value
+C:\> bcdedit.exe /set {current} nx OptOut # enable DEP for whole OS, all
+                                          # processes (including kernel &
+                                          # drivers)
+C:\> bcdedit.exe /set {current} nx AlwaysOn  # same as OptOut but applies to
+                                             # all running processes and all 
+                                             # attempts to disable it on any 
+                                             # executable will be ignored
+C:\> bcdedit.exe /set {current} nx AlwaysOff # disable DEP and ignore attempts
+                                             # to enable it for any executable
+C:\> bcdedit.exe /enum                    # check current DEP setting
+```
+
+**NOTES:**
+
+* any changes made via `bcdedit` will take effect after next reboot.
+* `MS` provides a GUI app called `EMET` (Enhanced Mitigation Experience Toolkit) 
+    to manage DEP settings
+
+
+## Set DEP in Linux
+
+To check is DEP is enabled or disable run:
+```shell
+# dmesg | grep NX
+```
+
+To disable software DEP emulation you'll need to set `noexec` & `noexec32` 
+flags in Grub's `GRUB_CMDLINE_LINUX_DEFAULT`, e.g.:
+
+```shell
+# vim /etc/default/grub
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet noexec noexec32"
+```
+
+To set DEP per executable file:
+
+```shell
+# execstack -s myprogram  # set the DEP bit
+# execstack -1 myprogram  # check the DEP bit value
+# execstack -c myprogram  # turn off DEP
+```
+
+
+# ASLR - Address Space Layout Randomization
+
+`ASLR` technique randomizes the position of the stack, heap and system
+resources in process memory. It makes for a BoF exploits to both find system 
+resources and process memory and execute the exploit code it injects by
+removing predictability from the process environment that most explots depends
+on.  
+`ASLR` also changes the location and the beginning of the process heap in the 
+memory. By changing the heap addrress to an unpredictable random base memory 
+address, the explot code won't be able to rely on predictable fixed memory 
+location.  
+`ASLR` Stack randomization works in the same way as above.
+
+
+`ALSR` can be easily enabled with `EMET` on Windows Vista, 7, 8, 10 & Server 
+2008 and later.
+
+On `Linux` you can check it like this:
+```shell
+# sysctl -a | grep "kernel.randomize_va_space"
+kernel.randomize_va_space = 2
+```
+
+To disable it, you'll need to change that value to `0`
+```shell
+# sysctl -w kernel.randomize_va_space=0
+```
+This change is only in memory, and will go back to `2` after the reboot.
+
+To disable it permanently you'll need to edit `/etc/sysctl.conf`
+```shell
+# vim /etc/sysctl.conf 
+
+kernel.randomize_va_space = 0
+
+# then reload that file with
+# sysctl -p
+
+# to disable ALSR for only that shell instance
+# setarch `uname -m` -R /bin/bash
+```
+
+
+## Defeating ASLR
+
+* ASLR renadomization occurs only at system startup
+* identical randomized location applied to all process
+* Know the memory location for one process and you know for them all
+* Randomly chosen from a fixed set of memory locations
+    * 0x1234**56**78
+    * Creating `256` possible locations (0x1234**00**78 to 0x1234**FF**78)
+    * Some exploit code can simply try each possible location until successful
+
+
+### Missing ASLR
+
+* ASLR is not supported by OSes older than listed below:
+    * Linux (2001)
+    * OpenBSD UNIX (2003)
+    * Vista (Jan 2007)
+    * OS X 10.5 (Leopard, Oct 2007)
+    * iOS 4.3 (March 2011)
+    * Android 4.0.3 (Ice Cream Sandwich, Dec 2011)
+
+
+# KASLR - Kernel Address Space Layout Randomization
+
+* Randomizes were objects are placed in kernel memory
+* First added to Linux kernel in 2005 (v`2.6.12`)
+* Full `KASLR` support added to Linux kernel in 20014 (v`3.14`)
+* Windows Vista (Jan 2007)
+* Object locations are randomized at boot time (and don't change until next
+    boot)
+* Memory locations discovered by brute force or memory leaks
+* `KASLR` can be disabled by default (Linux especially)
+
+
+# SEHOP
+
+* Structured Exception Handling Overwripte Protection
+* added to Windows to detect illicit changes in the SEH control structure
+* Both `SEH` and `SEHOP` are present in all Windows processes
+* `SEHOP` is controlled per process using `EMET`
+
+
+## SEHOP in action
+
+* `SEH` information is added to each stack frame
+* `SEHOP` works when an exception is thrown by validating that pointers in the
+    record chains are correct.
+* If the linking points are correct the proper exheption handler is executed.
+* If a `stack overflow` has occured the address of exception handler may have
+    been replaced with memory location of some exploit code and if such
+    exception is thrown the exploit code will be executed. `SEHOP` will
+    validate the record chain and discover the corruption. When this happens
+    the process will be terminated before exploit code can be executed.
+* `SEHOP` is enabled by default on Windows.
+* To check it's status you'll need to use `regedit`
+* `HKEY_LOCAL_MACHINE/SYSTEM/CurrentCotrolSet/kernel/DisableExceptionChainValidation`
+* you can also use `EMET`
+
+
+### /SAFESEH - a Visual Studio C/C++ feature
+
+* `/SAFESEH` is a security feature in Visual Studio C/C++
+* it's an alternative protection mechanism to SEHOP
+* it relocates the `SEH` block to a safe memory location outside the program
+    stack
+* it's enabled by default
+* all modules in a program must be compiled using `/SAFESEH` flag
+* it can be disabled with `/SAFESEH:NO`
+* `/SAFESEH` works only with 32-bit programs
 
