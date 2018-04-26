@@ -9,6 +9,7 @@ categories:
 tags:
   - security
   - sniffing
+  - ethical hacking
   - pentesting
 cover:
   image: /img/2018/006/Wireshark_Logo.png

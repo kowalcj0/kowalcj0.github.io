@@ -9,6 +9,7 @@ categories:
 tags:
   - security
   - enumeration
+  - ethical hacking
   - pentesting
 cover:
   image: /img/2018/004/ethical-hacking-wikimedia.jpg

@@ -9,7 +9,7 @@ categories:
 tags:
   - notes
   - security
-  - hacking
+  - ethical hacking
   - pentesting
 cover:
   image: /img/2018/004/ethical-hacking-wikimedia.jpg
