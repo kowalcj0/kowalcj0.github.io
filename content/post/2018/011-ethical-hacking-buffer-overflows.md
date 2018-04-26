@@ -11,6 +11,7 @@ tags:
   - security
   - ethical hacking
   - pentesting
+  - BoF
 cover:
   image: /img/2018/004/ethical-hacking-wikimedia.jpg
   style: normal

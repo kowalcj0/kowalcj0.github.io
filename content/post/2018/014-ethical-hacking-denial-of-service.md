@@ -11,6 +11,7 @@ tags:
   - security
   - ethical hacking
   - pentesting
+  - DoS
 cover:
   image: /img/2018/004/ethical-hacking-wikimedia.jpg
   style: normal

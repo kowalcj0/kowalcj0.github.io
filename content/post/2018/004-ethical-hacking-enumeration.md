@@ -7,10 +7,11 @@ categories:
   - security
   - learning
 tags:
+  - notes
   - security
-  - enumeration
   - ethical hacking
   - pentesting
+  - enumeration
 cover:
   image: /img/2018/004/ethical-hacking-wikimedia.jpg
   style: normal

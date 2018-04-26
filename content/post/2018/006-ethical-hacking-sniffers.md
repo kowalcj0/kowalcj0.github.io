@@ -7,10 +7,11 @@ categories:
   - security
   - learning
 tags:
+  - notes
   - security
-  - sniffing
   - ethical hacking
   - pentesting
+  - sniffers
 cover:
   image: /img/2018/006/Wireshark_Logo.png
   caption: Wireshark logo
