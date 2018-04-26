@@ -16,6 +16,7 @@ cover:
   caption: Wireshark logo
   style: wide
 ---
+These are just my notes from the video course: "Ethical Hacking: Sniffers".
 
 # Sniffing overview
 

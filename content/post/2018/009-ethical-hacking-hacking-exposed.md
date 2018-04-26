@@ -15,6 +15,11 @@ cover:
   image: /img/2018/004/ethical-hacking-wikimedia.jpg
   style: normal
 ---
+These are just my notes from the video course: "Ethical Hacking: Hacking
+Exposed" by Troy Hunt.
+
+
+# Intro
 
 Questions to ask and answer when deciding on levels of security:
 

@@ -15,9 +15,7 @@ cover:
   image: /img/2018/004/ethical-hacking-wikimedia.jpg
   style: normal
 ---
-
-Not much content here apart from just a bunch of notes I took during
-learning.
+These are just my notes from the video course: "Ethical Hacking: Enumeration".
 
 
 # Introduction

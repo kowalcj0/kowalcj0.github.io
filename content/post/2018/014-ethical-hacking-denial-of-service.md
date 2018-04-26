@@ -16,8 +16,8 @@ cover:
   style: normal
 ---
 
-Below are my notes from the Pluralsight course: "Ethical Hacking: Denial of 
-Service" by Troy Hunt.
+These are just my notes from the Pluralsight course: "Ethical Hacking: Denial 
+of Service" by Troy Hunt.
 
 
 # HTTP flood attack

@@ -16,7 +16,7 @@ cover:
   style: normal
 ---
 
-Below are my notes from the Pluralsight course: "Ethical Hacking: Buffer 
+These are just my notes from the Pluralsight course: "Ethical Hacking: Buffer 
 Overflows" by James Murray.
 
 
