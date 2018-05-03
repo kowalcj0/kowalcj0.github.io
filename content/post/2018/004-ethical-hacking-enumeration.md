@@ -559,3 +559,58 @@ By default `OpenLDAP` allows for anonymous access. Very risky. Anyone can view t
         * `5.1.1` means that the sought account doesn't exist.
         * This technique can be used to detect whether provided email addresses are active or not in a SMTP system.
 
+
+## Notes from introductory malware course
+
+
+> "The first step toward change is awareness.
+>  The second step is acceptance." - Nathaniel Branden.
+
+> "Pay not attention to that man behind the curtain!" - Oz
+
+* `Malware` is a software that perform malicious actions.
+* `Logic bomb` - activate based on a "logical condition" or time/date.
+
+
+**Ports used by well known trojans:**  
+
+
+| Port | Trojan          |
+| ---- | --------------- |
+| 2    | Death           |
+| 22   | Shaft           |
+| 31   | Paradise        |
+| 456  | Paradise        |
+| 1001 | WebEx           |
+| 1170 | Psyber          |
+| 1245 | Voodoo          |
+| 5000 | Bubbel          |
+| 20   | Senna Spy       |
+| 23   | Tiny Telnet     |
+| 80   | Executor        |
+| 555  | Ini-Killer      |
+| 1011 | Doly Trojan     |
+| 1234 | Ultors Trojan   |
+| 2023 | Ripper          |
+| 6670 | Netbus          |
+| 21   | BladeRunner     |
+| 25   | Terminator      |
+| 421  | TCP Wrapper     |
+| 666  | Satanz Backdoor |
+| 1095 | RAT             |
+| 1234 | Sub7            |
+| 4590 | ICQ Trojan      |
+| 9989 | Coma            |
+
+
+**Analysing malicious software:**  
+
+* copy malware to a vm without network, shared forlders etc
+* check for strings in the binary using `BinText`
+* Wireshark
+* TcpView
+* AutoRUns
+* IDA Prod
+* DriverView
+* SFC (System File checker tool)
+
