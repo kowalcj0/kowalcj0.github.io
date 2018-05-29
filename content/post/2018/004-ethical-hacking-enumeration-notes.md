@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Ethical Hacking - Enumeration"
+title: "Ethical Hacking - Enumeration - Notes"
 slug: "ethical-hackin-enumeration-course-notes"
 date: "2018-02-02T19:20:50+01:00"
 categories:
@@ -14,6 +14,7 @@ tags:
   - enumeration
 cover:
   image: /img/2018/004/ethical-hacking-wikimedia.jpg
+  caption: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
   style: normal
 ---
 These are just my notes from the video course: "Ethical Hacking: Enumeration".

@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Ethical Hacking - Hacking Exposed"
+title: "Ethical Hacking - Hacking Exposed - Notes"
 slug: "ethical-hackin-hacking-exposed"
 date: "2018-02-26T21:20:12+01:00"
 categories:
@@ -13,6 +13,7 @@ tags:
   - pentesting
 cover:
   image: /img/2018/004/ethical-hacking-wikimedia.jpg
+  caption: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
   style: normal
 ---
 These are just my notes from the video course: "Ethical Hacking: Hacking
@@ -46,8 +47,7 @@ Anonimity is usally desired when viewing content rather than when creating it.
 Pseudonymity -> is when you wish to retain reputation against an identity. 
 e.g. a cover, an alias a false identity.
 
-In most countries you have [Right to
-privacy](https://en.wikipedia.org/wiki/Right_to_privacy).
+In most countries you have [Right to privacy](https://en.wikipedia.org/wiki/Right_to_privacy).
 
 
 *Read on:*
@@ -67,6 +67,7 @@ protection of your assets, privacy and anonimity.
 {{< figure link="/img/2018/009/The-Cyber-Security-Landscape-Diagram.png" thumb="-thumb" size="1921x1081" caption="The Cyber Security landscape" >}}
 {{< /gallery >}}
 
+Source: [Pluralsight](https://www.pluralsight.com)
 
 You never can have 100% security, anonimity etc. There always will be some
 risk.
@@ -153,6 +154,8 @@ Evaluate (tools, services) instead of trusting others.
 {{< figure link="/img/2018/009/top-three-thing-you-do-to-stay-safe-online-experts-vs-non-experts.png" thumb="-thumb" size="817x471" caption="Top three thing you do to stay safe online? - experts vs non experts" >}}
 {{< /gallery >}}
 
+Source: [Pluralsight](https://www.pluralsight.com)
+
 {{< pswp-init >}}
 
 > Complexity is the enemy of security.
@@ -230,20 +233,23 @@ CHECK -> actionfraud.police.uk/types_of_fraud
 extort, coerse, harras and cause the problems to the victim.
 
 
-Five Eyes
+**Five Eyes:**
+
 1. Australia
 2. Canada
 3. New Zealnd
 4. UK
 5. USA
 
-Nine Eyes
+**Nine Eyes:**
+
 6. Denmark
 7. France
 8. Netherlands
 9. Norway
 
-Fourteen Eyes
+**Fourteen Eyes:**
+
 10. Belgium
 11. Germany
 12. Italy
@@ -262,6 +268,7 @@ Interesting devices:
 # Encryption
 
 **Asymetric**:
+
 * Bettery key distribution
 * Scalability
 * Authentication and nonrepudation
@@ -270,6 +277,7 @@ Interesting devices:
 
 
 **Symmetric**:
+
 * Fast
 * Strong
 
@@ -350,6 +358,7 @@ Read more on TLS on [Wiki](https://en.wikipedia.org/wiki/Transport_Layer_Securit
 
 
 How to protect against social attacks:
+
 * view email as text
 * use things like `ublock`
 * isolation and compartmentalisation

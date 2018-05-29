@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Ethical Hacking - Sniffers"
+title: "Ethical Hacking - Sniffers - Notes"
 slug: "ethical-hackin-sniffers-course-notes"
 date: "2018-02-05T09:22:50+01:00"
 categories:
@@ -14,7 +14,7 @@ tags:
   - sniffers
 cover:
   image: /img/2018/006/Wireshark_Logo.png
-  caption: Wireshark logo
+  caption: "Wireshark logo. Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Wireshark_Logo.svg)"
   style: wide
 ---
 These are just my notes from the video course: "Ethical Hacking: Sniffers".
