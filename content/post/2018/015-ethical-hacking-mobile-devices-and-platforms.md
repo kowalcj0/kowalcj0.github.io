@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "Ethical Hacking - Mobile Devices and Platforms - notes"
 slug: "ethical-hacking-mobile-devices-and-platforms"
 date: "2018-04-28T10:29:15+01:00"
