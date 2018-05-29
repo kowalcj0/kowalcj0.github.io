@@ -66,7 +66,7 @@ Logged In Admin: admin (g0t r00t?)
 Once saved, check your browser's Network requests using e.g. Developer tools:
 
 {{< gallery title="Stored Cross-Site Scripting" >}}
-{{< figure link="/img/2017/002/OWASP-2013-A1-Add_to_your_blog-Stored_Cross-Site_Scripting.png" thumb="-thumb" size="1311x204" caption="Stored Cross-Site Scripting" >}}
+{{< figure link="/img/2018/001/OWASP-2013-A1-Add_to_your_blog-Stored_Cross-Site_Scripting.png" thumb="-thumb" size="1311x204" caption="Stored Cross-Site Scripting" >}}
 {{< /gallery >}}
 
 get MySQL version:
@@ -108,7 +108,7 @@ or you can use it to plant some XSS:
 Then log in as newly created user and see that `1` is visible next to the user name in top menu:
 
 {{< gallery title="HTMLi" >}}
-{{< figure link="/img/2017/002/OWASP-2013-A1-Add_to_your_blog-HTMLi.png" thumb="-thumb" size="1419x559" caption="HTMLi" >}}
+{{< figure link="/img/2018/001/OWASP-2013-A1-Add_to_your_blog-HTMLi.png" thumb="-thumb" size="1419x559" caption="HTMLi" >}}
 {{< /gallery >}}
 
 {{< pswp-init >}}
