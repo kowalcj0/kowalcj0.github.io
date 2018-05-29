@@ -4,21 +4,21 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Not much content here apart from just a bunch of notes I took during learning.
+<meta name='description' content='These are just my notes from the video course: &ldquo;Ethical Hacking: Enumeration&rdquo;.
 Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&rsquo;s own set of Protection Rings -&gt; for more see wiki
 Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp; 2 - in windows it&rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings: * Ring 0 - kernel * Ring 1 - executive * Ring 2 - supervisor * Ring 3 - user'>
 
-<meta property='og:title' content='Ethical Hacking - Enumeration • kowalcj0'>
-<meta property='og:description' content='Not much content here apart from just a bunch of notes I took during learning.
+<meta property='og:title' content='Ethical Hacking - Enumeration - Notes • kowalcj0'>
+<meta property='og:description' content='These are just my notes from the video course: &ldquo;Ethical Hacking: Enumeration&rdquo;.
 Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&rsquo;s own set of Protection Rings -&gt; for more see wiki
 Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp; 2 - in windows it&rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings: * Ring 0 - kernel * Ring 1 - executive * Ring 2 - supervisor * Ring 3 - user'>
 <meta property='og:url' content='https://kowalcj0.github.io/post/2018/ethical-hackin-enumeration-course-notes/'>
 <meta property='og:site_name' content='kowalcj0'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='Post'><meta property='article:tag' content='security'><meta property='article:tag' content='enumeration'><meta property='article:tag' content='pentesting'><meta property='article:published_time' content='2018-02-02T19:20:50&#43;01:00'/><meta property='article:modified_time' content='2018-02-02T19:20:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='Post'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='enumeration'><meta property='article:published_time' content='2018-02-02T19:20:50&#43;01:00'/><meta property='article:modified_time' content='2018-02-02T19:20:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
 
 <meta name="generator" content="Hugo 0.35" />
 
-  <title>Ethical Hacking - Enumeration • kowalcj0</title>
+  <title>Ethical Hacking - Enumeration - Notes • kowalcj0</title>
   <link rel='canonical' href='https://kowalcj0.github.io/post/2018/ethical-hackin-enumeration-course-notes/'>
   
   
@@ -61,7 +61,7 @@ Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp; 2 - in window
     <header class='header-container'>
   <div class='header entry-header'>
     <div class='header-info'>
-      <h1 class='title'>Ethical Hacking - Enumeration</h1>
+      <h1 class='title'>Ethical Hacking - Enumeration - Notes</h1>
       
 
     </div>
@@ -99,8 +99,12 @@ Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp; 2 - in window
 
     <div class='entry-cover-container'>
   <figure class='entry-cover cover-normal'>
-    <img src='/img/2018/004/ethical-hacking-wikimedia.jpg'/>
+    <img src='/img/2018/004/ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org'/>
     
+      
+      <figcaption>
+        <span>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg" target="_blank">wikimedia.org</a></span>
+      </figcaption>
       
     
   </figure>
@@ -110,8 +114,7 @@ Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp; 2 - in window
     <div class='entry-content'>
   
 
-<p>Not much content here apart from just a bunch of notes I took during
-learning.</p>
+<p>These are just my notes from the video course: &ldquo;Ethical Hacking: Enumeration&rdquo;.</p>
 
 <h1 id="introduction">Introduction</h1>
 
@@ -761,6 +764,166 @@ By default <code>OpenLDAP</code> allows for anonymous access. Very risky. Anyone
 </ul></li>
 </ul>
 
+<h2 id="notes-from-introductory-malware-course">Notes from introductory malware course</h2>
+
+<blockquote>
+<p>&ldquo;The first step toward change is awareness.
+ The second step is acceptance.&rdquo; - Nathaniel Branden.</p>
+
+<p>&ldquo;Pay not attention to that man behind the curtain!&rdquo; - Oz</p>
+</blockquote>
+
+<ul>
+<li><code>Malware</code> is a software that perform malicious actions.</li>
+<li><code>Logic bomb</code> - activate based on a &ldquo;logical condition&rdquo; or time/date.</li>
+</ul>
+
+<p><strong>Ports used by well known trojans:</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Port</th>
+<th>Trojan</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>2</td>
+<td>Death</td>
+</tr>
+
+<tr>
+<td>22</td>
+<td>Shaft</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td>Paradise</td>
+</tr>
+
+<tr>
+<td>456</td>
+<td>Paradise</td>
+</tr>
+
+<tr>
+<td>1001</td>
+<td>WebEx</td>
+</tr>
+
+<tr>
+<td>1170</td>
+<td>Psyber</td>
+</tr>
+
+<tr>
+<td>1245</td>
+<td>Voodoo</td>
+</tr>
+
+<tr>
+<td>5000</td>
+<td>Bubbel</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td>Senna Spy</td>
+</tr>
+
+<tr>
+<td>23</td>
+<td>Tiny Telnet</td>
+</tr>
+
+<tr>
+<td>80</td>
+<td>Executor</td>
+</tr>
+
+<tr>
+<td>555</td>
+<td>Ini-Killer</td>
+</tr>
+
+<tr>
+<td>1011</td>
+<td>Doly Trojan</td>
+</tr>
+
+<tr>
+<td>1234</td>
+<td>Ultors Trojan</td>
+</tr>
+
+<tr>
+<td>2023</td>
+<td>Ripper</td>
+</tr>
+
+<tr>
+<td>6670</td>
+<td>Netbus</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td>BladeRunner</td>
+</tr>
+
+<tr>
+<td>25</td>
+<td>Terminator</td>
+</tr>
+
+<tr>
+<td>421</td>
+<td>TCP Wrapper</td>
+</tr>
+
+<tr>
+<td>666</td>
+<td>Satanz Backdoor</td>
+</tr>
+
+<tr>
+<td>1095</td>
+<td>RAT</td>
+</tr>
+
+<tr>
+<td>1234</td>
+<td>Sub7</td>
+</tr>
+
+<tr>
+<td>4590</td>
+<td>ICQ Trojan</td>
+</tr>
+
+<tr>
+<td>9989</td>
+<td>Coma</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Analysing malicious software:</strong></p>
+
+<ul>
+<li>copy malware to a vm without network, shared forlders etc</li>
+<li>check for strings in the binary using <code>BinText</code></li>
+<li>Wireshark</li>
+<li>TcpView</li>
+<li>AutoRUns</li>
+<li>IDA Prod</li>
+<li>DriverView</li>
+<li>SFC (System File checker tool)</li>
+</ul>
+
 </div>
 
     
@@ -782,7 +945,7 @@ By default <code>OpenLDAP</code> allows for anonymous access. Very risky. Anyone
   
 </svg>
 </span>
-  <span class='screen-reader'>Tags: </span><a class='tag' href='/tags/security'>Security</a>, <a class='tag' href='/tags/enumeration'>Enumeration</a>, <a class='tag' href='/tags/pentesting'>Pentesting</a></div>
+  <span class='screen-reader'>Tags: </span><a class='tag' href='/tags/notes'>Notes</a>, <a class='tag' href='/tags/security'>Security</a>, <a class='tag' href='/tags/ethical-hacking'>ethical hacking</a>, <a class='tag' href='/tags/pentesting'>Pentesting</a>, <a class='tag' href='/tags/enumeration'>Enumeration</a></div>
 
   </div>
 </footer>

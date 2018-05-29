@@ -20,6 +20,24 @@
     </item>
     
     <item>
+      <title>Android</title>
+      <link>https://kowalcj0.github.io/tags/android/</link>
+      <pubDate>Sat, 28 Apr 2018 10:29:15 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BoF</title>
+      <link>https://kowalcj0.github.io/tags/bof/</link>
+      <pubDate>Tue, 20 Mar 2018 19:20:10 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/bof/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Criterion collection</title>
       <link>https://kowalcj0.github.io/tags/criterion-collection/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
@@ -38,6 +56,15 @@
     </item>
     
     <item>
+      <title>DoS</title>
+      <link>https://kowalcj0.github.io/tags/dos/</link>
+      <pubDate>Mon, 23 Apr 2018 19:19:15 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/dos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Drama</title>
       <link>https://kowalcj0.github.io/tags/drama/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
@@ -52,6 +79,15 @@
       <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/enumeration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ethical hacking</title>
+      <link>https://kowalcj0.github.io/tags/ethical-hacking/</link>
+      <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/ethical-hacking/</guid>
       <description></description>
     </item>
     
@@ -92,20 +128,20 @@
     </item>
     
     <item>
-      <title>Hacking</title>
-      <link>https://kowalcj0.github.io/tags/hacking/</link>
-      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/hacking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Hugo</title>
       <link>https://kowalcj0.github.io/tags/hugo/</link>
       <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IOS</title>
+      <link>https://kowalcj0.github.io/tags/ios/</link>
+      <pubDate>Sat, 28 Apr 2018 10:29:15 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/ios/</guid>
       <description></description>
     </item>
     
@@ -124,6 +160,15 @@
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/kobayashi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobile</title>
+      <link>https://kowalcj0.github.io/tags/mobile/</link>
+      <pubDate>Sat, 28 Apr 2018 10:29:15 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/mobile/</guid>
       <description></description>
     </item>
     
@@ -148,7 +193,7 @@
     <item>
       <title>Notes</title>
       <link>https://kowalcj0.github.io/tags/notes/</link>
-      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
+      <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/notes/</guid>
       <description></description>
@@ -166,7 +211,7 @@
     <item>
       <title>Pentesting</title>
       <link>https://kowalcj0.github.io/tags/pentesting/</link>
-      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
+      <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/pentesting/</guid>
       <description></description>
@@ -202,18 +247,18 @@
     <item>
       <title>Security</title>
       <link>https://kowalcj0.github.io/tags/security/</link>
-      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
+      <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/security/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Sniffing</title>
-      <link>https://kowalcj0.github.io/tags/sniffing/</link>
+      <title>Sniffers</title>
+      <link>https://kowalcj0.github.io/tags/sniffers/</link>
       <pubDate>Mon, 05 Feb 2018 09:22:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/tags/sniffing/</guid>
+      <guid>https://kowalcj0.github.io/tags/sniffers/</guid>
       <description></description>
     </item>
     
@@ -250,6 +295,15 @@
       <pubDate>Sun, 11 Feb 2018 23:08:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/wayland/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wifi</title>
+      <link>https://kowalcj0.github.io/tags/wifi/</link>
+      <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/wifi/</guid>
       <description></description>
     </item>
     

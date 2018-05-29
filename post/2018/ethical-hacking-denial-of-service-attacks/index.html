@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='These are just my notes from the Pluralsight course: &ldquo;Ethical Hacking: Denial of Service&rdquo; by Troy Hunt.
+HTTP flood attack  HTTP flood attack  it&rsquo;s a &ldquo;volumetric&rdquo; attack - they&rsquo;re normal HTTP requests it can saturate web server resources (&ldquo;service request flood&rdquo;) can saturate bandwidth (&ldquo;bandwidth attack&rdquo;)  Attack effectives can be amplified via certain app features:  They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth  Requests can adhere to legitimate patterns which makes defence difficult  TCP attacks These are the layer 4 (OSI) attacks'>
+
+<meta property='og:title' content='Ethical Hacking - Denial of Service - notes • kowalcj0'>
+<meta property='og:description' content='These are just my notes from the Pluralsight course: &ldquo;Ethical Hacking: Denial of Service&rdquo; by Troy Hunt.
+HTTP flood attack  HTTP flood attack  it&rsquo;s a &ldquo;volumetric&rdquo; attack - they&rsquo;re normal HTTP requests it can saturate web server resources (&ldquo;service request flood&rdquo;) can saturate bandwidth (&ldquo;bandwidth attack&rdquo;)  Attack effectives can be amplified via certain app features:  They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth  Requests can adhere to legitimate patterns which makes defence difficult  TCP attacks These are the layer 4 (OSI) attacks'>
+<meta property='og:url' content='https://kowalcj0.github.io/post/2018/ethical-hacking-denial-of-service-attacks/'>
+<meta property='og:site_name' content='kowalcj0'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='Post'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='DoS'><meta property='article:published_time' content='2018-04-23T19:19:15&#43;01:00'/><meta property='article:modified_time' content='2018-04-23T19:19:15&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
+
+<meta name="generator" content="Hugo 0.35" />
+
+  <title>Ethical Hacking - Denial of Service - notes • kowalcj0</title>
+  <link rel='canonical' href='https://kowalcj0.github.io/post/2018/ethical-hacking-denial-of-service-attacks/'>
+  
+  
+  <link rel='icon' href='/img/favicon144.ico'>
+<link rel='stylesheet' href='/assets/css/main.f0e8df71.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'>
+</head>
+
+
+<body class='page type-post hasCover'>
+  <div class='site'>
+
+    <a class='screen-reader' href='#main'>Skip to Content</a>
+
+    <header id='header' class='header-container'>
+      <div class='header site-header'>
+        <nav id='main-menu' class='main-menu-container' aria-label='Main Menu'>
+  <ul class='main-menu'>
+  <li>
+      <a href='/'>Home</a>
+    </li>
+  <li>
+      <a href='https://github.com/kowalcj0/kowalcj0.github.io'>Repo</a>
+    </li>
+  
+  </ul>
+</nav>
+
+        <div class='header-info'>
+          
+          <p class='site-title title'>kowalcj0</p>
+          
+          <p class='site-description subtitle'>notes, scribbles, thoughts etc.</p>
+        </div>
+      </div>
+    </header>
+
+
+<main id='main' class='main'>
+  <article lang='en' class='entry'>
+    <header class='header-container'>
+  <div class='header entry-header'>
+    <div class='header-info'>
+      <h1 class='title'>Ethical Hacking - Denial of Service - notes</h1>
+      
+
+    </div>
+    
+<div class='meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader'>Posted on </span>
+  <time class='date' datetime='2018-04-23T19:19:15&#43;01:00'>2018-04-23</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+6 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+    <div class='entry-cover-container'>
+  <figure class='entry-cover cover-normal'>
+    <img src='/img/2018/004/ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org'/>
+    
+      
+      <figcaption>
+        <span>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg" target="_blank">wikimedia.org</a></span>
+      </figcaption>
+      
+    
+  </figure>
+</div>
+    
+
+    <div class='entry-content'>
+  
+
+<p>These are just my notes from the Pluralsight course: &ldquo;Ethical Hacking: Denial
+of Service&rdquo; by Troy Hunt.</p>
+
+<h1 id="http-flood-attack">HTTP flood attack</h1>
+
+<ul>
+<li>HTTP flood attack
+
+<ul>
+<li>it&rsquo;s a &ldquo;volumetric&rdquo; attack - they&rsquo;re normal HTTP requests</li>
+<li>it can saturate web server resources (&ldquo;service request flood&rdquo;)</li>
+<li>can saturate bandwidth (&ldquo;bandwidth attack&rdquo;)</li>
+</ul></li>
+<li>Attack effectives can be amplified via certain app features:
+
+<ul>
+<li>They use resources (login page, api endpoint) that takes a lot of
+resources or time to process (like slow hashing function on login page)</li>
+<li>requests that result in SMTP connections (sending email after registering
+dummy accounts, password reset page etc)</li>
+<li>long-running requests (like DB heavy requests)</li>
+<li>download of large files to flood bandwidth</li>
+</ul></li>
+<li>Requests can adhere to legitimate patterns which makes defence difficult</li>
+</ul>
+
+<h1 id="tcp-attacks">TCP attacks</h1>
+
+<p>These are the layer 4 (OSI) attacks</p>
+
+<p>TCP handshake:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">             SYNchronize
+    ----------------------------→
+
+      SYNchronize-ACKnowlegement
+SRC ←---------------------------- TRGT
+
+            ACKnowledge
+    ----------------------------→</code></pre></div>
+<h2 id="syn-flood-attack">SYN flood attack</h2>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">             SYNchronize
+    ----------------------------→
+
+      SYNchronize-ACKnowlegement
+SRC ←---------------------------- TRGT
+
+    SRC does not respond with ACK</code></pre></div>
+<h2 id="syn-flood-attack-with-spoofed-source-ip-address">SYN flood attack with spoofed source IP address</h2>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">    SYNchronize (spoofed src IP address)
+SRC ----------------------------→
+
+      SYNchronize-ACKnowlegement
+3rd ←---------------------------- TRGT
+party
+    </code></pre></div>
+<h1 id="udp-and-icmp-attacks">UDP and ICMP attacks</h1>
+
+<ul>
+<li><code>UDP</code> (User Datagram Protocol)
+
+<ul>
+<li>usually it&rsquo;s a flood of UDP packets send to random ports on the target</li>
+<li>the target consumes resources responding with &ldquo;destination unreachable&rdquo;
+packets</li>
+<li>No initial handshake means source IP can be spoofed for anonymization</li>
+</ul></li>
+<li><code>ICMP</code> (Internet Control Message Protocol)
+
+<ul>
+<li>Supports utilities such as ping using <code>echo request</code> and <code>echo replay</code></li>
+<li>source IP in a ping can be forged to create a &ldquo;Smurf&rdquo; attack</li>
+<li>can be used to send a &ldquo;Ping of Death&rdquo;, a large packet causing a buffer
+overlow</li>
+</ul></li>
+</ul>
+
+<h1 id="dns-amplification-attack">DNS Amplification attack</h1>
+
+<ul>
+<li>sometimes called <code>DNS Reflection</code> attack</li>
+<li>attacker sends a smal request for e.g. all DNS records for particular zone
+which generates a large response</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">           Small spoofed DNS request
+Attacker ----------------------------→ DNS Server
+                                             Large amplified response
+                                          ----------------------------→ Target</code></pre></div>
+<h1 id="other-forms-of-amplification-attack">Other forms of amplification attack</h1>
+
+<ul>
+<li><code>SNMP</code> (Simple Network Management Protocol)
+
+<ul>
+<li>can amplify by a factor of 650x</li>
+</ul></li>
+<li><code>NTP</code> (Network Time Protocol)
+
+<ul>
+<li>can return a large resul via the <code>monlist</code> command</li>
+<li>runs over UDP</li>
+<li>src IP can be spoofed</li>
+<li>amplification factor can be up to 206x</li>
+</ul></li>
+<li><code>SSDP</code> (Simple Service Discovery Protocol)
+
+<ul>
+<li>Attacker query home devices with <code>uPnP</code> services enabled</li>
+<li>Responses are larger than the incoming request</li>
+<li>src IP can be spoofed</li>
+</ul></li>
+</ul>
+
+<h1 id="p2p-attacks">P2P Attacks</h1>
+
+<ul>
+<li>works in <code>DC++</code> networks</li>
+<li>uses flaw in the implementation to ask p2p peers to disconnect from the
+network and send requests to external target.</li>
+</ul>
+
+<h1 id="slowloris">Slowloris</h1>
+
+<ul>
+<li>&ldquo;Low and slow&rdquo; attack tool
+
+<ul>
+<li>uses a low volume of trafiic to generate a slow rate</li>
+</ul></li>
+<li>Sends HTTP requests without a termination sequence
+
+<ul>
+<li>Causes website to leave the connection open</li>
+<li>Resources are allocated to wait for the termination sequence</li>
+</ul></li>
+<li>Can originate from a single origin
+
+<ul>
+<li>Partial requests are sent and then resent and then resent &hellip;</li>
+</ul></li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">          Uncompleted HTTP GET request
+          ----------------------------→
+          Uncompleted HTTP GET request
+          ----------------------------→
+Attacker  Uncompleted HTTP GET request    Target
+          ----------------------------→
+          Uncompleted HTTP GET request
+          ----------------------------→</code></pre></div>
+<h1 id="permanent-dos-and-phlashing">Permanent DoS and Phlashing</h1>
+
+<ul>
+<li><code>PDoS</code> attack renders a device unusable, usually by replacing firmware
+(flashing)</li>
+<li>also referred to as &ldquo;<code>bricking</code>&ldquo;</li>
+<li>exploits weaknesses in the target device (e.g. update process)</li>
+</ul>
+
+<p><strong>Interesting attacks:</strong></p>
+
+<ul>
+<li>GitHub&rsquo;s Man on the Side Attack</li>
+<li>Incapsula Client&rsquo;s DDoS attack by botnet called &ldquo;<code>Cutwail</code>&rdquo;/&rdquo;<code>PushDo</code>&ldquo;</li>
+</ul>
+
+<h1 id="tools">Tools</h1>
+
+<ul>
+<li><code>LOIC</code> a C# tool written in 2004, frequently used by <code>hacktivists</code></li>
+<li><code>JS LOIC</code> JS version of Loic</li>
+<li>DoSHTTP - DoS HTTP Flood DoS testing tool</li>
+<li>DoS booters - tools you can rent for performing a DoS
+
+<ul>
+<li>eg. top10stressers.com, booter.xyz</li>
+</ul></li>
+<li><a href="https://loader.io" target="_blank">loader.io</a> a legit stress testing tool by SendGrid</li>
+</ul>
+
+<h1 id="defence">Defence</h1>
+
+<ul>
+<li>do you have multiple defence types depending on the attack?</li>
+<li>are you able to adapt as the attack does?</li>
+<li>Can you do all this without neglecting other security imperatives?</li>
+</ul>
+
+<h2 id="discovering-the-attack-pattern">Discovering the attack pattern</h2>
+
+<ul>
+<li>Is it a lyaer 4 (UDP, TCP, ICMP) or layer 7 (HTTP) attack?</li>
+<li>What&rsquo;s the source and the target</li>
+<li>are there any unique signatures like headers or target resource</li>
+<li>What&rsquo;s the intent? is it definitely malicious or unitentional DDoS caused by
+.e.g. misconfiguration?</li>
+</ul>
+
+<h2 id="absorbing-the-attack">Absorbing the attack</h2>
+
+<p>If your <code>Capacity &gt; Attack</code> then:</p>
+
+<p><strong>Pros:</strong></p>
+
+<ul>
+<li>No distruption for legitimate users</li>
+<li>Auto-scale is simplified when using cloud services</li>
+<li>Scaling buys time to determine other countermeasures</li>
+</ul>
+
+<p><strong>Cons:</strong></p>
+
+<ul>
+<li>can be very expensive</li>
+<li>may not be practical withing a short timeframe</li>
+<li>may not practically feasible for a large enough attack</li>
+</ul>
+
+<h2 id="establishing-traffic-reputation">Establishing Traffic Reputation</h2>
+
+<ul>
+<li>When does normal traffic look like?
+
+<ul>
+<li>where do people come from and what do they do?</li>
+</ul></li>
+<li>How much of a deviation constitute potentially malicious traffic?</li>
+<li>What layers of defence are available when repoutation thresholds are
+exceeded?</li>
+<li>For example:
+
+<ul>
+<li>what does a normal login process look like?</li>
+<li>e.g. if user attempts more than 3 times to login, then present them
+captcha or other challange</li>
+<li>this won&rsquo;t stop the attack, but will prevent the site from doing a CPU or
+IO sensitive work</li>
+</ul></li>
+</ul>
+
+<h1 id="network-level-defences">Network Level Defences</h1>
+
+<ul>
+<li>Hardware appliances
+
+<ul>
+<li>like first line of defence places before a firewall</li>
+<li>firewalls</li>
+<li><code>IPS</code> - Intrusion Prevention System</li>
+<li><code>SLB</code> - Software Load Balancer</li>
+<li><code>WAF</code> - Web Application Firewall</li>
+</ul></li>
+<li>Layer 4 countermeasures
+
+<ul>
+<li>Disable all unused ports</li>
+<li>block unnecessary protocols (i.e. <code>ICMP</code>)</li>
+<li>Filter ingress traffic
+
+<ul>
+<li>Repotation bsased blocking</li>
+</ul></li>
+<li>Implemented &ldquo;blackholing&rdquo; or &ldquo;tarpitting&rdquo;
+
+<ul>
+<li>Terminate traffic upstream of the origin server</li>
+<li>No response is sent, the traffic just &ldquo;disappears&rdquo;</li>
+<li>can route traffic to a different segment of network for further
+analysis.</li>
+</ul></li>
+<li>This only works if the network isn&rsquo;t saturated with data</li>
+</ul></li>
+<li><code>Anycast</code>
+
+<ul>
+<li>network addressing and routing methodology, in which you can stand up a
+single IP address and then depending on where the traffic originates
+from route it to the nearest possible node. So from the outside world
+your service is available via only 1 IP address.</li>
+</ul></li>
+</ul>
+
+<h1 id="application-level-defences">Application level defences</h1>
+
+<ul>
+<li>In case there&rsquo;s not anomalous layer 4 traffic</li>
+<li>but there&rsquo;s a lot of HTTP traffic</li>
+<li>then you can use <code>WAF</code> (Web Application Firewall) which can inspect HTTP
+traffic
+
+<ul>
+<li>make sure <code>WAF</code> can also inspect HTTPS traffic</li>
+</ul></li>
+<li>Minimize the attack surface area
+
+<ul>
+<li>take any resources (admin panels, reporting pages etc) from the publicly
+available network and place then in the private subnet</li>
+</ul></li>
+<li>Design the application for <code>DDoS</code> resiliency by <code>Sandboxing Application
+Features</code>
+
+<ul>
+<li>run application features (modules) on separate nodes/servers</li>
+<li>so that when one module is under attack, then only this module is
+unavailable and remaining modules work fine.</li>
+</ul></li>
+</ul>
+
+<h1 id="preparing-for-dos-resiliency">Preparing for DoS Resiliency</h1>
+
+<ul>
+<li>Implement a DoS strategy well in advance of an attack</li>
+<li>Test your defences</li>
+<li>Do you have a crisis management plan (DDoS Runbook)?
+
+<ul>
+<li>check &ldquo;DDoS RunBook&rdquo; created by Robert Handson of Whitehat security</li>
+</ul></li>
+<li>Do you know how much a successful DoS attack will cost you?
+
+<ul>
+<li>this will justify the costs involved with improving your defence</li>
+</ul></li>
+</ul>
+
+</div>
+
+    
+<footer class='entry-footer-container'>
+  <div class='entry-footer'>
+  <div class='categories'>
+  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader'>Categories: </span><a class='category' href='/categories/security'>Security</a>, <a class='category' href='/categories/learning'>Learning</a></div>
+<div class='tags'>
+  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader'>Tags: </span><a class='tag' href='/tags/notes'>Notes</a>, <a class='tag' href='/tags/security'>Security</a>, <a class='tag' href='/tags/ethical-hacking'>ethical hacking</a>, <a class='tag' href='/tags/pentesting'>Pentesting</a>, <a class='tag' href='/tags/dos'>DoS</a></div>
+
+  </div>
+</footer>
+
+
+  </article>
+  
+<nav class='entry-nav-container'>
+  <div class='entry-nav'><div class='prev-entry'>
+      <a href='/post/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader'>Previous post: </span>Play videoclip for currently playing song in mpv</a>
+    </div><div class='next-entry'>
+      <a href='/post/2018/ethical-hacking-mobile-devices-and-platforms/'>
+        <span class='screen-reader'>Next post: </span>Ethical Hacking - Mobile Devices and Platforms - notes<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+  
+</main>
+
+    <footer id='footer' class='footer-container'>
+      <div class='footer'>
+        <div class='social-menu-container'>
+  <nav aria-label='Social Menu'>
+    <ul class='social-menu'><li>
+        <a href='https://github.com/kowalcj0' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/januszkowalczyk' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</div>
+        <div class='copyright'>
+  <p>
+        
+          
+        
+      
+
+       &copy; 2017-2018 kowalcj0 
+  </p>
+</div>
+
+      </div>
+    </footer>
+
+  </div><script src='/assets/js/main.5871befd.js'></script></body>
+
+</html>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on kowalcj0</title>
+    <link>https://kowalcj0.github.io/tags/android/</link>
+    <description>Recent content in Android on kowalcj0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 28 Apr 2018 10:29:15 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ethical Hacking - Mobile Devices and Platforms - notes</title>
+      <link>https://kowalcj0.github.io/post/2018/ethical-hacking-mobile-devices-and-platforms/</link>
+      <pubDate>Sat, 28 Apr 2018 10:29:15 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/post/2018/ethical-hacking-mobile-devices-and-platforms/</guid>
+      <description>Good sources of knowledge:
+ OWASP Testing guide - book OWASP Pinning cheat sheet  Android Application  Executes as:  application service  Helpers  Broadcast receiver (allows app to register for specifi events which will be then passed to it for action) content provider (it interfaces between app and file storage and provide sql-like interface to read/write/modify/delete data). SQLite is a common DB service access via content provider.</description>
+    </item>
+    
+  </channel>
+</rss>

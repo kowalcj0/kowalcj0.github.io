@@ -4,25 +4,27 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
+<meta name='description' content='These are just my notes from the video course: &ldquo;Ethical Hacking: Sniffers&rdquo;.
+Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
 Network admins should monitor network traffic for few minutes a day.
 Phases of Packet Analysis  Gather Decode Display Analyze  Note:
 epan - Ethereal Packet Analyzer - it&rsquo;s the packet-analyzing engine for Etheral/Wireshark.
 OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate contact with the network HTTP, FTP, SMTP DATA    6 Presentation Format data , optional compression and encapsulation  Data    5 Session Initiates, maintains and tear down session  Data    4 Transport Transport data TCP, UDP Segment Port   3 Network Addressing and routing IP, ICMP (ARP) Packet IP   2 Data link Frame formation Ethernet II (ARP) Frame MAC   1 Physical Data is transmitter on the media  Bits     IPv4 structure    IPv4 headers                                 Passive vs Active attacks Two types of attacks:'>
 
-<meta property='og:title' content='Ethical Hacking - Sniffers • kowalcj0'>
-<meta property='og:description' content='Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
+<meta property='og:title' content='Ethical Hacking - Sniffers - Notes • kowalcj0'>
+<meta property='og:description' content='These are just my notes from the video course: &ldquo;Ethical Hacking: Sniffers&rdquo;.
+Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
 Network admins should monitor network traffic for few minutes a day.
 Phases of Packet Analysis  Gather Decode Display Analyze  Note:
 epan - Ethereal Packet Analyzer - it&rsquo;s the packet-analyzing engine for Etheral/Wireshark.
 OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate contact with the network HTTP, FTP, SMTP DATA    6 Presentation Format data , optional compression and encapsulation  Data    5 Session Initiates, maintains and tear down session  Data    4 Transport Transport data TCP, UDP Segment Port   3 Network Addressing and routing IP, ICMP (ARP) Packet IP   2 Data link Frame formation Ethernet II (ARP) Frame MAC   1 Physical Data is transmitter on the media  Bits     IPv4 structure    IPv4 headers                                 Passive vs Active attacks Two types of attacks:'>
 <meta property='og:url' content='https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/'>
 <meta property='og:site_name' content='kowalcj0'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/006/Wireshark_Logo.png'><meta property='article:section' content='Post'><meta property='article:tag' content='security'><meta property='article:tag' content='sniffing'><meta property='article:tag' content='pentesting'><meta property='article:published_time' content='2018-02-05T09:22:50&#43;01:00'/><meta property='article:modified_time' content='2018-02-05T09:22:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/006/Wireshark_Logo.png'><meta property='twitter:image:alt' content='Wireshark logo'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/006/Wireshark_Logo.png'><meta property='article:section' content='Post'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='sniffers'><meta property='article:published_time' content='2018-02-05T09:22:50&#43;01:00'/><meta property='article:modified_time' content='2018-02-05T09:22:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/006/Wireshark_Logo.png'><meta property='twitter:image:alt' content='Wireshark logo. Source: wikimedia.org'>
 
 <meta name="generator" content="Hugo 0.35" />
 
-  <title>Ethical Hacking - Sniffers • kowalcj0</title>
+  <title>Ethical Hacking - Sniffers - Notes • kowalcj0</title>
   <link rel='canonical' href='https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/'>
   
   
@@ -65,7 +67,7 @@ OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate co
     <header class='header-container'>
   <div class='header entry-header'>
     <div class='header-info'>
-      <h1 class='title'>Ethical Hacking - Sniffers</h1>
+      <h1 class='title'>Ethical Hacking - Sniffers - Notes</h1>
       
 
     </div>
@@ -103,11 +105,11 @@ OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate co
 
     <div class='entry-cover-container'>
   <figure class='entry-cover cover-wide'>
-    <img src='/img/2018/006/Wireshark_Logo.png' alt='Wireshark logo'/>
+    <img src='/img/2018/006/Wireshark_Logo.png' alt='Wireshark logo. Source: wikimedia.org'/>
     
       
       <figcaption>
-        <span>Wireshark logo</span>
+        <span>Wireshark logo. Source: <a href="https://commons.wikimedia.org/wiki/File:Wireshark_Logo.svg" target="_blank">wikimedia.org</a></span>
       </figcaption>
       
     
@@ -117,6 +119,8 @@ OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate co
 
     <div class='entry-content'>
   
+
+<p>These are just my notes from the video course: &ldquo;Ethical Hacking: Sniffers&rdquo;.</p>
 
 <h1 id="sniffing-overview">Sniffing overview</h1>
 
@@ -849,7 +853,7 @@ devices (ssh)</li>
   
 </svg>
 </span>
-  <span class='screen-reader'>Tags: </span><a class='tag' href='/tags/security'>Security</a>, <a class='tag' href='/tags/sniffing'>Sniffing</a>, <a class='tag' href='/tags/pentesting'>Pentesting</a></div>
+  <span class='screen-reader'>Tags: </span><a class='tag' href='/tags/notes'>Notes</a>, <a class='tag' href='/tags/security'>Security</a>, <a class='tag' href='/tags/ethical-hacking'>ethical hacking</a>, <a class='tag' href='/tags/pentesting'>Pentesting</a>, <a class='tag' href='/tags/sniffers'>Sniffers</a></div>
 
   </div>
 </footer>
