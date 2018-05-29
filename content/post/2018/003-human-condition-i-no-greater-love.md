@@ -14,7 +14,7 @@ tags:
     - criterion collection
 cover:
   image: /img/2018/003/human_condition_i_-_its_the_woman_that_men_love.jpg
-  caption: Being a wife is a profession. But it's the woman than men love.
+  caption: "Being a wife is a profession. But it's the woman than men love. Source: [Criterion](https://www.criterion.com/films/2106-the-human-condition)"
   style: full
 ---
 
@@ -65,6 +65,8 @@ My three favourite scenes are towards the end of the movie:
 {{< figure link="/img/2018/003/human_condition_i_-_two_hours.jpg" thumb="-thumb" size="1920x800" caption="I give you two hours" >}}
 {{< figure link="/img/2018/003/human_condition_i_-_wet_the_blade.jpg" thumb="-thumb" size="1920x800" caption="Wet the blade" >}}
 {{< /gallery >}}
+
+**Source:** [Criterion](https://www.criterion.com/films/2106-the-human-condition)
 
 {{< pswp-init >}}
 

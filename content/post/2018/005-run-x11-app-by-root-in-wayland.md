@@ -12,7 +12,7 @@ tags:
   - gnome 3.26
 cover:
   image: /img/2018/005/Wayland_Logo-wiki.png
-  caption: Wayland logo
+  caption: "Wayland logo. Souce: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Wayland_Logo.svg)"
   style: normal
 ---
 

@@ -13,7 +13,7 @@ tags:
     - pentesting
 cover:
   image: /img/2018/001/owasp_full_logo.png
-  caption: OWASP logo
+  caption: "OWASP logo. Source: [secplicity.org](https://www.secplicity.org/2017/04/12/owasp-top-10-web-application-security-update/)"
   style: normal
 ---
 # iNSTALLATION
