@@ -13,10 +13,10 @@ tags:
   - ethical hacking
   - pentesting
   - BoF
-
-featuredImage: /img/2018/004/ethical-hacking-wikimedia.jpg
-featuredImageDescription: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
-dropCap: false
+cover:
+  image: /img/2018/004/ethical-hacking-wikimedia.jpg
+  caption: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
+  style: normal
 ---
 
 These are just my notes from the Pluralsight course: "Ethical Hacking: Buffer 

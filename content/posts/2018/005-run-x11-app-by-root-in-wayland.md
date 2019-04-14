@@ -11,10 +11,10 @@ tags:
   - wayland
   - fedora 27
   - gnome 3.26
-
-featuredImage: /img/2018/005/Wayland_Logo-wiki.png
-featuredImageDescription: "Wayland logo. Souce: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Wayland_Logo.svg)"
-dropCap: false
+cover:
+  image: /img/2018/005/Wayland_Logo-wiki.png
+  caption: "Wayland logo. Souce: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Wayland_Logo.svg)"
+  style: normal
 ---
 
 Recently I had an annoying problem running Wireshark as root user on Fedora 27 

@@ -9,10 +9,10 @@ categories:
 tags:
     - vlc
     - qt
-
-featuredImage: /img/2018/007/vlc.png
-featuredImageDescription: troublesome VLC
-dropCap: false
+cover:
+  image: /img/2018/007/vlc.png
+  caption: troublesome VLC
+  style: normal
 ---
 If you ever encountered error like this when starting vlc:
 

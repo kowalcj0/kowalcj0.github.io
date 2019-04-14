@@ -13,10 +13,10 @@ tags:
   - ethical hacking
   - pentesting
   - sniffers
-
-featuredImage: /img/2018/006/Wireshark_Logo.png
-featuredImageDescription: "Wireshark logo. Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Wireshark_Logo.svg)"
-dropCap: false
+cover:
+  image: /img/2018/006/Wireshark_Logo.png
+  caption: "Wireshark logo. Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Wireshark_Logo.svg)"
+  style: wide
 ---
 These are just my notes from the video course: "Ethical Hacking: Sniffers".
 

@@ -13,10 +13,10 @@ tags:
     - war
     - 1959
     - criterion collection
-
-featuredImage: /img/2018/003/human_condition_i_-_its_the_woman_that_men_love.jpg
-featuredImageDescription: "Being a wife is a profession. But it's the woman than men love. Source: [Criterion](https://www.criterion.com/films/2106-the-human-condition)"
-dropCap: false
+cover:
+  image: /img/2018/003/human_condition_i_-_its_the_woman_that_men_love.jpg
+  caption: "Being a wife is a profession. But it's the woman than men love. Source: [Criterion](https://www.criterion.com/films/2106-the-human-condition)"
+  style: wide
 ---
 
 ### Ratings & further reading

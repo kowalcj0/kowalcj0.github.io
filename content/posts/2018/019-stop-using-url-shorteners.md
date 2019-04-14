@@ -8,7 +8,6 @@ categories:
   - web
 tags:
     - seo
-dropCap: false
 ---
 Why do people use URL shorteners?
 

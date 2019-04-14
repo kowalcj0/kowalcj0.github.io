@@ -9,10 +9,10 @@ categories:
 tags:
     - python
     - conference
-
-featuredImage: /img/2018/020/PyConPL18.svg
-featuredImageDescription: "PyConPL'18 logo. Source: [https://pl.pycon.org/2018/](https://pl.pycon.org/2018/)"
-dropCap: false
+cover:
+  image: /img/2018/018/PyConPL18.svg
+  caption: "PyConPL'18 logo. Source: [https://pl.pycon.org/2018/](https://pl.pycon.org/2018/)"
+  style: normal
 ---
 
 # The good way to behave

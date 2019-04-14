@@ -10,7 +10,6 @@ categories:
 tags:
     - hugo
     - syntax
-dropCap: false
 ---
 # Bye bye Prism. Welcome Chroma.
 

@@ -11,10 +11,10 @@ tags:
     - python
     - mpv
     - dbus
-
-featuredImage: /img/2018/012/tuber.png
-featuredImageDescription: Tuber
-dropCap: false
+cover:
+  image: /img/2018/012/tuber.png
+  caption: Tuber
+  style: normal
 ---
 
 Short demo:
