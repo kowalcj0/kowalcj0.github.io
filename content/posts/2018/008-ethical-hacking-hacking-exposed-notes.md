@@ -65,7 +65,7 @@ protection of your assets, privacy and anonimity.
 # Threat modelling and Risk Assessments
 
 {{< gallery >}}
-{{< figure link="/img/2018/009/The-Cyber-Security-Landscape-Diagram.png" thumb="-thumb" size="1921x1081" caption="The Cyber Security landscape" >}}
+{{< figure link="/img/2018/008/The-Cyber-Security-Landscape-Diagram.png" thumb="-thumb" size="1921x1081" caption="The Cyber Security landscape" >}}
 {{< /gallery >}}
 
 Source: [Pluralsight](https://www.pluralsight.com)
@@ -152,7 +152,7 @@ Evaluate (tools, services) instead of trusting others.
 # Know Your Enemy
 
 {{< gallery >}}
-{{< figure link="/img/2018/009/top-three-thing-you-do-to-stay-safe-online-experts-vs-non-experts.png" thumb="-thumb" size="817x471" caption="Top three thing you do to stay safe online? - experts vs non experts" >}}
+{{< figure link="/img/2018/008/top-three-thing-you-do-to-stay-safe-online-experts-vs-non-experts.png" thumb="-thumb" size="817x471" caption="Top three thing you do to stay safe online? - experts vs non experts" >}}
 {{< /gallery >}}
 
 Source: [Pluralsight](https://www.pluralsight.com)
