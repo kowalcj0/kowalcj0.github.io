@@ -1,0 +1,9 @@
+[about]
+title = ""
+description = ""
+logo = "img/logo.png"
+
+[recent_posts]
+title = "Recent Posts"
+length = 100
+excludeTypes = ["page"]
