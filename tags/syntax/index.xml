@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Syntax on kowalcj0</title>
+    <title>syntax on Home</title>
     <link>https://kowalcj0.github.io/tags/syntax/</link>
-    <description>Recent content in Syntax on kowalcj0</description>
+    <description>Recent content in syntax on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 27 Jan 2018 22:28:50 +0100</lastBuildDate>
     
@@ -12,10 +12,10 @@
     
     <item>
       <title>Syntax Highlighting in Hugo</title>
-      <link>https://kowalcj0.github.io/post/2018/syntax-highlighting-in-hugo/</link>
+      <link>https://kowalcj0.github.io/posts/2018/syntax-highlighting-in-hugo/</link>
       <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/syntax-highlighting-in-hugo/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/syntax-highlighting-in-hugo/</guid>
       <description>Bye bye Prism. Welcome Chroma. I just learnt that from version 0.28 Hugo comes with a built-in syntax highlighter called Chroma.
 It supports syntax highlighting with GitHub flavoured code fences!
 This is more than great!

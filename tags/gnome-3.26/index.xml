@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gnome 3.26 on kowalcj0</title>
+    <title>gnome 3.26 on Home</title>
     <link>https://kowalcj0.github.io/tags/gnome-3.26/</link>
-    <description>Recent content in Gnome 3.26 on kowalcj0</description>
+    <description>Recent content in gnome 3.26 on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 04 Feb 2018 13:46:30 +0100</lastBuildDate>
     
@@ -12,10 +12,10 @@
     
     <item>
       <title>Allow GUI applications run by root user to connect to X server</title>
-      <link>https://kowalcj0.github.io/post/2018/allow-application-run-by-root-to-connect-to-x-server/</link>
+      <link>https://kowalcj0.github.io/posts/2018/allow-application-run-by-root-to-connect-to-x-server/</link>
       <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/allow-application-run-by-root-to-connect-to-x-server/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/allow-application-run-by-root-to-connect-to-x-server/</guid>
       <description>Recently I had an annoying problem running Wireshark as root user on Fedora 27 (Wayland + Gnome 3.26).
 I was getting following error:
 sudo wireshark QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &amp;#39;/tmp/runtime-root&amp;#39; QXcbConnection: Could not connect to display Aborted (core dumped) To fix this, you need to add root user to the list of users allowed to make connections to the X server.

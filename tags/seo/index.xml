@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>seo on Home</title>
+    <link>https://kowalcj0.github.io/tags/seo/</link>
+    <description>Recent content in seo on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 20 Aug 2018 18:41:50 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stop using URL shorteners</title>
+      <link>https://kowalcj0.github.io/posts/2018/stop-using-url-shortners/</link>
+      <pubDate>Mon, 20 Aug 2018 18:41:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/stop-using-url-shortners/</guid>
+      <description>Why do people use URL shorteners?
+They&amp;rsquo;re simply unreliable and bad for privacy.
+I&amp;rsquo;ve already encountered quite a few dead short URLs because the URL shortener service was closed down and it was rather painfull waste of time to find the original link.
+They&amp;rsquo;re bad for privacy because the shortener service knows what are you browsing.
+Why would give away such important meta data about your readers to someone else?</description>
+    </item>
+    
+  </channel>
+</rss>

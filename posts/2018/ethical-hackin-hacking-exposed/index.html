@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Notes from video course'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Ethical Hacking - Hacking Exposed - Notes • Home'>
+<meta property='og:description' content='Notes from video course'>
+<meta property='og:url' content='https://kowalcj0.github.io/posts/2018/ethical-hackin-hacking-exposed/'>
+<meta property='og:site_name' content='Home'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='posts'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:published_time' content='2018-02-26T21:20:12&#43;01:00'/><meta property='article:modified_time' content='2018-02-26T21:20:12&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
+
+<meta name="generator" content="Hugo 0.55.1" />
+
+  <title>Ethical Hacking - Hacking Exposed - Notes • Home</title>
+  <link rel='canonical' href='https://kowalcj0.github.io/posts/2018/ethical-hackin-hacking-exposed/'>
+  
+  
+  <link rel='icon' href='/img/favicon144.ico'>
+<link rel='stylesheet' href='/assets/css/main.dd2efce5.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+  
+
+</head>
+<body class='page type-posts has-cover has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/img/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Free yourself, help to free me, free us
+    </h2>
+    <div class='desc'>
+    notes, scribbles, thoughts etc.
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>Search</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/tags/1959/' style='font-size:1em'>1959</a>
+      </li><li>
+        <a href='/tags/android/' style='font-size:1em'>android</a>
+      </li><li>
+        <a href='/tags/bof/' style='font-size:1em'>BoF</a>
+      </li><li>
+        <a href='/tags/criterion-collection/' style='font-size:1em'>criterion collection</a>
+      </li><li>
+        <a href='/tags/dbus/' style='font-size:1em'>dbus</a>
+      </li><li>
+        <a href='/tags/dos/' style='font-size:1em'>DoS</a>
+      </li><li>
+        <a href='/tags/drama/' style='font-size:1em'>drama</a>
+      </li><li>
+        <a href='/tags/driver/' style='font-size:1em'>driver</a>
+      </li><li>
+        <a href='/tags/enumeration/' style='font-size:1em'>enumeration</a>
+      </li><li>
+        <a href='/tags/ethical-hacking/' style='font-size:1.8571428571428572em'>ethical hacking</a>
+      </li><li>
+        <a href='/tags/fedora-27/' style='font-size:1em'>fedora 27</a>
+      </li><li>
+        <a href='/tags/fun/' style='font-size:1em'>fun</a>
+      </li><li>
+        <a href='/tags/gnome-3.26/' style='font-size:1em'>gnome 3.26</a>
+      </li><li>
+        <a href='/tags/hugo/' style='font-size:1em'>hugo</a>
+      </li><li>
+        <a href='/tags/intel/' style='font-size:1em'>intel</a>
+      </li><li>
+        <a href='/tags/ios/' style='font-size:1em'>iOS</a>
+      </li><li>
+        <a href='/tags/japanese/' style='font-size:1em'>japanese</a>
+      </li><li>
+        <a href='/tags/kobayashi/' style='font-size:1em'>kobayashi</a>
+      </li><li>
+        <a href='/tags/mobile/' style='font-size:1em'>mobile</a>
+      </li><li>
+        <a href='/tags/mpv/' style='font-size:1em'>mpv</a>
+      </li><li>
+        <a href='/tags/mutillidae/' style='font-size:1em'>mutillidae</a>
+      </li><li>
+        <a href='/tags/notes/' style='font-size:1.8571428571428572em'>notes</a>
+      </li><li>
+        <a href='/tags/owasp/' style='font-size:1em'>owasp</a>
+      </li><li>
+        <a href='/tags/pentesting/' style='font-size:2em'>pentesting</a>
+      </li><li>
+        <a href='/tags/python/' style='font-size:1em'>python</a>
+      </li><li>
+        <a href='/tags/qt/' style='font-size:1em'>qt</a>
+      </li><li>
+        <a href='/tags/root/' style='font-size:1em'>root</a>
+      </li><li>
+        <a href='/tags/security/' style='font-size:2em'>security</a>
+      </li><li>
+        <a href='/tags/seo/' style='font-size:1em'>seo</a>
+      </li><li>
+        <a href='/tags/sniffers/' style='font-size:1em'>sniffers</a>
+      </li><li>
+        <a href='/tags/syntax/' style='font-size:1em'>syntax</a>
+      </li><li>
+        <a href='/tags/vlc/' style='font-size:1em'>vlc</a>
+      </li><li>
+        <a href='/tags/war/' style='font-size:1em'>war</a>
+      </li><li>
+        <a href='/tags/wayland/' style='font-size:1em'>wayland</a>
+      </li><li>
+        <a href='/tags/wifi/' style='font-size:1em'>wifi</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='https://github.com/kowalcj0/kowalcj0.github.io'>Repo</a>
+      </li></ul>
+  </div>
+</nav><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/posts/'>Posts</a></li><li><span>Ethical Hacking - Hacking Exposed - Notes</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Home</p><p class='desc site-desc'>notes, scribbles, thoughts etc.</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Ethical Hacking - Hacking Exposed - Notes</h1>
+      
+<p class='desc'>Notes from video course</p>
+
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-02-26T21:20:12&#43;01:00'>2018-02-26</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+8 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  <div class='entry-cover'>
+  <figure class='container cover-normal'>
+    <img src='/img/2018/004/ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org'/>
+    
+      
+      <figcaption class='container'>
+        <span>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg" target="_blank">wikimedia.org</a></span>
+      </figcaption>
+      
+    
+  </figure>
+</div>
+  
+
+  <div class='container entry-content'>
+  
+
+<p>These are just my notes from the video course: &ldquo;Ethical Hacking: Hacking
+Exposed&rdquo; by Troy Hunt.</p>
+
+<h1 id="intro">Intro</h1>
+
+<p>Questions to ask and answer when deciding on levels of security:</p>
+
+<ul>
+<li>What is most confidential to you?</li>
+<li>What can&rsquo;t you afford to lose?</li>
+<li>What is irreplaceable?</li>
+<li>What could cause the most damage?</li>
+<li>What might impact your reputation?</li>
+</ul>
+
+<p>The answers to those question will specify your <code>security assets</code> that you will
+protect.</p>
+
+<h1 id="privacy-vs-anonimity">Privacy vs Anonimity</h1>
+
+<p>Privacy -&gt; is when someone potentially know who you are, but they don&rsquo;t know
+what are you doing or with whom you&rsquo;re talking. It&rsquo;s all about confidential
+content.</p>
+
+<p>Anonimity -&gt; is keeping your actions and activities separate from your true
+identity. Non-attribution to your actions.
+Anonimity is usally desired when viewing content rather than when creating it.</p>
+
+<p>Pseudonymity -&gt; is when you wish to retain reputation against an identity.
+e.g. a cover, an alias a false identity.</p>
+
+<p>In most countries you have <a href="https://en.wikipedia.org/wiki/Right_to_privacy" target="_blank">Right to privacy</a>.</p>
+
+<p><em>Read on:</em></p>
+
+<ul>
+<li>JonDonym</li>
+</ul>
+
+<h1 id="risk-vulnerabilities-x-threats-x-consequences">Risk = Vulnerabilities x Threats x Consequences</h1>
+
+<p>The outcome of suitable security processes, actions and technology is the
+protection of your assets, privacy and anonimity.</p>
+
+<h1 id="threat-modelling-and-risk-assessments">Threat modelling and Risk Assessments</h1>
+
+<div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/2018/008/The-Cyber-Security-Landscape-Diagram.png" data-size="1921x1081" itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/2018/008/The-Cyber-Security-Landscape-Diagram-thumb.png"
+            alt="The Cyber Security landscape"
+            />
+    </a>
+    
+    <figcaption>
+        
+        
+        <p>
+        The Cyber Security landscape
+        
+        </p>
+        
+    </figcaption>
+    
+</figure>
+
+
+<div class="title"></div>
+</div>
+<link rel="stylesheet" href="/css/pswp-gallery.css" />
+
+
+<p>Source: <a href="https://www.pluralsight.com" target="_blank">Pluralsight</a></p>
+
+<p>You never can have 100% security, anonimity etc. There always will be some
+risk.</p>
+
+<p><strong>Security</strong> is:</p>
+
+<ul>
+<li>a technology</li>
+<li>an action (to mitigate threats &amp; adversaries, to protect assets, privacy &amp;
+anonimity)</li>
+<li>a process</li>
+</ul>
+
+<p>You have to decide what&rsquo;s your tolerance for risk (what consequences you can
+bear).
+You have to decide where&rsquo;s the balance between:<br />
+* usability and security, between
+* risk and opportunity</p>
+
+<p><strong>You need to:</strong></p>
+
+<ul>
+<li>analyse and understand the positive and negative outcomes of security
+threats or opportunities</li>
+<li>You need to take the risk based approach to apply right level of security</li>
+<li>Consentrate on consequences when threats &amp; adversaries are less tangible to
+discover.</li>
+</ul>
+
+<p><strong>Layers of security landscape</strong></p>
+
+<ol>
+<li><code>Assets</code> -&gt; what you want to protect</li>
+<li><code>Vulnerabilities</code> -&gt; bugs, weaknesses in your systems and processes</li>
+<li><code>Threats</code> -&gt; potential threats posed by Adversaries</li>
+<li><code>Adversaries</code> -&gt; potential malicious actors</li>
+<li><code>Consequences</code> -&gt; money/data/privacy/anonimity/reputation loss, data
+malformation or leakage etc.</li>
+</ol>
+
+<p>Security controls on an example of a stolen laptop with sensitive data being
+stored in plain text:</p>
+
+<ol>
+<li><code>Select</code> -&gt; e.g.: whole-disk encryption, boot sector encryption and
+pre-boot anuthentication</li>
+<li><code>Implement</code> -&gt; install LUKS whole-disk encryption</li>
+<li><code>Assess</code> -&gt; check if disk encyption is working and data is accessible</li>
+<li><code>Monitor</code> -&gt; monitor for LUKS security updates, bugs, vulnerabilities</li>
+</ol>
+
+<h1 id="security-vs-privacy-vs-anonymity">Security vs Privacy vs Anonymity</h1>
+
+<blockquote>
+<p>Privacy isn&rsquo;t about hiding something. It&rsquo;s about being able to control how we
+present ourselves to the world. It&rsquo;s about maintaining a public face while at
+the same time being permitted privated thoughts and actions. It&rsquo;s about
+personal dignity. Bruce Schneier.</p>
+</blockquote>
+
+<h1 id="defence-in-depth">Defence in Depth</h1>
+
+<pre><code>-&gt;          |   -&gt;   |          -&gt;
+-&gt;  Prevent | Detect | Recover  -&gt;
+-&gt;          |   -&gt;   |          -&gt;
+</code></pre>
+
+<ul>
+<li>Prevention - encrypt filkes, and make sure keys &amp; passwords isn&rsquo;t available
+to unauthorised parties</li>
+<li>Detection - set up a <code>canary</code>, a delibarate trap, so when it&rsquo;s triggered then
+you&rsquo;re notified that something&rsquo;s wrong</li>
+<li>Recovery -&gt; backup, ablity to recover lost files or other asset</li>
+</ul>
+
+<h1 id="the-zero-trust-model">The zero trust model</h1>
+
+<p>Evaluate (tools, services) instead of trusting others.</p>
+
+<blockquote>
+<p>e.g.
+Given you&rsquo;d like to store files on Dropbox, you can encrypt your files before
+uploading them there, and keep the key in a separate safe location.
+This way you distribute the trust to the alternative backup locations.</p>
+</blockquote>
+
+<p><code>Cryptopn</code> &amp; <code>Encryptr</code> are examples of <code>zero knowledge</code> services.</p>
+
+<h1 id="know-your-enemy">Know Your Enemy</h1>
+
+<div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/2018/008/top-three-thing-you-do-to-stay-safe-online-experts-vs-non-experts.png" data-size="817x471" itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/2018/008/top-three-thing-you-do-to-stay-safe-online-experts-vs-non-experts-thumb.png"
+            alt="Top three thing you do to stay safe online? - experts vs non experts"
+            />
+    </a>
+    
+    <figcaption>
+        
+        
+        <p>
+        Top three thing you do to stay safe online? - experts vs non experts
+        
+        </p>
+        
+    </figcaption>
+    
+</figure>
+
+
+<div class="title"></div>
+</div>
+<link rel="stylesheet" href="/css/pswp-gallery.css" />
+
+
+<p>Source: <a href="https://www.pluralsight.com" target="_blank">Pluralsight</a></p>
+
+
+<link rel="stylesheet" href="/css/photoswipe.min.css" integrity="sha256-rlldBDOCxqXAE1fRopHG2SqpgWisq17/3Oleo+1CBKo=">
+<link rel="stylesheet" href="/css/photoswipe-default-skin.min.css" integrity="sha256-kQW7k22C0skJMSPxgEI2VHR0LPHeygi8SRYNvV/DB2w=">
+<script src="/js/photoswipe.min.js" integrity="sha256-iG1tiE5xJSJQhKdeOW4cPiSy+RTrnRKjjjrVQ0hexug="></script>
+<script src="/js/photoswipe-ui-default.min.js" integrity="sha256-XvSk6Opq7XZ8oUcx213MtikXtbl5bbe4Q9tr4+NJBCg="></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<script src="/js/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="></script>
+<script src="/js/pswp-init.js"></script>
+
+
+
+<blockquote>
+<p>Complexity is the enemy of security.</p>
+</blockquote>
+
+<h1 id="types-of-malware">Types of Malware</h1>
+
+<p>Below are strict taxonomies.</p>
+
+<ul>
+<li>Macro Virus -&gt; malicious code embeded in various documents written in various
+macro languages, like VBS</li>
+<li>Stealth Virus -&gt; one that hides the modifications it made, and fools
+antivirus by intercepting its requests to OS, so that it thinks there&rsquo;s no
+issue.</li>
+<li>Polymorphic Virus -&gt; one that creates various copies of itself, which
+frequently are different from each other and thus it&rsquo;s harder to detect</li>
+<li>Self-garbling -&gt; hide from AntiVirus software by modying tis code</li>
+<li>Bots &amp; Zombies -&gt; hacked devices under a control of a botnet C&amp;C</li>
+<li>Worms -&gt; virus that spread from machine to machine</li>
+<li>Rootkits -&gt; embeded to the OS or bootsector and can hide its existence
+completely</li>
+<li>Firmware Rootkit -&gt; one that resides in your hardware&rsquo;s firmware</li>
+<li>Keyloggers -&gt; log your key strokes</li>
+<li>Trojan horses -&gt; a program that appears and behave as one thing but at the
+same time it&rsquo;s also a malware</li>
+<li>RAT (Remote Access Tool) -&gt; provide back-door access to your system e.g.:
+<code>Snakerat</code></li>
+<li>Ransomware -&gt; usually a malware that encrypts your files, and you usually
+have to pay some ransom to get the decryption key (or not)</li>
+<li>Malvertisement -&gt; online ad that is infected with virus/malware, frequently
+hidden behind a chain of advenrtisement networks</li>
+<li>Drive-by Attack -&gt; visiting a compromised website which serves you a
+malicious content</li>
+<li>Spyware -&gt; gather information on you and send it to the hackers/criminals</li>
+<li>Adware -&gt; hijacks your default search engine, displays ads in your browser
+(sometimes called as browser-hijacking)</li>
+<li>Scareware -&gt; a type a social engineering attack, which tries to trick user
+into believing into a threat which isn&rsquo;t real, like fake viruses</li>
+<li>PUP (Potentially Unwanted Programs) -&gt; it&rsquo;a catch-all term for programs that
+you potentially don&rsquo;t want, frequently are bundled in with the software.</li>
+</ul>
+
+<h1 id="phishing">Phishing</h1>
+
+<p>Trick a person into clicking on a link or executing malware in some way.
+It might be an attempt to compromise device security and open the doors for
+further malicious activity. It&rsquo;s a form of social engineering.</p>
+
+<p>Roughly 30% of poeple get fooled by this kind of attacks.</p>
+
+<p>Spearphining -&gt; a targetted (personalised) phishing attack.</p>
+
+<ul>
+<li>subdomain &amp; missspelt domains</li>
+<li>IDN homograph attacks</li>
+<li>Hidden URLs</li>
+<li>Left-to-Right tricks</li>
+</ul>
+
+<h1 id="spam-scams-social-engineering">Spam, Scams &amp; Social engineering</h1>
+
+<p>CHECK -&gt; AV Test spam origin map
+CHECK -&gt; consumerfraudreporting.org
+CHECK -&gt; actionfraud.police.uk/types_of_fraud</p>
+
+<ul>
+<li>lottery</li>
+<li>fake check payments</li>
+<li>computer performance scans / fix non-existing computer problems</li>
+<li>refund / recovery scams</li>
+<li>scholarship</li>
+<li>online dating scams (claim to need some money in emergency)</li>
+<li>facebook fake friend scams</li>
+</ul>
+
+<h1 id="doxing">Doxing</h1>
+
+<ul>
+<li>Doxing -&gt; find personal &amp; private information to cause embarassment, discredit,
+extort, coerse, harras and cause the problems to the victim.</li>
+</ul>
+
+<p><strong>Five Eyes:</strong></p>
+
+<ol>
+<li>Australia</li>
+<li>Canada</li>
+<li>New Zealnd</li>
+<li>UK</li>
+<li>USA</li>
+</ol>
+
+<p><strong>Nine Eyes:</strong></p>
+
+<ol>
+<li>Denmark</li>
+<li>France</li>
+<li>Netherlands</li>
+<li>Norway</li>
+</ol>
+
+<p><strong>Fourteen Eyes:</strong></p>
+
+<ol>
+<li>Belgium</li>
+<li>Germany</li>
+<li>Italy</li>
+<li>Spain</li>
+<li>Sweden</li>
+</ol>
+
+<p>Example programs used by those countries to exchange intelligence data:
+Carnival, Echelon, Narrows Inside</p>
+
+<p>Interesting devices:</p>
+
+<ul>
+<li>retro-reflectors (audio, keyboards, video cables) -&gt; mostly passive devices,
+use almost no power but can reflect signals when they&rsquo;re exposed at
+specific directed signal beam</li>
+</ul>
+
+<h1 id="encryption">Encryption</h1>
+
+<p><strong>Asymetric</strong>:</p>
+
+<ul>
+<li>Bettery key distribution</li>
+<li>Scalability</li>
+<li>Authentication and nonrepudation</li>
+<li>Slow</li>
+<li>Mathematically intensive</li>
+</ul>
+
+<p><strong>Symmetric</strong>:</p>
+
+<ul>
+<li>Fast</li>
+<li>Strong</li>
+</ul>
+
+<p><strong>SSL != TLS</strong></p>
+
+<ul>
+<li><code>SSL</code> -&gt; is older than <code>TLS</code>, and has security vulnerabilities.</li>
+</ul>
+
+<p>Read more on TLS on <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">Wiki</a></p>
+
+<p><code>TLS 1+</code> is recommended on server side.</p>
+
+<h1 id="cipher-suite-from-mozilla">Cipher suite from Mozilla:</h1>
+
+<p><a href="https://wiki.mozilla.org/Security/Server_Side_TLS" target="_blank">Server Side TLS</a></p>
+
+<p><a href="https://mozilla.github.io/server-side-tls/ssl-config-generator/" target="_blank">ssl-config-generator</a></p>
+
+<p><strong>Various Tools:</strong></p>
+
+<ul>
+<li>arpwatch</li>
+<li>sniffdet -&gt; a set of tests for remote sniffers detection in TCP/IP networks.</li>
+<li><code>ssllabs.com</code> -&gt; test server ssl config</li>
+</ul>
+
+<h1 id="end-2-end-encryption-e2ee">End-2-End-Encryption E2EE</h1>
+
+<ul>
+<li><code>ZRTP</code> - Z Real Time Protocol</li>
+<li><code>OTR</code> - Off The Record</li>
+<li><code>SSL/TLS</code></li>
+<li><code>PGP</code></li>
+</ul>
+
+<p><strong>Notes</strong></p>
+
+<ul>
+<li>Read article &ldquo;Security Pitfals in Cryptography&rdquo; by Bruce Schneier</li>
+<li>have a look at the top 50 products by total number of Disctinct
+Vulnerabilities on cvedetails.com</li>
+<li>Buying into the bias: why vulnerability statistics suck<br /></li>
+<li>check → tosdr.org for info on privacy statements summaries</li>
+<li>check → eff.org who has you back govenrment data requests</li>
+<li>check → bugmenot.com generate disposable accounts for you</li>
+<li>receive-sms-online.info → disposable sms accounts</li>
+<li>check → parsemail.org</li>
+<li>search for thunderbird plugin that allows to check attachments via virustotal</li>
+<li>prxbx.com/email → a list of email providers grouped by privacy concerns</li>
+<li>spoon.net/browsers → browser sandbox</li>
+<li>bufferzone.com → windows commercial app sandbox</li>
+<li>shadowndefender.com -&gt; windows only sandbox-like tool</li>
+<li>faronics.com <code>deep freeze</code> → restores system to given snapshot after reboot</li>
+<li>apparmor → specify what files programms can access</li>
+<li>sandfox → sandbox for linux</li>
+<li>selinux →</li>
+<li>sandbox → a commnad installed on some systems</li>
+<li>firejail → sanbox</li>
+<li>trustedbsd.org →</li>
+<li>whonix → a distro that uses Tor to connect to internet</li>
+<li>qubes os</li>
+<li>techmonkeys.co.uk -&gt; check if your router is in the DB of hacked routers</li>
+<li>Qualys FreeScan -&gt; apparently v.good online vulnerability scanner</li>
+<li>adeptus-mechanicus.com -&gt; reports on password hashes etc</li>
+<li>hashcat.net</li>
+<li>crackstation.net -&gt; pay for cracking passwords</li>
+<li><code>corskreew</code> -&gt; tool for tunneling SSH through HTTP proxies
+
+<ul>
+<li><code>ssh -p 22 -o 'ProxyCommand corkscrew -p 192.168.1.1 &lt;PROXY_PORT&gt; 
+%d %p ' -D 8080 user@yourcorkscrew.host</code></li>
+</ul></li>
+<li><code>proxytunnel</code> -&gt; ssh tunnel
+
+<ul>
+<li><code>ssh -p 22 -o 'ProxyCommand proxytunnel -p 192.168.1.1:&lt;PROXY_PORT&gt; -d
+%d:%p' -D 8080 user@yourproxytunnel.host</code></li>
+<li><code>ssh -p 443 -o 'ProxyCommand proxytunnel -p 192.168.1.1:&lt;PROXY_PORT&gt; -d
+%d:%p' -H &quot;&lt;Browser User agent&gt;&quot; -H &quot;Host %h&quot; -H &quot;Referer: %h&quot; 
+-P username:password' -D 8080 user@yourproxytunnel.host</code></li>
+</ul></li>
+<li>you can create host aliases with those commands in <code>.ssh/config</code> file</li>
+<li><code>httptunnel</code> -&gt; needs to be installed on client and host (win + linux)</li>
+<li><code>sslscan</code> -&gt; a CLI tool to check quality of SSL/TLS cert config</li>
+<li><code>nslookup -type=mx gmail.com</code> → discover DNS MX record (Email Exchange)</li>
+<li>checktls.com -&gt; handy site to check certificates</li>
+</ul>
+
+<p>How to protect against social attacks:</p>
+
+<ul>
+<li>view email as text</li>
+<li>use things like <code>ublock</code></li>
+<li>isolation and compartmentalisation</li>
+<li>use virtual machines to open suspicious files, emails etc</li>
+<li>use application execution controls</li>
+<li>sandboxes</li>
+<li>use common-sense</li>
+</ul>
+
+<p>cipher suite:
+→ good choice : elipctical curve + DH</p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/security/'>security</a>, <a class='category' href='/categories/learning/'>learning</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/notes/'>notes</a>, <a class='tag' href='/tags/security/'>security</a>, <a class='tag' href='/tags/pentesting/'>pentesting</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/posts/2018/vlc-auto-screen-scale-factor-issue/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Fix &#39;X11 connection broke&#39; issue in QT based GUI applications like VLC</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/posts/2018/tweaking-intel-graphics-on-linux/'>
+        <span class='screen-reader-text'>Next post: </span>Tweaking Intel graphics on Linux<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/kowalcj0' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/januszkowalczyk' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2017-2019 kowalcj0 </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.00df04b7.js'></script>
+
+</body>
+
+</html>
+

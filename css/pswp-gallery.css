@@ -1,6 +1,5 @@
 .gallery {
   float: none;
-  border: 1px solid #FFCD00;
   padding: 10px;
   margin: 0px 0px 10px 10px;
 }
@@ -22,7 +21,7 @@
   display: none;
 }
 figcaption {
-  font-size: 75%;
+  font-size: 100%;
 }
 
 img[itemprop="thumbnail"] {

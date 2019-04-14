@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Notes from a video course'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Ethical Hacking - Wireless Networks - notes • Home'>
+<meta property='og:description' content='Notes from a video course'>
+<meta property='og:url' content='https://kowalcj0.github.io/posts/2018/ethical-hacking-wireless-networks-notes/'>
+<meta property='og:site_name' content='Home'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='posts'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='wifi'><meta property='article:published_time' content='2018-05-14T19:35:30&#43;01:00'/><meta property='article:modified_time' content='2018-05-14T19:35:30&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
+
+<meta name="generator" content="Hugo 0.55.1" />
+
+  <title>Ethical Hacking - Wireless Networks - notes • Home</title>
+  <link rel='canonical' href='https://kowalcj0.github.io/posts/2018/ethical-hacking-wireless-networks-notes/'>
+  
+  
+  <link rel='icon' href='/img/favicon144.ico'>
+<link rel='stylesheet' href='/assets/css/main.dd2efce5.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+  
+
+</head>
+<body class='page type-posts has-cover has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/img/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Free yourself, help to free me, free us
+    </h2>
+    <div class='desc'>
+    notes, scribbles, thoughts etc.
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>Search</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/tags/1959/' style='font-size:1em'>1959</a>
+      </li><li>
+        <a href='/tags/android/' style='font-size:1em'>android</a>
+      </li><li>
+        <a href='/tags/bof/' style='font-size:1em'>BoF</a>
+      </li><li>
+        <a href='/tags/criterion-collection/' style='font-size:1em'>criterion collection</a>
+      </li><li>
+        <a href='/tags/dbus/' style='font-size:1em'>dbus</a>
+      </li><li>
+        <a href='/tags/dos/' style='font-size:1em'>DoS</a>
+      </li><li>
+        <a href='/tags/drama/' style='font-size:1em'>drama</a>
+      </li><li>
+        <a href='/tags/driver/' style='font-size:1em'>driver</a>
+      </li><li>
+        <a href='/tags/enumeration/' style='font-size:1em'>enumeration</a>
+      </li><li>
+        <a href='/tags/ethical-hacking/' style='font-size:1.8571428571428572em'>ethical hacking</a>
+      </li><li>
+        <a href='/tags/fedora-27/' style='font-size:1em'>fedora 27</a>
+      </li><li>
+        <a href='/tags/fun/' style='font-size:1em'>fun</a>
+      </li><li>
+        <a href='/tags/gnome-3.26/' style='font-size:1em'>gnome 3.26</a>
+      </li><li>
+        <a href='/tags/hugo/' style='font-size:1em'>hugo</a>
+      </li><li>
+        <a href='/tags/intel/' style='font-size:1em'>intel</a>
+      </li><li>
+        <a href='/tags/ios/' style='font-size:1em'>iOS</a>
+      </li><li>
+        <a href='/tags/japanese/' style='font-size:1em'>japanese</a>
+      </li><li>
+        <a href='/tags/kobayashi/' style='font-size:1em'>kobayashi</a>
+      </li><li>
+        <a href='/tags/mobile/' style='font-size:1em'>mobile</a>
+      </li><li>
+        <a href='/tags/mpv/' style='font-size:1em'>mpv</a>
+      </li><li>
+        <a href='/tags/mutillidae/' style='font-size:1em'>mutillidae</a>
+      </li><li>
+        <a href='/tags/notes/' style='font-size:1.8571428571428572em'>notes</a>
+      </li><li>
+        <a href='/tags/owasp/' style='font-size:1em'>owasp</a>
+      </li><li>
+        <a href='/tags/pentesting/' style='font-size:2em'>pentesting</a>
+      </li><li>
+        <a href='/tags/python/' style='font-size:1em'>python</a>
+      </li><li>
+        <a href='/tags/qt/' style='font-size:1em'>qt</a>
+      </li><li>
+        <a href='/tags/root/' style='font-size:1em'>root</a>
+      </li><li>
+        <a href='/tags/security/' style='font-size:2em'>security</a>
+      </li><li>
+        <a href='/tags/seo/' style='font-size:1em'>seo</a>
+      </li><li>
+        <a href='/tags/sniffers/' style='font-size:1em'>sniffers</a>
+      </li><li>
+        <a href='/tags/syntax/' style='font-size:1em'>syntax</a>
+      </li><li>
+        <a href='/tags/vlc/' style='font-size:1em'>vlc</a>
+      </li><li>
+        <a href='/tags/war/' style='font-size:1em'>war</a>
+      </li><li>
+        <a href='/tags/wayland/' style='font-size:1em'>wayland</a>
+      </li><li>
+        <a href='/tags/wifi/' style='font-size:1em'>wifi</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='https://github.com/kowalcj0/kowalcj0.github.io'>Repo</a>
+      </li></ul>
+  </div>
+</nav><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/posts/'>Posts</a></li><li><span>Ethical Hacking - Wireless Networks - notes</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Home</p><p class='desc site-desc'>notes, scribbles, thoughts etc.</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Ethical Hacking - Wireless Networks - notes</h1>
+      
+<p class='desc'>Notes from a video course</p>
+
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-05-14T19:35:30&#43;01:00'>2018-05-14</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+7 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  <div class='entry-cover'>
+  <figure class='container cover-normal'>
+    <img src='/img/2018/004/ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org'/>
+    
+      
+      <figcaption class='container'>
+        <span>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg" target="_blank">wikimedia.org</a></span>
+      </figcaption>
+      
+    
+  </figure>
+</div>
+  
+
+  <div class='container entry-content'>
+  
+
+<ul>
+<li>Cain - wireless scanner, cracker etc.</li>
+</ul>
+
+<h1 id="wep">WEP</h1>
+
+<ul>
+<li>build to prevent eavesdropping</li>
+<li>ensures integrity of transmitted data</li>
+<li>is a lightweight solution (does not require a lot of CPU power)</li>
+<li>is not very secure as it doesn&rsquo;t allow to distribute keys at scale</li>
+<li>uses weak encryption</li>
+<li>key recovery is possible through sniffing!!!</li>
+<li>uses 40-bit keys &amp; 24-bit initialization vectors (IVs too small)</li>
+<li>frequently used poor implementations of random number generators</li>
+<li>prone to DoS attacks through use of <code>associate</code> &amp; <code>disassociate</code> messages</li>
+</ul>
+
+<h1 id="wpa">WPA</h1>
+
+<ul>
+<li>Wi-Fi Protected Access (WPA) was introduced to replace <code>WEP</code></li>
+<li>uses <code>TKIP</code> (Temporal Key Integrity Protocol) which changes the key for
+every frame that is transmitted.</li>
+<li>supports <code>AES</code></li>
+</ul>
+
+<h1 id="wpa2">WPA2</h1>
+
+<ul>
+<li>introduced more security improvements</li>
+<li>AES is used by default</li>
+<li>WPA2 Personal - uses shared keys</li>
+<li>WPA2 Enterprise - supports RADIUS</li>
+</ul>
+
+<h1 id="wps-wireless-protected-setup">WPS - Wireless Protected Setup</h1>
+
+<ul>
+<li>Uses Wi-Fi Simple Configuration (WSC) protocol</li>
+<li>vendors can submit devices for WPS Certification to Wi-Fi Alliance</li>
+<li>Allows for automatic exchange of keying information</li>
+<li>Client picks the network he wants to connect, when prompted for the passw
+then you press the <code>WPS</code> button on the router and devices automagically
+exhange the keys.</li>
+<li><code>WPS</code> enabled devices should properly implement mandatory <code>WPS PIN</code> feature
+(which uses a randomly generated code in the router, which you should
+provide when connecting to it) but it&rsquo;s rarely used.</li>
+<li><code>WSC Enrollments Process</code> - devices that wants to connect is called <code>enrolee</code>
+
+<ul>
+<li><code>Enrollee</code> becomes a member when enrolled</li>
+<li><code>Registrar</code> has an authority to issue credentials and it can be
+integrated into the access point itself.</li>
+<li>the registration process (enrolment) takes places in <code>2-minute window</code>
+called <code>the walk time</code></li>
+<li>the registration process can be initiated from the device or the access
+point (typically by pressing a button on the access point)</li>
+<li>it can also be triggerred automatically in order to support
+auto-reconnect feature</li>
+</ul></li>
+</ul>
+
+<p><strong>TODO</strong>:
+FIND pictures about WPS exchange (EAPOL) etc.</p>
+
+<h2 id="brute-forcing-the-wps-pin">Brute forcing the WPS PIN</h2>
+
+<ul>
+<li>8 digits long (stored as 2 sets of 4 digits)</li>
+<li>each set can be brute forced independently</li>
+<li>Eight digit is a checksum of the first seven</li>
+<li>Total combinations is <code>10⁴ + 10³ ≈ 11000</code></li>
+<li>If <code>WPS</code> is properly implemented then it should lock down after multiple
+failed attempts and/or should introduce suggested 60-seconds delay after
+three failed attempts. It&rsquo;s called <code>WPS rate limiting</code></li>
+</ul>
+
+<h2 id="extracting-wep-passwords">Extracting WEP passwords</h2>
+
+<ul>
+<li>can be done with <code>wified</code> &amp; <code>air-crack</code></li>
+<li>it uses attacks like:
+
+<ul>
+<li><code>arp-replay</code></li>
+<li><code>chop-chop</code></li>
+<li>fragmentations attacks</li>
+<li><code>caffe-latte</code></li>
+</ul></li>
+<li>once it succeeds it shows the key in hex</li>
+</ul>
+
+<h2 id="extracting-network-password-via-wps">Extracting network password via WPS</h2>
+
+<ul>
+<li>will use tool called <code>reaver</code>:</li>
+<li><code>airmon-ng start wlan0</code> - start the interface in monitoring mode</li>
+<li><code>wash -i wlan0mon</code> - identify networks that use WPS and find it BSSID</li>
+<li><code>reaver -i wlan0mon -b enter:target:BSSID -c 1 -vv</code></li>
+</ul>
+
+<h2 id="cracking-wpa-password-with-wifite-aircrack-ng">Cracking WPA password with WiFite &amp; Aircrack NG</h2>
+
+<p><code>wifite</code> checks for clients connected to target network, then de-authenticates
+those users, forcing them to re-authenticate. It then captures the handshake
+packets for further analysis with <code>aircrack ng</code>.</p>
+
+<ul>
+<li><code>airmon-ng start wlan0</code> - start the interface in monitoring mode</li>
+<li><code>wifite --mac --aircrack</code> - run <code>wifite</code> with random mac address, once
+handshake sequence is captured it saves it in <code>cap</code> file</li>
+<li><code>aircrack-ng *.cap -w your_dictionary.txt</code> - try to decrypt the password with
+a dictionary</li>
+</ul>
+
+<h2 id="using-pixiedust-to-recover-wps-pin">Using PixieDust to recover WPS PIN</h2>
+
+<p><code>PixieDust</code> needs only one handshare sequence from <code>WPS</code> negotiation, but it
+works only if the WPS implementation uses low quality RNG which are quite
+frently used by major router vendors. Sometimes the <code>nonce</code> used to generate
+the WPS PIN is set to <code>0</code>!!!</p>
+
+<ul>
+<li><code>airmon-ng start wlan0</code> - start the interface in monitoring mode</li>
+<li><code>wash -i wlan0mon</code> - identify networks that use WPS and find it BSSID</li>
+<li><code>reaver -i wlan0mon -b enter:target:BSSID -c 10 -K 1 -vv</code> - run <code>reaver</code> with
+<code>-K</code> to use <code>PixieDust</code> like method in order to decrypt the WPS PIN.</li>
+<li>once WPS PIN is recovered then <code>reaver</code> will recover <code>WPA PSK</code></li>
+</ul>
+
+<h1 id="evil-twin">Evil Twin</h1>
+
+<p>Is a hotspot that has the same <code>SSID</code>, <code>BSSID</code> as the target network and
+works on the same channel but it has stronger signal.
+It might de-auth client from the legit network in order to force them to
+connect to itself (and providing the key)</p>
+
+<p><code>Airbase ng</code> can be used to create an <code>evel twin</code> hotspot.</p>
+
+<ul>
+<li><code>airmon-ng start wlan0</code> - start the interface in monitoring mode</li>
+<li><code>airodump-ng wlan0mon</code> - list nearby access points and devices</li>
+<li><code>airbase-ng -a target-BSSID --essid target-SSID -c 1 wlan0mon</code> - set adapter
+to <code>evil twin</code> mode.
+
+<ul>
+<li>from now on, our wifi adpater will work as <code>MITM</code> and re-route traffic to
+the legitimate AP.</li>
+</ul></li>
+<li>now we can use e.g. Wireshark to monitor the traffic with filters like:
+
+<ul>
+<li><code>wlan.sa client-MAC == or wlan.ra == client.MAC</code></li>
+<li>we can see <code>802.11</code> packets with <code>WPA</code> encrypted traffic as <code>MITM</code></li>
+</ul></li>
+</ul>
+
+<p><code>WiFi Pineapple</code> adapters can be used for creating rogue access points and
+other forms of wifi hacking.</p>
+
+<h1 id="bluetooh">Bluetooh</h1>
+
+<ul>
+<li>Bluetooth operates in the 2.4GHz band</li>
+<li>it&rsquo;s defined in <code>IEEE 802.15.1</code> standard</li>
+<li>It can be used to create <code>Piconets</code> in one of two modes:
+
+<ul>
+<li>One server and one client</li>
+<li>or up to seven active clients (clients can&rsquo;t talk to each other but to
+server)</li>
+</ul></li>
+<li>Bluetooth Device address is a 48-bit number</li>
+<li>formed as xx:xx:xx:yy:yy:yy</li>
+<li>wheew <code>xx:xx:xx</code> is the fixed Vendor ID (Organisation Unique ID [UOI])</li>
+<li>and <code>yy:yy:yy</code> is the unique device ID</li>
+<li>device also has a friendly name</li>
+<li>there are various classes of BT devices:
+
+<ul>
+<li><code>Class 1</code> - up to 100m range</li>
+<li><code>Class 2</code> - up to 10m range</li>
+<li><code>Class 3</code> - up to 10cm range</li>
+</ul></li>
+<li>Bluetooth can transmit real-time streams audio and video or transfer files</li>
+<li>Bluetooth scanning is called an <code>inquiry</code></li>
+<li>Device can automatically bond when they were previously paired</li>
+<li>Pairing - may require confiriming 6-digit number</li>
+<li>Bluetooth can operated in one or more profiles:
+
+<ul>
+<li><code>SPP</code> - Serial Port Profile</li>
+<li><code>HID</code> - Human Interface Device Profile</li>
+<li><code>HFP</code> - Hands-free Profile</li>
+<li><code>A2DP</code> - Advanced Audio Distribution Profile</li>
+<li><code>AVRCP</code> - Audio/Video Remote Control Profile</li>
+<li><code>SDP</code> - Service Discovery Protocol allows BT devices to identify sercices
+offered by other devices, especially the profiles of it. <code>SDP</code> offers
+direct support for searching for specific SSIDs and for browsing
+services.</li>
+</ul></li>
+</ul>
+
+<h2 id="bluetooth-stack">Bluetooth stack</h2>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">⌜⎺⎺⎺⎺⎺⎺⌝ ⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝
+⎸     ⎹ ⎸          Applications                  ⎹ 
+⎸     ⎹ ⌞_________________________________________⌟
+⎸     ⎹ ⌜⎺⎺⎺⎺⎺⎺⎺⎺⌝ ⌜⎺⎺⎺⎺⎺⎺⎺⌝ ⌜⎺⎺⎺⎺⎺⎺⎺⎺⌝  ⌜⎺⎺⎺⎺⎺⎺⎺⎺⌝
+⎸     ⎹ ⎸ TCP/IP⎹ ⎸ HCI  ⎹ ⎸ RFCOMM⎹  ⎸       ⎹
+⎸     ⎹ ⌞________⌟ ⌞_______⌟ ⌞________⌟  ⎸       ⎹
+⎸     ⎹ ⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝ ⎸       ⎹
+⎸Audio⎹ ⎸          DATA               ⎹ ⎸Control⎹
+⎸     ⎹ ⌞______________________________⌟ ⎸       ⎹
+⎸     ⎹ ⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝ ⎸       ⎹
+⎸     ⎹ ⎸         L2CAP               ⎹ ⎸       ⎹
+⎸     ⎹ ⌞______________________________⌟ ⌞________⌟
+⎸     ⎹ ⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝
+⎸     ⎹ ⎸      Link Manager                      ⎹ 
+⌞______⌟ ⌞_________________________________________⌟
+⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝
+⎸                  Driver                         ⎹ 
+⌞__________________________________________________⌟
+⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝
+⎸                 Baseband                        ⎹ 
+⌞__________________________________________________⌟
+⌜⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⌝
+⎸                  Radio                          ⎹ 
+⌞__________________________________________________⌟</code></pre></div>
+<h2 id="bluetooh-tools">Bluetooh tools</h2>
+
+<ul>
+<li><code>hciconfig</code> - display bluetooth interface</li>
+<li><code>hcitool scan --info --oui</code> → scan for bluetooth devices
+
+<ul>
+<li><code>--info</code> enumerates the device</li>
+<li><code>--oui</code> tells the type of the device</li>
+</ul></li>
+<li><code>bluelog -l</code> → another tool to discover bluetooth devices</li>
+<li><code>btscanner</code> → -||-</li>
+<li><code>l2ping device:MAC</code> - checks if device is active (visible to other devices)
+
+<ul>
+<li>if device is active it will response like with reugular <code>ping</code> command</li>
+<li>if the device is set not to be visible to other devices then l2ping won&rsquo;t
+be able to find it.</li>
+</ul></li>
+<li><code>redfang</code> allows for brute-force search of bluetooth device which are active
+but set not to be visible to other devices.
+
+<ul>
+<li><code>fang -s -r 0CD6BD46400-0CD6BD464FF</code> → scan selected bluetooth device range</li>
+<li>scanning the whole device range can take a lof of time</li>
+<li>to shorten the discovery time we can find scan for the device&rsquo;s wifi MAC
+address as it&rsquo;s frequently close to the bluetooth device ID.</li>
+<li>so first scan for wifi devices:</li>
+<li><code>airmon-ng start wlan0</code> - start the interface in monitoring mode</li>
+<li><code>airodump-ng wlan0mon</code> - list nearby devices</li>
+<li>once we have the device mac address, then we can use it as the starting
+point for scanning for hidden bluetooth devices with <code>redfang</code></li>
+</ul></li>
+</ul>
+
+<h1 id="other-tools">Other tools</h1>
+
+<ul>
+<li><code>Fern Wifi Cracker</code> - it&rsquo;s basically a GUI for aircrack-ng</li>
+<li><code>inSSIDer 4</code> - a shareware wifi scanner (there are free android apps that are
+better than it)</li>
+<li><code>ACRYLIC WiFi analyser</code> - pretty advanced wifi scanner with options like:
+
+<ul>
+<li>wifi coverage heatmap</li>
+<li>brute force passwords with the use of a dictionary</li>
+<li>packet capturing</li>
+<li>scripting features for WPS PIN recovery etc.</li>
+<li>it seems to be a great tool for people frequently working with wifi
+security testing.</li>
+<li>works with some IoT devices</li>
+</ul></li>
+<li><a href="www.ekahau.com" target="_blank">akahau</a> - wifi heatmapper</li>
+<li><a href="https://github.com/RIEI/Vistumbler" target="_blank">ViStumbler</a> - windows wifi scanner which
+integrates with gps signal. so we can map wifis to locations</li>
+<li><a href="https://live.wifidb.net" target="_blank">Vistumbler WiFiDB</a> - a DB of WiFi with GPS coords.</li>
+<li><a href="www.tamos.com" target="_blank">CommView for WiFi</a> - advanced wifi monitoring tool</li>
+</ul>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/security/'>security</a>, <a class='category' href='/categories/learning/'>learning</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/notes/'>notes</a>, <a class='tag' href='/tags/security/'>security</a>, <a class='tag' href='/tags/pentesting/'>pentesting</a>, <a class='tag' href='/tags/wifi/'>wifi</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/posts/2018/ethical-hacking-mobile-devices-and-platforms/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Ethical Hacking - Mobile Devices and Platforms - notes</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/posts/2018/stop-using-url-shortners/'>
+        <span class='screen-reader-text'>Next post: </span>Stop using URL shorteners<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/kowalcj0' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/januszkowalczyk' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2017-2019 kowalcj0 </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.00df04b7.js'></script>
+
+</body>
+
+</html>
+

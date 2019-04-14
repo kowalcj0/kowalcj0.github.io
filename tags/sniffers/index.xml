@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sniffers on kowalcj0</title>
+    <title>sniffers on Home</title>
     <link>https://kowalcj0.github.io/tags/sniffers/</link>
-    <description>Recent content in Sniffers on kowalcj0</description>
+    <description>Recent content in sniffers on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 05 Feb 2018 09:22:50 +0100</lastBuildDate>
     
@@ -12,10 +12,10 @@
     
     <item>
       <title>Ethical Hacking - Sniffers - Notes</title>
-      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</link>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hackin-sniffers-course-notes/</link>
       <pubDate>Mon, 05 Feb 2018 09:22:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-sniffers-course-notes/</guid>
       <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Sniffers&amp;rdquo;.
 Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
 Network admins should monitor network traffic for few minutes a day.

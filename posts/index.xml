@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Home</title>
+    <link>https://kowalcj0.github.io/posts/</link>
+    <description>Recent content in Posts on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 20 Aug 2018 18:41:50 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stop using URL shorteners</title>
+      <link>https://kowalcj0.github.io/posts/2018/stop-using-url-shortners/</link>
+      <pubDate>Mon, 20 Aug 2018 18:41:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/stop-using-url-shortners/</guid>
+      <description>Why do people use URL shorteners?
+They&amp;rsquo;re simply unreliable and bad for privacy.
+I&amp;rsquo;ve already encountered quite a few dead short URLs because the URL shortener service was closed down and it was rather painfull waste of time to find the original link.
+They&amp;rsquo;re bad for privacy because the shortener service knows what are you browsing.
+Why would give away such important meta data about your readers to someone else?</description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking - Wireless Networks - notes</title>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hacking-wireless-networks-notes/</link>
+      <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-wireless-networks-notes/</guid>
+      <description>Cain - wireless scanner, cracker etc.  WEP  build to prevent eavesdropping ensures integrity of transmitted data is a lightweight solution (does not require a lot of CPU power) is not very secure as it doesn&amp;rsquo;t allow to distribute keys at scale uses weak encryption key recovery is possible through sniffing!!! uses 40-bit keys &amp;amp; 24-bit initialization vectors (IVs too small) frequently used poor implementations of random number generators prone to DoS attacks through use of associate &amp;amp; disassociate messages  WPA  Wi-Fi Protected Access (WPA) was introduced to replace WEP uses TKIP (Temporal Key Integrity Protocol) which changes the key for every frame that is transmitted.</description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking - Mobile Devices and Platforms - notes</title>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hacking-mobile-devices-and-platforms/</link>
+      <pubDate>Sat, 28 Apr 2018 10:29:15 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-mobile-devices-and-platforms/</guid>
+      <description>Good sources of knowledge:
+ OWASP Testing guide - book OWASP Pinning cheat sheet  Android Application  Executes as:  application service  Helpers  Broadcast receiver (allows app to register for specifi events which will be then passed to it for action) content provider (it interfaces between app and file storage and provide sql-like interface to read/write/modify/delete data). SQLite is a common DB service access via content provider.</description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking - Denial of Service - notes</title>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hacking-denial-of-service-attacks/</link>
+      <pubDate>Mon, 23 Apr 2018 19:19:15 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-denial-of-service-attacks/</guid>
+      <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Denial of Service&amp;rdquo; by Troy Hunt.
+HTTP flood attack  HTTP flood attack  it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;) can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;)  Attack effectives can be amplified via certain app features:  They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth  Requests can adhere to legitimate patterns which makes defence difficult  TCP attacks These are the layer 4 (OSI) attacks</description>
+    </item>
+    
+    <item>
+      <title>Play videoclip for currently playing song in mpv</title>
+      <link>https://kowalcj0.github.io/posts/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</link>
+      <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</guid>
+      <description>Short demo: Your browser does not support the video tag.  Requirements You&amp;rsquo;ll need:
+ python 3.x mpv video player music player that supports MPRIS2 D-Bus interface  mpd + mpDris2 deadbeef + mpris2-plugin  some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel [ddgr]()https://github.com/jarun/ddgr - a CLI client for DuckDuckGo  System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:
+sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packages Next step is to install python packages.</description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking - Buffer Overflow - notes</title>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hackin-buffer-iverflow/</link>
+      <pubDate>Tue, 20 Mar 2018 19:20:10 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-buffer-iverflow/</guid>
+      <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Buffer Overflows&amp;rdquo; by James Murray.
+Stack pointers Types of stack pointers:
+ SP → Stack Pointer  keeps track where the next element will be pushe to or poppef off of the stack  FP → Frame Pointer  points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed  BP → Base Pointer (different name for FP) IP → Instruction Pointer  points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
+    </item>
+    
+    <item>
+      <title>Tweaking Intel graphics on Linux</title>
+      <link>https://kowalcj0.github.io/posts/2018/tweaking-intel-graphics-on-linux/</link>
+      <pubDate>Thu, 15 Mar 2018 08:46:10 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/tweaking-intel-graphics-on-linux/</guid>
+      <description>get info about firmware
+modinfo i915 | grep ^fi List all driver parameters
+modinfo -p i915  If find the output of the above command confusing, as you can&amp;rsquo;t see the actual values of every parameter, then use:
+sudo grep -H &#39;&#39; /sys/module/i915//parameters/*  If you see error messages like this one:
+$ dmesg |tail [ 2360.475430] [drm] not enough stolen space for compressed buffer (need 4325376 bytes), disabling [ 2360.</description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking - Hacking Exposed - Notes</title>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hackin-hacking-exposed/</link>
+      <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-hacking-exposed/</guid>
+      <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Hacking Exposed&amp;rdquo; by Troy Hunt.
+Intro Questions to ask and answer when deciding on levels of security:
+ What is most confidential to you? What can&amp;rsquo;t you afford to lose? What is irreplaceable? What could cause the most damage? What might impact your reputation?  The answers to those question will specify your security assets that you will protect.</description>
+    </item>
+    
+    <item>
+      <title>Fix &#39;X11 connection broke&#39; issue in QT based GUI applications like VLC</title>
+      <link>https://kowalcj0.github.io/posts/2018/vlc-auto-screen-scale-factor-issue/</link>
+      <pubDate>Sun, 11 Feb 2018 22:40:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/vlc-auto-screen-scale-factor-issue/</guid>
+      <description>If you ever encountered error like this when starting vlc:
+$ vlc VLC media player 3.0.0-rc5 Vetinari (revision 3.0.0-rc5-0-gf53236af09) [0000560cfbe38410] main libvlc: Running vlc with the default interface. Use &amp;#39;cvlc&amp;#39; to use vlc without interface. The X11 connection broke: Maximum allowed requested length exceeded (code 4) XIO: fatal IO error 22 (Invalid argument) on X server &amp;#34;:0&amp;#34; after 447 requests (447 known processed) with 0 events remaining. QMutex: destroying locked mutex Then you can fix it by setting the QT_AUTO_SCREEN_SCALE_FACTOR env variable to 0, i.</description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking - Sniffers - Notes</title>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hackin-sniffers-course-notes/</link>
+      <pubDate>Mon, 05 Feb 2018 09:22:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-sniffers-course-notes/</guid>
+      <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Sniffers&amp;rdquo;.
+Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
+Network admins should monitor network traffic for few minutes a day.
+Phases of Packet Analysis  Gather Decode Display Analyze  Note:
+epan - Ethereal Packet Analyzer - it&amp;rsquo;s the packet-analyzing engine for Etheral/Wireshark.
+OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate contact with the network HTTP, FTP, SMTP DATA    6 Presentation Format data , optional compression and encapsulation  Data    5 Session Initiates, maintains and tear down session  Data    4 Transport Transport data TCP, UDP Segment Port   3 Network Addressing and routing IP, ICMP (ARP) Packet IP   2 Data link Frame formation Ethernet II (ARP) Frame MAC   1 Physical Data is transmitter on the media  Bits     IPv4 structure    IPv4 headers                                 Passive vs Active attacks Two types of attacks:</description>
+    </item>
+    
+    <item>
+      <title>Allow GUI applications run by root user to connect to X server</title>
+      <link>https://kowalcj0.github.io/posts/2018/allow-application-run-by-root-to-connect-to-x-server/</link>
+      <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/allow-application-run-by-root-to-connect-to-x-server/</guid>
+      <description>Recently I had an annoying problem running Wireshark as root user on Fedora 27 (Wayland + Gnome 3.26).
+I was getting following error:
+sudo wireshark QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &amp;#39;/tmp/runtime-root&amp;#39; QXcbConnection: Could not connect to display Aborted (core dumped) To fix this, you need to add root user to the list of users allowed to make connections to the X server.
+xhost si:localuser:root That&amp;rsquo;s it. From now on, you shouldn&amp;rsquo;t have any problems running GUI applications by root user.</description>
+    </item>
+    
+    <item>
+      <title>Ethical Hacking - Enumeration - Notes</title>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hackin-enumeration-course-notes/</link>
+      <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-enumeration-course-notes/</guid>
+      <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Enumeration&amp;rdquo;.
+Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&amp;rsquo;s own set of Protection Rings -&amp;gt; for more see wiki
+Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings: * Ring 0 - kernel * Ring 1 - executive * Ring 2 - supervisor * Ring 3 - user</description>
+    </item>
+    
+    <item>
+      <title>The Human Condition I: No Greater Love</title>
+      <link>https://kowalcj0.github.io/posts/2018/human-condition-i-no-greater-love/</link>
+      <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/human-condition-i-no-greater-love/</guid>
+      <description>Ratings &amp;amp; further reading Runtime: 208 minutes
+ IMDb 8.6 / 10 Rotten Tomatoes 89% - avg. rating 7.7 / 10 Wikipedia  Plot  A Japanese pacifist, unable to face the dire consequences of conscientious objection, is transformed by his attempts to compromise with the demands of war-time Japan. 1
+ My few cents What I like about this movie:
+ how barren lands of Manchuria turned into somehow beautiful landscapes is that the director with his camera managed not to be an obstrustive and unwanted actor inner strugle of the main character emotions  It&amp;rsquo;s great movie and in my opinion it deserves 9 out of 10 points.</description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting in Hugo</title>
+      <link>https://kowalcj0.github.io/posts/2018/syntax-highlighting-in-hugo/</link>
+      <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/syntax-highlighting-in-hugo/</guid>
+      <description>Bye bye Prism. Welcome Chroma. I just learnt that from version 0.28 Hugo comes with a built-in syntax highlighter called Chroma.
+It supports syntax highlighting with GitHub flavoured code fences!
+This is more than great!
+Because of this I could quickly get rid of a bit bulky Prism JS syntax highlighter.
+Enable Chroma Start by choosing your Chrome style from gallery available at https://help.farbox.com/pygments.html
+Then generate a css file:</description>
+    </item>
+    
+    <item>
+      <title>Learning web app secuiry with OWASP Mutillidae II - part 1</title>
+      <link>https://kowalcj0.github.io/posts/2018/mutillidae-ii-part-1/</link>
+      <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/mutillidae-ii-part-1/</guid>
+      <description>iNSTALLATION Run nowasp container:
+docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp Go to http://localhost:8888/, and build the DB.
+eXCERCICES: OWASP 2013 A1 - Injection (SQL) - SQLi Extract data - User info Submit the form with such query in the Name field:
+admin&amp;#39;-- AND &amp;#39;password=&amp;#39;password&amp;#39; Response should contain:
+Username=admin Password=adminpass Signature=g0t r00t? A1 - Injection (SQL) - SQLi Bypass authentication - Login You can use the same query in the Name field:</description>
+    </item>
+    
+  </channel>
+</rss>

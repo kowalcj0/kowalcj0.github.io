@@ -3,189 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kowalcj0.github.io/post/2018/ethical-hacking-wireless-networks-notes/</loc>
-    <lastmod>2018-05-14T19:35:30+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/ethical-hacking-mobile-devices-and-platforms/</loc>
-    <lastmod>2018-04-28T10:29:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/ethical-hacking-denial-of-service-attacks/</loc>
-    <lastmod>2018-04-23T19:19:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</loc>
-    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/ethical-hackin-buffer-iverflow/</loc>
-    <lastmod>2018-03-20T19:20:10+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/ethical-hackin-hacking-exposed/</loc>
-    <lastmod>2018-02-26T21:20:12+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/run-wireshark-as-root-on-gnome-3.26-fix-xdg-runtime-dir-error/</loc>
-    <lastmod>2018-02-11T23:08:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/vlc-auto-screen-scale-factor-issue/</loc>
-    <lastmod>2018-02-11T22:40:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</loc>
-    <lastmod>2018-02-05T09:22:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/allow-application-run-by-root-to-connect-to-x-server/</loc>
-    <lastmod>2018-02-04T13:46:30+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/ethical-hackin-enumeration-course-notes/</loc>
-    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/human-condition-i-no-greater-love/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/syntax-highlighting-in-hugo/</loc>
-    <lastmod>2018-01-27T22:28:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2018/mutillidae-ii-part-1/</loc>
-    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/2017/beginning-with-hugo/</loc>
-    <lastmod>2017-09-14T09:58:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/1959/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/android/</loc>
-    <lastmod>2018-04-28T10:29:15+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/authors/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/bof/</loc>
-    <lastmod>2018-03-20T19:20:10+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://kowalcj0.github.io/categories/</loc>
+    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/criterion-collection/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/</loc>
+    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/dbus/</loc>
-    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/posts/</loc>
+    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/dos/</loc>
-    <lastmod>2018-04-23T19:19:15+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/posts/2018/stop-using-url-shortners/</loc>
+    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/</loc>
+    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/drama/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/tags/seo/</loc>
+    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/enumeration/</loc>
-    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/categories/web/</loc>
+    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2018/ethical-hacking-wireless-networks-notes/</loc>
+    <lastmod>2018-05-14T19:35:30+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/tags/ethical-hacking/</loc>
     <lastmod>2018-05-14T19:35:30+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/fedora-27/</loc>
-    <lastmod>2018-02-04T13:46:30+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/fun/</loc>
-    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/gnome/</loc>
-    <lastmod>2018-02-11T23:08:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/gnome-3.26/</loc>
-    <lastmod>2018-02-04T13:46:30+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/hugo/</loc>
-    <lastmod>2018-01-27T22:28:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/ios/</loc>
-    <lastmod>2018-04-28T10:29:15+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/japanese/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/kobayashi/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,80 +61,14 @@
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/categories/linux/</loc>
-    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/mobile/</loc>
-    <lastmod>2018-04-28T10:29:15+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/categories/movies/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/mpv/</loc>
-    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/mutillidae/</loc>
-    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://kowalcj0.github.io/tags/notes/</loc>
     <lastmod>2018-05-14T19:35:30+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/owasp/</loc>
-    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://kowalcj0.github.io/tags/pentesting/</loc>
     <lastmod>2018-05-14T19:35:30+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/post/</loc>
-    <lastmod>2018-05-14T19:35:30+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/python/</loc>
-    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/qt/</loc>
-    <lastmod>2018-02-11T23:08:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/categories/random/</loc>
-    <lastmod>2018-01-27T22:28:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/root/</loc>
-    <lastmod>2018-02-04T13:46:30+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -286,20 +85,121 @@
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/sniffers/</loc>
-    <lastmod>2018-02-05T09:22:50+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/tags/wifi/</loc>
+    <lastmod>2018-05-14T19:35:30+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/syntax/</loc>
-    <lastmod>2018-01-27T22:28:50+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/posts/2018/ethical-hacking-mobile-devices-and-platforms/</loc>
+    <lastmod>2018-04-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/android/</loc>
+    <lastmod>2018-04-28T10:29:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/tags/ios/</loc>
+    <lastmod>2018-04-28T10:29:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/mobile/</loc>
+    <lastmod>2018-04-28T10:29:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/dos/</loc>
+    <lastmod>2018-04-23T19:19:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2018/ethical-hacking-denial-of-service-attacks/</loc>
+    <lastmod>2018-04-23T19:19:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</loc>
+    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/dbus/</loc>
+    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/fun/</loc>
+    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/categories/linux/</loc>
+    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/mpv/</loc>
+    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/python/</loc>
+    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/bof/</loc>
+    <lastmod>2018-03-20T19:20:10+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2018/ethical-hackin-buffer-iverflow/</loc>
+    <lastmod>2018-03-20T19:20:10+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2018/tweaking-intel-graphics-on-linux/</loc>
+    <lastmod>2018-03-15T08:46:10+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/driver/</loc>
+    <lastmod>2018-03-15T08:46:10+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/intel/</loc>
+    <lastmod>2018-03-15T08:46:10+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2018/ethical-hackin-hacking-exposed/</loc>
+    <lastmod>2018-02-26T21:20:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2018/vlc-auto-screen-scale-factor-issue/</loc>
+    <lastmod>2018-02-11T22:40:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/qt/</loc>
+    <lastmod>2018-02-11T22:40:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -310,38 +210,150 @@
   </url>
   
   <url>
+    <loc>https://kowalcj0.github.io/posts/2018/ethical-hackin-sniffers-course-notes/</loc>
+    <lastmod>2018-02-05T09:22:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/sniffers/</loc>
+    <lastmod>2018-02-05T09:22:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2018/allow-application-run-by-root-to-connect-to-x-server/</loc>
+    <lastmod>2018-02-04T13:46:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/fedora-27/</loc>
+    <lastmod>2018-02-04T13:46:30+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/gnome-3.26/</loc>
+    <lastmod>2018-02-04T13:46:30+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/root/</loc>
+    <lastmod>2018-02-04T13:46:30+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/wayland/</loc>
+    <lastmod>2018-02-04T13:46:30+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2018/ethical-hackin-enumeration-course-notes/</loc>
+    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/enumeration/</loc>
+    <lastmod>2018-02-02T19:20:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/1959/</loc>
+    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2018/human-condition-i-no-greater-love/</loc>
+    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/criterion-collection/</loc>
+    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/drama/</loc>
+    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/japanese/</loc>
+    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/kobayashi/</loc>
+    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/categories/movies/</loc>
+    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kowalcj0.github.io/tags/war/</loc>
     <lastmod>2018-01-29T10:40:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/wayland/</loc>
-    <lastmod>2018-02-11T23:08:50+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/posts/2018/syntax-highlighting-in-hugo/</loc>
+    <lastmod>2018-01-27T22:28:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/hugo/</loc>
+    <lastmod>2018-01-27T22:28:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/wifi/</loc>
-    <lastmod>2018-05-14T19:35:30+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/categories/random/</loc>
+    <lastmod>2018-01-27T22:28:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/wireshark/</loc>
-    <lastmod>2018-02-11T23:08:50+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/tags/syntax/</loc>
+    <lastmod>2018-01-27T22:28:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/wordpress/</loc>
-    <lastmod>2017-09-14T09:58:50+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/posts/2018/mutillidae-ii-part-1/</loc>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/mutillidae/</loc>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/</loc>
-    <lastmod>2018-05-14T19:35:30+01:00</lastmod>
+    <loc>https://kowalcj0.github.io/tags/owasp/</loc>
+    <lastmod>2018-01-23T14:41:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/authors/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/series/</loc>
     <priority>0</priority>
   </url>
   

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Random on kowalcj0</title>
+    <title>random on Home</title>
     <link>https://kowalcj0.github.io/categories/random/</link>
-    <description>Recent content in Random on kowalcj0</description>
+    <description>Recent content in random on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 27 Jan 2018 22:28:50 +0100</lastBuildDate>
     
@@ -12,25 +12,16 @@
     
     <item>
       <title>Syntax Highlighting in Hugo</title>
-      <link>https://kowalcj0.github.io/post/2018/syntax-highlighting-in-hugo/</link>
+      <link>https://kowalcj0.github.io/posts/2018/syntax-highlighting-in-hugo/</link>
       <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/syntax-highlighting-in-hugo/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/syntax-highlighting-in-hugo/</guid>
       <description>Bye bye Prism. Welcome Chroma. I just learnt that from version 0.28 Hugo comes with a built-in syntax highlighter called Chroma.
 It supports syntax highlighting with GitHub flavoured code fences!
 This is more than great!
 Because of this I could quickly get rid of a bit bulky Prism JS syntax highlighter.
 Enable Chroma Start by choosing your Chrome style from gallery available at https://help.farbox.com/pygments.html
 Then generate a css file:</description>
-    </item>
-    
-    <item>
-      <title>The beginning with Hugo</title>
-      <link>https://kowalcj0.github.io/post/2017/beginning-with-hugo/</link>
-      <pubDate>Thu, 14 Sep 2017 09:58:50 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/post/2017/beginning-with-hugo/</guid>
-      <description>I followed tutorial by Guillaume Sempe, to get this page working.</description>
     </item>
     
   </channel>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>intel on Home</title>
+    <link>https://kowalcj0.github.io/tags/intel/</link>
+    <description>Recent content in intel on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 15 Mar 2018 08:46:10 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/intel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tweaking Intel graphics on Linux</title>
+      <link>https://kowalcj0.github.io/posts/2018/tweaking-intel-graphics-on-linux/</link>
+      <pubDate>Thu, 15 Mar 2018 08:46:10 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2018/tweaking-intel-graphics-on-linux/</guid>
+      <description>get info about firmware
+modinfo i915 | grep ^fi List all driver parameters
+modinfo -p i915  If find the output of the above command confusing, as you can&amp;rsquo;t see the actual values of every parameter, then use:
+sudo grep -H &#39;&#39; /sys/module/i915//parameters/*  If you see error messages like this one:
+$ dmesg |tail [ 2360.475430] [drm] not enough stolen space for compressed buffer (need 4325376 bytes), disabling [ 2360.</description>
+    </item>
+    
+  </channel>
+</rss>

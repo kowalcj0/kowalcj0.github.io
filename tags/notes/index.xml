@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes on kowalcj0</title>
+    <title>notes on Home</title>
     <link>https://kowalcj0.github.io/tags/notes/</link>
-    <description>Recent content in Notes on kowalcj0</description>
+    <description>Recent content in notes on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 14 May 2018 19:35:30 +0100</lastBuildDate>
     
@@ -12,39 +12,39 @@
     
     <item>
       <title>Ethical Hacking - Wireless Networks - notes</title>
-      <link>https://kowalcj0.github.io/post/2018/ethical-hacking-wireless-networks-notes/</link>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hacking-wireless-networks-notes/</link>
       <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/ethical-hacking-wireless-networks-notes/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-wireless-networks-notes/</guid>
       <description>Cain - wireless scanner, cracker etc.  WEP  build to prevent eavesdropping ensures integrity of transmitted data is a lightweight solution (does not require a lot of CPU power) is not very secure as it doesn&amp;rsquo;t allow to distribute keys at scale uses weak encryption key recovery is possible through sniffing!!! uses 40-bit keys &amp;amp; 24-bit initialization vectors (IVs too small) frequently used poor implementations of random number generators prone to DoS attacks through use of associate &amp;amp; disassociate messages  WPA  Wi-Fi Protected Access (WPA) was introduced to replace WEP uses TKIP (Temporal Key Integrity Protocol) which changes the key for every frame that is transmitted.</description>
     </item>
     
     <item>
       <title>Ethical Hacking - Mobile Devices and Platforms - notes</title>
-      <link>https://kowalcj0.github.io/post/2018/ethical-hacking-mobile-devices-and-platforms/</link>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hacking-mobile-devices-and-platforms/</link>
       <pubDate>Sat, 28 Apr 2018 10:29:15 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/ethical-hacking-mobile-devices-and-platforms/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-mobile-devices-and-platforms/</guid>
       <description>Good sources of knowledge:
  OWASP Testing guide - book OWASP Pinning cheat sheet  Android Application  Executes as:  application service  Helpers  Broadcast receiver (allows app to register for specifi events which will be then passed to it for action) content provider (it interfaces between app and file storage and provide sql-like interface to read/write/modify/delete data). SQLite is a common DB service access via content provider.</description>
     </item>
     
     <item>
       <title>Ethical Hacking - Denial of Service - notes</title>
-      <link>https://kowalcj0.github.io/post/2018/ethical-hacking-denial-of-service-attacks/</link>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hacking-denial-of-service-attacks/</link>
       <pubDate>Mon, 23 Apr 2018 19:19:15 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/ethical-hacking-denial-of-service-attacks/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-denial-of-service-attacks/</guid>
       <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Denial of Service&amp;rdquo; by Troy Hunt.
 HTTP flood attack  HTTP flood attack  it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;) can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;)  Attack effectives can be amplified via certain app features:  They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth  Requests can adhere to legitimate patterns which makes defence difficult  TCP attacks These are the layer 4 (OSI) attacks</description>
     </item>
     
     <item>
       <title>Ethical Hacking - Buffer Overflow - notes</title>
-      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-buffer-iverflow/</link>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hackin-buffer-iverflow/</link>
       <pubDate>Tue, 20 Mar 2018 19:20:10 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-buffer-iverflow/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-buffer-iverflow/</guid>
       <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Buffer Overflows&amp;rdquo; by James Murray.
 Stack pointers Types of stack pointers:
  SP → Stack Pointer  keeps track where the next element will be pushe to or poppef off of the stack  FP → Frame Pointer  points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed  BP → Base Pointer (different name for FP) IP → Instruction Pointer  points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
@@ -52,10 +52,10 @@ Stack pointers Types of stack pointers:
     
     <item>
       <title>Ethical Hacking - Hacking Exposed - Notes</title>
-      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-hacking-exposed/</link>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hackin-hacking-exposed/</link>
       <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-hacking-exposed/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-hacking-exposed/</guid>
       <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Hacking Exposed&amp;rdquo; by Troy Hunt.
 Intro Questions to ask and answer when deciding on levels of security:
  What is most confidential to you? What can&amp;rsquo;t you afford to lose? What is irreplaceable? What could cause the most damage? What might impact your reputation?  The answers to those question will specify your security assets that you will protect.</description>
@@ -63,10 +63,10 @@ Intro Questions to ask and answer when deciding on levels of security:
     
     <item>
       <title>Ethical Hacking - Sniffers - Notes</title>
-      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</link>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hackin-sniffers-course-notes/</link>
       <pubDate>Mon, 05 Feb 2018 09:22:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-sniffers-course-notes/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-sniffers-course-notes/</guid>
       <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Sniffers&amp;rdquo;.
 Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
 Network admins should monitor network traffic for few minutes a day.
@@ -77,10 +77,10 @@ OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate co
     
     <item>
       <title>Ethical Hacking - Enumeration - Notes</title>
-      <link>https://kowalcj0.github.io/post/2018/ethical-hackin-enumeration-course-notes/</link>
+      <link>https://kowalcj0.github.io/posts/2018/ethical-hackin-enumeration-course-notes/</link>
       <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/post/2018/ethical-hackin-enumeration-course-notes/</guid>
+      <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-enumeration-course-notes/</guid>
       <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Enumeration&amp;rdquo;.
 Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&amp;rsquo;s own set of Protection Rings -&amp;gt; for more see wiki
 Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings: * Ring 0 - kernel * Ring 1 - executive * Ring 2 - supervisor * Ring 3 - user</description>
