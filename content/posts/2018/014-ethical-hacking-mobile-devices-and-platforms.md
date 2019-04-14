@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Ethical Hacking - Mobile Devices and Platforms - notes"
+description: "Notes from a video course"
 slug: "ethical-hacking-mobile-devices-and-platforms"
 date: "2018-04-28T10:29:15+01:00"
 categories:
@@ -14,10 +15,10 @@ tags:
   - mobile
   - android
   - iOS
-cover:
-  image: /img/2018/004/ethical-hacking-wikimedia.jpg
-  caption: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
-  style: normal
+
+featuredImage: /img/2018/004/ethical-hacking-wikimedia.jpg
+featuredImageDescription: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
+dropCap: false
 ---
 
 Good sources of knowledge:
@@ -246,7 +247,7 @@ It's good to check for those flags.
 
 
 ```text
-   --------        ---------------       ---------       ---------- 
+   --------        ---------------       ---------       ----------
    | Boot |        | Low level   |       | iBoot |       | Kernel |
    | rom  |  -->   | Boot loader |  -->  | load  |  -->  | Load   |
    --------        ---------------       ---------       ----------

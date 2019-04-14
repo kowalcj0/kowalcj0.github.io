@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Ethical Hacking - Denial of Service - notes"
+description: "Notes from a video course"
 slug: "ethical-hacking-denial-of-service-attacks"
 date: "2018-04-23T19:19:15+01:00"
 categories:
@@ -12,10 +13,10 @@ tags:
   - ethical hacking
   - pentesting
   - DoS
-cover:
-  image: /img/2018/004/ethical-hacking-wikimedia.jpg
-  caption: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
-  style: normal
+
+featuredImage: /img/2018/004/ethical-hacking-wikimedia.jpg
+featuredImageDescription: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
+dropCap: false
 ---
 
 These are just my notes from the Pluralsight course: "Ethical Hacking: Denial 
@@ -78,7 +79,6 @@ SRC ----------------------------→
       SYNchronize-ACKnowlegement
 3rd ←---------------------------- TRGT
 party
-    
 ```
 
 
@@ -107,6 +107,7 @@ party
 Attacker ----------------------------→ DNS Server
                                              Large amplified response
                                           ----------------------------→ Target
+
 ```
 
 # Other forms of amplification attack

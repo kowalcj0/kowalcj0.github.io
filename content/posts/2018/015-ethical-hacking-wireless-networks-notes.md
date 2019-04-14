@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Ethical Hacking - Wireless Networks - notes"
+description: "Notes from a video course"
 slug: "ethical-hacking-wireless-networks-notes"
 date: "2018-05-14T19:35:30+01:00"
 categories:
@@ -12,10 +13,10 @@ tags:
   - ethical hacking
   - pentesting
   - wifi
-cover:
-  image: /img/2018/004/ethical-hacking-wikimedia.jpg
-  caption: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
-  style: normal
+
+featuredImage: /img/2018/004/ethical-hacking-wikimedia.jpg
+featuredImageDescription: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
+dropCap: false
 ---
 
 

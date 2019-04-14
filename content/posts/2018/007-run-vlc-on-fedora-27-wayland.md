@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Fix 'X11 connection broke' issue in QT based GUI applications like VLC"
+description: "Fix it by setting QT_AUTO_SCREEN_SCALE_FACTOR env var"
 slug: "vlc-auto-screen-scale-factor-issue"
 date: "2018-02-11T22:40:50+01:00"
 categories:
@@ -8,10 +9,10 @@ categories:
 tags:
     - vlc
     - qt
-cover:
-  image: /img/2018/007/vlc.png
-  caption: troublesome VLC
-  style: normal
+
+featuredImage: /img/2018/007/vlc.png
+featuredImageDescription: troublesome VLC
+dropCap: false
 ---
 If you ever encountered error like this when starting vlc:
 

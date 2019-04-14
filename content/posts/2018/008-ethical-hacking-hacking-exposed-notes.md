@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Ethical Hacking - Hacking Exposed - Notes"
+description: "Notes from video course"
 slug: "ethical-hackin-hacking-exposed"
 date: "2018-02-26T21:20:12+01:00"
 categories:
@@ -11,10 +12,10 @@ tags:
   - security
   - ethical hacking
   - pentesting
-cover:
-  image: /img/2018/004/ethical-hacking-wikimedia.jpg
-  caption: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
-  style: normal
+
+featuredImage: /img/2018/004/ethical-hacking-wikimedia.jpg
+featuredImageDescription: "Source: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg)"
+dropCap: false
 ---
 These are just my notes from the video course: "Ethical Hacking: Hacking
 Exposed" by Troy Hunt.

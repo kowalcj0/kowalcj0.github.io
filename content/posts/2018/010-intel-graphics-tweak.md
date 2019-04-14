@@ -1,6 +1,7 @@
 ---
-draft: true
-title: Tweaking Intel graphics on linux
+draft: false
+title: Tweaking Intel graphics on Linux
+description: Speed things up a bit with few grub modifications
 slug: "tweaking-intel-graphics-on-linux"
 date: "2018-03-15T08:46:10+01:00"
 categories:
@@ -8,6 +9,7 @@ categories:
 tags:
     - intel
     - driver
+dropCap: false
 ---
 
 

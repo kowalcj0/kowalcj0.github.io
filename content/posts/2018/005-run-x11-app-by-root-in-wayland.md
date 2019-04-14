@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Allow GUI applications run by root user to connect to X server"
+description: "A quick fix to run QT application (e.g. Wireshark) as root"
 slug: "allow-application-run-by-root-to-connect-to-x-server"
 date: "2018-02-04T13:46:30+01:00"
 categories:
@@ -10,10 +11,10 @@ tags:
   - wayland
   - fedora 27
   - gnome 3.26
-cover:
-  image: /img/2018/005/Wayland_Logo-wiki.png
-  caption: "Wayland logo. Souce: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Wayland_Logo.svg)"
-  style: normal
+
+featuredImage: /img/2018/005/Wayland_Logo-wiki.png
+featuredImageDescription: "Wayland logo. Souce: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Wayland_Logo.svg)"
+dropCap: false
 ---
 
 Recently I had an annoying problem running Wireshark as root user on Fedora 27 

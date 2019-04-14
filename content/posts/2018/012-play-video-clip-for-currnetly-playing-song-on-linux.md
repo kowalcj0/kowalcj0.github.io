@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Play videoclip for currently playing song in mpv
+description: Have you ever wanted to quickly find a videoclip of currently playing song?
 slug: "get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv"
 date: "2018-03-29T15:15:14+01:00"
 categories:
@@ -10,10 +11,10 @@ tags:
     - python
     - mpv
     - dbus
-cover:
-  image: /img/2018/012/tuber.png
-  caption: Tuber
-  style: normal
+
+featuredImage: /img/2018/012/tuber.png
+featuredImageDescription: Tuber
+dropCap: false
 ---
 
 Short demo:

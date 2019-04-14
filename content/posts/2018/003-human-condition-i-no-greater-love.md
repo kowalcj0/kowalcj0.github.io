@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "The Human Condition I: No Greater Love"
+description: "A Japanese pacifist, unable to face the dire consequences of conscientious objection, is transformed by his attempts to compromise with the demands of war-time Japan."
 slug: "human-condition-i-no-greater-love"
 date: "2018-01-29T10:40:50+01:00"
 categories:
@@ -12,10 +13,10 @@ tags:
     - war
     - 1959
     - criterion collection
-cover:
-  image: /img/2018/003/human_condition_i_-_its_the_woman_that_men_love.jpg
-  caption: "Being a wife is a profession. But it's the woman than men love. Source: [Criterion](https://www.criterion.com/films/2106-the-human-condition)"
-  style: full
+
+featuredImage: /img/2018/003/human_condition_i_-_its_the_woman_that_men_love.jpg
+featuredImageDescription: "Being a wife is a profession. But it's the woman than men love. Source: [Criterion](https://www.criterion.com/films/2106-the-human-condition)"
+dropCap: false
 ---
 
 ### Ratings & further reading

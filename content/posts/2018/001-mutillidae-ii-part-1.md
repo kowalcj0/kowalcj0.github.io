@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Learning web app secuiry with OWASP Mutillidae II - part 1"
+description: "NOWASP (Mutillidae) is a free, open source, deliberately vulnerable web-application providing a target for web-security enthusiest."
 slug: "mutillidae-ii-part-1"
 date: "2018-01-23T14:41:50+01:00"
 categories:
@@ -11,10 +12,10 @@ tags:
     - owasp
     - mutillidae
     - pentesting
-cover:
-  image: /img/2018/001/owasp_full_logo.png
-  caption: "OWASP logo. Source: [secplicity.org](https://www.secplicity.org/2017/04/12/owasp-top-10-web-application-security-update/)"
-  style: normal
+
+featuredImage: /img/2018/001/owasp_full_logo.png
+featuredImageDescription: "OWASP logo. Source: [secplicity.org](https://www.secplicity.org/2017/04/12/owasp-top-10-web-application-security-update/)"
+dropCap: false
 ---
 # iNSTALLATION
 

@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Syntax Highlighting in Hugo"
+description: "I just learnt that from version 0.28 Hugo comes with a built-in syntax highlighter called Chroma"
 slug: "syntax-highlighting-in-hugo"
 date: "2018-01-27T22:28:50+01:00"
 categories:
@@ -9,9 +10,9 @@ categories:
 tags:
     - hugo
     - syntax
+dropCap: false
 ---
-Bye bye Prism. Welcome Chroma.
--------------------------------------------------
+# Bye bye Prism. Welcome Chroma.
 
 I just learnt that from version 0.28 Hugo comes with a built-in syntax 
 highlighter called [Chroma](https://gohugo.io/content-management/syntax-highlighting/).
