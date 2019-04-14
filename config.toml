@@ -1,4 +1,5 @@
 baseURL = "https://kowalcj0.github.io"
+footnoteReturnLinkContents = "↩"
 title = "kowalcj0"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
@@ -81,6 +82,7 @@ tag = "tags"
 
 [permalinks]
 page = "/:slug/"
+post = "/:year/:month/:title/"
 
 [[menu.main]]
 name = "Home"
@@ -98,6 +100,8 @@ url = "https://github.com/kowalcj0/kowalcj0.github.io"
 # Blackfriday is Hugo’s built-in Markdown rendering engine.
 # https://gohugo.io/getting-started/configuration/#configure-blackfriday
 hrefTargetBlank = true
+angledQuotes = false
+plainIDAnchors = true
 
 [languages]
 # edit this block for your own language

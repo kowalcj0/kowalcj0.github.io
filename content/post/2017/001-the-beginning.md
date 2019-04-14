@@ -8,10 +8,10 @@ categories:
 tags:
     - hugo
     - wordpress
-cover:
-  image: /img/2017/001/wordpress-youre-fired.png
-  caption: "Wordpress you're fired. Source: [refactorsaurusrex.com](https://refactorsaurusrex.com/post/2016/wordpress-youre-fired/)"
-  style: normal
+#cover:
+  #image: /img/2017/001/wordpress-youre-fired.png
+  #caption: "Wordpress you're fired. Source: [refactorsaurusrex.com](https://refactorsaurusrex.com/post/2016/wordpress-youre-fired/)"
+  #style: normal
 ---
 
 I followed [tutorial](https://fillmem.com/post/fast-secured-and-free-static-site/) by Guillaume Sempe, to get this page working.
