@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/vim,hugo,linux
 
 ### Hugo ###
@@ -31,5 +30,8 @@ Session.vim
 .netrwhist
 # auto-generated tag files
 tags
+
+# PyCharm
+.idea
 
 # End of https://www.gitignore.io/api/vim,hugo,linux
