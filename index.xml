@@ -5,10 +5,21 @@
     <link>https://kowalcj0.github.io/</link>
     <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Aug 2018 18:41:50 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 11:50:50 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Logrotate your bash history file</title>
+      <link>https://kowalcj0.github.io/posts/2019/logrotate-bash-history/</link>
+      <pubDate>Mon, 13 May 2019 11:50:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2019/logrotate-bash-history/</guid>
+      <description>A while ago I decided to take more control over my bash history and I followed this advice https://unix.stackexchange.com/a/48113.
+With time I&amp;rsquo;ve tweaked few settings, like ignore lines that start with space, and ignore some of the trivial commands like ls:
+export HISTCONTROL=ignoredups:erasedups:ignorespace # no duplicate entries &amp;amp; lines starting with space export HISTSIZE=99999999 # big big history export HISTFILESIZE=99999999 # big big history shopt -s histappend # append to history, don&#39;t overwrite it export PROMPT_COMMAND=&amp;quot;history -a; history -c; history -r; $PROMPT_COMMAND&amp;quot; # Save and reload the history after each command finishes HISTIGNORE=&#39;ll *:ls *:l:gs:&#39; # ignore some commands  Nevertheless, every now and then I&amp;rsquo;d loose the command history, e.</description>
+    </item>
     
     <item>
       <title>Stop using URL shorteners</title>

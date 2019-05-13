@@ -4,31 +4,54 @@
   
   <url>
     <loc>https://kowalcj0.github.io/categories/</loc>
-    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
+    <lastmod>2019-05-13T11:50:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/</loc>
-    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
+    <lastmod>2019-05-13T11:50:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://kowalcj0.github.io/posts/2019/logrotate-bash-history/</loc>
+    <lastmod>2019-05-13T11:50:50+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kowalcj0.github.io/posts/</loc>
-    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
+    <lastmod>2019-05-13T11:50:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/</loc>
+    <lastmod>2019-05-13T11:50:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/bash/</loc>
+    <lastmod>2019-05-13T11:50:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/categories/linux/</loc>
+    <lastmod>2019-05-13T11:50:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/logrotate/</loc>
+    <lastmod>2019-05-13T11:50:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/posts/2018/stop-using-url-shortners/</loc>
     <lastmod>2018-08-20T18:41:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/</loc>
-    <lastmod>2018-08-20T18:41:50+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -73,13 +96,13 @@
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/categories/security/</loc>
+    <loc>https://kowalcj0.github.io/tags/security/</loc>
     <lastmod>2018-05-14T19:35:30+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/tags/security/</loc>
+    <loc>https://kowalcj0.github.io/categories/security/</loc>
     <lastmod>2018-05-14T19:35:30+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -137,12 +160,6 @@
   
   <url>
     <loc>https://kowalcj0.github.io/tags/fun/</loc>
-    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/categories/linux/</loc>
     <lastmod>2018-03-29T15:15:14+01:00</lastmod>
     <priority>0</priority>
   </url>
