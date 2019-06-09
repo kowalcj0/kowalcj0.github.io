@@ -7,8 +7,8 @@ date: "2018-02-11T22:40:50+01:00"
 categories:
   - linux
 tags:
-    - vlc
-    - qt
+  - vlc
+  - qt
 cover:
   image: /img/2018/007/vlc.png
   caption: troublesome VLC

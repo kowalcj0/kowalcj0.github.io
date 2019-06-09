@@ -7,7 +7,7 @@ date: "2019-05-18T19:44:50+01:00"
 categories:
   - food
 tags:
-    - smoothie
+  - smoothie
 ---
 A simple recipe for a delicious smoothie.
 

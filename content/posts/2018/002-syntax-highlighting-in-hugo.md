@@ -8,8 +8,8 @@ categories:
   - random
   - learning
 tags:
-    - hugo
-    - syntax
+  - hugo
+  - syntax
 ---
 # Bye bye Prism. Welcome Chroma.
 

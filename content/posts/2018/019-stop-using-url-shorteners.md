@@ -7,7 +7,7 @@ date: "2018-08-20T18:41:50+01:00"
 categories:
   - web
 tags:
-    - seo
+  - seo
 ---
 Why do people use URL shorteners?
 

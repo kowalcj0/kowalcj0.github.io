@@ -7,10 +7,10 @@ date: "2018-03-29T15:15:14+01:00"
 categories:
   - linux
 tags:
-    - fun
-    - python
-    - mpv
-    - dbus
+  - fun
+  - python
+  - mpv
+  - dbus
 cover:
   image: /img/2018/012/tuber.png
   caption: Tuber

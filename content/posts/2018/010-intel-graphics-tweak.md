@@ -7,8 +7,8 @@ date: "2018-03-15T08:46:10+01:00"
 categories:
   - linux
 tags:
-    - intel
-    - driver
+  - intel
+  - driver
 dropCap: false
 ---
 

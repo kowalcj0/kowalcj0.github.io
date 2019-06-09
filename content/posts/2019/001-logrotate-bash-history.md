@@ -7,8 +7,8 @@ date: "2019-05-13T11:50:50+01:00"
 categories:
   - linux
 tags:
-    - bash
-    - logrotate
+  - bash
+  - logrotate
 cover:
   image: ../images/logrotate.png
   caption: "logrotate ASCII art generated with http://patorjk.com/software/taag/ & colored with http://patorjk.com/text-color-fader/"

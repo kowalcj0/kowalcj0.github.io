@@ -7,8 +7,8 @@ date: "2018-08-10T14:41:50+01:00"
 categories:
   - learning
 tags:
-    - python
-    - conference
+  - python
+  - conference
 cover:
   image: /img/2018/018/PyConPL18.svg
   caption: "PyConPL'18 logo. Source: [https://pl.pycon.org/2018/](https://pl.pycon.org/2018/)"

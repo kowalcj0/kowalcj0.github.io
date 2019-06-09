@@ -7,12 +7,12 @@ date: "2018-01-29T10:40:50+01:00"
 categories:
   - movies
 tags:
-    - japanese
-    - kobayashi
-    - drama
-    - war
-    - 1959
-    - criterion collection
+  - japanese
+  - kobayashi
+  - drama
+  - war
+  - 1959
+  - criterion collection
 cover:
   image: /img/2018/003/human_condition_i_-_its_the_woman_that_men_love.jpg
   caption: "Being a wife is a profession. But it's the woman than men love. Source: [Criterion](https://www.criterion.com/films/2106-the-human-condition)"
