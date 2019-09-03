@@ -5,7 +5,7 @@
     <link>https://kowalcj0.github.io/categories/</link>
     <description>Recent content in Categories on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 May 2019 11:50:50 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 09 Jun 2019 20:35:50 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,9 +13,18 @@
     <item>
       <title>linux</title>
       <link>https://kowalcj0.github.io/categories/linux/</link>
-      <pubDate>Mon, 13 May 2019 11:50:50 +0100</pubDate>
+      <pubDate>Sun, 09 Jun 2019 20:35:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>food</title>
+      <link>https://kowalcj0.github.io/categories/food/</link>
+      <pubDate>Sat, 18 May 2019 19:44:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/categories/food/</guid>
       <description></description>
     </item>
     

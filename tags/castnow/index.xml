@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>castnow on Home</title>
+    <link>https://kowalcj0.github.io/tags/castnow/</link>
+    <description>Recent content in castnow on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 09 Jun 2019 20:35:50 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/castnow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Play moview with DTS audio on Chromecast</title>
+      <link>https://kowalcj0.github.io/posts/2019/cast-dts-movie-to-chromecast/</link>
+      <pubDate>Sun, 09 Jun 2019 20:35:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2019/cast-dts-movie-to-chromecast/</guid>
+      <description>According to the official specification Chromecast (even Ultra version) doesn&amp;rsquo;t support DTS.
+If you can&amp;rsquo;t be bothered to spend few hours to transcode the movie with lets say Handbrake you can use ver handy CLI casting tool: castnow.
+Once installed, simply tell it to use ffmpeg to transcode audio to mp3 (or ac3 or aac).
+castnow your-wonderful-movie.mkv \  --tomp4 \  --ffmpeg-vcodec copy \  --ffmpeg-acodec mp3 \  --ffmpeg-movflags frag_keyframe+empty_moov+faststart  - use movflags if you will only hear the audio and you&amp;rsquo;ll see a black screen  The only downside of transcoding is that the play / pause controls are not supported.</description>
+    </item>
+    
+  </channel>
+</rss>
