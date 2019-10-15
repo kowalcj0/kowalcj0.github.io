@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='posts'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='DoS'><meta property='article:published_time' content='2018-04-23T19:19:15&#43;01:00'/><meta property='article:modified_time' content='2018-04-23T19:19:15&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
 
-<meta name="generator" content="Hugo 0.55.1" />
+<meta name="generator" content="Hugo 0.57.2" />
 
   <title>Ethical Hacking - Denial of Service - notes • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/posts/2018/ethical-hacking-denial-of-service-attacks/'>
@@ -76,6 +76,8 @@
         <a href='/tags/bof/' style='font-size:1em'>BoF</a>
       </li><li>
         <a href='/tags/castnow/' style='font-size:1em'>castnow</a>
+      </li><li>
+        <a href='/tags/conference/' style='font-size:1em'>conference</a>
       </li><li>
         <a href='/tags/criterion-collection/' style='font-size:1em'>criterion collection</a>
       </li><li>
@@ -338,13 +340,15 @@ overlow</li>
 
 <ul>
 <li>sometimes called <code>DNS Reflection</code> attack</li>
-<li>attacker sends a smal request for e.g. all DNS records for particular zone
-which generates a large response</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">           Small spoofed DNS request
+
+<li><p>attacker sends a smal request for e.g. all DNS records for particular zone
+which generates a large response</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">       Small spoofed DNS request
 Attacker ----------------------------→ DNS Server
-                                             Large amplified response
-                                          ----------------------------→ Target</code></pre></div>
+                                         Large amplified response
+                                      ----------------------------→ Target</code></pre></div></li>
+</ul>
+
 <h1 id="other-forms-of-amplification-attack">Other forms of amplification attack</h1>
 
 <ul>
@@ -392,20 +396,22 @@ network and send requests to external target.</li>
 <li>Causes website to leave the connection open</li>
 <li>Resources are allocated to wait for the termination sequence</li>
 </ul></li>
-<li>Can originate from a single origin
+
+<li><p>Can originate from a single origin</p>
 
 <ul>
-<li>Partial requests are sent and then resent and then resent &hellip;</li>
+<li><p>Partial requests are sent and then resent and then resent &hellip;</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">  Uncompleted HTTP GET request
+  ----------------------------→
+  Uncompleted HTTP GET request
+  ----------------------------→
+Attacker  Uncompleted HTTP GET request    Target
+  ----------------------------→
+  Uncompleted HTTP GET request
+  ----------------------------→</code></pre></div></li>
 </ul></li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">          Uncompleted HTTP GET request
-          ----------------------------→
-          Uncompleted HTTP GET request
-          ----------------------------→
-Attacker  Uncompleted HTTP GET request    Target
-          ----------------------------→
-          Uncompleted HTTP GET request
-          ----------------------------→</code></pre></div>
+
 <h1 id="permanent-dos-and-phlashing">Permanent DoS and Phlashing</h1>
 
 <ul>

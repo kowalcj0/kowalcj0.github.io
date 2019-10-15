@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='posts'><meta property='article:tag' content='intel'><meta property='article:tag' content='driver'><meta property='article:published_time' content='2018-03-15T08:46:10&#43;01:00'/><meta property='article:modified_time' content='2018-03-15T08:46:10&#43;01:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.55.1" />
+<meta name="generator" content="Hugo 0.57.2" />
 
   <title>Tweaking Intel graphics on Linux • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/posts/2018/tweaking-intel-graphics-on-linux/'>
@@ -76,6 +76,8 @@
         <a href='/tags/bof/' style='font-size:1em'>BoF</a>
       </li><li>
         <a href='/tags/castnow/' style='font-size:1em'>castnow</a>
+      </li><li>
+        <a href='/tags/conference/' style='font-size:1em'>conference</a>
       </li><li>
         <a href='/tags/criterion-collection/' style='font-size:1em'>criterion collection</a>
       </li><li>
@@ -286,9 +288,11 @@ sudo grubby --info<span class="o">=</span></code></pre></div>
 
 <ul>
 <li>GuC is an engine for workload scheduling of the parallel graphics engines.</li>
-<li>HuC appears to be a firmware blob responsible High Efficiency Video Coding (HEVC / H.265) support.</li>
+
+<li><p>HuC appears to be a firmware blob responsible High Efficiency Video Coding (HEVC / H.265) support.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo grubby --args<span class="o">=</span><span class="s2">&#34;i915.enable_guc_loading=1 i915.enable_guc_submission=1&#34;</span> --update-kernel /boot/vmlinuz-4.15.10-300.fc27.x86_64</code></pre></div></li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo grubby --args<span class="o">=</span><span class="s2">&#34;i915.enable_guc_loading=1 i915.enable_guc_submission=1&#34;</span> --update-kernel /boot/vmlinuz-4.15.10-300.fc27.x86_64</code></pre></div>
+
 <p><a href="https://wiki.archlinux.org/index.php/intel_graphics#Enable_GuC_.2F_HuC_firmware_loading" target="_blank">https://wiki.archlinux.org/index.php/intel_graphics#Enable_GuC_.2F_HuC_firmware_loading</a></p>
 <div class="footnotes">
 

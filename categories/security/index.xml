@@ -5,10 +5,20 @@
     <link>https://kowalcj0.github.io/categories/security/</link>
     <description>Recent content in security on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 May 2018 19:35:30 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2019 20:41:50 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/categories/security/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Security BSides Warszawa 2019</title>
+      <link>https://kowalcj0.github.io/posts/2019/security-bsides-warszawa-2019/</link>
+      <pubDate>Tue, 15 Oct 2019 20:41:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2019/security-bsides-warszawa-2019/</guid>
+      <description>Linki do różnych narzędzi, artykułów, blogów itp o których dowiedziałem się podczas konferencji Security BSides Warsaw 2019
+Nagrania  dzień pierwszy https://www.youtube.com/watch?v=BoR119sLN6s dzień drugi https://www.youtube.com/watch?v=bTU-22DtYBc  Slajdy  http://frankowicz.me/sbs2019 Trzy lata fuzzingu&amp;hellip; I czy coś to zmieniło? https://aptmasterclass.com/bsides19/ Nietrywialna komunikacja C2 - jakie to proste! https://www.slideshare.net/wojdwo/budowanie-i-hakowanie-nowoczesnych-aplikacji-ios Budowanie i hakowanie nowoczesnych aplikacji iOS  Narzędzia  AFL++ American Fuzzy Lop plus plus bandit A tool designed to find common security issues in Python code.</description>
+    </item>
     
     <item>
       <title>Ethical Hacking - Wireless Networks - notes</title>
