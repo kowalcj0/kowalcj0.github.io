@@ -5,10 +5,46 @@
     <link>https://kowalcj0.github.io/tags/</link>
     <description>Recent content in Tags on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Oct 2019 20:41:50 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 12:02:34 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mpd</title>
+      <link>https://kowalcj0.github.io/tags/mpd/</link>
+      <pubDate>Sun, 22 Mar 2020 12:02:34 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/mpd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rss</title>
+      <link>https://kowalcj0.github.io/tags/rss/</link>
+      <pubDate>Sun, 22 Mar 2020 12:02:34 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/rss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>codecs</title>
+      <link>https://kowalcj0.github.io/tags/codecs/</link>
+      <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/codecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>https://kowalcj0.github.io/tags/ffmpeg/</link>
+      <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>conference</title>
@@ -25,15 +61,6 @@
       <pubDate>Sun, 09 Jun 2019 20:35:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/castnow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ffmpeg</title>
-      <link>https://kowalcj0.github.io/tags/ffmpeg/</link>
-      <pubDate>Sun, 09 Jun 2019 20:35:50 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/ffmpeg/</guid>
       <description></description>
     </item>
     

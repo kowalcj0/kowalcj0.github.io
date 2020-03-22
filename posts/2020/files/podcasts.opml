@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<opml version="1.0">
+  <head>
+    <title>Podcast feeds</title>
+    <dateCreated>20 Mar 2020 10:35:42</dateCreated>
+    <dateModified>20 Mar 2020 10:35:42</dateModified>
+  </head>
+  <body>
+    <outline text="Agile Thoughts" type="rss" xmlUrl="http://agilenoir.biz/feed/podcast/agile-thoughts" htmlUrl="https://AgileNoir.biz/" />
+    <outline text="BBC - 6 Minute English" type="rss" xmlUrl="https://podcasts.files.bbci.co.uk/p02pc9tn.rss" htmlUrl="http://www.bbc.co.uk/programmes/p02pc9tn" />
+    <outline text="Composer of the Week" type="rss" xmlUrl="https://podcasts.files.bbci.co.uk/p02nrvd3.rss" htmlUrl="http://www.bbc.co.uk/programmes/p02nrvd3" />
+    <outline text="Crypto-Gram Security Podcast" type="rss" xmlUrl="http://dhenage.libsyn.com/rss" htmlUrl="http://crypto-gram.libsyn.com" />
+    <outline text="Dan Carlin - Common Sense " type="rss" xmlUrl="http://feeds.feedburner.com/dancarlin/commonsense" htmlUrl="http://www.dancarlin.com" />
+    <outline text="Dan Carlin - Hardcore History" type="rss" xmlUrl="http://feeds.feedburner.com/dancarlin/history" htmlUrl="http://www.dancarlin.com" />
+    <outline text="Darknet Diaries" type="rss" xmlUrl="https://feeds.megaphone.fm/darknetdiaries" htmlUrl="https://darknetdiaries.com/" />
+    <outline text="Deep House Cat" type="rss" xmlUrl="http://deephousecat.blogspot.com/feeds/posts/default" htmlUrl="https://www.dhcat.com/" />
+    <outline text="Defensive Security Podcast - Malware, Hacking, Cyber Security &amp; Infosec" type="rss" xmlUrl="https://www.defensivesecurity.org/feed/podcast/" htmlUrl="https://defensivesecurity.org" />
+    <outline text="Exploring Information Security - Timothy De Block" type="rss" xmlUrl="http://www.timothydeblock.com/eis?format=rss" htmlUrl="http://www.timothydeblock.com/eis/" />
+    <outline text="Go Time" type="rss" xmlUrl="https://changelog.com/gotime/feed" htmlUrl="https://changelog.com/gotime" />
+    <outline text="Linux Action News" type="rss" xmlUrl="https://linuxactionnews.com/rss" htmlUrl="https://linuxactionnews.com" />
+    <outline text="Liquidsoundzuk dnb Podcast" type="rss" xmlUrl="http://liquidsoundzdnb.podomatic.com/rss2.xml" htmlUrl="https://liquidsoundzdnb.podomatic.com" />
+    <outline text="Making Sense with Sam Harris" type="rss" xmlUrl="http://wakingup.libsyn.com/rss" htmlUrl="http://www.samharris.org" />
+    <outline text="Radiolab from WNYC" type="rss" xmlUrl="http://feeds.wnyc.org/radiolab" htmlUrl="https://www.wnycstudios.org/podcasts/radiolab/projects/podcasts" />
+    <outline text="Security Now" type="rss" xmlUrl="http://feeds.twit.tv/sn.xml" htmlUrl="https://twit.tv/shows/security-now" />
+    <outline text="Smashing Security" type="rss" xmlUrl="https://www.smashingsecurity.com/rss" htmlUrl="http://www.smashingsecurity.com" />
+    <outline text="Software Engineering Daily" type="rss" xmlUrl="http://softwareengineeringdaily.com/feed/podcast" htmlUrl="http://softwareengineeringdaily.com/archives/" />
+    <outline text="Solid Steel" type="rss" xmlUrl="https://ninjatune.net/solidsteel/rss.xml" htmlUrl="http://www.ninjatune.net/solidsteel" />
+    <outline text="Soul Music" type="rss" xmlUrl="https://podcasts.files.bbci.co.uk/b008mj7p.rss" htmlUrl="http://www.bbc.co.uk/programmes/b008mj7p" />
+    <outline text="Talk Python To Me" type="rss" xmlUrl="https://talkpython.fm/episodes/rss" htmlUrl="https://talkpython.fm/" />
+    <outline text="The Jordan B. Peterson Podcast" type="rss" xmlUrl="https://rss.art19.com/the-jordan-b-peterson-podcast" htmlUrl="https://art19.com/shows/the-jordan-b-peterson-podcast" />
+    <outline text="The Story of Music in Fifty Pieces" type="rss" xmlUrl="https://podcasts.files.bbci.co.uk/p02nrwyk.rss" htmlUrl="http://www.bbc.co.uk/programmes/p02nrwyk" />
+    <outline text="Think Again – a Big Think Podcast" type="rss" xmlUrl="https://feeds.megaphone.fm/PP6777513342" htmlUrl="http://bigthink.com/articles?blog=think-again-podcast" />
+    <outline text="Unnamed Reverse Engineering Podcast" type="rss" xmlUrl="http://reverseengineering.libsyn.com/rss" htmlUrl="https://unnamedre.com" />
+    <outline text="Finanse Bardzo Osobiste" type="rss" xmlUrl="https://marciniwuc.com/feed/podcast" htmlUrl="http://marciniwuc.com/feed/podcast/" />
+    <outline text="Mała Wielka Firma" type="rss" xmlUrl="http://www.spreaker.com/show/2087844/episodes/feed" htmlUrl="https://malawielkafirma.pl" />
+    <outline text="Biznes Myśli" type="rss" xmlUrl="http://www.spreaker.com/show/2214604/episodes/feed" htmlUrl="http://www.spreaker.com/show/biznes-mysli" />
+    <outline text="Na Podsłuchu - Niebezpiecznik.pl" type="rss" xmlUrl="http://www.spreaker.com/show/2621972/episodes/feed" htmlUrl="https://www.spreaker.com/show/na-podsluchu-niebezpiecznik-pl" />
+    <outline text="Cyber, cyber..." type="rss" xmlUrl="https://www.cybsecurity.org/feed/podcast/" htmlUrl="https://www.cybsecurity.org" />
+  </body>
+</opml>

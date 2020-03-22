@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rss on Home</title>
+    <link>https://kowalcj0.github.io/tags/rss/</link>
+    <description>Recent content in rss on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 22 Mar 2020 12:02:34 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/rss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Listen to podcasts in MPD</title>
+      <link>https://kowalcj0.github.io/posts/2020/listen-to-podcasts-in-mpd/</link>
+      <pubDate>Sun, 22 Mar 2020 12:02:34 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2020/listen-to-podcasts-in-mpd/</guid>
+      <description>Requirements  mpd &amp;amp; mpc a list of podcast RSS feed links  Example podcast RSS feed links Here&amp;rsquo;s list of my favourite English &amp;amp; Polish podcasts in an OPML format.
+You can extract RSS feed links from it with:
+awk -F &amp;#39;&amp;#34;&amp;#39; &amp;#39;{print $6}&amp;#39; podcasts.opml | sed &amp;#39;/^$/d&amp;#39; Load podcast into MPD Given that you&amp;rsquo;ve saved your podcast feed list in ~/Music/podcasts.rss.
+Then with a simple while loop you can load your podcast episodes into mpd.</description>
+    </item>
+    
+  </channel>
+</rss>
