@@ -26,7 +26,7 @@
         {{ range .movies }}
             {{ if .title }}
     <tr>
-      <td>{{ .title }}</td>
+      <td>{{ .title }}{{ if .original_title }} ({{ .original_title }}){{ end }}</td>
       <td>{{ .director }}</td>
       <td>{{ .genres }}</td>
       <td>{{ .year }}</td>
