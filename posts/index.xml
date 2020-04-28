@@ -5,10 +5,21 @@
     <link>https://kowalcj0.github.io/posts/</link>
     <description>Recent content in Posts on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 22 Mar 2020 12:02:34 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 22:02:34 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FreeNas/FreeBSD hardware/diagnostic tools</title>
+      <link>https://kowalcj0.github.io/posts/2020/handy-freebsd-diagnostic-tools/</link>
+      <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2020/handy-freebsd-diagnostic-tools/</guid>
+      <description>Handy CLI tools that might help your with diagnosing/debugging issues on your FreeBSD/FreeNAS machine.
+Recommended reading  FreeNAS documentation on CLI tools: https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html FreeBSD Display Information About The System Hardware: https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html  camcontrol The camcontrol utility is designed to provide a way for users to access and control the FreeBSD CAM subsystem.
+# camcontrol devlist &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus0 target 0 lun 0 (pass0,ada0) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus1 target 0 lun 0 (pass1,ada1) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass2,ada2) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass3,ada3) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus4 target 0 lun 0 (pass4,ada4) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass5,ada5) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass6,ada6) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass7,ada7) &amp;lt;SanDisk Dual Drive 1.</description>
+    </item>
     
     <item>
       <title>Listen to podcasts in MPD</title>
@@ -31,6 +42,18 @@ Then with a simple while loop you can load your podcast episodes into mpd.</desc
       <description>Some time ago I&amp;rsquo;ve discovered a bunch of old QuickTime files on my NAS. None of those clips could be played back via NextCloud&amp;rsquo;s browser player as they were encoded with old school mjpeg video codec &amp;amp; low quality mono pcm_s16be audio.
 This is what mediainfo told me about those files:
 Video Format : JPEG Codec ID : jpeg Bit rate mode : Variable Bit rate : 3 827 kb/s Width : 640 pixels Height : 480 pixels Display aspect ratio : 4:3 Frame rate mode : Constant Frame rate : 30.</description>
+    </item>
+    
+    <item>
+      <title>Movies, TV Series &amp; Documentaries worth watching</title>
+      <link>https://kowalcj0.github.io/posts/general/worth-watching/</link>
+      <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/general/worth-watching/</guid>
+      <description>Good movie lists Some of the movies listed below are available on Amazon Prime or https://mubi.com/.
+AFAIK most of those titles are not available on Netflix.
+Good movies lists:
+ iMDB: Top 250 iMDB: Top 100 Greatest Movies of All Time (The Ultimate List) iMDB: Top 50 spanish movies MUBI: Top 1000 MUBI: 30 must see Japanese film classics MUBI: Top 50 Japanese films MUBI: Top Indian films  Below I&amp;rsquo;ve listed movies I particularly like.</description>
     </item>
     
     <item>

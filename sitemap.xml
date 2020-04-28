@@ -4,12 +4,42 @@
   
   <url>
     <loc>https://kowalcj0.github.io/categories/</loc>
-    <lastmod>2020-03-22T12:02:34+01:00</lastmod>
+    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/cli/</loc>
+    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/categories/freebsd/</loc>
+    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/freenas/</loc>
+    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/2020/handy-freebsd-diagnostic-tools/</loc>
+    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/</loc>
-    <lastmod>2020-03-22T12:02:34+01:00</lastmod>
+    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/</loc>
+    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/</loc>
+    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
   </url>
   
   <url>
@@ -28,17 +58,7 @@
   </url>
   
   <url>
-    <loc>https://kowalcj0.github.io/posts/</loc>
-    <lastmod>2020-03-22T12:02:34+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kowalcj0.github.io/tags/rss/</loc>
-    <lastmod>2020-03-22T12:02:34+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/</loc>
     <lastmod>2020-03-22T12:02:34+01:00</lastmod>
   </url>
   
@@ -54,6 +74,16 @@
   
   <url>
     <loc>https://kowalcj0.github.io/tags/ffmpeg/</loc>
+    <lastmod>2020-03-21T11:59:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/categories/movies/</loc>
+    <lastmod>2020-03-21T11:59:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/posts/general/worth-watching/</loc>
     <lastmod>2020-03-21T11:59:50+01:00</lastmod>
   </url>
   
@@ -329,11 +359,6 @@
   
   <url>
     <loc>https://kowalcj0.github.io/tags/kobayashi/</loc>
-    <lastmod>2018-01-29T10:40:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/categories/movies/</loc>
     <lastmod>2018-01-29T10:40:50+01:00</lastmod>
   </url>
   
