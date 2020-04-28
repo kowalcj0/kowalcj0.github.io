@@ -5,8 +5,9 @@ description: "Never give up"
 slug: "cast-dts-movie-to-chromecast"
 date: "2019-06-09T20:35:50+01:00"
 categories:
-  - linux
+  - unix
 tags:
+  - linux
   - castnow
   - ffmpeg
 cover:

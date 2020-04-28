@@ -5,8 +5,9 @@ description: Speed things up a bit with few grub modifications
 slug: "tweaking-intel-graphics-on-linux"
 date: "2018-03-15T08:46:10+01:00"
 categories:
-  - linux
+  - unix
 tags:
+  - linux
   - intel
   - driver
 dropCap: false

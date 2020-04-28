@@ -1,9 +1,10 @@
 ---
 draft: false
-title: "Movies, TV Series & Documentaries worth watching"
-description: "just find some spare time"
+title: "Worth watching"
+description: "Movies, TV Series & Documentaries worth watching"
 toc: true
 slug: "worth-watching"
+menu: main
 date: "2020-03-21T11:59:50+01:00"
 categories:
   - movies

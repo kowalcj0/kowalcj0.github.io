@@ -5,8 +5,9 @@ description: Have you ever wanted to quickly find a videoclip of currently playi
 slug: "get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv"
 date: "2018-03-29T15:15:14+01:00"
 categories:
-  - linux
+  - unix
 tags:
+  - linux
   - fun
   - python
   - mpv

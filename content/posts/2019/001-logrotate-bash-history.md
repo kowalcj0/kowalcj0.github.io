@@ -5,8 +5,9 @@ description: "Never loose your command history"
 slug: "logrotate-bash-history"
 date: "2019-05-13T11:50:50+01:00"
 categories:
-  - linux
+  - unix
 tags:
+  - linux
   - bash
   - logrotate
 cover:

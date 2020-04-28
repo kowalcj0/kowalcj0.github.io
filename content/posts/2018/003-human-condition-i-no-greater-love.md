@@ -8,7 +8,6 @@ categories:
   - movies
 tags:
   - japanese
-  - kobayashi
   - drama
   - war
   - 1959

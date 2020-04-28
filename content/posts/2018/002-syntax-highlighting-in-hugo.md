@@ -5,10 +5,8 @@ description: "I just learnt that from version 0.28 Hugo comes with a built-in sy
 slug: "syntax-highlighting-in-hugo"
 date: "2018-01-27T22:28:50+01:00"
 categories:
-  - random
-  - learning
-tags:
   - hugo
+tags:
   - syntax
 ---
 # Bye bye Prism. Welcome Chroma.

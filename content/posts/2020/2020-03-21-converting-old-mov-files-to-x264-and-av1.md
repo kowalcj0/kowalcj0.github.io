@@ -5,8 +5,9 @@ description: "Make you old videos watchable"
 slug: "convert-mov-to-mp4-or-av1"
 date: "2020-03-21T11:59:50+01:00"
 categories:
-  - linux
+  - unix
 tags:
+  - linux
   - ffmpeg
   - codecs
 cover:

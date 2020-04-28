@@ -6,8 +6,9 @@ podcasts into MPD"
 slug: "listen-to-podcasts-in-mpd"
 date: "2020-03-22T12:02:34+01:00"
 categories:
-  - linux
+  - unix
 tags:
+  - linux
   - mpd
   - rss
 cover:

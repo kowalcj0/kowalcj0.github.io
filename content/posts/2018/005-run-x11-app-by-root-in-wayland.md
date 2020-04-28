@@ -5,12 +5,13 @@ description: "A quick fix to run QT application (e.g. Wireshark) as root"
 slug: "allow-application-run-by-root-to-connect-to-x-server"
 date: "2018-02-04T13:46:30+01:00"
 categories:
-  - linux
+  - unix
 tags:
+  - linux
   - root
   - wayland
-  - fedora 27
-  - gnome 3.26
+  - fedora
+  - gnome
 cover:
   image: /img/2018/005/Wayland_Logo-wiki.png
   caption: "Wayland logo. Souce: [wikimedia.org](https://commons.wikimedia.org/wiki/File:Wayland_Logo.svg)"
