@@ -1,0 +1,47 @@
+{{ $category := (.Get "category") }}
+{{ with $category }}
+
+<table style="font-size:80%;width:1024px">
+  <colgroup>
+    <col span="1" style="width: 20%;">
+    <col span="1" style="width: 15%;">
+    <col span="1" style="width: 20%;">
+    <col span="1" style="width: 5%;">
+    <col span="1" style="width: 15%;">
+    <col span="1" style="width: 25%;">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Director</th>
+      <th>Genres</th>
+      <th>Year</th>
+      <th>Links</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+{{ range $.Site.Data.movies }}
+    {{ if eq $category .category }}
+        {{ range .movies }}
+            {{ if .title }}
+    <tr>
+      <td>{{ .title }}</td>
+      <td>{{ .director }}</td>
+      <td>{{ .genres }}</td>
+      <td>{{ .year }}</td>
+      <td>
+        {{ partial "movie_link.html" .trailer }}
+        {{ partial "movie_link.html" .imdb }}
+        {{ partial "movie_link.html" .rt }}
+        {{ partial "movie_link.html" .wiki }}
+      </td>
+      <td>{{ with .comments }}{{ . | markdownify }}{{ end }}<td>
+    </tr>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+  </tbody>
+</table>
+{{ end }}
