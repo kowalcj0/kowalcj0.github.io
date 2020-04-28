@@ -1,0 +1,37 @@
+{
+"category": "japanese",
+"movies": [
+{
+    "title": "The Human Condition I: No Greater Love",
+    "director": "Masaki Kobayashi",
+    "genres": "Epic drama romance",
+    "year": 1959,
+    "trailer": "https://www.youtube.com/watch?v=mS8YraEXC9c",
+    "wiki": "https://en.wikipedia.org/wiki/The_Human_Condition_(film_series)",
+    "imdb": "https://www.imdb.com/title/tt0053114/",
+    "rt": "https://www.rottentomatoes.com/m/ningen_no_joken_i",
+    "comments": "great story and top-notch camera work"
+},
+{
+    "title": "Tokyo Story",
+    "director": "Yasujirō Ozu",
+    "genres": "Drama",
+    "year": 1953,
+    "trailer": "https://www.youtube.com/watch?v=5zEKw4VQIeY",
+    "wiki": "https://en.wikipedia.org/wiki/Tokyo_Story",
+    "imdb": "https://www.imdb.com/title/tt0046438/",
+    "rt": "https://www.rottentomatoes.com/m/tokyo_story",
+    "comments": "it's worth to watch it with the commentary"
+},
+{
+    "title": "",
+    "director": "",
+    "genres": "",
+    "year": 0,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "",
+    "rt": "",
+    "comments": ""
+}
+]}

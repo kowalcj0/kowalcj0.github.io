@@ -1,0 +1,48 @@
+{
+"category": "classics",
+"movies": [
+{
+    "title": "Brazil",
+    "director": "Terry Gilliam",
+    "genres": "Drama, Sci-Fi",
+    "year": 1985,
+    "trailer": "https://www.youtube.com/watch?v=ZKPFC8DA9_8",
+    "wiki": "https://en.wikipedia.org/wiki/Brazil_(1985_film)",
+    "imdb": "https://www.imdb.com/title/tt0088846/",
+    "rt": "https://www.rottentomatoes.com/m/1003033_brazil",
+    "comments": ""
+},
+{
+    "title": "Amistad",
+    "director": "Steven Spielberg",
+    "genres": "Biography, Drama, History",
+    "year": 1997,
+    "trailer": "https://www.youtube.com/watch?v=BJFDOvGMD0U",
+    "wiki": "https://en.wikipedia.org/wiki/Amistad_(film)",
+    "imdb": "https://www.imdb.com/title/tt0118607/",
+    "rt": "https://www.rottentomatoes.com/m/amistad",
+    "comments": ""
+},
+{
+    "title": "The Legend of 1900",
+    "director": "Giuseppe Tornatore",
+    "genres": "Drama, Music, Romance",
+    "year": 1998,
+    "trailer": "https://www.youtube.com/watch?v=2uf-LDlZMFE",
+    "wiki": "https://en.wikipedia.org/wiki/The_Legend_of_1900",
+    "imdb": "https://www.imdb.com/title/tt0120731/",
+    "rt": "https://www.rottentomatoes.com/m/legend_of_1900",
+    "comments": ""
+},
+{
+    "title": "",
+    "director": "",
+    "genres": "",
+    "year": 2019,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "",
+    "rt": "",
+    "comments": ""
+}
+]}

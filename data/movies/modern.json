@@ -1,0 +1,193 @@
+{
+"category": "modern",
+"movies": [
+{
+    "title": "1917",
+    "director": "Sam Mendes",
+    "genres": "Drama, War",
+    "year": 2019,
+    "trailer": "https://www.youtube.com/watch?v=gZjQROMAh_s",
+    "wiki": "https://en.wikipedia.org/wiki/1917_(2019_film)",
+    "imdb": "https://www.imdb.com/title/tt8579674/",
+    "rt": "https://www.rottentomatoes.com/m/1917_2019",
+    "comments": "Amazing long takes"
+},
+{
+    "title": "The Gentleman",
+    "director": "Guy Ritchie",
+    "genres": "Action, Comedy, Crime",
+    "year": 2019,
+    "trailer": "https://www.youtube.com/watch?v=Ify9S7hj480",
+    "wiki": "https://en.wikipedia.org/wiki/The_Gentlemen_(2019_film)",
+    "imdb": "https://www.imdb.com/title/tt8367814/",
+    "rt": "https://www.rottentomatoes.com/m/the_gentlemen",
+    "comments": ""
+},
+{
+    "title": "Bacurau",
+    "director": "Kleber Mendonça Filho, Juliano Dornelles",
+    "genres": "Weird Western",
+    "year": 2019,
+    "trailer": "https://www.youtube.com/watch?v=LKTejyk9ZIA",
+    "wiki": "https://en.wikipedia.org/wiki/Bacurau",
+    "imdb": "https://www.imdb.com/title/tt2762506/",
+    "rt": "https://www.rottentomatoes.com/m/bacurau",
+    "comments": "Imagine Tarantino going on holidays to Brazil just to make a movie about human hunting as a sport combined with some references to The Magnificent Seven and to Brazilian social banditry legends ([Cangaço](https://en.wikipedia.org/wiki/Canga%C3%A7o)). Moreover, all of that is set in the near future with flying-saucer like drones."
+},
+{
+    "title": "Free State of Jones",
+    "director": "Gary Ross",
+    "genres": "Action, Biography, Drama",
+    "year": 2016,
+    "trailer": "https://www.youtube.com/watch?v=3EMkxEKKSQI",
+    "wiki": "https://en.wikipedia.org/wiki/Free_State_of_Jones_(film)",
+    "imdb": "https://www.imdb.com/title/tt1124037/",
+    "rt": "https://www.rottentomatoes.com/m/free_state_of_jones",
+    "comments": ""
+},
+{
+    "title": "Togo",
+    "director": "Ericson Core",
+    "genres": "Drama",
+    "year": 2019,
+    "trailer": "https://www.youtube.com/watch?v=HMfyueM-ZBQ (for dog lovers)",
+    "wiki": "https://en.wikipedia.org/wiki/Togo_(film)",
+    "imdb": "https://www.imdb.com/title/tt8096836/",
+    "rt": "https://www.rottentomatoes.com/m/togo_2019",
+    "comments": "**Willem Dafoe** FTW!"
+},
+{
+    "title": "Pandorum",
+    "director": "Christian Alvart",
+    "genres": "SciFi, Horror, Action & Adventure",
+    "year": 2006,
+    "trailer": "https://www.youtube.com/watch?v=PItZ-qr9jG8",
+    "wiki": "https://en.wikipedia.org/wiki/Pandorum",
+    "imdb": "https://www.imdb.com/title/tt1188729/",
+    "rt": "https://www.rottentomatoes.com/m/pandorum",
+    "comments": "A must see for all Alien series lovers"
+},
+{
+    "title": "The Square",
+    "director": "Ruben Östlund",
+    "genres": "Satire, Drama",
+    "year": 2017,
+    "trailer": "https://www.youtube.com/watch?v=EUzRjRv0Ib0",
+    "wiki": "https://en.wikipedia.org/wiki/The_Square_(2017_film)",
+    "imdb": "https://www.imdb.com/title/tt4995790/",
+    "rt": "https://www.rottentomatoes.com/m/the_square_2017",
+    "comments": ""
+},
+{
+    "title": "The Red Turtle",
+    "director": "Michaël Dudok de Wit",
+    "genres": "Animation, Family, Fantasy",
+    "year": 2016,
+    "trailer": "https://www.youtube.com/watch?v=Sw7BggqBpTk",
+    "wiki": "https://en.wikipedia.org/wiki/The_Red_Turtle",
+    "imdb": "https://www.imdb.com/title/tt3666024/",
+    "rt": "https://www.rottentomatoes.com/m/the_red_turtle",
+    "comments": ""
+},
+{
+    "title": "November",
+    "director": "Rainer Sarnet",
+    "genres": "Drama, Fantasy, Horror",
+    "year": 2017,
+    "trailer": "https://www.youtube.com/watch?v=IzEcTKUHxJc&t=78s",
+    "wiki": "https://en.wikipedia.org/wiki/November_(2017_film)",
+    "imdb": "https://www.imdb.com/title/tt6164502/",
+    "rt": "https://www.rottentomatoes.com/m/november_2018",
+    "comments": "A gloomy & murky Estonian movie with fantastic camera work"
+},
+{
+    "title": "The Handmaiden",
+    "director": "Chan-wook Park",
+    "genres": "Drama, Romance, Thriller ",
+    "year": 2016,
+    "trailer": "https://www.youtube.com/watch?v=whldChqCsYk",
+    "wiki": "https://en.wikipedia.org/wiki/The_Handmaiden",
+    "imdb": "https://www.imdb.com/title/tt4016934/",
+    "rt": "https://www.rottentomatoes.com/m/the_handmaiden",
+    "comments": ""
+}
+,{
+    "title": "Marriage Story",
+    "director": "Noah Baumbach",
+    "genres": "Comedy, Drama, Romance ",
+    "year": 2019,
+    "trailer": "https://www.youtube.com/watch?v=BHi-a1n8t7M",
+    "wiki": "https://en.wikipedia.org/wiki/Marriage_Story",
+    "imdb": "https://www.imdb.com/title/tt7653254/",
+    "rt": "https://www.rottentomatoes.com/m/marriage_story_2019",
+    "comments": "Oh Scarlet!!!"
+}
+,{
+    "title": "Roma",
+    "director": "Alfonso Cuarón",
+    "genres": "Social Drama",
+    "year": 2018,
+    "trailer": "https://www.youtube.com/watch?v=6BS27ngZtxg",
+    "wiki": "https://en.wikipedia.org/wiki/Roma_(2018_film)",
+    "imdb": "https://www.imdb.com/title/tt6155172/",
+    "rt": "https://www.rottentomatoes.com/m/roma_2018",
+    "netflix": "https://www.netflix.com/gb/title/80240715",
+    "comments": ""
+}
+,{
+    "title": "The Bar",
+    "director": "Álex de la Iglesia",
+    "genres": "Black Comedy, Thriller",
+    "year": 2017,
+    "trailer": "https://www.youtube.com/watch?v=PTazqyeYg3Y",
+    "wiki": "https://en.wikipedia.org/wiki/The_Bar_(film)",
+    "imdb": "https://www.imdb.com/title/tt5121816/",
+    "rt": "https://www.rottentomatoes.com/m/the_bar_2017",
+    "netflix": "https://www.netflix.com/gb/title/80103311",
+    "comments": ""
+}
+,{
+    "title": "La Haine",
+    "director": "Mathieu Kassovitz",
+    "genres": "Crime, Drama",
+    "year": 1995,
+    "trailer": "https://www.youtube.com/watch?v=5Hs6GwQPAQE",
+    "wiki": "https://en.wikipedia.org/wiki/La_Haine",
+    "imdb": "https://www.imdb.com/title/tt0113247/",
+    "rt": "https://www.rottentomatoes.com/m/la_haine",
+    "comments": "One of the best french movies I've ever seen"
+}
+,{
+    "title": "Django Unchained",
+    "director": "Quentin Tarantino",
+    "genres": "revisionist Western",
+    "year": 2012,
+    "trailer": "https://www.youtube.com/watch?v=_iH0UBYDI4g",
+    "wiki": "https://en.wikipedia.org/wiki/Django_Unchained",
+    "imdb": "https://www.imdb.com/title/tt1853728/",
+    "rt": "https://www.rottentomatoes.com/m/django_unchained_2012",
+    "comments": ""
+}
+,{
+    "title": "",
+    "director": "",
+    "genres": "",
+    "year": 2019,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "",
+    "rt": "",
+    "comments": ""
+}
+,{
+    "title": "",
+    "director": "",
+    "genres": "",
+    "year": 2019,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "",
+    "rt": "",
+    "comments": ""
+}
+]}

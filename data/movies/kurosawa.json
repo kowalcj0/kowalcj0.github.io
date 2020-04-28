@@ -1,0 +1,81 @@
+{
+"category": "kurosawa",
+"movies": [
+{
+    "title": "Seven Samurai",
+    "director": "Akira Kurosawa",
+    "genres": "epic samurai drama",
+    "year": 1954,
+    "trailer": "https://www.youtube.com/watch?v=wJ1TOratCTo",
+    "wiki": "https://en.wikipedia.org/wiki/Seven_Samurai",
+    "imdb": "https://www.imdb.com/title/tt0047478/",
+    "rt": "https://www.rottentomatoes.com/m/seven_samurai_1956",
+    "comments": ""
+},
+{
+    "title": "Rashomon",
+    "director": "Akira Kurosawa",
+    "genres": "",
+    "year": 0,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "https://www.imdb.com/title/tt0042876/",
+    "rt": "",
+    "comments": ""
+},
+{
+    "title": "Sanjuro",
+    "director": "Akira Kurosawa",
+    "genres": "",
+    "year": 0,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "https://www.imdb.com/title/tt0056443/",
+    "rt": "",
+    "comments": ""
+},
+{
+    "title": "Yojimbo",
+    "director": "Akira Kurosawa",
+    "genres": "",
+    "year": 0,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "https://www.imdb.com/title/tt0055630/",
+    "rt": "",
+    "comments": ""
+},
+{
+    "title": "The Hidden Fortress",
+    "director": "Akira Kurosawa",
+    "genres": "",
+    "year": 0,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "https://www.imdb.com/title/tt0051808/",
+    "rt": "",
+    "comments": ""
+},
+{
+    "title": "Throne of Blood",
+    "director": "Akira Kurosawa",
+    "genres": "",
+    "year": 0,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "https://www.imdb.com/title/tt0050613/",
+    "rt": "",
+    "comments": ""
+},
+{
+    "title": "",
+    "director": "Akira Kurosawa",
+    "genres": "",
+    "year": 0,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "",
+    "rt": "",
+    "comments": ""
+}
+]}

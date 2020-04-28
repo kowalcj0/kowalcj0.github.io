@@ -1,0 +1,38 @@
+{
+"category": "documentaries",
+"movies": [
+{
+    "title": "The red pill",
+    "director": "Cassie Jaye",
+    "genres": "Documentary",
+    "year": 2016,
+    "trailer": "https://www.youtube.com/watch?v=wLzeakKC6fE",
+    "wiki": "https://en.wikipedia.org/wiki/The_Red_Pill",
+    "imdb": "https://www.imdb.com/title/tt3686998/",
+    "rt": "https://www.rottentomatoes.com/m/the_red_pill_2016",
+    "comments": ""
+},
+{
+    "title": "The Laundromat",
+    "director": "Steven Soderbergh",
+    "genres": "Biography, Comedy, Drama",
+    "year": 2019,
+    "trailer": "https://www.youtube.com/watch?v=wuBRcfe4bSo", 
+    "wiki": "https://en.wikipedia.org/wiki/The_Laundromat_(film)",
+    "imdb": "https://www.imdb.com/title/tt5865326/",
+    "rt": "https://www.rottentomatoes.com/m/the_laundromat",
+    "comments": "System of money laundering explained by Jürgen Mossack and Ramón Fonseca"
+},
+{
+    "title": "",
+    "director": "",
+    "genres": "",
+    "year": 2019,
+    "trailer": "", 
+    "wiki": "",
+    "imdb": "",
+    "rt": "",
+    "comments": ""
+}
+]}
+
