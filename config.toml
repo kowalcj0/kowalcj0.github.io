@@ -48,7 +48,6 @@ hideEntryNavigation = ["page"] # boolean / array of sections
 hideEntryMeta = ["page"] # boolean / array of sections
 showReadingTime = true
 showLastmod = true
-taxonomyCloudShuffle = true
 accentColor = "#ffcd00"
 hideMainMenu = false
 
@@ -58,7 +57,7 @@ enable = true
 [params.widgets]
 header = ["breadcrumbs"]
 homepage = ["recent_posts"]
-sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
+sidebar = ["about", "search", "sidebar_menu", "cat_cloud", "taxonomy_cloud"]
 footer = ["social_menu"]
 
 [params.opengraph.facebook]
@@ -121,7 +120,6 @@ indexName = ""
 searchApiKey = ""
 
 [taxonomies]
-author = "authors"
 category = "categories"
 series = "series"
 tag = "tags"

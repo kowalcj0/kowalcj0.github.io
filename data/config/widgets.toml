@@ -7,3 +7,17 @@ logo = "img/logo.png"
 title = "Recent Posts"
 length = 100
 excludeTypes = ["page"]
+
+##########################################
+# Minimo widget configuration
+# https://minimo.netlify.app/docs/widgets/
+[cat_cloud]
+title = "Categories"
+taxonomy = "categories"
+shuffle = false
+
+[taxonomy_cloud]
+title = "Tags"
+taxonomy = "tags"
+shuffle = false
+##########################################
