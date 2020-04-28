@@ -300,17 +300,17 @@ One min read
   
 
   <div class='container entry-content'>
-  <h1 id="requirements">Requirements</h1>
+  <h1 id="requirements">Requirements<a href="#requirements" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <ul>
 <li><a href="https://www.musicpd.org/">mpd</a> &amp; <a href="https://www.musicpd.org/clients/mpc/">mpc</a></li>
 <li>a list of podcast RSS feed links</li>
 </ul>
-<h1 id="example-podcast-rss-feed-links">Example podcast RSS feed links</h1>
+<h1 id="example-podcast-rss-feed-links">Example podcast RSS feed links<a href="#example-podcast-rss-feed-links" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p>Here&rsquo;s list of my favourite English &amp; Polish podcasts in an <a href="../files/podcasts.opml">OPML</a>
 format.</p>
 <p>You can extract RSS feed links from it with:</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">awk -F <span class="s1">&#39;&#34;&#39;</span> <span class="s1">&#39;{print $6}&#39;</span> podcasts.opml <span class="p">|</span> sed <span class="s1">&#39;/^$/d&#39;</span>
-</code></pre></div><h1 id="load-podcast-into-mpd">Load podcast into MPD</h1>
+</code></pre></div><h1 id="load-podcast-into-mpd">Load podcast into MPD<a href="#load-podcast-into-mpd" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p>Given that you&rsquo;ve saved your podcast feed list in <code>~/Music/podcasts.rss</code>.<br>
 Then with a simple while loop you can load your podcast episodes into mpd.</p>
 <p>Add this to your <code>~/.bashrc</code> or <code>~/.bash_profile</code>:</p>
@@ -326,11 +326,12 @@ Then with a simple while loop you can load your podcast episodes into mpd.</p>
     mpc --quiet play
 <span class="o">}</span>
 </code></pre></div><p>Then run <code>podcasts</code>, wait a bit and enjoy your fav podcasts.</p>
-<h2 id="notes">Notes</h2>
+<h2 id="notes">Notes<a href="#notes" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <ul>
 <li>If you get rid of <code>--range=0:${N}</code> then all episodes from all feeds will be loaded</li>
 <li><code>--wait</code> is optional, and should make things lil bit more stable</li>
 </ul>
+
 
 </div>
 

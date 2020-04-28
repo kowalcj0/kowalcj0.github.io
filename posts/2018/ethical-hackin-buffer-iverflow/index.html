@@ -302,7 +302,7 @@
   <div class='container entry-content'>
   <p>These are just my notes from the Pluralsight course: &ldquo;Ethical Hacking: Buffer
 Overflows&rdquo; by James Murray.</p>
-<h1 id="stack-pointers">Stack pointers</h1>
+<h1 id="stack-pointers">Stack pointers<a href="#stack-pointers" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p>Types of stack pointers:</p>
 <ul>
 <li><code>SP</code> → <code>Stack Pointer</code>
@@ -343,7 +343,7 @@ don&rsquo;t have to be in the program code segment!</li>
 </li>
 <li><code>Registers</code> → are dedicated areas of CPU memory</li>
 </ul>
-<h1 id="what-can-you-do-with-a-buffer-overflow-condition">What can you do with a buffer overflow condition?</h1>
+<h1 id="what-can-you-do-with-a-buffer-overflow-condition">What can you do with a buffer overflow condition?<a href="#what-can-you-do-with-a-buffer-overflow-condition" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <ul>
 <li>Access memory-resident resources</li>
 <li>Run installed programs</li>
@@ -353,7 +353,7 @@ don&rsquo;t have to be in the program code segment!</li>
 <p><code>Arbitrary code execution</code> -&gt; is a condition when any executable ecode that is
 injected into a program&rsquo;s buffer causes the buffer to overflow and forces the
 program to run the injected code.</p>
-<h1 id="stages-of-bof">Stages of BoF</h1>
+<h1 id="stages-of-bof">Stages of BoF<a href="#stages-of-bof" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <ol>
 <li>Inject <code>exploit code</code> into a program&rsquo;s input buffer (IP) with a buffer
 overflow vulnerability. This will place the exploit&rsquo;s code on the program&rsquo;s
@@ -383,7 +383,7 @@ memory locations, e.g:</p>
 <li><code>0x7C80236B</code> → <code>kernel32.dll.CreateProcesA()</code></li>
 </ul>
 <p>Exploit code needs these system resources to properly run</p>
-<h1 id="egghunting">Egghunting</h1>
+<h1 id="egghunting">Egghunting<a href="#egghunting" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p>Is a technique of placing at the beginning of the exploit code an identifiable
 sequence of bytes referred to as an <code>egg</code> and searching the memory for the
 location of the <code>egg</code>. For this reason the bytes used in the <code>egg</code> must be
@@ -394,11 +394,11 @@ Search code must me pre-loaded onto the process memory in a place where it can
 be easily started. Usually it&rsquo;s so small that it can be started from the
 buffer in the stack and the actual exploit payload containing the <code>egg</code> might
 be injected using an overflow in the heap memory.</p>
-<h1 id="no-operation-nop-or-no-op">No Operation (NOP or NO-OP)</h1>
+<h1 id="no-operation-nop-or-no-op">No Operation (NOP or NO-OP)<a href="#no-operation-nop-or-no-op" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p><code>NOP</code> is a CPU controll operation and it tell it to do notning except adnvance
 the IP to the next instruction. NOP consumes one CPU cycle.<br>
 On a 1 GHz CPU <code>NOP</code> take 1 nano second.</p>
-<h1 id="nop-sled">NOP Sled</h1>
+<h1 id="nop-sled">NOP Sled<a href="#nop-sled" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <ul>
 <li>Set the <code>IP</code> to the address of the begnning of the exploit code
 <ul>
@@ -414,7 +414,7 @@ the paylod easier to find</li>
 <li>Psuedo-NOP Sleds (a long list of nonsensical CPU instruction) are not
 (easily) detectable as they appear to be legit code.</li>
 </ul>
-<h1 id="shellcode">Shellcode</h1>
+<h1 id="shellcode">Shellcode<a href="#shellcode" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <ul>
 <li>creates an interaction OS shell</li>
 <li>executes commands on the local system via command line, script, or batch file</li>
@@ -454,7 +454,7 @@ monitor (sniffer, keylogger etc.)</li>
 </code></pre></div><p>when executed, the <code>shelltest</code> will print <code>Hello, World!</code> :)</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ./shelltest 
 Hello, World!
-</code></pre></div><h1 id="the-heap">The Heap</h1>
+</code></pre></div><h1 id="the-heap">The Heap<a href="#the-heap" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <ul>
 <li>Heap stores program data</li>
 <li>The stack is fixed in size, but the heap can grop and shrink as needed</li>
@@ -475,7 +475,7 @@ Hello, World!
      |   CODE    |
      +-----------+
  Process Address Space
-</code></pre><h2 id="structure-of-the-heap">Structure of the heap</h2>
+</code></pre><h2 id="structure-of-the-heap">Structure of the heap<a href="#structure-of-the-heap" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <ul>
 <li>process memory is filled with memory management structures called <code>chunks</code></li>
 <li><code>chunk</code> is a fixed size area of the process memory (e.g. 8 bytes in length)
@@ -488,7 +488,7 @@ so it may write &amp; readdata to/from it and release the blocks of memory back
 to the heap when they&rsquo;re not longer needed. So that they can be
 re-allocated.</li>
 </ul>
-<h3 id="heap-chunk-header">Heap Chunk Header</h3>
+<h3 id="heap-chunk-header">Heap Chunk Header<a href="#heap-chunk-header" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <p>Contains things like:</p>
 <ul>
 <li>type of chunk</li>
@@ -504,7 +504,7 @@ The heap memory can store chunks anywhehe in the memory.</p>
 <p><em>TIP:</em><br>
 The pointers should be set to zero after the memory allocated on heap got
 released.</p>
-<h1 id="exploiting-heap-overflows">Exploiting Heap Overflows</h1>
+<h1 id="exploiting-heap-overflows">Exploiting Heap Overflows<a href="#exploiting-heap-overflows" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <ul>
 <li>Buffers on the heap can be overflowed (same as stack buffers)</li>
 <li>Heap overflows can change the memory addresses stored in pointer variables,
@@ -548,7 +548,7 @@ code analysis.</li>
     <span class="n">strcpy</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>  <span class="c1">// strcpy copies the string without checking how
 </span><span class="c1"></span>    <span class="n">free</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span>             <span class="c1">// long the string is or even if it exists
 </span><span class="c1"></span><span class="p">}</span>
-</code></pre></div><h1 id="heap-spray">Heap Spray</h1>
+</code></pre></div><h1 id="heap-spray">Heap Spray<a href="#heap-spray" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p>A technique is used to make it easier to locate &amp; execute exploit code written
 (overflowed into memory) to a heap buffer.<br>
 <code>Heap spray</code> fill the process heap with identical blocks of NOP sleds and
@@ -560,7 +560,7 @@ the address in the heap. The <code>IP</code> will then incrementally move down t
 sled and execute the exploit code.<br>
 <code>Heap spray</code> relieves the need to understand the structure of the <code>Heap</code> around
 vulnerable buffer. It&rsquo;s a brute force technique that can be very effective.</p>
-<h2 id="function-pointers">Function Pointers</h2>
+<h2 id="function-pointers">Function Pointers<a href="#function-pointers" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <ul>
 <li>is a variable that stores the location of a function</li>
 <li>functions are usually called by name directly in the promogram&rsquo;s code</li>
@@ -587,7 +587,7 @@ its name</li>
 <span class="p">}</span>
 </code></pre></div><p>The example above depicts that a function can be called using a memory pointer
 rather than the name of the function itself.</p>
-<h1 id="other-exploitable-items">Other Exploitable items</h1>
+<h1 id="other-exploitable-items">Other Exploitable items<a href="#other-exploitable-items" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p>Apart from Heap or Stack other items, like the ones listed below, can be
 exploited:</p>
 <ul>
@@ -595,7 +595,7 @@ exploited:</p>
 <li>Virtual function tables</li>
 <li>Structured exception handlers (Windows OS)</li>
 </ul>
-<h2 id="structured-exception-handling-seh">Structured Exception Handling (SEH)</h2>
+<h2 id="structured-exception-handling-seh">Structured Exception Handling (SEH)<a href="#structured-exception-handling-seh" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p><code>SEH</code> It&rsquo;s a Windows OS error recovery feature use to handle exceptional conditions
 that might occure during the runtime.<br>
 It might be caused by:</p>
@@ -612,7 +612,7 @@ It might be caused by:</p>
 <code>RaiseException</code> are explitely using <code>SEH</code>.<br>
 If you don&rsquo;t use them in your programs, then <code>SEH</code> on Windows will handle
 unhandled exceptions implicitely as it&rsquo;s present in every process.</p>
-<h3 id="seh-in-the-stack">SEH in the Stack</h3>
+<h3 id="seh-in-the-stack">SEH in the Stack<a href="#seh-in-the-stack" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <p>The control structure used by the <code>SEH</code> is present in the stack of each thread
 in the process.<br>
 In Windows every <code>Stack Frame</code> contains a block of <code>SEH</code> information. Inside
@@ -624,7 +624,7 @@ exception handler that is used to handle the specific exceptinal condition.<br>
 If the function does not use <code>SEH</code> explicitely (<code>try - except</code> clause) only the
 <code>Exception Registration Record</code> for the default exception handler will be
 present in the <code>SEH</code> block in the function stack frame.</p>
-<h2 id="exploiting-seh">Exploiting SEH</h2>
+<h2 id="exploiting-seh">Exploiting SEH<a href="#exploiting-seh" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p><strong>CodeRed&rsquo;s <code>SEH</code> Exploit</strong>:
 was a BoF exploit in Microsoft Index Server used by IIS written in 2001.</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">GET/default.ida?NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
@@ -652,7 +652,7 @@ pointed to by the overwritten <code>SEH</code> record.</li>
 <li>&ldquo;All input is eveil until proven otherwise&rdquo; - Michael Howard, &ldquo;Writing Secure
 Code&rdquo;</li>
 </ul>
-<h1 id="mitigating-bof">Mitigating BoF</h1>
+<h1 id="mitigating-bof">Mitigating BoF<a href="#mitigating-bof" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p>In information security nomenclature, <code>mitigation</code> refers to act of reducing
 the potential harmful effect of a threat. Whereas <code>remediation</code> or <code>disaster recovery</code> is about recovering from the effects of a threat and restoring normal
 operation.</p>
@@ -717,7 +717,7 @@ harm caused by an active threat</li>
 <li>Network monitoring tools: fireawall, proxies, <code>IDS</code>/<code>IDP</code></li>
 <li><em>Countermeasures</em> cannot prevent all possible loss from a threat</li>
 </ul>
-<h1 id="detecting-bof">Detecting BoF</h1>
+<h1 id="detecting-bof">Detecting BoF<a href="#detecting-bof" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p><strong>Extenal BoF Detection:</strong></p>
 <ul>
 <li>e.g detect BoF exploit patterns in data payload sent to web server</li>
@@ -772,7 +772,7 @@ potential BoF tools and possible attacks.</li>
 <li>backup your logs and secure them against alteration</li>
 <li>don&rsquo;t rely on unreliable UDP syslog protocol</li>
 </ul>
-<h1 id="dep---data-execution-prevention">DEP - Data Execution Prevention</h1>
+<h1 id="dep---data-execution-prevention">DEP - Data Execution Prevention<a href="#dep---data-execution-prevention" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <ul>
 <li><code>DEP</code> - flags a memory page as non-executable (containing just data)</li>
 <li>it sets the <code>NX</code> bit to true, which designates a non-executable memory page</li>
@@ -817,7 +817,7 @@ enoug to perform it</li>
 </ul>
 </li>
 </ul>
-<h2 id="set-dep-in-windows-7810-cli">Set DEP in Windows 7/8/10 CLI</h2>
+<h2 id="set-dep-in-windows-7810-cli">Set DEP in Windows 7/8/10 CLI<a href="#set-dep-in-windows-7810-cli" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">C:<span class="se">\&gt;</span> bcdedit.exe /set <span class="o">{</span>current<span class="o">}</span> nx OptIn  <span class="c1"># default value</span>
 C:<span class="se">\&gt;</span> bcdedit.exe /set <span class="o">{</span>current<span class="o">}</span> nx OptOut <span class="c1"># enable DEP for whole OS, all</span>
                                           <span class="c1"># processes (including kernel &amp;</span>
@@ -835,7 +835,7 @@ C:<span class="se">\&gt;</span> bcdedit.exe /enum                    <span class
 <li><code>MS</code> provides a GUI app called <code>EMET</code> (Enhanced Mitigation Experience Toolkit)
 to manage DEP settings</li>
 </ul>
-<h2 id="set-dep-in-linux">Set DEP in Linux</h2>
+<h2 id="set-dep-in-linux">Set DEP in Linux<a href="#set-dep-in-linux" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p>To check is DEP is enabled or disable run:</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># dmesg | grep NX</span>
 </code></pre></div><p>To disable software DEP emulation you&rsquo;ll need to set <code>noexec</code> &amp; <code>noexec32</code>
@@ -847,7 +847,7 @@ flags in Grub&rsquo;s <code>GRUB_CMDLINE_LINUX_DEFAULT</code>, e.g.:</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># execstack -s myprogram  # set the DEP bit</span>
 <span class="c1"># execstack -1 myprogram  # check the DEP bit value</span>
 <span class="c1"># execstack -c myprogram  # turn off DEP</span>
-</code></pre></div><h1 id="aslr---address-space-layout-randomization">ASLR - Address Space Layout Randomization</h1>
+</code></pre></div><h1 id="aslr---address-space-layout-randomization">ASLR - Address Space Layout Randomization<a href="#aslr---address-space-layout-randomization" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p><code>ASLR</code> technique randomizes the position of the stack, heap and system
 resources in process memory. It makes for a BoF exploits to both find system
 resources and process memory and execute the exploit code it injects by
@@ -876,7 +876,7 @@ kernel.randomize_va_space <span class="o">=</span> <span class="m">0</span>
 
 <span class="c1"># to disable ALSR for only that shell instance</span>
 <span class="c1"># setarch `uname -m` -R /bin/bash</span>
-</code></pre></div><h2 id="defeating-aslr">Defeating ASLR</h2>
+</code></pre></div><h2 id="defeating-aslr">Defeating ASLR<a href="#defeating-aslr" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <ul>
 <li>ASLR renadomization occurs only at system startup</li>
 <li>identical randomized location applied to all process</li>
@@ -889,7 +889,7 @@ kernel.randomize_va_space <span class="o">=</span> <span class="m">0</span>
 </ul>
 </li>
 </ul>
-<h3 id="missing-aslr">Missing ASLR</h3>
+<h3 id="missing-aslr">Missing ASLR<a href="#missing-aslr" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <ul>
 <li>ASLR is not supported by OSes older than listed below:
 <ul>
@@ -902,7 +902,7 @@ kernel.randomize_va_space <span class="o">=</span> <span class="m">0</span>
 </ul>
 </li>
 </ul>
-<h1 id="kaslr---kernel-address-space-layout-randomization">KASLR - Kernel Address Space Layout Randomization</h1>
+<h1 id="kaslr---kernel-address-space-layout-randomization">KASLR - Kernel Address Space Layout Randomization<a href="#kaslr---kernel-address-space-layout-randomization" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <ul>
 <li>Randomizes were objects are placed in kernel memory</li>
 <li>First added to Linux kernel in 2005 (v<code>2.6.12</code>)</li>
@@ -913,14 +913,14 @@ boot)</li>
 <li>Memory locations discovered by brute force or memory leaks</li>
 <li><code>KASLR</code> can be disabled by default (Linux especially)</li>
 </ul>
-<h1 id="sehop">SEHOP</h1>
+<h1 id="sehop">SEHOP<a href="#sehop" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <ul>
 <li>Structured Exception Handling Overwripte Protection</li>
 <li>added to Windows to detect illicit changes in the SEH control structure</li>
 <li>Both <code>SEH</code> and <code>SEHOP</code> are present in all Windows processes</li>
 <li><code>SEHOP</code> is controlled per process using <code>EMET</code></li>
 </ul>
-<h2 id="sehop-in-action">SEHOP in action</h2>
+<h2 id="sehop-in-action">SEHOP in action<a href="#sehop-in-action" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <ul>
 <li><code>SEH</code> information is added to each stack frame</li>
 <li><code>SEHOP</code> works when an exception is thrown by validating that pointers in the
@@ -936,7 +936,7 @@ the process will be terminated before exploit code can be executed.</li>
 <li><code>HKEY_LOCAL_MACHINE/SYSTEM/CurrentCotrolSet/kernel/DisableExceptionChainValidation</code></li>
 <li>you can also use <code>EMET</code></li>
 </ul>
-<h3 id="safeseh---a-visual-studio-cc-feature">/SAFESEH - a Visual Studio C/C++ feature</h3>
+<h3 id="safeseh---a-visual-studio-cc-feature">/SAFESEH - a Visual Studio C/C++ feature<a href="#safeseh---a-visual-studio-cc-feature" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <ul>
 <li><code>/SAFESEH</code> is a security feature in Visual Studio C/C++</li>
 <li>it&rsquo;s an alternative protection mechanism to SEHOP</li>
@@ -947,6 +947,7 @@ stack</li>
 <li>it can be disabled with <code>/SAFESEH:NO</code></li>
 <li><code>/SAFESEH</code> works only with 32-bit programs</li>
 </ul>
+
 
 </div>
 
