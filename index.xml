@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home</title>
@@ -45,7 +45,7 @@ Video Format : JPEG Codec ID : jpeg Bit rate mode : Variable Bit rate : 3 827 kb
     </item>
     
     <item>
-      <title>Movies, TV Series &amp; Documentaries worth watching</title>
+      <title>Worth watching</title>
       <link>https://kowalcj0.github.io/posts/general/worth-watching/</link>
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
       
@@ -75,7 +75,7 @@ Nagrania  dzień pierwszy https://www.youtube.com/watch?v=BoR119sLN6s dzień dru
       <description>According to the official specification Chromecast (even Ultra version) doesn&amp;rsquo;t support DTS.
 If you can&amp;rsquo;t be bothered to spend few hours to transcode the movie with lets say Handbrake you can use ver handy CLI casting tool: castnow.
 Once installed, simply tell it to use ffmpeg to transcode audio to mp3 (or ac3 or aac).
-castnow your-wonderful-movie.mkv \  --tomp4 \  --ffmpeg-vcodec copy \  --ffmpeg-acodec mp3 \  --ffmpeg-movflags frag_keyframe+empty_moov+faststart  - use movflags if you will only hear the audio and you&amp;rsquo;ll see a black screen  The only downside of transcoding is that the play / pause controls are not supported.</description>
+castnow your-wonderful-movie.mkv \  --tomp4 \  --ffmpeg-vcodec copy \  --ffmpeg-acodec mp3 \  --ffmpeg-movflags frag_keyframe+empty_moov+faststart    use movflags if you will only hear the audio and you&amp;rsquo;ll see a black screen    The only downside of transcoding is that the play / pause controls are not supported.</description>
     </item>
     
     <item>
@@ -84,7 +84,7 @@ castnow your-wonderful-movie.mkv \  --tomp4 \  --ffmpeg-vcodec copy \  --ffmpeg-
       <pubDate>Sat, 18 May 2019 19:44:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/posts/2019/tasty-smothie-no-1/</guid>
-      <description> A simple recipe for a delicious smoothie.
+      <description>A simple recipe for a delicious smoothie.
 Ingredients:  50-80g yoghurt 100ml milk (regular, soy or oat etc.) 1 medium banana 1 passion fruit 1 small lime few raspberries few blueberries 2-4 strawberries water to top it up  Extras: You might add:
  jam (for some extra flavour) ispaghula husk (e.g Fybogel orange flavour) - for those with IBS  </description>
     </item>
@@ -97,7 +97,7 @@ Ingredients:  50-80g yoghurt 100ml milk (regular, soy or oat etc.) 1 medium bana
       <guid>https://kowalcj0.github.io/posts/2019/logrotate-bash-history/</guid>
       <description>A while ago I decided to take more control over my bash history and I followed this advice https://unix.stackexchange.com/a/48113.
 With time I&amp;rsquo;ve tweaked few settings, like ignore lines that start with space, and ignore some of the trivial commands like ls:
-export HISTCONTROL=ignoredups:erasedups:ignorespace # no duplicate entries &amp;amp; lines starting with space export HISTSIZE=99999999 # big big history export HISTFILESIZE=99999999 # big big history shopt -s histappend # append to history, don&#39;t overwrite it export PROMPT_COMMAND=&amp;quot;history -a; history -c; history -r; $PROMPT_COMMAND&amp;quot; # Save and reload the history after each command finishes HISTIGNORE=&#39;ll *:ls *:l:gs:&#39; # ignore some commands  Nevertheless, every now and then I&amp;rsquo;d loose the command history, e.</description>
+export HISTCONTROL=ignoredups:erasedups:ignorespace # no duplicate entries &amp;amp; lines starting with space export HISTSIZE=99999999 # big big history export HISTFILESIZE=99999999 # big big history shopt -s histappend # append to history, don&#39;t overwrite it export PROMPT_COMMAND=&amp;quot;history -a; history -c; history -r; $PROMPT_COMMAND&amp;quot; # Save and reload the history after each command finishes HISTIGNORE=&#39;ll *:ls *:l:gs:&#39; # ignore some commands Nevertheless, every now and then I&amp;rsquo;d loose the command history, e.</description>
     </item>
     
     <item>
@@ -129,7 +129,7 @@ Why would give away such important meta data about your readers to someone else?
       
       <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-mobile-devices-and-platforms/</guid>
       <description>Good sources of knowledge:
- OWASP Testing guide - book OWASP Pinning cheat sheet  Android Application  Executes as:  application service  Helpers  Broadcast receiver (allows app to register for specifi events which will be then passed to it for action) content provider (it interfaces between app and file storage and provide sql-like interface to read/write/modify/delete data). SQLite is a common DB service access via content provider.</description>
+ OWASP Testing guide - book OWASP Pinning cheat sheet  Android Application  Executes as:  application service   Helpers  Broadcast receiver (allows app to register for specifi events which will be then passed to it for action) content provider (it interfaces between app and file storage and provide sql-like interface to read/write/modify/delete data). SQLite is a common DB service access via content provider.</description>
     </item>
     
     <item>
@@ -139,7 +139,7 @@ Why would give away such important meta data about your readers to someone else?
       
       <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-denial-of-service-attacks/</guid>
       <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Denial of Service&amp;rdquo; by Troy Hunt.
-HTTP flood attack  HTTP flood attack  it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;) can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;)  Attack effectives can be amplified via certain app features:  They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth  Requests can adhere to legitimate patterns which makes defence difficult  TCP attacks These are the layer 4 (OSI) attacks</description>
+HTTP flood attack  HTTP flood attack  it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;) can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;)   Attack effectives can be amplified via certain app features:  They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth   Requests can adhere to legitimate patterns which makes defence difficult  TCP attacks These are the layer 4 (OSI) attacks</description>
     </item>
     
     <item>
@@ -149,7 +149,7 @@ HTTP flood attack  HTTP flood attack  it&amp;rsquo;s a &amp;ldquo;volumetric&amp
       
       <guid>https://kowalcj0.github.io/posts/2018/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</guid>
       <description>Short demo: Your browser does not support the video tag.  Requirements You&amp;rsquo;ll need:
- python 3.x mpv video player music player that supports MPRIS2 D-Bus interface  mpd + mpDris2 deadbeef + mpris2-plugin  some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel [ddgr]()https://github.com/jarun/ddgr - a CLI client for DuckDuckGo  System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:
+ python 3.x mpv video player music player that supports MPRIS2 D-Bus interface  mpd + mpDris2 deadbeef + mpris2-plugin   some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel ddgrhttps://github.com/jarun/ddgr - a CLI client for DuckDuckGo  System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:
 sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packages Next step is to install python packages.</description>
     </item>
     
@@ -161,7 +161,7 @@ sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packag
       <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-buffer-iverflow/</guid>
       <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Buffer Overflows&amp;rdquo; by James Murray.
 Stack pointers Types of stack pointers:
- SP → Stack Pointer  keeps track where the next element will be pushe to or poppef off of the stack  FP → Frame Pointer  points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed  BP → Base Pointer (different name for FP) IP → Instruction Pointer  points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
+ SP → Stack Pointer  keeps track where the next element will be pushe to or poppef off of the stack   FP → Frame Pointer  points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed   BP → Base Pointer (different name for FP) IP → Instruction Pointer  points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
     </item>
     
     <item>
@@ -172,9 +172,9 @@ Stack pointers Types of stack pointers:
       <guid>https://kowalcj0.github.io/posts/2018/tweaking-intel-graphics-on-linux/</guid>
       <description>get info about firmware
 modinfo i915 | grep ^fi List all driver parameters
-modinfo -p i915  If find the output of the above command confusing, as you can&amp;rsquo;t see the actual values of every parameter, then use:
-sudo grep -H &#39;&#39; /sys/module/i915//parameters/*  If you see error messages like this one:
-$ dmesg |tail [ 2360.475430] [drm] not enough stolen space for compressed buffer (need 4325376 bytes), disabling [ 2360.</description>
+modinfo -p i915 If find the output of the above command confusing, as you can&amp;rsquo;t see the actual values of every parameter, then use:
+sudo grep -H &#39;&#39; /sys/module/i915//parameters/* If you see error messages like this one:
+$ dmesg |tail [ 2360.475430] [drm] not enough stolen space for compressed buffer (need 4325376 bytes), disabling [ 2360.475437] [drm] hint: you may be able to increase stolen memory size in the BIOS to avoid this then you can enable framebuffer compression.</description>
     </item>
     
     <item>
@@ -232,7 +232,7 @@ xhost si:localuser:root That&amp;rsquo;s it. From now on, you shouldn&amp;rsquo;
       <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-enumeration-course-notes/</guid>
       <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Enumeration&amp;rdquo;.
 Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&amp;rsquo;s own set of Protection Rings -&amp;gt; for more see wiki
-Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings: * Ring 0 - kernel * Ring 1 - executive * Ring 2 - supervisor * Ring 3 - user</description>
+Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings:</description>
     </item>
     
     <item>
@@ -258,7 +258,8 @@ It supports syntax highlighting with GitHub flavoured code fences!
 This is more than great!
 Because of this I could quickly get rid of a bit bulky Prism JS syntax highlighter.
 Enable Chroma Start by choosing your Chrome style from gallery available at https://help.farbox.com/pygments.html
-Then generate a css file:</description>
+Then generate a css file:
+hugo gen chromastyles --style=pastie &amp;gt; static/css/syntax.</description>
     </item>
     
     <item>

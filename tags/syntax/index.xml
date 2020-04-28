@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>syntax on Home</title>
@@ -21,7 +21,8 @@ It supports syntax highlighting with GitHub flavoured code fences!
 This is more than great!
 Because of this I could quickly get rid of a bit bulky Prism JS syntax highlighter.
 Enable Chroma Start by choosing your Chrome style from gallery available at https://help.farbox.com/pygments.html
-Then generate a css file:</description>
+Then generate a css file:
+hugo gen chromastyles --style=pastie &amp;gt; static/css/syntax.</description>
     </item>
     
   </channel>

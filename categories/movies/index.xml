@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>movies on Home</title>
@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>Movies, TV Series &amp; Documentaries worth watching</title>
+      <title>Worth watching</title>
       <link>https://kowalcj0.github.io/posts/general/worth-watching/</link>
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
       

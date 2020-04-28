@@ -9,16 +9,16 @@
 <meta property='og:description' content='A brief overview of various CLI tools that can help you diagnose your FreeBSD system'>
 <meta property='og:url' content='https://kowalcj0.github.io/posts/2020/handy-freebsd-diagnostic-tools/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../images/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'><meta property='article:section' content='posts'><meta property='article:tag' content='freenas'><meta property='article:tag' content='cli'><meta property='article:published_time' content='2020-03-28T22:02:34&#43;01:00'/><meta property='article:modified_time' content='2020-03-28T22:02:34&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../images/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'><meta property='twitter:image:alt' content='SRC: https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../images/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'><meta property='article:section' content='posts'><meta property='article:tag' content='freebsd'><meta property='article:tag' content='freenas'><meta property='article:tag' content='cli'><meta property='article:tag' content='zfs'><meta property='article:published_time' content='2020-03-28T22:02:34&#43;01:00'/><meta property='article:modified_time' content='2020-03-28T22:02:34&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../images/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'><meta property='twitter:image:alt' content='SRC: https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'>
 
-<meta name="generator" content="Hugo 0.57.2" />
+<meta name="generator" content="Hugo 0.69.2" />
 
   <title>FreeNas/FreeBSD hardware/diagnostic tools • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/posts/2020/handy-freebsd-diagnostic-tools/'>
   
   
   <link rel='icon' href='/img/favicon144.ico'>
-<link rel='stylesheet' href='/assets/css/main.dd2efce5.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#ffcd00;}
 </style>
 
@@ -40,7 +40,9 @@
     </div>
     
     <h2 class='title site-title '>
-    Free yourself, help to free me, free us
+      <a href='/'>
+      Free yourself, help to free me, free us
+      </a>
     </h2>
     <div class='desc'>
     notes, scribbles, thoughts etc.
@@ -62,11 +64,36 @@
 </section>
 <section class='widget widget-taxonomy_cloud sep-after'>
   <header>
+    <h4 class='title widget-title'>Categories</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/categories/food/' style='font-size:1em'>food</a>
+      </li><li>
+        <a href='/categories/hugo/' style='font-size:1em'>hugo</a>
+      </li><li>
+        <a href='/categories/learning/' style='font-size:1.875em'>learning</a>
+      </li><li>
+        <a href='/categories/movies/' style='font-size:1.125em'>movies</a>
+      </li><li>
+        <a href='/categories/security/' style='font-size:2em'>security</a>
+      </li><li>
+        <a href='/categories/unix/' style='font-size:2em'>unix</a>
+      </li><li>
+        <a href='/categories/web/' style='font-size:1em'>web</a>
+      </li></ul>
+</div>
+
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
     <h4 class='title widget-title'>Tags</h4>
   </header>
 
   <div class='container list-container'>
-  <ul class='list taxonomy-cloud'><li>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
         <a href='/tags/1959/' style='font-size:1em'>1959</a>
       </li><li>
         <a href='/tags/android/' style='font-size:1em'>android</a>
@@ -97,17 +124,17 @@
       </li><li>
         <a href='/tags/ethical-hacking/' style='font-size:1.8571428571428572em'>ethical hacking</a>
       </li><li>
-        <a href='/tags/fedora-27/' style='font-size:1em'>fedora 27</a>
+        <a href='/tags/fedora/' style='font-size:1em'>fedora</a>
       </li><li>
         <a href='/tags/ffmpeg/' style='font-size:1.1428571428571428em'>ffmpeg</a>
+      </li><li>
+        <a href='/tags/freebsd/' style='font-size:1em'>freebsd</a>
       </li><li>
         <a href='/tags/freenas/' style='font-size:1em'>freenas</a>
       </li><li>
         <a href='/tags/fun/' style='font-size:1em'>fun</a>
       </li><li>
-        <a href='/tags/gnome-3.26/' style='font-size:1em'>gnome 3.26</a>
-      </li><li>
-        <a href='/tags/hugo/' style='font-size:1em'>hugo</a>
+        <a href='/tags/gnome/' style='font-size:1em'>gnome</a>
       </li><li>
         <a href='/tags/intel/' style='font-size:1em'>intel</a>
       </li><li>
@@ -115,7 +142,7 @@
       </li><li>
         <a href='/tags/japanese/' style='font-size:1em'>japanese</a>
       </li><li>
-        <a href='/tags/kobayashi/' style='font-size:1em'>kobayashi</a>
+        <a href='/tags/linux/' style='font-size:2em'>linux</a>
       </li><li>
         <a href='/tags/logrotate/' style='font-size:1em'>logrotate</a>
       </li><li>
@@ -158,6 +185,8 @@
         <a href='/tags/wayland/' style='font-size:1em'>wayland</a>
       </li><li>
         <a href='/tags/wifi/' style='font-size:1em'>wifi</a>
+      </li><li>
+        <a href='/tags/zfs/' style='font-size:1em'>zfs</a>
       </li></ul>
 </div>
 
@@ -190,6 +219,8 @@
 </button>
     <ul><li class='item'>
         <a href='https://github.com/kowalcj0/kowalcj0.github.io'>Repo</a>
+      </li><li class='item'>
+        <a href='/posts/general/worth-watching/'>Worth watching</a>
       </li></ul>
   </div>
 </nav><div class='header-widgets'>
@@ -260,7 +291,7 @@
     
       
       <figcaption class='container'>
-        <span>SRC: <a href="https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png" target="_blank">https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png</a></span>
+        <span>SRC: <a href="https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png">https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png</a></span>
       </figcaption>
       
     
@@ -271,39 +302,20 @@
   <summary class='title'>
     <span>Table of Contents</span>
   </summary>
-  <nav id="TableOfContents">
-<ul>
-<li><a href="#recommended-reading">Recommended reading</a></li>
-<li><a href="#camcontrol">camcontrol</a></li>
-<li><a href="#dmesg">dmesg</a></li>
-<li><a href="#dmidecode">dmidecode</a></li>
-<li><a href="#freebsd-version">freebsd-version</a></li>
-<li><a href="#freenas-debug">freenas-debug</a></li>
-<li><a href="#gpart">gpart</a></li>
-<li><a href="#pciconf">pciconf</a></li>
-<li><a href="#sysctl">sysctl</a></li>
-<li><a href="#zpool">zpool</a></li>
-</ul>
-</nav>
+  <nav id="TableOfContents"></nav>
 </details>
 
 
   <div class='container entry-content'>
-  
-
-<p>Handy CLI tools that might help your with diagnosing/debugging issues on your
+  <p>Handy CLI tools that might help your with diagnosing/debugging issues on your
 FreeBSD/FreeNAS machine.</p>
-
 <h1 id="recommended-reading">Recommended reading</h1>
-
 <ul>
-<li>FreeNAS documentation on CLI tools: <a href="https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html" target="_blank">https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html</a></li>
-<li>FreeBSD Display Information About The System Hardware: <a href="https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html" target="_blank">https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html</a></li>
+<li>FreeNAS documentation on CLI tools: <a href="https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html">https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html</a></li>
+<li>FreeBSD Display Information About The System Hardware: <a href="https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html">https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html</a></li>
 </ul>
-
 <h1 id="camcontrol">camcontrol</h1>
-
-<p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=camcontrol" target="_blank">camcontrol</a> utility is designed to provide a way for users to access
+<p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=camcontrol">camcontrol</a> utility is designed to provide a way for users to access
 and control the FreeBSD CAM subsystem.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># camcontrol devlist</span>
 &lt;ST4000VN003-1T5168 SC46&gt;          at scbus0 target <span class="m">0</span> lun <span class="m">0</span> <span class="o">(</span>pass0,ada0<span class="o">)</span>
@@ -314,20 +326,18 @@ and control the FreeBSD CAM subsystem.</p>
 &lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span class="m">0</span> lun <span class="m">0</span> <span class="o">(</span>pass5,ada5<span class="o">)</span>
 &lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span class="m">0</span> lun <span class="m">0</span> <span class="o">(</span>pass6,ada6<span class="o">)</span>
 &lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span class="m">0</span> lun <span class="m">0</span> <span class="o">(</span>pass7,ada7<span class="o">)</span>
-&lt;SanDisk Dual Drive <span class="m">1</span>.00&gt;          at scbus9 target <span class="m">0</span> lun <span class="m">0</span> <span class="o">(</span>pass8,da0<span class="o">)</span></code></pre></div>
-<h1 id="dmesg">dmesg</h1>
-
-<p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=dmesg" target="_blank">dmesg</a> utility displays the contents of the system message buffer.</p>
-
+&lt;SanDisk Dual Drive 1.00&gt;          at scbus9 target <span class="m">0</span> lun <span class="m">0</span> <span class="o">(</span>pass8,da0<span class="o">)</span>
+</code></pre></div><h1 id="dmesg">dmesg</h1>
+<p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=dmesg">dmesg</a> utility displays the contents of the system message buffer.</p>
 <p>To show only CPU model &amp; some basic details:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">dmesg <span class="p">|</span> grep <span class="s2">&#34;^CPU&#34;</span>
-CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span><span class="m">4189</span>.60-MHz K8-class CPU<span class="o">)</span>
-CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span><span class="m">4189</span>.60-MHz K8-class CPU<span class="o">)</span>
-CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span><span class="m">4189</span>.60-MHz K8-class CPU<span class="o">)</span>
-CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span><span class="m">4189</span>.60-MHz K8-class CPU<span class="o">)</span></code></pre></div>
-<p>For more details use <code>dmesg | grep CPU</code> or <code>dmesg | grep -i cpu</code>:</p>
+CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span>4189.60-MHz K8-class CPU<span class="o">)</span>
+CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span>4189.60-MHz K8-class CPU<span class="o">)</span>
+CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span>4189.60-MHz K8-class CPU<span class="o">)</span>
+CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span>4189.60-MHz K8-class CPU<span class="o">)</span>
+</code></pre></div><p>For more details use <code>dmesg | grep CPU</code> or <code>dmesg | grep -i cpu</code>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">dmesg <span class="p">|</span> grep CPU
-CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span><span class="m">4189</span>.60-MHz K8-class CPU<span class="o">)</span>
+CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span>4189.60-MHz K8-class CPU<span class="o">)</span>
 FreeBSD/SMP: Multiprocessor System Detected: <span class="m">4</span> CPUs
 SMP: AP CPU <span class="c1">#3 Launched!</span>
 SMP: AP CPU <span class="c1">#2 Launched!</span>
@@ -339,8 +349,8 @@ cpu3: &lt;ACPI CPU&gt; on acpi0
 amdtemp0: &lt;AMD CPU On-Die Thermal Sensors&gt; on hostb7
 pmc: Unknown AMD64 CPU.
 pmc: Unknown AMD CPU.
-CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span><span class="m">4189</span>.60-MHz K8-class CPU<span class="o">)</span>
-CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span><span class="m">4189</span>.60-MHz K8-class CPU<span class="o">)</span>
+CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span>4189.60-MHz K8-class CPU<span class="o">)</span>
+CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span>4189.60-MHz K8-class CPU<span class="o">)</span>
 FreeBSD/SMP: Multiprocessor System Detected: <span class="m">4</span> CPUs
 SMP: AP CPU <span class="c1">#2 Launched!</span>
 SMP: AP CPU <span class="c1">#3 Launched!</span>
@@ -352,15 +362,14 @@ cpu3: &lt;ACPI CPU&gt; on acpi0
 amdtemp0: &lt;AMD CPU On-Die Thermal Sensors&gt; on hostb7
 pmc: Unknown AMD64 CPU.
 pmc: Unknown AMD CPU.
-CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span><span class="m">4189</span>.60-MHz K8-class CPU<span class="o">)</span></code></pre></div>
-<p>To find out more about NICs, first list interface names with <code>ifconfig</code>, then
+CPU: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G <span class="o">(</span>4189.60-MHz K8-class CPU<span class="o">)</span>
+</code></pre></div><p>To find out more about NICs, first list interface names with <code>ifconfig</code>, then
 grep through dmesg out:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">dmesg <span class="p">|</span> grep em0
-em0: &lt;Intel<span class="o">(</span>R<span class="o">)</span> PRO/1000 Legacy Network Connection <span class="m">1</span>.1.0&gt; port 0xe000-0xe03f mem 0xfea40000-0xfea5ffff,0xfea20000-0xfea3ffff irq <span class="m">20</span> at device <span class="m">5</span>.0 on pci2
-...</code></pre></div>
-<h1 id="dmidecode">dmidecode</h1>
-
-<p><a href="https://www.freebsd.org/cgi/man.cgi?query=dmidecode" target="_blank">dmidecode</a> is a tool for dumping a computer&rsquo;s DMI (some say SMBIOS) table
+em0: &lt;Intel<span class="o">(</span>R<span class="o">)</span> PRO/1000 Legacy Network Connection 1.1.0&gt; port 0xe000-0xe03f mem 0xfea40000-0xfea5ffff,0xfea20000-0xfea3ffff irq <span class="m">20</span> at device 5.0 on pci2
+...
+</code></pre></div><h1 id="dmidecode">dmidecode</h1>
+<p><a href="https://www.freebsd.org/cgi/man.cgi?query=dmidecode">dmidecode</a> is a tool for dumping a computer&rsquo;s DMI (some say SMBIOS) table
 contents in a human-readable format.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">dmidecode -h
 Usage: dmidecode <span class="o">[</span>OPTIONS<span class="o">]</span>
@@ -376,24 +385,20 @@ Options are:
      --from-dump FILE   Read the DMI data from a binary file
      --no-sysfs         Do not attempt to <span class="nb">read</span> DMI data from sysfs files
      --oem-string N     Only display the value of the given OEM string
- -V, --version          Display the version and exit</code></pre></div>
-<p>Useful commands:</p>
-
+ -V, --version          Display the version and <span class="nb">exit</span>
+</code></pre></div><p>Useful commands:</p>
 <ul>
 <li><code>dmidecode -t processor</code></li>
 <li><code>dmidecode -t memory</code></li>
 <li><code>dmidecode -t bios</code></li>
 <li><code>dmidecode -t baseboard</code></li>
 </ul>
-
 <h1 id="freebsd-version">freebsd-version</h1>
-
-<p><a href="https://www.freebsd.org/cgi/man.cgi?query=freebsd-version" target="_blank">freebsd-version</a> – print the version and patch level of the installed system.</p>
+<p><a href="https://www.freebsd.org/cgi/man.cgi?query=freebsd-version">freebsd-version</a> – print the version and patch level of the installed system.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># freebsd-version</span>
-<span class="m">11</span>.3-RELEASE-p6</code></pre></div>
-<h1 id="freenas-debug">freenas-debug</h1>
-
-<p><a href="https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html#freenas-debug" target="_blank">freenas-debug</a> is a command line utility to show debugging information.
+11.3-RELEASE-p6
+</code></pre></div><h1 id="freenas-debug">freenas-debug</h1>
+<p><a href="https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html#freenas-debug">freenas-debug</a> is a command line utility to show debugging information.
 It offers a really fine level of details.</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># freenas-debug</span>
 Usage: /usr/local/bin/freenas-debug &lt;options&gt;
@@ -420,35 +425,32 @@ Where options are:
     -s	Dump SSL Configuration
     -t	Dump System Information
     -y	Dump Sysctl Configuration
-    -z	Dump ZFS Configuration</code></pre></div>
-<h1 id="gpart">gpart</h1>
-
-<p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=gpart" target="_blank">gpart</a> utility is used to partition GEOM providers, normally disks.</p>
+    -z	Dump ZFS Configuration
+</code></pre></div><h1 id="gpart">gpart</h1>
+<p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=gpart">gpart</a> utility is used to partition GEOM providers, normally disks.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># gpart show</span>
-<span class="o">=</span>&gt;        <span class="m">34</span>  <span class="m">7814037101</span>  ada0  GPT  <span class="o">(</span><span class="m">3</span>.6T<span class="o">)</span>
+<span class="o">=</span>&gt;        <span class="m">34</span>  <span class="m">7814037101</span>  ada0  GPT  <span class="o">(</span>3.6T<span class="o">)</span>
           <span class="m">34</span>          <span class="m">94</span>        - free -  <span class="o">(</span>47K<span class="o">)</span>
-         <span class="m">128</span>     <span class="m">4194304</span>     <span class="m">1</span>  freebsd-swap  <span class="o">(</span><span class="m">2</span>.0G<span class="o">)</span>
-     <span class="m">4194432</span>  <span class="m">7809842696</span>     <span class="m">2</span>  freebsd-zfs  <span class="o">(</span><span class="m">3</span>.6T<span class="o">)</span>
-  <span class="m">7814037128</span>           <span class="m">7</span>        - free -  <span class="o">(</span><span class="m">3</span>.5K<span class="o">)</span>
+         <span class="m">128</span>     <span class="m">4194304</span>     <span class="m">1</span>  freebsd-swap  <span class="o">(</span>2.0G<span class="o">)</span>
+     <span class="m">4194432</span>  <span class="m">7809842696</span>     <span class="m">2</span>  freebsd-zfs  <span class="o">(</span>3.6T<span class="o">)</span>
+  <span class="m">7814037128</span>           <span class="m">7</span>        - free -  <span class="o">(</span>3.5K<span class="o">)</span>
 
-<span class="o">=</span>&gt;        <span class="m">34</span>  <span class="m">7814037101</span>  ada1  GPT  <span class="o">(</span><span class="m">3</span>.6T<span class="o">)</span>
+<span class="o">=</span>&gt;        <span class="m">34</span>  <span class="m">7814037101</span>  ada1  GPT  <span class="o">(</span>3.6T<span class="o">)</span>
           <span class="m">34</span>          <span class="m">94</span>        - free -  <span class="o">(</span>47K<span class="o">)</span>
-         <span class="m">128</span>     <span class="m">4194304</span>     <span class="m">1</span>  freebsd-swap  <span class="o">(</span><span class="m">2</span>.0G<span class="o">)</span>
-     <span class="m">4194432</span>  <span class="m">7809842696</span>     <span class="m">2</span>  freebsd-zfs  <span class="o">(</span><span class="m">3</span>.6T<span class="o">)</span>
-  <span class="m">7814037128</span>           <span class="m">7</span>        - free -  <span class="o">(</span><span class="m">3</span>.5K<span class="o">)</span>
+         <span class="m">128</span>     <span class="m">4194304</span>     <span class="m">1</span>  freebsd-swap  <span class="o">(</span>2.0G<span class="o">)</span>
+     <span class="m">4194432</span>  <span class="m">7809842696</span>     <span class="m">2</span>  freebsd-zfs  <span class="o">(</span>3.6T<span class="o">)</span>
+  <span class="m">7814037128</span>           <span class="m">7</span>        - free -  <span class="o">(</span>3.5K<span class="o">)</span>
 
-<span class="o">=</span>&gt;        <span class="m">34</span>  <span class="m">7814037101</span>  ada2  GPT  <span class="o">(</span><span class="m">3</span>.6T<span class="o">)</span>
+<span class="o">=</span>&gt;        <span class="m">34</span>  <span class="m">7814037101</span>  ada2  GPT  <span class="o">(</span>3.6T<span class="o">)</span>
           <span class="m">34</span>          <span class="m">94</span>        - free -  <span class="o">(</span>47K<span class="o">)</span>
-         <span class="m">128</span>     <span class="m">4194304</span>     <span class="m">1</span>  freebsd-swap  <span class="o">(</span><span class="m">2</span>.0G<span class="o">)</span>
-     <span class="m">4194432</span>  <span class="m">7809842696</span>     <span class="m">2</span>  freebsd-zfs  <span class="o">(</span><span class="m">3</span>.6T<span class="o">)</span>
-  <span class="m">7814037128</span>           <span class="m">7</span>        - free -  <span class="o">(</span><span class="m">3</span>.5K<span class="o">)</span>
+         <span class="m">128</span>     <span class="m">4194304</span>     <span class="m">1</span>  freebsd-swap  <span class="o">(</span>2.0G<span class="o">)</span>
+     <span class="m">4194432</span>  <span class="m">7809842696</span>     <span class="m">2</span>  freebsd-zfs  <span class="o">(</span>3.6T<span class="o">)</span>
+  <span class="m">7814037128</span>           <span class="m">7</span>        - free -  <span class="o">(</span>3.5K<span class="o">)</span>
   ...
-  ...</code></pre></div>
-<h1 id="pciconf">pciconf</h1>
-
-<p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=pciconf" target="_blank">pciconf</a> utility provides a command line interface to functionality
+  ...
+</code></pre></div><h1 id="pciconf">pciconf</h1>
+<p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=pciconf">pciconf</a> utility provides a command line interface to functionality
 provided by the pci ioctl interface.</p>
-
 <p>Use <code>pciconf -lv</code> to list all known devices with vendor, device, class
 and subclass identification strings loaded from the vendor/device information
 database.</p>
@@ -472,34 +474,30 @@ re0@pci0:4:0:0:	<span class="nv">class</span><span class="o">=</span>0x020000 <s
     <span class="nv">vendor</span>     <span class="o">=</span> <span class="s1">&#39;Realtek Semiconductor Co., Ltd.&#39;</span>
     <span class="nv">device</span>     <span class="o">=</span> <span class="s1">&#39;RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller&#39;</span>
     <span class="nv">class</span>      <span class="o">=</span> network
-    <span class="nv">subclass</span>   <span class="o">=</span> ethernet</code></pre></div>
-<h1 id="sysctl">sysctl</h1>
-
-<p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=sysctl" target="_blank">sysctl</a> utility retrieves kernel state and allows processes with
+    <span class="nv">subclass</span>   <span class="o">=</span> ethernet
+</code></pre></div><h1 id="sysctl">sysctl</h1>
+<p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=sysctl">sysctl</a> utility retrieves kernel state and allows processes with
 appropriate privilege to set kernel state.</p>
-
 <p>Basic CPU info:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># sysctl -a hw.model</span>
-hw.model: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G</code></pre></div>
-<p>To find out more about CPU:</p>
+hw.model: AMD A10-7870K Radeon R7, <span class="m">12</span> Compute Cores 4C+8G
+</code></pre></div><p>To find out more about CPU:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># sysctl -a | grep -i hw.*cpu</span>
 hw.ncpu: <span class="m">4</span>
 hw.vmm.bhyve_xcpuids: <span class="m">0</span>
 hw.vmm.topology.cpuid_leaf_b: <span class="m">1</span>
 hw.acpi.cpu.cx_lowest: C2
-dev.hwpstate.0.%parent: cpu0</code></pre></div>
-<p>And about RAM:</p>
+dev.hwpstate.0.%parent: cpu0
+</code></pre></div><p>And about RAM:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># sysctl -a | grep -i hw.*mem</span>
 hw.physmem: <span class="m">33179099136</span>
 hw.usermem: <span class="m">22425677824</span>
 hw.realmem: <span class="m">34359738368</span>
-hw.pci.host_mem_start: <span class="m">2147483648</span></code></pre></div>
-<p>Lastly, you can list all the currently available hardware values use:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sysctl -a hw</code></pre></div>
-<h1 id="zpool">zpool</h1>
-
-<p><a href="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/zfs-zpool.html" target="_blank">zpool</a> – is a tool to configure ZFS storage pools.</p>
-
+hw.pci.host_mem_start: <span class="m">2147483648</span>
+</code></pre></div><p>Lastly, you can list all the currently available hardware values use:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sysctl -a hw
+</code></pre></div><h1 id="zpool">zpool</h1>
+<p><a href="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/zfs-zpool.html">zpool</a> – is a tool to configure ZFS storage pools.</p>
 <p>For diagnostic purposes it&rsquo;s enough to know: <code>zpool status -v</code> which will show
 the status of all pools in your system.</p>
 
@@ -512,14 +510,14 @@ the status of all pools in your system.</p>
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/freebsd/'>freebsd</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/unix/'>unix</a></div>
 <div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/freenas/'>freenas</a>, <a class='tag' href='/tags/cli/'>cli</a></div>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/cli/'>cli</a>, <a class='tag' href='/tags/freebsd/'>freebsd</a>, <a class='tag' href='/tags/freenas/'>freenas</a>, <a class='tag' href='/tags/zfs/'>zfs</a></div>
 
   </div>
 </footer>
@@ -574,9 +572,9 @@ the status of all pools in your system.</p>
       </footer>
 
     </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.00df04b7.js'></script>
+<script src='/assets/js/main.c3bcf2df.js'></script>
 
 </body>
 

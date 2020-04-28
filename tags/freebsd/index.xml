@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>freebsd on Home</title>
+    <link>https://kowalcj0.github.io/tags/freebsd/</link>
+    <description>Recent content in freebsd on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 28 Mar 2020 22:02:34 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/freebsd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FreeNas/FreeBSD hardware/diagnostic tools</title>
+      <link>https://kowalcj0.github.io/posts/2020/handy-freebsd-diagnostic-tools/</link>
+      <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/posts/2020/handy-freebsd-diagnostic-tools/</guid>
+      <description>Handy CLI tools that might help your with diagnosing/debugging issues on your FreeBSD/FreeNAS machine.
+Recommended reading  FreeNAS documentation on CLI tools: https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html FreeBSD Display Information About The System Hardware: https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html  camcontrol The camcontrol utility is designed to provide a way for users to access and control the FreeBSD CAM subsystem.
+# camcontrol devlist &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus0 target 0 lun 0 (pass0,ada0) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus1 target 0 lun 0 (pass1,ada1) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass2,ada2) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass3,ada3) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus4 target 0 lun 0 (pass4,ada4) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass5,ada5) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass6,ada6) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass7,ada7) &amp;lt;SanDisk Dual Drive 1.</description>
+    </item>
+    
+  </channel>
+</rss>

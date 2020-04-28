@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Home</title>
@@ -11,20 +11,11 @@
     
     
     <item>
-      <title>freebsd</title>
-      <link>https://kowalcj0.github.io/categories/freebsd/</link>
+      <title>unix</title>
+      <link>https://kowalcj0.github.io/categories/unix/</link>
       <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/categories/freebsd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://kowalcj0.github.io/categories/linux/</link>
-      <pubDate>Sun, 22 Mar 2020 12:02:34 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/categories/linux/</guid>
+      <guid>https://kowalcj0.github.io/categories/unix/</guid>
       <description></description>
     </item>
     
@@ -74,11 +65,11 @@
     </item>
     
     <item>
-      <title>random</title>
-      <link>https://kowalcj0.github.io/categories/random/</link>
+      <title>hugo</title>
+      <link>https://kowalcj0.github.io/categories/hugo/</link>
       <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/categories/random/</guid>
+      <guid>https://kowalcj0.github.io/categories/hugo/</guid>
       <description></description>
     </item>
     

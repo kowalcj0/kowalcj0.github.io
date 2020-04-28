@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>castnow on Home</title>
@@ -19,7 +19,7 @@
       <description>According to the official specification Chromecast (even Ultra version) doesn&amp;rsquo;t support DTS.
 If you can&amp;rsquo;t be bothered to spend few hours to transcode the movie with lets say Handbrake you can use ver handy CLI casting tool: castnow.
 Once installed, simply tell it to use ffmpeg to transcode audio to mp3 (or ac3 or aac).
-castnow your-wonderful-movie.mkv \  --tomp4 \  --ffmpeg-vcodec copy \  --ffmpeg-acodec mp3 \  --ffmpeg-movflags frag_keyframe+empty_moov+faststart  - use movflags if you will only hear the audio and you&amp;rsquo;ll see a black screen  The only downside of transcoding is that the play / pause controls are not supported.</description>
+castnow your-wonderful-movie.mkv \  --tomp4 \  --ffmpeg-vcodec copy \  --ffmpeg-acodec mp3 \  --ffmpeg-movflags frag_keyframe+empty_moov+faststart    use movflags if you will only hear the audio and you&amp;rsquo;ll see a black screen    The only downside of transcoding is that the play / pause controls are not supported.</description>
     </item>
     
   </channel>

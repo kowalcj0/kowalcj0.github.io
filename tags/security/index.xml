@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>security on Home</title>
@@ -26,7 +26,7 @@
       
       <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-mobile-devices-and-platforms/</guid>
       <description>Good sources of knowledge:
- OWASP Testing guide - book OWASP Pinning cheat sheet  Android Application  Executes as:  application service  Helpers  Broadcast receiver (allows app to register for specifi events which will be then passed to it for action) content provider (it interfaces between app and file storage and provide sql-like interface to read/write/modify/delete data). SQLite is a common DB service access via content provider.</description>
+ OWASP Testing guide - book OWASP Pinning cheat sheet  Android Application  Executes as:  application service   Helpers  Broadcast receiver (allows app to register for specifi events which will be then passed to it for action) content provider (it interfaces between app and file storage and provide sql-like interface to read/write/modify/delete data). SQLite is a common DB service access via content provider.</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       
       <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-denial-of-service-attacks/</guid>
       <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Denial of Service&amp;rdquo; by Troy Hunt.
-HTTP flood attack  HTTP flood attack  it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;) can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;)  Attack effectives can be amplified via certain app features:  They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth  Requests can adhere to legitimate patterns which makes defence difficult  TCP attacks These are the layer 4 (OSI) attacks</description>
+HTTP flood attack  HTTP flood attack  it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;) can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;)   Attack effectives can be amplified via certain app features:  They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth   Requests can adhere to legitimate patterns which makes defence difficult  TCP attacks These are the layer 4 (OSI) attacks</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@ HTTP flood attack  HTTP flood attack  it&amp;rsquo;s a &amp;ldquo;volumetric&amp
       <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-buffer-iverflow/</guid>
       <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Buffer Overflows&amp;rdquo; by James Murray.
 Stack pointers Types of stack pointers:
- SP → Stack Pointer  keeps track where the next element will be pushe to or poppef off of the stack  FP → Frame Pointer  points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed  BP → Base Pointer (different name for FP) IP → Instruction Pointer  points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
+ SP → Stack Pointer  keeps track where the next element will be pushe to or poppef off of the stack   FP → Frame Pointer  points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed   BP → Base Pointer (different name for FP) IP → Instruction Pointer  points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
     </item>
     
     <item>
@@ -83,7 +83,7 @@ OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate co
       <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-enumeration-course-notes/</guid>
       <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Enumeration&amp;rdquo;.
 Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&amp;rsquo;s own set of Protection Rings -&amp;gt; for more see wiki
-Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings: * Ring 0 - kernel * Ring 1 - executive * Ring 2 - supervisor * Ring 3 - user</description>
+Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings:</description>
     </item>
     
     <item>

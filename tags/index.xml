@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Home</title>
@@ -20,11 +20,38 @@
     </item>
     
     <item>
+      <title>freebsd</title>
+      <link>https://kowalcj0.github.io/tags/freebsd/</link>
+      <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/freebsd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>freenas</title>
       <link>https://kowalcj0.github.io/tags/freenas/</link>
       <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/freenas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zfs</title>
+      <link>https://kowalcj0.github.io/tags/zfs/</link>
+      <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/zfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://kowalcj0.github.io/tags/linux/</link>
+      <pubDate>Sun, 22 Mar 2020 12:02:34 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -290,20 +317,20 @@
     </item>
     
     <item>
-      <title>fedora 27</title>
-      <link>https://kowalcj0.github.io/tags/fedora-27/</link>
+      <title>fedora</title>
+      <link>https://kowalcj0.github.io/tags/fedora/</link>
       <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/tags/fedora-27/</guid>
+      <guid>https://kowalcj0.github.io/tags/fedora/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>gnome 3.26</title>
-      <link>https://kowalcj0.github.io/tags/gnome-3.26/</link>
+      <title>gnome</title>
+      <link>https://kowalcj0.github.io/tags/gnome/</link>
       <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/tags/gnome-3.26/</guid>
+      <guid>https://kowalcj0.github.io/tags/gnome/</guid>
       <description></description>
     </item>
     
@@ -371,29 +398,11 @@
     </item>
     
     <item>
-      <title>kobayashi</title>
-      <link>https://kowalcj0.github.io/tags/kobayashi/</link>
-      <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/kobayashi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>war</title>
       <link>https://kowalcj0.github.io/tags/war/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/war/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://kowalcj0.github.io/tags/hugo/</link>
-      <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     

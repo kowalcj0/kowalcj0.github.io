@@ -9,16 +9,16 @@
 <meta property='og:description' content='Speed things up a bit with few grub modifications'>
 <meta property='og:url' content='https://kowalcj0.github.io/posts/2018/tweaking-intel-graphics-on-linux/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='article:section' content='posts'><meta property='article:tag' content='intel'><meta property='article:tag' content='driver'><meta property='article:published_time' content='2018-03-15T08:46:10&#43;01:00'/><meta property='article:modified_time' content='2018-03-15T08:46:10&#43;01:00'/><meta name='twitter:card' content='summary'>
+<meta property='og:type' content='article'><meta property='article:section' content='posts'><meta property='article:tag' content='linux'><meta property='article:tag' content='intel'><meta property='article:tag' content='driver'><meta property='article:published_time' content='2018-03-15T08:46:10&#43;01:00'/><meta property='article:modified_time' content='2018-03-15T08:46:10&#43;01:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.57.2" />
+<meta name="generator" content="Hugo 0.69.2" />
 
   <title>Tweaking Intel graphics on Linux • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/posts/2018/tweaking-intel-graphics-on-linux/'>
   
   
   <link rel='icon' href='/img/favicon144.ico'>
-<link rel='stylesheet' href='/assets/css/main.dd2efce5.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#ffcd00;}
 </style>
 
@@ -40,7 +40,9 @@
     </div>
     
     <h2 class='title site-title '>
-    Free yourself, help to free me, free us
+      <a href='/'>
+      Free yourself, help to free me, free us
+      </a>
     </h2>
     <div class='desc'>
     notes, scribbles, thoughts etc.
@@ -62,11 +64,36 @@
 </section>
 <section class='widget widget-taxonomy_cloud sep-after'>
   <header>
+    <h4 class='title widget-title'>Categories</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/categories/food/' style='font-size:1em'>food</a>
+      </li><li>
+        <a href='/categories/hugo/' style='font-size:1em'>hugo</a>
+      </li><li>
+        <a href='/categories/learning/' style='font-size:1.875em'>learning</a>
+      </li><li>
+        <a href='/categories/movies/' style='font-size:1.125em'>movies</a>
+      </li><li>
+        <a href='/categories/security/' style='font-size:2em'>security</a>
+      </li><li>
+        <a href='/categories/unix/' style='font-size:2em'>unix</a>
+      </li><li>
+        <a href='/categories/web/' style='font-size:1em'>web</a>
+      </li></ul>
+</div>
+
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
     <h4 class='title widget-title'>Tags</h4>
   </header>
 
   <div class='container list-container'>
-  <ul class='list taxonomy-cloud'><li>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
         <a href='/tags/1959/' style='font-size:1em'>1959</a>
       </li><li>
         <a href='/tags/android/' style='font-size:1em'>android</a>
@@ -97,17 +124,17 @@
       </li><li>
         <a href='/tags/ethical-hacking/' style='font-size:1.8571428571428572em'>ethical hacking</a>
       </li><li>
-        <a href='/tags/fedora-27/' style='font-size:1em'>fedora 27</a>
+        <a href='/tags/fedora/' style='font-size:1em'>fedora</a>
       </li><li>
         <a href='/tags/ffmpeg/' style='font-size:1.1428571428571428em'>ffmpeg</a>
+      </li><li>
+        <a href='/tags/freebsd/' style='font-size:1em'>freebsd</a>
       </li><li>
         <a href='/tags/freenas/' style='font-size:1em'>freenas</a>
       </li><li>
         <a href='/tags/fun/' style='font-size:1em'>fun</a>
       </li><li>
-        <a href='/tags/gnome-3.26/' style='font-size:1em'>gnome 3.26</a>
-      </li><li>
-        <a href='/tags/hugo/' style='font-size:1em'>hugo</a>
+        <a href='/tags/gnome/' style='font-size:1em'>gnome</a>
       </li><li>
         <a href='/tags/intel/' style='font-size:1em'>intel</a>
       </li><li>
@@ -115,7 +142,7 @@
       </li><li>
         <a href='/tags/japanese/' style='font-size:1em'>japanese</a>
       </li><li>
-        <a href='/tags/kobayashi/' style='font-size:1em'>kobayashi</a>
+        <a href='/tags/linux/' style='font-size:2em'>linux</a>
       </li><li>
         <a href='/tags/logrotate/' style='font-size:1em'>logrotate</a>
       </li><li>
@@ -158,6 +185,8 @@
         <a href='/tags/wayland/' style='font-size:1em'>wayland</a>
       </li><li>
         <a href='/tags/wifi/' style='font-size:1em'>wifi</a>
+      </li><li>
+        <a href='/tags/zfs/' style='font-size:1em'>zfs</a>
       </li></ul>
 </div>
 
@@ -190,6 +219,8 @@
 </button>
     <ul><li class='item'>
         <a href='https://github.com/kowalcj0/kowalcj0.github.io'>Repo</a>
+      </li><li class='item'>
+        <a href='/posts/general/worth-watching/'>Worth watching</a>
       </li></ul>
   </div>
 </nav><div class='header-widgets'>
@@ -259,23 +290,17 @@ One min read
 
   <div class='container entry-content'>
   <p>get info about firmware</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">modinfo i915 <span class="p">|</span> grep ^fi</code></pre></div>
-<p>List all driver parameters</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">modinfo i915 <span class="p">|</span> grep ^fi
+</code></pre></div><p>List all driver parameters</p>
 <pre><code>modinfo -p i915
-</code></pre>
-
-<p>If find the output of the above command confusing, as you can&rsquo;t see the actual
+</code></pre><p>If find the output of the above command confusing, as you can&rsquo;t see the actual
 values of every parameter, then use:</p>
-
 <pre><code>sudo grep -H '' /sys/module/i915//parameters/*
-</code></pre>
-
-<p>If you see error messages like this one:</p>
+</code></pre><p>If you see error messages like this one:</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ dmesg <span class="p">|</span>tail
-<span class="o">[</span> <span class="m">2360</span>.475430<span class="o">]</span> <span class="o">[</span>drm<span class="o">]</span> not enough stolen space <span class="k">for</span> compressed buffer <span class="o">(</span>need <span class="m">4325376</span> bytes<span class="o">)</span>, disabling
-<span class="o">[</span> <span class="m">2360</span>.475437<span class="o">]</span> <span class="o">[</span>drm<span class="o">]</span> hint: you may be able to increase stolen memory size in the BIOS to avoid this</code></pre></div>
-<p>then you can enable framebuffer compression. This should also save your laptop
+<span class="o">[</span> 2360.475430<span class="o">]</span> <span class="o">[</span>drm<span class="o">]</span> not enough stolen space <span class="k">for</span> compressed buffer <span class="o">(</span>need <span class="m">4325376</span> bytes<span class="o">)</span>, disabling
+<span class="o">[</span> 2360.475437<span class="o">]</span> <span class="o">[</span>drm<span class="o">]</span> hint: you may be able to increase stolen memory size in the BIOS to avoid this
+</code></pre></div><p>then you can enable framebuffer compression. This should also save your laptop
 some energy:</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># list all grub menu entries</span>
 sudo grubby --info<span class="o">=</span>ALL
@@ -284,35 +309,29 @@ sudo grubby --info<span class="o">=</span><span class="m">0</span>
 <span class="c1"># to enable FBS, run command below with appropriate kernel version:</span>
 sudo grubby --args<span class="o">=</span><span class="s2">&#34;i915.enable_fbc=1&#34;</span> --update-kernel /boot/vmlinuz-4.15.10-300.fc27.x86_64
 <span class="c1"># you can also check if your changes were persisted:</span>
-sudo grubby --info<span class="o">=</span></code></pre></div>
-<p>Related reading:</p>
-
+sudo grubby --info<span class="o">=</span>
+</code></pre></div><p>Related reading:</p>
 <ul>
-<li><a href="http://kernel.ubuntu.com/~cking/power-benchmarking/background-colour-and-framebuffer-compression/results.txt" target="_blank">http://kernel.ubuntu.com/~cking/power-benchmarking/background-colour-and-framebuffer-compression/results.txt</a></li>
-<li><a href="https://wiki.archlinux.org/index.php/intel_graphics#Framebuffer_compression_.28enable_fbc.29" target="_blank">https://wiki.archlinux.org/index.php/intel_graphics#Framebuffer_compression_.28enable_fbc.29</a></li>
-<li><a href="https://www.phoronix.com/scan.php?page=article&amp;item=intel_i915_power&amp;num=1" target="_blank">https://www.phoronix.com/scan.php?page=article&amp;item=intel_i915_power&amp;num=1</a></li>
-<li><a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Intel-FBC-Default-Patch-SKL" target="_blank">https://www.phoronix.com/scan.php?page=news_item&amp;px=Intel-FBC-Default-Patch-SKL</a></li>
+<li><a href="http://kernel.ubuntu.com/~cking/power-benchmarking/background-colour-and-framebuffer-compression/results.txt">http://kernel.ubuntu.com/~cking/power-benchmarking/background-colour-and-framebuffer-compression/results.txt</a></li>
+<li><a href="https://wiki.archlinux.org/index.php/intel_graphics#Framebuffer_compression_.28enable_fbc.29">https://wiki.archlinux.org/index.php/intel_graphics#Framebuffer_compression_.28enable_fbc.29</a></li>
+<li><a href="https://www.phoronix.com/scan.php?page=article&amp;item=intel_i915_power&amp;num=1">https://www.phoronix.com/scan.php?page=article&amp;item=intel_i915_power&amp;num=1</a></li>
+<li><a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Intel-FBC-Default-Patch-SKL">https://www.phoronix.com/scan.php?page=news_item&amp;px=Intel-FBC-Default-Patch-SKL</a></li>
 </ul>
-
-<p>Enable GuC / HuC <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> firmware loading:</p>
-
+<p>Enable GuC / HuC <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> firmware loading:</p>
 <ul>
 <li>GuC is an engine for workload scheduling of the parallel graphics engines.</li>
-
-<li><p>HuC appears to be a firmware blob responsible High Efficiency Video Coding (HEVC / H.265) support.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo grubby --args<span class="o">=</span><span class="s2">&#34;i915.enable_guc_loading=1 i915.enable_guc_submission=1&#34;</span> --update-kernel /boot/vmlinuz-4.15.10-300.fc27.x86_64</code></pre></div></li>
+<li>HuC appears to be a firmware blob responsible High Efficiency Video Coding (HEVC / H.265) support.</li>
 </ul>
-
-<p><a href="https://wiki.archlinux.org/index.php/intel_graphics#Enable_GuC_.2F_HuC_firmware_loading" target="_blank">https://wiki.archlinux.org/index.php/intel_graphics#Enable_GuC_.2F_HuC_firmware_loading</a></p>
-<div class="footnotes">
-
-<hr />
-
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo grubby --args<span class="o">=</span><span class="s2">&#34;i915.enable_guc_loading=1 i915.enable_guc_submission=1&#34;</span> --update-kernel /boot/vmlinuz-4.15.10-300.fc27.x86_64
+</code></pre></div><p><a href="https://wiki.archlinux.org/index.php/intel_graphics#Enable_GuC_.2F_HuC_firmware_loading">https://wiki.archlinux.org/index.php/intel_graphics#Enable_GuC_.2F_HuC_firmware_loading</a></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1">more info on <a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Intel-Linux-Driver-Getting-HuC" target="_blank">phoronix</a><br />
- <a class="footnote-return" href="#fnref:1">↩</a></li>
+<li id="fn:1" role="doc-endnote">
+<p>more info on <a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Intel-Linux-Driver-Getting-HuC">phoronix</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 
 </div>
 
@@ -323,14 +342,14 @@ sudo grubby --info<span class="o">=</span></code></pre></div>
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/linux/'>linux</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/unix/'>unix</a></div>
 <div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/intel/'>intel</a>, <a class='tag' href='/tags/driver/'>driver</a></div>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/linux/'>linux</a>, <a class='tag' href='/tags/driver/'>driver</a>, <a class='tag' href='/tags/intel/'>intel</a></div>
 
   </div>
 </footer>
@@ -395,9 +414,9 @@ sudo grubby --info<span class="o">=</span></code></pre></div>
       </footer>
 
     </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.00df04b7.js'></script>
+<script src='/assets/js/main.c3bcf2df.js'></script>
 
 </body>
 

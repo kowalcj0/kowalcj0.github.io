@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>driver on Home</title>
@@ -18,9 +18,9 @@
       <guid>https://kowalcj0.github.io/posts/2018/tweaking-intel-graphics-on-linux/</guid>
       <description>get info about firmware
 modinfo i915 | grep ^fi List all driver parameters
-modinfo -p i915  If find the output of the above command confusing, as you can&amp;rsquo;t see the actual values of every parameter, then use:
-sudo grep -H &#39;&#39; /sys/module/i915//parameters/*  If you see error messages like this one:
-$ dmesg |tail [ 2360.475430] [drm] not enough stolen space for compressed buffer (need 4325376 bytes), disabling [ 2360.</description>
+modinfo -p i915 If find the output of the above command confusing, as you can&amp;rsquo;t see the actual values of every parameter, then use:
+sudo grep -H &#39;&#39; /sys/module/i915//parameters/* If you see error messages like this one:
+$ dmesg |tail [ 2360.475430] [drm] not enough stolen space for compressed buffer (need 4325376 bytes), disabling [ 2360.475437] [drm] hint: you may be able to increase stolen memory size in the BIOS to avoid this then you can enable framebuffer compression.</description>
     </item>
     
   </channel>
