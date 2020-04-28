@@ -24,14 +24,14 @@ Handy CLI tools that might help your with diagnosing/debugging issues on your
 FreeBSD/FreeNAS machine.
 
 
-# Recommended reading
+## Recommended reading
 
 * FreeNAS documentation on CLI tools: https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html
 * FreeBSD Display Information About The System Hardware: https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html
 
 
 
-# camcontrol
+## camcontrol
 
 The [camcontrol](https://www.freebsd.org/cgi/man.cgi?query=camcontrol) utility is designed to provide a way for users to access
 and control the FreeBSD CAM subsystem.
@@ -49,7 +49,7 @@ and control the FreeBSD CAM subsystem.
 <SanDisk Dual Drive 1.00>          at scbus9 target 0 lun 0 (pass8,da0)
 ```
 
-# dmesg
+## dmesg
 
 The [dmesg](https://www.freebsd.org/cgi/man.cgi?query=dmesg) utility displays the contents of the system message buffer.
 
@@ -102,7 +102,7 @@ em0: <Intel(R) PRO/1000 Legacy Network Connection 1.1.0> port 0xe000-0xe03f mem 
 ...
 ```
 
-# dmidecode
+## dmidecode
 
 [dmidecode](https://www.freebsd.org/cgi/man.cgi?query=dmidecode) is a tool for dumping a computer's DMI (some say SMBIOS) table 
 contents in a human-readable format.
@@ -133,7 +133,7 @@ Useful commands:
 * `dmidecode -t baseboard`
 
 
-# freebsd-version
+## freebsd-version
 
 [freebsd-version](https://www.freebsd.org/cgi/man.cgi?query=freebsd-version) – print the version and patch level of the installed system.
 
@@ -177,7 +177,7 @@ Where options are:
     -z	Dump ZFS Configuration
 ```
 
-# gpart
+## gpart
 
 The [gpart](https://www.freebsd.org/cgi/man.cgi?query=gpart) utility is used to partition GEOM providers, normally disks.
 
@@ -204,7 +204,7 @@ The [gpart](https://www.freebsd.org/cgi/man.cgi?query=gpart) utility is used to 
   ...
 ```
 
-# pciconf
+## pciconf
 
 The [pciconf](https://www.freebsd.org/cgi/man.cgi?query=pciconf) utility provides a command line interface to functionality 
 provided by the pci ioctl interface.
@@ -237,7 +237,7 @@ re0@pci0:4:0:0:	class=0x020000 card=0x85541043 chip=0x816810ec rev=0x0c hdr=0x00
     subclass   = ethernet
 ```
 
-# sysctl
+## sysctl
 
 The [sysctl](https://www.freebsd.org/cgi/man.cgi?query=sysctl) utility retrieves kernel state and allows processes with 
 appropriate privilege to set kernel state.
@@ -272,7 +272,7 @@ Lastly, you can list all the currently available hardware values use:
 sysctl -a hw
 ```
 
-# zpool
+## zpool
 
 [zpool](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/zfs-zpool.html) – is a tool to configure ZFS storage pools.
 
