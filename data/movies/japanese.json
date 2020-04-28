@@ -3,6 +3,7 @@
 "movies": [
 {
     "title": "The Human Condition I: No Greater Love",
+    "original_title": "人間の條件, Ningen no jōken",
     "director": "Masaki Kobayashi",
     "genres": "Epic drama romance",
     "year": 1959,
@@ -14,6 +15,7 @@
 },
 {
     "title": "Tokyo Story",
+    "original_title": "東京物語, Tōkyō Monogatari",
     "director": "Yasujirō Ozu",
     "genres": "Drama",
     "year": 1953,
@@ -25,6 +27,7 @@
 },
 {
     "title": "",
+    "original_title": "",
     "director": "",
     "genres": "",
     "year": 0,

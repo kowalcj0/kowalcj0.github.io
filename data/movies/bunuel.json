@@ -3,6 +3,7 @@
 "movies": [
 {
     "title": "The Discreet Charm of the Bourgeoisie",
+    "original_title": "Le charme discret de la bourgeoisie",
     "director": "Luis Buñuel",
     "genres": "Comedy",
     "year": 1972,
@@ -14,6 +15,7 @@
 },
 {
     "title": "The Phantom of Liberty",
+    "original_title": "Le Fantôme de la liberté",
     "director": "Luis Buñuel",
     "genres": "Comedy",
     "year": 1974,
@@ -25,6 +27,7 @@
 },
 {
     "title": "That Obscure Object of Desire",
+    "original_title": "Cet obscur objet du désir",
     "director": "Luis Buñuel",
     "genres": "Comedy",
     "year": 1977,
