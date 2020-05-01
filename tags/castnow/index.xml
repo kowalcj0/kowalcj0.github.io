@@ -12,10 +12,10 @@
     
     <item>
       <title>Play moview with DTS audio on Chromecast</title>
-      <link>https://kowalcj0.github.io/posts/2019/cast-dts-movie-to-chromecast/</link>
+      <link>https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/</link>
       <pubDate>Sun, 09 Jun 2019 20:35:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/posts/2019/cast-dts-movie-to-chromecast/</guid>
+      <guid>https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/</guid>
       <description>According to the official specification Chromecast (even Ultra version) doesn&amp;rsquo;t support DTS.
 If you can&amp;rsquo;t be bothered to spend few hours to transcode the movie with lets say Handbrake you can use ver handy CLI casting tool: castnow.
 Once installed, simply tell it to use ffmpeg to transcode audio to mp3 (or ac3 or aac).

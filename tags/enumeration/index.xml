@@ -12,10 +12,10 @@
     
     <item>
       <title>Ethical Hacking - Enumeration - Notes</title>
-      <link>https://kowalcj0.github.io/posts/2018/ethical-hackin-enumeration-course-notes/</link>
+      <link>https://kowalcj0.github.io/2018/02/02/ethical-hackin-enumeration-course-notes/</link>
       <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/posts/2018/ethical-hackin-enumeration-course-notes/</guid>
+      <guid>https://kowalcj0.github.io/2018/02/02/ethical-hackin-enumeration-course-notes/</guid>
       <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Enumeration&amp;rdquo;.
 Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&amp;rsquo;s own set of Protection Rings -&amp;gt; for more see wiki
 Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings:</description>

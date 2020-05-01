@@ -12,10 +12,10 @@
     
     <item>
       <title>Fix &#39;X11 connection broke&#39; issue in QT based GUI applications like VLC</title>
-      <link>https://kowalcj0.github.io/posts/2018/vlc-auto-screen-scale-factor-issue/</link>
+      <link>https://kowalcj0.github.io/2018/02/11/vlc-auto-screen-scale-factor-issue/</link>
       <pubDate>Sun, 11 Feb 2018 22:40:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/posts/2018/vlc-auto-screen-scale-factor-issue/</guid>
+      <guid>https://kowalcj0.github.io/2018/02/11/vlc-auto-screen-scale-factor-issue/</guid>
       <description>If you ever encountered error like this when starting vlc:
 $ vlc VLC media player 3.0.0-rc5 Vetinari (revision 3.0.0-rc5-0-gf53236af09) [0000560cfbe38410] main libvlc: Running vlc with the default interface. Use &amp;#39;cvlc&amp;#39; to use vlc without interface. The X11 connection broke: Maximum allowed requested length exceeded (code 4) XIO: fatal IO error 22 (Invalid argument) on X server &amp;#34;:0&amp;#34; after 447 requests (447 known processed) with 0 events remaining. QMutex: destroying locked mutex Then you can fix it by setting the QT_AUTO_SCREEN_SCALE_FACTOR env variable to 0, i.</description>
     </item>

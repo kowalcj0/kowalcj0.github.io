@@ -12,10 +12,10 @@
     
     <item>
       <title>Ethical Hacking - Wireless Networks - notes</title>
-      <link>https://kowalcj0.github.io/posts/2018/ethical-hacking-wireless-networks-notes/</link>
+      <link>https://kowalcj0.github.io/2018/05/14/ethical-hacking-wireless-networks-notes/</link>
       <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/posts/2018/ethical-hacking-wireless-networks-notes/</guid>
+      <guid>https://kowalcj0.github.io/2018/05/14/ethical-hacking-wireless-networks-notes/</guid>
       <description>Cain - wireless scanner, cracker etc.  WEP  build to prevent eavesdropping ensures integrity of transmitted data is a lightweight solution (does not require a lot of CPU power) is not very secure as it doesn&amp;rsquo;t allow to distribute keys at scale uses weak encryption key recovery is possible through sniffing!!! uses 40-bit keys &amp;amp; 24-bit initialization vectors (IVs too small) frequently used poor implementations of random number generators prone to DoS attacks through use of associate &amp;amp; disassociate messages  WPA  Wi-Fi Protected Access (WPA) was introduced to replace WEP uses TKIP (Temporal Key Integrity Protocol) which changes the key for every frame that is transmitted.</description>
     </item>
     

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Notes from a video course'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Ethical Hacking - Mobile Devices and Platforms - notes • Home'>
+<meta property='og:description' content='Notes from a video course'>
+<meta property='og:url' content='https://kowalcj0.github.io/2018/04/28/ethical-hacking-mobile-devices-and-platforms/'>
+<meta property='og:site_name' content='Home'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='mobile'><meta property='article:tag' content='android'><meta property='article:tag' content='iOS'><meta property='article:published_time' content='2018-04-28T10:29:15&#43;01:00'/><meta property='article:modified_time' content='2018-04-28T10:29:15&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
+
+<meta name="generator" content="Hugo 0.69.2" />
+
+  <title>Ethical Hacking - Mobile Devices and Platforms - notes • Home</title>
+  <link rel='canonical' href='https://kowalcj0.github.io/2018/04/28/ethical-hacking-mobile-devices-and-platforms/'>
+  
+  
+  <link rel='icon' href='/img/favicon144.ico'>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+  
+
+</head>
+<body class='page type-2018 has-cover has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/img/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+      <a href='/'>
+      Free yourself, help to free me, free us
+      </a>
+    </h2>
+    <div class='desc'>
+    notes, scribbles, thoughts etc.
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>Search</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Categories</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/categories/food/' style='font-size:1em'>food</a>
+      </li><li>
+        <a href='/categories/hugo/' style='font-size:1em'>hugo</a>
+      </li><li>
+        <a href='/categories/learning/' style='font-size:1.875em'>learning</a>
+      </li><li>
+        <a href='/categories/movies/' style='font-size:1.125em'>movies</a>
+      </li><li>
+        <a href='/categories/security/' style='font-size:2em'>security</a>
+      </li><li>
+        <a href='/categories/unix/' style='font-size:2em'>unix</a>
+      </li><li>
+        <a href='/categories/web/' style='font-size:1em'>web</a>
+      </li></ul>
+</div>
+
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/tags/1959/' style='font-size:1em'>1959</a>
+      </li><li>
+        <a href='/tags/android/' style='font-size:1em'>android</a>
+      </li><li>
+        <a href='/tags/bash/' style='font-size:1em'>bash</a>
+      </li><li>
+        <a href='/tags/bof/' style='font-size:1em'>BoF</a>
+      </li><li>
+        <a href='/tags/castnow/' style='font-size:1em'>castnow</a>
+      </li><li>
+        <a href='/tags/cli/' style='font-size:1em'>cli</a>
+      </li><li>
+        <a href='/tags/codecs/' style='font-size:1em'>codecs</a>
+      </li><li>
+        <a href='/tags/conference/' style='font-size:1em'>conference</a>
+      </li><li>
+        <a href='/tags/criterion-collection/' style='font-size:1em'>criterion collection</a>
+      </li><li>
+        <a href='/tags/dbus/' style='font-size:1em'>dbus</a>
+      </li><li>
+        <a href='/tags/dos/' style='font-size:1em'>DoS</a>
+      </li><li>
+        <a href='/tags/drama/' style='font-size:1em'>drama</a>
+      </li><li>
+        <a href='/tags/driver/' style='font-size:1em'>driver</a>
+      </li><li>
+        <a href='/tags/enumeration/' style='font-size:1em'>enumeration</a>
+      </li><li>
+        <a href='/tags/ethical-hacking/' style='font-size:1.8571428571428572em'>ethical hacking</a>
+      </li><li>
+        <a href='/tags/fedora/' style='font-size:1em'>fedora</a>
+      </li><li>
+        <a href='/tags/ffmpeg/' style='font-size:1.1428571428571428em'>ffmpeg</a>
+      </li><li>
+        <a href='/tags/freebsd/' style='font-size:1em'>freebsd</a>
+      </li><li>
+        <a href='/tags/freenas/' style='font-size:1em'>freenas</a>
+      </li><li>
+        <a href='/tags/fun/' style='font-size:1em'>fun</a>
+      </li><li>
+        <a href='/tags/gnome/' style='font-size:1em'>gnome</a>
+      </li><li>
+        <a href='/tags/intel/' style='font-size:1em'>intel</a>
+      </li><li>
+        <a href='/tags/ios/' style='font-size:1em'>iOS</a>
+      </li><li>
+        <a href='/tags/japanese/' style='font-size:1em'>japanese</a>
+      </li><li>
+        <a href='/tags/linux/' style='font-size:2em'>linux</a>
+      </li><li>
+        <a href='/tags/logrotate/' style='font-size:1em'>logrotate</a>
+      </li><li>
+        <a href='/tags/mobile/' style='font-size:1em'>mobile</a>
+      </li><li>
+        <a href='/tags/mpd/' style='font-size:1em'>mpd</a>
+      </li><li>
+        <a href='/tags/mpv/' style='font-size:1em'>mpv</a>
+      </li><li>
+        <a href='/tags/mutillidae/' style='font-size:1em'>mutillidae</a>
+      </li><li>
+        <a href='/tags/notes/' style='font-size:1.8571428571428572em'>notes</a>
+      </li><li>
+        <a href='/tags/owasp/' style='font-size:1em'>owasp</a>
+      </li><li>
+        <a href='/tags/pentesting/' style='font-size:2em'>pentesting</a>
+      </li><li>
+        <a href='/tags/python/' style='font-size:1em'>python</a>
+      </li><li>
+        <a href='/tags/qt/' style='font-size:1em'>qt</a>
+      </li><li>
+        <a href='/tags/root/' style='font-size:1em'>root</a>
+      </li><li>
+        <a href='/tags/rss/' style='font-size:1em'>rss</a>
+      </li><li>
+        <a href='/tags/security/' style='font-size:2em'>security</a>
+      </li><li>
+        <a href='/tags/seo/' style='font-size:1em'>seo</a>
+      </li><li>
+        <a href='/tags/smoothie/' style='font-size:1em'>smoothie</a>
+      </li><li>
+        <a href='/tags/sniffers/' style='font-size:1em'>sniffers</a>
+      </li><li>
+        <a href='/tags/syntax/' style='font-size:1em'>syntax</a>
+      </li><li>
+        <a href='/tags/vlc/' style='font-size:1em'>vlc</a>
+      </li><li>
+        <a href='/tags/war/' style='font-size:1em'>war</a>
+      </li><li>
+        <a href='/tags/wayland/' style='font-size:1em'>wayland</a>
+      </li><li>
+        <a href='/tags/wifi/' style='font-size:1em'>wifi</a>
+      </li><li>
+        <a href='/tags/zfs/' style='font-size:1em'>zfs</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/general/worth-watching/'>Worth watching</a>
+      </li><li class='item'>
+        <a href='https://github.com/kowalcj0/kowalcj0.github.io'>Repo</a>
+      </li></ul>
+  </div>
+</nav><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/2018/'>2018</a></li><li><span>Ethical Hacking - Mobile Devices and Platforms - notes</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Home</p><p class='desc site-desc'>notes, scribbles, thoughts etc.</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Ethical Hacking - Mobile Devices and Platforms - notes</h1>
+      
+<p class='desc'>Notes from a video course</p>
+
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-04-28T10:29:15&#43;01:00'>2018-04-28</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+8 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  <div class='entry-cover'>
+  <figure class='container cover-normal'>
+    <img src='/img/2018/004/ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org'/>
+    
+      
+      <figcaption class='container'>
+        <span>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg">wikimedia.org</a></span>
+      </figcaption>
+      
+    
+  </figure>
+</div>
+  
+
+  <div class='container entry-content'>
+  <p>Good sources of knowledge:</p>
+<ul>
+<li>OWASP Testing guide - book</li>
+<li>OWASP Pinning cheat sheet</li>
+</ul>
+<h1 id="android-application">Android Application<a href="#android-application" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+<ul>
+<li>Executes as:
+<ul>
+<li>application</li>
+<li>service</li>
+</ul>
+</li>
+<li>Helpers
+<ul>
+<li>Broadcast receiver (allows app to register for specifi events which will
+be then passed to it for action)</li>
+<li>content provider (it interfaces between app and file storage and provide
+sql-like interface to read/write/modify/delete data). <code>SQLite</code> is a
+common DB service access via content provider.</li>
+</ul>
+</li>
+</ul>
+<h2 id="android-intents">Android Intents<a href="#android-intents" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<ul>
+<li>these are objects used to manage requests. They include action and relevant
+data for the request being made. It can be used to:
+<ul>
+<li>start an activity</li>
+<li>access broadcast receiver</li>
+<li>start a service</li>
+</ul>
+</li>
+<li>App can register to listen for an intent activity request by including it in
+app&rsquo;s <code>manifest</code> file</li>
+<li>An <code>Intent</code> can explicitely define it&rsquo;s target application or let the system
+identify application or applications able to respond. If ther&rsquo;s more than
+one, the Android will display an application picker.</li>
+<li>Applications can export activities as <code>application-application intents</code></li>
+<li>Apps can also access broadcast receivers &amp; content providers exported by
+other applications.</li>
+<li>Intents are also used for inter-process communication</li>
+<li>Intent usage:
+<ul>
+<li>startActivity - may include &amp; return data. Usuall one per app screen</li>
+<li>startService</li>
+<li>sendBroadcast - a msg sent using one of three send broadcast intents</li>
+</ul>
+</li>
+<li>Intents can be explicit (sent to an app or component) or implicit (OS find
+appropriate recipient of the msg)</li>
+</ul>
+<h2 id="android-security-model">Android Security Model<a href="#android-security-model" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<ul>
+<li>The trust boundary is the application not the user (just like on Linux)</li>
+<li>Apps run it their own sandbox</li>
+<li>Interactions are explicit</li>
+<li>Apps are signed</li>
+<li>Application must have a valid certificate
+<ul>
+<li>self-signed</li>
+<li>authority-signed</li>
+</ul>
+</li>
+<li>Unfortunatelly Android does not do cert chain validation</li>
+<li>In Android 6 busybox was replaced with toybox</li>
+</ul>
+<h2 id="sandboxing-applications">Sandboxing applications<a href="#sandboxing-applications" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<ul>
+<li>each app has it&rsquo;s own unique ID</li>
+<li>it runs in its own Sandbox
+<ul>
+<li>which cannot interfere with other apps</li>
+<li>and other apps cannot interfere with it</li>
+</ul>
+</li>
+<li>its data (files) are stored in the sandbox</li>
+<li>shared files are shared via content providers
+<ul>
+<li>you can use content providers for app only data but you&rsquo;ll have to mark
+it as <code>not-exported</code></li>
+</ul>
+</li>
+<li>keystores can be used to protect data by prompting user for the password to
+access it.</li>
+</ul>
+<h2 id="android-permissions">Android permissions<a href="#android-permissions" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<ul>
+<li>apps has to explicitly request permissions to access camera, clipboard etc</li>
+<li>the good practice is to minimise permissions requested</li>
+<li>apps can use standard permissions or define they&rsquo;re own</li>
+<li>permissions are groupped in two protection levels: normal or dangerous (which
+requires explicit user consent)</li>
+<li>app declares required permissions in its manifest file.</li>
+</ul>
+<h1 id="apk-tools">apk tools<a href="#apk-tools" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+<ul>
+<li>APK Tool - Handy tool to analyse APKs.  Download it from <a href="https://ibotpeaches.github.io/Apktool/install">https://ibotpeaches.github.io/Apktool/install </a>.</li>
+<li><a href="https://sourceforge.net/dex2jar">dex2jar</a></li>
+<li><a href="jd.benow.ca">JD-GUI</a> - java decompiler</li>
+<li>fortify - paid tool</li>
+<li><a href="www.android-x86.org">Android-x86</a> run android in regular VM</li>
+<li><a href="https://www.bouncycastle.org">the bouncy castle</a> - is a lightweight Java
+crypto lib</li>
+<li><a href="vareneckas.com/jad/">JAD - Java Decompiler</a>
+<ul>
+<li>once you converted dex files to java files, then</li>
+<li><code>jad -d outputdir -s java dirwithjavafiles/*.*</code></li>
+</ul>
+</li>
+<li><a href="https://sourceforge.net/jadx">jadx</a> - Dex to Java decompiler</li>
+<li>github/android-security-awesome - list of handy android security tools
+<ul>
+<li><a href="https://labs.mwrinfosecurity.com/tools/drozer/">drozer</a> - it needs an
+<code>agent</code> app to be pushed to the test device.</li>
+</ul>
+</li>
+</ul>
+<h1 id="drozer">Drozer<a href="#drozer" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+<p><a href="https://labs.mwrinfosecurity.com/tools/drozer/">drozer</a> - it needs an <code>agent</code>
+app to be pushed to the test device.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">adb install agent.apk   <span style="color:#75715e"># install drozer agent</span>
+adb forward tcp:31415 tcp:31415  <span style="color:#75715e">#we have to forward ports for it to work</span>
+drozer console devices  <span style="color:#75715e"># then start the drozer agent on the app</span>
+drozer console connect  <span style="color:#75715e"># connect server to the agent</span>
+</code></pre></div><p>Once you&rsquo;re in the drozer&rsquo;s shell:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dz&gt; list   <span style="color:#75715e"># list all available drozer modules (plugins)</span>
+dz&gt; run app.package.list  <span style="color:#75715e"># list all packages (applications) on the devices</span>
+dz&gt; run app.package.info -a com.you.app  <span style="color:#75715e"># app details: perms, uid, gid, ver.</span>
+                                         <span style="color:#75715e"># data &amp; apk location etc</span>
+dz&gt; run app.package.attacksurface com.your.app
+<span style="color:#75715e"># shows potential attack surfaces, like:</span>
+<span style="color:#75715e"># number of exported actitivies, broadcast receivers or content providers</span>
+<span style="color:#75715e"># it can also show whether debugging mode is available</span>
+
+dz&gt; run app.activity.info -a com.your.app
+<span style="color:#75715e"># will list all exported app activities and required permissions. If `null`</span>
+<span style="color:#66d9ef">then</span> you don<span style="color:#960050;background-color:#1e0010">&#39;</span>t need any permission to access it.
+
+dz&gt; run app.activity.start --component com.your.app com.your.app.DeepLinkActivity
+<span style="color:#75715e"># create an intent to access the activity</span>
+
+dz&gt; run app.service.info -a com.your.app  <span style="color:#75715e"># list exported services</span>
+
+dz&gt; run app.service.send com.your.app com.google.firebase.iid.FirebaseInstanceIdService baaadText <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>
+<span style="color:#75715e"># if error is produced, then we can analyse the decompiled source code (if</span> 
+available<span style="color:#f92672">)</span> and try other values <span style="color:#66d9ef">until</span> we succeed.
+
+</code></pre></div><h2 id="common-android-files">common Android files<a href="#common-android-files" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<ul>
+<li><code>wal</code> is a temporary write-ahead logging file</li>
+<li><code>shm</code> is an index file for <code>wal</code></li>
+</ul>
+<h1 id="ios-applications">iOS applications<a href="#ios-applications" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+<ul>
+<li>iOS apps can interact only with directories stored within its sandbox</li>
+<li>during installation iOS generates UUID and creates content directories for
+the app inside the sandbox dirs.
+<ul>
+<li><code>bundle container</code> - app container named <code>yourappname.app</code>. This folder
+is signed, and any changes to it will prevent app from running</li>
+<li><code>data container</code> - holds runtime data for both the app &amp; the user
+<ul>
+<li>this directory is further divided into other subfolders, which app
+can use store its data:
+<ul>
+<li><code>Documents</code> user generated content</li>
+<li><code>Library</code> internal app data</li>
+<li><code>tmp</code> used to write temp data during the current app invocation</li>
+</ul>
+</li>
+<li>there can be other folders in <code>data container</code> which will be app
+specific ones.</li>
+</ul>
+</li>
+<li>depending on the iOS version, <code>bundle</code> &amp; <code>data</code> dirs can be store in the
+same or different location (since iOS 8)</li>
+</ul>
+</li>
+<li>in <code>bundle container</code> there&rsquo;s <code>Info.plist</code> - it&rsquo;s a plain xml file which
+contains basic info about app required to run it:
+<ul>
+<li>name</li>
+<li>ID</li>
+<li>main executable</li>
+<li>etc.</li>
+</ul>
+</li>
+</ul>
+<h2 id="areas-to-test">Areas to test<a href="#areas-to-test" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<h3 id="application-data-storage">Application data storage<a href="#application-data-storage" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>There are three main storage options:</p>
+<ul>
+<li>SQLite</li>
+<li>property list files</li>
+<li>keychain</li>
+</ul>
+<p>All of those can be used with default security settings, but can be also
+configured.</p>
+<h2 id="stored-data-protection">Stored Data Protection<a href="#stored-data-protection" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<ul>
+<li>All app data is encrypted at rest (using a file system key)</li>
+<li>When devices is turned on, then data is unlocked (decrypted)</li>
+<li>File access permissions:
+<ul>
+<li>No protection</li>
+<li>Complete protection - the file in inaccessible when device is locked</li>
+<li>Complete unless open - the file in accessible if application has it open
+when the device is locked</li>
+<li>Complete until first user authentication - the file is always accessible
+after the first unlock. (This is the default setting)</li>
+</ul>
+</li>
+<li>Key Chain - has multiple security options, like:
+<ul>
+<li>Write only if passcode is set</li>
+<li>Read on this device only</li>
+</ul>
+</li>
+</ul>
+<h3 id="cached-and-temp-data">Cached and temp data<a href="#cached-and-temp-data" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>iOS stores an unencrypted screen shot of the app when it goes to the
+background which can be used to recover any sensitive information that is
+visible on that screen.</p>
+<p>Request &amp; Response data is stored in SQLite DB called <code>cached.db</code>.</p>
+<h3 id="url-handlers">URL handlers<a href="#url-handlers" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>Some apps might use URL handlers to pass sensitive information between
+processes (they will be listed in <code>Info.plist</code> under <code>URLTypes</code> section)</p>
+<h3 id="binary-protection">Binary protection<a href="#binary-protection" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>Many apps uses extra flags to secure the app binary, like: Data Execution
+Prevention (<code>DEP</code>), <code>Postion Independent Executable</code> &amp; <code>ASLR</code>.<br>
+It&rsquo;s good to check for those flags.</p>
+<p>402</p>
+<h1 id="ios-security">iOS Security<a href="#ios-security" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">   --------        ---------------       ---------       ----------
+   | Boot |        | Low level   |       | iBoot |       | Kernel |
+   | rom  |  --&gt;   | Boot loader |  --&gt;  | load  |  --&gt;  | Load   |
+   --------        ---------------       ---------       ----------
+</code></pre></div><ul>
+<li><code>Boot rom hardware</code> contains <code>RO</code> code to bootstrap the system and Apple&rsquo;s
+public key.</li>
+<li>Public key is used to verify the integrity of the <code>Low level boot loader</code>
+code</li>
+<li><code>Low level boot loader</code> takes the 2nd stage boot called <code>iBoot load</code> code
+from flash memory and verifies its signature before loading.</li>
+<li><code>iBoot load</code> verifies the Kernel code in similar fashion before loading it.</li>
+</ul>
+<p>This process provides a secure way of loading the System.</p>
+<h2 id="application-sandboxing">Application Sandboxing<a href="#application-sandboxing" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<ul>
+<li>all apps run in sandboxes, but not all apps use all security features
+provided by the iOS</li>
+<li>Interactions outside the sandbox have to be explicit. For example accessing
+microphone, camera, media etc.</li>
+</ul>
+<h2 id="exploitation-protection">Exploitation protection<a href="#exploitation-protection" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<ul>
+<li>Memory pages can be marked as &ldquo;Write but not execute&rdquo; (using ARM chip <code>W^X</code>
+feature, similar to <code>DEP</code> for Windows users)</li>
+<li><code>ASLR</code> - makes sure that code &amp; data are not stored together, so it makes
+exploitaion of fixed memory addresses more difficult</li>
+<li><code>Position-independent execution</code> (<code>PIE</code>) - allows application to work from
+any location in memory</li>
+<li><code>Stack canaries</code> - can be used to check for malicious or accidental stack
+overwrites. A function can always check whether &ldquo;<code>canary</code>&rdquo; is stil alive.</li>
+</ul>
+<h2 id="interesting-folders-on-ios-devices">Interesting folders on iOS devices<a href="#interesting-folders-on-ios-devices" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<ul>
+<li><code>/var/stash</code></li>
+<li><code>/var/mobile</code>
+<ul>
+<li><code>/var/mobile/Applications</code> -&gt; contain a bunch of UUIDs sandbox folders
+for each application</li>
+<li><code>/var/mobile/Containers</code> -&gt; similar as above.</li>
+<li><code>/var/mobile/Library/Accounts</code>
+<ul>
+<li>contains files like <code>Accounts3.sqlite</code></li>
+</ul>
+</li>
+<li><code>/var/mobile/Library/SMS</code>
+<ul>
+<li>contains files like <code>sms.db</code> - with all SMS msgs in clear text</li>
+</ul>
+</li>
+<li><code>/var/mobile/Library/Media</code> - contains books, photos etc</li>
+</ul>
+</li>
+</ul>
+<h3 id="ios-testing-tools">iOS testing tools<a href="#ios-testing-tools" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<ul>
+<li>Once iOS device is jailbroken and you install <code>openssh</code> via <code>Cydia</code> you can
+change root password with <code>passwd</code></li>
+<li><code>Erica</code> - allows to view plist files in human readable mode
+<ul>
+<li>example usage: <code>plutil Info.plist</code></li>
+</ul>
+</li>
+<li><a href="https://cydia.iphonecake.com">Clutch</a> - identify all encrypted applications
+and reverse engineer them to allos src code analysis. It decrypts an app
+and dumps it into an <code>ipa</code> file.
+<ul>
+<li><code>chmod +x /usr/bin/Clutch</code> - this has to be done before running</li>
+<li><code>Clutch -i</code> → list all encrypted applications</li>
+</ul>
+</li>
+<li><a href="cydia.radar.org">Class-Dump-Z</a> -</li>
+<li>IPA Installer</li>
+<li>WinSCP - handy when exchanging files between phone and laptop</li>
+<li>IDA Pro</li>
+<li><a href="https://www.nesolabs.de">Snoop It</a> - used for dynamic analysis of
+application operation.</li>
+<li><a href="htpps://www.hopperapp.com">hopperapp</a> - handy disassembler</li>
+</ul>
+<h2 id="extracting-properties-and-class-headers">Extracting properties and class headers<a href="#extracting-properties-and-class-headers" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># list all encrypted apps</span>
+root# Clutch -i
+
+<span style="color:#75715e"># decrypt selected app into an ipa file (which essentially is a zip file)</span>
+root# Clutch -d <span style="color:#ae81ff">8</span>
+
+<span style="color:#75715e"># replace installed encrypted app with its decrypted ipa counterpart, this is</span>
+<span style="color:#75715e"># useful cos we can extract properties list and class headers</span>
+root# ipainstaller -c yourapp.ipa
+
+<span style="color:#75715e"># go to the dir below to find all app files</span>
+cd /private/var/mobile/Applications/<span style="color:#f92672">{</span>your_app_UUID<span style="color:#f92672">}</span>/
+
+<span style="color:#75715e"># NOTE: remember to not to modify, remove or add files to the app dir folder as</span>
+<span style="color:#75715e"># it will stop working due to folder signature mechanism</span>
+
+<span style="color:#75715e"># extract properties (manifest file) from Info.plist file</span>
+root# plutil Yourapp.app/Info.plist &gt; properties_list
+
+<span style="color:#75715e"># Extract resource rules</span>
+root# plutil Yourapp.app/ResourceRules.plist &gt;&gt; properties_list
+
+<span style="color:#75715e"># extract class headers with class-dump-z</span>
+root# class-dump-z Yourapp.app/Yourapp &gt;&gt; properties_list
+</code></pre></div>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/security/'>security</a>, <a class='category' href='/categories/learning/'>learning</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/ethical-hacking/'>ethical hacking</a>, <a class='tag' href='/tags/notes/'>notes</a>, <a class='tag' href='/tags/pentesting/'>pentesting</a>, <a class='tag' href='/tags/security/'>security</a>, <a class='tag' href='/tags/android/'>android</a>, <a class='tag' href='/tags/ios/'>iOS</a>, <a class='tag' href='/tags/mobile/'>mobile</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/2018/04/23/ethical-hacking-denial-of-service-attacks/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Ethical Hacking - Denial of Service - notes</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/2018/05/14/ethical-hacking-wireless-networks-notes/'>
+        <span class='screen-reader-text'>Next post: </span>Ethical Hacking - Wireless Networks - notes<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/kowalcj0' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/januszkowalczyk' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2018-2020 kowalcj0 </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
+
+<script src='/assets/js/main.c3bcf2df.js'></script>
+
+</body>
+
+</html>
+

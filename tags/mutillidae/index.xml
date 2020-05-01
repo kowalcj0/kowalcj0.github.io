@@ -12,10 +12,10 @@
     
     <item>
       <title>Learning web app secuiry with OWASP Mutillidae II - part 1</title>
-      <link>https://kowalcj0.github.io/posts/2018/mutillidae-ii-part-1/</link>
+      <link>https://kowalcj0.github.io/2018/01/23/mutillidae-ii-part-1/</link>
       <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/posts/2018/mutillidae-ii-part-1/</guid>
+      <guid>https://kowalcj0.github.io/2018/01/23/mutillidae-ii-part-1/</guid>
       <description>iNSTALLATION Run nowasp container:
 docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp Go to http://localhost:8888/, and build the DB.
 eXCERCICES: OWASP 2013 A1 - Injection (SQL) - SQLi Extract data - User info Submit the form with such query in the Name field:
