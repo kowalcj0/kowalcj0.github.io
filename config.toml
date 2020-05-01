@@ -23,6 +23,9 @@ enableEmoji = true
 # Missing translations will default to this content language
 defaultContentLanguage = "en"
 
+# Don't pluralize titles in lists
+pluralizelisttitles = false
+
 [params.info]
 description = "notes, scribbles, thoughts etc."
 title404 = "Oops! You've found the Mighty Hipster Jedi Gopher!"
