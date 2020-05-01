@@ -1,6 +1,6 @@
 ---
 draft: true
-title: "After Life - 1998 film by Hirokazu Koreeda"
+title: "After Life - a film by Kore-eda Hirokazu"
 description: "Wandafuru Raifu is happening now not in the future"
 slug: "after-life"
 date: "2019-05-18T20:00:00+01:00"
@@ -12,8 +12,8 @@ tags:
   - fantasy
   - 1998
 cover:
-  image: ../images/logrotate.png
-  caption: ""
+  image: ../images/after-life.jpg
+  caption: "A still from trailer"
   style: wide
 ---
 

@@ -14,7 +14,7 @@ tags:
   - cli
   - zfs
 cover:
-  image: ../images/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png
+  image: ../RGB_FreeNAS_Shark_Logo_Onlight_Lg.png
   caption: "SRC: https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png"
   style: normal
 ---
