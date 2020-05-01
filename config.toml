@@ -1,151 +1,153 @@
 baseURL = "https://kowalcj0.github.io"
-title = "Home"
-# for smart copyright line, leave this blank and check [params.copyright]
-copyright = ""
-
-theme = "minimo"
-
-disqusShortname = ""
-googleAnalytics = ""
-
-paginate  = 10
-preserveTaxonomyNames = true
-footnoteReturnLinkContents = "↩"
-
-enableRobotsTXT = true # generate robots.txt
-
-# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
-pygmentsUseClasses = true
-pygmentsUseClassic = false
-pygmentsCodefences = true
-enableEmoji = true
-
-# Missing translations will default to this content language
+copyright = ""  # for smart copyright line, leave this blank and check [params.copyright]
 defaultContentLanguage = "en"
+enableEmoji=true
+enableRobotsTXT = true  # generate robots.txt
+footnoteReturnLinkContents = "↩"
+newContentEditor = "vimx"
+paginate = 20
+pluralizelisttitles = false  # Don't pluralize titles in lists
+theme = "minimo"
+title = "Home"
 
-# Don't pluralize titles in lists
-pluralizelisttitles = false
+[menu]
+  [[menu.main]]
+    identifier = "worth-watching"
+    name = "Worth watching"
+    url = "/general/worth-watching/"
+    weight = 1
 
-[params.info]
-description = "notes, scribbles, thoughts etc."
-title404 = "Oops! You've found the Mighty Hipster Jedi Gopher!"
-
-[params.assets]
-favicon = "img/favicon144.ico"
-customCSS = ["css/syntax.css", "css/custom.css"]
-customJS = []
-gopher = "img/gopher.png" # used in 404 template ( Generator: https://gopherize.me )
-
-[params.copyright]
-prefix = ""
-holder = "kowalcj0"
-startYear = "2018"
-suffix = ""
-
-[params.settings]
-# date & time format: https://golang.org/pkg/time/
-dateFormat = "2006-01-02"
-listDateFormat = "2006-01-02"
-archiveDateFormat = "Jan 02"
-hideEntryNavigation = ["page"] # boolean / array of sections
-hideEntryMeta = ["page"] # boolean / array of sections
-showReadingTime = true
-showLastmod = true
-accentColor = "#ffcd00"
-hideMainMenu = false
-
-[params.sidebar]
-enable = true
-
-[params.widgets]
-header = ["breadcrumbs"]
-homepage = ["recent_posts"]
-sidebar = ["about", "search", "sidebar_menu", "cat_cloud", "taxonomy_cloud"]
-footer = ["social_menu"]
-
-[params.opengraph.facebook]
-admins = [] # array of Facebook IDs
-appID = ""
-pageID = ""
-
-[params.opengraph.twitter]
-page = "" # Twitter page username
-
-[params.seo]
-# Title Separator: - – — · • * ⋆ | ~ « » < >
-titleSeparator = "•"
-
-[params.social]
-codepen = ""
-email = ""
-facebook = ""
-github = "kowalcj0"
-gitlab = ""
-instagram = ""
-linkedin = ""
-twitter = "januszkowalczyk"
-telegram = ""
-google_scholar = ""
-youtube = ""
-
-[params.comments]
-enable = false
-
-# Isso: https://posativ.org/isso/
-[params.comments.isso]
-enable = false
-scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
-dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
-
-[params.comments.staticman]
-enable = true
-apiEndpoint = "https://api.staticman.net/v2/entry"
-maxDepth = 2
-username = "MunifTanjim"
-repository = "minimo"
-branch = "master"
-
-# Utterances: https://utteranc.es
-[params.comments.utterances]
-enable = false
-issueTerm = "pathname" # pathname / url / title
-
-[params.comments.utterances.github]
-username = "MunifTanjim"
-repository = "minimo"
-
-[params.search]
-client = "fuse" # algolia / fuse / lunr
-
-[params.search.algolia]
-appId = ""
-indexName = ""
-searchApiKey = ""
+  [[menu.main]]
+    identifier = "repository"
+    name = "Repo"
+    url = "https://github.com/kowalcj0/kowalcj0.github.io"
+    weight = 0
 
 [taxonomies]
-category = "categories"
-series = "series"
-tag = "tags"
+  category = "categories"
+  tag = "tags"
 
 [permalinks]
-page = "/:slug/"
+  posts = "/:year/:month/:day/:title/"
+  page = "/:slug/"
 
-[[menu.main]]
-name = "Repo"
-weight = -10
-identifier = "repository"
-url = "https://github.com/kowalcj0/kowalcj0.github.io"
+# https://gohugo.io/getting-started/configuration-markup
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
 
-[blackfriday]
-# Blackfriday is Hugo’s built-in Markdown rendering engine.
-# https://gohugo.io/getting-started/configuration/#configure-blackfriday
-hrefTargetBlank = true
-angledQuotes = false
-plainIDAnchors = true
+[params]
 
-[languages]
-# edit this block for your own language
-[languages.en]
-lang = "en"
-languageName = "English"
-weight = 1
+  [params.info]
+    #author = "Janusz Kowalczyk"
+    description = "notes, scribbles, thoughts etc."
+    title404 = "Oops! You've found the Mighty Hipster Jedi Gopher!"
+
+  [params.assets]
+    favicon = "img/favicon144.ico"
+    customCSS = ["css/syntax.css", "css/custom.css"]
+    customJS = []
+    gopher = "img/gopher.png"  # used in 404 template ( Generator: https://gopherize.me )
+
+  [params.copyright]
+    prefix = ""
+    holder = "kowalcj0"
+    startYear = "2018"
+    suffix = ""
+
+  [params.settings]
+    # date & time format: https://golang.org/pkg/time/
+    dateFormat = "2006-01-02"
+    listDateFormat = "2006-01-02"
+    archiveDateFormat = "Jan 02"
+    hideEntryNavigation = ["page"] # boolean / array of sections
+    hideEntryMeta = ["page"] # boolean / array of sections
+    showReadingTime = true
+    showLastmod = true
+    accentColor = "#ffcd00"
+    hideMainMenu = false
+
+  [params.sidebar]
+    enable = true
+
+  [params.widgets]
+    header = ["breadcrumbs"]
+    homepage = ["recent_posts"]
+    sidebar = ["about", "search", "sidebar_menu", "cat_cloud", "taxonomy_cloud"]
+    footer = ["social_menu"]
+
+  [params.opengraph.twitter]
+    page = "" # Twitter page username
+
+  [params.seo]
+    # Title Separator: - – — · • * ⋆ | ~ « » < >
+    titleSeparator = "•"
+
+  [params.social]
+    codepen = ""
+    email = ""
+    facebook = ""
+    github = "kowalcj0"
+    gitlab = ""
+    instagram = ""
+    linkedin = ""
+    twitter = "januszkowalczyk"
+    telegram = ""
+    google_scholar = ""
+    youtube = ""
+
+  [params.comments]
+    enable = false
+
+  # Isso: https://posativ.org/isso/
+  [params.comments.isso]
+    enable = false
+    scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
+    dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
+
+  [params.comments.staticman]
+    enable = false
+
+  # Utterances: https://utteranc.es
+  [params.comments.utterances]
+    enable = true
+    issueTerm = "pathname" # pathname / url / title
+    theme = "github-light"
+
+  [params.comments.utterances.github]
+    username = "kowalcjo"
+    repository = "kowalcj0.github.io"
+
+  [params.search]
+    client = "fuse" # algolia / fuse / lunr
+
