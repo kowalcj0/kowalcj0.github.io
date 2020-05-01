@@ -21,6 +21,9 @@ rm -rf public/*
 echo "Generating site"
 hugo
 
+echo "Copying utterances.json"
+cp utterances.json public/
+
 echo "Updating master branch"
 cd public && git add --all && git commit -m "Publish to master (publish.sh)" && git push
 
