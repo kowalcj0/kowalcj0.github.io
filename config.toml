@@ -39,7 +39,7 @@ gopher = "img/gopher.png" # used in 404 template ( Generator: https://gopherize.
 [params.copyright]
 prefix = ""
 holder = "kowalcj0"
-startYear = "2017"
+startYear = "2018"
 suffix = ""
 
 [params.settings]
