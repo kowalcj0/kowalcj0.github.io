@@ -127,16 +127,7 @@ title = "Home"
     youtube = ""
 
   [params.comments]
-    enable = false
-
-  # Isso: https://posativ.org/isso/
-  [params.comments.isso]
-    enable = false
-    scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
-    dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
-
-  [params.comments.staticman]
-    enable = false
+    enable = true
 
   # Utterances: https://utteranc.es
   [params.comments.utterances]
