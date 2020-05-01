@@ -3,7 +3,7 @@ draft: false
 title: "FreeNas/FreeBSD hardware/diagnostic tools"
 description: "A brief overview of various CLI tools that can help you diagnose your FreeBSD system"
 slug: "handy-freebsd-diagnostic-tools"
-date: "2020-03-28T22:02:34+01:00"
+date: "2020-04-28T22:02:34+01:00"
 toc: true
 toc_levels: 1
 categories:

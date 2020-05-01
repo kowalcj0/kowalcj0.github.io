@@ -1,9 +1,9 @@
 ---
-draft: true
+draft: false
 title: "import zipfile"
 description: "A brief overview of various CLI tools that can help you diagnose your FreeBSD system"
 slug: "import-zipfile"
-date: "2020-03-30T20:05:24+01:00"
+date: "2020-04-30T20:05:24+01:00"
 toc: true
 categories:
   - programming
