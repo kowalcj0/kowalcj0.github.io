@@ -4,52 +4,72 @@
   
   <url>
     <loc>https://kowalcj0.github.io/2020/</loc>
-    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+    <lastmod>2020-04-30T20:05:24+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/categories/</loc>
-    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/cli/</loc>
-    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/freebsd/</loc>
-    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/freenas/</loc>
-    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/2020/03/28/handy-freebsd-diagnostic-tools/</loc>
-    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+    <lastmod>2020-04-30T20:05:24+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/</loc>
-    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+    <lastmod>2020-04-30T20:05:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/2020/04/30/import-zipfile/</loc>
+    <lastmod>2020-04-30T20:05:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/categories/programming/</loc>
+    <lastmod>2020-04-30T20:05:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/python/</loc>
+    <lastmod>2020-04-30T20:05:24+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/tags/</loc>
-    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+    <lastmod>2020-04-30T20:05:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/zip/</loc>
+    <lastmod>2020-04-30T20:05:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/cli/</loc>
+    <lastmod>2020-04-28T22:02:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/freebsd/</loc>
+    <lastmod>2020-04-28T22:02:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/tags/freenas/</loc>
+    <lastmod>2020-04-28T22:02:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kowalcj0.github.io/2020/04/28/handy-freebsd-diagnostic-tools/</loc>
+    <lastmod>2020-04-28T22:02:34+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/categories/unix/</loc>
-    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+    <lastmod>2020-04-28T22:02:34+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://kowalcj0.github.io/tags/zfs/</loc>
-    <lastmod>2020-03-28T22:02:34+01:00</lastmod>
+    <lastmod>2020-04-28T22:02:34+01:00</lastmod>
   </url>
   
   <url>
@@ -264,11 +284,6 @@
   
   <url>
     <loc>https://kowalcj0.github.io/2018/03/29/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</loc>
-    <lastmod>2018-03-29T15:15:14+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kowalcj0.github.io/tags/python/</loc>
     <lastmod>2018-03-29T15:15:14+01:00</lastmod>
   </url>
   

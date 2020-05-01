@@ -5,15 +5,33 @@
     <link>https://kowalcj0.github.io/tags/</link>
     <description>Recent content in Tags on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 28 Mar 2020 22:02:34 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2020 20:05:24 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>python</title>
+      <link>https://kowalcj0.github.io/tags/python/</link>
+      <pubDate>Thu, 30 Apr 2020 20:05:24 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zip</title>
+      <link>https://kowalcj0.github.io/tags/zip/</link>
+      <pubDate>Thu, 30 Apr 2020 20:05:24 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/zip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>cli</title>
       <link>https://kowalcj0.github.io/tags/cli/</link>
-      <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
+      <pubDate>Tue, 28 Apr 2020 22:02:34 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/cli/</guid>
       <description></description>
@@ -22,7 +40,7 @@
     <item>
       <title>freebsd</title>
       <link>https://kowalcj0.github.io/tags/freebsd/</link>
-      <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
+      <pubDate>Tue, 28 Apr 2020 22:02:34 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/freebsd/</guid>
       <description></description>
@@ -31,7 +49,7 @@
     <item>
       <title>freenas</title>
       <link>https://kowalcj0.github.io/tags/freenas/</link>
-      <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
+      <pubDate>Tue, 28 Apr 2020 22:02:34 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/freenas/</guid>
       <description></description>
@@ -40,7 +58,7 @@
     <item>
       <title>zfs</title>
       <link>https://kowalcj0.github.io/tags/zfs/</link>
-      <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
+      <pubDate>Tue, 28 Apr 2020 22:02:34 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/zfs/</guid>
       <description></description>
@@ -250,15 +268,6 @@
       <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/mpv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://kowalcj0.github.io/tags/python/</link>
-      <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/python/</guid>
       <description></description>
     </item>
     

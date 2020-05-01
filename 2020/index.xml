@@ -5,17 +5,31 @@
     <link>https://kowalcj0.github.io/2020/</link>
     <description>Recent content in 2020 on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 28 Mar 2020 22:02:34 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2020 20:05:24 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/2020/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>FreeNas/FreeBSD hardware/diagnostic tools</title>
-      <link>https://kowalcj0.github.io/2020/03/28/handy-freebsd-diagnostic-tools/</link>
-      <pubDate>Sat, 28 Mar 2020 22:02:34 +0100</pubDate>
+      <title>import zipfile</title>
+      <link>https://kowalcj0.github.io/2020/04/30/import-zipfile/</link>
+      <pubDate>Thu, 30 Apr 2020 20:05:24 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2020/03/28/handy-freebsd-diagnostic-tools/</guid>
+      <guid>https://kowalcj0.github.io/2020/04/30/import-zipfile/</guid>
+      <description>Recently, I had a look at zipfile module.
+It&amp;rsquo;s surprisingly easy to work with.
+Snippets below should give you a rough idea how to use it.
+Create a zip file import zipfile file_to_compress = &amp;#34;server.log&amp;#34; zip_file_name = &amp;#34;server.log.zip&amp;#34; with zipfile.ZipFile(zip_file_name, &amp;#34;w&amp;#34;, zipfile.ZIP_DEFLATED) as myzip: myzip.write(file_to_compress) NOTE: 3rd argument defines the compression type.
+Choose from:
+ ZIP_STORED (no compression) ZIP_DEFLATED (requires zlib) ZIP_BZIP2 (requires bz2) ZIP_LZMA (requires lzma)  Unpack a zip archive with zipfile.</description>
+    </item>
+    
+    <item>
+      <title>FreeNas/FreeBSD hardware/diagnostic tools</title>
+      <link>https://kowalcj0.github.io/2020/04/28/handy-freebsd-diagnostic-tools/</link>
+      <pubDate>Tue, 28 Apr 2020 22:02:34 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/04/28/handy-freebsd-diagnostic-tools/</guid>
       <description>Handy CLI tools that might help your with diagnosing/debugging issues on your FreeBSD/FreeNAS machine.
 Recommended reading  FreeNAS documentation on CLI tools: https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html FreeBSD Display Information About The System Hardware: https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html  camcontrol The camcontrol utility is designed to provide a way for users to access and control the FreeBSD CAM subsystem.
 # camcontrol devlist &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus0 target 0 lun 0 (pass0,ada0) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus1 target 0 lun 0 (pass1,ada1) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass2,ada2) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass3,ada3) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus4 target 0 lun 0 (pass4,ada4) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass5,ada5) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass6,ada6) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass7,ada7) &amp;lt;SanDisk Dual Drive 1.</description>
