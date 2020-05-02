@@ -323,7 +323,7 @@ One min read
   <p>Recently, I had a look at <a href="https://docs.python.org/3/library/zipfile.html">zipfile</a> module.<br>
 It&rsquo;s surprisingly easy to work with.<br>
 Snippets below should give you a rough idea how to use it.</p>
-<h2 id="create-a-zip-file">Create a zip file<a href="#create-a-zip-file" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<h2 id="create-a-zip-file">Create a zip file<a tabindex="0" href="#create-a-zip-file" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zipfile
 
 file_to_compress <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;server.log&#34;</span>
@@ -339,10 +339,10 @@ zip_file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&
 <li>ZIP_BZIP2 (requires bz2)</li>
 <li>ZIP_LZMA (requires lzma)</li>
 </ul>
-<h3 id="unpack-a-zip-archive">Unpack a zip archive<a href="#unpack-a-zip-archive" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<h3 id="unpack-a-zip-archive">Unpack a zip archive<a tabindex="0" href="#unpack-a-zip-archive" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
     myzip<span style="color:#f92672">.</span>extractall()
-</code></pre></div><h3 id="list-zip-file-details--test-the-archive">List zip file details &amp; test the archive<a href="#list-zip-file-details--test-the-archive" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+</code></pre></div><h3 id="list-zip-file-details--test-the-archive">List zip file details &amp; test the archive<a tabindex="0" href="#list-zip-file-details--test-the-archive" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
     <span style="color:#75715e"># list archive details</span>
     <span style="color:#66d9ef">print</span>(myzip<span style="color:#f92672">.</span>infolist()) 
@@ -353,7 +353,7 @@ zip_file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&
     <span style="color:#75715e"># Read all the files in the archive and check their CRC’s and file headers. </span>
     <span style="color:#75715e"># Return the name of the first bad file, or else return None.</span>
     <span style="color:#66d9ef">assert</span> myzip<span style="color:#f92672">.</span>testzip() <span style="color:#f92672">is</span> None
-</code></pre></div><h2 id="create-a-password-protected-zip-file">Create a password protected zip file<a href="#create-a-password-protected-zip-file" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+</code></pre></div><h2 id="create-a-password-protected-zip-file">Create a password protected zip file<a tabindex="0" href="#create-a-password-protected-zip-file" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zipfile
 
 protected_zip_file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;server.log.pass.zip&#34;</span>
@@ -363,16 +363,16 @@ pwd <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;passwo
 <span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(protected_zip_file_name, <span style="color:#e6db74">&#34;w&#34;</span>, zipfile<span style="color:#f92672">.</span>ZIP_DEFLATED) <span style="color:#66d9ef">as</span> myzip:
     myzip<span style="color:#f92672">.</span>setpassword(pwd <span style="color:#f92672">=</span> bytes(pwd, <span style="color:#e6db74">&#34;utf-8&#34;</span>))
     myzip<span style="color:#f92672">.</span>write(file_to_compress)
-</code></pre></div><h3 id="unpack-password-protected-zip-file">Unpack password protected zip file<a href="#unpack-password-protected-zip-file" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+</code></pre></div><h3 id="unpack-password-protected-zip-file">Unpack password protected zip file<a tabindex="0" href="#unpack-password-protected-zip-file" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(protected_zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
     file<span style="color:#f92672">.</span>extractall(pwd <span style="color:#f92672">=</span> bytes(pwd, <span style="color:#e6db74">&#34;utf-8&#34;</span>))
-</code></pre></div><h2 id="hashes--checksums">Hashes &amp; Checksums<a href="#hashes--checksums" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
-<h3 id="calculate-crc">Calculate CRC<a href="#calculate-crc" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+</code></pre></div><h2 id="hashes--checksums">Hashes &amp; Checksums<a tabindex="0" href="#hashes--checksums" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<h3 id="calculate-crc">Calculate CRC<a tabindex="0" href="#calculate-crc" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zlib
 
 <span style="color:#66d9ef">with</span> open(zip_file_name, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> in_file:
     <span style="color:#66d9ef">print</span>(zlib<span style="color:#f92672">.</span>crc32(in_file<span style="color:#f92672">.</span>read()))
-</code></pre></div><h3 id="calculate-md5">Calculate MD5<a href="#calculate-md5" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+</code></pre></div><h3 id="calculate-md5">Calculate MD5<a tabindex="0" href="#calculate-md5" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> hashlib
 
 hash_md5 <span style="color:#f92672">=</span> hashlib<span style="color:#f92672">.</span>md5()

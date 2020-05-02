@@ -328,12 +328,12 @@
   <div class='container entry-content'>
   <p>Handy CLI tools that might help your with diagnosing/debugging issues on your
 FreeBSD/FreeNAS machine.</p>
-<h2 id="recommended-reading">Recommended reading<a href="#recommended-reading" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<h2 id="recommended-reading">Recommended reading<a tabindex="0" href="#recommended-reading" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <ul>
 <li>FreeNAS documentation on CLI tools: <a href="https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html">https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html</a></li>
 <li>FreeBSD Display Information About The System Hardware: <a href="https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html">https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html</a></li>
 </ul>
-<h2 id="camcontrol">camcontrol<a href="#camcontrol" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<h2 id="camcontrol">camcontrol<a tabindex="0" href="#camcontrol" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=camcontrol">camcontrol</a> utility is designed to provide a way for users to access
 and control the FreeBSD CAM subsystem.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># camcontrol devlist</span>
@@ -346,7 +346,7 @@ and control the FreeBSD CAM subsystem.</p>
 &lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass6,ada6<span style="color:#f92672">)</span>
 &lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass7,ada7<span style="color:#f92672">)</span>
 &lt;SanDisk Dual Drive 1.00&gt;          at scbus9 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass8,da0<span style="color:#f92672">)</span>
-</code></pre></div><h2 id="dmesg">dmesg<a href="#dmesg" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+</code></pre></div><h2 id="dmesg">dmesg<a tabindex="0" href="#dmesg" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=dmesg">dmesg</a> utility displays the contents of the system message buffer.</p>
 <p>To show only CPU model &amp; some basic details:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dmesg | grep <span style="color:#e6db74">&#34;^CPU&#34;</span>
@@ -387,7 +387,7 @@ grep through dmesg out:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dmesg | grep em0
 em0: &lt;Intel<span style="color:#f92672">(</span>R<span style="color:#f92672">)</span> PRO/1000 Legacy Network Connection 1.1.0&gt; port 0xe000-0xe03f mem 0xfea40000-0xfea5ffff,0xfea20000-0xfea3ffff irq <span style="color:#ae81ff">20</span> at device 5.0 on pci2
 ...
-</code></pre></div><h2 id="dmidecode">dmidecode<a href="#dmidecode" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+</code></pre></div><h2 id="dmidecode">dmidecode<a tabindex="0" href="#dmidecode" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p><a href="https://www.freebsd.org/cgi/man.cgi?query=dmidecode">dmidecode</a> is a tool for dumping a computer&rsquo;s DMI (some say SMBIOS) table
 contents in a human-readable format.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dmidecode -h
@@ -412,11 +412,11 @@ Options are:
 <li><code>dmidecode -t bios</code></li>
 <li><code>dmidecode -t baseboard</code></li>
 </ul>
-<h2 id="freebsd-version">freebsd-version<a href="#freebsd-version" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<h2 id="freebsd-version">freebsd-version<a tabindex="0" href="#freebsd-version" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p><a href="https://www.freebsd.org/cgi/man.cgi?query=freebsd-version">freebsd-version</a> – print the version and patch level of the installed system.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># freebsd-version</span>
 11.3-RELEASE-p6
-</code></pre></div><h1 id="freenas-debug">freenas-debug<a href="#freenas-debug" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+</code></pre></div><h1 id="freenas-debug">freenas-debug<a tabindex="0" href="#freenas-debug" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
 <p><a href="https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html#freenas-debug">freenas-debug</a> is a command line utility to show debugging information.
 It offers a really fine level of details.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># freenas-debug</span>
@@ -445,7 +445,7 @@ Where options are:
     -t	Dump System Information
     -y	Dump Sysctl Configuration
     -z	Dump ZFS Configuration
-</code></pre></div><h2 id="gpart">gpart<a href="#gpart" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+</code></pre></div><h2 id="gpart">gpart<a tabindex="0" href="#gpart" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=gpart">gpart</a> utility is used to partition GEOM providers, normally disks.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># gpart show</span>
 <span style="color:#f92672">=</span>&gt;        <span style="color:#ae81ff">34</span>  <span style="color:#ae81ff">7814037101</span>  ada0  GPT  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
@@ -467,7 +467,7 @@ Where options are:
   <span style="color:#ae81ff">7814037128</span>           <span style="color:#ae81ff">7</span>        - free -  <span style="color:#f92672">(</span>3.5K<span style="color:#f92672">)</span>
   ...
   ...
-</code></pre></div><h2 id="pciconf">pciconf<a href="#pciconf" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+</code></pre></div><h2 id="pciconf">pciconf<a tabindex="0" href="#pciconf" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=pciconf">pciconf</a> utility provides a command line interface to functionality
 provided by the pci ioctl interface.</p>
 <p>Use <code>pciconf -lv</code> to list all known devices with vendor, device, class
@@ -494,7 +494,7 @@ re0@pci0:4:0:0:	class<span style="color:#f92672">=</span>0x020000 card<span styl
     device     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller&#39;</span>
     class      <span style="color:#f92672">=</span> network
     subclass   <span style="color:#f92672">=</span> ethernet
-</code></pre></div><h2 id="sysctl">sysctl<a href="#sysctl" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+</code></pre></div><h2 id="sysctl">sysctl<a tabindex="0" href="#sysctl" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=sysctl">sysctl</a> utility retrieves kernel state and allows processes with
 appropriate privilege to set kernel state.</p>
 <p>Basic CPU info:</p>
@@ -515,7 +515,7 @@ hw.realmem: <span style="color:#ae81ff">34359738368</span>
 hw.pci.host_mem_start: <span style="color:#ae81ff">2147483648</span>
 </code></pre></div><p>Lastly, you can list all the currently available hardware values use:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sysctl -a hw
-</code></pre></div><h2 id="zpool">zpool<a href="#zpool" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+</code></pre></div><h2 id="zpool">zpool<a tabindex="0" href="#zpool" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
 <p><a href="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/zfs-zpool.html">zpool</a> – is a tool to configure ZFS storage pools.</p>
 <p>For diagnostic purposes it&rsquo;s enough to know: <code>zpool status -v</code> which will show
 the status of all pools in your system.</p>
