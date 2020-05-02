@@ -35,7 +35,10 @@ If you looking for something interesting to watch have a look at those lists:
 ## Documentaries
 {{< movies category="documentaries" >}}
 
-## Country
+## Tearjerkers
+{{< movies category="tearjerkers" >}}
+
+## By country
 
 ### Italy
 {{< movies category="italian" >}}
@@ -50,7 +53,7 @@ If you looking for something interesting to watch have a look at those lists:
 {{< movies category="russian" >}}
 
 
-## Directors
+## By director
 
 ### Luis Buñuel
 Rather scandalous and avant-garde movies:
