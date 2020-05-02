@@ -1,0 +1,5 @@
+<ul>
+{{ range $.Site.Data.wallabag.entries }}
+    <li><a target="_blank" rel="external" referrerpolicy="no-referrer" href="{{.url}}">{{.title}}</a></li>
+{{ end }}
+</ul>
