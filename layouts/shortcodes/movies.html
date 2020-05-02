@@ -30,12 +30,7 @@
       <td>{{ .director }}</td>
       <td>{{ .genres }}</td>
       <td>{{ .year }}</td>
-      <td>
-        {{ partial "movie_link.html" .trailer }}
-        {{ partial "movie_link.html" .imdb }}
-        {{ partial "movie_link.html" .rt }}
-        {{ partial "movie_link.html" .wiki }}
-      </td>
+      <td>{{ partial "movie_links.html" .}}</td>
       <td>{{ with .comments }}{{ . | markdownify }}{{ end }}<td>
     </tr>
             {{ end }}
