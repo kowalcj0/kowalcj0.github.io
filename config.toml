@@ -15,7 +15,13 @@ title = "Home"
     identifier = "worth-watching"
     name = "Worth watching"
     url = "/general/worth-watching/"
-    weight = 1
+    weight = 100
+
+  [[menu.main]]
+    identifier = "wallabag"
+    name = "Wallabag"
+    url = "/general/wallabag/"
+    weight = 50
 
   [[menu.main]]
     identifier = "repository"
@@ -69,7 +75,6 @@ title = "Home"
 [params]
 
   [params.info]
-    #author = "Janusz Kowalczyk"
     description = "notes, scribbles, thoughts etc."
     title404 = "Oops! You've found the Mighty Hipster Jedi Gopher!"
 
