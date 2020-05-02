@@ -136,7 +136,7 @@ title = "Home"
     theme = "github-light"
 
   [params.comments.utterances.github]
-    username = "kowalcjo"
+    username = "kowalcj0"
     repository = "kowalcj0.github.io"
 
   [params.search]
