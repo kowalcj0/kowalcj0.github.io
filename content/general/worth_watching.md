@@ -6,6 +6,8 @@ toc: true
 slug: "worth-watching"
 date: "2020-03-21T11:59:50+01:00"
 categories:
+  - general
+tags:
   - movies
 ---
 
