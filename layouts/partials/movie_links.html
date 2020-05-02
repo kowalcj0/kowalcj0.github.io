@@ -1,0 +1,18 @@
+{{ if .trailer }}
+<a tabindex="0" href="{{ .trailer }}" target="_blank" alt="Watch '{{ .title }}' trailer on youtube" title="Watch '{{ .title }}' trailer on youtube" rel="external" referrerpolicy="no-referrer"><img src="/img/favicon_youtube.png" style="width:28px;height:28px"/></a>
+{{ end }}
+{{ if .imdb }}
+<a tabindex="0" href="{{ .imdb }}" target="_blank" alt="Find out more about '{{ .title }}' on iMDB" title="Find out more about '{{ .title }}' on iMDB" rel="external" referrerpolicy="no-referrer"><img src="/img/favicon_imdb.png" style="width:28px;height:28px"/></a>
+{{ end }}
+{{ if .rt }}
+<a tabindex="0" href="{{ .rt }}" target="_blank" alt="Find out more about '{{ .title }}' on Rotten Tomatoes" title="Find out more about '{{ .title }}' on Rotten Tomatoes" rel="external" referrerpolicy="no-referrer"><img src="/img/favicon_rotten_tomatoes.png" style="width:28px;height:28px"/></a>
+{{ end }}
+{{ if .wiki }}
+<a tabindex="0" href="{{ .wiki }}" target="_blank" alt="Find out more about '{{ .title }}' on Wikipedia" title="Find out more about '{{ .title }}' on Wikipedia" rel="external" referrerpolicy="no-referrer"><img src="/img/favicon_wiki.png" style="width:28px;height:28px"/></a>
+{{ end }}
+{{ if .netflix }}
+<a tabindex="0" href="{{ .netflix }}" target="_blank" alt="Watch '{{ .title }}' on Netflix"   title="Watch '{{ .title }}' on Netflix" rel="external" referrerpolicy="no-referrer"><img src="/img/favicon_netflix.png" style="width:28px;height:28px"/></a>
+{{ end }}
+{{ if .justwatch }}
+<a tabindex="0" href="{{ .justwatch }}" target="_blank" alt="Check on justwatch.com where you can watch '{{ .title }}'"   title="Check on justwatch.com where you can watch '{{ .title }}'" rel="external" referrerpolicy="no-referrer"><img src="/img/favicon_justwatch.png" style="width:28px;height:28px"/></a>
+{{ end }}
