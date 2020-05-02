@@ -1,1 +1,1 @@
-{{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a>${3}` | safeHTML }}
+{{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a tabindex="0" href="#${2}" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a>${3}` | safeHTML }}
