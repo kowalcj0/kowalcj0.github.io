@@ -1,6 +1,7 @@
 baseURL = "https://kowalcj0.github.io"
 copyright = ""  # for smart copyright line, leave this blank and check [params.copyright]
 defaultContentLanguage = "en"
+languageCode = "en-gb"
 enableEmoji=true
 enableRobotsTXT = true  # generate robots.txt
 footnoteReturnLinkContents = "↩"
@@ -12,22 +13,16 @@ title = "Home"
 
 [menu]
   [[menu.main]]
-    identifier = "worth-watching"
-    name = "Worth watching"
-    url = "/general/worth-watching/"
+    identifier = "watch"
+    name = "Watch"
+    url = "/general/watch/"
     weight = 100
 
   [[menu.main]]
-    identifier = "wallabag"
-    name = "Wallabag"
-    url = "/general/wallabag/"
+    identifier = "read"
+    name = "Read"
+    url = "/general/read/"
     weight = 50
-
-  [[menu.main]]
-    identifier = "repository"
-    name = "Repo"
-    url = "https://github.com/kowalcj0/kowalcj0.github.io"
-    weight = 0
 
 [taxonomies]
   category = "categories"

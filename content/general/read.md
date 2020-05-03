@@ -1,9 +1,9 @@
 ---
 draft: false
-title: "Wallabag"
+title: "Worth reading"
 description: "Asorted articles I've amassed in Wallabag"
 toc: false
-slug: "wallabag"
+slug: "read"
 date: "2020-05-02T16:56:52+01:00"
 categories:
   - general

@@ -3,7 +3,7 @@ draft: false
 title: "Worth watching"
 description: "Movies, TV Series & Documentaries worth watching"
 toc: true
-slug: "worth-watching"
+slug: "watch"
 date: "2020-03-21T11:59:50+01:00"
 categories:
   - general
