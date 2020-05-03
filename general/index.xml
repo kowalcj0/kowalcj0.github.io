@@ -5,27 +5,28 @@
     <link>https://kowalcj0.github.io/general/</link>
     <description>Recent content in General on Home</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
     <lastBuildDate>Sat, 02 May 2020 16:56:52 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/general/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Wallabag</title>
-      <link>https://kowalcj0.github.io/general/wallabag/</link>
+      <title>Worth reading</title>
+      <link>https://kowalcj0.github.io/general/read/</link>
       <pubDate>Sat, 02 May 2020 16:56:52 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/general/wallabag/</guid>
+      <guid>https://kowalcj0.github.io/general/read/</guid>
       <description>A while ago I&amp;rsquo;ve discovered Wallabag. It&amp;rsquo;s a self hostable application for saving web pages. It extracts the article&amp;rsquo;s content and can automatically tag it with matching label. Basically it&amp;rsquo;s an open-source competitor of Pocket, Instapaper or Evernote.
 Fetching a list of all entries via Wallabag&amp;rsquo;s API is very easy. And with a help of jq you can transform it into a simple JSON file which you can use to populate a Hugo Data Templates.</description>
     </item>
     
     <item>
       <title>Worth watching</title>
-      <link>https://kowalcj0.github.io/general/worth-watching/</link>
+      <link>https://kowalcj0.github.io/general/watch/</link>
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/general/worth-watching/</guid>
+      <guid>https://kowalcj0.github.io/general/watch/</guid>
       <description>Below you&amp;rsquo;ll find some movies that I particularly like. Some of the them are available on Amazon Prime Video or https://mubi.com/.
 AFAIK most of the titles below are not available on Netflix.
 Great movie lists If you looking for something interesting to watch have a look at those lists:

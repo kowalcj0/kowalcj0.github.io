@@ -5,17 +5,18 @@
     <link>https://kowalcj0.github.io/tags/links/</link>
     <description>Recent content in links on Home</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
     <lastBuildDate>Sat, 02 May 2020 16:56:52 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/tags/links/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Wallabag</title>
-      <link>https://kowalcj0.github.io/general/wallabag/</link>
+      <title>Worth reading</title>
+      <link>https://kowalcj0.github.io/general/read/</link>
       <pubDate>Sat, 02 May 2020 16:56:52 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/general/wallabag/</guid>
+      <guid>https://kowalcj0.github.io/general/read/</guid>
       <description>A while ago I&amp;rsquo;ve discovered Wallabag. It&amp;rsquo;s a self hostable application for saving web pages. It extracts the article&amp;rsquo;s content and can automatically tag it with matching label. Basically it&amp;rsquo;s an open-source competitor of Pocket, Instapaper or Evernote.
 Fetching a list of all entries via Wallabag&amp;rsquo;s API is very easy. And with a help of jq you can transform it into a simple JSON file which you can use to populate a Hugo Data Templates.</description>
     </item>

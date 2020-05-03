@@ -5,17 +5,32 @@
     <link>https://kowalcj0.github.io/</link>
     <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 May 2020 16:56:52 +0100</lastBuildDate>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 03 May 2020 21:46:49 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Wallabag</title>
-      <link>https://kowalcj0.github.io/general/wallabag/</link>
+      <title>Decrypt Signal message DB</title>
+      <link>https://kowalcj0.github.io/2020/05/03/decrypt-signal-message-db/</link>
+      <pubDate>Sun, 03 May 2020 21:46:49 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/05/03/decrypt-signal-message-db/</guid>
+      <description>All but the last step are based on this answer on unix.stackexchange: https://unix.stackexchange.com/questions/505008/signal-desktop-how-to-export-messages
+Locate db.sqlite &amp;amp; db key Find Signal DB one of these locations:
+ ~/.config/Signal/sql/db.sqlite ~/.var/app/org.signal.Signal/config/Signal/sql/db.sqlite  The decryption key is in config.json which is located in one thes location:
+ ~/.config/Signal/config.json ~/.var/app/org.signal.Signal/config/Signal/config.json  Compile sqlcipher As of writing, you&amp;rsquo;ll need sqlcipher v3.30 or newer to decrypt Signal&amp;rsquo;s message DB.
+Get it from https://github.com/sqlcipher/sqlcipher
+Then compile it with dynamic linking:</description>
+    </item>
+    
+    <item>
+      <title>Worth reading</title>
+      <link>https://kowalcj0.github.io/general/read/</link>
       <pubDate>Sat, 02 May 2020 16:56:52 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/general/wallabag/</guid>
+      <guid>https://kowalcj0.github.io/general/read/</guid>
       <description>A while ago I&amp;rsquo;ve discovered Wallabag. It&amp;rsquo;s a self hostable application for saving web pages. It extracts the article&amp;rsquo;s content and can automatically tag it with matching label. Basically it&amp;rsquo;s an open-source competitor of Pocket, Instapaper or Evernote.
 Fetching a list of all entries via Wallabag&amp;rsquo;s API is very easy. And with a help of jq you can transform it into a simple JSON file which you can use to populate a Hugo Data Templates.</description>
     </item>
@@ -70,10 +85,10 @@ Video Format : JPEG Codec ID : jpeg Bit rate mode : Variable Bit rate : 3 827 kb
     
     <item>
       <title>Worth watching</title>
-      <link>https://kowalcj0.github.io/general/worth-watching/</link>
+      <link>https://kowalcj0.github.io/general/watch/</link>
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/general/worth-watching/</guid>
+      <guid>https://kowalcj0.github.io/general/watch/</guid>
       <description>Below you&amp;rsquo;ll find some movies that I particularly like. Some of the them are available on Amazon Prime Video or https://mubi.com/.
 AFAIK most of the titles below are not available on Netflix.
 Great movie lists If you looking for something interesting to watch have a look at those lists:

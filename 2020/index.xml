@@ -5,10 +5,25 @@
     <link>https://kowalcj0.github.io/2020/</link>
     <description>Recent content in 2020 on Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Apr 2020 20:05:24 +0100</lastBuildDate>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 03 May 2020 21:46:49 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/2020/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Decrypt Signal message DB</title>
+      <link>https://kowalcj0.github.io/2020/05/03/decrypt-signal-message-db/</link>
+      <pubDate>Sun, 03 May 2020 21:46:49 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/05/03/decrypt-signal-message-db/</guid>
+      <description>All but the last step are based on this answer on unix.stackexchange: https://unix.stackexchange.com/questions/505008/signal-desktop-how-to-export-messages
+Locate db.sqlite &amp;amp; db key Find Signal DB one of these locations:
+ ~/.config/Signal/sql/db.sqlite ~/.var/app/org.signal.Signal/config/Signal/sql/db.sqlite  The decryption key is in config.json which is located in one thes location:
+ ~/.config/Signal/config.json ~/.var/app/org.signal.Signal/config/Signal/config.json  Compile sqlcipher As of writing, you&amp;rsquo;ll need sqlcipher v3.30 or newer to decrypt Signal&amp;rsquo;s message DB.
+Get it from https://github.com/sqlcipher/sqlcipher
+Then compile it with dynamic linking:</description>
+    </item>
     
     <item>
       <title>import zipfile</title>
