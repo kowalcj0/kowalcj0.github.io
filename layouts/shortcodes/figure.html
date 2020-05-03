@@ -1,4 +1,4 @@
-<figure {{ with .Get "class" }}class="{{.}}"{{ end }} itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+<figure {{ with .Get "class" }}class="{{.}}"{{ end }} itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
     <a href="{{ with .Get "link" }}{{.}}{{ else }}{{ .Get "src" }}{{ end }}" {{ with .Get "size" }}data-size="{{.}}"{{ end }} itemprop="contentUrl"> 
         <img itemprop="thumbnail"
             src="{{ with .Get "src" }}{{.}}{{ else }}{{ printf "%s." (.Get "thumb") | replace (.Get "link") "." }}{{ end }}"
