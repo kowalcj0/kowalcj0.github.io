@@ -50,7 +50,7 @@ def get_bearer_token() -> str:
     return response.json()["access_token"]
 
 
-def get_entries(token: str, *, per_page: int = 500) -> dict:
+def get_entries(token: str, *, per_page: int = 1000) -> dict:
     endpoint = f"/api/entries.json"
     params = {
         "perPage": per_page,
