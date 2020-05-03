@@ -35,5 +35,17 @@ Choose from:
 sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packages Next step is to install python packages.</description>
     </item>
     
+    <item>
+      <title>How to unit test Django&#39;s Function Based Views</title>
+      <link>https://kowalcj0.github.io/2014/07/31/how-to-unit-test-djangos-function-based-views/</link>
+      <pubDate>Thu, 31 Jul 2014 13:27:58 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/07/31/how-to-unit-test-djangos-function-based-views/</guid>
+      <description>Let&amp;rsquo;s assume than the URL pattern to your Function Based View is defined like that:
+_urls.py_
+urlpatterns = patterns( ..., url(r&amp;#39;^$&amp;#39;, views.index, name=&amp;#39;index&amp;#39;), ... ) and your function based view looks like this: _views.py_
+@api_view([&amp;#39;GET&amp;#39;]) @permission_classes((AllowAny,)) def index(request): data = { &amp;#39;field&amp;#39;: &amp;#39;value&amp;#39; } return Response(data) Then you can unit test such view by creating a minimal instance of the HttpRequest and pass it to that view. I tried to mock to test such view with the Mock library, by with no luck!</description>
+    </item>
+    
   </channel>
 </rss>

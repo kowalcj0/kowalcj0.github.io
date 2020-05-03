@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2015 on Home</title>
+    <link>https://kowalcj0.github.io/2015/</link>
+    <description>Recent content in 2015 on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 01 Oct 2015 15:19:01 +0000</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/2015/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to install multiple versions of GO on the same machine [linux]</title>
+      <link>https://kowalcj0.github.io/2015/10/01/install-multiple-versions-of-go-on-the-same-machine-linux/</link>
+      <pubDate>Thu, 01 Oct 2015 15:19:01 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2015/10/01/install-multiple-versions-of-go-on-the-same-machine-linux/</guid>
+      <description>This quick tutorial shows how to do install multiple versions of go manually. I&amp;rsquo;ll try to prepare a shell script that will do it automatically for you :)
+1. download different versions of GO wget https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz wget https://storage.googleapis.com/golang/go1.4.3.linux-amd64.tar.gz wget https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz wget https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz 2. Create directories for specific version of GO sudo mkdir -p /usr/local/go/1.4.2/ sudo mkdir -p /usr/local/go/1.4.3/ sudo mkdir -p /usr/local/go/1.5/ sudo mkdir -p /usr/local/go/1.5.1/ 3. Unpack downloaded GO releases sudo tar -C /usr/local/go/1.</description>
+    </item>
+    
+  </channel>
+</rss>

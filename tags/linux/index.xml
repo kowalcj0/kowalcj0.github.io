@@ -102,5 +102,86 @@ sudo wireshark QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &amp;#39;/
 xhost si:localuser:root That&amp;rsquo;s it. From now on, you shouldn&amp;rsquo;t have any problems running GUI applications by root user.</description>
     </item>
     
+    <item>
+      <title>Getting the Brightness Control to work on Lenovo ThinkPad with Linux Mint 17 (x64) installed and with Nvidia Quadro K1000M on board</title>
+      <link>https://kowalcj0.github.io/2014/08/10/getting-the-brightness-control-to-work-on-lenovo-thinkpad-with-linux-mint-17-x64-installed-and-with-nvidia-quadro-k1000m-on-board/</link>
+      <pubDate>Sun, 10 Aug 2014 10:03:30 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/08/10/getting-the-brightness-control-to-work-on-lenovo-thinkpad-with-linux-mint-17-x64-installed-and-with-nvidia-quadro-k1000m-on-board/</guid>
+      <description>I haven&amp;rsquo;t had much problems with getting the Brightness Control to work in Mint 16, but after installing v17 I had to struggle much more.
+I honestly admit that I don&amp;rsquo;t know which of the following steps actually did the trick, nevertheless it works now :)
+OK, I&amp;rsquo;m currently running Mint 17 x64 on Lenovo W530 with Nvidia Quadro K1000M and with Nvidia 331.38 installed. Display mode in BIOS is set to Discrete Mode.</description>
+    </item>
+    
+    <item>
+      <title>Create a bootable USB pendrive to upgrade Lenovo ThinkPad W530 BIOS</title>
+      <link>https://kowalcj0.github.io/2014/08/09/create-a-bootable-usb-on-linux-mint-ububtu-pendrive-to-upgrade-lenovo-thinkpad-w530-bios/</link>
+      <pubDate>Sat, 09 Aug 2014 14:24:43 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/08/09/create-a-bootable-usb-on-linux-mint-ububtu-pendrive-to-upgrade-lenovo-thinkpad-w530-bios/</guid>
+      <description>Recently I had to update the bios of my laptop from a USB pendrive, because I had no CD/DVD drive around. Cameron Seader&amp;rsquo;s post Lenovo BIOS Update method for Linux and USB thumb drive came very handy, but used an obsolete tool so I updated his instructions a bit to make them work.
+1. Get the machine type and model of your laptop In order to grab this information you can either go to the BIOS or use dmidecode or hwinfo.</description>
+    </item>
+    
+    <item>
+      <title>Configure your Logitech Performance MX Mouse buttons to work with Linux Mint</title>
+      <link>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</link>
+      <pubDate>Thu, 28 Nov 2013 11:50:40 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</guid>
+      <description>To make your extra mouse buttons work on Linux Mint (I&amp;rsquo;ve tested it with v15) follow all the steps listed in this tutorial except the step 4 :)
+Once you get to step 4, use this key mappings to make the &amp;lsquo;zoom&amp;rsquo; and &amp;lsquo;switch between windows&amp;rsquo; buttons work as on windows.
+vi $HOME/.xbindkeysrc ... # show all windows: Scale &amp;#34;xte &amp;#39;keydown Control_L&amp;#39; &amp;#39;keydown Alt_L&amp;#39; &amp;#39;key Down&amp;#39; &amp;#39;keyup Control_L&amp;#39; &amp;#39;keyup Alt_L&amp;#39;&amp;#34; b:10 + release # Zooming with Logitech Performance MX mouse # thx to: https://www.</description>
+    </item>
+    
+    <item>
+      <title>How to compile and install latest version of Vim with support for: X11 clipboard, ruby, python 2 or python 3</title>
+      <link>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</link>
+      <pubDate>Tue, 19 Nov 2013 14:19:12 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</guid>
+      <description>This was tested with vim 7.4.(1-398) (Update: 2013-12-03 apparently you can&amp;rsquo;t build vim with support for both python 2 and python 3, so I had to update this tutorial a bit :) ) (Update: 2014-08-09 Added three commands: &amp;ldquo;hg pull&amp;rdquo;, &amp;ldquo;hg update&amp;rdquo; and &amp;ldquo;hg status&amp;rdquo; to pull the latest version of the repo)
+First of all install all the dependencies required when compiling Vim with additional options:
+sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-dev \  ruby \  ruby-dev \  libx11-dev \  libxt-dev \  libgtk2.</description>
+    </item>
+    
+    <item>
+      <title>How to add official Chromium-browser PPA repository to Linux Mint 15 and install the latest stable build</title>
+      <link>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</link>
+      <pubDate>Thu, 07 Nov 2013 13:59:41 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</guid>
+      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/+archive/stable
+To install latest stable build follow 3 simple steps:
+  add &amp;ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&amp;rdquo; to /etc/apt/sources.list
+  add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:
+W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \  --keyserver hkp://keys.gnupg.net:80 \  --recv 5A9BF3BB4E5E17B5 sudo gpg \  --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\  sudo apt-key add - btw.</description>
+    </item>
+    
+    <item>
+      <title>How to build pidgin-sipe plugin with audio and video support on ubuntu/linux mint</title>
+      <link>https://kowalcj0.github.io/2013/10/11/how-to-build-pidgin-sipe-plugin-with-audio-and-video-support-on-ubuntulinux-mint/</link>
+      <pubDate>Fri, 11 Oct 2013 16:37:49 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/10/11/how-to-build-pidgin-sipe-plugin-with-audio-and-video-support-on-ubuntulinux-mint/</guid>
+      <description>Tested with pidgin-sipe-1.17.0
+First of all install dependencies:
+sudo apt-get install \  libxml2-dev \  libnspr4-dev \  libnss3-dev \  libgstreamer0.10-dev \  libnice-dev \  libpurple-dev \  libnss3-dev \  libglib2.0-dev Then check where libnspr4 was installed:
+sudo dpkg -L libnspr4 Then finally configure nspr paths accordingly, compile and install it:
+./configure \  --prefix=/usr \  --with-vv \  --with-nss-includes=/usr/include/nss \  --with-nss-libs=/usr/lib/x86_64-linux-gnu \  --with-nspr-includes=/usr/include/nspr \  --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)</description>
+    </item>
+    
+    <item>
+      <title>How to change the default keyserver used by add-apt-repository</title>
+      <link>https://kowalcj0.github.io/2013/09/13/how-to-change-the-default-keyserver-used-by-the-command-sudo-add-apt-repository/</link>
+      <pubDate>Fri, 13 Sep 2013 13:55:52 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/09/13/how-to-change-the-default-keyserver-used-by-the-command-sudo-add-apt-repository/</guid>
+      <description>If you&amp;rsquo;ve encountered problems with connecting to keyserver.ubuntu.com like:
+.... Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.UsuIhHAgLO --trustdb-name /etc/apt//trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver keyserver.ubuntu.com --recv-keys CFCA9579 gpg: requesting key CFCA9579 from hkp server keyserver.ubuntu.com gpg: keyserver timed out gpg: keyserver receive failed: keyserver error Which might show up after you&amp;rsquo;ve added a new ppa to your list of repositories using add-apt-repository
+i.e.: &amp;ldquo;sudo add-apt-repository ppa:jon-severinsson/ffmpeg&amp;rdquo;
+Then what you have to do is to change the default port used for obtaining pgp keys from 11371 to 80.</description>
+    </item>
+    
   </channel>
 </rss>

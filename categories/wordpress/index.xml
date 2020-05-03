@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wordpress on Home</title>
+    <link>https://kowalcj0.github.io/categories/wordpress/</link>
+    <description>Recent content in wordpress on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 10 Aug 2014 10:03:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/categories/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting the Brightness Control to work on Lenovo ThinkPad with Linux Mint 17 (x64) installed and with Nvidia Quadro K1000M on board</title>
+      <link>https://kowalcj0.github.io/2014/08/10/getting-the-brightness-control-to-work-on-lenovo-thinkpad-with-linux-mint-17-x64-installed-and-with-nvidia-quadro-k1000m-on-board/</link>
+      <pubDate>Sun, 10 Aug 2014 10:03:30 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/08/10/getting-the-brightness-control-to-work-on-lenovo-thinkpad-with-linux-mint-17-x64-installed-and-with-nvidia-quadro-k1000m-on-board/</guid>
+      <description>I haven&amp;rsquo;t had much problems with getting the Brightness Control to work in Mint 16, but after installing v17 I had to struggle much more.
+I honestly admit that I don&amp;rsquo;t know which of the following steps actually did the trick, nevertheless it works now :)
+OK, I&amp;rsquo;m currently running Mint 17 x64 on Lenovo W530 with Nvidia Quadro K1000M and with Nvidia 331.38 installed. Display mode in BIOS is set to Discrete Mode.</description>
+    </item>
+    
+    <item>
+      <title>Create a bootable USB pendrive to upgrade Lenovo ThinkPad W530 BIOS</title>
+      <link>https://kowalcj0.github.io/2014/08/09/create-a-bootable-usb-on-linux-mint-ububtu-pendrive-to-upgrade-lenovo-thinkpad-w530-bios/</link>
+      <pubDate>Sat, 09 Aug 2014 14:24:43 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/08/09/create-a-bootable-usb-on-linux-mint-ububtu-pendrive-to-upgrade-lenovo-thinkpad-w530-bios/</guid>
+      <description>Recently I had to update the bios of my laptop from a USB pendrive, because I had no CD/DVD drive around. Cameron Seader&amp;rsquo;s post Lenovo BIOS Update method for Linux and USB thumb drive came very handy, but used an obsolete tool so I updated his instructions a bit to make them work.
+1. Get the machine type and model of your laptop In order to grab this information you can either go to the BIOS or use dmidecode or hwinfo.</description>
+    </item>
+    
+    <item>
+      <title>How to unit test Django&#39;s Function Based Views</title>
+      <link>https://kowalcj0.github.io/2014/07/31/how-to-unit-test-djangos-function-based-views/</link>
+      <pubDate>Thu, 31 Jul 2014 13:27:58 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/07/31/how-to-unit-test-djangos-function-based-views/</guid>
+      <description>Let&amp;rsquo;s assume than the URL pattern to your Function Based View is defined like that:
+_urls.py_
+urlpatterns = patterns( ..., url(r&amp;#39;^$&amp;#39;, views.index, name=&amp;#39;index&amp;#39;), ... ) and your function based view looks like this: _views.py_
+@api_view([&amp;#39;GET&amp;#39;]) @permission_classes((AllowAny,)) def index(request): data = { &amp;#39;field&amp;#39;: &amp;#39;value&amp;#39; } return Response(data) Then you can unit test such view by creating a minimal instance of the HttpRequest and pass it to that view. I tried to mock to test such view with the Mock library, by with no luck!</description>
+    </item>
+    
+    <item>
+      <title>Run your Selenium driven tests in parallel using TestNG.</title>
+      <link>https://kowalcj0.github.io/2014/03/28/run-your-selenium-driven-tests-in-parallel-using-testng/</link>
+      <pubDate>Fri, 28 Mar 2014 20:47:02 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/03/28/run-your-selenium-driven-tests-in-parallel-using-testng/</guid>
+      <description>Sometime ago, I came across this post: Parallel WebDriver executions using TestNG.
+I thought it&amp;rsquo;d be good to have it in a repo to save you time setting up your own project. Basically this example project runs JUnit tests in parallel using TestNG. Tests are grouped by the browser in which they&amp;rsquo;re going to be executed (have a look at the TestNG XML Suite files in src/test/resources). As you might have guessed to drive the browsers we use Selenium WebDriver :) And of course you can run your tests locally or remotely using Selenium GRID.</description>
+    </item>
+    
+    <item>
+      <title>GEE [Jmeter-ec2] - video tutorials part 2</title>
+      <link>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</link>
+      <pubDate>Fri, 03 Jan 2014 10:02:26 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</guid>
+      <description>Hi All, I just added few more videos showing how to configure your test environment to run your JMeter tests:
+ locally on a Vagrant box using remote machines and on Amazon EC2  04 - Create a first test plan and run it using Gee and a vagrant box Shows how to create a new test plan from a template project. Then how to run it using GEE on our local vagrant box.</description>
+    </item>
+    
+    <item>
+      <title>Configure your Logitech Performance MX Mouse buttons to work with Linux Mint</title>
+      <link>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</link>
+      <pubDate>Thu, 28 Nov 2013 11:50:40 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</guid>
+      <description>To make your extra mouse buttons work on Linux Mint (I&amp;rsquo;ve tested it with v15) follow all the steps listed in this tutorial except the step 4 :)
+Once you get to step 4, use this key mappings to make the &amp;lsquo;zoom&amp;rsquo; and &amp;lsquo;switch between windows&amp;rsquo; buttons work as on windows.
+vi $HOME/.xbindkeysrc ... # show all windows: Scale &amp;#34;xte &amp;#39;keydown Control_L&amp;#39; &amp;#39;keydown Alt_L&amp;#39; &amp;#39;key Down&amp;#39; &amp;#39;keyup Control_L&amp;#39; &amp;#39;keyup Alt_L&amp;#39;&amp;#34; b:10 + release # Zooming with Logitech Performance MX mouse # thx to: https://www.</description>
+    </item>
+    
+    <item>
+      <title>Vim - tips and tricks</title>
+      <link>https://kowalcj0.github.io/2013/11/25/vim-tips-and-tricks/</link>
+      <pubDate>Mon, 25 Nov 2013 13:04:27 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/11/25/vim-tips-and-tricks/</guid>
+      <description>Record a macro that will delete everything after matching character and repeat it N-times. In this example we&amp;rsquo;re going to use = as the matching character.
+ qaf=D⏎q
+ Where:
+ qa - to start recording and save it under &amp;lsquo;a&amp;rsquo; buffer f= - find &amp;lsquo;=&amp;rsquo; character D - Delete everything to the EOL ⏎ - press &amp;lsquo;enter&amp;rsquo; to go to the beginning of next line q - to stop recording the macro then to repeat the macro N-times, i.</description>
+    </item>
+    
+    <item>
+      <title>GEE [Jmeter-ec2] - video tutorials part 1</title>
+      <link>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</link>
+      <pubDate>Fri, 22 Nov 2013 17:33:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</guid>
+      <description>I finally started recording videos explaining how to use Gee.
+Gee is a tool based on a JMeter-EC2 project by Oliver Lloyd.
+It allows you to run JMeter tests on:
+ Amazon EC2 Vagrant boxes Linux hosts  Running your tests using this tool is better than using the standard distributed mode in Jmeter, because it doesn&amp;rsquo;t require constant communication between the master node and slave nodes.
+Here are first few videos explaining how to clone the project, spawn new vagrant box and finally how to run an example project on that virtual box.</description>
+    </item>
+    
+    <item>
+      <title>How to compile and install latest version of Vim with support for: X11 clipboard, ruby, python 2 or python 3</title>
+      <link>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</link>
+      <pubDate>Tue, 19 Nov 2013 14:19:12 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</guid>
+      <description>This was tested with vim 7.4.(1-398) (Update: 2013-12-03 apparently you can&amp;rsquo;t build vim with support for both python 2 and python 3, so I had to update this tutorial a bit :) ) (Update: 2014-08-09 Added three commands: &amp;ldquo;hg pull&amp;rdquo;, &amp;ldquo;hg update&amp;rdquo; and &amp;ldquo;hg status&amp;rdquo; to pull the latest version of the repo)
+First of all install all the dependencies required when compiling Vim with additional options:
+sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-dev \  ruby \  ruby-dev \  libx11-dev \  libxt-dev \  libgtk2.</description>
+    </item>
+    
+    <item>
+      <title>How to add official Chromium-browser PPA repository to Linux Mint 15 and install the latest stable build</title>
+      <link>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</link>
+      <pubDate>Thu, 07 Nov 2013 13:59:41 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</guid>
+      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/+archive/stable
+To install latest stable build follow 3 simple steps:
+  add &amp;ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&amp;rdquo; to /etc/apt/sources.list
+  add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:
+W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \  --keyserver hkp://keys.gnupg.net:80 \  --recv 5A9BF3BB4E5E17B5 sudo gpg \  --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\  sudo apt-key add - btw.</description>
+    </item>
+    
+    <item>
+      <title>How to build pidgin-sipe plugin with audio and video support on ubuntu/linux mint</title>
+      <link>https://kowalcj0.github.io/2013/10/11/how-to-build-pidgin-sipe-plugin-with-audio-and-video-support-on-ubuntulinux-mint/</link>
+      <pubDate>Fri, 11 Oct 2013 16:37:49 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/10/11/how-to-build-pidgin-sipe-plugin-with-audio-and-video-support-on-ubuntulinux-mint/</guid>
+      <description>Tested with pidgin-sipe-1.17.0
+First of all install dependencies:
+sudo apt-get install \  libxml2-dev \  libnspr4-dev \  libnss3-dev \  libgstreamer0.10-dev \  libnice-dev \  libpurple-dev \  libnss3-dev \  libglib2.0-dev Then check where libnspr4 was installed:
+sudo dpkg -L libnspr4 Then finally configure nspr paths accordingly, compile and install it:
+./configure \  --prefix=/usr \  --with-vv \  --with-nss-includes=/usr/include/nss \  --with-nss-libs=/usr/lib/x86_64-linux-gnu \  --with-nspr-includes=/usr/include/nspr \  --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)</description>
+    </item>
+    
+    <item>
+      <title>How to change the default keyserver used by add-apt-repository</title>
+      <link>https://kowalcj0.github.io/2013/09/13/how-to-change-the-default-keyserver-used-by-the-command-sudo-add-apt-repository/</link>
+      <pubDate>Fri, 13 Sep 2013 13:55:52 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/09/13/how-to-change-the-default-keyserver-used-by-the-command-sudo-add-apt-repository/</guid>
+      <description>If you&amp;rsquo;ve encountered problems with connecting to keyserver.ubuntu.com like:
+.... Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.UsuIhHAgLO --trustdb-name /etc/apt//trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver keyserver.ubuntu.com --recv-keys CFCA9579 gpg: requesting key CFCA9579 from hkp server keyserver.ubuntu.com gpg: keyserver timed out gpg: keyserver receive failed: keyserver error Which might show up after you&amp;rsquo;ve added a new ppa to your list of repositories using add-apt-repository
+i.e.: &amp;ldquo;sudo add-apt-repository ppa:jon-severinsson/ffmpeg&amp;rdquo;
+Then what you have to do is to change the default port used for obtaining pgp keys from 11371 to 80.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring JVM metrics via JMX management interface in JMeter</title>
+      <link>https://kowalcj0.github.io/2013/07/30/monitoring-jvm-metrics-via-jmx-management-interface-in-jmeter/</link>
+      <pubDate>Tue, 30 Jul 2013 14:31:45 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/07/30/monitoring-jvm-metrics-via-jmx-management-interface-in-jmeter/</guid>
+      <description>What do we need:
+ any java application (doesn&amp;rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent Apache JMeter wiith jmeter-plugins installed  Once you have plugins installed them in the jMeter&amp;rsquo;s lib/ext folder, then:
+ On the box you want to monitor, copy templates: jmxremote.password &amp;amp; jmxremote.access from $JAVA_HOME/lib/management to for example: /srv/play/ edit them according to your liking launch your JAVA application with additional parameters: java \  -jar your_application.</description>
+    </item>
+    
+    <item>
+      <title>Dump network traffic with tcpdump to file with time-stamp in the filename</title>
+      <link>https://kowalcj0.github.io/2013/05/17/dump-network-traffic-with-tcpdump-to-file-with-time-stamp-in-the-filename/</link>
+      <pubDate>Fri, 17 May 2013 15:23:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/05/17/dump-network-traffic-with-tcpdump-to-file-with-time-stamp-in-the-filename/</guid>
+      <description>A one-liner that dumps the network traffic into a file with a time-stamp in its name:
+date +&amp;#39;%Y-%m-%d_%H_%M-%Z&amp;#39; | xargs -I {} bash -c &amp;#34;sudo tcpdump -nq -s 0 -i eth0 -w ./tcpdump-{}.pcap&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>Useful links to all owners of a kindle or any other ebook reader</title>
+      <link>https://kowalcj0.github.io/2013/05/11/useful-links-to-all-owners-of-a-kindle-or-any-other-ebook-reader/</link>
+      <pubDate>Sat, 11 May 2013 17:08:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/05/11/useful-links-to-all-owners-of-a-kindle-or-any-other-ebook-reader/</guid>
+      <description>Send web pages and RSS directly to Kindle  http://www.klip.me/ https://sendtoreader.com/  eBook management  https://calibre-ebook.com/  Free en-pl dictionary  http://www.bumato.pl/  News sites  https://swiatczytnikow.pl/  Free and legit books International  https://www.gutenberg.org/ https://archive.org/details/texts  English  http://www.freekindlebooks.org/ https://www.amazon.com/s/?node=2245146011 https://openlibrary.org/ https://www.openculture.com/free_ebooks  French  https://www.ebooksgratuits.com/ https://beq.ebooksgratuits.com/ http://www.livrespourtous.com/ https://www.amazon.fr/b?ie=UTF8&amp;amp;node=927173031 https://pix-geeks.com/ebook-gratuit/  Polish  https://wolnelektury.pl/  Magiczne katalogi Katalogi legalnych i darmowych książek na kidnle&amp;rsquo;a, które można ściągnąć bezpośrednio na urządzenie, bez potrzeby kopiowania na urządzenie czy wysyłania na maila itp.</description>
+    </item>
+    
+    <item>
+      <title>How to selectively run stories tagged with multiple words in a meta field with jBehave</title>
+      <link>https://kowalcj0.github.io/2013/01/22/how-to-selectively-run-stories-tagged-with-multiple-words-in-a-meta-field-with-jbehave/</link>
+      <pubDate>Tue, 22 Jan 2013 17:17:29 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/01/22/how-to-selectively-run-stories-tagged-with-multiple-words-in-a-meta-field-with-jbehave/</guid>
+      <description>Prerequisites  a working jBehave based project  This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial.
+To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring, to run the modified story presented below.
+Maven  OK, let&amp;rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
+Below is an example story, tagged with multiple categories and features: anExampleStoryWithMultipleWordsInAMetaKeyword.</description>
+    </item>
+    
+  </channel>
+</rss>

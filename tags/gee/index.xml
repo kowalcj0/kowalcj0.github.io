@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gee on Home</title>
+    <link>https://kowalcj0.github.io/tags/gee/</link>
+    <description>Recent content in gee on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 03 Jan 2014 10:02:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/gee/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GEE [Jmeter-ec2] - video tutorials part 2</title>
+      <link>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</link>
+      <pubDate>Fri, 03 Jan 2014 10:02:26 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</guid>
+      <description>Hi All, I just added few more videos showing how to configure your test environment to run your JMeter tests:
+ locally on a Vagrant box using remote machines and on Amazon EC2  04 - Create a first test plan and run it using Gee and a vagrant box Shows how to create a new test plan from a template project. Then how to run it using GEE on our local vagrant box.</description>
+    </item>
+    
+    <item>
+      <title>GEE [Jmeter-ec2] - video tutorials part 1</title>
+      <link>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</link>
+      <pubDate>Fri, 22 Nov 2013 17:33:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</guid>
+      <description>I finally started recording videos explaining how to use Gee.
+Gee is a tool based on a JMeter-EC2 project by Oliver Lloyd.
+It allows you to run JMeter tests on:
+ Amazon EC2 Vagrant boxes Linux hosts  Running your tests using this tool is better than using the standard distributed mode in Jmeter, because it doesn&amp;rsquo;t require constant communication between the master node and slave nodes.
+Here are first few videos explaining how to clone the project, spawn new vagrant box and finally how to run an example project on that virtual box.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tcpdump on Home</title>
+    <link>https://kowalcj0.github.io/tags/tcpdump/</link>
+    <description>Recent content in tcpdump on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 17 May 2013 15:23:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/tcpdump/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dump network traffic with tcpdump to file with time-stamp in the filename</title>
+      <link>https://kowalcj0.github.io/2013/05/17/dump-network-traffic-with-tcpdump-to-file-with-time-stamp-in-the-filename/</link>
+      <pubDate>Fri, 17 May 2013 15:23:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/05/17/dump-network-traffic-with-tcpdump-to-file-with-time-stamp-in-the-filename/</guid>
+      <description>A one-liner that dumps the network traffic into a file with a time-stamp in its name:
+date +&amp;#39;%Y-%m-%d_%H_%M-%Z&amp;#39; | xargs -I {} bash -c &amp;#34;sudo tcpdump -nq -s 0 -i eth0 -w ./tcpdump-{}.pcap&amp;#34; </description>
+    </item>
+    
+  </channel>
+</rss>

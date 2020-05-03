@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Recently I had to update the bios of my laptop from a USB pendrive, because I had no CD/DVD drive around. Cameron Seader&rsquo;s post Lenovo BIOS Update method for Linux and USB thumb drive came very handy, but used an obsolete tool so I updated his instructions a bit to make them work.
+1. Get the machine type and model of your laptop In order to grab this information you can either go to the BIOS or use dmidecode or hwinfo.'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Create a bootable USB pendrive to upgrade Lenovo ThinkPad W530 BIOS • Home'>
+<meta property='og:description' content='Recently I had to update the bios of my laptop from a USB pendrive, because I had no CD/DVD drive around. Cameron Seader&rsquo;s post Lenovo BIOS Update method for Linux and USB thumb drive came very handy, but used an obsolete tool so I updated his instructions a bit to make them work.
+1. Get the machine type and model of your laptop In order to grab this information you can either go to the BIOS or use dmidecode or hwinfo.'>
+<meta property='og:url' content='https://kowalcj0.github.io/2014/08/09/create-a-bootable-usb-on-linux-mint-ububtu-pendrive-to-upgrade-lenovo-thinkpad-w530-bios/'>
+<meta property='og:site_name' content='Home'>
+<meta property='og:type' content='article'><meta property='article:section' content='2014'><meta property='article:tag' content='linux'><meta property='article:tag' content='bios'><meta property='article:published_time' content='2014-08-09T14:24:43Z'/><meta property='article:modified_time' content='2014-08-09T14:24:43Z'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.69.2" />
+
+  <title>Create a bootable USB pendrive to upgrade Lenovo ThinkPad W530 BIOS • Home</title>
+  <link rel='canonical' href='https://kowalcj0.github.io/2014/08/09/create-a-bootable-usb-on-linux-mint-ububtu-pendrive-to-upgrade-lenovo-thinkpad-w530-bios/'>
+  
+  
+  <link rel='icon' href='/img/favicon144.ico'>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+  
+
+</head>
+<body class='page type-2014 has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/img/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+      <a href='/'>
+      Free yourself, help to free me, free us
+      </a>
+    </h2>
+    <div class='desc'>
+    notes, scribbles, thoughts etc.
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>Search</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Categories</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/categories/food/' style='font-size:1em'>food</a>
+      </li><li>
+        <a href='/categories/general/' style='font-size:1.0625em'>general</a>
+      </li><li>
+        <a href='/categories/hugo/' style='font-size:1em'>hugo</a>
+      </li><li>
+        <a href='/categories/learning/' style='font-size:1.4375em'>learning</a>
+      </li><li>
+        <a href='/categories/movies/' style='font-size:1em'>movies</a>
+      </li><li>
+        <a href='/categories/programming/' style='font-size:1.0625em'>programming</a>
+      </li><li>
+        <a href='/categories/security/' style='font-size:1.5em'>security</a>
+      </li><li>
+        <a href='/categories/testing/' style='font-size:1.3125em'>testing</a>
+      </li><li>
+        <a href='/categories/unix/' style='font-size:2em'>unix</a>
+      </li><li>
+        <a href='/categories/web/' style='font-size:1.0625em'>web</a>
+      </li><li>
+        <a href='/categories/wordpress/' style='font-size:1.9375em'>wordpress</a>
+      </li></ul>
+</div>
+
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/tags/1959/' style='font-size:1em'>1959</a>
+      </li><li>
+        <a href='/tags/android/' style='font-size:1em'>android</a>
+      </li><li>
+        <a href='/tags/apt/' style='font-size:1em'>apt</a>
+      </li><li>
+        <a href='/tags/aws/' style='font-size:1em'>aws</a>
+      </li><li>
+        <a href='/tags/bash/' style='font-size:1em'>bash</a>
+      </li><li>
+        <a href='/tags/bdd/' style='font-size:1em'>bdd</a>
+      </li><li>
+        <a href='/tags/bios/' style='font-size:1.0714285714285714em'>bios</a>
+      </li><li>
+        <a href='/tags/bof/' style='font-size:1em'>BoF</a>
+      </li><li>
+        <a href='/tags/castnow/' style='font-size:1em'>castnow</a>
+      </li><li>
+        <a href='/tags/chromium/' style='font-size:1em'>chromium</a>
+      </li><li>
+        <a href='/tags/cli/' style='font-size:1em'>cli</a>
+      </li><li>
+        <a href='/tags/codecs/' style='font-size:1em'>codecs</a>
+      </li><li>
+        <a href='/tags/conference/' style='font-size:1em'>conference</a>
+      </li><li>
+        <a href='/tags/criterion-collection/' style='font-size:1em'>criterion collection</a>
+      </li><li>
+        <a href='/tags/dbus/' style='font-size:1em'>dbus</a>
+      </li><li>
+        <a href='/tags/dos/' style='font-size:1em'>DoS</a>
+      </li><li>
+        <a href='/tags/drama/' style='font-size:1em'>drama</a>
+      </li><li>
+        <a href='/tags/driver/' style='font-size:1em'>driver</a>
+      </li><li>
+        <a href='/tags/enumeration/' style='font-size:1em'>enumeration</a>
+      </li><li>
+        <a href='/tags/ethical-hacking/' style='font-size:1.4285714285714286em'>ethical hacking</a>
+      </li><li>
+        <a href='/tags/fedora/' style='font-size:1em'>fedora</a>
+      </li><li>
+        <a href='/tags/ffmpeg/' style='font-size:1.0714285714285714em'>ffmpeg</a>
+      </li><li>
+        <a href='/tags/freebsd/' style='font-size:1em'>freebsd</a>
+      </li><li>
+        <a href='/tags/freenas/' style='font-size:1em'>freenas</a>
+      </li><li>
+        <a href='/tags/fun/' style='font-size:1em'>fun</a>
+      </li><li>
+        <a href='/tags/gee/' style='font-size:1.0714285714285714em'>gee</a>
+      </li><li>
+        <a href='/tags/gherkin/' style='font-size:1em'>gherkin</a>
+      </li><li>
+        <a href='/tags/gnome/' style='font-size:1em'>gnome</a>
+      </li><li>
+        <a href='/tags/grub/' style='font-size:1em'>grub</a>
+      </li><li>
+        <a href='/tags/intel/' style='font-size:1em'>intel</a>
+      </li><li>
+        <a href='/tags/ios/' style='font-size:1em'>iOS</a>
+      </li><li>
+        <a href='/tags/japanese/' style='font-size:1em'>japanese</a>
+      </li><li>
+        <a href='/tags/java/' style='font-size:1.1428571428571428em'>java</a>
+      </li><li>
+        <a href='/tags/jbehvae/' style='font-size:1em'>jbehvae</a>
+      </li><li>
+        <a href='/tags/jmeter/' style='font-size:1.1428571428571428em'>jmeter</a>
+      </li><li>
+        <a href='/tags/kindle/' style='font-size:1em'>kindle</a>
+      </li><li>
+        <a href='/tags/links/' style='font-size:1em'>links</a>
+      </li><li>
+        <a href='/tags/linux/' style='font-size:2em'>linux</a>
+      </li><li>
+        <a href='/tags/logrotate/' style='font-size:1em'>logrotate</a>
+      </li><li>
+        <a href='/tags/mobile/' style='font-size:1em'>mobile</a>
+      </li><li>
+        <a href='/tags/movies/' style='font-size:1em'>movies</a>
+      </li><li>
+        <a href='/tags/mpd/' style='font-size:1em'>mpd</a>
+      </li><li>
+        <a href='/tags/mpv/' style='font-size:1em'>mpv</a>
+      </li><li>
+        <a href='/tags/mutillidae/' style='font-size:1em'>mutillidae</a>
+      </li><li>
+        <a href='/tags/mvn/' style='font-size:1em'>mvn</a>
+      </li><li>
+        <a href='/tags/notes/' style='font-size:1.4285714285714286em'>notes</a>
+      </li><li>
+        <a href='/tags/nvidia/' style='font-size:1em'>nvidia</a>
+      </li><li>
+        <a href='/tags/owasp/' style='font-size:1em'>owasp</a>
+      </li><li>
+        <a href='/tags/pentesting/' style='font-size:1.5em'>pentesting</a>
+      </li><li>
+        <a href='/tags/pidgin/' style='font-size:1em'>pidgin</a>
+      </li><li>
+        <a href='/tags/python/' style='font-size:1.1428571428571428em'>python</a>
+      </li><li>
+        <a href='/tags/qt/' style='font-size:1em'>qt</a>
+      </li><li>
+        <a href='/tags/root/' style='font-size:1em'>root</a>
+      </li><li>
+        <a href='/tags/rss/' style='font-size:1em'>rss</a>
+      </li><li>
+        <a href='/tags/security/' style='font-size:1.5em'>security</a>
+      </li><li>
+        <a href='/tags/selenium/' style='font-size:1em'>selenium</a>
+      </li><li>
+        <a href='/tags/seo/' style='font-size:1em'>seo</a>
+      </li><li>
+        <a href='/tags/sipe/' style='font-size:1em'>sipe</a>
+      </li><li>
+        <a href='/tags/smoothie/' style='font-size:1em'>smoothie</a>
+      </li><li>
+        <a href='/tags/sniffers/' style='font-size:1em'>sniffers</a>
+      </li><li>
+        <a href='/tags/syntax/' style='font-size:1em'>syntax</a>
+      </li><li>
+        <a href='/tags/tcpdump/' style='font-size:1em'>tcpdump</a>
+      </li><li>
+        <a href='/tags/testng/' style='font-size:1em'>testng</a>
+      </li><li>
+        <a href='/tags/vagrant/' style='font-size:1em'>vagrant</a>
+      </li><li>
+        <a href='/tags/vim/' style='font-size:1.0714285714285714em'>vim</a>
+      </li><li>
+        <a href='/tags/vlc/' style='font-size:1em'>vlc</a>
+      </li><li>
+        <a href='/tags/war/' style='font-size:1em'>war</a>
+      </li><li>
+        <a href='/tags/wayland/' style='font-size:1em'>wayland</a>
+      </li><li>
+        <a href='/tags/wifi/' style='font-size:1em'>wifi</a>
+      </li><li>
+        <a href='/tags/x11/' style='font-size:1em'>X11</a>
+      </li><li>
+        <a href='/tags/xbindkeys/' style='font-size:1em'>xbindkeys</a>
+      </li><li>
+        <a href='/tags/zfs/' style='font-size:1em'>zfs</a>
+      </li><li>
+        <a href='/tags/zip/' style='font-size:1em'>zip</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/general/wallabag/'>Wallabag</a>
+      </li><li class='item'>
+        <a href='/general/worth-watching/'>Worth watching</a>
+      </li><li class='item'>
+        <a href='https://github.com/kowalcj0/kowalcj0.github.io'>Repo</a>
+      </li></ul>
+  </div>
+</nav><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/2014/'>2014</a></li><li><span>Create a bootable USB pendrive to upgrade Lenovo ThinkPad W530 BIOS</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Home</p><p class='desc site-desc'>notes, scribbles, thoughts etc.</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Create a bootable USB pendrive to upgrade Lenovo ThinkPad W530 BIOS</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2014-08-09T14:24:43Z'>2014-08-09</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+One min read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  <p>Recently I had to update the bios of my laptop from a USB pendrive,
+because I had no CD/DVD drive around.
+Cameron Seader&rsquo;s post <a href="http://blog.seader.us/2013/10/lenovo-bios-update-method-for-linux-and.html">Lenovo BIOS Update method for Linux and USB thumb drive</a> came very handy,
+but used an obsolete tool so I updated his instructions a bit to make them work.</p>
+<h3 id="1-get-the-machine-type-and-model-of-your-laptop">1. Get the machine type and model of your laptop<a tabindex="0" href="#1-get-the-machine-type-and-model-of-your-laptop" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>In order to grab this information you can either go to the BIOS or use <code>dmidecode</code> or <code>hwinfo</code>.
+In my case it was ThinkPad W530 2438-2KU.</p>
+<h3 id="2-download-bios-update-iso-from-lenovos-site">2. Download bios update ISO from Lenovo&rsquo;s site<a tabindex="0" href="#2-download-bios-update-iso-from-lenovos-site" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>I got mine: &ldquo;g5uj22us.iso&rdquo; from <a href="https://download.lenovo.com/pccbbs/mobiles/g5uj39us.iso">Lenovo&rsquo;s support page</a></p>
+<h3 id="3-extract-the-boot-image-from-the-iso">3. Extract the boot image from the iso<a tabindex="0" href="#3-extract-the-boot-image-from-the-iso" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<p>To do it you can use <code>genisoimage</code>, which can be installed using regular.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install genisoimage
+</code></pre></div><p>PS. you can also download it from: <a href="https://manpages.ubuntu.com/manpages/focal/en/man1/genisoimage.1.html">Ubuntu man pages</a></p>
+<p>Once you have this tool installed, extract boot image from ISO with:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">geteltorito g5uj22us.iso &gt; biosupdate.img
+</code></pre></div><h3 id="4-copy-the-boot-image-to-the-usb-pendrive">4. Copy the boot image to the USB pendrive<a tabindex="0" href="#4-copy-the-boot-image-to-the-usb-pendrive" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>biosupdate.img of<span style="color:#f92672">=</span>/dev/usbthumdrive bs<span style="color:#f92672">=</span>512K
+</code></pre></div><p>Reboot and boot from USB to run the Flash Utility Cheers,<br>
+Señor QA</p>
+
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/unix/'>unix</a>, <a class='category' href='/categories/wordpress/'>wordpress</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/linux/'>linux</a>, <a class='tag' href='/tags/bios/'>bios</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/2014/07/31/how-to-unit-test-djangos-function-based-views/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>How to unit test Django&#39;s Function Based Views</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/2014/08/10/getting-the-brightness-control-to-work-on-lenovo-thinkpad-with-linux-mint-17-x64-installed-and-with-nvidia-quadro-k1000m-on-board/'>
+        <span class='screen-reader-text'>Next post: </span>Getting the Brightness Control to work on Lenovo ThinkPad with Linux Mint 17 (x64) installed and with Nvidia Quadro K1000M on board<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+<section id='comments' class='comments'>
+  <div class='container sep-before'>
+    <div class='comments-area'><script src='https://utteranc.es/client.js'
+  repo='kowalcj0/kowalcj0.github.io'
+  issue-term='pathname'
+  theme='github-light'
+  crossorigin='anonymous'
+  async>
+</script>
+</div>
+  </div>
+</section>
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/kowalcj0' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/januszkowalczyk' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2010-2020 kowalcj0 </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
+
+<script src='/assets/js/main.c3bcf2df.js'></script>
+
+</body>
+
+</html>
+

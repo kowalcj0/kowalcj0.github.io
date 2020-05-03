@@ -91,5 +91,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>wordpress</title>
+      <link>https://kowalcj0.github.io/categories/wordpress/</link>
+      <pubDate>Sun, 10 Aug 2014 10:03:30 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/categories/wordpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>https://kowalcj0.github.io/categories/testing/</link>
+      <pubDate>Thu, 31 Jul 2014 13:27:58 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/categories/testing/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vagrant on Home</title>
+    <link>https://kowalcj0.github.io/tags/vagrant/</link>
+    <description>Recent content in vagrant on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 03 Jan 2014 10:02:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GEE [Jmeter-ec2] - video tutorials part 2</title>
+      <link>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</link>
+      <pubDate>Fri, 03 Jan 2014 10:02:26 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</guid>
+      <description>Hi All, I just added few more videos showing how to configure your test environment to run your JMeter tests:
+ locally on a Vagrant box using remote machines and on Amazon EC2  04 - Create a first test plan and run it using Gee and a vagrant box Shows how to create a new test plan from a template project. Then how to run it using GEE on our local vagrant box.</description>
+    </item>
+    
+  </channel>
+</rss>

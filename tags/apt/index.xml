@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>apt on Home</title>
+    <link>https://kowalcj0.github.io/tags/apt/</link>
+    <description>Recent content in apt on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 13 Sep 2013 13:55:52 +0000</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/apt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to change the default keyserver used by add-apt-repository</title>
+      <link>https://kowalcj0.github.io/2013/09/13/how-to-change-the-default-keyserver-used-by-the-command-sudo-add-apt-repository/</link>
+      <pubDate>Fri, 13 Sep 2013 13:55:52 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/09/13/how-to-change-the-default-keyserver-used-by-the-command-sudo-add-apt-repository/</guid>
+      <description>If you&amp;rsquo;ve encountered problems with connecting to keyserver.ubuntu.com like:
+.... Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.UsuIhHAgLO --trustdb-name /etc/apt//trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver keyserver.ubuntu.com --recv-keys CFCA9579 gpg: requesting key CFCA9579 from hkp server keyserver.ubuntu.com gpg: keyserver timed out gpg: keyserver receive failed: keyserver error Which might show up after you&amp;rsquo;ve added a new ppa to your list of repositories using add-apt-repository
+i.e.: &amp;ldquo;sudo add-apt-repository ppa:jon-severinsson/ffmpeg&amp;rdquo;
+Then what you have to do is to change the default port used for obtaining pgp keys from 11371 to 80.</description>
+    </item>
+    
+  </channel>
+</rss>

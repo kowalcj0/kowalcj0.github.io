@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chromium on Home</title>
+    <link>https://kowalcj0.github.io/tags/chromium/</link>
+    <description>Recent content in chromium on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 07 Nov 2013 13:59:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to add official Chromium-browser PPA repository to Linux Mint 15 and install the latest stable build</title>
+      <link>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</link>
+      <pubDate>Thu, 07 Nov 2013 13:59:41 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</guid>
+      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/+archive/stable
+To install latest stable build follow 3 simple steps:
+  add &amp;ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&amp;rdquo; to /etc/apt/sources.list
+  add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:
+W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \  --keyserver hkp://keys.gnupg.net:80 \  --recv 5A9BF3BB4E5E17B5 sudo gpg \  --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\  sudo apt-key add - btw.</description>
+    </item>
+    
+  </channel>
+</rss>

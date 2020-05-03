@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>X11 on Home</title>
+    <link>https://kowalcj0.github.io/tags/x11/</link>
+    <description>Recent content in X11 on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 10 Aug 2014 10:03:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/x11/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting the Brightness Control to work on Lenovo ThinkPad with Linux Mint 17 (x64) installed and with Nvidia Quadro K1000M on board</title>
+      <link>https://kowalcj0.github.io/2014/08/10/getting-the-brightness-control-to-work-on-lenovo-thinkpad-with-linux-mint-17-x64-installed-and-with-nvidia-quadro-k1000m-on-board/</link>
+      <pubDate>Sun, 10 Aug 2014 10:03:30 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2014/08/10/getting-the-brightness-control-to-work-on-lenovo-thinkpad-with-linux-mint-17-x64-installed-and-with-nvidia-quadro-k1000m-on-board/</guid>
+      <description>I haven&amp;rsquo;t had much problems with getting the Brightness Control to work in Mint 16, but after installing v17 I had to struggle much more.
+I honestly admit that I don&amp;rsquo;t know which of the following steps actually did the trick, nevertheless it works now :)
+OK, I&amp;rsquo;m currently running Mint 17 x64 on Lenovo W530 with Nvidia Quadro K1000M and with Nvidia 331.38 installed. Display mode in BIOS is set to Discrete Mode.</description>
+    </item>
+    
+  </channel>
+</rss>
