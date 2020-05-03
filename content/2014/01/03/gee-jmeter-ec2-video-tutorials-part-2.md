@@ -1,5 +1,5 @@
 ---
-title: GEE [Jmeter-ec2] – video tutorials part 2
+title: GEE [Jmeter-ec2] - video tutorials part 2
 description: 
 date: 2014-01-03T10:02:26
 slug: gee-jmeter-ec2-video-tutorials-part-2
