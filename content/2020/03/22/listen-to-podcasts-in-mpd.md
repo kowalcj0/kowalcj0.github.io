@@ -18,7 +18,7 @@ cover:
 ---
 
 
-# Requirements
+## Requirements
 
 * [mpd](https://www.musicpd.org/) & [mpc](https://www.musicpd.org/clients/mpc/)
 * a list of podcast RSS feed links
@@ -36,7 +36,7 @@ awk -F '"' '{print $6}' podcasts.opml | sed '/^$/d'
 ```
 
 
-# Load podcast into MPD
+## Load podcast into MPD
 
 Given that you've saved your podcast feed list in `~/Music/podcasts.rss`.  
 Then with a simple while loop you can load your podcast episodes into mpd.
@@ -59,7 +59,7 @@ function fetch_last_n_episodes() {
 Then run `podcasts`, wait a bit and enjoy your fav podcasts.
 
 
-## Notes
+### Notes
 
 * If you get rid of `--range=0:${N}` then all episodes from all feeds will be loaded
 * `--wait` is optional, and should make things lil bit more stable
