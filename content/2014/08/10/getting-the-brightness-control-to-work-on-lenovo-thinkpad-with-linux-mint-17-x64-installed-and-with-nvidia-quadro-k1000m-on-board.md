@@ -27,7 +27,7 @@ and with Nvidia 331.38 installed. Display mode in BIOS is set to `Discrete Mode`
 Here's a list of things I did: 
 
 
-- I've updated the bios to latest available version (G5ET99WW (2.59)) [Here's my tutorial how to upgrade it from a USB pendrive]({{< ref "/2014/08/09/create-a-bootable-usb-on-linux-mint-ububtu-pendrive-to-upgrade-lenovo-thinkpad-w530-bios.md" >}})
+- I've updated the bios to latest available version (G5ET99WW (2.59)) Read my [short tutorial on how to upgrade it from a USB pendrive]({{< ref "/2014/08/09/create-a-bootable-usb-on-linux-mint-ububtu-pendrive-to-upgrade-lenovo-thinkpad-w530-bios" >}})
 - Generated a new `xorg.conf` using "NVIDIA X Server Settings -> X Server Display Configuration -> Save to X Configuration file" 
 - Then added `EnableBrightnessControl=1` to the device section in `/etc/X11/xorg.conf`: 
 
