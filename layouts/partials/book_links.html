@@ -1,0 +1,6 @@
+{{ if .good_reads }}
+<a tabindex="0" target="_blank" rel="external" referrerpolicy="no-referrer" href="{{ .good_reads }}" alt="Find out more about '{{ .title }}' on GoodReads.com" title="Find out more about '{{ .title }}' on GoodReads.com"><img src="/img/favicon_goodreads.png" style="width:28px;height:28px"/></a>
+{{ end }}
+{{ if .wiki }}
+<a tabindex="0" target="_blank" rel="external" referrerpolicy="no-referrer" href="{{ .wiki }}" alt="Find out more about '{{ .title }}' on Wikipedia" title="Find out more about '{{ .title }}' on Wikipedia"><img src="/img/favicon_wiki.png" style="width:28px;height:28px"/></a>
+{{ end }}
