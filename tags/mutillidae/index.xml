@@ -18,7 +18,7 @@
       
       <guid>https://kowalcj0.github.io/2018/01/23/mutillidae-ii-part-1/</guid>
       <description>iNSTALLATION Run nowasp container:
-docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp Go to http://localhost:8888/, and build the DB.
+docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp Go to http://localhost:8888/  , and build the DB.
 eXCERCICES: OWASP 2013 A1 - Injection (SQL) - SQLi Extract data - User info Submit the form with such query in the Name field:
 admin&amp;#39;-- AND &amp;#39;password=&amp;#39;password&amp;#39; Response should contain:
 Username=admin Password=adminpass Signature=g0t r00t? A1 - Injection (SQL) - SQLi Bypass authentication - Login You can use the same query in the Name field:</description>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mongodb on Home</title>
+    <link>https://kowalcj0.github.io/tags/mongodb/</link>
+    <description>Recent content in mongodb on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 06 Jun 2020 22:56:03 +0100</lastBuildDate>
+    
+	<atom:link href="https://kowalcj0.github.io/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automatically Delete Old Pa11y Results From MongoDB</title>
+      <link>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</link>
+      <pubDate>Sat, 06 Jun 2020 22:56:03 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</guid>
+      <description>You&amp;rsquo;ve probably already noticed that Pa11y-Dashboard runs all the tasks on a daily basis. If you have a lot of tasks (e.g. 100+) then the test results can fairly quickly gobble up your MongoDB quota (if you have any).
+If your MongoDB has a size limit defined, then you can do two things:
+ manually delete old test results or use TTL Index to do it for you automagically  MongoDB supports TTL indexes  since v2.</description>
+    </item>
+    
+  </channel>
+</rss>

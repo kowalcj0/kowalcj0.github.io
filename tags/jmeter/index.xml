@@ -27,11 +27,10 @@
       <pubDate>Fri, 22 Nov 2013 17:33:00 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</guid>
-      <description>I finally started recording videos explaining how to use Gee.
-Gee is a tool based on a JMeter-EC2 project by Oliver Lloyd.
+      <description>I finally started recording videos explaining how to use Gee  .
+Gee is a tool based on a JMeter-EC2  project by Oliver Lloyd.
 It allows you to run JMeter tests on:
- Amazon EC2 Vagrant boxes Linux hosts  Running your tests using this tool is better than using the standard distributed mode in Jmeter, because it doesn&amp;rsquo;t require constant communication between the master node and slave nodes.
-Here are first few videos explaining how to clone the project, spawn new vagrant box and finally how to run an example project on that virtual box.</description>
+ Amazon EC2 Vagrant boxes Linux hosts  Running your tests using this tool is better than using the standard distributed mode in Jmeter, because it doesn&amp;rsquo;t require constant communication between the master node and slave nodes.</description>
     </item>
     
     <item>
@@ -41,7 +40,7 @@ Here are first few videos explaining how to clone the project, spawn new vagrant
       
       <guid>https://kowalcj0.github.io/2013/07/30/monitoring-jvm-metrics-via-jmx-management-interface-in-jmeter/</guid>
       <description>What do we need:
- any java application (doesn&amp;rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent Apache JMeter wiith jmeter-plugins installed  Once you have plugins installed them in the jMeter&amp;rsquo;s lib/ext folder, then:
+ any java application (doesn&amp;rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent   Apache JMeter  wiith jmeter-plugins  installed  Once you have plugins installed them in the jMeter&amp;rsquo;s lib/ext folder, then:
  On the box you want to monitor, copy templates: jmxremote.password &amp;amp; jmxremote.access from $JAVA_HOME/lib/management to for example: /srv/play/ edit them according to your liking launch your JAVA application with additional parameters: java \  -jar your_application.</description>
     </item>
     

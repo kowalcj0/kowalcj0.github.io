@@ -17,7 +17,7 @@
       <pubDate>Fri, 28 Mar 2014 20:47:02 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2014/03/28/run-your-selenium-driven-tests-in-parallel-using-testng/</guid>
-      <description>Sometime ago, I came across this post: Parallel WebDriver executions using TestNG.
+      <description>Sometime ago, I came across this post: Parallel WebDriver executions using TestNG  .
 I thought it&amp;rsquo;d be good to have it in a repo to save you time setting up your own project. Basically this example project runs JUnit tests in parallel using TestNG. Tests are grouped by the browser in which they&amp;rsquo;re going to be executed (have a look at the TestNG XML Suite files in src/test/resources). As you might have guessed to drive the browsers we use Selenium WebDriver :) And of course you can run your tests locally or remotely using Selenium GRID.</description>
     </item>
     

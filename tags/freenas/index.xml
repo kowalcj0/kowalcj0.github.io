@@ -18,7 +18,7 @@
       
       <guid>https://kowalcj0.github.io/2020/04/28/handy-freebsd-diagnostic-tools/</guid>
       <description>Handy CLI tools that might help your with diagnosing/debugging issues on your FreeBSD/FreeNAS machine.
-Recommended reading  FreeNAS documentation on CLI tools: https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html FreeBSD Display Information About The System Hardware: https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html  camcontrol The camcontrol utility is designed to provide a way for users to access and control the FreeBSD CAM subsystem.
+Recommended reading  FreeNAS documentation on CLI tools: https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html FreeBSD Display Information About The System Hardware: https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html  camcontrol The camcontrol  utility is designed to provide a way for users to access and control the FreeBSD CAM subsystem.
 # camcontrol devlist &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus0 target 0 lun 0 (pass0,ada0) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus1 target 0 lun 0 (pass1,ada1) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass2,ada2) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass3,ada3) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus4 target 0 lun 0 (pass4,ada4) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass5,ada5) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass6,ada6) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass7,ada7) &amp;lt;SanDisk Dual Drive 1.</description>
     </item>
     

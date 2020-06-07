@@ -17,8 +17,7 @@
       <pubDate>Fri, 11 Oct 2013 16:37:49 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/10/11/how-to-build-pidgin-sipe-plugin-with-audio-and-video-support-on-ubuntulinux-mint/</guid>
-      <description>Tested with pidgin-sipe-1.17.0
-First of all install dependencies:
+      <description>Tested with pidgin-sipe-1.17.0  First of all install dependencies:
 sudo apt-get install \  libxml2-dev \  libnspr4-dev \  libnss3-dev \  libgstreamer0.10-dev \  libnice-dev \  libpurple-dev \  libnss3-dev \  libglib2.0-dev Then check where libnspr4 was installed:
 sudo dpkg -L libnspr4 Then finally configure nspr paths accordingly, compile and install it:
 ./configure \  --prefix=/usr \  --with-vv \  --with-nss-includes=/usr/include/nss \  --with-nss-libs=/usr/lib/x86_64-linux-gnu \  --with-nspr-includes=/usr/include/nspr \  --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)</description>

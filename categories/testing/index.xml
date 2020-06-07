@@ -6,10 +6,59 @@
     <description>Recent content in testing on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 31 Jul 2014 13:27:58 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2020 22:56:03 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/categories/testing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automatically Delete Old Pa11y Results From MongoDB</title>
+      <link>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</link>
+      <pubDate>Sat, 06 Jun 2020 22:56:03 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</guid>
+      <description>You&amp;rsquo;ve probably already noticed that Pa11y-Dashboard runs all the tasks on a daily basis. If you have a lot of tasks (e.g. 100+) then the test results can fairly quickly gobble up your MongoDB quota (if you have any).
+If your MongoDB has a size limit defined, then you can do two things:
+ manually delete old test results or use TTL Index to do it for you automagically  MongoDB supports TTL indexes  since v2.</description>
+    </item>
+    
+    <item>
+      <title>How to Proxy Requests to Pa11y Webservice Hosted on Heroku</title>
+      <link>https://kowalcj0.github.io/2020/06/04/how-to-proxy-requests-to-pa11y-webservice-hosted-on-heroku/</link>
+      <pubDate>Thu, 04 Jun 2020 13:39:45 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/06/04/how-to-proxy-requests-to-pa11y-webservice-hosted-on-heroku/</guid>
+      <description>Pa11y-Dashboard runs of top of Pa11y Webservice  (WS).
+By default Pa11y WS listens on port 3000 and Pa11y Dashboard listens on port 4000.
+Unfortunately Heroku doesn&amp;rsquo;t allow its users to easily expose multiple ports per application.
+To overcome this limitation, I&amp;rsquo;ve decided to make Pa11y-Dashboard proxy requests to WS via /ws/ endpoint.
+After a bit of searching I&amp;rsquo;ve found a dedicated proxy module for expressjs called express-http-proxy  .</description>
+    </item>
+    
+    <item>
+      <title>Run Pa11y Dashboard on Heroku</title>
+      <link>https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/</link>
+      <pubDate>Wed, 03 Jun 2020 19:57:26 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/</guid>
+      <description>To run Pa11y Dashboard on Heroku, you&amp;rsquo;ll need to:
+ add puppeteer buildpack  to your dyno pass --no-sandbox argument to Chrome  Puppeteer buildpack will install Chrome and all dependencies required to run it in headless mode.
+Second step is only necessary if you&amp;rsquo;re going to see following error when running Pa11y tests on Heroku:
+Failed to launch chrome! No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox.</description>
+    </item>
+    
+    <item>
+      <title>Add Basic Auth to Pa11y</title>
+      <link>https://kowalcj0.github.io/2020/06/02/add-basic-auth-to-pa11y/</link>
+      <pubDate>Tue, 02 Jun 2020 16:33:26 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/06/02/add-basic-auth-to-pa11y/</guid>
+      <description>Pa11y  is a great open sourced automated accessibility testing tool.
+It uses headless Chrome browser and HTML_CodeSniffer  as test runner.
+Unfortunately out of the box Pa11y Dashboard  doesn&amp;rsquo;t come with any form of authentication. This might be OK for some people, but in our case we&amp;rsquo;re going to add basic-auth to it.
+This short tutorial is based on pa11y-dashboard v3.1.0.
+Enter http-auth I&amp;rsquo;ve selected http-auth  package to do the job as it&amp;rsquo;s a popular and actively maintained package.</description>
+    </item>
     
     <item>
       <title>How to unit test Django&#39;s Function Based Views</title>
@@ -20,7 +69,7 @@
       <description>Let&amp;rsquo;s assume than the URL pattern to your Function Based View is defined like that:
 _urls.py_
 urlpatterns = patterns( ..., url(r&amp;#39;^$&amp;#39;, views.index, name=&amp;#39;index&amp;#39;), ... ) and your function based view looks like this: _views.py_
-@api_view([&amp;#39;GET&amp;#39;]) @permission_classes((AllowAny,)) def index(request): data = { &amp;#39;field&amp;#39;: &amp;#39;value&amp;#39; } return Response(data) Then you can unit test such view by creating a minimal instance of the HttpRequest and pass it to that view. I tried to mock to test such view with the Mock library, by with no luck!</description>
+@api_view([&amp;#39;GET&amp;#39;]) @permission_classes((AllowAny,)) def index(request): data = { &amp;#39;field&amp;#39;: &amp;#39;value&amp;#39; } return Response(data) Then you can unit test such view by creating a minimal instance of the HttpRequest and pass it to that view. I tried to mock to test such view with the Mock  library, by with no luck!</description>
     </item>
     
     <item>
@@ -29,7 +78,7 @@ urlpatterns = patterns( ..., url(r&amp;#39;^$&amp;#39;, views.index, name=&amp;#
       <pubDate>Fri, 28 Mar 2014 20:47:02 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2014/03/28/run-your-selenium-driven-tests-in-parallel-using-testng/</guid>
-      <description>Sometime ago, I came across this post: Parallel WebDriver executions using TestNG.
+      <description>Sometime ago, I came across this post: Parallel WebDriver executions using TestNG  .
 I thought it&amp;rsquo;d be good to have it in a repo to save you time setting up your own project. Basically this example project runs JUnit tests in parallel using TestNG. Tests are grouped by the browser in which they&amp;rsquo;re going to be executed (have a look at the TestNG XML Suite files in src/test/resources). As you might have guessed to drive the browsers we use Selenium WebDriver :) And of course you can run your tests locally or remotely using Selenium GRID.</description>
     </item>
     
@@ -49,11 +98,10 @@ I thought it&amp;rsquo;d be good to have it in a repo to save you time setting u
       <pubDate>Fri, 22 Nov 2013 17:33:00 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</guid>
-      <description>I finally started recording videos explaining how to use Gee.
-Gee is a tool based on a JMeter-EC2 project by Oliver Lloyd.
+      <description>I finally started recording videos explaining how to use Gee  .
+Gee is a tool based on a JMeter-EC2  project by Oliver Lloyd.
 It allows you to run JMeter tests on:
- Amazon EC2 Vagrant boxes Linux hosts  Running your tests using this tool is better than using the standard distributed mode in Jmeter, because it doesn&amp;rsquo;t require constant communication between the master node and slave nodes.
-Here are first few videos explaining how to clone the project, spawn new vagrant box and finally how to run an example project on that virtual box.</description>
+ Amazon EC2 Vagrant boxes Linux hosts  Running your tests using this tool is better than using the standard distributed mode in Jmeter, because it doesn&amp;rsquo;t require constant communication between the master node and slave nodes.</description>
     </item>
     
     <item>
@@ -63,7 +111,7 @@ Here are first few videos explaining how to clone the project, spawn new vagrant
       
       <guid>https://kowalcj0.github.io/2013/07/30/monitoring-jvm-metrics-via-jmx-management-interface-in-jmeter/</guid>
       <description>What do we need:
- any java application (doesn&amp;rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent Apache JMeter wiith jmeter-plugins installed  Once you have plugins installed them in the jMeter&amp;rsquo;s lib/ext folder, then:
+ any java application (doesn&amp;rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent   Apache JMeter  wiith jmeter-plugins  installed  Once you have plugins installed them in the jMeter&amp;rsquo;s lib/ext folder, then:
  On the box you want to monitor, copy templates: jmxremote.password &amp;amp; jmxremote.access from $JAVA_HOME/lib/management to for example: /srv/play/ edit them according to your liking launch your JAVA application with additional parameters: java \  -jar your_application.</description>
     </item>
     

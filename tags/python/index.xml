@@ -6,10 +6,22 @@
     <description>Recent content in python on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 30 Apr 2020 20:05:24 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 14:10:00 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UrlString</title>
+      <link>https://kowalcj0.github.io/2020/05/14/python-url-strings/</link>
+      <pubDate>Thu, 14 May 2020 14:10:00 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/05/14/python-url-strings/</guid>
+      <description>UrlString  is a convenience wrapper around a string object for making it easy to build URL strings. It borrows the / syntax from pathlib  to allow for the building of natural looking URLs.
+An example implementation by UK Trade team:
+class UrlString(str): def __truediv__(self, other): base = self.strip(&amp;#39;/&amp;#39;) path = other.strip(&amp;#39;/&amp;#39;) return UrlString(f&amp;#39;{base}/{path}/&amp;#39;) Usage:
+home = UrlString(&amp;#39;https://example.com&amp;#39;) new_url = home / &amp;#39;foo&amp;#39; / &amp;#39;bar&amp;#39; print(new_url) https://example.com/foo/bar/ </description>
+    </item>
     
     <item>
       <title>import zipfile</title>
@@ -17,7 +29,7 @@
       <pubDate>Thu, 30 Apr 2020 20:05:24 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2020/04/30/import-zipfile/</guid>
-      <description>Recently, I had a look at zipfile module.
+      <description>Recently, I had a look at zipfile  module.
 It&amp;rsquo;s surprisingly easy to work with.
 Snippets below should give you a rough idea how to use it.
 Create a zip file import zipfile file_to_compress = &amp;#34;server.log&amp;#34; zip_file_name = &amp;#34;server.log.zip&amp;#34; with zipfile.ZipFile(zip_file_name, &amp;#34;w&amp;#34;, zipfile.ZIP_DEFLATED) as myzip: myzip.write(file_to_compress) NOTE: 3rd argument defines the compression type.
@@ -32,8 +44,7 @@ Choose from:
       
       <guid>https://kowalcj0.github.io/2018/03/29/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</guid>
       <description>Short demo: Your browser does not support the video tag.  Requirements You&amp;rsquo;ll need:
- python 3.x mpv video player music player that supports MPRIS2 D-Bus interface  mpd + mpDris2 deadbeef + mpris2-plugin   some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel ddgrhttps://github.com/jarun/ddgr - a CLI client for DuckDuckGo  System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:
-sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packages Next step is to install python packages.</description>
+ python 3.x mpv  video player music player that supports MPRIS2 D-Bus interface   mpd  + mpDris2   deadbeef  + mpris2-plugin     some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel ddgr https://github.com/jarun/ddgr - a CLI client for DuckDuckGo  System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:</description>
     </item>
     
     <item>
@@ -45,7 +56,7 @@ sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packag
       <description>Let&amp;rsquo;s assume than the URL pattern to your Function Based View is defined like that:
 _urls.py_
 urlpatterns = patterns( ..., url(r&amp;#39;^$&amp;#39;, views.index, name=&amp;#39;index&amp;#39;), ... ) and your function based view looks like this: _views.py_
-@api_view([&amp;#39;GET&amp;#39;]) @permission_classes((AllowAny,)) def index(request): data = { &amp;#39;field&amp;#39;: &amp;#39;value&amp;#39; } return Response(data) Then you can unit test such view by creating a minimal instance of the HttpRequest and pass it to that view. I tried to mock to test such view with the Mock library, by with no luck!</description>
+@api_view([&amp;#39;GET&amp;#39;]) @permission_classes((AllowAny,)) def index(request): data = { &amp;#39;field&amp;#39;: &amp;#39;value&amp;#39; } return Response(data) Then you can unit test such view by creating a minimal instance of the HttpRequest and pass it to that view. I tried to mock to test such view with the Mock  library, by with no luck!</description>
     </item>
     
   </channel>

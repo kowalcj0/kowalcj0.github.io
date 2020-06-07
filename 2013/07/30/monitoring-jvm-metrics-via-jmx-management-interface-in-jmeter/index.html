@@ -3,13 +3,13 @@
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='What do we need:
- any java application (doesn&rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent Apache JMeter wiith jmeter-plugins installed  Once you have plugins installed them in the jMeter&rsquo;s lib/ext folder, then:
+ any java application (doesn&rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent   Apache JMeter  wiith jmeter-plugins  installed  Once you have plugins installed them in the jMeter&rsquo;s lib/ext folder, then:
  On the box you want to monitor, copy templates: jmxremote.password &amp; jmxremote.access from $JAVA_HOME/lib/management to for example: /srv/play/ edit them according to your liking launch your JAVA application with additional parameters: java \  -jar your_application.'>
 <meta name='theme-color' content='#ffcd00'>
 
 <meta property='og:title' content='Monitoring JVM metrics via JMX management interface in JMeter • Home'>
 <meta property='og:description' content='What do we need:
- any java application (doesn&rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent Apache JMeter wiith jmeter-plugins installed  Once you have plugins installed them in the jMeter&rsquo;s lib/ext folder, then:
+ any java application (doesn&rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent   Apache JMeter  wiith jmeter-plugins  installed  Once you have plugins installed them in the jMeter&rsquo;s lib/ext folder, then:
  On the box you want to monitor, copy templates: jmxremote.password &amp; jmxremote.access from $JAVA_HOME/lib/management to for example: /srv/play/ edit them according to your liking launch your JAVA application with additional parameters: java \  -jar your_application.'>
 <meta property='og:url' content='https://kowalcj0.github.io/2013/07/30/monitoring-jvm-metrics-via-jmx-management-interface-in-jmeter/'>
 <meta property='og:site_name' content='Home'>
@@ -75,7 +75,7 @@
   <ul class='list taxonomy-cloud no-shuffle'><li>
         <a href='/categories/food/' style='font-size:1em'>food</a>
       </li><li>
-        <a href='/categories/general/' style='font-size:1.0625em'>general</a>
+        <a href='/categories/general/' style='font-size:1.125em'>general</a>
       </li><li>
         <a href='/categories/hugo/' style='font-size:1em'>hugo</a>
       </li><li>
@@ -83,11 +83,11 @@
       </li><li>
         <a href='/categories/movies/' style='font-size:1em'>movies</a>
       </li><li>
-        <a href='/categories/programming/' style='font-size:1.0625em'>programming</a>
+        <a href='/categories/programming/' style='font-size:1.125em'>programming</a>
       </li><li>
         <a href='/categories/security/' style='font-size:1.5625em'>security</a>
       </li><li>
-        <a href='/categories/testing/' style='font-size:1.3125em'>testing</a>
+        <a href='/categories/testing/' style='font-size:1.5625em'>testing</a>
       </li><li>
         <a href='/categories/unix/' style='font-size:2em'>unix</a>
       </li><li>
@@ -108,9 +108,13 @@
   <ul class='list taxonomy-cloud no-shuffle'><li>
         <a href='/tags/1959/' style='font-size:1em'>1959</a>
       </li><li>
+        <a href='/tags/accessibility/' style='font-size:1.2142857142857142em'>accessibility</a>
+      </li><li>
         <a href='/tags/android/' style='font-size:1em'>android</a>
       </li><li>
         <a href='/tags/apt/' style='font-size:1em'>apt</a>
+      </li><li>
+        <a href='/tags/articles/' style='font-size:1em'>articles</a>
       </li><li>
         <a href='/tags/aws/' style='font-size:1em'>aws</a>
       </li><li>
@@ -121,6 +125,8 @@
         <a href='/tags/bios/' style='font-size:1.0714285714285714em'>bios</a>
       </li><li>
         <a href='/tags/bof/' style='font-size:1em'>BoF</a>
+      </li><li>
+        <a href='/tags/books/' style='font-size:1em'>books</a>
       </li><li>
         <a href='/tags/castnow/' style='font-size:1em'>castnow</a>
       </li><li>
@@ -164,6 +170,8 @@
       </li><li>
         <a href='/tags/grub/' style='font-size:1em'>grub</a>
       </li><li>
+        <a href='/tags/heroku/' style='font-size:1.1428571428571428em'>heroku</a>
+      </li><li>
         <a href='/tags/intel/' style='font-size:1em'>intel</a>
       </li><li>
         <a href='/tags/ios/' style='font-size:1em'>iOS</a>
@@ -178,13 +186,13 @@
       </li><li>
         <a href='/tags/kindle/' style='font-size:1em'>kindle</a>
       </li><li>
-        <a href='/tags/links/' style='font-size:1em'>links</a>
-      </li><li>
         <a href='/tags/linux/' style='font-size:2em'>linux</a>
       </li><li>
         <a href='/tags/logrotate/' style='font-size:1em'>logrotate</a>
       </li><li>
         <a href='/tags/mobile/' style='font-size:1em'>mobile</a>
+      </li><li>
+        <a href='/tags/mongodb/' style='font-size:1em'>mongodb</a>
       </li><li>
         <a href='/tags/movies/' style='font-size:1em'>movies</a>
       </li><li>
@@ -196,17 +204,21 @@
       </li><li>
         <a href='/tags/mvn/' style='font-size:1em'>mvn</a>
       </li><li>
+        <a href='/tags/nodejs/' style='font-size:1.1428571428571428em'>nodejs</a>
+      </li><li>
         <a href='/tags/notes/' style='font-size:1.4285714285714286em'>notes</a>
       </li><li>
         <a href='/tags/nvidia/' style='font-size:1em'>nvidia</a>
       </li><li>
         <a href='/tags/owasp/' style='font-size:1em'>owasp</a>
       </li><li>
+        <a href='/tags/pa11y/' style='font-size:1.2142857142857142em'>pa11y</a>
+      </li><li>
         <a href='/tags/pentesting/' style='font-size:1.5em'>pentesting</a>
       </li><li>
         <a href='/tags/pidgin/' style='font-size:1em'>pidgin</a>
       </li><li>
-        <a href='/tags/python/' style='font-size:1.1428571428571428em'>python</a>
+        <a href='/tags/python/' style='font-size:1.2142857142857142em'>python</a>
       </li><li>
         <a href='/tags/qt/' style='font-size:1em'>qt</a>
       </li><li>
@@ -288,9 +300,11 @@
 </span>
 </button>
     <ul><li class='item'>
-        <a href='/general/read/'>Read</a>
+        <a href='/general/articles/'>Articles</a>
       </li><li class='item'>
-        <a href='/general/watch/'>Watch</a>
+        <a href='/general/books/'>Books</a>
+      </li><li class='item'>
+        <a href='/general/movies/'>Movies</a>
       </li></ul>
   </div>
 </nav><div class='header-widgets'>
@@ -360,8 +374,11 @@
   <p>What do we need:</p>
 <ul>
 <li>any java application (doesn&rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc)</li>
-<li><a href="https://github.com/undera/perfmon-agent">PerfMon Server Agent</a></li>
-<li><a href="https://jmeter.apache.org/">Apache JMeter</a> wiith <a href="https://jmeter-plugins.org/">jmeter-plugins</a> installed</li>
+<li><a href="https://github.com/undera/perfmon-agent" target="_blank">PerfMon Server Agent</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</li>
+<li><a href="https://jmeter.apache.org/" target="_blank">Apache JMeter</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ wiith <a href="https://jmeter-plugins.org/" target="_blank">jmeter-plugins</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ installed</li>
 </ul>
 <p>Once you have plugins installed them in the jMeter&rsquo;s <code>lib/ext</code> folder, then:</p>
 <ol>
@@ -430,7 +447,7 @@ If everything was configured properly the you should see something like that on 
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/wordpress/'>wordpress</a>, <a class='category' href='/categories/testing/'>testing</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/testing/'>testing</a>, <a class='category' href='/categories/wordpress/'>wordpress</a></div>
 <div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>

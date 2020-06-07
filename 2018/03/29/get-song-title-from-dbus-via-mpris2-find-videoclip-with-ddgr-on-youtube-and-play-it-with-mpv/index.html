@@ -71,7 +71,7 @@
   <ul class='list taxonomy-cloud no-shuffle'><li>
         <a href='/categories/food/' style='font-size:1em'>food</a>
       </li><li>
-        <a href='/categories/general/' style='font-size:1.0625em'>general</a>
+        <a href='/categories/general/' style='font-size:1.125em'>general</a>
       </li><li>
         <a href='/categories/hugo/' style='font-size:1em'>hugo</a>
       </li><li>
@@ -79,11 +79,11 @@
       </li><li>
         <a href='/categories/movies/' style='font-size:1em'>movies</a>
       </li><li>
-        <a href='/categories/programming/' style='font-size:1.0625em'>programming</a>
+        <a href='/categories/programming/' style='font-size:1.125em'>programming</a>
       </li><li>
         <a href='/categories/security/' style='font-size:1.5625em'>security</a>
       </li><li>
-        <a href='/categories/testing/' style='font-size:1.3125em'>testing</a>
+        <a href='/categories/testing/' style='font-size:1.5625em'>testing</a>
       </li><li>
         <a href='/categories/unix/' style='font-size:2em'>unix</a>
       </li><li>
@@ -104,9 +104,13 @@
   <ul class='list taxonomy-cloud no-shuffle'><li>
         <a href='/tags/1959/' style='font-size:1em'>1959</a>
       </li><li>
+        <a href='/tags/accessibility/' style='font-size:1.2142857142857142em'>accessibility</a>
+      </li><li>
         <a href='/tags/android/' style='font-size:1em'>android</a>
       </li><li>
         <a href='/tags/apt/' style='font-size:1em'>apt</a>
+      </li><li>
+        <a href='/tags/articles/' style='font-size:1em'>articles</a>
       </li><li>
         <a href='/tags/aws/' style='font-size:1em'>aws</a>
       </li><li>
@@ -117,6 +121,8 @@
         <a href='/tags/bios/' style='font-size:1.0714285714285714em'>bios</a>
       </li><li>
         <a href='/tags/bof/' style='font-size:1em'>BoF</a>
+      </li><li>
+        <a href='/tags/books/' style='font-size:1em'>books</a>
       </li><li>
         <a href='/tags/castnow/' style='font-size:1em'>castnow</a>
       </li><li>
@@ -160,6 +166,8 @@
       </li><li>
         <a href='/tags/grub/' style='font-size:1em'>grub</a>
       </li><li>
+        <a href='/tags/heroku/' style='font-size:1.1428571428571428em'>heroku</a>
+      </li><li>
         <a href='/tags/intel/' style='font-size:1em'>intel</a>
       </li><li>
         <a href='/tags/ios/' style='font-size:1em'>iOS</a>
@@ -174,13 +182,13 @@
       </li><li>
         <a href='/tags/kindle/' style='font-size:1em'>kindle</a>
       </li><li>
-        <a href='/tags/links/' style='font-size:1em'>links</a>
-      </li><li>
         <a href='/tags/linux/' style='font-size:2em'>linux</a>
       </li><li>
         <a href='/tags/logrotate/' style='font-size:1em'>logrotate</a>
       </li><li>
         <a href='/tags/mobile/' style='font-size:1em'>mobile</a>
+      </li><li>
+        <a href='/tags/mongodb/' style='font-size:1em'>mongodb</a>
       </li><li>
         <a href='/tags/movies/' style='font-size:1em'>movies</a>
       </li><li>
@@ -192,17 +200,21 @@
       </li><li>
         <a href='/tags/mvn/' style='font-size:1em'>mvn</a>
       </li><li>
+        <a href='/tags/nodejs/' style='font-size:1.1428571428571428em'>nodejs</a>
+      </li><li>
         <a href='/tags/notes/' style='font-size:1.4285714285714286em'>notes</a>
       </li><li>
         <a href='/tags/nvidia/' style='font-size:1em'>nvidia</a>
       </li><li>
         <a href='/tags/owasp/' style='font-size:1em'>owasp</a>
       </li><li>
+        <a href='/tags/pa11y/' style='font-size:1.2142857142857142em'>pa11y</a>
+      </li><li>
         <a href='/tags/pentesting/' style='font-size:1.5em'>pentesting</a>
       </li><li>
         <a href='/tags/pidgin/' style='font-size:1em'>pidgin</a>
       </li><li>
-        <a href='/tags/python/' style='font-size:1.1428571428571428em'>python</a>
+        <a href='/tags/python/' style='font-size:1.2142857142857142em'>python</a>
       </li><li>
         <a href='/tags/qt/' style='font-size:1em'>qt</a>
       </li><li>
@@ -284,9 +296,11 @@
 </span>
 </button>
     <ul><li class='item'>
-        <a href='/general/read/'>Read</a>
+        <a href='/general/articles/'>Articles</a>
       </li><li class='item'>
-        <a href='/general/watch/'>Watch</a>
+        <a href='/general/books/'>Books</a>
+      </li><li class='item'>
+        <a href='/general/movies/'>Movies</a>
       </li></ul>
   </div>
 </nav><div class='header-widgets'>
@@ -372,29 +386,36 @@
     Your browser does not support the video tag.
 </video>
 </p>
-<h1 id="requirements">Requirements<a tabindex="0" href="#requirements" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+<h1 id="requirements">Requirements <a tabindex="0" href="#requirements" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p>You&rsquo;ll need:</p>
 <ul>
 <li>python 3.x</li>
-<li><a href="https://mpv.io/">mpv</a> video player</li>
-<li>music player that supports <a href="https://specifications.freedesktop.org/mpris-spec/latest/">MPRIS2 D-Bus interface</a>
+<li><a href="https://mpv.io/" target="_blank">mpv</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ video player</li>
+<li>music player that supports <a href="https://specifications.freedesktop.org/mpris-spec/latest/" target="_blank">MPRIS2 D-Bus interface</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+
 <ul>
-<li><a href="https://www.musicpd.org/">mpd</a> + <a href="https://github.com/eonpatapon/mpDris2">mpDris2</a></li>
-<li><a href="http://deadbeef.sourceforge.net/">deadbeef</a> + <a href="https://github.com/Serranya/deadbeef-mpris2-plugin">mpris2-plugin</a></li>
+<li><a href="https://www.musicpd.org/" target="_blank">mpd</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ + <a href="https://github.com/eonpatapon/mpDris2" target="_blank">mpDris2</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</li>
+<li><a href="http://deadbeef.sourceforge.net/" target="_blank">deadbeef</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ + <a href="https://github.com/Serranya/deadbeef-mpris2-plugin" target="_blank">mpris2-plugin</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</li>
 </ul>
 </li>
 <li>some <code>D-Bus</code> packages -&gt; <code>dbus-devel dbus-python-devel dbus-glib-devel</code></li>
-<li><a href="">ddgr</a><a href="https://github.com/jarun/ddgr">https://github.com/jarun/ddgr</a> - a CLI client for <code>DuckDuckGo</code></li>
+<li><a href="">ddgr</a>
+<a href="https://github.com/jarun/ddgr">https://github.com/jarun/ddgr</a> - a CLI client for <code>DuckDuckGo</code></li>
 </ul>
-<h2 id="system-packages">System packages<a tabindex="0" href="#system-packages" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<h2 id="system-packages">System packages <a tabindex="0" href="#system-packages" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Once you have your player &amp; MPRIS2 installed &amp; configured, install:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr
-</code></pre></div><h2 id="python-packages">Python packages<a tabindex="0" href="#python-packages" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+</code></pre></div><h2 id="python-packages">Python packages <a tabindex="0" href="#python-packages" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Next step is to install python packages.
 We&rsquo;ll use a virtualenv:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mkvirtualenv -p python3.6 mpris2yt2mpv
 pip install dbus-python mpris2
-</code></pre></div><h1 id="getting-artist--song-title-from-d-bus">Getting artist &amp; song title from D-Bus<a tabindex="0" href="#getting-artist--song-title-from-d-bus" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+</code></pre></div><h1 id="getting-artist--song-title-from-d-bus">Getting artist &amp; song title from D-Bus <a tabindex="0" href="#getting-artist--song-title-from-d-bus" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p>Below is a simple script that will connect to the current <code>mpris2</code> player.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> mpris2
 <span style="color:#f92672">from</span> mpris2 <span style="color:#f92672">import</span> Player
@@ -411,13 +432,13 @@ title <span style="color:#f92672">=</span> str(player<span style="color:#f92672"
 <p>When you run it, it will simply print:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ python mpris2title.py 
 Glass Animals - Gooey
-</code></pre></div><h1 id="alias">Alias<a tabindex="0" href="#alias" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+</code></pre></div><h1 id="alias">Alias <a tabindex="0" href="#alias" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p>Finally, create an alias like below:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">alias vid<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;BROWSER=mpv ddgr -j -w youtube.com `python mpris2title.py`&#39;</span>
 </code></pre></div><p>This command will search <code>youtube</code> for the song you&rsquo;re currently playing using
 <code>ddgr</code> and open the first result in <code>mpv</code> (as it&rsquo;s set as the default <code>BROWSER</code>
 for <code>ddgr</code>).</p>
-<h1 id="usage">Usage<a tabindex="0" href="#usage" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h1>
+<h1 id="usage">Usage <a tabindex="0" href="#usage" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p>Now, siply run <code>vid</code> in your terminal an (if you&rsquo;re lucky) you&rsquo;ll see
 videoclip for the currently playing song played in <code>mpv</code>.</p>
 <p>Ta-da! you can now quicky find videclips from the comfort of your terminal.</p>

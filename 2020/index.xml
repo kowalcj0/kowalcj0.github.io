@@ -6,10 +6,71 @@
     <description>Recent content in 2020 on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 03 May 2020 21:46:49 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2020 22:56:03 +0100</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/2020/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automatically Delete Old Pa11y Results From MongoDB</title>
+      <link>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</link>
+      <pubDate>Sat, 06 Jun 2020 22:56:03 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</guid>
+      <description>You&amp;rsquo;ve probably already noticed that Pa11y-Dashboard runs all the tasks on a daily basis. If you have a lot of tasks (e.g. 100+) then the test results can fairly quickly gobble up your MongoDB quota (if you have any).
+If your MongoDB has a size limit defined, then you can do two things:
+ manually delete old test results or use TTL Index to do it for you automagically  MongoDB supports TTL indexes  since v2.</description>
+    </item>
+    
+    <item>
+      <title>How to Proxy Requests to Pa11y Webservice Hosted on Heroku</title>
+      <link>https://kowalcj0.github.io/2020/06/04/how-to-proxy-requests-to-pa11y-webservice-hosted-on-heroku/</link>
+      <pubDate>Thu, 04 Jun 2020 13:39:45 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/06/04/how-to-proxy-requests-to-pa11y-webservice-hosted-on-heroku/</guid>
+      <description>Pa11y-Dashboard runs of top of Pa11y Webservice  (WS).
+By default Pa11y WS listens on port 3000 and Pa11y Dashboard listens on port 4000.
+Unfortunately Heroku doesn&amp;rsquo;t allow its users to easily expose multiple ports per application.
+To overcome this limitation, I&amp;rsquo;ve decided to make Pa11y-Dashboard proxy requests to WS via /ws/ endpoint.
+After a bit of searching I&amp;rsquo;ve found a dedicated proxy module for expressjs called express-http-proxy  .</description>
+    </item>
+    
+    <item>
+      <title>Run Pa11y Dashboard on Heroku</title>
+      <link>https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/</link>
+      <pubDate>Wed, 03 Jun 2020 19:57:26 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/</guid>
+      <description>To run Pa11y Dashboard on Heroku, you&amp;rsquo;ll need to:
+ add puppeteer buildpack  to your dyno pass --no-sandbox argument to Chrome  Puppeteer buildpack will install Chrome and all dependencies required to run it in headless mode.
+Second step is only necessary if you&amp;rsquo;re going to see following error when running Pa11y tests on Heroku:
+Failed to launch chrome! No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox.</description>
+    </item>
+    
+    <item>
+      <title>Add Basic Auth to Pa11y</title>
+      <link>https://kowalcj0.github.io/2020/06/02/add-basic-auth-to-pa11y/</link>
+      <pubDate>Tue, 02 Jun 2020 16:33:26 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/06/02/add-basic-auth-to-pa11y/</guid>
+      <description>Pa11y  is a great open sourced automated accessibility testing tool.
+It uses headless Chrome browser and HTML_CodeSniffer  as test runner.
+Unfortunately out of the box Pa11y Dashboard  doesn&amp;rsquo;t come with any form of authentication. This might be OK for some people, but in our case we&amp;rsquo;re going to add basic-auth to it.
+This short tutorial is based on pa11y-dashboard v3.1.0.
+Enter http-auth I&amp;rsquo;ve selected http-auth  package to do the job as it&amp;rsquo;s a popular and actively maintained package.</description>
+    </item>
+    
+    <item>
+      <title>UrlString</title>
+      <link>https://kowalcj0.github.io/2020/05/14/python-url-strings/</link>
+      <pubDate>Thu, 14 May 2020 14:10:00 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2020/05/14/python-url-strings/</guid>
+      <description>UrlString  is a convenience wrapper around a string object for making it easy to build URL strings. It borrows the / syntax from pathlib  to allow for the building of natural looking URLs.
+An example implementation by UK Trade team:
+class UrlString(str): def __truediv__(self, other): base = self.strip(&amp;#39;/&amp;#39;) path = other.strip(&amp;#39;/&amp;#39;) return UrlString(f&amp;#39;{base}/{path}/&amp;#39;) Usage:
+home = UrlString(&amp;#39;https://example.com&amp;#39;) new_url = home / &amp;#39;foo&amp;#39; / &amp;#39;bar&amp;#39; print(new_url) https://example.com/foo/bar/ </description>
+    </item>
     
     <item>
       <title>Decrypt Signal message DB</title>
@@ -31,7 +92,7 @@ Then compile it with dynamic linking:</description>
       <pubDate>Thu, 30 Apr 2020 20:05:24 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2020/04/30/import-zipfile/</guid>
-      <description>Recently, I had a look at zipfile module.
+      <description>Recently, I had a look at zipfile  module.
 It&amp;rsquo;s surprisingly easy to work with.
 Snippets below should give you a rough idea how to use it.
 Create a zip file import zipfile file_to_compress = &amp;#34;server.log&amp;#34; zip_file_name = &amp;#34;server.log.zip&amp;#34; with zipfile.ZipFile(zip_file_name, &amp;#34;w&amp;#34;, zipfile.ZIP_DEFLATED) as myzip: myzip.write(file_to_compress) NOTE: 3rd argument defines the compression type.
@@ -46,7 +107,7 @@ Choose from:
       
       <guid>https://kowalcj0.github.io/2020/04/28/handy-freebsd-diagnostic-tools/</guid>
       <description>Handy CLI tools that might help your with diagnosing/debugging issues on your FreeBSD/FreeNAS machine.
-Recommended reading  FreeNAS documentation on CLI tools: https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html FreeBSD Display Information About The System Hardware: https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html  camcontrol The camcontrol utility is designed to provide a way for users to access and control the FreeBSD CAM subsystem.
+Recommended reading  FreeNAS documentation on CLI tools: https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html FreeBSD Display Information About The System Hardware: https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html  camcontrol The camcontrol  utility is designed to provide a way for users to access and control the FreeBSD CAM subsystem.
 # camcontrol devlist &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus0 target 0 lun 0 (pass0,ada0) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus1 target 0 lun 0 (pass1,ada1) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass2,ada2) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass3,ada3) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus4 target 0 lun 0 (pass4,ada4) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass5,ada5) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass6,ada6) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass7,ada7) &amp;lt;SanDisk Dual Drive 1.</description>
     </item>
     
@@ -56,7 +117,7 @@ Recommended reading  FreeNAS documentation on CLI tools: https://www.ixsystems.c
       <pubDate>Sun, 22 Mar 2020 12:02:34 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2020/03/22/listen-to-podcasts-in-mpd/</guid>
-      <description>Requirements  mpd &amp;amp; mpc a list of podcast RSS feed links  Example podcast RSS feed links Here&amp;rsquo;s list of my favourite English &amp;amp; Polish podcasts in an OPML format.
+      <description>Requirements  mpd  &amp;amp; mpc   a list of podcast RSS feed links  Example podcast RSS feed links Here&amp;rsquo;s list of my favourite English &amp;amp; Polish podcasts in an OPML format.
 You can extract RSS feed links from it with:
 awk -F &amp;#39;&amp;#34;&amp;#39; &amp;#39;{print $6}&amp;#39; podcasts.opml | sed &amp;#39;/^$/d&amp;#39; Load podcast into MPD Given that you&amp;rsquo;ve saved your podcast feed list in ~/Music/podcasts.rss.
 Then with a simple while loop you can load your podcast episodes into mpd.</description>
@@ -68,7 +129,7 @@ Then with a simple while loop you can load your podcast episodes into mpd.</desc
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2020/03/21/convert-mov-to-mp4-or-av1/</guid>
-      <description>Some time ago I&amp;rsquo;ve discovered a bunch of old QuickTime files on my NAS. None of those clips could be played back via NextCloud&amp;rsquo;s browser player as they were encoded with old school mjpeg video codec &amp;amp; low quality mono pcm_s16be audio.
+      <description>Some time ago I&amp;rsquo;ve discovered a bunch of old QuickTime files on my NAS. None of those clips could be played back via NextCloud&amp;rsquo;s browser player as they were encoded with old school mjpeg  video codec &amp;amp; low quality mono pcm_s16be audio.
 This is what mediainfo told me about those files:
 Video Format : JPEG Codec ID : jpeg Bit rate mode : Variable Bit rate : 3 827 kb/s Width : 640 pixels Height : 480 pixels Display aspect ratio : 4:3 Frame rate mode : Constant Frame rate : 30.</description>
     </item>

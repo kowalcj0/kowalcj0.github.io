@@ -71,7 +71,7 @@
   <ul class='list taxonomy-cloud no-shuffle'><li>
         <a href='/categories/food/' style='font-size:1em'>food</a>
       </li><li>
-        <a href='/categories/general/' style='font-size:1.0625em'>general</a>
+        <a href='/categories/general/' style='font-size:1.125em'>general</a>
       </li><li>
         <a href='/categories/hugo/' style='font-size:1em'>hugo</a>
       </li><li>
@@ -79,11 +79,11 @@
       </li><li>
         <a href='/categories/movies/' style='font-size:1em'>movies</a>
       </li><li>
-        <a href='/categories/programming/' style='font-size:1.0625em'>programming</a>
+        <a href='/categories/programming/' style='font-size:1.125em'>programming</a>
       </li><li>
         <a href='/categories/security/' style='font-size:1.5625em'>security</a>
       </li><li>
-        <a href='/categories/testing/' style='font-size:1.3125em'>testing</a>
+        <a href='/categories/testing/' style='font-size:1.5625em'>testing</a>
       </li><li>
         <a href='/categories/unix/' style='font-size:2em'>unix</a>
       </li><li>
@@ -104,9 +104,13 @@
   <ul class='list taxonomy-cloud no-shuffle'><li>
         <a href='/tags/1959/' style='font-size:1em'>1959</a>
       </li><li>
+        <a href='/tags/accessibility/' style='font-size:1.2142857142857142em'>accessibility</a>
+      </li><li>
         <a href='/tags/android/' style='font-size:1em'>android</a>
       </li><li>
         <a href='/tags/apt/' style='font-size:1em'>apt</a>
+      </li><li>
+        <a href='/tags/articles/' style='font-size:1em'>articles</a>
       </li><li>
         <a href='/tags/aws/' style='font-size:1em'>aws</a>
       </li><li>
@@ -117,6 +121,8 @@
         <a href='/tags/bios/' style='font-size:1.0714285714285714em'>bios</a>
       </li><li>
         <a href='/tags/bof/' style='font-size:1em'>BoF</a>
+      </li><li>
+        <a href='/tags/books/' style='font-size:1em'>books</a>
       </li><li>
         <a href='/tags/castnow/' style='font-size:1em'>castnow</a>
       </li><li>
@@ -160,6 +166,8 @@
       </li><li>
         <a href='/tags/grub/' style='font-size:1em'>grub</a>
       </li><li>
+        <a href='/tags/heroku/' style='font-size:1.1428571428571428em'>heroku</a>
+      </li><li>
         <a href='/tags/intel/' style='font-size:1em'>intel</a>
       </li><li>
         <a href='/tags/ios/' style='font-size:1em'>iOS</a>
@@ -174,13 +182,13 @@
       </li><li>
         <a href='/tags/kindle/' style='font-size:1em'>kindle</a>
       </li><li>
-        <a href='/tags/links/' style='font-size:1em'>links</a>
-      </li><li>
         <a href='/tags/linux/' style='font-size:2em'>linux</a>
       </li><li>
         <a href='/tags/logrotate/' style='font-size:1em'>logrotate</a>
       </li><li>
         <a href='/tags/mobile/' style='font-size:1em'>mobile</a>
+      </li><li>
+        <a href='/tags/mongodb/' style='font-size:1em'>mongodb</a>
       </li><li>
         <a href='/tags/movies/' style='font-size:1em'>movies</a>
       </li><li>
@@ -192,17 +200,21 @@
       </li><li>
         <a href='/tags/mvn/' style='font-size:1em'>mvn</a>
       </li><li>
+        <a href='/tags/nodejs/' style='font-size:1.1428571428571428em'>nodejs</a>
+      </li><li>
         <a href='/tags/notes/' style='font-size:1.4285714285714286em'>notes</a>
       </li><li>
         <a href='/tags/nvidia/' style='font-size:1em'>nvidia</a>
       </li><li>
         <a href='/tags/owasp/' style='font-size:1em'>owasp</a>
       </li><li>
+        <a href='/tags/pa11y/' style='font-size:1.2142857142857142em'>pa11y</a>
+      </li><li>
         <a href='/tags/pentesting/' style='font-size:1.5em'>pentesting</a>
       </li><li>
         <a href='/tags/pidgin/' style='font-size:1em'>pidgin</a>
       </li><li>
-        <a href='/tags/python/' style='font-size:1.1428571428571428em'>python</a>
+        <a href='/tags/python/' style='font-size:1.2142857142857142em'>python</a>
       </li><li>
         <a href='/tags/qt/' style='font-size:1em'>qt</a>
       </li><li>
@@ -284,9 +296,11 @@
 </span>
 </button>
     <ul><li class='item'>
-        <a href='/general/read/'>Read</a>
+        <a href='/general/articles/'>Articles</a>
       </li><li class='item'>
-        <a href='/general/watch/'>Watch</a>
+        <a href='/general/books/'>Books</a>
+      </li><li class='item'>
+        <a href='/general/movies/'>Movies</a>
       </li></ul>
   </div>
 </nav><div class='header-widgets'>
@@ -382,10 +396,11 @@ One min read
 
 
   <div class='container entry-content'>
-  <p>Recently, I had a look at <a href="https://docs.python.org/3/library/zipfile.html">zipfile</a> module.<br>
+  <p>Recently, I had a look at <a href="https://docs.python.org/3/library/zipfile.html" target="_blank">zipfile</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ module.<br>
 It&rsquo;s surprisingly easy to work with.<br>
 Snippets below should give you a rough idea how to use it.</p>
-<h2 id="create-a-zip-file">Create a zip file<a tabindex="0" href="#create-a-zip-file" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+<h2 id="create-a-zip-file">Create a zip file <a tabindex="0" href="#create-a-zip-file" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zipfile
 
 file_to_compress <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;server.log&#34;</span>
@@ -401,10 +416,10 @@ zip_file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&
 <li>ZIP_BZIP2 (requires bz2)</li>
 <li>ZIP_LZMA (requires lzma)</li>
 </ul>
-<h3 id="unpack-a-zip-archive">Unpack a zip archive<a tabindex="0" href="#unpack-a-zip-archive" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+<h3 id="unpack-a-zip-archive">Unpack a zip archive <a tabindex="0" href="#unpack-a-zip-archive" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
     myzip<span style="color:#f92672">.</span>extractall()
-</code></pre></div><h3 id="list-zip-file-details--test-the-archive">List zip file details &amp; test the archive<a tabindex="0" href="#list-zip-file-details--test-the-archive" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+</code></pre></div><h3 id="list-zip-file-details--test-the-archive">List zip file details &amp; test the archive <a tabindex="0" href="#list-zip-file-details--test-the-archive" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
     <span style="color:#75715e"># list archive details</span>
     <span style="color:#66d9ef">print</span>(myzip<span style="color:#f92672">.</span>infolist()) 
@@ -415,7 +430,7 @@ zip_file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&
     <span style="color:#75715e"># Read all the files in the archive and check their CRC’s and file headers. </span>
     <span style="color:#75715e"># Return the name of the first bad file, or else return None.</span>
     <span style="color:#66d9ef">assert</span> myzip<span style="color:#f92672">.</span>testzip() <span style="color:#f92672">is</span> None
-</code></pre></div><h2 id="create-a-password-protected-zip-file">Create a password protected zip file<a tabindex="0" href="#create-a-password-protected-zip-file" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
+</code></pre></div><h2 id="create-a-password-protected-zip-file">Create a password protected zip file <a tabindex="0" href="#create-a-password-protected-zip-file" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zipfile
 
 protected_zip_file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;server.log.pass.zip&#34;</span>
@@ -425,16 +440,16 @@ pwd <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;passwo
 <span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(protected_zip_file_name, <span style="color:#e6db74">&#34;w&#34;</span>, zipfile<span style="color:#f92672">.</span>ZIP_DEFLATED) <span style="color:#66d9ef">as</span> myzip:
     myzip<span style="color:#f92672">.</span>setpassword(pwd <span style="color:#f92672">=</span> bytes(pwd, <span style="color:#e6db74">&#34;utf-8&#34;</span>))
     myzip<span style="color:#f92672">.</span>write(file_to_compress)
-</code></pre></div><h3 id="unpack-password-protected-zip-file">Unpack password protected zip file<a tabindex="0" href="#unpack-password-protected-zip-file" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+</code></pre></div><h3 id="unpack-password-protected-zip-file">Unpack password protected zip file <a tabindex="0" href="#unpack-password-protected-zip-file" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(protected_zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
     file<span style="color:#f92672">.</span>extractall(pwd <span style="color:#f92672">=</span> bytes(pwd, <span style="color:#e6db74">&#34;utf-8&#34;</span>))
-</code></pre></div><h2 id="hashes--checksums">Hashes &amp; Checksums<a tabindex="0" href="#hashes--checksums" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h2>
-<h3 id="calculate-crc">Calculate CRC<a tabindex="0" href="#calculate-crc" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+</code></pre></div><h2 id="hashes--checksums">Hashes &amp; Checksums <a tabindex="0" href="#hashes--checksums" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<h3 id="calculate-crc">Calculate CRC <a tabindex="0" href="#calculate-crc" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zlib
 
 <span style="color:#66d9ef">with</span> open(zip_file_name, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> in_file:
     <span style="color:#66d9ef">print</span>(zlib<span style="color:#f92672">.</span>crc32(in_file<span style="color:#f92672">.</span>read()))
-</code></pre></div><h3 id="calculate-md5">Calculate MD5<a tabindex="0" href="#calculate-md5" class="header-anchor" ariaLabel="Anchor"><img src="/img/Octicons-link.svg"/></a></h3>
+</code></pre></div><h3 id="calculate-md5">Calculate MD5 <a tabindex="0" href="#calculate-md5" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> hashlib
 
 hash_md5 <span style="color:#f92672">=</span> hashlib<span style="color:#f92672">.</span>md5()
