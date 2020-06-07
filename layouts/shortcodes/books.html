@@ -1,0 +1,64 @@
+{{ $category := (.Get "category") }}
+{{ with $category }}
+
+<table aria-label="Interesting books: {{ $category }}" style="font-size:80%;width:100%">
+  <tbody>
+{{ range $.Site.Data.books }}
+    {{ if eq $category .category }}
+        {{ range sort .books "completed" "desc" }}
+            {{ if .title }}
+    <tr tabindex="0">
+        <h3>{{ .title }} <a class="octicon-link" href="#{{ .title | anchorize }}">{{ partial "svg/octicons/link.svg" }}</a></h3>
+      
+      <div>by: 
+        {{ range $author := .authors }}
+            {{ range $name, $link := $author }}
+            <a href="{{ $link }}" target="_blank">{{ $name }} {{ partial "svg/octicons/link-external.svg" }}</a>
+            {{ end }}
+        {{ end }}
+        {{ if .original_title }}(orig. {{ .original_title }}){{ end }}
+      </div>
+      <details id="details-{{ .title | anchorize }}">
+        <summary>meta</summary>
+        <div>{{ partial "svg/icons" "calendar" }} published: {{ .year }}</div>
+        <div>{{ partial "svg/octicons/pencil.svg" }} genres: {{ delimit .genres ", " }}</div>
+        <div>{{ partial "svg/octicons/archive.svg" }} completed: {{ .completed }}</div>
+        <div>{{ partial "svg/octicons/globe.svg" }} links: {{ partial "book_links.html" . }}</div>
+      </details>
+      {{ if .comments }}
+      <div id="comments-{{ .title | anchorize }}">
+        {{ partial "svg/octicons/note.svg" }} Comments:
+        <p>{{ .comments | markdownify }}</p>
+      </div>
+      {{ end }}
+      {{ if .quotes }}
+      <div id="quotes-{{ .title | anchorize }}">
+        {{ partial "svg/octicons/quote.svg" }} Quotes:
+        <ul>
+            {{ range $quote := .quotes }}
+            <li>{{ $quote | markdownify }}</li>
+            {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ if .words }}
+      <div id="words-{{ .title | anchorize }}">
+        {{ partial "svg/octicons/book.svg" }} Words/Idioms/Terms:
+        <ul>
+            {{ range $word_def := .words }}
+                {{ range $word, $definition := $word_def }}
+                <li>{{ $word | markdownify }} - {{ $definition | markdownify }}</li>
+                {{ end }}
+            {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </tr>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+  </tbody>
+</table>
+{{ end }}
+
