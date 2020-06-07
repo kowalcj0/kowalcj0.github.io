@@ -1,14 +1,14 @@
 ---
 draft: false
-title: "Worth reading"
+title: "Articles worth reading"
 description: "Asorted articles I've amassed in Wallabag"
 toc: false
-slug: "read"
+slug: "articles"
 date: "2020-05-02T16:56:52+01:00"
 categories:
   - general
 tags:
-  - links
+  - articles
 cover:
   image: /img/logo-wallabag-black.svg
   caption: "SRC: https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg"
