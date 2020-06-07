@@ -1,0 +1,106 @@
+{
+"category": "in_polish",
+"books": [
+{
+    "title": "Podróż do Alfy Centauri",
+    "sub_title": "",
+    "original_title": "Voyage to Alpha Centauri",
+    "authors": [{"Michael D. Obrien": "https://en.wikipedia.org/wiki/Michael_O'Brien_(Canadian_author)"}],
+    "genres": ["science-fiction", "christian fiction"],
+    "year": 2013,
+    "completed": "2020-05-14",
+    "good_reads": "https://www.goodreads.com/book/show/18234093-voyage-to-alpha-centauri",
+    "wiki": "",
+    "quotes": [],
+    "words": [
+        {"wręga": "wycięcie lub załamanie w elemencie konstrukcyjnym, wcięcie"},
+        {"króciec": "(l.mn. króćce) krótki odcinek rury przy zbiorniku lub aparacie, służący do przyłączenia przewodu rurowego"}
+    ],
+    "comments": "Smutna wizja przyszłości (z cieniem nadzieji na nowy start) opanowanej permanentną kontrolą narodzin, inwigilacją i walką dobra ze złem. Ludzkość z przełomu XXI i XXI wieku odkrywa, że kiedyś też byliśmy kosmitami..."
+},
+{
+    "title": "Genialni",
+    "sub_title": "Lwowska szkoła matematyczna",
+    "original_title": "",
+    "authors": [{"Mariusz Urbanek": "https://pl.wikipedia.org/wiki/Mariusz_Urbanek"}],
+    "genres": ["history", "biography", "science", "mathematics"],
+    "year": 2014,
+    "completed": "2020-05-27",
+    "good_reads": "https://www.goodreads.com/en/book/show/23593485-genialni-lwowska-szko-a-matematyczna",
+    "wiki": "https://pl.wikipedia.org/wiki/Lwowska_szkoła_matematyczna",
+    "quotes": [
+        "David Hawkins, żegnając przyjaciela, napisał: \"Ludzie, którzy żyją tylko trochę, tylko trochę umierają. Stan żył bardzo...\"",
+        "Marynarz, który lgnie do kobiet: majtek - Hugo Steinhaus",
+        "Nasz ustrój ekonomiczny: postępowy paraliż - Hugo Steinhaus",
+        "Nałogowe chodzenie na pogrzeby: zabawa w chowanego - Hugo Steinhaus",
+        "Taki co obywa się bez wszystkiego: obywatel - Hugo Steinhaus",
+        "Taki, co przez omyłkę się ożenił: bigamoń - Hugo Steinhaus",
+        "Taki, co wszystko reguluje okólnikami: dekretyn - Hugo Steinhaus",
+        "Ziemia, kula u nogi - Hugo Steinhaus"
+    ],
+    "words": [{"probierz": "miernik służący za podstawę oceny czegoś; kryterium, sprawdzian; przyrząd do sprawdzania składu ciał stałych i płynnych;"}],
+    "comments": ""
+},
+{
+    "title": "Absurd Everestu",
+    "sub_title": "",
+    "original_title": "Абсурд Эвереста",
+    "authors": [{"Denis Urubko": "https://en.wikipedia.org/wiki/Denis_Urubko"}],
+    "genres": ["biography", "mountaineering"],
+    "year": 2013,
+    "completed": "2020-06-05",
+    "good_reads": "https://www.goodreads.com/book/show/45165736-absurd-everestu",
+    "wiki": "",
+    "quotes": [],
+    "words": [
+        {"zrejterować": "wycofać się, zrezygonować, uciekać, brać nogi za pas"},
+        {"dworować sobie z kogoś": "szydzić, wyśmiewać się z kogoś, drwić, odnosić się z pogardą"},
+        {"somnambuliczny": "lunatyczny"},
+        {"sybaryta": "człowiek, który spędza czas na przyjemnościach i uwielbia zbytek; hedonista, epikurejczyk, wygodniś"},
+        {"[jumar](https://pl.wikipedia.org/wiki/Urz%C4%85dzenie_zaciskowe)": "urządzenie sportowe umożliwiające przemieszczanie się po pionowo przymocowanej linie"}
+    ],
+    "comments": ""
+},
+{
+    "title": "",
+    "sub_title": "",
+    "original_title": "",
+    "authors": [],
+    "genres": [],
+    "year": 0,
+    "completed": "",
+    "good_reads": "",
+    "wiki": "",
+    "quotes": [],
+    "words": [],
+    "comments": ""
+},
+{
+    "title": "",
+    "sub_title": "",
+    "original_title": "",
+    "authors": [],
+    "genres": [],
+    "year": 0,
+    "completed": "",
+    "good_reads": "",
+    "wiki": "",
+    "quotes": [],
+    "words": [],
+    "comments": ""
+},
+{
+    "title": "",
+    "sub_title": "",
+    "original_title": "",
+    "authors": [],
+    "genres": [],
+    "year": 0,
+    "completed": "",
+    "good_reads": "",
+    "wiki": "",
+    "quotes": [],
+    "words": [],
+    "comments": ""
+}
+]}
