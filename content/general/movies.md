@@ -1,9 +1,9 @@
 ---
 draft: false
-title: "Worth watching"
+title: "Movies worth watching"
 description: "Movies, TV Series & Documentaries worth watching"
 toc: true
-slug: "watch"
+slug: "movies"
 date: "2020-03-21T11:59:50+01:00"
 categories:
   - general
@@ -12,7 +12,7 @@ tags:
 ---
 
 Below you'll find some movies that I particularly like. 
-Some of the them are available on [Amazon Prime Video](https://www.amazon.com/Prime-Video/b?node=2676882011) or https://mubi.com/.  
+Some of the them are available on [Amazon Prime Video](https://www.amazon.com/Prime-Video/b?node=2676882011) or [mubi.com](https://mubi.com/).  
 AFAIK most of the titles below are not available on Netflix.
 
 ## Great movie lists
