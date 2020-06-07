@@ -13,16 +13,22 @@ title = "Home"
 
 [menu]
   [[menu.main]]
-    identifier = "watch"
-    name = "Watch"
-    url = "/general/watch/"
+    identifier = "movies"
+    name = "Movies"
+    url = "/general/movies/"
     weight = 100
 
   [[menu.main]]
-    identifier = "read"
-    name = "Read"
-    url = "/general/read/"
+    identifier = "books"
+    name = "Books"
+    url = "/general/books/"
     weight = 50
+
+  [[menu.main]]
+    identifier = "articles"
+    name = "Articles"
+    url = "/general/articles/"
+    weight = 10
 
 [taxonomies]
   category = "categories"
