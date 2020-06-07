@@ -9,3 +9,15 @@ code:not([class]) {
     padding: 2pt;
 }
 
+a.octicon-link {
+    visibility: hidden;
+}
+h1:hover > a.octicon-link {
+    visibility: visible;
+}
+h2:hover > a.octicon-link {
+    visibility: visible;
+}
+h3:hover > a.octicon-link {
+    visibility: visible;
+}
