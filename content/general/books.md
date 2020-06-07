@@ -2,7 +2,7 @@
 draft: false
 title: "Books worth reading"
 description: "Books I read or I'm still reading"
-toc: true
+toc: false
 slug: "books"
 date: "2020-06-07T18:08:50+01:00"
 categories:
