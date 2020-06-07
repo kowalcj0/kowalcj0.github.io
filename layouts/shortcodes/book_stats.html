@@ -16,12 +16,12 @@
     {{ end }}
 
     <div id="book_stats">
-    {{ partial "svg/octicons/graph.svg" }} Books read by year:
+    {{ partial "svg/octicons/graph.svg" }} Completed per year:
     <ul>
     {{ range $year, $counter := $.Scratch.Get "completed_by_year" }}
         <li> {{ $year }}: {{ $counter }}</li>
     {{ end }}
     </ul>
-    Total number of completed books since May 2020: {{ len $completed_books }}
+    Total number of completed books: {{ len $completed_books }}
     </div>
 {{ end }}
