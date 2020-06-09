@@ -5,7 +5,7 @@
   <tbody>
 {{ range $.Site.Data.books }}
     {{ if eq $category .category }}
-        {{ range sort .books "completed" "desc" }}
+        {{ range sort ( where .books "completed" "!=" "" ) "desc" }}
             {{ if .title }}
     <tr tabindex="0">
         <h3>{{ .title }} <a class="octicon-link" href="#{{ .title | anchorize }}">{{ partial "svg/octicons/link.svg" }}</a></h3>
