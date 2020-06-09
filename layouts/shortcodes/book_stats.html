@@ -1,8 +1,8 @@
+{{ $.Scratch.Set "completed_by_year" dict }}
+{{ $completed_books := slice }}
 {{ range $.Site.Data.books }}
-    {{ $completed_books := ( where .books "completed" "!=" "" ) }}
-
-    {{ $.Scratch.Set "completed_by_year" dict }}
-    {{ range $completed_books }}
+    {{ $completed_in_category := ( where .books "completed" "!=" "" ) }}
+    {{ range $completed_in_category }}
         {{ $completion_year := index (split .completed "-" | first 1) 0 }}
         {{ $counter_keys := slice }}
         {{ range $key, $_ := $.Scratch.Get "completed_by_year" }}{{ $counter_keys = $counter_keys | append $key }}{{ end }}
@@ -14,14 +14,15 @@
             {{ $.Scratch.SetInMap "completed_by_year" $completion_year 1 }}
         {{ end }}
     {{ end }}
-
-    <div id="book_stats">
-    {{ partial "svg/octicons/graph.svg" }} Completed per year:
-    <ul>
-    {{ range $year, $counter := $.Scratch.Get "completed_by_year" }}
-        <li> {{ $year }}: {{ $counter }}</li>
-    {{ end }}
-    </ul>
-    Total number of completed books: {{ len $completed_books }}
-    </div>
+    {{ $completed_books = $completed_books | append $completed_in_category }}
 {{ end }}
+
+<div id="book_stats">
+{{ partial "svg/octicons/graph.svg" }} Completed per year:
+<ul>
+{{ range $year, $counter := $.Scratch.Get "completed_by_year" }}
+    <li> {{ $year }}: {{ $counter }}</li>
+{{ end }}
+</ul>
+Total number of completed books: {{ len $completed_books }}
+</div>
