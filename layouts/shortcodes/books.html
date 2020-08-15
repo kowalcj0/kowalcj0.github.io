@@ -43,7 +43,7 @@
       {{ end }}
       {{ if .words }}
       <div id="words-{{ .title | anchorize }}">
-        {{ partial "svg/octicons/book.svg" }} Words/Idioms/Terms:
+        {{ partial "svg/octicons/book.svg" }} New words, idioms & terms:
         <ul>
             {{ range $word_def := .words }}
                 {{ range $word, $definition := $word_def }}
