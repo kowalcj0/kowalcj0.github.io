@@ -110,6 +110,20 @@
     "comments": "Depicts harsh reality of post-war Italy"
 },
 {
+    "title": "Dogman",
+    "original_title": "",
+    "director": "Matteo Garrone",
+    "genres": "Crime, Drama",
+    "year": 2018,
+    "trailer": "https://www.youtube.com/watch?v=ewh0lBcEb2U",
+    "wiki": "https://en.wikipedia.org/wiki/Dogman_(film)",
+    "imdb": "https://www.imdb.com/title/tt6768578/",
+    "rt": "https://www.rottentomatoes.com/m/dogman_2018",
+    "netflix": "",
+    "justwatch": "https://www.justwatch.com/ca/movie/dogman",
+    "comments": "Being coerced by a bully to do bad things, sucks!"
+},
+{
     "title": "",
     "original_title": "",
     "director": "",
@@ -119,6 +133,22 @@
     "wiki": "",
     "imdb": "",
     "rt": "",
+    "netflix": "",
+    "justwatch": "",
+    "comments": ""
+},
+{
+    "title": "",
+    "original_title": "",
+    "director": "",
+    "genres": "",
+    "year": 0,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "",
+    "rt": "",
+    "netflix": "",
+    "justwatch": "",
     "comments": ""
 }
 ]}
