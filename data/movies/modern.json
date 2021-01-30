@@ -182,6 +182,45 @@
     "comments": ""
 }
 ,{
+    "title": "The Nightingale",
+    "director": "Jennifer Kent",
+    "genres": " Adventure, Drama, Thriller",
+    "year": 2018,
+    "trailer": "https://www.youtube.com/watch?v=YuP8g_GQIgI",
+    "wiki": "https://en.wikipedia.org/wiki/The_Nightingale_(2018_film)",
+    "imdb": "https://www.imdb.com/title/tt4068576/",
+    "justwatch": "https://www.justwatch.com/uk/movie/the-nightingale-2019",
+    "netflix": "https://www.netflix.com/gb/title/80202703",
+    "rt": "https://www.rottentomatoes.com/m/the_nightingale_2019",
+    "comments": "A female Django Unchained!!!"
+}
+,{
+    "title": "Malèna",
+    "director": "Giuseppe Tornatore",
+    "genres": "Romantic, Comedy, Drama",
+    "year": 2000,
+    "trailer": "https://www.youtube.com/watch?v=SxqUoUvNBXY",
+    "wiki": "https://en.wikipedia.org/wiki/Mal%C3%A8na",
+    "imdb": "https://www.imdb.com/title/tt0213847/",
+    "justwatch": "https://www.justwatch.com/uk/movie/malena",
+    "netflix": "",
+    "rt": "https://www.rottentomatoes.com/m/1101561_1101561_malena",
+    "comments": ""
+}
+,{
+    "title": "The best offer",
+    "director": "Giuseppe Tornatore",
+    "genres": "Psychological thriller",
+    "year": 2013,
+    "trailer": "https://www.youtube.com/watch?v=r0z3TIdVPhU",
+    "wiki": "https://en.wikipedia.org/wiki/The_Best_Offer",
+    "imdb": "https://www.imdb.com/title/tt1924396/",
+    "justwatch": "https://www.justwatch.com/uk/movie/the-best-offer",
+    "netflix": "",
+    "rt": "https://www.rottentomatoes.com/m/the_best_offer",
+    "comments": ""
+}
+,{
     "title": "",
     "director": "",
     "genres": "",
@@ -189,6 +228,34 @@
     "trailer": "",
     "wiki": "",
     "imdb": "",
+    "justwatch": "",
+    "netflix": "",
+    "rt": "",
+    "comments": ""
+}
+,{
+    "title": "",
+    "director": "",
+    "genres": "",
+    "year": 0,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "",
+    "justwatch": "",
+    "netflix": "",
+    "rt": "",
+    "comments": ""
+}
+,{
+    "title": "",
+    "director": "",
+    "genres": "",
+    "year": 0,
+    "trailer": "",
+    "wiki": "",
+    "imdb": "",
+    "justwatch": "",
+    "netflix": "",
     "rt": "",
     "comments": ""
 }

@@ -32,6 +32,9 @@ If you looking for something interesting to watch have a look at those lists:
 ## Recent and fairly recent
 {{< movies category="modern" >}}
 
+## Animated
+{{< movies category="animated" >}}
+
 ## Classics
 {{< movies category="classics" >}}
 
@@ -65,3 +68,8 @@ Rather scandalous and avant-garde movies:
 ### Akira Kurosawa
 {{< movies category="kurosawa" >}}
  
+
+## Warsaw Film School: Film Directing / Warszawska Szkoła Filmowa: Reżyseria filmowa
+
+{{< movies category="rezyseria filmowa" >}}
+
