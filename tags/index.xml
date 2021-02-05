@@ -6,10 +6,73 @@
     <description>Recent content in Tags on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 07 Jun 2020 18:08:50 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 05 Feb 2021 09:33:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>convert</title>
+      <link>https://kowalcj0.github.io/tags/convert/</link>
+      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/convert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dng</title>
+      <link>https://kowalcj0.github.io/tags/dng/</link>
+      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/dng/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://kowalcj0.github.io/tags/linux/</link>
+      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nef</title>
+      <link>https://kowalcj0.github.io/tags/nef/</link>
+      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/nef/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raw</title>
+      <link>https://kowalcj0.github.io/tags/raw/</link>
+      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/raw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cytaty</title>
+      <link>https://kowalcj0.github.io/tags/cytaty/</link>
+      <pubDate>Mon, 05 Oct 2020 19:54:20 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/cytaty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quotes</title>
+      <link>https://kowalcj0.github.io/tags/quotes/</link>
+      <pubDate>Mon, 05 Oct 2020 19:54:20 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/tags/quotes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>books</title>
@@ -152,15 +215,6 @@
       <pubDate>Tue, 28 Apr 2020 22:02:34 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/tags/zfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://kowalcj0.github.io/tags/linux/</link>
-      <pubDate>Sun, 22 Mar 2020 12:02:34 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/linux/</guid>
       <description></description>
     </item>
     

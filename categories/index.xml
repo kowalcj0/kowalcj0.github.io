@@ -6,15 +6,24 @@
     <description>Recent content in Categories on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 07 Jun 2020 18:08:50 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 05 Feb 2021 09:33:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kowalcj0.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>photography</title>
+      <link>https://kowalcj0.github.io/categories/photography/</link>
+      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/categories/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>general</title>
       <link>https://kowalcj0.github.io/categories/general/</link>
-      <pubDate>Sun, 07 Jun 2020 18:08:50 +0100</pubDate>
+      <pubDate>Mon, 05 Oct 2020 19:54:20 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/categories/general/</guid>
       <description></description>
