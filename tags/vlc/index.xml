@@ -6,11 +6,7 @@
     <description>Recent content in vlc on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 11 Feb 2018 22:40:50 +0100</lastBuildDate>
-    
-	<atom:link href="https://kowalcj0.github.io/tags/vlc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 11 Feb 2018 22:40:50 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/vlc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fix &#39;X11 connection broke&#39; issue in QT based GUI applications like VLC</title>
       <link>https://kowalcj0.github.io/2018/02/11/vlc-auto-screen-scale-factor-issue/</link>

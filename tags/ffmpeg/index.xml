@@ -6,11 +6,7 @@
     <description>Recent content in ffmpeg on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 21 Mar 2020 11:59:50 +0100</lastBuildDate>
-    
-	<atom:link href="https://kowalcj0.github.io/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 21 Mar 2020 11:59:50 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Convert old mov files to more modern mp4 x264 or AV1</title>
       <link>https://kowalcj0.github.io/2020/03/21/convert-mov-to-mp4-or-av1/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in gnome on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 04 Feb 2018 13:46:30 +0100</lastBuildDate>
-    
-	<atom:link href="https://kowalcj0.github.io/tags/gnome/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 04 Feb 2018 13:46:30 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/gnome/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Allow GUI applications run by root user to connect to X server</title>
       <link>https://kowalcj0.github.io/2018/02/04/allow-application-run-by-root-to-connect-to-x-server/</link>

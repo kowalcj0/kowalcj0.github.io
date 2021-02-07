@@ -6,11 +6,7 @@
     <description>Recent content in bdd on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 22 Jan 2013 17:17:29 +0000</lastBuildDate>
-    
-	<atom:link href="https://kowalcj0.github.io/tags/bdd/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 22 Jan 2013 17:17:29 +0000</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/bdd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to selectively run stories tagged with multiple words in a meta field with jBehave</title>
       <link>https://kowalcj0.github.io/2013/01/22/how-to-selectively-run-stories-tagged-with-multiple-words-in-a-meta-field-with-jbehave/</link>

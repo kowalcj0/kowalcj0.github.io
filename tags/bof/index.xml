@@ -6,11 +6,7 @@
     <description>Recent content in BoF on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 20 Mar 2018 19:20:10 +0100</lastBuildDate>
-    
-	<atom:link href="https://kowalcj0.github.io/tags/bof/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 20 Mar 2018 19:20:10 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/bof/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ethical Hacking - Buffer Overflow - notes</title>
       <link>https://kowalcj0.github.io/2018/03/20/ethical-hackin-buffer-iverflow/</link>

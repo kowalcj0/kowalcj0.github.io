@@ -6,11 +6,7 @@
     <description>Recent content in syntax on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 27 Jan 2018 22:28:50 +0100</lastBuildDate>
-    
-	<atom:link href="https://kowalcj0.github.io/tags/syntax/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 27 Jan 2018 22:28:50 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/syntax/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Syntax Highlighting in Hugo</title>
       <link>https://kowalcj0.github.io/2018/01/27/syntax-highlighting-in-hugo/</link>

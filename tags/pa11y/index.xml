@@ -6,11 +6,7 @@
     <description>Recent content in pa11y on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 06 Jun 2020 22:56:03 +0100</lastBuildDate>
-    
-	<atom:link href="https://kowalcj0.github.io/tags/pa11y/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 06 Jun 2020 22:56:03 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/pa11y/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automatically Delete Old Pa11y Results From MongoDB</title>
       <link>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</link>

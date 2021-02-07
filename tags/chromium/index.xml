@@ -6,11 +6,7 @@
     <description>Recent content in chromium on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 07 Nov 2013 13:59:41 +0000</lastBuildDate>
-    
-	<atom:link href="https://kowalcj0.github.io/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 07 Nov 2013 13:59:41 +0000</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to add official Chromium-browser PPA repository to Linux Mint 15 and install the latest stable build</title>
       <link>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</link>

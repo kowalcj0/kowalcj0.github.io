@@ -6,11 +6,7 @@
     <description>Recent content in rss on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 22 Mar 2020 12:02:34 +0100</lastBuildDate>
-    
-	<atom:link href="https://kowalcj0.github.io/tags/rss/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 22 Mar 2020 12:02:34 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/rss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Listen to podcasts in MPD</title>
       <link>https://kowalcj0.github.io/2020/03/22/listen-to-podcasts-in-mpd/</link>
