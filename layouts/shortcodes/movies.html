@@ -23,10 +23,10 @@
   <tbody>
 {{ range $.Site.Data.movies }}
     {{ if eq $category .category }}
-        {{ range .movies }}
+        {{ range sort .movies "year" "asc" }}
             {{ if .title }}
     <tr tabindex="0">
-      <td>{{ .title }}{{ if .original_title }} ({{ .original_title }}){{ end }}</td>
+      <td>{{ .title }}{{ if .original_title }} ({{ .original_title }}){{ end }} {{ if .watched }}{{ partial "svg/octicons/device-camera-video.svg" . }}{{ end }}</td>
       <td>{{ .director }}</td>
       <td>{{ .genres }}</td>
       <td>{{ .year }}</td>

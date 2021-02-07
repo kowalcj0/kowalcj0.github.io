@@ -22,7 +22,7 @@
         <summary>meta</summary>
         <div>{{ partial "svg/icons" "calendar" }} published: {{ .year }}</div>
         <div>{{ partial "svg/octicons/pencil.svg" }} genres: {{ delimit .genres ", " }}</div>
-        <div>{{ partial "svg/octicons/archive.svg" }} completed: {{ .completed }}</div>
+        <div>{{ partial "svg/octicons/book.svg" . }} completed: {{ .completed }}</div>
         <div>{{ partial "svg/octicons/globe.svg" }} links: {{ partial "book_links.html" . }}</div>
       </details>
       {{ if .comments }}
