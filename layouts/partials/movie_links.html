@@ -1,6 +1,9 @@
 {{ if .trailer }}
 <a tabindex="0" target="_blank" rel="external" referrerpolicy="no-referrer" href="{{ .trailer }}" alt="Watch '{{ .title }}' trailer on youtube" title="Watch '{{ .title }}' trailer on youtube"><img src="/img/favicon_youtube.png" style="width:28px;height:28px"/></a>
 {{ end }}
+{{ if .tmdb }}
+<a tabindex="0" target="_blank" rel="external" referrerpolicy="no-referrer" href="https://www.themoviedb.org/movie/{{ .tmdb }}" alt="Find out more about '{{ .title }}' on TMDB" title="Find out more about '{{ .title }}' on TMDB"><img src="/img/favicon_tmdb_blue_square_1.svg" style="width:28px;height:28px"/></a>
+{{ end }}
 {{ if .imdb }}
 <a tabindex="0" target="_blank" rel="external" referrerpolicy="no-referrer" href="{{ .imdb }}" alt="Find out more about '{{ .title }}' on iMDB" title="Find out more about '{{ .title }}' on iMDB"><img src="/img/favicon_imdb.png" style="width:28px;height:28px"/></a>
 {{ end }}
