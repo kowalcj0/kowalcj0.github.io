@@ -1,23 +1,46 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""Movie Updater
+
+Requirements:
+    * python 3.6+
+    * envparse https://pypi.org/project/envparse/
+    * wikipedia https://pypi.org/project/wikipedia/
+    * tmdbsimple https://pypi.org/project/tmdbsimple/
+
+pip install envparse tmdbsimple wikipedia
+
+This script also requires a .env, which is a simple KEY=VALUE file, e.g.:
+
+TMDB_API_KEY=<some_key>
+
+You can also provide those env vars in a regular way:
+
+TMDB_API_KEY=<some_key> ./update_movies.py
+"""
+import argparse
 import json
-import os
-from typing import Dict, List, Optional
+from typing import Optional
 
 import tmdbsimple as tmdb
 import wikipedia
+from envparse import env
 
-wikipedia.set_lang("en")
-TMDB_API_KEY = os.environ.get("TMDB_API_KEY", None)
+env.read_envfile()
+
+WIKIPEDIA_LANG = env.str("WIKIPEDIA_LANG", default="en")
+wikipedia.set_lang(WIKIPEDIA_LANG)
+
+TMDB_API_KEY = env.str("TMDB_API_KEY")
 if TMDB_API_KEY:
     tmdb.API_KEY = TMDB_API_KEY
 else:
     print("WARNING: TMDB_API_KEY env var is not set.")
 
 
-def load_films(filename: str) -> List[str]:
-    with open(filename) as f:
-        films = json.load(f)
+def load_films(filename: str) -> dict:
+    with open(filename) as input_file:
+        films = json.load(input_file)
     return films
 
 
@@ -90,10 +113,10 @@ def update(raw_films: dict) -> dict:
                         raw_films["movies"][idx]["imdb"] = imdb
                         print(f"Found imdb url: {imdb}")
                 if not film["rt"]:
-                    rt = link(film_page, "rottentomatoes")
-                    if rt:
-                        raw_films["movies"][idx]["rt"] = rt
-                        print(f"Found rottentomatoes url: {rt}")
+                    rotten = link(film_page, "rottentomatoes")
+                    if rotten:
+                        raw_films["movies"][idx]["rt"] = rotten
+                        print(f"Found rottentomatoes url: {rotten}")
             else:
                 print(f"Couldn't find {film['title']}")
         tmdb_id = get_tmdb_id(film)
@@ -103,16 +126,37 @@ def update(raw_films: dict) -> dict:
     return raw_films
 
 
-def save(films):
-    with open("new.json", "w") as write_file:
+def save(films: dict, args: argparse.Namespace):
+    output = args.input if args.in_place else args.ouput
+    with open(output, "w") as write_file:
         json.dump(films, write_file, indent=4)
 
 
-def main():
-    films = load_films("data/movies/rezyseria_filmowa.json")
+def main(args: argparse.Namespace):
+    films = load_films(args.input)
     updated = update(films)
-    save(updated)
+    save(updated, args)
+
+
+def _parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", nargs=None, type=str, help="Input json movie file")
+    parser.add_argument(
+        "-i",
+        "--in-place",
+        action="store_true",
+        help="Update input file in-place",
+    )
+    parser.add_argument(
+        "--output",
+        nargs=1,
+        type=str,
+        default="./updated.json",
+        help="Output file (default: ./updated.json)",
+    )
+    return parser.parse_args()
 
 
 if __name__ == "__main__":
-    main()
+    arguments = _parse_args()
+    main(arguments)
