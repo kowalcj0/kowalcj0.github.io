@@ -64,7 +64,7 @@ def get_tmdb_id(film: dict) -> Optional[int]:
     if not TMDB_API_KEY:
         return None
     tmdb_id = None
-    if "tmdb" not in film and film["imdb"]:
+    if "tmdb" not in film and film["imdb"] and film["title"]:
         imdb_id = film["imdb"].split("/")[-2]
         response = tmdb.Find(imdb_id).info(external_source="imdb_id")
         if len(response["movie_results"]) == 1:
@@ -88,7 +88,7 @@ def get_tmdb_id(film: dict) -> Optional[int]:
 
 def update(raw_films: dict) -> dict:
     for idx, film in enumerate(raw_films["movies"]):
-        if not film["wiki"]:
+        if not film["wiki"] and film["title"]:
             query = f"{film['title']} (film)"
             print(f"Searching for: {query}")
             film_page = page(query)
@@ -127,7 +127,7 @@ def update(raw_films: dict) -> dict:
 
 
 def save(films: dict, args: argparse.Namespace):
-    output = args.input if args.in_place else args.ouput
+    output = args.input if args.in_place else args.output
     with open(output, "w") as write_file:
         json.dump(films, write_file, indent=4)
 
