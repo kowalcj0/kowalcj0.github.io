@@ -5,7 +5,7 @@ description: "Movies, TV Series & Documentaries worth watching"
 toc: true
 slug: "movies"
 date: "2020-03-21T11:59:50+01:00"
-lastmod: "2021-01-30T13:20:50+01:00"
+lastmod: "2021-03-20T12:10:50+01:00"
 categories:
   - general
 tags:
@@ -72,7 +72,7 @@ Rather scandalous and avant-garde movies:
 {{< movies category="kurosawa" >}}
  
 
-## Warsaw Film School: Film Directing / Warszawska Szkoła Filmowa: Reżyseria filmowa
+## Warsaw Film School: Film Directing
 
 {{< movies category="rezyseria filmowa" >}}
 
