@@ -1,52 +1,60 @@
 {
-"category": "japanese",
-"movies": [
-{
-    "title": "The Human Condition I: No Greater Love",
-    "original_title": "人間の條件, Ningen no jōken",
-    "director": "Masaki Kobayashi",
-    "genres": "Epic drama romance",
-    "year": 1959,
-    "trailer": "https://www.youtube.com/watch?v=mS8YraEXC9c",
-    "wiki": "https://en.wikipedia.org/wiki/The_Human_Condition_(film_series)",
-    "imdb": "https://www.imdb.com/title/tt0053114/",
-    "rt": "https://www.rottentomatoes.com/m/ningen_no_joken_i",
-    "comments": "great story and top-notch camera work"
-},
-{
-    "title": "Tokyo Story",
-    "original_title": "東京物語, Tōkyō Monogatari",
-    "director": "Yasujirō Ozu",
-    "genres": "Drama",
-    "year": 1953,
-    "trailer": "https://www.youtube.com/watch?v=5zEKw4VQIeY",
-    "wiki": "https://en.wikipedia.org/wiki/Tokyo_Story",
-    "imdb": "https://www.imdb.com/title/tt0046438/",
-    "rt": "https://www.rottentomatoes.com/m/tokyo_story",
-    "comments": "it's worth to watch it with the commentary"
-},
-{
-    "title": "After life",
-    "original_title": "ワンダフルライフ, Wandafuru Raifu",
-    "director": "Hirokazu Kore-eda",
-    "genres": "Drama, Fantasy",
-    "year": 1998,
-    "trailer": "https://www.youtube.com/watch?v=DN9sr5wVkik",
-    "wiki": "https://en.wikipedia.org/wiki/After_Life_(film)",
-    "imdb": "https://www.imdb.com/title/tt0165078/",
-    "rt": "https://www.rottentomatoes.com/m/after_life",
-    "comments": ""
-},
-{
-    "title": "",
-    "original_title": "",
-    "director": "",
-    "genres": "",
-    "year": 0,
-    "trailer": "",
-    "wiki": "",
-    "imdb": "",
-    "rt": "",
-    "comments": ""
+    "category": "japanese",
+    "movies": [
+        {
+            "title": "The Human Condition I: No Greater Love",
+            "original_title": "\u4eba\u9593\u306e\u689d\u4ef6, Ningen no j\u014dken",
+            "director": "Masaki Kobayashi",
+            "genres": [
+                "epic drama romance"
+            ],
+            "year": 1959,
+            "trailer": "https://www.youtube.com/watch?v=mS8YraEXC9c",
+            "wiki": "https://en.wikipedia.org/wiki/The_Human_Condition_(film_series)",
+            "imdb": "https://www.imdb.com/title/tt0053114/",
+            "rt": "https://www.rottentomatoes.com/m/ningen_no_joken_i",
+            "comments": "great story and top-notch camera work"
+        },
+        {
+            "title": "Tokyo Story",
+            "original_title": "\u6771\u4eac\u7269\u8a9e, T\u014dky\u014d Monogatari",
+            "director": "Yasujir\u014d Ozu",
+            "genres": [
+                "drama"
+            ],
+            "year": 1953,
+            "trailer": "https://www.youtube.com/watch?v=5zEKw4VQIeY",
+            "wiki": "https://en.wikipedia.org/wiki/Tokyo_Story",
+            "imdb": "https://www.imdb.com/title/tt0046438/",
+            "rt": "https://www.rottentomatoes.com/m/tokyo_story",
+            "comments": "it's worth to watch it with the commentary"
+        },
+        {
+            "title": "After life",
+            "original_title": "\u30ef\u30f3\u30c0\u30d5\u30eb\u30e9\u30a4\u30d5, Wandafuru Raifu",
+            "director": "Hirokazu Kore-eda",
+            "genres": [
+                "drama",
+                "fantasy"
+            ],
+            "year": 1998,
+            "trailer": "https://www.youtube.com/watch?v=DN9sr5wVkik",
+            "wiki": "https://en.wikipedia.org/wiki/After_Life_(film)",
+            "imdb": "https://www.imdb.com/title/tt0165078/",
+            "rt": "https://www.rottentomatoes.com/m/after_life",
+            "comments": ""
+        },
+        {
+            "title": "",
+            "original_title": "",
+            "director": "",
+            "genres": "",
+            "year": 0,
+            "trailer": "",
+            "wiki": "",
+            "imdb": "",
+            "rt": "",
+            "comments": ""
+        }
+    ]
 }
-]}

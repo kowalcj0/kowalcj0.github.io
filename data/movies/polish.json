@@ -1,172 +1,208 @@
 {
-"category": "polish",
-"movies": [
-{
-    "title": "Dekalog",
-    "original_title": "",
-    "director": "Krzysztof Kieślowski",
-    "genres": "Drama",
-    "year": 1988,
-    "trailer": "https://www.youtube.com/watch?v=7QRl1BBWxwk",
-    "wiki": "https://en.wikipedia.org/wiki/Dekalog",
-    "imdb": "https://www.imdb.com/title/tt0092337/",
-    "rt": "https://www.rottentomatoes.com/tv/the_decalogue/s01",
-    "comments": "A set of 10 movies, loosely based on 10 commandments (these are not religious movies). Very moving!"
-},
-{
-    "title": "Innocent Sorcerers",
-    "original_title": "Niewinni czarodzieje",
-    "director": "Andrzej Wajda",
-    "genres": "Drama, Music, Romance",
-    "year": 1960,
-    "trailer": "https://www.youtube.com/watch?v=Y9SmuYXzP5w",
-    "wiki": "https://en.wikipedia.org/wiki/Innocent_Sorcerers",
-    "imdb": "https://www.imdb.com/title/tt0054119/",
-    "rt": "https://www.rottentomatoes.com/m/innocent_sorcerers",
-    "comments": "oh that Jazz!"
-},
-{
-    "title": "Night Train",
-    "original_title": "Pociąg",
-    "director": "Jerzy Kawalerowicz",
-    "genres": "Drama, Mystery, Thriller",
-    "year": 1959,
-    "trailer": "https://www.youtube.com/watch?v=i8z95IncWx0",
-    "wiki": "https://en.wikipedia.org/wiki/Night_Train_(1959_film)",
-    "imdb": "https://www.imdb.com/title/tt0053176/",
-    "rt": "https://www.rottentomatoes.com/m/pociag",
-    "comments": ""
-},
-{
-    "title": "A Short Film About Killing",
-    "original_title": "Krótki film o zabijaniu",
-    "director": "Krzysztof Kieślowski",
-    "genres": "Crime, Drama",
-    "year": 1988,
-    "trailer": "https://www.youtube.com/watch?v=kmUNMPib4hQ",
-    "wiki": "https://en.wikipedia.org/wiki/A_Short_Film_About_Killing",
-    "imdb": "https://www.imdb.com/title/tt0095468/",
-    "rt": "https://www.rottentomatoes.com/m/a_short_film_about_killing",
-    "comments": ""
-},
-{
-    "title": "A Short Film About Love",
-    "original_title": "Krótki film o miłości",
-    "director": "Krzysztof Kieślowski",
-    "genres": "Drama, Romance",
-    "year": 1988,
-    "trailer": "https://www.youtube.com/watch?v=KY13LwWo8D8",
-    "wiki": "https://en.wikipedia.org/wiki/A_Short_Film_About_Love",
-    "imdb": "https://www.imdb.com/title/tt0095467/",
-    "rt": "https://www.rottentomatoes.com/m/short_film_about_love",
-    "comments": ""
-},
-{
-    "title": "Kanal",
-    "original_title": "Kanał",
-    "director": "Andrzej Wajda",
-    "genres": "Drama, War",
-    "year": 1956,
-    "trailer": "https://www.youtube.com/watch?v=7LnLszHOLNs",
-    "wiki": "https://en.wikipedia.org/wiki/Kanał",
-    "imdb": "https://www.imdb.com/title/tt0050585/",
-    "rt": "https://www.rottentomatoes.com/m/kanal_1957",
-    "comments": ""
-},
-{
-    "title": "Day of the Wacko",
-    "original_title": "Dzień Świra",
-    "director": "Marek Koterski",
-    "genres": "Comedy, Drama",
-    "year": 2002,
-    "trailer": "https://www.youtube.com/watch?v=mAgCcQNNAms",
-    "wiki": "https://en.wikipedia.org/wiki/Day_of_the_Wacko",
-    "imdb": "https://www.imdb.com/title/tt0330243/",
-    "rt": "https://www.rottentomatoes.com/m/day_of_the_wacko",
-    "comments": "Great ironic comedy. Depicts the political & social transformation of the early 90s"
-},
-{
-    "title": "Teddy Bear",
-    "original_title": "Miś",
-    "director": "Stanisław Bareja",
-    "genres": "Comedy",
-    "year": 1980,
-    "trailer": "https://www.youtube.com/watch?v=qITg7sI4P0I",
-    "wiki": "https://en.wikipedia.org/wiki/Teddy_Bear_(1980_film)",
-    "imdb": "https://www.imdb.com/title/tt0082755/",
-    "rt": "",
-    "comments": "Great comedy but might be a bit too hard to understand without prior knowledge of some the absurds of everyday life in a communist country"
-},
-{
-    "title": "Sexmission",
-    "original_title": "Seksmisja",
-    "director": "Janusz Machulski",
-    "genres": "Cult, Comedy",
-    "year": 1983,
-    "trailer": "https://www.youtube.com/watch?v=lwleaxA0ps0",
-    "wiki": "https://en.wikipedia.org/wiki/Sexmission",
-    "imdb": "https://www.imdb.com/title/tt0088083/",
-    "rt": "https://www.rottentomatoes.com/m/seksmisja",
-    "comments": "One of the greatest Polish comedies"
-},
-{
-    "title": "Symmetry",
-    "original_title": "Symetria",
-    "director": "Konrad Niewolski",
-    "genres": "Drama",
-    "year": 2003,
-    "trailer": "https://www.youtube.com/watch?v=jq9x44Oh_XM",
-    "wiki": "https://en.wikipedia.org/wiki/Symmetry_(film)",
-    "imdb": "https://www.imdb.com/title/tt0381637/",
-    "rt": "https://www.rottentomatoes.com/m/symmetry_2004",
-    "comments": "Modern, moving and depressing"
-},
-{
-    "title": "Ida",
-    "original_title": "Ida",
-    "director": "Paweł Pawlikowski",
-    "genres": "Drama",
-    "year": 2013,
-    "trailer": "https://www.youtube.com/watch?v=_JIXxo8qUn0",
-    "wiki": "https://en.wikipedia.org/wiki/Ida_(film)",
-    "imdb": "https://www.imdb.com/title/tt2718492/",
-    "rt": "https://www.rottentomatoes.com/m/ida_2013",
-    "comments": ""
-},
-{
-    "title": "Cold war",
-    "original_title": "Zimna wojna",
-    "director": "Paweł Pawlikowski",
-    "genres": "Drama, History, Music",
-    "year": 2008,
-    "trailer": "https://www.youtube.com/watch?v=C8gx9cFeamM",
-    "wiki": "https://en.wikipedia.org/wiki/Cold_War_(2018_film)",
-    "imdb": "https://www.imdb.com/title/tt6543652/",
-    "rt": "https://www.rottentomatoes.com/m/cold_war_2018",
-    "comments": ""
-},
-{
-    "title": "",
-    "original_title": "",
-    "director": "",
-    "genres": "",
-    "year": 0,
-    "trailer": "",
-    "wiki": "",
-    "imdb": "",
-    "rt": "",
-    "comments": ""
-},
-{
-    "title": "",
-    "original_title": "",
-    "director": "",
-    "genres": "",
-    "year": 0,
-    "trailer": "",
-    "wiki": "",
-    "imdb": "",
-    "rt": "",
-    "comments": ""
+    "category": "polish",
+    "movies": [
+        {
+            "title": "Dekalog",
+            "original_title": "",
+            "director": "Krzysztof Kie\u015blowski",
+            "genres": [
+                "drama"
+            ],
+            "year": 1988,
+            "trailer": "https://www.youtube.com/watch?v=7QRl1BBWxwk",
+            "wiki": "https://en.wikipedia.org/wiki/Dekalog",
+            "imdb": "https://www.imdb.com/title/tt0092337/",
+            "rt": "https://www.rottentomatoes.com/tv/the_decalogue/s01",
+            "comments": "A set of 10 movies, loosely based on 10 commandments (these are not religious movies). Very moving!"
+        },
+        {
+            "title": "Innocent Sorcerers",
+            "original_title": "Niewinni czarodzieje",
+            "director": "Andrzej Wajda",
+            "genres": [
+                "drama",
+                "music",
+                "romance"
+            ],
+            "year": 1960,
+            "trailer": "https://www.youtube.com/watch?v=Y9SmuYXzP5w",
+            "wiki": "https://en.wikipedia.org/wiki/Innocent_Sorcerers",
+            "imdb": "https://www.imdb.com/title/tt0054119/",
+            "rt": "https://www.rottentomatoes.com/m/innocent_sorcerers",
+            "comments": "oh that Jazz!"
+        },
+        {
+            "title": "Night Train",
+            "original_title": "Poci\u0105g",
+            "director": "Jerzy Kawalerowicz",
+            "genres": [
+                "drama",
+                "mystery",
+                "thriller"
+            ],
+            "year": 1959,
+            "trailer": "https://www.youtube.com/watch?v=i8z95IncWx0",
+            "wiki": "https://en.wikipedia.org/wiki/Night_Train_(1959_film)",
+            "imdb": "https://www.imdb.com/title/tt0053176/",
+            "rt": "https://www.rottentomatoes.com/m/pociag",
+            "comments": ""
+        },
+        {
+            "title": "A Short Film About Killing",
+            "original_title": "Kr\u00f3tki film o zabijaniu",
+            "director": "Krzysztof Kie\u015blowski",
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "year": 1988,
+            "trailer": "https://www.youtube.com/watch?v=kmUNMPib4hQ",
+            "wiki": "https://en.wikipedia.org/wiki/A_Short_Film_About_Killing",
+            "imdb": "https://www.imdb.com/title/tt0095468/",
+            "rt": "https://www.rottentomatoes.com/m/a_short_film_about_killing",
+            "comments": ""
+        },
+        {
+            "title": "A Short Film About Love",
+            "original_title": "Kr\u00f3tki film o mi\u0142o\u015bci",
+            "director": "Krzysztof Kie\u015blowski",
+            "genres": [
+                "drama",
+                "romance"
+            ],
+            "year": 1988,
+            "trailer": "https://www.youtube.com/watch?v=KY13LwWo8D8",
+            "wiki": "https://en.wikipedia.org/wiki/A_Short_Film_About_Love",
+            "imdb": "https://www.imdb.com/title/tt0095467/",
+            "rt": "https://www.rottentomatoes.com/m/short_film_about_love",
+            "comments": ""
+        },
+        {
+            "title": "Kanal",
+            "original_title": "Kana\u0142",
+            "director": "Andrzej Wajda",
+            "genres": [
+                "drama",
+                "war"
+            ],
+            "year": 1956,
+            "trailer": "https://www.youtube.com/watch?v=7LnLszHOLNs",
+            "wiki": "https://en.wikipedia.org/wiki/Kana\u0142",
+            "imdb": "https://www.imdb.com/title/tt0050585/",
+            "rt": "https://www.rottentomatoes.com/m/kanal_1957",
+            "comments": ""
+        },
+        {
+            "title": "Day of the Wacko",
+            "original_title": "Dzie\u0144 \u015awira",
+            "director": "Marek Koterski",
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "year": 2002,
+            "trailer": "https://www.youtube.com/watch?v=mAgCcQNNAms",
+            "wiki": "https://en.wikipedia.org/wiki/Day_of_the_Wacko",
+            "imdb": "https://www.imdb.com/title/tt0330243/",
+            "rt": "https://www.rottentomatoes.com/m/day_of_the_wacko",
+            "comments": "Great ironic comedy. Depicts the political & social transformation of the early 90s"
+        },
+        {
+            "title": "Teddy Bear",
+            "original_title": "Mi\u015b",
+            "director": "Stanis\u0142aw Bareja",
+            "genres": [
+                "comedy"
+            ],
+            "year": 1980,
+            "trailer": "https://www.youtube.com/watch?v=qITg7sI4P0I",
+            "wiki": "https://en.wikipedia.org/wiki/Teddy_Bear_(1980_film)",
+            "imdb": "https://www.imdb.com/title/tt0082755/",
+            "rt": "",
+            "comments": "Great comedy but might be a bit too hard to understand without prior knowledge of some the absurds of everyday life in a communist country"
+        },
+        {
+            "title": "Sexmission",
+            "original_title": "Seksmisja",
+            "director": "Janusz Machulski",
+            "genres": [
+                "cult",
+                "comedy"
+            ],
+            "year": 1983,
+            "trailer": "https://www.youtube.com/watch?v=lwleaxA0ps0",
+            "wiki": "https://en.wikipedia.org/wiki/Sexmission",
+            "imdb": "https://www.imdb.com/title/tt0088083/",
+            "rt": "https://www.rottentomatoes.com/m/seksmisja",
+            "comments": "One of the greatest Polish comedies"
+        },
+        {
+            "title": "Symmetry",
+            "original_title": "Symetria",
+            "director": "Konrad Niewolski",
+            "genres": [
+                "drama"
+            ],
+            "year": 2003,
+            "trailer": "https://www.youtube.com/watch?v=jq9x44Oh_XM",
+            "wiki": "https://en.wikipedia.org/wiki/Symmetry_(film)",
+            "imdb": "https://www.imdb.com/title/tt0381637/",
+            "rt": "https://www.rottentomatoes.com/m/symmetry_2004",
+            "comments": "Modern, moving and depressing"
+        },
+        {
+            "title": "Ida",
+            "original_title": "Ida",
+            "director": "Pawe\u0142 Pawlikowski",
+            "genres": [
+                "drama"
+            ],
+            "year": 2013,
+            "trailer": "https://www.youtube.com/watch?v=_JIXxo8qUn0",
+            "wiki": "https://en.wikipedia.org/wiki/Ida_(film)",
+            "imdb": "https://www.imdb.com/title/tt2718492/",
+            "rt": "https://www.rottentomatoes.com/m/ida_2013",
+            "comments": ""
+        },
+        {
+            "title": "Cold war",
+            "original_title": "Zimna wojna",
+            "director": "Pawe\u0142 Pawlikowski",
+            "genres": [
+                "drama",
+                "history",
+                "music"
+            ],
+            "year": 2008,
+            "trailer": "https://www.youtube.com/watch?v=C8gx9cFeamM",
+            "wiki": "https://en.wikipedia.org/wiki/Cold_War_(2018_film)",
+            "imdb": "https://www.imdb.com/title/tt6543652/",
+            "rt": "https://www.rottentomatoes.com/m/cold_war_2018",
+            "comments": ""
+        },
+        {
+            "title": "",
+            "original_title": "",
+            "director": "",
+            "genres": "",
+            "year": 0,
+            "trailer": "",
+            "wiki": "",
+            "imdb": "",
+            "rt": "",
+            "comments": ""
+        },
+        {
+            "title": "",
+            "original_title": "",
+            "director": "",
+            "genres": "",
+            "year": 0,
+            "trailer": "",
+            "wiki": "",
+            "imdb": "",
+            "rt": "",
+            "comments": ""
+        }
+    ]
 }
-]}

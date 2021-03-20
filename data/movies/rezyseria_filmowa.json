@@ -509,8 +509,8 @@
             "justwatch": "",
             "netflix": "",
             "rt": "https://www.rottentomatoes.com/m/el_cid",
-            "comments": "",
-            "watched": "",
+            "comments": "An epic story",
+            "watched": "2021-03-14",
             "tmdb": 16638
         },
         {
@@ -582,7 +582,11 @@
             "title": "High and Low",
             "director": "Akira Kurosawa",
             "original_title": "\u5929\u56fd\u3068\u5730\u7344, Tengoku to Jigoku, literally 'Heaven and Hell'",
-            "genres": "Crime, Drama, Mystery",
+            "genres": [
+                "crime",
+                "drama",
+                "mystery"
+            ],
             "trailer": "",
             "wiki": "https://en.wikipedia.org/wiki/High_and_Low_(1963_film)",
             "imdb": "https://www.imdb.com/title/tt0057565/",
@@ -1155,9 +1159,9 @@
         },
         {
             "year": 1974,
-            "title": "\u0417\u0435\u0440\u043a\u0430\u043b\u043e",
+            "title": "Mirror",
             "director": "Andriej Tarkowski",
-            "original_title": "",
+            "original_title": "\u0417\u0435\u0440\u043a\u0430\u043b\u043e",
             "genres": "",
             "trailer": "",
             "wiki": "https://en.wikipedia.org/wiki/Mirror_(1975_film)",
@@ -1318,7 +1322,11 @@
             "title": "Excuse Me, Is It Here They Beat Up People?",
             "director": "Marek Piwowski",
             "original_title": "Przepraszam, czy tu bij\u0105",
-            "genres": "Action, Comedy, Crime",
+            "genres": [
+                "action",
+                "comedy",
+                "crime"
+            ],
             "trailer": "",
             "wiki": "https://en.wikipedia.org/wiki/Stand_by_Me_(film)",
             "imdb": "https://www.imdb.com/title/tt0076575/",
@@ -1958,7 +1966,9 @@
             "title": "Infernal Affairs",
             "director": "Andrew Lau, Alana Maka",
             "original_title": "\u7121\u9593\u9053, Mou gaan dou",
-            "genres": "Crime",
+            "genres": [
+                "crime"
+            ],
             "trailer": "",
             "wiki": "https://en.wikipedia.org/wiki/Infernal_Affairs",
             "imdb": "https://www.imdb.com/title/tt1880412/",

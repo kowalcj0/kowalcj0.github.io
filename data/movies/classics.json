@@ -1,93 +1,86 @@
 {
-"category": "classics",
-"movies": [
-{
-    "title": "Brazil",
-    "director": "Terry Gilliam",
-    "genres": "Drama, Sci-Fi",
-    "year": 1985,
-    "trailer": "https://www.youtube.com/watch?v=ZKPFC8DA9_8",
-    "wiki": "https://en.wikipedia.org/wiki/Brazil_(1985_film)",
-    "imdb": "https://www.imdb.com/title/tt0088846/",
-    "rt": "https://www.rottentomatoes.com/m/1003033_brazil",
-    "comments": ""
-},
-{
-    "title": "Amistad",
-    "director": "Steven Spielberg",
-    "genres": "Biography, Drama, History",
-    "year": 1997,
-    "trailer": "https://www.youtube.com/watch?v=BJFDOvGMD0U",
-    "wiki": "https://en.wikipedia.org/wiki/Amistad_(film)",
-    "imdb": "https://www.imdb.com/title/tt0118607/",
-    "rt": "https://www.rottentomatoes.com/m/amistad",
-    "comments": ""
-},
-{
-    "title": "The Legend of 1900",
-    "director": "Giuseppe Tornatore",
-    "genres": "Drama, Music, Romance",
-    "year": 1998,
-    "trailer": "https://www.youtube.com/watch?v=2uf-LDlZMFE",
-    "wiki": "https://en.wikipedia.org/wiki/The_Legend_of_1900",
-    "imdb": "https://www.imdb.com/title/tt0120731/",
-    "rt": "https://www.rottentomatoes.com/m/legend_of_1900",
-    "comments": ""
-},
-{
-    "title": "Soy Cuba",
-    "original_title": "Soy Cuba",
-    "director": "Mikhail Kalatozov",
-    "genres": "Drama, History, War",
-    "year": 1964,
-    "trailer": "https://www.youtube.com/watch?v=lt-RbV8KiC0",
-    "wiki": "https://en.wikipedia.org/wiki/I_Am_Cuba",
-    "imdb": "https://www.imdb.com/title/tt0058604/",
-    "rt": "https://www.rottentomatoes.com/m/i_am_cuba",
-    "netflix": "",
-    "justwatch": "https://www.justwatch.com/uk/movie/i-am-cuba",
-    "comments": "Amazing camera work and long takes. Watch it for free [in 4K on Youtube](https://www.youtube.com/watch?v=lt-RbV8KiC0). I didn't like the communist propaganda in this movie. It's simply because Cubans had to suffer (and still do) under two regimes. Out of the frying pan of Batista into the fire of Castro! And they will suffer for the time under USA, once States get rid of post-Castro regime."
-},
-{
-    "title": "",
-    "original_title": "",
-    "director": "",
-    "genres": "",
-    "year": 0,
-    "trailer": "",
-    "wiki": "",
-    "imdb": "",
-    "rt": "",
-    "netflix": "",
-    "justwatch": "",
-    "comments": ""
-},
-{
-    "title": "",
-    "original_title": "",
-    "director": "",
-    "genres": "",
-    "year": 0,
-    "trailer": "",
-    "wiki": "",
-    "imdb": "",
-    "rt": "",
-    "netflix": "",
-    "justwatch": "",
-    "comments": ""
-},
-{
-    "title": "",
-    "original_title": "",
-    "director": "",
-    "genres": "",
-    "year": 0,
-    "trailer": "",
-    "wiki": "",
-    "imdb": "",
-    "rt": "",
-    "netflix": "",
-    "justwatch": "",
-    "comments": ""
+    "category": "classics",
+    "movies": [
+        {
+            "title": "Brazil",
+            "director": "Terry Gilliam",
+            "genres": [
+                "drama",
+                "sci-fi"
+            ],
+            "year": 1985,
+            "trailer": "https://www.youtube.com/watch?v=ZKPFC8DA9_8",
+            "wiki": "https://en.wikipedia.org/wiki/Brazil_(1985_film)",
+            "imdb": "https://www.imdb.com/title/tt0088846/",
+            "rt": "https://www.rottentomatoes.com/m/1003033_brazil",
+            "comments": "",
+            "tmdb": 68
+        },
+        {
+            "title": "Amistad",
+            "director": "Steven Spielberg",
+            "genres": [
+                "biography",
+                "drama",
+                "history"
+            ],
+            "year": 1997,
+            "trailer": "https://www.youtube.com/watch?v=BJFDOvGMD0U",
+            "wiki": "https://en.wikipedia.org/wiki/Amistad_(film)",
+            "imdb": "https://www.imdb.com/title/tt0118607/",
+            "rt": "https://www.rottentomatoes.com/m/amistad",
+            "comments": "",
+            "tmdb": 11831
+        },
+        {
+            "title": "The Legend of 1900",
+            "director": "Giuseppe Tornatore",
+            "genres": [
+                "drama",
+                "music",
+                "romance"
+            ],
+            "year": 1998,
+            "trailer": "https://www.youtube.com/watch?v=2uf-LDlZMFE",
+            "wiki": "https://en.wikipedia.org/wiki/The_Legend_of_1900",
+            "imdb": "https://www.imdb.com/title/tt0120731/",
+            "rt": "https://www.rottentomatoes.com/m/legend_of_1900",
+            "comments": "",
+            "tmdb": 10376
+        },
+        {
+            "title": "Soy Cuba",
+            "original_title": "",
+            "director": "Mikhail Kalatozov",
+            "genres": [
+                "drama",
+                "history",
+                "war"
+            ],
+            "year": 1964,
+            "trailer": "https://www.youtube.com/watch?v=lt-RbV8KiC0",
+            "wiki": "https://en.wikipedia.org/wiki/I_Am_Cuba",
+            "imdb": "https://www.imdb.com/title/tt0058604/",
+            "rt": "https://www.rottentomatoes.com/m/i_am_cuba",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/i-am-cuba",
+            "comments": "Amazing camera work and long takes. Watch it for free [in 4K on Youtube](https://www.youtube.com/watch?v=lt-RbV8KiC0). I didn't like the communist propaganda in this movie. It's simply because Cubans had to suffer (and still do) under two regimes. Out of the frying pan of Batista into the fire of Castro! And they will suffer for the time under USA, once States get rid of post-Castro regime.",
+            "tmdb": 32015
+        },
+        {
+            "title": "",
+            "original_title": "",
+            "director": "",
+            "genres": "",
+            "year": 0,
+            "trailer": "",
+            "wiki": "",
+            "imdb": "",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": "",
+            "tmdb": 0
+        }
+    ]
 }
-]}

@@ -1,77 +1,93 @@
 {
-"category": "world",
-"movies": [
-{
-    "title": "Chronos",
-    "director": "Ron Fricke",
-    "genres": "Abstract, Non-narrative, Documentary",
-    "year": 1985,
-    "trailer": "https://www.youtube.com/watch?v=yKdP4HTZVJI", 
-    "wiki": "https://en.wikipedia.org/wiki/Chronos_(film)",
-    "imdb": "https://www.imdb.com/title/tt0088919/",
-    "rt": "https://www.rottentomatoes.com/m/chronos",
-    "justwatch": "",
-    "comments": ""
+    "category": "world",
+    "movies": [
+        {
+            "title": "Chronos",
+            "director": "Ron Fricke",
+            "genres": [
+                "abstract",
+                "non-narrative",
+                "documentary"
+            ],
+            "year": 1985,
+            "trailer": "https://www.youtube.com/watch?v=yKdP4HTZVJI",
+            "wiki": "https://en.wikipedia.org/wiki/Chronos_(film)",
+            "imdb": "https://www.imdb.com/title/tt0088919/",
+            "rt": "https://www.rottentomatoes.com/m/chronos",
+            "justwatch": "",
+            "comments": "",
+            "tmdb": 18493
+        },
+        {
+            "title": "Anima Mundi (The Soul of the World)",
+            "director": "Godfrey Reggio",
+            "genres": [
+                "documentary"
+            ],
+            "year": 1992,
+            "trailer": "https://www.youtube.com/watch?v=jQZP4mZHv9Q",
+            "wiki": "https://en.wikipedia.org/wiki/Anima_Mundi_(film)",
+            "imdb": "https://www.imdb.com/title/tt0101349/",
+            "rt": "https://www.rottentomatoes.com/m/anima_mundi",
+            "justwatch": "",
+            "comments": "Ah! the dance of the kelp forest was amazing! PS. The film was scored by Philip Glass.",
+            "tmdb": 54220
+        },
+        {
+            "title": "Baraka",
+            "director": "Ron Fricke",
+            "genres": [
+                "non-narrative",
+                "documentary"
+            ],
+            "year": 1992,
+            "trailer": "https://www.youtube.com/watch?v=ZSfFHxyYJJA",
+            "wiki": "https://en.wikipedia.org/wiki/Baraka_(film)",
+            "imdb": "https://www.imdb.com/title/tt0103767/",
+            "rt": "https://www.rottentomatoes.com/m/baraka/",
+            "justwatch": "https://www.justwatch.com/uk/movie/baraka",
+            "comments": "",
+            "tmdb": 14002
+        },
+        {
+            "title": "Samsara",
+            "director": "Ron Fricke",
+            "genres": [
+                "non-narrative",
+                "documentary"
+            ],
+            "year": 2011,
+            "trailer": "https://www.youtube.com/watch?v=HCkEILshUyU",
+            "wiki": "https://en.wikipedia.org/wiki/Samsara_(2011_film)",
+            "imdb": "https://www.imdb.com/title/tt0770802/",
+            "rt": "https://www.rottentomatoes.com/m/samsara_2011",
+            "justwatch": "https://www.justwatch.com/uk/movie/samsara",
+            "comments": "",
+            "tmdb": 89708
+        },
+        {
+            "title": "",
+            "director": "",
+            "genres": "",
+            "year": 2019,
+            "trailer": "",
+            "wiki": "",
+            "imdb": "",
+            "rt": "",
+            "justwatch": "",
+            "comments": ""
+        },
+        {
+            "title": "",
+            "director": "",
+            "genres": "",
+            "year": 2019,
+            "trailer": "",
+            "wiki": "",
+            "imdb": "",
+            "rt": "",
+            "justwatch": "",
+            "comments": ""
+        }
+    ]
 }
-,{
-    "title": "Anima Mundi (The Soul of the World)",
-    "director": "Godfrey Reggio",
-    "genres": "Documentary",
-    "year": 1992,
-    "trailer": "https://www.youtube.com/watch?v=jQZP4mZHv9Q",
-    "wiki": "https://en.wikipedia.org/wiki/Anima_Mundi_(film)",
-    "imdb": "https://www.imdb.com/title/tt0101349/",
-    "rt": "https://www.rottentomatoes.com/m/anima_mundi",
-    "justwatch": "",
-    "comments": "Ah! the dance of the kelp forest was amazing! PS. The film was scored by Philip Glass."
-}
-,{
-    "title": "Baraka",
-    "director": "Ron Fricke",
-    "genres": "Non-narrative, Documentary",
-    "year": 1992,
-    "trailer": "https://www.youtube.com/watch?v=ZSfFHxyYJJA", 
-    "wiki": "https://en.wikipedia.org/wiki/Baraka_(film)",
-    "imdb": "https://www.imdb.com/title/tt0103767/",
-    "rt": "https://www.rottentomatoes.com/m/baraka/",
-    "justwatch": "https://www.justwatch.com/uk/movie/baraka",
-    "comments": ""
-}
-,{
-    "title": "Samsara",
-    "director": "Ron Fricke",
-    "genres": "Non-narrative, Documentary",
-    "year": 2011,
-    "trailer": "https://www.youtube.com/watch?v=HCkEILshUyU", 
-    "wiki": "https://en.wikipedia.org/wiki/Samsara_(2011_film)",
-    "imdb": "https://www.imdb.com/title/tt0770802/",
-    "rt": "https://www.rottentomatoes.com/m/samsara_2011",
-    "justwatch": "https://www.justwatch.com/uk/movie/samsara",
-    "comments": ""
-}
-,{
-    "title": "",
-    "director": "",
-    "genres": "",
-    "year": 2019,
-    "trailer": "", 
-    "wiki": "",
-    "imdb": "",
-    "rt": "",
-    "justwatch": "",
-    "comments": ""
-}
-,{
-    "title": "",
-    "director": "",
-    "genres": "",
-    "year": 2019,
-    "trailer": "", 
-    "wiki": "",
-    "imdb": "",
-    "rt": "",
-    "justwatch": "",
-    "comments": ""
-}
-]}
-

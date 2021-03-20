@@ -1,43 +1,53 @@
 {
-"category": "bunuel",
-"movies": [
-{
-    "title": "The Discreet Charm of the Bourgeoisie",
-    "original_title": "Le charme discret de la bourgeoisie",
-    "director": "Luis Buñuel",
-    "genres": "Comedy",
-    "year": 1972,
-    "trailer": "https://www.youtube.com/watch?v=OloPNPpealQ",
-    "wiki": "https://en.wikipedia.org/wiki/The_Discreet_Charm_of_the_Bourgeoisie",
-    "imdb": "https://www.imdb.com/title/tt0068361/",
-    "rt": "https://www.rottentomatoes.com/m/discreet_charm_of_the_bourgeoisie",
-    "justwatch": "https://www.justwatch.com/uk/movie/the-discreet-charm-of-the-bourgeoisie",
-    "comments": ""
-},
-{
-    "title": "The Phantom of Liberty",
-    "original_title": "Le Fantôme de la liberté",
-    "director": "Luis Buñuel",
-    "genres": "Comedy",
-    "year": 1974,
-    "trailer": "https://www.youtube.com/watch?v=V8h1q7_dVW0",
-    "wiki": "https://en.wikipedia.org/wiki/The_Phantom_of_Liberty",
-    "imdb": "https://www.imdb.com/title/tt0071487/",
-    "rt": "https://www.rottentomatoes.com/m/phantom_of_liberty",
-    "justwatch": "https://www.justwatch.com/uk/movie/the-phantom-of-liberty",
-    "comments": ""
-},
-{
-    "title": "That Obscure Object of Desire",
-    "original_title": "Cet obscur objet du désir",
-    "director": "Luis Buñuel",
-    "genres": "Comedy",
-    "year": 1977,
-    "trailer": "https://www.youtube.com/watch?v=gba_tu2-EMY",
-    "wiki": "https://en.wikipedia.org/wiki/That_Obscure_Object_of_Desire",
-    "imdb": "https://www.imdb.com/title/tt0075824/",
-    "rt": "https://www.rottentomatoes.com/m/that_obscure_object_of_desire",
-    "justwatch": "https://www.justwatch.com/uk/movie/that-obscure-object-of-desire",
-    "comments": ""
+    "category": "bunuel",
+    "movies": [
+        {
+            "title": "The Discreet Charm of the Bourgeoisie",
+            "original_title": "Le charme discret de la bourgeoisie",
+            "director": "Luis Bu\u00f1uel",
+            "genres": [
+                "comedy"
+            ],
+            "year": 1972,
+            "trailer": "https://www.youtube.com/watch?v=OloPNPpealQ",
+            "wiki": "https://en.wikipedia.org/wiki/The_Discreet_Charm_of_the_Bourgeoisie",
+            "imdb": "https://www.imdb.com/title/tt0068361/",
+            "rt": "https://www.rottentomatoes.com/m/discreet_charm_of_the_bourgeoisie",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-discreet-charm-of-the-bourgeoisie",
+            "comments": "",
+            "tmdb": 4593
+        },
+        {
+            "title": "The Phantom of Liberty",
+            "original_title": "Le Fant\u00f4me de la libert\u00e9",
+            "director": "Luis Bu\u00f1uel",
+            "genres": [
+                "comedy"
+            ],
+            "year": 1974,
+            "trailer": "https://www.youtube.com/watch?v=V8h1q7_dVW0",
+            "wiki": "https://en.wikipedia.org/wiki/The_Phantom_of_Liberty",
+            "imdb": "https://www.imdb.com/title/tt0071487/",
+            "rt": "https://www.rottentomatoes.com/m/phantom_of_liberty",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-phantom-of-liberty",
+            "comments": "",
+            "tmdb": 5558
+        },
+        {
+            "title": "That Obscure Object of Desire",
+            "original_title": "Cet obscur objet du d\u00e9sir",
+            "director": "Luis Bu\u00f1uel",
+            "genres": [
+                "comedy"
+            ],
+            "year": 1977,
+            "trailer": "https://www.youtube.com/watch?v=gba_tu2-EMY",
+            "wiki": "https://en.wikipedia.org/wiki/That_Obscure_Object_of_Desire",
+            "imdb": "https://www.imdb.com/title/tt0075824/",
+            "rt": "https://www.rottentomatoes.com/m/that_obscure_object_of_desire",
+            "justwatch": "https://www.justwatch.com/uk/movie/that-obscure-object-of-desire",
+            "comments": "",
+            "tmdb": 5781
+        }
+    ]
 }
-]}

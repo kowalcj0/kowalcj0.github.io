@@ -1,154 +1,186 @@
 {
-"category": "italian",
-"movies": [
-{
-    "title": "Rocco and His Brothers",
-    "original_title": "Rocco e i suoi fratelli",
-    "director": "Luchino Visconti",
-    "genres": "Crime, Drama",
-    "year": 1960,
-    "trailer": "https://www.youtube.com/watch?v=kK1WXnyEkBk",
-    "wiki": "https://en.wikipedia.org/wiki/Rocco_and_His_Brothers",
-    "imdb": "https://www.imdb.com/title/tt0054248/",
-    "rt": "https://www.rottentomatoes.com/m/rocco_and_his_brothers",
-    "comments": ""
-},
-{
-    "title": "Life Is Beautiful",
-    "original_title": "La vita è bella",
-    "director": "Roberto Benigni",
-    "genres": "Comedy, Drama, Romance",
-    "year": 1997,
-    "trailer": "https://www.youtube.com/watch?v=7MnY7Y4ukeA",
-    "wiki": "https://en.wikipedia.org/wiki/Life_Is_Beautiful",
-    "imdb": "https://www.imdb.com/title/tt0118799/",
-    "rt": "https://www.rottentomatoes.com/m/1084398_life_is_beautiful",
-    "comments": "Buon Giorno Principessa"
-},
-{
-    "title": "8½",
-    "original_title": "Otto e mezzo",
-    "director": "Federico Fellini",
-    "genres": "Drama",
-    "year": 1963,
-    "trailer": "https://www.youtube.com/watch?v=RmIC9pQ80Fk",
-    "wiki": "https://en.wikipedia.org/wiki/8½",
-    "imdb": "https://www.imdb.com/title/tt0056801/",
-    "rt": "https://www.rottentomatoes.com/m/8_12",
-    "comments": ""
-},
-{
-    "title": "Bicycle Thieves",
-    "original_title": "Ladri di biciclette",
-    "director": "Vittorio De Sica",
-    "genres": "Drama",
-    "year": 1948,
-    "trailer": "https://www.youtube.com/watch?v=H2P4xo9kmPM",
-    "wiki": "https://en.wikipedia.org/wiki/Bicycle_Thieves",
-    "imdb": "https://www.imdb.com/title/tt0040522/",
-    "rt": "https://www.rottentomatoes.com/m/bicycle_thieves",
-    "comments": ""
-},
-{
-    "title": "La Dolce Vita",
-    "original_title": "La Dolce Vita",
-    "director": "Federico Fellini",
-    "genres": "Comedy, Drama",
-    "year": 1960,
-    "trailer": "https://www.youtube.com/watch?v=1BeWEPXWDX4",
-    "wiki": "https://en.wikipedia.org/wiki/La_Dolce_Vita",
-    "imdb": "https://www.imdb.com/title/tt0053779/",
-    "rt": "https://www.rottentomatoes.com/m/dolce_vita",
-    "comments": ""
-},
-{
-    "title": "Marriage Italian Style",
-    "original_title": "Matrimonio all'italiana",
-    "director": "Vittorio De Sica",
-    "genres": "Comedy, Drama, Romance",
-    "year": 1964,
-    "trailer": "https://www.youtube.com/watch?v=TgFec85heuU",
-    "wiki": "https://en.wikipedia.org/wiki/Marriage_Italian_Style",
-    "imdb": "https://www.imdb.com/title/tt0058335/",
-    "rt": "https://www.rottentomatoes.com/m/marriage_italian_style",
-    "comments": ""
-},
-{
-    "title": "Divorce Italian Style",
-    "original_title": "Divorzio all'italiana",
-    "director": "Pietro Germi",
-    "genres": "Comedy, Drama, Romance",
-    "year": 1961,
-    "trailer": "https://www.youtube.com/watch?v=TgFec85heuU",
-    "wiki": "https://en.wikipedia.org/wiki/Divorce_Italian_Style",
-    "imdb": "https://www.imdb.com/title/tt0055913/",
-    "rt": "https://www.rottentomatoes.com/m/divorce_italian_style",
-    "comments": ""
-},
-{
-    "title": "Rome, Open City",
-    "original_title": "Roma città aperta",
-    "director": "Roberto Rossellini",
-    "genres": "Drama, Thriller, War",
-    "year": 1945,
-    "trailer": "https://www.youtube.com/watch?v=c1P1JRSJT6Q",
-    "wiki": "https://en.wikipedia.org/wiki/Rome,_Open_City",
-    "imdb": "https://www.imdb.com/title/tt0038890/",
-    "rt": "",
-    "comments": ""
-},
-{
-    "title": "La Strada",
-    "original_title": "",
-    "director": "Federico Fellini",
-    "genres": "Drama",
-    "year": 1954,
-    "trailer": "https://www.youtube.com/watch?v=CucHyXsxCU8",
-    "wiki": "https://en.wikipedia.org/wiki/La_Strada",
-    "imdb": "https://www.imdb.com/title/tt0047528/",
-    "rt": "https://www.rottentomatoes.com/m/the_road_1954",
-    "comments": "Depicts harsh reality of post-war Italy"
-},
-{
-    "title": "Dogman",
-    "original_title": "",
-    "director": "Matteo Garrone",
-    "genres": "Crime, Drama",
-    "year": 2018,
-    "trailer": "https://www.youtube.com/watch?v=ewh0lBcEb2U",
-    "wiki": "https://en.wikipedia.org/wiki/Dogman_(film)",
-    "imdb": "https://www.imdb.com/title/tt6768578/",
-    "rt": "https://www.rottentomatoes.com/m/dogman_2018",
-    "netflix": "",
-    "justwatch": "https://www.justwatch.com/ca/movie/dogman",
-    "comments": "Being coerced by a bully to do bad things, sucks!"
-},
-{
-    "title": "",
-    "original_title": "",
-    "director": "",
-    "genres": "",
-    "year": 0,
-    "trailer": "",
-    "wiki": "",
-    "imdb": "",
-    "rt": "",
-    "netflix": "",
-    "justwatch": "",
-    "comments": ""
-},
-{
-    "title": "",
-    "original_title": "",
-    "director": "",
-    "genres": "",
-    "year": 0,
-    "trailer": "",
-    "wiki": "",
-    "imdb": "",
-    "rt": "",
-    "netflix": "",
-    "justwatch": "",
-    "comments": ""
+    "category": "italian",
+    "movies": [
+        {
+            "title": "Rocco and His Brothers",
+            "original_title": "Rocco e i suoi fratelli",
+            "director": "Luchino Visconti",
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "year": 1960,
+            "trailer": "https://www.youtube.com/watch?v=kK1WXnyEkBk",
+            "wiki": "https://en.wikipedia.org/wiki/Rocco_and_His_Brothers",
+            "imdb": "https://www.imdb.com/title/tt0054248/",
+            "rt": "https://www.rottentomatoes.com/m/rocco_and_his_brothers",
+            "comments": ""
+        },
+        {
+            "title": "Life Is Beautiful",
+            "original_title": "La vita \u00e8 bella",
+            "director": "Roberto Benigni",
+            "genres": [
+                "comedy",
+                "drama",
+                "romance"
+            ],
+            "year": 1997,
+            "trailer": "https://www.youtube.com/watch?v=7MnY7Y4ukeA",
+            "wiki": "https://en.wikipedia.org/wiki/Life_Is_Beautiful",
+            "imdb": "https://www.imdb.com/title/tt0118799/",
+            "rt": "https://www.rottentomatoes.com/m/1084398_life_is_beautiful",
+            "comments": "Buon Giorno Principessa"
+        },
+        {
+            "title": "8\u00bd",
+            "original_title": "Otto e mezzo",
+            "director": "Federico Fellini",
+            "genres": [
+                "drama"
+            ],
+            "year": 1963,
+            "trailer": "https://www.youtube.com/watch?v=RmIC9pQ80Fk",
+            "wiki": "https://en.wikipedia.org/wiki/8\u00bd",
+            "imdb": "https://www.imdb.com/title/tt0056801/",
+            "rt": "https://www.rottentomatoes.com/m/8_12",
+            "comments": ""
+        },
+        {
+            "title": "Bicycle Thieves",
+            "original_title": "Ladri di biciclette",
+            "director": "Vittorio De Sica",
+            "genres": [
+                "drama"
+            ],
+            "year": 1948,
+            "trailer": "https://www.youtube.com/watch?v=H2P4xo9kmPM",
+            "wiki": "https://en.wikipedia.org/wiki/Bicycle_Thieves",
+            "imdb": "https://www.imdb.com/title/tt0040522/",
+            "rt": "https://www.rottentomatoes.com/m/bicycle_thieves",
+            "comments": ""
+        },
+        {
+            "title": "La Dolce Vita",
+            "original_title": "La Dolce Vita",
+            "director": "Federico Fellini",
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "year": 1960,
+            "trailer": "https://www.youtube.com/watch?v=1BeWEPXWDX4",
+            "wiki": "https://en.wikipedia.org/wiki/La_Dolce_Vita",
+            "imdb": "https://www.imdb.com/title/tt0053779/",
+            "rt": "https://www.rottentomatoes.com/m/dolce_vita",
+            "comments": ""
+        },
+        {
+            "title": "Marriage Italian Style",
+            "original_title": "Matrimonio all'italiana",
+            "director": "Vittorio De Sica",
+            "genres": [
+                "comedy",
+                "drama",
+                "romance"
+            ],
+            "year": 1964,
+            "trailer": "https://www.youtube.com/watch?v=TgFec85heuU",
+            "wiki": "https://en.wikipedia.org/wiki/Marriage_Italian_Style",
+            "imdb": "https://www.imdb.com/title/tt0058335/",
+            "rt": "https://www.rottentomatoes.com/m/marriage_italian_style",
+            "comments": ""
+        },
+        {
+            "title": "Divorce Italian Style",
+            "original_title": "Divorzio all'italiana",
+            "director": "Pietro Germi",
+            "genres": [
+                "comedy",
+                "drama",
+                "romance"
+            ],
+            "year": 1961,
+            "trailer": "https://www.youtube.com/watch?v=TgFec85heuU",
+            "wiki": "https://en.wikipedia.org/wiki/Divorce_Italian_Style",
+            "imdb": "https://www.imdb.com/title/tt0055913/",
+            "rt": "https://www.rottentomatoes.com/m/divorce_italian_style",
+            "comments": ""
+        },
+        {
+            "title": "Rome, Open City",
+            "original_title": "Roma citt\u00e0 aperta",
+            "director": "Roberto Rossellini",
+            "genres": [
+                "drama",
+                "thriller",
+                "war"
+            ],
+            "year": 1945,
+            "trailer": "https://www.youtube.com/watch?v=c1P1JRSJT6Q",
+            "wiki": "https://en.wikipedia.org/wiki/Rome,_Open_City",
+            "imdb": "https://www.imdb.com/title/tt0038890/",
+            "rt": "",
+            "comments": ""
+        },
+        {
+            "title": "La Strada",
+            "original_title": "",
+            "director": "Federico Fellini",
+            "genres": [
+                "drama"
+            ],
+            "year": 1954,
+            "trailer": "https://www.youtube.com/watch?v=CucHyXsxCU8",
+            "wiki": "https://en.wikipedia.org/wiki/La_Strada",
+            "imdb": "https://www.imdb.com/title/tt0047528/",
+            "rt": "https://www.rottentomatoes.com/m/the_road_1954",
+            "comments": "Depicts harsh reality of post-war Italy"
+        },
+        {
+            "title": "Dogman",
+            "original_title": "",
+            "director": "Matteo Garrone",
+            "genres": [
+                "crime",
+                "drama"
+            ],
+            "year": 2018,
+            "trailer": "https://www.youtube.com/watch?v=ewh0lBcEb2U",
+            "wiki": "https://en.wikipedia.org/wiki/Dogman_(film)",
+            "imdb": "https://www.imdb.com/title/tt6768578/",
+            "rt": "https://www.rottentomatoes.com/m/dogman_2018",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/ca/movie/dogman",
+            "comments": "Being coerced by a bully to do bad things, sucks!"
+        },
+        {
+            "title": "",
+            "original_title": "",
+            "director": "",
+            "genres": "",
+            "year": 0,
+            "trailer": "",
+            "wiki": "",
+            "imdb": "",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": ""
+        },
+        {
+            "title": "",
+            "original_title": "",
+            "director": "",
+            "genres": "",
+            "year": 0,
+            "trailer": "",
+            "wiki": "",
+            "imdb": "",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": ""
+        }
+    ]
 }
-]}

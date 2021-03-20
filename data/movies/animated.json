@@ -1,34 +1,36 @@
 {
-"category": "animated",
-"movies": [
-{
-    "title": "The Breadwinner",
-    "original_title": "",
-    "director": "Nora Twomey",
-    "genres": "drama",
-    "year": 2017,
-    "trailer": "https://www.youtube.com/watch?v=p64O8KAHHaQ",
-    "wiki": "https://en.wikipedia.org/wiki/The_Breadwinner_(film)",
-    "imdb": "https://www.imdb.com/title/tt3901826/",
-    "justwatch": "https://www.justwatch.com/uk/movie/the-breadwinner",
-    "rt": "https://www.rottentomatoes.com/m/the_breadwinner",
-    "netflix": "https://www.netflix.com/gb/title/80217121",
-    "comments": ""
+    "category": "animated",
+    "movies": [
+        {
+            "title": "The Breadwinner",
+            "original_title": "",
+            "director": "Nora Twomey",
+            "genres": [
+                "drama"
+            ],
+            "year": 2017,
+            "trailer": "https://www.youtube.com/watch?v=p64O8KAHHaQ",
+            "wiki": "https://en.wikipedia.org/wiki/The_Breadwinner_(film)",
+            "imdb": "https://www.imdb.com/title/tt3901826/",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-breadwinner",
+            "rt": "https://www.rottentomatoes.com/m/the_breadwinner",
+            "netflix": "https://www.netflix.com/gb/title/80217121",
+            "comments": "",
+            "tmdb": 435129
+        },
+        {
+            "title": "",
+            "original_title": "",
+            "director": "",
+            "genres": "",
+            "year": 0,
+            "trailer": "",
+            "wiki": "",
+            "imdb": "",
+            "justwatch": "",
+            "netflix": "",
+            "rt": "",
+            "comments": ""
+        }
+    ]
 }
-,{
-    "title": "",
-    "original_title": "",
-    "director": "",
-    "genres": "",
-    "year": 0,
-    "trailer": "",
-    "wiki": "",
-    "imdb": "",
-    "justwatch": "",
-    "netflix": "",
-    "rt": "",
-    "comments": ""
-}
-]}
-
-

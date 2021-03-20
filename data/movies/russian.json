@@ -1,52 +1,68 @@
 {
-"category": "russian",
-"movies": [
-{
-    "title": "The Cranes Are Flying",
-    "original_title": "Летят журавли",
-    "director": "Mikhail Kalatozov",
-    "genres": "Drama, Romance, War",
-    "year": 1957,
-    "trailer": "https://www.youtube.com/watch?v=2e8QkVMM7j8",
-    "wiki": "https://en.wikipedia.org/wiki/The_Cranes_Are_Flying",
-    "imdb": "https://www.imdb.com/title/tt0050634/",
-    "rt": "https://www.rottentomatoes.com/m/the_cranes_are_flying_1960",
-    "comments": "A moving love drama. It's worth to ignore communist propaganda of that era."
-},
-{
-    "title": "Solaris",
-    "original_title": "Солярис",
-    "director": "Andrei Tarkovsky",
-    "genres": "Drama, Mystery, Sci-Fi",
-    "year": 1972,
-    "trailer": "https://www.youtube.com/watch?v=BBYJH6UAAfw",
-    "wiki": "https://en.wikipedia.org/wiki/Solaris_(1972_film)",
-    "imdb": "https://www.imdb.com/title/tt0069293/",
-    "rt": "https://www.rottentomatoes.com/m/solaris_1976",
-    "comments": ""
-},
-{
-    "title": "Stalker",
-    "original_title": "Сталкер",
-    "director": "Andrei Tarkovsky",
-    "genres": "Drama, Sci-Fi",
-    "year": 1979,
-    "trailer": "https://www.youtube.com/watch?v=9nm8wrcWh0Y",
-    "wiki": "https://en.wikipedia.org/wiki/Stalker_(1979_film)",
-    "imdb": "https://www.imdb.com/title/tt0079944/",
-    "rt": "https://www.rottentomatoes.com/m/1043378-stalker",
-    "comments": ""
-},
-{
-    "title": "Burnt by the Sun",
-    "original_title": "Утомлённые солнцем",
-    "director": "Nikita Mikhalkov",
-    "genres": "Drama, History, War",
-    "year": 1994,
-    "trailer": "https://www.youtube.com/watch?v=AN3reMv7DWY",
-    "wiki": "https://en.wikipedia.org/wiki/Burnt_by_the_Sun",
-    "imdb": "https://www.imdb.com/title/tt0111579/",
-    "rt": "https://www.rottentomatoes.com/m/burnt_by_the_sun",
-    "comments": ""
+    "category": "russian",
+    "movies": [
+        {
+            "title": "The Cranes Are Flying",
+            "original_title": "\u041b\u0435\u0442\u044f\u0442 \u0436\u0443\u0440\u0430\u0432\u043b\u0438",
+            "director": "Mikhail Kalatozov",
+            "genres": [
+                "drama",
+                "romance",
+                "war"
+            ],
+            "year": 1957,
+            "trailer": "https://www.youtube.com/watch?v=2e8QkVMM7j8",
+            "wiki": "https://en.wikipedia.org/wiki/The_Cranes_Are_Flying",
+            "imdb": "https://www.imdb.com/title/tt0050634/",
+            "rt": "https://www.rottentomatoes.com/m/the_cranes_are_flying_1960",
+            "comments": "A moving love drama. It's worth to ignore communist propaganda of that era."
+        },
+        {
+            "title": "Solaris",
+            "original_title": "\u0421\u043e\u043b\u044f\u0440\u0438\u0441",
+            "director": "Andrei Tarkovsky",
+            "genres": [
+                "drama",
+                "mystery",
+                "sci-fi"
+            ],
+            "year": 1972,
+            "trailer": "https://www.youtube.com/watch?v=BBYJH6UAAfw",
+            "wiki": "https://en.wikipedia.org/wiki/Solaris_(1972_film)",
+            "imdb": "https://www.imdb.com/title/tt0069293/",
+            "rt": "https://www.rottentomatoes.com/m/solaris_1976",
+            "comments": ""
+        },
+        {
+            "title": "Stalker",
+            "original_title": "\u0421\u0442\u0430\u043b\u043a\u0435\u0440",
+            "director": "Andrei Tarkovsky",
+            "genres": [
+                "drama",
+                "sci-fi"
+            ],
+            "year": 1979,
+            "trailer": "https://www.youtube.com/watch?v=9nm8wrcWh0Y",
+            "wiki": "https://en.wikipedia.org/wiki/Stalker_(1979_film)",
+            "imdb": "https://www.imdb.com/title/tt0079944/",
+            "rt": "https://www.rottentomatoes.com/m/1043378-stalker",
+            "comments": ""
+        },
+        {
+            "title": "Burnt by the Sun",
+            "original_title": "\u0423\u0442\u043e\u043c\u043b\u0451\u043d\u043d\u044b\u0435 \u0441\u043e\u043b\u043d\u0446\u0435\u043c",
+            "director": "Nikita Mikhalkov",
+            "genres": [
+                "drama",
+                "history",
+                "war"
+            ],
+            "year": 1994,
+            "trailer": "https://www.youtube.com/watch?v=AN3reMv7DWY",
+            "wiki": "https://en.wikipedia.org/wiki/Burnt_by_the_Sun",
+            "imdb": "https://www.imdb.com/title/tt0111579/",
+            "rt": "https://www.rottentomatoes.com/m/burnt_by_the_sun",
+            "comments": ""
+        }
+    ]
 }
-]}
