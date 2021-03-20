@@ -6,14 +6,23 @@
             "original_title": "\u4eba\u9593\u306e\u689d\u4ef6, Ningen no j\u014dken",
             "director": "Masaki Kobayashi",
             "genres": [
-                "epic drama romance"
+                "epic",
+                "drama",
+                "romance"
             ],
             "year": 1959,
             "trailer": "https://www.youtube.com/watch?v=mS8YraEXC9c",
             "wiki": "https://en.wikipedia.org/wiki/The_Human_Condition_(film_series)",
             "imdb": "https://www.imdb.com/title/tt0053114/",
             "rt": "https://www.rottentomatoes.com/m/ningen_no_joken_i",
-            "comments": "great story and top-notch camera work"
+            "comments": "great story and top-notch camera work",
+            "tmdb": 31217,
+            "production_countries": [
+                {
+                    "iso_3166_1": "JP",
+                    "name": "Japan"
+                }
+            ]
         },
         {
             "title": "Tokyo Story",
@@ -27,7 +36,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Tokyo_Story",
             "imdb": "https://www.imdb.com/title/tt0046438/",
             "rt": "https://www.rottentomatoes.com/m/tokyo_story",
-            "comments": "it's worth to watch it with the commentary"
+            "comments": "it's worth to watch it with the commentary",
+            "tmdb": 18148,
+            "production_countries": [
+                {
+                    "iso_3166_1": "JP",
+                    "name": "Japan"
+                }
+            ]
         },
         {
             "title": "After life",
@@ -42,7 +58,14 @@
             "wiki": "https://en.wikipedia.org/wiki/After_Life_(film)",
             "imdb": "https://www.imdb.com/title/tt0165078/",
             "rt": "https://www.rottentomatoes.com/m/after_life",
-            "comments": ""
+            "comments": "",
+            "tmdb": 17962,
+            "production_countries": [
+                {
+                    "iso_3166_1": "JP",
+                    "name": "Japan"
+                }
+            ]
         },
         {
             "title": "",

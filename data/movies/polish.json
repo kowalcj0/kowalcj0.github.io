@@ -13,7 +13,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Dekalog",
             "imdb": "https://www.imdb.com/title/tt0092337/",
             "rt": "https://www.rottentomatoes.com/tv/the_decalogue/s01",
-            "comments": "A set of 10 movies, loosely based on 10 commandments (these are not religious movies). Very moving!"
+            "comments": "A set of 10 movies, loosely based on 10 commandments (these are not religious movies). Very moving!",
+            "tmdb": 37452,
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
         },
         {
             "title": "Innocent Sorcerers",
@@ -29,7 +36,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Innocent_Sorcerers",
             "imdb": "https://www.imdb.com/title/tt0054119/",
             "rt": "https://www.rottentomatoes.com/m/innocent_sorcerers",
-            "comments": "oh that Jazz!"
+            "comments": "oh that Jazz!",
+            "tmdb": 80324,
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
         },
         {
             "title": "Night Train",
@@ -45,7 +59,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Night_Train_(1959_film)",
             "imdb": "https://www.imdb.com/title/tt0053176/",
             "rt": "https://www.rottentomatoes.com/m/pociag",
-            "comments": ""
+            "comments": "",
+            "tmdb": 38898,
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
         },
         {
             "title": "A Short Film About Killing",
@@ -60,7 +81,14 @@
             "wiki": "https://en.wikipedia.org/wiki/A_Short_Film_About_Killing",
             "imdb": "https://www.imdb.com/title/tt0095468/",
             "rt": "https://www.rottentomatoes.com/m/a_short_film_about_killing",
-            "comments": ""
+            "comments": "",
+            "tmdb": 10754,
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
         },
         {
             "title": "A Short Film About Love",
@@ -75,7 +103,14 @@
             "wiki": "https://en.wikipedia.org/wiki/A_Short_Film_About_Love",
             "imdb": "https://www.imdb.com/title/tt0095467/",
             "rt": "https://www.rottentomatoes.com/m/short_film_about_love",
-            "comments": ""
+            "comments": "",
+            "tmdb": 31056,
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
         },
         {
             "title": "Kanal",
@@ -90,7 +125,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Kana\u0142",
             "imdb": "https://www.imdb.com/title/tt0050585/",
             "rt": "https://www.rottentomatoes.com/m/kanal_1957",
-            "comments": ""
+            "comments": "",
+            "tmdb": 29933,
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
         },
         {
             "title": "Day of the Wacko",
@@ -105,7 +147,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Day_of_the_Wacko",
             "imdb": "https://www.imdb.com/title/tt0330243/",
             "rt": "https://www.rottentomatoes.com/m/day_of_the_wacko",
-            "comments": "Great ironic comedy. Depicts the political & social transformation of the early 90s"
+            "comments": "Great ironic comedy. Depicts the political & social transformation of the early 90s",
+            "tmdb": 20719,
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
         },
         {
             "title": "Teddy Bear",
@@ -119,7 +168,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Teddy_Bear_(1980_film)",
             "imdb": "https://www.imdb.com/title/tt0082755/",
             "rt": "",
-            "comments": "Great comedy but might be a bit too hard to understand without prior knowledge of some the absurds of everyday life in a communist country"
+            "comments": "Great comedy but might be a bit too hard to understand without prior knowledge of some the absurds of everyday life in a communist country",
+            "tmdb": 31407,
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
         },
         {
             "title": "Sexmission",
@@ -134,7 +190,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Sexmission",
             "imdb": "https://www.imdb.com/title/tt0088083/",
             "rt": "https://www.rottentomatoes.com/m/seksmisja",
-            "comments": "One of the greatest Polish comedies"
+            "comments": "One of the greatest Polish comedies",
+            "tmdb": 19673,
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
         },
         {
             "title": "Symmetry",
@@ -148,7 +211,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Symmetry_(film)",
             "imdb": "https://www.imdb.com/title/tt0381637/",
             "rt": "https://www.rottentomatoes.com/m/symmetry_2004",
-            "comments": "Modern, moving and depressing"
+            "comments": "Modern, moving and depressing",
+            "tmdb": 38530,
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
         },
         {
             "title": "Ida",
@@ -162,7 +232,26 @@
             "wiki": "https://en.wikipedia.org/wiki/Ida_(film)",
             "imdb": "https://www.imdb.com/title/tt2718492/",
             "rt": "https://www.rottentomatoes.com/m/ida_2013",
-            "comments": ""
+            "comments": "",
+            "tmdb": 209274,
+            "production_countries": [
+                {
+                    "iso_3166_1": "DK",
+                    "name": "Denmark"
+                },
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                },
+                {
+                    "iso_3166_1": "GB",
+                    "name": "United Kingdom"
+                }
+            ]
         },
         {
             "title": "Cold war",
@@ -178,7 +267,22 @@
             "wiki": "https://en.wikipedia.org/wiki/Cold_War_(2018_film)",
             "imdb": "https://www.imdb.com/title/tt6543652/",
             "rt": "https://www.rottentomatoes.com/m/cold_war_2018",
-            "comments": ""
+            "comments": "",
+            "tmdb": 440298,
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                },
+                {
+                    "iso_3166_1": "GB",
+                    "name": "United Kingdom"
+                }
+            ]
         },
         {
             "title": "",

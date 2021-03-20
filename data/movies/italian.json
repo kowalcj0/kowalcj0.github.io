@@ -14,7 +14,18 @@
             "wiki": "https://en.wikipedia.org/wiki/Rocco_and_His_Brothers",
             "imdb": "https://www.imdb.com/title/tt0054248/",
             "rt": "https://www.rottentomatoes.com/m/rocco_and_his_brothers",
-            "comments": ""
+            "comments": "",
+            "tmdb": 8422,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                },
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                }
+            ]
         },
         {
             "title": "Life Is Beautiful",
@@ -30,7 +41,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Life_Is_Beautiful",
             "imdb": "https://www.imdb.com/title/tt0118799/",
             "rt": "https://www.rottentomatoes.com/m/1084398_life_is_beautiful",
-            "comments": "Buon Giorno Principessa"
+            "comments": "Buon Giorno Principessa",
+            "tmdb": 637,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
         },
         {
             "title": "8\u00bd",
@@ -44,7 +62,18 @@
             "wiki": "https://en.wikipedia.org/wiki/8\u00bd",
             "imdb": "https://www.imdb.com/title/tt0056801/",
             "rt": "https://www.rottentomatoes.com/m/8_12",
-            "comments": ""
+            "comments": "",
+            "tmdb": 422,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                },
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                }
+            ]
         },
         {
             "title": "Bicycle Thieves",
@@ -58,7 +87,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Bicycle_Thieves",
             "imdb": "https://www.imdb.com/title/tt0040522/",
             "rt": "https://www.rottentomatoes.com/m/bicycle_thieves",
-            "comments": ""
+            "comments": "",
+            "tmdb": 5156,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
         },
         {
             "title": "La Dolce Vita",
@@ -73,7 +109,18 @@
             "wiki": "https://en.wikipedia.org/wiki/La_Dolce_Vita",
             "imdb": "https://www.imdb.com/title/tt0053779/",
             "rt": "https://www.rottentomatoes.com/m/dolce_vita",
-            "comments": ""
+            "comments": "",
+            "tmdb": 439,
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
         },
         {
             "title": "Marriage Italian Style",
@@ -89,7 +136,18 @@
             "wiki": "https://en.wikipedia.org/wiki/Marriage_Italian_Style",
             "imdb": "https://www.imdb.com/title/tt0058335/",
             "rt": "https://www.rottentomatoes.com/m/marriage_italian_style",
-            "comments": ""
+            "comments": "",
+            "tmdb": 49687,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                },
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                }
+            ]
         },
         {
             "title": "Divorce Italian Style",
@@ -105,7 +163,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Divorce_Italian_Style",
             "imdb": "https://www.imdb.com/title/tt0055913/",
             "rt": "https://www.rottentomatoes.com/m/divorce_italian_style",
-            "comments": ""
+            "comments": "",
+            "tmdb": 20271,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
         },
         {
             "title": "Rome, Open City",
@@ -121,7 +186,14 @@
             "wiki": "https://en.wikipedia.org/wiki/Rome,_Open_City",
             "imdb": "https://www.imdb.com/title/tt0038890/",
             "rt": "",
-            "comments": ""
+            "comments": "",
+            "tmdb": 307,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
         },
         {
             "title": "La Strada",
@@ -135,7 +207,14 @@
             "wiki": "https://en.wikipedia.org/wiki/La_Strada",
             "imdb": "https://www.imdb.com/title/tt0047528/",
             "rt": "https://www.rottentomatoes.com/m/the_road_1954",
-            "comments": "Depicts harsh reality of post-war Italy"
+            "comments": "Depicts harsh reality of post-war Italy",
+            "tmdb": 405,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
         },
         {
             "title": "Dogman",
@@ -152,7 +231,14 @@
             "rt": "https://www.rottentomatoes.com/m/dogman_2018",
             "netflix": "",
             "justwatch": "https://www.justwatch.com/ca/movie/dogman",
-            "comments": "Being coerced by a bully to do bad things, sucks!"
+            "comments": "Being coerced by a bully to do bad things, sucks!",
+            "tmdb": 483184,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
         },
         {
             "title": "",

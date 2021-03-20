@@ -16,7 +16,17 @@
             "rt": "https://www.rottentomatoes.com/m/chronos",
             "justwatch": "",
             "comments": "",
-            "tmdb": 18493
+            "tmdb": 18493,
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                },
+                {
+                    "iso_3166_1": "CA",
+                    "name": "Canada"
+                }
+            ]
         },
         {
             "title": "Anima Mundi (The Soul of the World)",
@@ -31,7 +41,17 @@
             "rt": "https://www.rottentomatoes.com/m/anima_mundi",
             "justwatch": "",
             "comments": "Ah! the dance of the kelp forest was amazing! PS. The film was scored by Philip Glass.",
-            "tmdb": 54220
+            "tmdb": 54220,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "Baraka",
@@ -47,7 +67,13 @@
             "rt": "https://www.rottentomatoes.com/m/baraka/",
             "justwatch": "https://www.justwatch.com/uk/movie/baraka",
             "comments": "",
-            "tmdb": 14002
+            "tmdb": 14002,
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "Samsara",
@@ -63,7 +89,101 @@
             "rt": "https://www.rottentomatoes.com/m/samsara_2011",
             "justwatch": "https://www.justwatch.com/uk/movie/samsara",
             "comments": "",
-            "tmdb": 89708
+            "tmdb": 89708,
+            "production_countries": [
+                {
+                    "iso_3166_1": "AO",
+                    "name": "Angola"
+                },
+                {
+                    "iso_3166_1": "BR",
+                    "name": "Brazil"
+                },
+                {
+                    "iso_3166_1": "CN",
+                    "name": "China"
+                },
+                {
+                    "iso_3166_1": "DK",
+                    "name": "Denmark"
+                },
+                {
+                    "iso_3166_1": "EG",
+                    "name": "Egypt"
+                },
+                {
+                    "iso_3166_1": "ET",
+                    "name": "Ethiopia"
+                },
+                {
+                    "iso_3166_1": "GH",
+                    "name": "Ghana"
+                },
+                {
+                    "iso_3166_1": "HK",
+                    "name": "Hong Kong"
+                },
+                {
+                    "iso_3166_1": "ID",
+                    "name": "Indonesia"
+                },
+                {
+                    "iso_3166_1": "IL",
+                    "name": "Israel"
+                },
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                },
+                {
+                    "iso_3166_1": "JP",
+                    "name": "Japan"
+                },
+                {
+                    "iso_3166_1": "JO",
+                    "name": "Jordan"
+                },
+                {
+                    "iso_3166_1": "ML",
+                    "name": "Mali"
+                },
+                {
+                    "iso_3166_1": "MM",
+                    "name": "Myanmar"
+                },
+                {
+                    "iso_3166_1": "NA",
+                    "name": "Namibia"
+                },
+                {
+                    "iso_3166_1": "PH",
+                    "name": "Philippines"
+                },
+                {
+                    "iso_3166_1": "SA",
+                    "name": "Saudi Arabia"
+                },
+                {
+                    "iso_3166_1": "KR",
+                    "name": "South Korea"
+                },
+                {
+                    "iso_3166_1": "TH",
+                    "name": "Thailand"
+                },
+                {
+                    "iso_3166_1": "TR",
+                    "name": "Turkey"
+                },
+                {
+                    "iso_3166_1": "AE",
+                    "name": "United Arab Emirates"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "",

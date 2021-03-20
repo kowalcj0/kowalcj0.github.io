@@ -15,7 +15,21 @@
             "rt": "https://www.rottentomatoes.com/m/discreet_charm_of_the_bourgeoisie",
             "justwatch": "https://www.justwatch.com/uk/movie/the-discreet-charm-of-the-bourgeoisie",
             "comments": "",
-            "tmdb": 4593
+            "tmdb": 4593,
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                },
+                {
+                    "iso_3166_1": "ES",
+                    "name": "Spain"
+                }
+            ]
         },
         {
             "title": "The Phantom of Liberty",
@@ -31,7 +45,17 @@
             "rt": "https://www.rottentomatoes.com/m/phantom_of_liberty",
             "justwatch": "https://www.justwatch.com/uk/movie/the-phantom-of-liberty",
             "comments": "",
-            "tmdb": 5558
+            "tmdb": 5558,
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
         },
         {
             "title": "That Obscure Object of Desire",
@@ -47,7 +71,17 @@
             "rt": "https://www.rottentomatoes.com/m/that_obscure_object_of_desire",
             "justwatch": "https://www.justwatch.com/uk/movie/that-obscure-object-of-desire",
             "comments": "",
-            "tmdb": 5781
+            "tmdb": 5781,
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "ES",
+                    "name": "Spain"
+                }
+            ]
         }
     ]
 }

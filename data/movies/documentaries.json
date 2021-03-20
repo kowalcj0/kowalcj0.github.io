@@ -12,7 +12,14 @@
             "wiki": "https://en.wikipedia.org/wiki/The_Red_Pill",
             "imdb": "https://www.imdb.com/title/tt3686998/",
             "rt": "https://www.rottentomatoes.com/m/the_red_pill_2016",
-            "comments": ""
+            "comments": "",
+            "tmdb": 366696,
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "The Laundromat",
@@ -27,7 +34,14 @@
             "wiki": "https://en.wikipedia.org/wiki/The_Laundromat_(film)",
             "imdb": "https://www.imdb.com/title/tt5865326/",
             "rt": "https://www.rottentomatoes.com/m/the_laundromat",
-            "comments": "System of money laundering explained by J\u00fcrgen Mossack and Ram\u00f3n Fonseca"
+            "comments": "System of money laundering explained by J\u00fcrgen Mossack and Ram\u00f3n Fonseca",
+            "tmdb": 517909,
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "",

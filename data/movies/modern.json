@@ -14,7 +14,33 @@
             "imdb": "https://www.imdb.com/title/tt8579674/",
             "rt": "https://www.rottentomatoes.com/m/1917_2019",
             "comments": "Amazing long takes",
-            "tmdb": 530915
+            "tmdb": 530915,
+            "production_countries": [
+                {
+                    "iso_3166_1": "CA",
+                    "name": "Canada"
+                },
+                {
+                    "iso_3166_1": "CN",
+                    "name": "China"
+                },
+                {
+                    "iso_3166_1": "IN",
+                    "name": "India"
+                },
+                {
+                    "iso_3166_1": "ES",
+                    "name": "Spain"
+                },
+                {
+                    "iso_3166_1": "GB",
+                    "name": "United Kingdom"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "The Gentleman",
@@ -30,7 +56,17 @@
             "imdb": "https://www.imdb.com/title/tt8367814/",
             "rt": "https://www.rottentomatoes.com/m/the_gentlemen",
             "comments": "",
-            "tmdb": 522627
+            "tmdb": 522627,
+            "production_countries": [
+                {
+                    "iso_3166_1": "GB",
+                    "name": "United Kingdom"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "Bacurau",
@@ -44,7 +80,17 @@
             "imdb": "https://www.imdb.com/title/tt2762506/",
             "rt": "https://www.rottentomatoes.com/m/bacurau",
             "comments": "Imagine Tarantino going on holidays to Brazil just to make a movie about human hunting as a sport combined with some references to The Magnificent Seven and to Brazilian social banditry legends ([Canga\u00e7o](https://en.wikipedia.org/wiki/Canga%C3%A7o)). Moreover, all of that is set in the near future with flying-saucer like drones.",
-            "tmdb": 446159
+            "tmdb": 446159,
+            "production_countries": [
+                {
+                    "iso_3166_1": "BR",
+                    "name": "Brazil"
+                },
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                }
+            ]
         },
         {
             "title": "Free State of Jones",
@@ -60,7 +106,13 @@
             "imdb": "https://www.imdb.com/title/tt1124037/",
             "rt": "https://www.rottentomatoes.com/m/free_state_of_jones",
             "comments": "",
-            "tmdb": 316152
+            "tmdb": 316152,
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "Togo",
@@ -74,7 +126,13 @@
             "imdb": "https://www.imdb.com/title/tt8096836/",
             "rt": "https://www.rottentomatoes.com/m/togo_2019",
             "comments": "**Willem Dafoe** FTW!",
-            "tmdb": 606856
+            "tmdb": 606856,
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "Pandorum",
@@ -90,7 +148,17 @@
             "imdb": "https://www.imdb.com/title/tt1188729/",
             "rt": "https://www.rottentomatoes.com/m/pandorum",
             "comments": "A must see for all Alien series lovers",
-            "tmdb": 19898
+            "tmdb": 19898,
+            "production_countries": [
+                {
+                    "iso_3166_1": "DE",
+                    "name": "Germany"
+                },
+                {
+                    "iso_3166_1": "GB",
+                    "name": "United Kingdom"
+                }
+            ]
         },
         {
             "title": "The Square",
@@ -105,7 +173,25 @@
             "imdb": "https://www.imdb.com/title/tt4995790/",
             "rt": "https://www.rottentomatoes.com/m/the_square_2017",
             "comments": "",
-            "tmdb": 401246
+            "tmdb": 401246,
+            "production_countries": [
+                {
+                    "iso_3166_1": "DK",
+                    "name": "Denmark"
+                },
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "DE",
+                    "name": "Germany"
+                },
+                {
+                    "iso_3166_1": "SE",
+                    "name": "Sweden"
+                }
+            ]
         },
         {
             "title": "The Red Turtle",
@@ -121,7 +207,21 @@
             "imdb": "https://www.imdb.com/title/tt3666024/",
             "rt": "https://www.rottentomatoes.com/m/the_red_turtle",
             "comments": "",
-            "tmdb": 337703
+            "tmdb": 337703,
+            "production_countries": [
+                {
+                    "iso_3166_1": "BE",
+                    "name": "Belgium"
+                },
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "JP",
+                    "name": "Japan"
+                }
+            ]
         },
         {
             "title": "November",
@@ -137,7 +237,21 @@
             "imdb": "https://www.imdb.com/title/tt6164502/",
             "rt": "https://www.rottentomatoes.com/m/november_2018",
             "comments": "A gloomy & murky Estonian movie with fantastic camera work",
-            "tmdb": 437583
+            "tmdb": 437583,
+            "production_countries": [
+                {
+                    "iso_3166_1": "EE",
+                    "name": "Estonia"
+                },
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                },
+                {
+                    "iso_3166_1": "NL",
+                    "name": "Netherlands"
+                }
+            ]
         },
         {
             "title": "The Handmaiden",
@@ -153,7 +267,13 @@
             "imdb": "https://www.imdb.com/title/tt4016934/",
             "rt": "https://www.rottentomatoes.com/m/the_handmaiden",
             "comments": "",
-            "tmdb": 290098
+            "tmdb": 290098,
+            "production_countries": [
+                {
+                    "iso_3166_1": "KR",
+                    "name": "South Korea"
+                }
+            ]
         },
         {
             "title": "Marriage Story",
@@ -169,7 +289,13 @@
             "imdb": "https://www.imdb.com/title/tt7653254/",
             "rt": "https://www.rottentomatoes.com/m/marriage_story_2019",
             "comments": "Oh Scarlet!!!",
-            "tmdb": 492188
+            "tmdb": 492188,
+            "production_countries": [
+                {
+                    "iso_3166_1": "GB",
+                    "name": "United Kingdom"
+                }
+            ]
         },
         {
             "title": "Roma",
@@ -184,7 +310,17 @@
             "rt": "https://www.rottentomatoes.com/m/roma_2018",
             "netflix": "https://www.netflix.com/gb/title/80240715",
             "comments": "",
-            "tmdb": 426426
+            "tmdb": 426426,
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                },
+                {
+                    "iso_3166_1": "MX",
+                    "name": "Mexico"
+                }
+            ]
         },
         {
             "title": "The Bar",
@@ -200,7 +336,13 @@
             "rt": "https://www.rottentomatoes.com/m/the_bar_2017",
             "netflix": "https://www.netflix.com/gb/title/80103311",
             "comments": "",
-            "tmdb": 420648
+            "tmdb": 420648,
+            "production_countries": [
+                {
+                    "iso_3166_1": "ES",
+                    "name": "Spain"
+                }
+            ]
         },
         {
             "title": "La Haine",
@@ -215,7 +357,13 @@
             "imdb": "https://www.imdb.com/title/tt0113247/",
             "rt": "https://www.rottentomatoes.com/m/la_haine",
             "comments": "One of the best french movies I've ever seen",
-            "tmdb": 406
+            "tmdb": 406,
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                }
+            ]
         },
         {
             "title": "Django Unchained",
@@ -229,7 +377,13 @@
             "imdb": "https://www.imdb.com/title/tt1853728/",
             "rt": "https://www.rottentomatoes.com/m/django_unchained_2012",
             "comments": "",
-            "tmdb": 68718
+            "tmdb": 68718,
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "Beasts of the Southern Wild",
@@ -247,7 +401,13 @@
             "netflix": "",
             "justwatch": "https://www.justwatch.com/uk/movie/beasts-of-the-southern-wild",
             "comments": "",
-            "tmdb": 84175
+            "tmdb": 84175,
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         },
         {
             "title": "The Nightingale",
@@ -265,7 +425,13 @@
             "netflix": "https://www.netflix.com/gb/title/80202703",
             "rt": "https://www.rottentomatoes.com/m/the_nightingale_2019",
             "comments": "A female Django Unchained!!!",
-            "tmdb": 400090
+            "tmdb": 400090,
+            "production_countries": [
+                {
+                    "iso_3166_1": "AU",
+                    "name": "Australia"
+                }
+            ]
         },
         {
             "title": "Mal\u00e8na",
@@ -283,7 +449,13 @@
             "netflix": "",
             "rt": "https://www.rottentomatoes.com/m/1101561_1101561_malena",
             "comments": "",
-            "tmdb": 10867
+            "tmdb": 10867,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
         },
         {
             "title": "The best offer",
@@ -300,7 +472,13 @@
             "rt": "https://www.rottentomatoes.com/m/the_best_offer",
             "comments": "",
             "watched": "2021-01-28",
-            "tmdb": 152742
+            "tmdb": 152742,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
         },
         {
             "title": "",

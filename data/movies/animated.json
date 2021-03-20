@@ -16,7 +16,21 @@
             "rt": "https://www.rottentomatoes.com/m/the_breadwinner",
             "netflix": "https://www.netflix.com/gb/title/80217121",
             "comments": "",
-            "tmdb": 435129
+            "tmdb": 435129,
+            "production_countries": [
+                {
+                    "iso_3166_1": "IE",
+                    "name": "Ireland"
+                },
+                {
+                    "iso_3166_1": "CA",
+                    "name": "Canada"
+                },
+                {
+                    "iso_3166_1": "LU",
+                    "name": "Luxembourg"
+                }
+            ]
         },
         {
             "title": "",
