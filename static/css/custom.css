@@ -21,3 +21,24 @@ h2:hover > a.octicon-link {
 h3:hover > a.octicon-link {
     visibility: visible;
 }
+
+
+/* Custom Summary Detail Marker */
+details:not([open])>:not(summary) {
+    display: none
+}
+
+details>summary:before {
+    content: "\25BC";
+    display: inline-block;
+    margin-right: .65em;
+    transition: .3s;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+}
+
+details[open]>summary:before {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+
