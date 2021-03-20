@@ -1,37 +1,36 @@
 {{ $category := (.Get "category") }}
 {{ with $category }}
-
-<table aria-label="Interesting {{ $category }} movies" style="font-size:80%;width:1024px">
-  <colgroup>
-    <col span="1" style="width: 20%;">
-    <col span="1" style="width: 15%;">
-    <col span="1" style="width: 20%;">
-    <col span="1" style="width: 5%;">
-    <col span="1" style="width: 17%;">
-    <col span="1" style="width: 23%;">
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Director</th>
-      <th>Genres</th>
-      <th>Year</th>
-      <th>Links</th>
-      <th>Comments</th>
-    </tr>
-  </thead>
+<table aria-label="Interesting {{ $category }} movies" style="font-size:80%;width:100%">
   <tbody>
 {{ range $.Site.Data.movies }}
     {{ if eq $category .category }}
-        {{ range sort .movies "year" "asc" }}
+        {{ range sort .movies "title" "asc" }}
             {{ if .title }}
     <tr tabindex="0">
-      <td>{{ .title }}{{ if .original_title }} ({{ .original_title }}){{ end }} {{ if .watched }}{{ partial "svg/octicons/device-camera-video.svg" . }}{{ end }}</td>
-      <td>{{ .director }}</td>
-      <td>{{ .genres }}</td>
-      <td>{{ .year }}</td>
-      <td>{{ partial "movie_links.html" .}}</td>
-      <td>{{ with .comments }}{{ . | markdownify }}{{ end }}<td>
+      <details id="details-{{ .title | anchorize }}">
+        <summary><b>{{ .title }}</b>{{ if .original_title }} (orig. {{ .original_title }}){{ end }}, by {{ .director }} ({{ .year }})<a class="octicon-link" href="#{{ .title | anchorize }}">{{ partial "svg/octicons/link.svg" }}</a></summary>
+        <ul>
+        {{ if .genres }}
+        <li title="Genres" aria-label="Genres" style="list-style-image: url('/img/octicons/pencil.svg'); margin-left: 0.5rem">{{ delimit .genres ", " }}</li>
+        {{ end }}
+        {{ if .watched }}
+        <li title="Seen on" aria-label="Seen on" style="list-style-image: url('/img/octicons/device-camera-video.svg'); margin-left: 0.5rem">{{ .watched }}</li>
+        {{ end }}
+        <li title="Links" aria-label="Links" style="list-style-image: url('/img/octicons/globe.svg'); margin-left: 0.5rem">{{ partial "movie_links.html" . }}</li>
+        {{ if .comments }}
+        <li title="Comments" aria-label="Comments" style="list-style-image: url('/img/octicons/note.svg'); margin-left: 0.5rem" id="comments-{{ .title | anchorize }}">Comments: {{ .comments | markdownify }}</li>
+        {{ end }}
+        {{ if .quotes }}
+        <li title="Quotes" aria-label="Quoutes" style="list-style-image: url('/img/octicons/quote.svg'); margin-left: 0.5rem" id="quotes-{{ .title | anchorize }}">Quotes:
+          <ul>
+              {{ range $quote := .quotes }}
+              <li>{{ $quote | markdownify }}</li>
+              {{ end }}
+          </ul>
+        </li>
+        {{ end }}
+        </ul>
+      </details>
     </tr>
             {{ end }}
         {{ end }}
