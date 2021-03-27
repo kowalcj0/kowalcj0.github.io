@@ -52,6 +52,9 @@ If you looking for something interesting to watch have a look at those lists:
 ### Brazil
 {{< movies category="brazilian" >}}
 
+### France
+{{< movies category="french" >}}
+
 ### Italy
 {{< movies category="italian" >}}
  
