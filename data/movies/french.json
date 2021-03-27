@@ -1,0 +1,28 @@
+{
+    "category": "french",
+    "movies": [
+        {
+            "title": "Goto, Island of Love",
+            "original_title": "Goto, l'\u00eele d'amour",
+            "director": "Walerian Borowczyk",
+            "genres": [
+                "drama"
+            ],
+            "year": 1969,
+            "trailer": "https://www.youtube.com/watch?v=f99I6e4ABe4",
+            "wiki": "https://en.wikipedia.org/wiki/Goto,_Island_of_Love",
+            "imdb": "https://www.imdb.com/title/tt0063026/",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": "",
+            "tmdb": 105843,
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                }
+            ]
+        }
+    ]
+}

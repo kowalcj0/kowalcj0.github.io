@@ -49,6 +49,9 @@ If you looking for something interesting to watch have a look at those lists:
 
 ## By country
 
+### Brazil
+{{< movies category="brazilian" >}}
+
 ### Italy
 {{< movies category="italian" >}}
  
@@ -70,6 +73,12 @@ Rather scandalous and avant-garde movies:
 
 ### Akira Kurosawa
 {{< movies category="kurosawa" >}}
+ 
+##### Akira Kurosawa’s List of His 100 Favorite Movies
+
+Source: https://www.openculture.com/2015/01/akira-kurosawas-list-of-his-100-favorite-movies.html
+
+{{< movies category="kurosawas_favourite" >}}
  
 
 ## Warsaw Film School: Film Directing

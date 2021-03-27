@@ -1,0 +1,161 @@
+{
+    "category": "brazilian",
+    "movies": [
+        {
+            "title": "The Bandit",
+            "original_title": "O Cangaceiro",
+            "director": "Lima Barreto",
+            "genres": [
+                "drama",
+                "adventure",
+                "western"
+            ],
+            "year": 1953,
+            "trailer": "",
+            "wiki": "https://en.wikipedia.org/wiki/Smokey_and_the_Bandit",
+            "imdb": "https://www.imdb.com/title/tt0045595/",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": "",
+            "tmdb": 67615,
+            "production_countries": [
+                {
+                    "iso_3166_1": "BR",
+                    "name": "Brazil"
+                }
+            ]
+        },
+        {
+            "title": "Gabriela",
+            "original_title": "Gabriela, Cravo e Canela",
+            "director": "Bruno Barreto",
+            "genres": [
+                "drama",
+                "romance"
+            ],
+            "year": 1983,
+            "trailer": "https://www.youtube.com/watch?v=8h8BqDRqDh0",
+            "wiki": "https://en.wikipedia.org/wiki/Gabriela_(1983_film)",
+            "imdb": "https://www.imdb.com/title/tt0085575/",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": "",
+            "tmdb": 42109,
+            "production_countries": [
+                {
+                    "iso_3166_1": "BR",
+                    "name": "Brazil"
+                }
+            ]
+        },
+        {
+            "title": "Bacurau",
+            "director": "Kleber Mendon\u00e7a Filho, Juliano Dornelles",
+            "genres": [
+                "weird western"
+            ],
+            "year": 2019,
+            "trailer": "https://www.youtube.com/watch?v=LKTejyk9ZIA",
+            "wiki": "https://en.wikipedia.org/wiki/Bacurau",
+            "imdb": "https://www.imdb.com/title/tt2762506/",
+            "rt": "https://www.rottentomatoes.com/m/bacurau",
+            "comments": "Imagine Tarantino going on holidays to Brazil just to make a movie about human hunting as a sport combined with some references to The Magnificent Seven and to Brazilian social banditry legends ([Canga\u00e7o](https://en.wikipedia.org/wiki/Canga%C3%A7o)). Moreover, all of that is set in the near future with flying-saucer like drones.",
+            "tmdb": 446159,
+            "production_countries": [
+                {
+                    "iso_3166_1": "BR",
+                    "name": "Brazil"
+                },
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                }
+            ]
+        },
+        {
+            "title": "Elite Squad",
+            "original_title": "Tropa de Elite",
+            "director": "Jos\u00e9 Padilha",
+            "genres": [
+                "drama",
+                "action",
+                "crime"
+            ],
+            "year": 2007,
+            "trailer": "https://www.youtube.com/watch?v=WNrC-vLpTGI",
+            "wiki": "https://en.wikipedia.org/wiki/Elite_Squad",
+            "imdb": "https://www.imdb.com/title/tt0861739/",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": "",
+            "tmdb": 7347,
+            "production_countries": [
+                {
+                    "iso_3166_1": "BR",
+                    "name": "Brazil"
+                }
+            ]
+        },
+        {
+            "title": "City of God",
+            "original_title": "Cidade de Deus",
+            "director": "Fernando Meirelles",
+            "genres": [
+                "drama",
+                "crime"
+            ],
+            "year": 2002,
+            "trailer": "https://www.youtube.com/watch?v=ioUE_5wpg_E",
+            "wiki": "https://en.wikipedia.org/wiki/City_of_God_(2002_film)",
+            "imdb": "https://www.imdb.com/title/tt0317248/",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": "",
+            "tmdb": 598,
+            "production_countries": [
+                {
+                    "iso_3166_1": "BR",
+                    "name": "Brazil"
+                }
+            ]
+        },
+        {
+            "title": "Black Orpheus",
+            "original_title": "Orfeu Negro",
+            "director": "Marcel Camus",
+            "genres": [
+                "drama",
+                "fantasy",
+                "music",
+                "romance"
+            ],
+            "year": 1959,
+            "trailer": "https://www.youtube.com/watch?v=NkxGkL7o9xk",
+            "wiki": "https://en.wikipedia.org/wiki/Black_Orpheus",
+            "imdb": "https://www.imdb.com/title/tt0053146/",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": "",
+            "tmdb": 40423,
+            "production_countries": [
+                {
+                    "iso_3166_1": "BR",
+                    "name": "Brazil"
+                },
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "IT",
+                    "name": "Italy"
+                }
+            ]
+        }
+    ]
+}
