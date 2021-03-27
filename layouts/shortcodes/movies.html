@@ -9,7 +9,7 @@
     <tr tabindex="0">
     <article id="movie-{{ .title | anchorize }}">
       <details id="details-{{ .title | anchorize }}">
-        <summary><b>{{ .title }}</b>, by {{ .director }}{{ if .original_title }} (orig. {{ .original_title }}){{ end }}, {{ .year }}<a class="octicon-link" href="#{{ .title | anchorize }}">{{ partial "svg/octicons/link.svg" }}</a></summary>
+        <summary id="{{ .title | anchorize }}"><b>{{ .title }}</b>, by {{ .director }}{{ if .original_title }} (orig. {{ .original_title }}){{ end }}, {{ .year }} <a class="octicon-link" href="#{{ .title | anchorize }}">{{ partial "svg/octicons/link.svg" }}</a></summary>
         <ul>
         {{ if .genres }}
         <li title="Genres" aria-label="Genres" style="list-style-image: url('/img/octicons/pencil.svg'); margin-left: 0.5rem">{{ delimit .genres ", " }}</li>
@@ -20,7 +20,7 @@
         {{ if .watched }}
         <li title="Seen on" aria-label="Seen on" style="list-style-image: url('/img/octicons/device-camera-video.svg'); margin-left: 0.5rem">{{ .watched }}</li>
         {{ end }}
-        <li title="Links" aria-label="Links" style="list-style-image: url('/img/octicons/link-external.svg'); margin-left: 0.5rem">{{ partial "movie_links.html" . }}</li>
+        <li title="Links" aria-label="Links" style="list-style-image: url('/img/octicons/link-external.svg'); margin-left: 0.4rem">{{ partial "movie_links.html" . }}</li>
         {{ if .comments }}
         <li title="Comments" aria-label="Comments" style="list-style-image: url('/img/octicons/note.svg'); margin-left: 0.5rem" id="comments-{{ .title | anchorize }}">Comments: {{ .comments | markdownify }}</li>
         {{ end }}
