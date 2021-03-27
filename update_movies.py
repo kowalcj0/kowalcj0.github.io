@@ -64,6 +64,8 @@ def get_tmdb_id(film: dict) -> Optional[int]:
     if not TMDB_API_KEY:
         return None
     tmdb_id = None
+    if "imdb" not in film:
+        return None
     if "tmdb" not in film and film["imdb"] and film["title"]:
         imdb_id = film["imdb"].split("/")[-2]
         response = tmdb.Find(imdb_id).info(external_source="imdb_id")
@@ -88,7 +90,7 @@ def get_tmdb_id(film: dict) -> Optional[int]:
 
 def update(raw_films: dict) -> dict:
     for idx, film in enumerate(raw_films["movies"]):
-        if not film["wiki"] and film["title"]:
+        if ("wiki" not in film or not film["wiki"]) and film["title"]:
             query = f"{film['title']} (film)"
             print(f"Searching for: {query}")
             film_page = page(query)
@@ -107,12 +109,12 @@ def update(raw_films: dict) -> dict:
             if film_page:
                 print(f"Found page for: {film['title']}")
                 raw_films["movies"][idx]["wiki"] = film_page.url
-                if not film["imdb"]:
+                if "imdb" not in film or not film["imdb"]:
                     imdb = link(film_page, "imdb")
                     if imdb:
                         raw_films["movies"][idx]["imdb"] = imdb
                         print(f"Found imdb url: {imdb}")
-                if not film["rt"]:
+                if "rt" not in film or not film["rt"]:
                     rotten = link(film_page, "rottentomatoes")
                     if rotten:
                         raw_films["movies"][idx]["rt"] = rotten

@@ -46,11 +46,29 @@ def update(raw_films: dict) -> dict:
     for idx, film in enumerate(raw_films["movies"]):
         if "tmdb" in film and film["tmdb"]:
             try:
-                info = tmdb.Movies(film["tmdb"]).info()
+                movie = tmdb.Movies(film["tmdb"])
+                info = movie.info()
                 if info["production_countries"]:
                     raw_films["movies"][idx]["production_countries"] = info["production_countries"]
                 else:
                     print(f"No production countries for {film['title']}")
+
+                crew = movie.credits()["crew"]
+                directors = [person["name"] for person in crew if person["job"] == "Director"]
+                if directors:
+                    raw_films["movies"][idx]["director"] = ", ".join(directors) if len(directors) > 1 else directors[0]
+                else:
+                    print(f"No director found for {film['title']}")
+
+                videos = movie.videos()
+                yt_trailers = [
+                    v["key"]
+                    for v in videos["results"]
+                    if v["site"] == "YouTube" and v["type"] == "Trailer"
+                ]
+                if yt_trailers:
+                    trailer = f"https://www.youtube.com/watch?v={yt_trailers[0]}"
+                    raw_films["movies"][idx]["trailer"] = trailer
             except requests.exceptions.HTTPError:
                     print(f"Movie not found {film['title']}")
     return raw_films
