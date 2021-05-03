@@ -10,20 +10,28 @@ certifi==2020.12.5
     # via requests
 chardet==4.0.0
     # via requests
+enum34==1.1.10
+    # via rotten-tomatoes-client
 envparse==0.2.0
     # via -r requirements.in
 idna==2.10
     # via requests
+justwatch==0.5.1
+    # via -r requirements.in
 requests==2.25.1
     # via
     #   -r requirements.in
+    #   justwatch
+    #   rotten-tomatoes-client
     #   tmdbsimple
     #   wikipedia
-soupsieve==2.2
+rotten-tomatoes-client==0.0.3
+    # via -r requirements.in
+soupsieve==2.2.1
     # via beautifulsoup4
 tmdbsimple==2.8.0
     # via -r requirements.in
-urllib3==1.26.3
+urllib3==1.26.4
     # via requests
 wikipedia==1.4.0
     # via -r requirements.in

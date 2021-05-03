@@ -22,13 +22,17 @@ import argparse
 import json
 import os
 import sys
+from datetime import date
 from pathlib import Path
 from pprint import pprint
-from typing import List, Optional
+from typing import List, Optional, Tuple
+from urllib.parse import urljoin
 
 import tmdbsimple as tmdb
 import wikipedia
 from envparse import env
+from justwatch import JustWatch
+from rotten_tomatoes_client import RottenTomatoesClient
 
 
 def parse_args() -> str:
@@ -47,6 +51,19 @@ def check_env():
         tmdb.API_KEY = tmdb_api_key
     else:
         sys.exit("TMDB_API_KEY env var is not set")
+
+
+def set_watched_date() -> str:
+    """Define watch date."""
+    today = date.today().strftime("%Y-%m-%d")
+    decision = input(
+        f"When did you watch it? Perhaps today {today} [y/Enter]?: "
+    ).lower()
+    if decision in ["y", ""]:
+        watch_date = today
+    else:
+        watch_date = decision
+    return watch_date
 
 
 def find_categories() -> List[str]:
@@ -154,6 +171,62 @@ def search_tmdb(title: str) -> dict:
     return tmdb.Movies(movie["id"])
 
 
+def search_just_watch(
+    title: str, tmdb_id: int, year: int = None
+) -> Tuple[Optional[str], Optional[str]]:
+    """Search justwatch by title and TMBD ID."""
+
+    def look_for_netflix_url(movie: dict) -> Optional[str]:
+        netflix_provider_id = 8
+        for offer in movie.get("offers"):
+            if offer.get("provider_id") == netflix_provider_id:
+                print(
+                    f"Found '{movie['title']}' on Netflix {offer['urls']['standard_web']}"
+                )
+                return offer["urls"]["standard_web"]
+        return None
+
+    just_watch_domanin = "https://www.justwatch.com"
+    just_watch = JustWatch(country="GB")
+    results = just_watch.search_for_item(
+        query=title, release_year_from=year, page_size=100
+    )
+    for movie in results["items"]:
+        for score in movie.get("scoring"):
+            if score.get("provider_type") == "tmdb:id":
+                if score.get("value") == tmdb_id:
+                    print(f"Found '{title}' on JustWatch.com by tmdb id: {tmdb_id}")
+                    just_watch_url = urljoin(just_watch_domanin, movie["full_path"])
+                    netflix_url = look_for_netflix_url(movie)
+                    return just_watch_url, netflix_url
+
+    ascii_title = "".join(c for c in title.lower() if c.isalnum())
+    for movie in results["items"]:
+        ascii_result_title = "".join(c for c in movie["title"].lower() if c.isalnum())
+        if ascii_title == ascii_result_title:
+            print(f"Found '{title}' on JustWatch.com by an exact title match")
+            just_watch_url = urljoin(just_watch_domanin, movie["full_path"])
+            netflix_url = look_for_netflix_url(movie)
+            return just_watch_url, netflix_url
+    print(f"Could not find '{title}' on JustWatch.com by title and tmdb id")
+    return None, None
+
+
+def search_rotten_tomatoes(title: str) -> Optional[str]:
+    """Search Rotten Tomatoes Public API by title."""
+    rotten_tomatoes_domanin = "https://www.rottentomatoes.com/"
+    results = RottenTomatoesClient.search(term=title, limit=5)
+    ascii_title = "".join(c for c in title.lower() if c.isalnum())
+    for movie in results["movies"]:
+        ascii_result_title = "".join(c for c in movie["name"].lower() if c.isalnum())
+        if ascii_title == ascii_result_title:
+            print(f"Found '{title}' on rottentomatoes.com by an exact title match")
+            url = urljoin(rotten_tomatoes_domanin, movie["url"])
+            return url
+    print(f"Could not find '{title}' on rottentomatoes.com by title")
+    return None
+
+
 def pick_category() -> str:
     categories = find_categories()
     print(
@@ -177,7 +250,7 @@ def pick_category() -> str:
     return categories[number]
 
 
-def filter_details(movie: tmdb.movies.Movies) -> dict:
+def filter_details(movie: tmdb.movies.Movies, watched_date: str) -> dict:
     """Filter out unwanted details."""
     info = movie.info()
     crew = movie.credits()["crew"]
@@ -196,20 +269,26 @@ def filter_details(movie: tmdb.movies.Movies) -> dict:
 
     wiki = find_wiki_page_url(info["title"], year)
 
+    just_watch_url, netflix_url = search_just_watch(info["title"], info["id"])
+    rotten_tomatoes_url = search_rotten_tomatoes(info["title"])
+
     result = {
         "title": info["title"],
-        "original_title": info["original_title"],
+        "original_title": info["original_title"]
+        if info["original_title"] != info["title"]
+        else "",
         "director": ", ".join(directors) if len(directors) > 1 else directors[0],
         "genres": [genre["name"].lower() for genre in info["genres"]],
         "year": year,
         "trailer": trailer,
         "wiki": wiki or "",
         "imdb": f"https://www.imdb.com/title/{info['imdb_id']}/",
-        "rt": "",
-        "netflix": "",
-        "justwatch": "",
+        "rt": rotten_tomatoes_url or "",
+        "netflix": netflix_url or "",
+        "justwatch": just_watch_url or "",
         "comments": "",
         "tmdb": info["id"],
+        "watched": watched_date,
         "production_countries": info["production_countries"],
     }
     pprint(result)
@@ -225,8 +304,9 @@ def main(title: str):
         4. add movie to category
         5. save movie category
     """
+    watched_date = set_watched_date()
     tmdb_movie = search_tmdb(title)
-    movie = filter_details(tmdb_movie)
+    movie = filter_details(tmdb_movie, watched_date)
     category = pick_category()
     updated = add_movie_to_category(movie, category)
     save(updated, category)
