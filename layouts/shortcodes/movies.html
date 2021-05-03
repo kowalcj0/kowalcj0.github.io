@@ -1,10 +1,13 @@
 {{ $category := (.Get "category") }}
+{{ $sort_by := default "title" (.Get "sort_by") }}
+{{ $order := default "asc" (.Get "order") }}
+{{ $show_watched := default "yes" (.Get "show_watched") }}
 {{ with $category }}
 <table aria-label="Interesting {{ $category }} movies" style="font-size:80%;width:100%">
   <tbody>
 {{ range $.Site.Data.movies }}
     {{ if eq $category .category }}
-        {{ range sort .movies "title" "asc" }}
+        {{ range sort .movies $sort_by $order }}
             {{ if .title }}
     <tr tabindex="0">
     <article id="movie-{{ .title | anchorize }}">
@@ -17,12 +20,17 @@
         {{ if .production_countries }}
         <li title="Production countries" aria-label="Production countries" style="list-style-image: url('/img/octicons/globe.svg'); margin-left: 0.5rem">{{ $len_countries := (len .production_countries) }}{{ range $idx, $country := .production_countries }} {{ $country.name }}{{ if ne $idx (sub $len_countries 1) }},{{ else }}{{ end }}{{ end }}</li>
         {{ end }}
+        {{ if eq $show_watched "yes"}}
         {{ if .watched }}
         <li title="Seen on" aria-label="Seen on" style="list-style-image: url('/img/octicons/device-camera-video.svg'); margin-left: 0.5rem">{{ .watched }}</li>
+        {{ end }}
         {{ end }}
         <li title="Links" aria-label="Links" style="list-style-image: url('/img/octicons/link-external.svg'); margin-left: 0.4rem">{{ partial "movie_links.html" . }}</li>
         {{ if .comments }}
         <li title="Comments" aria-label="Comments" style="list-style-image: url('/img/octicons/note.svg'); margin-left: 0.5rem" id="comments-{{ .title | anchorize }}">Comments: {{ .comments | markdownify }}</li>
+        {{ end }}
+        {{ if .rating_my }}
+        <li title="My rating" aria-label="My rating" style="list-style-image: url('/img/octicons/star-fill.svg'); margin-left: 0.5rem" id="rating-my-{{ .title | anchorize }}">My rating: {{ range (seq .rating_my) }}<img src="/img/octicons/star-fill.svg"/>{{ end }}</li>
         {{ end }}
         {{ if .quotes }}
         <li title="Quotes" aria-label="Quoutes" style="list-style-image: url('/img/octicons/quote.svg'); margin-left: 0.5rem" id="quotes-{{ .title | anchorize }}">Quotes:
