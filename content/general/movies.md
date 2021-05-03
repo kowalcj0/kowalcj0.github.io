@@ -5,7 +5,7 @@ description: "Movies, TV Series & Documentaries worth watching"
 toc: true
 slug: "movies"
 date: "2020-03-21T11:59:50+01:00"
-lastmod: "2021-03-20T12:10:50+01:00"
+lastmod: "2021-05-03T14:19:50+01:00"
 categories:
   - general
 tags:
@@ -28,6 +28,9 @@ If you looking for something interesting to watch have a look at those lists:
 * [MUBI: Top 50 Japanese films](https://mubi.com/lists/japanese-films-top-50)
 * [MUBI: Top Indian films](https://mubi.com/lists/best-indian-films)
 
+
+## Movie log
+{{< movies category="log" sort_by="watched" order="desc" show_watched="no">}}
 
 ## Recent and fairly recent
 {{< movies category="modern" >}}
