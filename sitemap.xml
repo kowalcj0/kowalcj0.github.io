@@ -3,10 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kowalcj0.github.io/2021/</loc>
-    <lastmod>2021-02-05T09:33:00+00:00</lastmod>
+    <lastmod>2021-06-05T17:18:24+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/categories/</loc>
-    <lastmod>2021-05-03T14:19:50+01:00</lastmod>
+    <lastmod>2021-06-05T17:18:24+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/freebsd/</loc>
+    <lastmod>2021-06-05T17:18:24+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/</loc>
+    <lastmod>2021-06-05T17:18:24+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/2021/06/05/install-photoprism-in-truenas-jail/</loc>
+    <lastmod>2021-06-05T17:18:24+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/categories/photography/</loc>
+    <lastmod>2021-06-05T17:18:24+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/photoprism/</loc>
+    <lastmod>2021-06-05T17:18:24+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/</loc>
+    <lastmod>2021-06-05T17:18:24+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/truenas/</loc>
+    <lastmod>2021-06-05T17:18:24+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/categories/unix/</loc>
+    <lastmod>2021-06-05T17:18:24+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/convert/</loc>
     <lastmod>2021-02-05T09:33:00+00:00</lastmod>
@@ -17,23 +41,14 @@
     <loc>https://kowalcj0.github.io/tags/dng/</loc>
     <lastmod>2021-02-05T09:33:00+00:00</lastmod>
   </url><url>
-    <loc>https://kowalcj0.github.io/</loc>
-    <lastmod>2021-05-03T14:19:50+01:00</lastmod>
-  </url><url>
     <loc>https://kowalcj0.github.io/tags/linux/</loc>
     <lastmod>2021-02-05T09:33:00+00:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/nef/</loc>
     <lastmod>2021-02-05T09:33:00+00:00</lastmod>
   </url><url>
-    <loc>https://kowalcj0.github.io/categories/photography/</loc>
-    <lastmod>2021-02-05T09:33:00+00:00</lastmod>
-  </url><url>
     <loc>https://kowalcj0.github.io/tags/raw/</loc>
     <lastmod>2021-02-05T09:33:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kowalcj0.github.io/tags/</loc>
-    <lastmod>2021-05-03T14:19:50+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/2020/</loc>
     <lastmod>2020-10-05T19:54:20+01:00</lastmod>
@@ -128,16 +143,10 @@
     <loc>https://kowalcj0.github.io/tags/cli/</loc>
     <lastmod>2020-04-28T22:02:34+01:00</lastmod>
   </url><url>
-    <loc>https://kowalcj0.github.io/tags/freebsd/</loc>
-    <lastmod>2020-04-28T22:02:34+01:00</lastmod>
-  </url><url>
     <loc>https://kowalcj0.github.io/tags/freenas/</loc>
     <lastmod>2020-04-28T22:02:34+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/2020/04/28/handy-freebsd-diagnostic-tools/</loc>
-    <lastmod>2020-04-28T22:02:34+01:00</lastmod>
-  </url><url>
-    <loc>https://kowalcj0.github.io/categories/unix/</loc>
     <lastmod>2020-04-28T22:02:34+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/zfs/</loc>
