@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>digikam on Home</title>
+    <link>https://kowalcj0.github.io/tags/digikam/</link>
+    <description>Recent content in digikam on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 09 Jun 2021 21:52:01 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/digikam/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Digikam in Truenas Jail</title>
+      <link>https://kowalcj0.github.io/2021/06/09/install-digikam-in-truenas-jail/</link>
+      <pubDate>Wed, 09 Jun 2021 21:52:01 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2021/06/09/install-digikam-in-truenas-jail/</guid>
+      <description>1 - Create new jail Use Web GUI or CLI to create a new jail according to your liking.
+I&amp;rsquo;m going to do it via Web GUI with NAT and NAT Port Forwarding enabled.
+I&amp;rsquo;ll also add a port mapping for ssh from jail&amp;rsquo;s tcp port 22 to host&amp;rsquo;s 22222.
+2 - Get ports Connect to the newly created jail so we can fetch and extract ports:
+iocage console digikam portsnap fetch portsnap extract 3 - Install dependencies At this point, it might be worth to install xauth which will be required to start digikam via ssh with X11 Forwarding enabled and vim to edit few config files.</description>
+    </item>
+    
+  </channel>
+</rss>
