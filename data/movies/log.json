@@ -427,6 +427,62 @@
                     "name": "United States of America"
                 }
             ]
+        },
+        {
+            "title": "The Trouble with Being Born",
+            "original_title": "",
+            "director": "Sandra Wollner",
+            "genres": [
+                "drama",
+                "science fiction"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=rcG64hZI-M0",
+            "wiki": "https://en.wikipedia.org/wiki/The_Trouble_with_Being_Born_(film)",
+            "imdb": "https://www.imdb.com/title/tt9220966/",
+            "rt": "https://www.rottentomatoes.com/m/the_trouble_with_being_born",
+            "netflix": "",
+            "justwatch": "",
+            "comments": "I had to watch an interview with the director to somehow digest the 'What did I just watch?' moment.",
+            "rating_my": 1,
+            "tmdb": 664589,
+            "watched": "2021-06-07",
+            "production_countries": [
+                {
+                    "iso_3166_1": "AT",
+                    "name": "Austria"
+                },
+                {
+                    "iso_3166_1": "DE",
+                    "name": "Germany"
+                }
+            ]
+        },
+        {
+            "title": "Sound of Metal",
+            "original_title": "",
+            "director": "Darius Marder",
+            "genres": [
+                "drama",
+                "music"
+            ],
+            "year": 2020,
+            "trailer": "https://www.youtube.com/watch?v=VFOrGkAvjAE",
+            "wiki": "https://en.wikipedia.org/wiki/Sound_of_Metal",
+            "imdb": "https://www.imdb.com/title/tt5363618/",
+            "rt": "https://www.rottentomatoes.com/m/sound_of_metal",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/sound-of-metal",
+            "comments": "Simply a great story. Love the sound work.",
+            "rating_my": 3,
+            "tmdb": 502033,
+            "watched": "2021-06-17",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         }
     ]
 }

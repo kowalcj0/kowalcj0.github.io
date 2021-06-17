@@ -13,6 +13,7 @@
             "imdb": "https://www.imdb.com/title/tt3686998/",
             "rt": "https://www.rottentomatoes.com/m/the_red_pill_2016",
             "comments": "",
+            "rating_my": 3,
             "tmdb": 366696,
             "production_countries": [
                 {
@@ -35,6 +36,7 @@
             "imdb": "https://www.imdb.com/title/tt5865326/",
             "rt": "https://www.rottentomatoes.com/m/the_laundromat",
             "comments": "System of money laundering explained by J\u00fcrgen Mossack and Ram\u00f3n Fonseca",
+            "rating_my": 3,
             "tmdb": 517909,
             "production_countries": [
                 {
@@ -44,15 +46,29 @@
             ]
         },
         {
-            "title": "",
-            "director": "",
-            "genres": "",
-            "year": 2019,
-            "trailer": "",
-            "wiki": "",
-            "imdb": "",
-            "rt": "",
-            "comments": ""
+            "title": "Seaspiracy",
+            "original_title": "",
+            "director": "Ali Tabrizi",
+            "genres": [
+                "documentary"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=1Q5CXN7soQg",
+            "wiki": "https://en.wikipedia.org/wiki/Seaspiracy",
+            "imdb": "https://www.imdb.com/title/tt14152756/",
+            "rt": "https://www.rottentomatoes.com/m/seaspiracy",
+            "netflix": "http://www.netflix.com/title/81014008",
+            "justwatch": "https://www.justwatch.com/uk/movie/seaspiracy",
+            "comments": "I think I'm going to stop eating seafood after seeing it. Since a long time I considered fisherman to be poachers, since they only plunder the seas without giving anything back to the nature.",
+            "rating_my": 3,
+            "tmdb": 801058,
+            "watched": "2021-05-22",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         }
     ]
 }
