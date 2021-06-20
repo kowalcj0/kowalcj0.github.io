@@ -23,6 +23,7 @@ import json
 import os
 import sys
 from datetime import date
+from enum import Enum
 from pathlib import Path
 from pprint import pprint
 from typing import List, Optional, Tuple
@@ -33,6 +34,11 @@ import wikipedia
 from envparse import env
 from justwatch import JustWatch
 from rotten_tomatoes_client import RottenTomatoesClient
+
+
+class SearchFor(Enum):
+    MOVIE = "movie"
+    TV = "TV"
 
 
 def parse_args() -> str:
@@ -51,6 +57,20 @@ def check_env():
         tmdb.API_KEY = tmdb_api_key
     else:
         sys.exit("TMDB_API_KEY env var is not set")
+
+
+def  set_what_are_you_looking_for() -> SearchFor:
+    """Define watch date."""
+    decision = input(
+        f"Did you watch a movie or a TV show? for a movie -> [y/m/Enter]; for a TV -> [t/tv/n]?: "
+    ).lower()
+    if decision in ["y", "m", ""]:
+        search_for = SearchFor.MOVIE
+    elif decision in ["n", "t", "tv"]:
+        search_for = SearchFor.TV
+    else:
+        raise TypeError(f"Invalid type of saught show: {what}")
+    return search_for
 
 
 def set_watched_date() -> str:
@@ -91,6 +111,20 @@ def load_movie_category(category: str) -> dict:
     return movies
 
 
+def load_tv_shows() -> dict:
+    file_path = Path(f"./data/movies/tv_shows.json")
+    if file_path.is_file():
+        with open(file_path) as input_file:
+            shows = json.load(input_file)
+    else:
+        shows = {
+            "category": "tv_shows",
+            "movies": [],
+        }
+    return shows
+
+
+
 def page(query: str) -> Optional[wikipedia.wikipedia.WikipediaPage]:
     try:
         return wikipedia.page(query)
@@ -102,12 +136,16 @@ def page(query: str) -> Optional[wikipedia.wikipedia.WikipediaPage]:
         return None
 
 
-def find_wiki_page_url(title: str, year: int) -> Optional[str]:
-    query = f"{title} (film)"
+def find_wiki_page_url(title: str, year: int, *, tv_show: bool = False) -> Optional[str]:
+    if not tv_show:
+        suffix = "Film"
+    else:
+        suffix = "TV series"
+    query = f"{title} ({suffix})"
     print(f"Wiki: Searching for: {query}")
     film_page = page(query)
     if not film_page:
-        query = f"{title} (film) {year}"
+        query = f"{title} ({suffix}) {year}"
         print(f"Searching for: {query}")
         film_page = page(query)
     if not film_page:
@@ -133,13 +171,76 @@ def add_movie_to_category(movie: dict, category: str) -> dict:
     return movies
 
 
-def save(films: dict, category: str):
+def add_tv_show_details(show: dict) -> dict:
+    shows = load_tv_shows()
+    shows["movies"].append(show)
+    return shows
+
+
+def save(contents: dict, category: str):
     output = f"./data/movies/{category}.json"
     with open(output, "w") as write_file:
-        json.dump(films, write_file, indent=4)
+        json.dump(contents, write_file, indent=4)
 
 
-def search_tmdb(title: str) -> dict:
+def search_tmdb_for_tv_show(title: str) -> dict:
+    """
+    An example TV show search results:
+    [
+        {
+            "backdrop_path":"/b6vueHvnoArdRbZKlxZR7o4BVWU.jpg",
+            "first_air_date":"2018-10-27",
+            "genre_ids":[
+                80
+            ],
+            "id":82858,
+            "name":"Blinded by the Lights",
+            "origin_country":[
+                "PL"
+            ],
+            "original_language":"pl",
+            "original_name":"Ślepnąc od świateł",
+            "overview":"An eight-episode story charting seven days from the life of a cocaine dealer whose perfectly organized life begins to sink into chaos while he is forced to make the most important choices in his life.",
+            "popularity":4.949,
+            "poster_path":"/gXCa394XSso2QNgxxxIIn9zScj8.jpg",
+            "vote_average":7.3,
+            "vote_count":12
+        }
+    ]
+    """
+    search = tmdb.Search()
+    response = search.tv(query=title)
+    results = response["results"]
+    show = None
+    if len(results) == 1:
+        show = results[0]
+        print(
+            f"Found 1 match for title '{title}' -> TMDB title '{show['name']}' {show['first_air_date']} ID: {show['id']}"
+        )
+    elif len(results) > 1:
+        print(f"Found {len(results)} matching titles in TMDB")
+        for idx, result in enumerate(results):
+            print(
+                f"{idx:2} -> {result['name']} (orig. {result['original_name']}) {result['first_air_date']} ID: {result['id']}"
+            )
+        number = None
+        while number not in range(len(results)):
+            value = input(
+                f"Pick the show number from 0 to {len(results)-1} or q to quit: "
+            )
+            if value.isdigit():
+                number = int(value)
+            if value.lower() == "q":
+                sys.exit()
+        show = results[number]
+    else:
+        print(f"No show was found in TMDB using title: {title}")
+        sys.exit()
+    return tmdb.TV(id=show["id"])
+
+
+
+def search_tmdb_for_movie(title: str) -> dict:
     search = tmdb.Search()
     response = search.movie(query=title)
     results = response["results"]
@@ -192,7 +293,7 @@ def search_just_watch(
         query=title, release_year_from=year, page_size=100
     )
     for movie in results["items"]:
-        for score in movie.get("scoring"):
+        for score in movie.get("scoring", []):
             if score.get("provider_type") == "tmdb:id":
                 if score.get("value") == tmdb_id:
                     print(f"Found '{title}' on JustWatch.com by tmdb id: {tmdb_id}")
@@ -250,7 +351,7 @@ def pick_category() -> str:
     return categories[number]
 
 
-def filter_details(movie: tmdb.movies.Movies, watched_date: str) -> dict:
+def filter_movie_details(movie: tmdb.movies.Movies, watched_date: str) -> dict:
     """Filter out unwanted details."""
     info = movie.info()
     crew = movie.credits()["crew"]
@@ -295,6 +396,174 @@ def filter_details(movie: tmdb.movies.Movies, watched_date: str) -> dict:
     return result
 
 
+def filter_tv_show_details(show: tmdb.tv.TV, watched_date: str) -> dict:
+    """Filter out unwanted details."""
+    info = show.info()
+    directors = [person["name"] for person in info["created_by"]]
+    videos = show.videos()
+    """
+    INFO:
+    {
+        "backdrop_path":"/b6vueHvnoArdRbZKlxZR7o4BVWU.jpg",
+        "created_by":[
+            {
+                "id":481162,
+                "credit_id":"5bb74d8c9251410dd102685a",
+                "name":"Krzysztof Skonieczny",
+                "gender":0,
+                "profile_path":"None"
+            },
+            {
+                "id":1688994,
+                "credit_id":"5bb74d990e0a263393024f77",
+                "name":"Jakub Żulczyk",
+                "gender":0,
+                "profile_path":"None"
+            }
+        ],
+        "episode_run_time":[
+            55
+        ],
+        "first_air_date":"2018-10-27",
+        "genres":[
+            {
+                "id":80,
+                "name":"Crime"
+            }
+        ],
+        "homepage":"https://www.hbo.pl/series/slepnac-od-swiatel",
+        "id":82858,
+        "in_production":false,
+        "languages":[
+            "pl"
+        ],
+        "last_air_date":"2018-10-27",
+        "last_episode_to_air":{
+            "air_date":"2018-10-27",
+            "episode_number":8,
+            "id":1599567,
+            "name":"",
+            "overview":"Kuba is getting ready to leave Poland. It's early morning and the plane departs in the evening. Will he manage to fix things before he leaves?",
+            "production_code":"",
+            "season_number":1,
+            "still_path":"/m5p6NaHJ7YtJtW3eKjvp5nv87bV.jpg",
+            "vote_average":0.0,
+            "vote_count":0
+        },
+        "name":"Blinded by the Lights",
+        "next_episode_to_air":"None",
+        "networks":[
+            {
+                "name":"HBO Europe",
+                "id":1129,
+                "logo_path":"/tyoN6zoxMJ71GBddxVkk4dpaeze.png",
+                "origin_country":""
+            }
+        ],
+        "number_of_episodes":8,
+        "number_of_seasons":1,
+        "origin_country":[
+            "PL"
+        ],
+        "original_language":"pl",
+        "original_name":"Ślepnąc od świateł",
+        "overview":"An eight-episode story charting seven days from the life of a cocaine dealer whose perfectly organized life begins to sink into chaos while he is forced to make the most important choices in his life.",
+        "popularity":4.949,
+        "poster_path":"/gXCa394XSso2QNgxxxIIn9zScj8.jpg",
+        "production_companies":[
+            {
+                "id":75269,
+                "logo_path":"None",
+                "name":"House Media Company",
+                "origin_country":"PL"
+            }
+        ],
+        "production_countries":[
+            {
+                "iso_3166_1":"PL",
+                "name":"Poland"
+            }
+        ],
+        "seasons":[
+            {
+                "air_date":"2018-10-27",
+                "episode_count":8,
+                "id":110352,
+                "name":"Season 1",
+                "overview":"",
+                "poster_path":"/aBryHTDFDhNOH3sv3huG2aPWajQ.jpg",
+                "season_number":1
+            }
+        ],
+        "spoken_languages":[
+            {
+                "english_name":"Polish",
+                "iso_639_1":"pl",
+                "name":"Polski"
+            }
+        ],
+        "status":"Ended",
+        "tagline":"",
+        "type":"Miniseries",
+        "vote_average":7.3,
+        "vote_count":12
+    }
+
+    VIDEOS:
+    {
+        "id":82858,
+        "results":[
+            {
+                "id":"5bcbc341c3a368239d008f71",
+                "iso_639_1":"en",
+                "iso_3166_1":"US",
+                "key":"4vXasjfxye4",
+                "name":"Blinded By The Lights - trailer",
+                "site":"YouTube",
+                "size":1080,
+                "type":"Trailer"
+            }
+        ]
+    }
+    """
+    yt_trailers = [
+        v["key"]
+        for v in videos["results"]
+        if v["site"] == "YouTube" and v["type"] == "Trailer"
+    ]
+    if yt_trailers:
+        trailer = f"https://www.youtube.com/watch?v={yt_trailers[0]}"
+    else:
+        trailer = ""
+    year = int(info["first_air_date"].split("-")[0])
+
+    wiki = find_wiki_page_url(info["name"], year, tv_show=True)
+
+    just_watch_url, netflix_url = search_just_watch(info["name"], info["id"])
+    rotten_tomatoes_url = search_rotten_tomatoes(info["name"])
+    result = {
+        "title": info["name"],
+        "original_title": info["original_name"]
+        if info["original_name"] != info["name"]
+        else "",
+        "director": ", ".join(directors) if len(directors) > 1 else directors[0],
+        "genres": [genre["name"].lower() for genre in info["genres"]],
+        "year": year,
+        "trailer": trailer,
+        "wiki": wiki or "",
+        "imdb": f"https://www.imdb.com/title/{info['imdb_id']}/" if "imdb_id" in info else "",
+        "rt": rotten_tomatoes_url or "",
+        "netflix": netflix_url or "",
+        "justwatch": just_watch_url or "",
+        "comments": "",
+        "tmdb": info["id"],
+        "watched": watched_date,
+        "production_countries": info["production_countries"],
+    }
+    pprint(result)
+    return result
+
+
 def main(title: str):
     """Find movie details and save them.
     Steps:
@@ -304,11 +573,18 @@ def main(title: str):
         4. add movie to category
         5. save movie category
     """
+    search_for = set_what_are_you_looking_for()
     watched_date = set_watched_date()
-    tmdb_movie = search_tmdb(title)
-    movie = filter_details(tmdb_movie, watched_date)
-    category = pick_category()
-    updated = add_movie_to_category(movie, category)
+    if search_for == SearchFor.MOVIE:
+        tmdb_movie = search_tmdb_for_movie(title)
+        details = filter_movie_details(tmdb_movie, watched_date)
+        category = pick_category()
+        updated = add_movie_to_category(details, category)
+    elif search_for == SearchFor.TV:
+        tmdb_movie = search_tmdb_for_tv_show(title)
+        details = filter_tv_show_details(tmdb_movie, watched_date)
+        category = "tv_shows"
+        updated = add_tv_show_details(details)
     save(updated, category)
 
 
