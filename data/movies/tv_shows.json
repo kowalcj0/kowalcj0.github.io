@@ -1,0 +1,55 @@
+{
+    "category": "tv_shows",
+    "movies": [
+        {
+            "title": "Blinded by the Lights",
+            "original_title": "\u015alepn\u0105c od \u015bwiate\u0142",
+            "director": "Krzysztof Skonieczny, Jakub \u017bulczyk",
+            "genres": [
+                "crime"
+            ],
+            "year": 2018,
+            "trailer": "https://www.youtube.com/watch?v=4vXasjfxye4",
+            "wiki": "https://en.wikipedia.org/wiki/Blinded_by_the_Lights_(TV_series)",
+            "imdb": "tt6520930",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/pl/serial/slepnac-od-swiatel",
+            "comments": "",
+            "tmdb": 82858,
+            "watched": "2020-11-10",
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                }
+            ]
+        },
+        {
+            "title": "Primal",
+            "original_title": "",
+            "director": "Genndy Tartakovsky",
+            "genres": [
+                "action & adventure",
+                "animation",
+                "drama"
+            ],
+            "year": 2019,
+            "trailer": "",
+            "wiki": "https://en.wikipedia.org/wiki/Primal_(TV_series)",
+            "imdb": "",
+            "rt": "https://www.rottentomatoes.com/m/1190452-1190452-primal",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/tv-series/primal",
+            "comments": "",
+            "tmdb": 89456,
+            "watched": "2021-06-20",
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                }
+            ]
+        }
+    ]
+}
