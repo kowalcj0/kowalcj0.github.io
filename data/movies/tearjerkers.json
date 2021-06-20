@@ -24,28 +24,35 @@
             ]
         },
         {
-            "title": "",
+            "title": "Fatherhood",
             "original_title": "",
-            "director": "",
-            "genres": "",
-            "year": 0,
-            "trailer": "",
-            "wiki": "",
-            "imdb": "",
-            "rt": "",
-            "comments": ""
-        },
-        {
-            "title": "",
-            "original_title": "",
-            "director": "",
-            "genres": "",
-            "year": 0,
-            "trailer": "",
-            "wiki": "",
-            "imdb": "",
-            "rt": "",
-            "comments": ""
+            "director": "Paul Weitz",
+            "genres": [
+                "drama",
+                "family",
+                "comedy"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=T3mwUEoZdrI",
+            "wiki": "https://en.wikipedia.org/wiki/Fatherhood_(film)",
+            "imdb": "https://www.imdb.com/title/tt4733624/",
+            "rt": "https://www.rottentomatoes.com/m/fatherhood_2019",
+            "netflix": "http://www.netflix.com/title/81435227",
+            "justwatch": "https://www.justwatch.com/uk/movie/fatherhood",
+            "comments": "Kevin Hart played way better than I expected!",
+            "rating_my": 2,
+            "tmdb": 607259,
+            "watched": "2021-06-20",
+            "production_countries": [
+                {
+                    "iso_3166_1": "CA",
+                    "name": "Canada"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         }
     ]
 }

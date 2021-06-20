@@ -483,6 +483,33 @@
                     "name": "United States of America"
                 }
             ]
+        },
+        {
+            "title": "The History of Future Folk",
+            "original_title": "",
+            "director": "Jeremy Kipp Walker, John Mitchell",
+            "genres": [
+                "comedy",
+                "science fiction",
+                "music"
+            ],
+            "year": 2012,
+            "trailer": "",
+            "wiki": "https://en.wikipedia.org/wiki/Future_Folk",
+            "imdb": "https://www.imdb.com/title/tt2245195/",
+            "rt": "https://www.rottentomatoes.com/m/the_history_of_future_folk_2012",
+            "netflix": "http://www.netflix.com/title/70245246",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-history-of-future-folk",
+            "comments": "A really cool story on deciding what's valuable to you... even if you're from a different planet. Apart from that the film features great banjo tracks :) PS. [Lord Buckethead](https://en.wikipedia.org/wiki/Lord_Buckethead) would be jealous of those fancy red helmets.",
+            "rating_my": 3,
+            "tmdb": 115199,
+            "watched": "2021-06-18",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         }
     ]
 }
