@@ -147,13 +147,13 @@ def search_tmdb(title: str) -> dict:
     if len(results) == 1:
         movie = results[0]
         print(
-            f"Found 1 match for title '{title}' -> TMDB title '{movie['title']}' ID: {movie['id']}"
+            f"Found 1 match for title '{title}' -> TMDB title '{movie['title']}' {movie['release_date']} ID: {movie['id']}"
         )
     elif len(results) > 1:
         print(f"Found {len(results)} matching titles in TMDB")
         for idx, result in enumerate(results):
             print(
-                f"{idx:2} -> {result['title']} (orig. {result['original_title']}) ID: {result['id']}"
+                f"{idx:2} -> {result['title']} (orig. {result['original_title']}) {result['release_date']} ID: {result['id']}"
             )
         number = None
         while number not in range(len(results)):
