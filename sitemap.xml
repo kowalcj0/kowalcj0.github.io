@@ -3,21 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kowalcj0.github.io/2021/</loc>
-    <lastmod>2021-09-15T17:50:36+01:00</lastmod>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/afwall/</loc>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/categories/android/</loc>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/categories/</loc>
-    <lastmod>2021-09-15T17:50:36+01:00</lastmod>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/firewall/</loc>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/2021/09/25/fix-file-transfers-for-gsconnect/</loc>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/gsconnect/</loc>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/</loc>
-    <lastmod>2021-09-15T17:50:36+01:00</lastmod>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/iptables/</loc>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/</loc>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/categories/unix/</loc>
+    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/categories/programming/</loc>
     <lastmod>2021-09-15T17:50:36+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/python/</loc>
-    <lastmod>2021-09-15T17:50:36+01:00</lastmod>
-  </url><url>
-    <loc>https://kowalcj0.github.io/tags/</loc>
     <lastmod>2021-09-15T17:50:36+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/2021/09/15/initialize_nested_dataclasses_with_default_factory/</loc>
@@ -39,9 +60,6 @@
     <lastmod>2021-06-09T21:52:01+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/trunas/</loc>
-    <lastmod>2021-06-09T21:52:01+01:00</lastmod>
-  </url><url>
-    <loc>https://kowalcj0.github.io/categories/unix/</loc>
     <lastmod>2021-06-09T21:52:01+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/2021/06/05/install-photoprism-in-truenas-jail/</loc>
