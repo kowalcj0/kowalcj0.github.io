@@ -6,7 +6,18 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 09 Jun 2021 21:52:01 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Sep 2021 17:50:36 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use default factory to initialize nested dataclass fields</title>
+      <link>https://kowalcj0.github.io/2021/09/15/initialize_nested_dataclasses_with_default_factory/</link>
+      <pubDate>Wed, 15 Sep 2021 17:50:36 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2021/09/15/initialize_nested_dataclasses_with_default_factory/</guid>
+      <description>I you happen to work with nested Python dataclasses  , then maybe you&amp;rsquo;ve noticed an issues with defining field values by creating an instance of some object.
+In the example below, all instances of class Main will point to the same instance of class Sub:
+from dataclasses import dataclass, field @dataclass class Sub: prop: str = field(default=&amp;#34;some value&amp;#34;) @dataclass class Main: sub: Sub = Sub() m1 = Main() m2 = Main() id(m1) Out[1]: 140304747921264 id(m2) Out[2]: 140304748528400 assert id(m1.</description>
+    </item>
+    
     <item>
       <title>Install Digikam in Truenas Jail</title>
       <link>https://kowalcj0.github.io/2021/06/09/install-digikam-in-truenas-jail/</link>
@@ -207,7 +218,7 @@ Video Format : JPEG Codec ID : jpeg Bit rate mode : Variable Bit rate : 3 827 kb
       <description>Below you&amp;rsquo;ll find some movies that I particularly like. Some of the them are available on Amazon Prime Video  or mubi.com  .
 AFAIK most of the titles below are not available on Netflix.
 Great movie lists If you looking for something interesting to watch have a look at those lists:
- iMDB: Top 250   iMDB: Top 100 Greatest Movies of All Time (The Ultimate List)   iMDB: Top 50 spanish movies   MUBI: Top 1000   MUBI: 30 must see Japanese film classics   MUBI: Top 50 Japanese films   MUBI: Top Indian films    Movie log  The History of Future Folk, by Jeremy Kipp Walker, John Mitchell, 2012   comedy, science fiction, music United States of America        Comments: A really cool story on deciding what&amp;rsquo;s valuable to you&amp;hellip; even if you&amp;rsquo;re from a different planet.</description>
+ iMDB: Top 250   iMDB: Top 100 Greatest Movies of All Time (The Ultimate List)   iMDB: Top 50 spanish movies   MUBI: Top 1000   MUBI: 30 must see Japanese film classics   MUBI: Top 50 Japanese films   MUBI: Top Indian films    Movie log  A Quiet Place Part II, by John Krasinski, 2021   science fiction, thriller, horror United States of America        My rating:      Memories of My Melancholy Whores, by Henning Carlsen (orig.</description>
     </item>
     
     <item>

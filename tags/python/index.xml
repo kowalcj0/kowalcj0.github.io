@@ -6,7 +6,18 @@
     <description>Recent content in python on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 14 May 2020 14:10:00 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Sep 2021 17:50:36 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use default factory to initialize nested dataclass fields</title>
+      <link>https://kowalcj0.github.io/2021/09/15/initialize_nested_dataclasses_with_default_factory/</link>
+      <pubDate>Wed, 15 Sep 2021 17:50:36 +0100</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2021/09/15/initialize_nested_dataclasses_with_default_factory/</guid>
+      <description>I you happen to work with nested Python dataclasses  , then maybe you&amp;rsquo;ve noticed an issues with defining field values by creating an instance of some object.
+In the example below, all instances of class Main will point to the same instance of class Sub:
+from dataclasses import dataclass, field @dataclass class Sub: prop: str = field(default=&amp;#34;some value&amp;#34;) @dataclass class Main: sub: Sub = Sub() m1 = Main() m2 = Main() id(m1) Out[1]: 140304747921264 id(m2) Out[2]: 140304748528400 assert id(m1.</description>
+    </item>
+    
     <item>
       <title>UrlString</title>
       <link>https://kowalcj0.github.io/2020/05/14/python-url-strings/</link>
