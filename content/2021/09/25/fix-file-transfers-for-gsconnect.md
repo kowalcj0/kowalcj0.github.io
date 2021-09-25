@@ -2,7 +2,7 @@
 title: "Fix an issue with incorrectly transferred files via GSConnect"
 description: "by adding custom iptables rules to your Android firewall app"
 date: 2021-09-25T22:09:22+01:00
-draft: true
+draft: false
 toc: false
 slug: "fix-file-transfers-for-gsconnect"
 categories:
