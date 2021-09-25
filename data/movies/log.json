@@ -510,6 +510,188 @@
                     "name": "United States of America"
                 }
             ]
+        },
+        {
+            "title": "A Quiet Place Part II",
+            "original_title": "",
+            "director": "John Krasinski",
+            "genres": [
+                "science fiction",
+                "thriller",
+                "horror"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=BpdDN9d9Jio",
+            "wiki": "https://en.wikipedia.org/wiki/A_Quiet_Place_Part_II",
+            "imdb": "https://www.imdb.com/title/tt8332922/",
+            "rt": "https://www.rottentomatoes.com/m/a_quiet_place_part_ii",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/a-quiet-place-part-ii",
+            "comments": "",
+            "rating_my": 2,
+            "tmdb": 520763,
+            "watched": "2021-08-20",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
+        },
+        {
+            "title": "Memories of My Melancholy Whores",
+            "original_title": "Memoria de Mis Putas Tristes",
+            "director": "Henning Carlsen",
+            "genres": [
+                "drama",
+                "romance"
+            ],
+            "year": 2011,
+            "trailer": "",
+            "wiki": "https://en.wikipedia.org/wiki/Memories_of_My_Melancholy_Whores",
+            "imdb": "https://www.imdb.com/title/tt1504019/",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": "",
+            "rating_my": 3,
+            "tmdb": 114286,
+            "watched": "2021-08-18",
+            "production_countries": [
+                {
+                    "iso_3166_1": "DK",
+                    "name": "Denmark"
+                },
+                {
+                    "iso_3166_1": "MX",
+                    "name": "Mexico"
+                },
+                {
+                    "iso_3166_1": "ES",
+                    "name": "Spain"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
+        },
+        {
+            "title": "Jumanji: The Next Level",
+            "original_title": "",
+            "director": "Jake Kasdan",
+            "genres": [
+                "adventure",
+                "comedy",
+                "fantasy"
+            ],
+            "year": 2019,
+            "trailer": "https://www.youtube.com/watch?v=F6QaLsw8EWY",
+            "wiki": "https://en.wikipedia.org/wiki/Jumanji:_The_Next_Level",
+            "imdb": "https://www.imdb.com/title/tt7975244/",
+            "rt": "https://www.rottentomatoes.com/m/jumanji_the_next_level",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/jumanji-3",
+            "comments": "",
+            "rating_my": 2,
+            "tmdb": 512200,
+            "watched": "2021-08-12",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
+        },
+        {
+            "title": "Black Widow",
+            "original_title": "",
+            "director": "Cate Shortland",
+            "genres": [
+                "action",
+                "adventure",
+                "thriller",
+                "science fiction"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=Fp9pNPdNwjI",
+            "wiki": "https://en.wikipedia.org/wiki/Black_Widow_(2021_film)",
+            "imdb": "https://www.imdb.com/title/tt3480822/",
+            "rt": "https://www.rottentomatoes.com/m/1002531-black_widow",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/black-widow-2020",
+            "comments": "",
+            "rating_my": 2,
+            "tmdb": 497698,
+            "watched": "2021-08-10",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
+        },
+        {
+            "title": "Rogue City",
+            "original_title": "Bronx",
+            "director": "Olivier Marchal",
+            "genres": [
+                "thriller",
+                "action",
+                "drama",
+                "crime"
+            ],
+            "year": 2020,
+            "trailer": "https://www.youtube.com/watch?v=w1Ww62eIwOI",
+            "wiki": "https://en.wikipedia.org/wiki/Rogue_City",
+            "imdb": "https://www.imdb.com/title/tt10127684/",
+            "rt": "",
+            "netflix": "http://www.netflix.com/title/81115400",
+            "justwatch": "https://www.justwatch.com/uk/movie/rogue-city",
+            "comments": "",
+            "rating_my": 2,
+            "tmdb": 671039,
+            "watched": "2021-08-17",
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                }
+            ]
+        },
+        {
+            "title": "Persian Lessons",
+            "original_title": "",
+            "director": "Vadim Perelman",
+            "genres": [
+                "drama",
+                "war"
+            ],
+            "year": 2020,
+            "trailer": "https://www.youtube.com/watch?v=5FdRKMQMj4o",
+            "wiki": "https://en.wikipedia.org/wiki/Persian_Lessons",
+            "imdb": "https://www.imdb.com/title/tt9738784/",
+            "rt": "https://www.rottentomatoes.com/m/persian_lessons",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/persian-lessons",
+            "comments": "",
+            "rating_my": 2,
+            "tmdb": 581577,
+            "watched": "2021-07-20",
+            "production_countries": [
+                {
+                    "iso_3166_1": "BY",
+                    "name": "Belarus"
+                },
+                {
+                    "iso_3166_1": "DE",
+                    "name": "Germany"
+                },
+                {
+                    "iso_3166_1": "RU",
+                    "name": "Russia"
+                }
+            ]
         }
     ]
 }
