@@ -44,6 +44,9 @@ If you looking for something interesting to watch have a look at those lists:
 ## Documentaries
 {{< movies category="documentaries" >}}
 
+## Short Movies
+{{< movies category="short" >}}
+
 ## The world of nature and wildlife
 {{< movies category="world" >}}
 
