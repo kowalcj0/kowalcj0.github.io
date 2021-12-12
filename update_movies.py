@@ -23,7 +23,9 @@ import json
 from typing import Optional
 
 import tmdbsimple as tmdb
+import requests
 import wikipedia
+from bs4 import BeautifulSoup as bs
 from envparse import env
 from scrapista.imdb import ImdbScraper
 
@@ -39,6 +41,19 @@ if TMDB_API_KEY:
     tmdb.API_KEY = TMDB_API_KEY
 else:
     print("WARNING: TMDB_API_KEY env var is not set.")
+
+
+def rt_scores(url: str):
+    info={}
+    response = requests.get(url)
+    soup = bs(response.text, "html.parser")
+    rows = soup.select("score-board")
+    for row in rows:
+        info = {
+            "audiencescore": row.get("audiencescore"),
+            "tomatometerscore": row.get("tomatometerscore")
+        }
+    return info
 
 
 def load_films(filename: str) -> dict:
@@ -93,20 +108,37 @@ def get_tmdb_id(film: dict) -> Optional[int]:
     return tmdb_id
 
 
-
 def update_ratings(movies: dict) -> dict:
     for idx, movie in enumerate(movies["movies"]):
-        if movie["tmdb"]:
+        if "tmdb" in movie and movie["tmdb"]:
             print(f"Updating rating for: {movie['title']}")
-            response = tmdb.Movies(movie["tmdb"])
-            info = response.info()
-            movie["rating_tmdb"] = info["vote_average"]
-            movie["rating_tmdb_count"] = info["vote_count"]
-            imdb_response = imdb_scraper.scrape_movie(movie["imdb"])
-            movie["rating_imdb"] = imdb_response["rating_value"]
-            movie["rating_imdb_count"] = imdb_response["rating_count"]
-            movie["rating_imdb_metascore"] = imdb_response["metascore"] if imdb_response["metascore"] != "N/A" else None
-            movie["rating_imdb_critic_count"] = imdb_response["critic_count"] if imdb_response["critic_count"] != "-" else None
+            try:
+                info = tmdb.Movies(movie["tmdb"]).info()
+                movie["rating_tmdb"] = info["vote_average"]
+                movie["rating_tmdb_count"] = info["vote_count"]
+            except Exception as ex:
+                print(f"Failed to get TMDB ratings for {movie['title']}:\n{ex}")
+
+            try:
+                imdb_response = imdb_scraper.scrape_movie(movie["imdb"])
+                movie["rating_imdb"] = imdb_response["rating_value"]
+                movie["rating_imdb_count"] = imdb_response["rating_count"]
+                movie["rating_imdb_metascore"] = imdb_response["metascore"] if imdb_response["metascore"] != "N/A" else None
+                movie["rating_imdb_critic_count"] = imdb_response["critic_count"] if imdb_response["critic_count"] != "-" else None
+            except Exception as ex:
+                print(f"Failed to get IMDB ratings for {movie['title']}:\n{ex}")
+
+            try:
+                if movie["rt"]:
+                    rt_response = rt_scores(movie["rt"])
+                    movie["rating_rt_audience"] = int(rt_response["audiencescore"]) if "audiencescore" in rt_response and rt_response["audiencescore"] else None
+                    movie["rating_rt_tomatometer"] = int(rt_response["tomatometerscore"]) if "tomatometerscore" in rt_response and rt_response["tomatometerscore"] else None
+                else:
+                    print(f"Missing Rotten Tomatoes URL for: {movie['title']}")
+                    movie["rating_rt_audience"] = None
+                    movie["rating_rt_tomatometer"] = None
+            except Exception as ex:
+                print(f"Failed to get Rotten Tomatoes ratings for {movie['title']}:\n{ex}")
     return movies
 
 
