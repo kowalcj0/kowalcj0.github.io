@@ -12,7 +12,7 @@
     <tr tabindex="0">
     <article id="movie-{{ .title | anchorize }}">
       <details id="details-{{ .title | anchorize }}">
-          <summary id="{{ .title | anchorize }}"><b>{{ .title }}</b>, by {{ .director }}{{ if .original_title }} (orig. {{ .original_title }}){{ end }}, {{ .year }} {{ if and .rating_my (le .rating_my 0) }}{{ partial "svg/octicons/alert.svg" }}{{ end }}{{ range (seq .rating_my) }}<img src="/img/octicons/star-fill.svg"/>{{ end }}<a class="octicon-link" href="#{{ .title | anchorize }}">{{ partial "svg/octicons/link.svg" }}</a></summary>
+          <summary id="{{ .title | anchorize }}"><b>{{ .title }}</b>, by {{ .director }}{{ if .original_title }} (orig. {{ .original_title }}){{ end }}, {{ .year }} {{ if and (.rating_my) (le .rating_my 0) }}{{ partial "svg/octicons/alert.svg" }}{{else}}{{ range (seq .rating_my) }}<img src="/img/octicons/star-fill.svg"/>{{ end }}{{ end }}<a class="octicon-link" href="#{{ .title | anchorize }}">{{ partial "svg/octicons/link.svg" }}</a></summary>
         <ul>
         {{ if .genres }}
         <li title="Genres" aria-label="Genres" style="list-style-image: url('/img/octicons/pencil.svg'); margin-left: 0.5rem">{{ delimit .genres ", " }}</li>
