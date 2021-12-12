@@ -8,6 +8,7 @@
             "director": "D. W. Griffith",
             "wiki": "https://en.wikipedia.org/wiki/Broken_Blossoms",
             "imdb": "https://www.imdb.com/title/tt0009968/",
+            "rt": "https://www.rottentomatoes.com/m/1003120-broken_blossoms",
             "tmdb": 899,
             "production_countries": [
                 {
@@ -15,7 +16,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=kF6B9_Pwgpw"
+            "trailer": "https://www.youtube.com/watch?v=kF6B9_Pwgpw",
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 155,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 10000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 71,
+            "rating_rt_tomatometer": 95
         },
         {
             "title": "Das Cabinet des Dr Caligari",
@@ -32,7 +41,15 @@
                     "name": "Germany"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=gkPdvRontMc"
+            "trailer": "https://www.youtube.com/watch?v=gkPdvRontMc",
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 1029,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 61000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 99
         },
         {
             "title": "Dr. Mabuse, der Spieler \u2013 Ein Bild der Zeit",
@@ -48,7 +65,15 @@
                     "iso_3166_1": "DE",
                     "name": "Germany"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 137,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 8000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 94
         },
         {
             "title": "The Gold Rush",
@@ -65,7 +90,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=kDlEvaKBkhU"
+            "trailer": "https://www.youtube.com/watch?v=kDlEvaKBkhU",
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 1114,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 107000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "The Fall of the House of Usher",
@@ -74,7 +107,16 @@
             "director": "Jean Epstein",
             "wiki": "https://en.wikipedia.org/wiki/The_Fall_of_the_House_of_Usher_(1928_French_film)",
             "rt": "https://www.rottentomatoes.com/m/1178961_house_of_usher",
-            "imdb": "https://www.imdb.com/title/tt0018770/"
+            "imdb": "https://www.imdb.com/title/tt0018770/",
+            "tmdb": 28189,
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 84,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 23,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Un Chien Andalou",
@@ -91,7 +133,15 @@
                     "name": "France"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=BVbTEVfLksU"
+            "trailer": "https://www.youtube.com/watch?v=BVbTEVfLksU",
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 929,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 48000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Morocco",
@@ -100,6 +150,7 @@
             "director": "Josef von Sternberg",
             "wiki": "https://en.wikipedia.org/wiki/Morocco_(film)",
             "imdb": "https://www.imdb.com/title/tt0021156/",
+            "rt": "https://www.rottentomatoes.com/m/morocco",
             "tmdb": 42641,
             "production_countries": [
                 {
@@ -107,22 +158,39 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=u80OARwTRBw"
+            "trailer": "https://www.youtube.com/watch?v=u80OARwTRBw",
+            "rating_tmdb": 6.6,
+            "rating_tmdb_count": 89,
+            "rating_imdb": 7.1,
+            "rating_imdb_count": 6000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 70,
+            "rating_rt_tomatometer": 82
         },
         {
-            "title": "Der Kongress Tanzt",
-            "original_title": "",
+            "title": "Congress Dances",
+            "original_title": "Der Kongress Tanzt",
             "year": "1931",
             "director": "Erik Charell",
             "wiki": "https://en.wikipedia.org/wiki/Der_Kongre%C3%9F_tanzt",
             "imdb": "https://www.imdb.com/title/tt0022034/",
+            "rt": "https://www.rottentomatoes.com/m/congress_dances",
             "tmdb": 95759,
             "production_countries": [
                 {
                     "iso_3166_1": "DE",
                     "name": "Germany"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 12,
+            "rating_imdb": 7.1,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Die 3groschenoper",
@@ -138,14 +206,22 @@
                     "iso_3166_1": "DE",
                     "name": "Germany"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 40,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 2000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
-            "title": "Lover Divine",
+            "title": "Gently My Songs Entreat",
             "original_title": "Leise flehen meine Lieder",
-            "year": "1934",
+            "year": "1933",
             "director": "Willi Forst",
-            "wiki": "",
+            "wiki": "https://en.wikipedia.org/wiki/Gently_My_Songs_Entreat",
             "imdb": "https://www.imdb.com/title/tt0024249/",
             "tmdb": 80952,
             "production_countries": [
@@ -157,7 +233,13 @@
                     "iso_3166_1": "DE",
                     "name": "Germany"
                 }
-            ]
+            ],
+            "rating_tmdb": 4.0,
+            "rating_tmdb_count": 5,
+            "rating_imdb": 7.0,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null
         },
         {
             "title": "The Thin Man",
@@ -174,22 +256,39 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=nSNJ-8ouQEM"
+            "trailer": "https://www.youtube.com/watch?v=nSNJ-8ouQEM",
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 309,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 28000,
+            "rating_imdb_metascore": 86.0,
+            "rating_imdb_critic_count": 80,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "Our Neighbor, Miss Yae",
             "original_title": "Tonari no Yae-chan",
             "year": "1934",
             "director": "Yasujir\u014d Shimazu",
-            "wiki": "",
+            "wiki": "https://en.wikipedia.org/wiki/Sanae_Takasugi",
             "imdb": "https://www.imdb.com/title/tt0160994/",
+            "rt": "https://www.rottentomatoes.com/m/our_neighbor_1934",
             "tmdb": 95762,
             "production_countries": [
                 {
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 10,
+            "rating_imdb": 7.1,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Sazen Tange and the Pot Worth a Million Ryo",
@@ -204,7 +303,13 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 24,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null
         },
         {
             "title": "Capricious Young Man",
@@ -213,13 +318,22 @@
             "director": "Mansaku Itami",
             "wiki": "https://fr.wikipedia.org/wiki/Le_Jeune_Homme_capricieux",
             "imdb": "https://www.imdb.com/title/tt0159946/",
+            "rt": "https://www.rottentomatoes.com/m/akanishi_kakita",
             "tmdb": 112504,
             "production_countries": [
                 {
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.3,
+            "rating_tmdb_count": 7,
+            "rating_imdb": 6.2,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "La Grande Illusion",
@@ -236,7 +350,15 @@
                     "name": "France"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=hctrYzVYmfM"
+            "trailer": "https://www.youtube.com/watch?v=hctrYzVYmfM",
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 453,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 36000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 97
         },
         {
             "title": "Stella Dallas",
@@ -252,14 +374,22 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.9,
+            "rating_tmdb_count": 53,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 5000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 83,
+            "rating_rt_tomatometer": 89
         },
         {
             "title": "Composition Class",
             "original_title": "Tsuzurikata Kyoshitsu",
             "year": "1938",
             "director": "Kajir\u014d Yamamoto",
-            "wiki": "",
+            "wiki": "https://en.wikipedia.org/wiki/Composition_over_inheritance",
             "imdb": "https://www.imdb.com/title/tt0259694/",
             "tmdb": 131771,
             "production_countries": [
@@ -267,7 +397,13 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 5,
+            "rating_imdb": 6.8,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null
         },
         {
             "title": "Earth",
@@ -276,13 +412,22 @@
             "director": "Tomu Uchida",
             "wiki": "https://en.wikipedia.org/wiki/Tsuchi_(film)",
             "imdb": "https://www.imdb.com/title/tt0032063/",
+            "rt": "https://www.rottentomatoes.com/m/tsuchi_2012",
             "tmdb": 123168,
             "production_countries": [
                 {
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 5,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Ninotchka",
@@ -299,7 +444,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=OhCCG5qSC1I"
+            "trailer": "https://www.youtube.com/watch?v=OhCCG5qSC1I",
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 254,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 20000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 97
         },
         {
             "title": "Ivan Groznyy I",
@@ -320,7 +473,15 @@
                     "name": "Soviet Union"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=JcJkHCihTmE"
+            "trailer": "https://www.youtube.com/watch?v=JcJkHCihTmE",
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 118,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 9000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Ivan Groznyy II: Boyarsky Zagovor",
@@ -340,7 +501,15 @@
                     "iso_3166_1": "SU",
                     "name": "Soviet Union"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 87,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 7000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "My Darling Clementine",
@@ -357,7 +526,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=sjfWeB0zzg4"
+            "trailer": "https://www.youtube.com/watch?v=sjfWeB0zzg4",
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 270,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 23000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 86,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "It\u2019s a Wonderful Life",
@@ -374,7 +551,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=kWumEBO97l4"
+            "trailer": "https://www.youtube.com/watch?v=kWumEBO97l4",
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 3114,
+            "rating_imdb": 8.6,
+            "rating_imdb_count": 427000,
+            "rating_imdb_metascore": 89.0,
+            "rating_imdb_critic_count": 186,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 94
         },
         {
             "title": "The Big Sleep",
@@ -391,7 +576,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=aIQaLs0KDhA"
+            "trailer": "https://www.youtube.com/watch?v=aIQaLs0KDhA",
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 726,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 83000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 97
         },
         {
             "title": "Ladri di Biciclette",
@@ -408,7 +601,15 @@
                     "name": "Italy"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=H2P4xo9kmPM"
+            "trailer": "https://www.youtube.com/watch?v=H2P4xo9kmPM",
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 1716,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 157000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "The Blue Mountains: Part II",
@@ -423,7 +624,13 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.9,
+            "rating_tmdb_count": 7,
+            "rating_imdb": 6.3,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null
         },
         {
             "title": "The Third Man",
@@ -440,7 +647,15 @@
                     "name": "United Kingdom"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=F-QWLAndD1E"
+            "trailer": "https://www.youtube.com/watch?v=F-QWLAndD1E",
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 1293,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 167000,
+            "rating_imdb_metascore": 97.0,
+            "rating_imdb_critic_count": 207,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 99
         },
         {
             "title": "Late Spring",
@@ -449,6 +664,7 @@
             "director": "Yasujir\u014d Ozu",
             "wiki": "https://en.wikipedia.org/wiki/Late_Spring",
             "imdb": "https://www.imdb.com/title/tt0041154/",
+            "rt": "https://www.rottentomatoes.com/m/late_spring",
             "tmdb": 20530,
             "production_countries": [
                 {
@@ -456,7 +672,15 @@
                     "name": "Japan"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=_4Ul10BSzRw"
+            "trailer": "https://www.youtube.com/watch?v=_4Ul10BSzRw",
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 252,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 16000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Orpheus",
@@ -473,7 +697,15 @@
                     "name": "France"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=LcsRF_ri4XY"
+            "trailer": "https://www.youtube.com/watch?v=LcsRF_ri4XY",
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 165,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 12000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 97
         },
         {
             "title": "Carmen Comes Home",
@@ -482,13 +714,22 @@
             "director": "Keisuke Kinoshita",
             "wiki": "https://en.wikipedia.org/wiki/Carmen_Comes_Home",
             "imdb": "https://www.imdb.com/title/tt0043699/",
+            "rt": "https://www.rottentomatoes.com/m/karumen_kokyo_ni_kaeru",
             "tmdb": 125264,
             "production_countries": [
                 {
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 14,
+            "rating_imdb": 6.6,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 29,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "A Streetcar Named Desire",
@@ -505,7 +746,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=ilW32IKJoM0"
+            "trailer": "https://www.youtube.com/watch?v=ilW32IKJoM0",
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 992,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 105000,
+            "rating_imdb_metascore": 97.0,
+            "rating_imdb_critic_count": 95,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 97
         },
         {
             "title": "The Adultress",
@@ -514,6 +763,7 @@
             "director": "Marcel Carn\u00e9",
             "wiki": "https://en.wikipedia.org/wiki/Th%C3%A9r%C3%A8se_Raquin",
             "imdb": "https://www.imdb.com/title/tt0046429/",
+            "rt": "https://www.rottentomatoes.com/m/therese_raquin_1953",
             "tmdb": 67736,
             "production_countries": [
                 {
@@ -524,7 +774,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.6,
+            "rating_tmdb_count": 35,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 81,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "The Life of Oharu",
@@ -533,13 +791,22 @@
             "director": "Kenji Mizoguchi",
             "wiki": "https://en.wikipedia.org/wiki/The_Life_of_Oharu",
             "imdb": "https://www.imdb.com/title/tt0045112/",
+            "rt": "https://www.rottentomatoes.com/m/life_of_oharu",
             "tmdb": 43364,
             "production_countries": [
                 {
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 124,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 6000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Journey to Italy",
@@ -560,7 +827,15 @@
                     "name": "France"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=XXJM3shx8WU"
+            "trailer": "https://www.youtube.com/watch?v=XXJM3shx8WU",
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 185,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 10000,
+            "rating_imdb_metascore": 100.0,
+            "rating_imdb_critic_count": 62,
+            "rating_rt_audience": 75,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "Godzilla",
@@ -577,7 +852,15 @@
                     "name": "Japan"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=KNDH2mX8wf4"
+            "trailer": "https://www.youtube.com/watch?v=KNDH2mX8wf4",
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 615,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 32000,
+            "rating_imdb_metascore": 78.0,
+            "rating_imdb_critic_count": 155,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 93
         },
         {
             "title": "La Strada",
@@ -594,7 +877,15 @@
                     "name": "Italy"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=CucHyXsxCU8"
+            "trailer": "https://www.youtube.com/watch?v=CucHyXsxCU8",
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 723,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 61000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "Floating Clouds",
@@ -610,7 +901,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 62,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 2000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 83,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Song of the Road",
@@ -627,7 +926,15 @@
                     "name": "India"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=mgv68E_o6VM"
+            "trailer": "https://www.youtube.com/watch?v=mgv68E_o6VM",
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 253,
+            "rating_imdb": 8.4,
+            "rating_imdb_count": 30000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 97
         },
         {
             "title": "Daddy Long Legs",
@@ -644,7 +951,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=8iDw33RuRiw"
+            "trailer": "https://www.youtube.com/watch?v=8iDw33RuRiw",
+            "rating_tmdb": 6.6,
+            "rating_tmdb_count": 64,
+            "rating_imdb": 6.7,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 65,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "The Proud Ones",
@@ -660,7 +975,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.4,
+            "rating_tmdb_count": 24,
+            "rating_imdb": 7.0,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 44,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Sun in the Last Days of the Shogunate",
@@ -669,6 +992,7 @@
             "director": "Y\u016bz\u014d Kawashima",
             "wiki": "https://en.wikipedia.org/wiki/Sun_in_the_Last_Days_of_the_Shogunate",
             "imdb": "https://www.imdb.com/title/tt0050162/",
+            "rt": "https://www.rottentomatoes.com/m/the_sun_legend_of_the_end_of_the_tokugawa_era",
             "tmdb": 125217,
             "production_countries": [
                 {
@@ -676,7 +1000,15 @@
                     "name": "Japan"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=JRFZasSrnFQ"
+            "trailer": "https://www.youtube.com/watch?v=JRFZasSrnFQ",
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 20,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "The Young Lions",
@@ -693,7 +1025,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=5I8Gg4B1fXc"
+            "trailer": "https://www.youtube.com/watch?v=5I8Gg4B1fXc",
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 86,
+            "rating_imdb": 7.2,
+            "rating_imdb_count": 7000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 77,
+            "rating_rt_tomatometer": 71
         },
         {
             "title": "The Cousins",
@@ -702,6 +1042,7 @@
             "director": "Claude Chabrol",
             "wiki": "https://en.wikipedia.org/wiki/Les_Cousins_(film)",
             "imdb": "https://www.imdb.com/title/tt0052708/",
+            "rt": "https://www.rottentomatoes.com/m/les_cousins",
             "tmdb": 2363,
             "production_countries": [
                 {
@@ -709,7 +1050,15 @@
                     "name": "France"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=R83zINc4LQk"
+            "trailer": "https://www.youtube.com/watch?v=R83zINc4LQk",
+            "rating_tmdb": 6.7,
+            "rating_tmdb_count": 50,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 2000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 81,
+            "rating_rt_tomatometer": 94
         },
         {
             "title": "The 400 Blows",
@@ -726,7 +1075,15 @@
                     "name": "France"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=i89oN8v7RdY"
+            "trailer": "https://www.youtube.com/watch?v=i89oN8v7RdY",
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 1550,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 113000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "Breathless",
@@ -743,7 +1100,15 @@
                     "name": "France"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=WCDEAu4R8hA"
+            "trailer": "https://www.youtube.com/watch?v=WCDEAu4R8hA",
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 1267,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 78000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 97
         },
         {
             "title": "Ben-Hur",
@@ -760,7 +1125,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=NR1ZHKw09n8"
+            "trailer": "https://www.youtube.com/watch?v=NR1ZHKw09n8",
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 1959,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 230000,
+            "rating_imdb_metascore": 90.0,
+            "rating_imdb_critic_count": 137,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 86
         },
         {
             "title": "Her Brother",
@@ -769,13 +1142,22 @@
             "director": "Kon Ichikawa",
             "wiki": "https://en.wikipedia.org/wiki/Her_Brother",
             "imdb": "https://www.imdb.com/title/tt0054151/",
+            "rt": "https://www.rottentomatoes.com/m/ototo-her-brother-younger-brother",
             "tmdb": 125251,
             "production_countries": [
                 {
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.9,
+            "rating_tmdb_count": 11,
+            "rating_imdb": 6.9,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 71,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "The Long Absence",
@@ -784,13 +1166,22 @@
             "director": "Henri Colpi",
             "wiki": "https://en.wikipedia.org/wiki/The_Long_Absence",
             "imdb": "https://www.imdb.com/title/tt0054426/",
+            "rt": "https://www.rottentomatoes.com/m/une_aussi_longue_absence",
             "tmdb": 131836,
             "production_countries": [
                 {
                     "iso_3166_1": "FR",
                     "name": "France"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.4,
+            "rating_tmdb_count": 21,
+            "rating_imdb": 7.0,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Purple Noon",
@@ -811,7 +1202,15 @@
                     "name": "Italy"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=T4cvv91kt-E"
+            "trailer": "https://www.youtube.com/watch?v=T4cvv91kt-E",
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 281,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 16000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 95
         },
         {
             "title": "Zazie on the Subway",
@@ -828,7 +1227,15 @@
                     "name": "France"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=lpt0xB7qSj4"
+            "trailer": "https://www.youtube.com/watch?v=lpt0xB7qSj4",
+            "rating_tmdb": 6.7,
+            "rating_tmdb_count": 110,
+            "rating_imdb": 7.0,
+            "rating_imdb_count": 6000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 78,
+            "rating_rt_tomatometer": 76
         },
         {
             "title": "Last Year in Marienbad",
@@ -849,7 +1256,15 @@
                     "name": "Italy"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=p0Xv2zbm_4Q"
+            "trailer": "https://www.youtube.com/watch?v=p0Xv2zbm_4Q",
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 338,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 22000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 94
         },
         {
             "title": "What Ever Happened to Baby Jane?",
@@ -866,7 +1281,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=3qFYjkFCxiE"
+            "trailer": "https://www.youtube.com/watch?v=3qFYjkFCxiE",
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 738,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 54000,
+            "rating_imdb_metascore": 75.0,
+            "rating_imdb_critic_count": 115,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 92
         },
         {
             "title": "Lawrence of Arabia",
@@ -883,7 +1306,15 @@
                     "name": "United Kingdom"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=qPQ7CR3wn8A"
+            "trailer": "https://www.youtube.com/watch?v=qPQ7CR3wn8A",
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 2196,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 282000,
+            "rating_imdb_metascore": 100.0,
+            "rating_imdb_critic_count": 161,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 93
         },
         {
             "title": "Any Number Can Win",
@@ -902,7 +1333,13 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 103,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null
         },
         {
             "title": "The Birds",
@@ -919,7 +1356,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=lCxR7dlavwg"
+            "trailer": "https://www.youtube.com/watch?v=lCxR7dlavwg",
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 3025,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 182000,
+            "rating_imdb_metascore": 90.0,
+            "rating_imdb_critic_count": 182,
+            "rating_rt_audience": 83,
+            "rating_rt_tomatometer": 95
         },
         {
             "title": "The Red Desert",
@@ -940,7 +1385,15 @@
                     "name": "Italy"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=0uVPQG01JHk"
+            "trailer": "https://www.youtube.com/watch?v=0uVPQG01JHk",
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 281,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 15000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "Who's Afraid of Virginia Woolf?",
@@ -949,6 +1402,7 @@
             "director": "Mike Nichols",
             "wiki": "https://en.wikipedia.org/wiki/Who's_Afraid_of_Virginia_Woolf?_(film)",
             "imdb": "https://www.imdb.com/title/tt0061184/",
+            "rt": "https://www.rottentomatoes.com/m/whos_afraid_of_virginia_woolf",
             "tmdb": 396,
             "production_countries": [
                 {
@@ -956,7 +1410,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=hZEKQnMCze8"
+            "trailer": "https://www.youtube.com/watch?v=hZEKQnMCze8",
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 576,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 73000,
+            "rating_imdb_metascore": 75.0,
+            "rating_imdb_critic_count": 106,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 95
         },
         {
             "title": "Bonnie and Clyde",
@@ -973,7 +1435,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=hZpm1zj9510"
+            "trailer": "https://www.youtube.com/watch?v=hZpm1zj9510",
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 1143,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 109000,
+            "rating_imdb_metascore": 86.0,
+            "rating_imdb_critic_count": 117,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 88
         },
         {
             "title": "In the Heat of the Night",
@@ -990,7 +1460,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=nMj0-fU25dM"
+            "trailer": "https://www.youtube.com/watch?v=nMj0-fU25dM",
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 692,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 72000,
+            "rating_imdb_metascore": 75.0,
+            "rating_imdb_critic_count": 98,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 95
         },
         {
             "title": "The Charge of the Light Brigade",
@@ -1007,7 +1485,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=F2sNWQfdfq0"
+            "trailer": "https://www.youtube.com/watch?v=F2sNWQfdfq0",
+            "rating_tmdb": 6.7,
+            "rating_tmdb_count": 45,
+            "rating_imdb": 7.1,
+            "rating_imdb_count": 4000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 59,
+            "rating_rt_tomatometer": 71
         },
         {
             "title": "Midnight Cowboy",
@@ -1024,7 +1510,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=a2yBydiEJrI"
+            "trailer": "https://www.youtube.com/watch?v=a2yBydiEJrI",
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 931,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 107000,
+            "rating_imdb_metascore": 79.0,
+            "rating_imdb_critic_count": 136,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 87
         },
         {
             "title": "MASH",
@@ -1032,7 +1526,7 @@
             "year": "1970",
             "director": "Robert Altman",
             "wiki": "https://en.wikipedia.org/wiki/M*A*S*H_(film)",
-            "imdb": "https://www.imdb.com/title/tt0066026/plotsummary",
+            "imdb": "https://www.imdb.com/title/tt0066026/",
             "rt": "https://www.rottentomatoes.com/m/mash/",
             "tmdb": 651,
             "production_countries": [
@@ -1041,7 +1535,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=NJ6quIFtbXs"
+            "trailer": "https://www.youtube.com/watch?v=NJ6quIFtbXs",
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 710,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 71000,
+            "rating_imdb_metascore": 80.0,
+            "rating_imdb_critic_count": 139,
+            "rating_rt_audience": 83,
+            "rating_rt_tomatometer": 84
         },
         {
             "title": "Johnny Got His Gun",
@@ -1058,7 +1560,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=K7AFmXc0wK0"
+            "trailer": "https://www.youtube.com/watch?v=K7AFmXc0wK0",
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 257,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 16000,
+            "rating_imdb_metascore": 71.0,
+            "rating_imdb_critic_count": 54,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 67
         },
         {
             "title": "The French Connection",
@@ -1075,7 +1585,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=ExEZeWLMCfo"
+            "trailer": "https://www.youtube.com/watch?v=ExEZeWLMCfo",
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 1272,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 117000,
+            "rating_imdb_metascore": 94.0,
+            "rating_imdb_critic_count": 179,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "Spirit of the Beehive",
@@ -1092,7 +1610,15 @@
                     "name": "Spain"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=aqvpMJNlqxE"
+            "trailer": "https://www.youtube.com/watch?v=aqvpMJNlqxE",
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 241,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 18000,
+            "rating_imdb_metascore": 87.0,
+            "rating_imdb_critic_count": 86,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "Solaris",
@@ -1109,7 +1635,15 @@
                     "name": "Russia"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=9LMMn8czq2w"
+            "trailer": "https://www.youtube.com/watch?v=9LMMn8czq2w",
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 1128,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 88000,
+            "rating_imdb_metascore": 90.0,
+            "rating_imdb_critic_count": 150,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 92
         },
         {
             "title": "The Day of the Jackal",
@@ -1130,7 +1664,15 @@
                     "name": "United Kingdom"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=lQdYPtm2u2k"
+            "trailer": "https://www.youtube.com/watch?v=lQdYPtm2u2k",
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 377,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 40000,
+            "rating_imdb_metascore": 80.0,
+            "rating_imdb_critic_count": 73,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 89
         },
         {
             "title": "Conversation Piece",
@@ -1147,7 +1689,15 @@
                     "name": "Italy"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=XY_93j3gM1M"
+            "trailer": "https://www.youtube.com/watch?v=XY_93j3gM1M",
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 78,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 4000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 84,
+            "rating_rt_tomatometer": 80
         },
         {
             "title": "The Godfather: Part II",
@@ -1164,7 +1714,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=9O1Iy9od7-A"
+            "trailer": "https://www.youtube.com/watch?v=9O1Iy9od7-A",
+            "rating_tmdb": 8.6,
+            "rating_tmdb_count": 9127,
+            "rating_imdb": 9.0,
+            "rating_imdb_count": 1000000,
+            "rating_imdb_metascore": 90.0,
+            "rating_imdb_critic_count": 190,
+            "rating_rt_audience": 97,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "Sandakan no. 8",
@@ -1173,13 +1731,22 @@
             "director": "Kei Kumai",
             "wiki": "https://en.wikipedia.org/wiki/Sandakan_No._8",
             "imdb": "https://www.imdb.com/title/tt0073654/",
+            "rt": "https://www.rottentomatoes.com/m/sandakan_8",
             "tmdb": 12470,
             "production_countries": [
                 {
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 9,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 80,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "One Flew Over the Cuckoo\u2019s Nest",
@@ -1196,7 +1763,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=OXrcDonY-B8"
+            "trailer": "https://www.youtube.com/watch?v=OXrcDonY-B8",
+            "rating_tmdb": 8.4,
+            "rating_tmdb_count": 8207,
+            "rating_imdb": 8.7,
+            "rating_imdb_count": 963000,
+            "rating_imdb_metascore": 84.0,
+            "rating_imdb_critic_count": 186,
+            "rating_rt_audience": 96,
+            "rating_rt_tomatometer": 94
         },
         {
             "title": "The Travelling Players",
@@ -1205,13 +1780,22 @@
             "director": "Theo Angelopoulos",
             "wiki": "https://en.wikipedia.org/wiki/The_Travelling_Players",
             "imdb": "https://www.imdb.com/title/tt0073800/",
+            "rt": "https://www.rottentomatoes.com/m/the-travelling-players",
             "tmdb": 689,
             "production_countries": [
                 {
                     "iso_3166_1": "GR",
                     "name": "Greece"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 46,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 83,
+            "rating_rt_tomatometer": 87
         },
         {
             "title": "Barry Lyndon",
@@ -1232,7 +1816,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=9lzSoKOs1fc"
+            "trailer": "https://www.youtube.com/watch?v=9lzSoKOs1fc",
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 2045,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 160000,
+            "rating_imdb_metascore": 89.0,
+            "rating_imdb_critic_count": 116,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 91
         },
         {
             "title": "Lullaby of the Earth",
@@ -1248,7 +1840,13 @@
                     "name": "Japan"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=_W8V8SjQgQs"
+            "trailer": "https://www.youtube.com/watch?v=_W8V8SjQgQs",
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 8,
+            "rating_imdb": 6.6,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null
         },
         {
             "title": "Annie Hall",
@@ -1265,7 +1863,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=OqVgCfZX-yE"
+            "trailer": "https://www.youtube.com/watch?v=OqVgCfZX-yE",
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 3075,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 260000,
+            "rating_imdb_metascore": 92.0,
+            "rating_imdb_critic_count": 157,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "My Father, My Master",
@@ -1282,7 +1888,15 @@
                     "name": "Italy"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=P8z-iv2URAc"
+            "trailer": "https://www.youtube.com/watch?v=P8z-iv2URAc",
+            "rating_tmdb": 6.7,
+            "rating_tmdb_count": 80,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 78,
+            "rating_rt_tomatometer": 67
         },
         {
             "title": "Gloria",
@@ -1299,7 +1913,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=8NImDlin6hE"
+            "trailer": "https://www.youtube.com/watch?v=8NImDlin6hE",
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 138,
+            "rating_imdb": 7.1,
+            "rating_imdb_count": 9000,
+            "rating_imdb_metascore": 68.0,
+            "rating_imdb_critic_count": 42,
+            "rating_rt_audience": 79,
+            "rating_rt_tomatometer": 93
         },
         {
             "title": "A Distant Cry From Spring",
@@ -1314,7 +1936,13 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 14,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null
         },
         {
             "title": "La Traviata",
@@ -1330,7 +1958,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 18,
+            "rating_imdb": 7.2,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Fanny and Alexander",
@@ -1339,7 +1975,22 @@
             "director": "Bergman",
             "wiki": "https://en.wikipedia.org/wiki/Fanny_and_Alexander",
             "imdb": "https://www.imdb.com/title/tt6725158/",
-            "rt": "https://www.rottentomatoes.com/m/fanny_and_alexander/"
+            "rt": "https://www.rottentomatoes.com/m/fanny_and_alexander/",
+            "tmdb": 5961,
+            "production_countries": [
+                {
+                    "iso_3166_1": "SE",
+                    "name": "Sweden"
+                }
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 537,
+            "rating_imdb": 9.1,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Fitzcarraldo",
@@ -1348,7 +1999,16 @@
             "director": "Herzog",
             "wiki": "https://en.wikipedia.org/wiki/Fitzcarraldo",
             "imdb": "https://www.imdb.com/title/tt0083946/",
-            "rt": "https://www.rottentomatoes.com/m/fitzcarraldo"
+            "rt": "https://www.rottentomatoes.com/m/fitzcarraldo",
+            "tmdb": 9343,
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 507,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 34000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 79
         },
         {
             "title": "The King of Comedy",
@@ -1365,7 +2025,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=0wVhCCo02P4"
+            "trailer": "https://www.youtube.com/watch?v=0wVhCCo02P4",
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 1597,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 98000,
+            "rating_imdb_metascore": 73.0,
+            "rating_imdb_critic_count": 122,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 89
         },
         {
             "title": "Merry Christmas Mr Lawrence",
@@ -1390,7 +2058,15 @@
                     "name": "United Kingdom"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=6GxiqbFG_Dw"
+            "trailer": "https://www.youtube.com/watch?v=6GxiqbFG_Dw",
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 297,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 17000,
+            "rating_imdb_metascore": 53.0,
+            "rating_imdb_critic_count": 85,
+            "rating_rt_audience": 79,
+            "rating_rt_tomatometer": 82
         },
         {
             "title": "The Killing Fields",
@@ -1407,7 +2083,15 @@
                     "name": "United Kingdom"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=mTfqXmVVjPU"
+            "trailer": "https://www.youtube.com/watch?v=mTfqXmVVjPU",
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 519,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 54000,
+            "rating_imdb_metascore": 76.0,
+            "rating_imdb_critic_count": 81,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 93
         },
         {
             "title": "Stranger Than Paradise",
@@ -1428,7 +2112,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=MwefGellnhk"
+            "trailer": "https://www.youtube.com/watch?v=MwefGellnhk",
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 357,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 37000,
+            "rating_imdb_metascore": 86.0,
+            "rating_imdb_critic_count": 76,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "A Summer at Grandpa's",
@@ -1444,7 +2136,15 @@
                     "iso_3166_1": "TW",
                     "name": "Taiwan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 23,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Paris, Texas",
@@ -1469,7 +2169,15 @@
                     "name": "United Kingdom"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=9e590FeeGCM"
+            "trailer": "https://www.youtube.com/watch?v=9e590FeeGCM",
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 1179,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 101000,
+            "rating_imdb_metascore": 78.0,
+            "rating_imdb_critic_count": 110,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 94
         },
         {
             "title": "Witness",
@@ -1486,7 +2194,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=WY1e01OVu-Y"
+            "trailer": "https://www.youtube.com/watch?v=WY1e01OVu-Y",
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 1177,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 92000,
+            "rating_imdb_metascore": 76.0,
+            "rating_imdb_critic_count": 109,
+            "rating_rt_audience": 80,
+            "rating_rt_tomatometer": 93
         },
         {
             "title": "The Trip to Bountiful",
@@ -1503,7 +2219,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=XczocuuAMV8"
+            "trailer": "https://www.youtube.com/watch?v=XczocuuAMV8",
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 34,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 4000,
+            "rating_imdb_metascore": 81.0,
+            "rating_imdb_critic_count": 18,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "When Father was Away on Business",
@@ -1519,7 +2243,15 @@
                     "iso_3166_1": "YU",
                     "name": "Yugoslavia"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 76,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 9000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "The Dead",
@@ -1528,7 +2260,16 @@
             "director": "John Huston",
             "wiki": "https://en.wikipedia.org/wiki/The_Dead_(1987_film)",
             "imdb": "https://www.imdb.com/title/tt0092843/",
-            "rt": "https://www.rottentomatoes.com/m/the_dead"
+            "rt": "https://www.rottentomatoes.com/m/the_dead",
+            "tmdb": 39507,
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 93,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 7000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 78,
+            "rating_rt_tomatometer": 93
         },
         {
             "title": "Where is the Friend\u2019s Home",
@@ -1545,7 +2286,15 @@
                     "name": "Iran"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=Re4yKqfsJx0"
+            "trailer": "https://www.youtube.com/watch?v=Re4yKqfsJx0",
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 181,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 13000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Baghdad Cafe",
@@ -1562,7 +2311,15 @@
                     "name": "Germany"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=et3JU_5DY0c"
+            "trailer": "https://www.youtube.com/watch?v=et3JU_5DY0c",
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 262,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 13000,
+            "rating_imdb_metascore": 71.0,
+            "rating_imdb_critic_count": 45,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 85
         },
         {
             "title": "The Whales of August",
@@ -1579,7 +2336,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=zzaW_Ns5W6o"
+            "trailer": "https://www.youtube.com/watch?v=zzaW_Ns5W6o",
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 49,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 4000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 66,
+            "rating_rt_tomatometer": 64
         },
         {
             "title": "Running on Empty",
@@ -1596,7 +2361,15 @@
                     "name": "United States of America"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=kDvqRVhQ9UU"
+            "trailer": "https://www.youtube.com/watch?v=kDvqRVhQ9UU",
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 203,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 15000,
+            "rating_imdb_metascore": 67.0,
+            "rating_imdb_critic_count": 53,
+            "rating_rt_audience": 68,
+            "rating_rt_tomatometer": 79
         },
         {
             "title": "My Neighbour Totoro",
@@ -1613,7 +2386,15 @@
                     "name": "Japan"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=92a7Hj0ijLs"
+            "trailer": "https://www.youtube.com/watch?v=92a7Hj0ijLs",
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 5792,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 316000,
+            "rating_imdb_metascore": 86.0,
+            "rating_imdb_critic_count": 147,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 94
         },
         {
             "title": "Buddies",
@@ -1628,7 +2409,13 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.6,
+            "rating_tmdb_count": 8,
+            "rating_imdb": 6.8,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null
         },
         {
             "title": "The Beautiful Troublemaker",
@@ -1649,7 +2436,15 @@
                     "name": "Switzerland"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=Ff4Bdz9B0FU"
+            "trailer": "https://www.youtube.com/watch?v=Ff4Bdz9B0FU",
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 121,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 7000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 83,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Fireworks",
@@ -1666,7 +2461,15 @@
                     "name": "Japan"
                 }
             ],
-            "trailer": "https://www.youtube.com/watch?v=fHpV5-pRwHU"
+            "trailer": "https://www.youtube.com/watch?v=fHpV5-pRwHU",
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 432,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 30000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 96
         }
     ]
 }

@@ -21,7 +21,15 @@
                     "iso_3166_1": "SU",
                     "name": "Soviet Union"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 808,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 56000,
+            "rating_imdb_metascore": 97.0,
+            "rating_imdb_critic_count": 95,
+            "rating_rt_audience": 86,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1941,
@@ -43,7 +51,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 4174,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 426000,
+            "rating_imdb_metascore": 100.0,
+            "rating_imdb_critic_count": 274,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 99
         },
         {
             "year": 1946,
@@ -65,7 +81,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 434,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 61000,
+            "rating_imdb_metascore": 93.0,
+            "rating_imdb_critic_count": 133,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1948,
@@ -87,7 +111,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 819,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 121000,
+            "rating_imdb_metascore": 98.0,
+            "rating_imdb_critic_count": 104,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1948,
@@ -109,7 +141,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 334,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 30000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1950,
@@ -131,7 +171,15 @@
                     "iso_3166_1": "IE",
                     "name": "Ireland"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.4,
+            "rating_tmdb_count": 102,
+            "rating_imdb": 5.3,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": 48.0,
+            "rating_imdb_critic_count": 47,
+            "rating_rt_audience": 45,
+            "rating_rt_tomatometer": 70
         },
         {
             "year": 1950,
@@ -153,7 +201,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 1511,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 162000,
+            "rating_imdb_metascore": 98.0,
+            "rating_imdb_critic_count": 132,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1951,
@@ -179,7 +235,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.5,
+            "rating_tmdb_count": 2619,
+            "rating_imdb": 5.5,
+            "rating_imdb_count": 168000,
+            "rating_imdb_metascore": 40.0,
+            "rating_imdb_critic_count": 287,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "year": 1952,
@@ -201,7 +265,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 2281,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 231000,
+            "rating_imdb_metascore": 99.0,
+            "rating_imdb_critic_count": 168,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1952,
@@ -223,7 +295,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 1030,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 102000,
+            "rating_imdb_metascore": 89.0,
+            "rating_imdb_critic_count": 149,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 95
         },
         {
             "year": 1953,
@@ -245,7 +325,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 705,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 59000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1953,
@@ -267,7 +355,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 428,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 39000,
+            "rating_imdb_metascore": 80.0,
+            "rating_imdb_critic_count": 89,
+            "rating_rt_audience": 81,
+            "rating_rt_tomatometer": 97
         },
         {
             "year": 1954,
@@ -289,7 +385,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.5,
+            "rating_tmdb_count": 2462,
+            "rating_imdb": 8.6,
+            "rating_imdb_count": 332000,
+            "rating_imdb_metascore": 98.0,
+            "rating_imdb_critic_count": 125,
+            "rating_rt_audience": 97,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1954,
@@ -311,7 +415,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 1114,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 150000,
+            "rating_imdb_metascore": 91.0,
+            "rating_imdb_critic_count": 173,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 99
         },
         {
             "year": 1954,
@@ -333,7 +445,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 615,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 32000,
+            "rating_imdb_metascore": 78.0,
+            "rating_imdb_critic_count": 155,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 93
         },
         {
             "year": 1955,
@@ -355,7 +475,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 251,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 20000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 84,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1956,
@@ -377,7 +505,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 977,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 86000,
+            "rating_imdb_metascore": 94.0,
+            "rating_imdb_critic_count": 120,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 96
         },
         {
             "year": 1956,
@@ -399,7 +535,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 982,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 62000,
+            "rating_imdb_metascore": 76.0,
+            "rating_imdb_critic_count": 97,
+            "rating_rt_audience": 84,
+            "rating_rt_tomatometer": 87
         },
         {
             "year": 1956,
@@ -421,7 +565,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 634,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 48000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 96
         },
         {
             "year": 1957,
@@ -447,7 +599,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 1478,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 213000,
+            "rating_imdb_metascore": 87.0,
+            "rating_imdb_critic_count": 105,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 97
         },
         {
             "year": 1957,
@@ -469,7 +629,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.5,
+            "rating_tmdb_count": 6009,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 97,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1957,
@@ -491,7 +659,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 305,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 17000,
+            "rating_imdb_metascore": 73.0,
+            "rating_imdb_critic_count": 104,
+            "rating_rt_audience": 82,
+            "rating_rt_tomatometer": 81
         },
         {
             "year": 1957,
@@ -513,7 +689,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 2686,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 300000,
+            "rating_imdb_metascore": 76.0,
+            "rating_imdb_critic_count": 305,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "year": 1958,
@@ -543,7 +727,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 3134,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 171000,
+            "rating_imdb_metascore": 79.0,
+            "rating_imdb_critic_count": 196,
+            "rating_rt_audience": 83,
+            "rating_rt_tomatometer": 93
         },
         {
             "year": 1958,
@@ -565,7 +757,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 1053,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 102000,
+            "rating_imdb_metascore": 99.0,
+            "rating_imdb_critic_count": 126,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 95
         },
         {
             "year": 1958,
@@ -587,7 +787,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 396,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 38000,
+            "rating_imdb_metascore": 89.0,
+            "rating_imdb_critic_count": 105,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 97
         },
         {
             "year": 1959,
@@ -609,7 +817,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 2580,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 257000,
+            "rating_imdb_metascore": 98.0,
+            "rating_imdb_critic_count": 231,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 94
         },
         {
             "year": 1959,
@@ -631,7 +847,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 3062,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 315000,
+            "rating_imdb_metascore": 98.0,
+            "rating_imdb_critic_count": 186,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 97
         },
         {
             "year": 1959,
@@ -653,7 +877,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 793,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 60000,
+            "rating_imdb_metascore": 93.0,
+            "rating_imdb_critic_count": 83,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1960,
@@ -675,7 +907,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 24,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": 71.0,
+            "rating_imdb_critic_count": 33,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 93
         },
         {
             "year": 1960,
@@ -701,7 +941,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 7278,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 537000,
+            "rating_imdb_metascore": 64.0,
+            "rating_imdb_critic_count": 324,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 69
         },
         {
             "year": 1961,
@@ -727,7 +975,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.9,
+            "rating_tmdb_count": 187,
+            "rating_imdb": 7.2,
+            "rating_imdb_count": 14000,
+            "rating_imdb_metascore": 79.0,
+            "rating_imdb_critic_count": 41,
+            "rating_rt_audience": 78,
+            "rating_rt_tomatometer": 92
         },
         {
             "year": 1961,
@@ -749,7 +1005,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 1348,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 104000,
+            "rating_imdb_metascore": 86.0,
+            "rating_imdb_critic_count": 150,
+            "rating_rt_audience": 84,
+            "rating_rt_tomatometer": 93
         },
         {
             "year": 1962,
@@ -771,7 +1035,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 2196,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 282000,
+            "rating_imdb_metascore": 100.0,
+            "rating_imdb_critic_count": 161,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 93
         },
         {
             "year": 1962,
@@ -793,7 +1065,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 100,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 8000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 93
         },
         {
             "year": 1963,
@@ -815,7 +1095,15 @@
                     "iso_3166_1": "XC",
                     "name": "Czechoslovakia"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 48,
+            "rating_imdb": 7.0,
+            "rating_imdb_count": 2000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 68,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1963,
@@ -841,7 +1129,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.4,
+            "rating_tmdb_count": 513,
+            "rating_imdb": 8.4,
+            "rating_imdb_count": 41000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 95
         },
         {
             "year": 1963,
@@ -863,7 +1159,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 1887,
+            "rating_imdb": "N/A",
+            "rating_imdb_count": "N/A",
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 94
         },
         {
             "year": 1964,
@@ -889,7 +1193,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 4281,
+            "rating_imdb": 8.4,
+            "rating_imdb_count": 471000,
+            "rating_imdb_metascore": 97.0,
+            "rating_imdb_critic_count": 236,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1964,
@@ -911,7 +1223,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 242,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 17000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 91
         },
         {
             "year": 1964,
@@ -933,7 +1253,15 @@
                     "iso_3166_1": "FR",
                     "name": "France"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 505,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 26000,
+            "rating_imdb_metascore": 86.0,
+            "rating_imdb_critic_count": 134,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 99
         },
         {
             "year": 1964,
@@ -955,7 +1283,15 @@
                     "iso_3166_1": "XC",
                     "name": "Czechoslovakia"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 43,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 2000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": null
         },
         {
             "year": 1966,
@@ -977,7 +1313,15 @@
                     "iso_3166_1": "SE",
                     "name": "Sweden"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 1496,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 112000,
+            "rating_imdb_metascore": 86.0,
+            "rating_imdb_critic_count": 151,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 91
         },
         {
             "year": 1966,
@@ -1003,7 +1347,15 @@
                     "iso_3166_1": "SE",
                     "name": "Sweden"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 279,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 19000,
+            "rating_imdb_metascore": 100.0,
+            "rating_imdb_critic_count": 114,
+            "rating_rt_audience": 86,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1966,
@@ -1025,7 +1377,15 @@
                     "iso_3166_1": "CZ",
                     "name": "Czech Republic"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 26,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 73,
+            "rating_rt_tomatometer": null
         },
         {
             "year": 1966,
@@ -1047,7 +1407,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 182,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 16000,
+            "rating_imdb_metascore": 75.0,
+            "rating_imdb_critic_count": 57,
+            "rating_rt_audience": 81,
+            "rating_rt_tomatometer": 88
         },
         {
             "year": 1967,
@@ -1069,7 +1437,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 2492,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 265000,
+            "rating_imdb_metascore": 83.0,
+            "rating_imdb_critic_count": 197,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 87
         },
         {
             "year": 1967,
@@ -1095,7 +1471,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 693,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 49000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1967,
@@ -1121,7 +1505,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 859,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 80
         },
         {
             "year": 1967,
@@ -1143,7 +1535,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.6,
+            "rating_tmdb_count": 1524,
+            "rating_imdb": 6.8,
+            "rating_imdb_count": 105000,
+            "rating_imdb_metascore": 61.0,
+            "rating_imdb_critic_count": 122,
+            "rating_rt_audience": 68,
+            "rating_rt_tomatometer": 73
         },
         {
             "year": 1968,
@@ -1159,7 +1559,15 @@
             "rt": "https://www.rottentomatoes.com/m/2001_a_space_odyssey",
             "comments": "",
             "watched": "",
-            "tmdb": 368351
+            "tmdb": 368351,
+            "rating_tmdb": 0.0,
+            "rating_tmdb_count": 0,
+            "rating_imdb": 6.2,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 92
         },
         {
             "year": 1968,
@@ -1181,7 +1589,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 1737,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 124000,
+            "rating_imdb_metascore": 89.0,
+            "rating_imdb_critic_count": 232,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 96
         },
         {
             "year": 1968,
@@ -1203,7 +1619,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 2915,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 206000,
+            "rating_imdb_metascore": 96.0,
+            "rating_imdb_critic_count": 278,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 96
         },
         {
             "year": 1968,
@@ -1225,7 +1649,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 752,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 66000,
+            "rating_imdb_metascore": 81.0,
+            "rating_imdb_critic_count": 117,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1968,
@@ -1247,7 +1679,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 6,
+            "rating_imdb": 7.2,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 90
         },
         {
             "year": 1969,
@@ -1269,7 +1709,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 931,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 107000,
+            "rating_imdb_metascore": 79.0,
+            "rating_imdb_critic_count": 136,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 87
         },
         {
             "year": 1969,
@@ -1295,7 +1743,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 197,
+            "rating_imdb": 6.9,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 71,
+            "rating_rt_tomatometer": null
         },
         {
             "year": 1970,
@@ -1317,7 +1773,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 125,
+            "rating_imdb": 6.9,
+            "rating_imdb_count": 5000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 71,
+            "rating_rt_tomatometer": 38
         },
         {
             "year": 1971,
@@ -1339,7 +1803,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 467,
+            "rating_imdb": 7.2,
+            "rating_imdb_count": 36000,
+            "rating_imdb_metascore": 60.0,
+            "rating_imdb_critic_count": 94,
+            "rating_rt_audience": 72,
+            "rating_rt_tomatometer": 67
         },
         {
             "year": 1971,
@@ -1361,7 +1833,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 373,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 42000,
+            "rating_imdb_metascore": 67.0,
+            "rating_imdb_critic_count": 77,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 83
         },
         {
             "year": 1971,
@@ -1383,7 +1863,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.7,
+            "rating_tmdb_count": 83,
+            "rating_imdb": 4.7,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 91
         },
         {
             "year": 1971,
@@ -1405,7 +1893,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 267,
+            "rating_imdb": 7.2,
+            "rating_imdb_count": 25000,
+            "rating_imdb_metascore": 81.0,
+            "rating_imdb_critic_count": 92,
+            "rating_rt_audience": 80,
+            "rating_rt_tomatometer": 93
         },
         {
             "year": 1971,
@@ -1427,7 +1923,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 1272,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 117000,
+            "rating_imdb_metascore": 94.0,
+            "rating_imdb_critic_count": 179,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1971,
@@ -1449,7 +1953,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 306,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 32000,
+            "rating_imdb_metascore": 80.0,
+            "rating_imdb_critic_count": 109,
+            "rating_rt_audience": 28,
+            "rating_rt_tomatometer": 11
         },
         {
             "year": 1971,
@@ -1471,7 +1983,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.4,
+            "rating_tmdb_count": 268,
+            "rating_imdb": 5.8,
+            "rating_imdb_count": 11000,
+            "rating_imdb_metascore": 42.0,
+            "rating_imdb_critic_count": 31,
+            "rating_rt_audience": 31,
+            "rating_rt_tomatometer": 26
         },
         {
             "year": 1972,
@@ -1493,7 +2013,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 261,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 24000,
+            "rating_imdb_metascore": 93.0,
+            "rating_imdb_critic_count": 108,
+            "rating_rt_audience": 86,
+            "rating_rt_tomatometer": 84
         },
         {
             "year": 1972,
@@ -1515,7 +2043,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.9,
+            "rating_tmdb_count": 990,
+            "rating_imdb": 6.2,
+            "rating_imdb_count": 81000,
+            "rating_imdb_metascore": 65.0,
+            "rating_imdb_critic_count": 212,
+            "rating_rt_audience": 59,
+            "rating_rt_tomatometer": 66
         },
         {
             "year": 1972,
@@ -1537,7 +2073,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 643,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 53000,
+            "rating_imdb_metascore": 80.0,
+            "rating_imdb_critic_count": 105,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 93
         },
         {
             "year": 1972,
@@ -1559,7 +2103,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.7,
+            "rating_tmdb_count": 15161,
+            "rating_imdb": 9.2,
+            "rating_imdb_count": 1000000,
+            "rating_imdb_metascore": 100.0,
+            "rating_imdb_critic_count": 269,
+            "rating_rt_audience": 98,
+            "rating_rt_tomatometer": 97
         },
         {
             "year": 1973,
@@ -1585,7 +2137,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 661,
+            "rating_imdb": 7.2,
+            "rating_imdb_count": 54000,
+            "rating_imdb_metascore": 95.0,
+            "rating_imdb_critic_count": 235,
+            "rating_rt_audience": 76,
+            "rating_rt_tomatometer": 95
         },
         {
             "year": 1973,
@@ -1607,7 +2167,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 6000,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 382000,
+            "rating_imdb_metascore": 81.0,
+            "rating_imdb_critic_count": 233,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 83
         },
         {
             "year": 1974,
@@ -1633,7 +2201,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 377,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 40000,
+            "rating_imdb_metascore": 80.0,
+            "rating_imdb_critic_count": 73,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 89
         },
         {
             "year": 1974,
@@ -1659,7 +2235,15 @@
                     "iso_3166_1": "SU",
                     "name": "Soviet Union"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 617,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 44000,
+            "rating_imdb_metascore": 80.0,
+            "rating_imdb_critic_count": 88,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 100
         },
         {
             "year": 1974,
@@ -1681,7 +2265,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 2148,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 150000,
+            "rating_imdb_metascore": 78.0,
+            "rating_imdb_critic_count": 277,
+            "rating_rt_audience": 82,
+            "rating_rt_tomatometer": 89
         },
         {
             "year": 1975,
@@ -1703,7 +2295,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 2784,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 313000,
+            "rating_imdb_metascore": 92.0,
+            "rating_imdb_critic_count": 162,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 99
         },
         {
             "year": 1975,
@@ -1725,7 +2325,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.4,
+            "rating_tmdb_count": 8207,
+            "rating_imdb": 8.7,
+            "rating_imdb_count": 963000,
+            "rating_imdb_metascore": 84.0,
+            "rating_imdb_critic_count": 186,
+            "rating_rt_audience": 96,
+            "rating_rt_tomatometer": 94
         },
         {
             "year": 1975,
@@ -1751,7 +2359,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.4,
+            "rating_tmdb_count": 15,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 97
         },
         {
             "year": 1975,
@@ -1773,7 +2389,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 7918,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 570000,
+            "rating_imdb_metascore": 87.0,
+            "rating_imdb_critic_count": 283,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1976,
@@ -1795,7 +2419,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 775,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 53000,
+            "rating_imdb_metascore": 63.0,
+            "rating_imdb_critic_count": 125,
+            "rating_rt_audience": 83,
+            "rating_rt_tomatometer": 88
         },
         {
             "year": 1976,
@@ -1817,7 +2449,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 8804,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 771000,
+            "rating_imdb_metascore": 94.0,
+            "rating_imdb_critic_count": 307,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 96
         },
         {
             "year": 1976,
@@ -1839,7 +2479,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.5,
+            "rating_tmdb_count": 778,
+            "rating_imdb": 5.5,
+            "rating_imdb_count": 58000,
+            "rating_imdb_metascore": 43.0,
+            "rating_imdb_critic_count": 119,
+            "rating_rt_audience": 40,
+            "rating_rt_tomatometer": 26
         },
         {
             "year": 1976,
@@ -1861,7 +2509,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 9867,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 361000,
+            "rating_imdb_metascore": 88.0,
+            "rating_imdb_critic_count": 468,
+            "rating_rt_audience": 79,
+            "rating_rt_tomatometer": 90
         },
         {
             "year": 1977,
@@ -1881,7 +2537,15 @@
             "rt": "https://www.rottentomatoes.com/m/stand_by_me_1986/",
             "comments": "",
             "watched": "",
-            "tmdb": 318545
+            "tmdb": 318545,
+            "rating_tmdb": 5.5,
+            "rating_tmdb_count": 2,
+            "rating_imdb": 6.7,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 91
         },
         {
             "year": 1977,
@@ -1903,7 +2567,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 3075,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 260000,
+            "rating_imdb_metascore": 92.0,
+            "rating_imdb_critic_count": 157,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 96
         },
         {
             "year": 1977,
@@ -1925,7 +2597,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 16371,
+            "rating_imdb": 8.6,
+            "rating_imdb_count": 1000000,
+            "rating_imdb_metascore": 90.0,
+            "rating_imdb_critic_count": 206,
+            "rating_rt_audience": 96,
+            "rating_rt_tomatometer": 92
         },
         {
             "year": 1979,
@@ -1947,7 +2627,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 3180,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 194000,
+            "rating_imdb_metascore": 90.0,
+            "rating_imdb_critic_count": 243,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 94
         },
         {
             "year": 1979,
@@ -1969,7 +2657,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 6186,
+            "rating_imdb": 8.4,
+            "rating_imdb_count": 637000,
+            "rating_imdb_metascore": 94.0,
+            "rating_imdb_critic_count": 317,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1979,
@@ -1991,7 +2687,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 1282,
+            "rating_imdb": 6.8,
+            "rating_imdb_count": 97000,
+            "rating_imdb_metascore": 65.0,
+            "rating_imdb_critic_count": 181,
+            "rating_rt_audience": 65,
+            "rating_rt_tomatometer": 68
         },
         {
             "year": 1979,
@@ -2013,7 +2717,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 317,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 30000,
+            "rating_imdb_metascore": 72.0,
+            "rating_imdb_critic_count": 101,
+            "rating_rt_audience": 86,
+            "rating_rt_tomatometer": 87
         },
         {
             "year": 1980,
@@ -2039,7 +2751,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 473,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 37000,
+            "rating_imdb_metascore": 68.0,
+            "rating_imdb_critic_count": 67,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 82
         },
         {
             "year": 1980,
@@ -2061,7 +2781,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 3339,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 227000,
+            "rating_imdb_metascore": 78.0,
+            "rating_imdb_critic_count": 138,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 97
         },
         {
             "year": 1980,
@@ -2083,7 +2811,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 345,
+            "rating_imdb": 6.9,
+            "rating_imdb_count": 31000,
+            "rating_imdb_metascore": 58.0,
+            "rating_imdb_critic_count": 53,
+            "rating_rt_audience": 74,
+            "rating_rt_tomatometer": 83
         },
         {
             "year": 1980,
@@ -2109,7 +2845,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 13714,
+            "rating_imdb": 8.4,
+            "rating_imdb_count": 958000,
+            "rating_imdb_metascore": 66.0,
+            "rating_imdb_critic_count": 365,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 84
         },
         {
             "year": 1980,
@@ -2131,7 +2875,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 3217,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 192000,
+            "rating_imdb_metascore": 60.0,
+            "rating_imdb_critic_count": 111,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 73
         },
         {
             "year": 1980,
@@ -2157,7 +2909,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.4,
+            "rating_tmdb_count": 311,
+            "rating_imdb": 6.5,
+            "rating_imdb_count": 22000,
+            "rating_imdb_metascore": 43.0,
+            "rating_imdb_critic_count": 146,
+            "rating_rt_audience": 49,
+            "rating_rt_tomatometer": 50
         },
         {
             "year": 1981,
@@ -2179,7 +2939,15 @@
                     "iso_3166_1": "DE",
                     "name": "Germany"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 1579,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 243000,
+            "rating_imdb_metascore": 86.0,
+            "rating_imdb_critic_count": 119,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1981,
@@ -2201,7 +2969,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 9663,
+            "rating_imdb": 8.4,
+            "rating_imdb_count": 925000,
+            "rating_imdb_metascore": 85.0,
+            "rating_imdb_critic_count": 275,
+            "rating_rt_audience": 96,
+            "rating_rt_tomatometer": 95
         },
         {
             "year": 1982,
@@ -2231,7 +3007,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 10964,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 732000,
+            "rating_imdb_metascore": 84.0,
+            "rating_imdb_critic_count": 277,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 89
         },
         {
             "year": 1984,
@@ -2253,7 +3037,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 6932,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 387000,
+            "rating_imdb_metascore": 71.0,
+            "rating_imdb_critic_count": 278,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 97
         },
         {
             "year": 1984,
@@ -2275,7 +3067,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 1040,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 136000,
+            "rating_imdb_metascore": 92.0,
+            "rating_imdb_critic_count": 96,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 95
         },
         {
             "year": 1985,
@@ -2301,7 +3101,15 @@
                     "iso_3166_1": "RU",
                     "name": "Russia"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 812,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 70000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 97
         },
         {
             "year": 1985,
@@ -2323,7 +3131,15 @@
                     "iso_3166_1": "AU",
                     "name": "Australia"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.2,
+            "rating_tmdb_count": 2090,
+            "rating_imdb": 6.3,
+            "rating_imdb_count": 133000,
+            "rating_imdb_metascore": 71.0,
+            "rating_imdb_critic_count": 145,
+            "rating_rt_audience": 49,
+            "rating_rt_tomatometer": 80
         },
         {
             "year": 1986,
@@ -2345,7 +3161,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 3724,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 340000,
+            "rating_imdb_metascore": 61.0,
+            "rating_imdb_critic_count": 152,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 80
         },
         {
             "year": 1987,
@@ -2367,7 +3191,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 5851,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 391000,
+            "rating_imdb_metascore": 45.0,
+            "rating_imdb_critic_count": 277,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 82
         },
         {
             "year": 1987,
@@ -2389,7 +3221,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 3572,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 413000,
+            "rating_imdb_metascore": 77.0,
+            "rating_imdb_critic_count": 227,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 98
         },
         {
             "year": 1988,
@@ -2411,7 +3251,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 8723,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 830000,
+            "rating_imdb_metascore": 72.0,
+            "rating_imdb_critic_count": 215,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 94
         },
         {
             "year": 1991,
@@ -2437,7 +3285,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 9886,
+            "rating_imdb": 8.5,
+            "rating_imdb_count": 1000000,
+            "rating_imdb_metascore": 75.0,
+            "rating_imdb_critic_count": 316,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 93
         },
         {
             "year": 1992,
@@ -2459,7 +3315,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 3184,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 396000,
+            "rating_imdb_metascore": 85.0,
+            "rating_imdb_critic_count": 138,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 96
         },
         {
             "year": 1992,
@@ -2481,7 +3345,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 2369,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 282000,
+            "rating_imdb_metascore": 59.0,
+            "rating_imdb_critic_count": 61,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 89
         },
         {
             "year": 1993,
@@ -2503,7 +3375,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 6022,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 600000,
+            "rating_imdb_metascore": 72.0,
+            "rating_imdb_critic_count": 138,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 96
         },
         {
             "year": 1993,
@@ -2525,7 +3405,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 12872,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 920000,
+            "rating_imdb_metascore": 68.0,
+            "rating_imdb_critic_count": 238,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 92
         },
         {
             "year": 1994,
@@ -2547,7 +3435,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 4659,
+            "rating_imdb": 7.2,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 76,
+            "rating_rt_tomatometer": 94
         },
         {
             "year": 1995,
@@ -2569,7 +3465,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 6546,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 600000,
+            "rating_imdb_metascore": 74.0,
+            "rating_imdb_critic_count": 202,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 89
         },
         {
             "year": 1995,
@@ -2591,7 +3495,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 16167,
+            "rating_imdb": 8.6,
+            "rating_imdb_count": 1000000,
+            "rating_imdb_metascore": 65.0,
+            "rating_imdb_critic_count": 177,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 82
         },
         {
             "year": 1995,
@@ -2613,7 +3525,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 8172,
+            "rating_imdb": 8.5,
+            "rating_imdb_count": 1000000,
+            "rating_imdb_metascore": 77.0,
+            "rating_imdb_critic_count": 153,
+            "rating_rt_audience": 96,
+            "rating_rt_tomatometer": 88
         },
         {
             "year": 1998,
@@ -2635,7 +3555,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.4,
+            "rating_tmdb_count": 9163,
+            "rating_imdb": 8.5,
+            "rating_imdb_count": 1000000,
+            "rating_imdb_metascore": 62.0,
+            "rating_imdb_critic_count": 128,
+            "rating_rt_audience": 96,
+            "rating_rt_tomatometer": 83
         },
         {
             "year": 1998,
@@ -2661,7 +3589,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 8904,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 774000,
+            "rating_imdb_metascore": 71.0,
+            "rating_imdb_critic_count": 202,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 83
         },
         {
             "year": 1999,
@@ -2687,7 +3623,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.4,
+            "rating_tmdb_count": 22993,
+            "rating_imdb": 8.8,
+            "rating_imdb_count": 2000000,
+            "rating_imdb_metascore": 66.0,
+            "rating_imdb_critic_count": 384,
+            "rating_rt_audience": 96,
+            "rating_rt_tomatometer": 79
         },
         {
             "year": 2000,
@@ -2709,7 +3653,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 16371,
+            "rating_imdb": 8.6,
+            "rating_imdb_count": 1000000,
+            "rating_imdb_metascore": 90.0,
+            "rating_imdb_critic_count": 206,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 77
         },
         {
             "year": 2000,
@@ -2731,7 +3683,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 1659,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 158000,
+            "rating_imdb_metascore": 70.0,
+            "rating_imdb_critic_count": 107,
+            "rating_rt_audience": 79,
+            "rating_rt_tomatometer": 90
         },
         {
             "year": 2001,
@@ -2757,7 +3717,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 3680,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 276000,
+            "rating_imdb_metascore": 66.0,
+            "rating_imdb_critic_count": 210,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 76
         },
         {
             "year": 2002,
@@ -2787,7 +3755,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 2047,
+            "rating_imdb": 7.2,
+            "rating_imdb_count": 224000,
+            "rating_imdb_metascore": 81.0,
+            "rating_imdb_critic_count": 224,
+            "rating_rt_audience": 83,
+            "rating_rt_tomatometer": 86
         },
         {
             "year": 2002,
@@ -2811,7 +3787,15 @@
                     "iso_3166_1": "KR",
                     "name": "South Korea"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.1,
+            "rating_tmdb_count": 5,
+            "rating_imdb": 6.5,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 94
         },
         {
             "year": 2003,
@@ -2837,7 +3821,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.5,
+            "rating_tmdb_count": 18694,
+            "rating_imdb": 8.9,
+            "rating_imdb_count": 1000000,
+            "rating_imdb_metascore": 94.0,
+            "rating_imdb_critic_count": 361,
+            "rating_rt_audience": 86,
+            "rating_rt_tomatometer": 93
         },
         {
             "year": 2004,
@@ -2859,7 +3851,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 6592,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 536000,
+            "rating_imdb_metascore": 76.0,
+            "rating_imdb_critic_count": 278,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 92
         },
         {
             "year": 2006,
@@ -2885,7 +3885,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 5943,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 525000,
+            "rating_imdb_metascore": 64.0,
+            "rating_imdb_critic_count": 183,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 63
         },
         {
             "year": 2007,
@@ -2907,7 +3915,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.6,
+            "rating_tmdb_count": 2635,
+            "rating_imdb": 7.0,
+            "rating_imdb_count": 206000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 77,
+            "rating_rt_tomatometer": 76
         },
         {
             "year": 2010,
@@ -2933,7 +3949,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.4,
+            "rating_tmdb_count": 30407,
+            "rating_imdb": 8.8,
+            "rating_imdb_count": 2000000,
+            "rating_imdb_metascore": 74.0,
+            "rating_imdb_critic_count": 485,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 87
         },
         {
             "year": 2011,
@@ -2963,7 +3987,15 @@
                     "iso_3166_1": "SE",
                     "name": "Sweden"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 5541,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 445000,
+            "rating_imdb_metascore": 71.0,
+            "rating_imdb_critic_count": 543,
+            "rating_rt_audience": 86,
+            "rating_rt_tomatometer": 86
         },
         {
             "year": 2012,
@@ -2985,7 +4017,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.6,
+            "rating_tmdb_count": 6229,
+            "rating_imdb": 7.0,
+            "rating_imdb_count": 398000,
+            "rating_imdb_metascore": 72.0,
+            "rating_imdb_critic_count": 686,
+            "rating_rt_audience": 74,
+            "rating_rt_tomatometer": 92
         },
         {
             "year": 2015,
@@ -3007,7 +4047,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 6564,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 403000,
+            "rating_imdb_metascore": 82.0,
+            "rating_imdb_critic_count": 554,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 92
         }
     ]
 }

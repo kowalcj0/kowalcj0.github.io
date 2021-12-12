@@ -24,7 +24,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 2533,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 196000,
+            "rating_imdb_metascore": 84.0,
+            "rating_imdb_critic_count": 266,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "Amistad",
@@ -46,7 +54,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 970,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 75000,
+            "rating_imdb_metascore": 63.0,
+            "rating_imdb_critic_count": 92,
+            "rating_rt_audience": 79,
+            "rating_rt_tomatometer": 77
         },
         {
             "title": "The Legend of 1900",
@@ -68,7 +84,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 1736,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 62000,
+            "rating_imdb_metascore": 58.0,
+            "rating_imdb_critic_count": 64,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 54
         },
         {
             "title": "Soy Cuba",
@@ -101,7 +125,15 @@
                     "iso_3166_1": "SU",
                     "name": "Soviet Union"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 122,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 9000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 100
         }
     ]
 }

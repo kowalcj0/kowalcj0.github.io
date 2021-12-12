@@ -26,7 +26,15 @@
                     "iso_3166_1": "CA",
                     "name": "Canada"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 55,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 83,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Anima Mundi (The Soul of the World)",
@@ -51,7 +59,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 28,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Baraka",
@@ -73,7 +89,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 428,
+            "rating_imdb": 8.6,
+            "rating_imdb_count": 38000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 96,
+            "rating_rt_tomatometer": 81
         },
         {
             "title": "Samsara",
@@ -183,7 +207,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 445,
+            "rating_imdb": 8.5,
+            "rating_imdb_count": 35000,
+            "rating_imdb_metascore": 65.0,
+            "rating_imdb_critic_count": 81,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 76
         }
     ]
 }

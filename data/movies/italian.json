@@ -13,6 +13,7 @@
             "trailer": "https://www.youtube.com/watch?v=kK1WXnyEkBk",
             "wiki": "https://en.wikipedia.org/wiki/Rocco_and_His_Brothers",
             "imdb": "https://www.imdb.com/title/tt0054248/",
+            "justwatch": "https://www.justwatch.com/uk/movie/rocco-and-his-brothers",
             "rt": "https://www.rottentomatoes.com/m/rocco_and_his_brothers",
             "comments": "",
             "tmdb": 8422,
@@ -25,7 +26,15 @@
                     "iso_3166_1": "FR",
                     "name": "France"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 371,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 18000,
+            "rating_imdb_metascore": 84.0,
+            "rating_imdb_critic_count": 109,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 89
         },
         {
             "title": "Life Is Beautiful",
@@ -40,6 +49,7 @@
             "trailer": "https://www.youtube.com/watch?v=7MnY7Y4ukeA",
             "wiki": "https://en.wikipedia.org/wiki/Life_Is_Beautiful",
             "imdb": "https://www.imdb.com/title/tt0118799/",
+            "justwatch": "https://www.justwatch.com/uk/movie/life-is-beautiful",
             "rt": "https://www.rottentomatoes.com/m/1084398_life_is_beautiful",
             "comments": "Buon Giorno Principessa",
             "tmdb": 637,
@@ -48,7 +58,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.5,
+            "rating_tmdb_count": 10639,
+            "rating_imdb": 8.6,
+            "rating_imdb_count": 660000,
+            "rating_imdb_metascore": 59.0,
+            "rating_imdb_critic_count": 160,
+            "rating_rt_audience": 96,
+            "rating_rt_tomatometer": 80
         },
         {
             "title": "8\u00bd",
@@ -61,6 +79,7 @@
             "trailer": "https://www.youtube.com/watch?v=RmIC9pQ80Fk",
             "wiki": "https://en.wikipedia.org/wiki/8\u00bd",
             "imdb": "https://www.imdb.com/title/tt0056801/",
+            "justwatch": "https://www.justwatch.com/uk/movie/81-2",
             "rt": "https://www.rottentomatoes.com/m/8_12",
             "comments": "",
             "tmdb": 422,
@@ -73,7 +92,15 @@
                     "iso_3166_1": "FR",
                     "name": "France"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 1656,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 114000,
+            "rating_imdb_metascore": 91.0,
+            "rating_imdb_critic_count": 127,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "Bicycle Thieves",
@@ -86,6 +113,7 @@
             "trailer": "https://www.youtube.com/watch?v=H2P4xo9kmPM",
             "wiki": "https://en.wikipedia.org/wiki/Bicycle_Thieves",
             "imdb": "https://www.imdb.com/title/tt0040522/",
+            "justwatch": "https://www.justwatch.com/uk/movie/bicycle-thieves",
             "rt": "https://www.rottentomatoes.com/m/bicycle_thieves",
             "comments": "",
             "tmdb": 5156,
@@ -94,7 +122,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 1716,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 157000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "La Dolce Vita",
@@ -108,6 +144,7 @@
             "trailer": "https://www.youtube.com/watch?v=1BeWEPXWDX4",
             "wiki": "https://en.wikipedia.org/wiki/La_Dolce_Vita",
             "imdb": "https://www.imdb.com/title/tt0053779/",
+            "justwatch": "https://www.justwatch.com/uk/movie/la-dolce-vita",
             "rt": "https://www.rottentomatoes.com/m/dolce_vita",
             "comments": "",
             "tmdb": 439,
@@ -120,7 +157,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 1358,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 71000,
+            "rating_imdb_metascore": 95.0,
+            "rating_imdb_critic_count": 166,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "Marriage Italian Style",
@@ -135,6 +180,7 @@
             "trailer": "https://www.youtube.com/watch?v=TgFec85heuU",
             "wiki": "https://en.wikipedia.org/wiki/Marriage_Italian_Style",
             "imdb": "https://www.imdb.com/title/tt0058335/",
+            "justwatch": "https://www.justwatch.com/uk/movie/marriage-italian-style",
             "rt": "https://www.rottentomatoes.com/m/marriage_italian_style",
             "comments": "",
             "tmdb": 49687,
@@ -147,7 +193,15 @@
                     "iso_3166_1": "FR",
                     "name": "France"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 369,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 9000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 84,
+            "rating_rt_tomatometer": 80
         },
         {
             "title": "Divorce Italian Style",
@@ -170,7 +224,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 305,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 12000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Rome, Open City",
@@ -185,7 +247,8 @@
             "trailer": "https://www.youtube.com/watch?v=c1P1JRSJT6Q",
             "wiki": "https://en.wikipedia.org/wiki/Rome,_Open_City",
             "imdb": "https://www.imdb.com/title/tt0038890/",
-            "rt": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/rome-open-city",
+            "rt": "https://www.rottentomatoes.com/m/open_city",
             "comments": "",
             "tmdb": 307,
             "production_countries": [
@@ -193,10 +256,18 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 592,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 25000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 100
         },
         {
-            "title": "La Strada",
+            "title": "La strada",
             "original_title": "",
             "director": "Federico Fellini",
             "genres": [
@@ -206,6 +277,7 @@
             "trailer": "https://www.youtube.com/watch?v=CucHyXsxCU8",
             "wiki": "https://en.wikipedia.org/wiki/La_Strada",
             "imdb": "https://www.imdb.com/title/tt0047528/",
+            "justwatch": "https://www.justwatch.com/uk/movie/la-strada",
             "rt": "https://www.rottentomatoes.com/m/the_road_1954",
             "comments": "Depicts harsh reality of post-war Italy",
             "tmdb": 405,
@@ -214,7 +286,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 723,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 61000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "Dogman",
@@ -238,7 +318,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 1836,
+            "rating_imdb": 7.2,
+            "rating_imdb_count": 25000,
+            "rating_imdb_metascore": 71.0,
+            "rating_imdb_critic_count": 179,
+            "rating_rt_audience": 78,
+            "rating_rt_tomatometer": 84
         }
     ]
 }

@@ -21,7 +21,15 @@
                     "iso_3166_1": "TR",
                     "name": "Turkey"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 3783,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 44000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Fatherhood",
@@ -52,7 +60,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 887,
+            "rating_imdb": 6.6,
+            "rating_imdb_count": 33000,
+            "rating_imdb_metascore": 53.0,
+            "rating_imdb_critic_count": 83,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         }
     ]
 }

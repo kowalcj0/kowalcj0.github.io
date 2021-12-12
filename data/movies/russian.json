@@ -26,7 +26,15 @@
                     "iso_3166_1": "SU",
                     "name": "Soviet Union"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 225,
+            "rating_imdb": 8.3,
+            "rating_imdb_count": 17000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "Solaris",
@@ -49,7 +57,15 @@
                     "iso_3166_1": "RU",
                     "name": "Russia"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 1128,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 88000,
+            "rating_imdb_metascore": 90.0,
+            "rating_imdb_critic_count": 150,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 92
         },
         {
             "title": "Stalker",
@@ -75,7 +91,15 @@
                     "iso_3166_1": "SU",
                     "name": "Soviet Union"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 1428,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 128000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Burnt by the Sun",
@@ -102,7 +126,15 @@
                     "iso_3166_1": "RU",
                     "name": "Russia"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 114,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 15000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 80
         }
     ]
 }

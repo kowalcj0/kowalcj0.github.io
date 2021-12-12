@@ -20,7 +20,13 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_imdb": 9.0,
+            "rating_imdb_count": 24000,
+            "rating_imdb_metascore": 100.0,
+            "rating_imdb_critic_count": 62,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Innocent Sorcerers",
@@ -43,7 +49,15 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 20,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Night Train",
@@ -66,7 +80,15 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 51,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "A Short Film About Killing",
@@ -88,7 +110,15 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 235,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 19000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 91
         },
         {
             "title": "A Short Film About Love",
@@ -110,7 +140,15 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 236,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 22000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 95
         },
         {
             "title": "Kanal",
@@ -132,7 +170,15 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 72,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 7000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Day of the Wacko",
@@ -154,7 +200,15 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 130,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 9000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Teddy Bear",
@@ -167,7 +221,7 @@
             "trailer": "https://www.youtube.com/watch?v=qITg7sI4P0I",
             "wiki": "https://en.wikipedia.org/wiki/Teddy_Bear_(1980_film)",
             "imdb": "https://www.imdb.com/title/tt0082755/",
-            "rt": "",
+            "rt": "https://www.rottentomatoes.com/m/mis-teddy-bear",
             "comments": "Great comedy but might be a bit too hard to understand without prior knowledge of some the absurds of everyday life in a communist country",
             "tmdb": 31407,
             "production_countries": [
@@ -175,7 +229,15 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 63,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 5000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Sexmission",
@@ -197,7 +259,15 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 194,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 13000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Symmetry",
@@ -218,7 +288,15 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 38,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 81,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Ida",
@@ -251,7 +329,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 733,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 56000,
+            "rating_imdb_metascore": 91.0,
+            "rating_imdb_critic_count": 302,
+            "rating_rt_audience": 79,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "Cold war",
@@ -282,7 +368,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 1149,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 54000,
+            "rating_imdb_metascore": 90.0,
+            "rating_imdb_critic_count": 303,
+            "rating_rt_audience": 81,
+            "rating_rt_tomatometer": 92
         }
     ]
 }

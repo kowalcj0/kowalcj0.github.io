@@ -29,7 +29,15 @@
                     "iso_3166_1": "ES",
                     "name": "Spain"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 539,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 41000,
+            "rating_imdb_metascore": 93.0,
+            "rating_imdb_critic_count": 94,
+            "rating_rt_audience": 89,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "The Phantom of Liberty",
@@ -55,7 +63,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 181,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 15000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 87
         },
         {
             "title": "That Obscure Object of Desire",
@@ -81,7 +97,15 @@
                     "iso_3166_1": "ES",
                     "name": "Spain"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 239,
+            "rating_imdb": 7.9,
+            "rating_imdb_count": 22000,
+            "rating_imdb_metascore": 84.0,
+            "rating_imdb_critic_count": 94,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 97
         }
     ]
 }

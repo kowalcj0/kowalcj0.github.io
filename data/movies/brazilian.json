@@ -14,7 +14,7 @@
             "trailer": "",
             "wiki": "https://en.wikipedia.org/wiki/Smokey_and_the_Bandit",
             "imdb": "https://www.imdb.com/title/tt0045595/",
-            "rt": "",
+            "rt": "https://www.rottentomatoes.com/m/o-cangaceiro-the-bandit",
             "netflix": "",
             "justwatch": "",
             "comments": "",
@@ -24,7 +24,15 @@
                     "iso_3166_1": "BR",
                     "name": "Brazil"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 14,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 55,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Gabriela",
@@ -38,7 +46,7 @@
             "trailer": "https://www.youtube.com/watch?v=8h8BqDRqDh0",
             "wiki": "https://en.wikipedia.org/wiki/Gabriela_(1983_film)",
             "imdb": "https://www.imdb.com/title/tt0085575/",
-            "rt": "",
+            "rt": "https://www.rottentomatoes.com/m/gabriela",
             "netflix": "",
             "justwatch": "",
             "comments": "",
@@ -48,7 +56,15 @@
                     "iso_3166_1": "BR",
                     "name": "Brazil"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.9,
+            "rating_tmdb_count": 21,
+            "rating_imdb": 6.3,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 48,
+            "rating_rt_tomatometer": 33
         },
         {
             "title": "Bacurau",
@@ -72,7 +88,15 @@
                     "iso_3166_1": "FR",
                     "name": "France"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 792,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 25000,
+            "rating_imdb_metascore": 82.0,
+            "rating_imdb_critic_count": 166,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 93
         },
         {
             "title": "Elite Squad",
@@ -87,9 +111,9 @@
             "trailer": "https://www.youtube.com/watch?v=WNrC-vLpTGI",
             "wiki": "https://en.wikipedia.org/wiki/Elite_Squad",
             "imdb": "https://www.imdb.com/title/tt0861739/",
-            "rt": "",
+            "rt": "https://www.rottentomatoes.com/m/elite_squad",
             "netflix": "",
-            "justwatch": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/elite-squad",
             "comments": "",
             "tmdb": 7347,
             "production_countries": [
@@ -97,7 +121,15 @@
                     "iso_3166_1": "BR",
                     "name": "Brazil"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.1,
+            "rating_tmdb_count": 1663,
+            "rating_imdb": 8.0,
+            "rating_imdb_count": 101000,
+            "rating_imdb_metascore": 33.0,
+            "rating_imdb_critic_count": 151,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 51
         },
         {
             "title": "City of God",
@@ -111,9 +143,9 @@
             "trailer": "https://www.youtube.com/watch?v=ioUE_5wpg_E",
             "wiki": "https://en.wikipedia.org/wiki/City_of_God_(2002_film)",
             "imdb": "https://www.imdb.com/title/tt0317248/",
-            "rt": "",
+            "rt": "https://www.rottentomatoes.com/m/city_of_god",
             "netflix": "",
-            "justwatch": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/city-of-god",
             "comments": "",
             "tmdb": 598,
             "production_countries": [
@@ -121,7 +153,15 @@
                     "iso_3166_1": "BR",
                     "name": "Brazil"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.4,
+            "rating_tmdb_count": 5466,
+            "rating_imdb": 8.6,
+            "rating_imdb_count": 728000,
+            "rating_imdb_metascore": 79.0,
+            "rating_imdb_critic_count": 219,
+            "rating_rt_audience": 97,
+            "rating_rt_tomatometer": 91
         },
         {
             "title": "Black Orpheus",
@@ -137,9 +177,9 @@
             "trailer": "https://www.youtube.com/watch?v=NkxGkL7o9xk",
             "wiki": "https://en.wikipedia.org/wiki/Black_Orpheus",
             "imdb": "https://www.imdb.com/title/tt0053146/",
-            "rt": "",
+            "rt": "https://www.rottentomatoes.com/m/black_orpheus",
             "netflix": "",
-            "justwatch": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/black-orpheus",
             "comments": "",
             "tmdb": 40423,
             "production_countries": [
@@ -155,7 +195,15 @@
                     "iso_3166_1": "IT",
                     "name": "Italy"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 137,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 11000,
+            "rating_imdb_metascore": 81.0,
+            "rating_imdb_critic_count": 77,
+            "rating_rt_audience": 86,
+            "rating_rt_tomatometer": 87
         }
     ]
 }

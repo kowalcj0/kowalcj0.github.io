@@ -12,8 +12,18 @@
             "trailer": "https://www.youtube.com/watch?v=wJ1TOratCTo",
             "wiki": "https://en.wikipedia.org/wiki/Seven_Samurai",
             "imdb": "https://www.imdb.com/title/tt0047478/",
+            "justwatch": "https://www.justwatch.com/uk/movie/seven-samurai",
             "rt": "https://www.rottentomatoes.com/m/seven_samurai_1956",
-            "comments": ""
+            "comments": "",
+            "tmdb": 346,
+            "rating_tmdb": 8.5,
+            "rating_tmdb_count": 2462,
+            "rating_imdb": 8.6,
+            "rating_imdb_count": 332000,
+            "rating_imdb_metascore": 98.0,
+            "rating_imdb_critic_count": 125,
+            "rating_rt_audience": 97,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Rashomon",
@@ -28,8 +38,18 @@
             "trailer": "https://www.youtube.com/watch?v=xCZ9TguVOIA",
             "wiki": "https://en.wikipedia.org/wiki/Rashomon",
             "imdb": "https://www.imdb.com/title/tt0042876/",
+            "justwatch": "https://www.justwatch.com/uk/movie/rashomon",
             "rt": "https://www.rottentomatoes.com/m/rashomon",
-            "comments": ""
+            "comments": "",
+            "tmdb": 548,
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 1511,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 162000,
+            "rating_imdb_metascore": 98.0,
+            "rating_imdb_critic_count": 132,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 98
         },
         {
             "title": "Sanjuro",
@@ -44,8 +64,18 @@
             "trailer": "https://www.youtube.com/watch?v=Uq_rSsbhQnE",
             "wiki": "https://en.wikipedia.org/wiki/Sanjuro",
             "imdb": "https://www.imdb.com/title/tt0056443/",
+            "justwatch": "https://www.justwatch.com/uk/movie/sanjuro",
             "rt": "https://www.rottentomatoes.com/m/sanjuro",
-            "comments": ""
+            "comments": "",
+            "tmdb": 11712,
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 390,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 37000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "Yojimbo",
@@ -60,8 +90,18 @@
             "trailer": "https://www.youtube.com/watch?v=y_1iT_GmHTE",
             "wiki": "https://en.wikipedia.org/wiki/Yojimbo",
             "imdb": "https://www.imdb.com/title/tt0055630/",
+            "justwatch": "https://www.justwatch.com/uk/movie/yojimbo",
             "rt": "https://www.rottentomatoes.com/m/yojimbo",
-            "comments": ""
+            "comments": "",
+            "tmdb": 11878,
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 968,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 118000,
+            "rating_imdb_metascore": 93.0,
+            "rating_imdb_critic_count": 136,
+            "rating_rt_audience": 96,
+            "rating_rt_tomatometer": 95
         },
         {
             "title": "The Hidden Fortress",
@@ -75,8 +115,18 @@
             "trailer": "https://www.youtube.com/watch?v=3r7NgaWOaXg",
             "wiki": "https://en.wikipedia.org/wiki/The_Hidden_Fortress",
             "imdb": "https://www.imdb.com/title/tt0051808/",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-hidden-fortress",
             "rt": "https://www.rottentomatoes.com/m/1009583_hidden_fortress",
-            "comments": "Toshiro Mifune FTW! Star Wars Hidden Fortress Comparison https://www.youtube.com/watch?v=4g8r0LhpMzk"
+            "comments": "Toshiro Mifune FTW! Star Wars Hidden Fortress Comparison https://www.youtube.com/watch?v=4g8r0LhpMzk",
+            "tmdb": 1059,
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 396,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 38000,
+            "rating_imdb_metascore": 89.0,
+            "rating_imdb_critic_count": 105,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 97
         },
         {
             "title": "Throne of Blood",
@@ -90,8 +140,18 @@
             "trailer": "https://www.youtube.com/watch?v=LY7ETIO1KB8",
             "wiki": "https://en.wikipedia.org/wiki/Throne_of_Blood",
             "imdb": "https://www.imdb.com/title/tt0050613/",
+            "justwatch": "https://www.justwatch.com/uk/movie/throne-of-blood",
             "rt": "https://www.rottentomatoes.com/m/throne_of_blood",
-            "comments": ""
+            "comments": "",
+            "tmdb": 3777,
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 550,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 50000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 95
         }
     ]
 }

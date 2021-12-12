@@ -26,7 +26,15 @@
                     "iso_3166_1": "SE",
                     "name": "Sweden"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.9,
+            "rating_tmdb_count": 553,
+            "rating_imdb": 5.5,
+            "rating_imdb_count": 12000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 31,
+            "rating_rt_tomatometer": 70
         },
         {
             "title": "Dark Web: Cicada 3301",
@@ -43,7 +51,7 @@
             "imdb": "https://www.imdb.com/title/tt8110246/",
             "rt": "https://www.rottentomatoes.com/m/dark_web_cicada_3301",
             "netflix": "",
-            "justwatch": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/dark-web-cicada-3301",
             "comments": "",
             "rating_my": 1,
             "tmdb": 791469,
@@ -53,7 +61,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.5,
+            "rating_tmdb_count": 66,
+            "rating_imdb": 5.0,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 33,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Silk Road",
@@ -80,7 +96,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 113,
+            "rating_imdb": 6.0,
+            "rating_imdb_count": 4000,
+            "rating_imdb_metascore": 41.0,
+            "rating_imdb_critic_count": 50,
+            "rating_rt_audience": 38,
+            "rating_rt_tomatometer": 52
         },
         {
             "title": "The Mauritanian",
@@ -110,7 +134,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 579,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 42000,
+            "rating_imdb_metascore": 53.0,
+            "rating_imdb_critic_count": 166,
+            "rating_rt_audience": 84,
+            "rating_rt_tomatometer": 75
         },
         {
             "title": "Mortal Kombat",
@@ -143,7 +175,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 4119,
+            "rating_imdb": 6.1,
+            "rating_imdb_count": 154000,
+            "rating_imdb_metascore": 44.0,
+            "rating_imdb_critic_count": 268,
+            "rating_rt_audience": 86,
+            "rating_rt_tomatometer": 54
         },
         {
             "title": "Last and First Men",
@@ -169,7 +209,15 @@
                     "iso_3166_1": "IS",
                     "name": "Iceland"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 47,
+            "rating_imdb": 6.7,
+            "rating_imdb_count": 2000,
+            "rating_imdb_metascore": 83.0,
+            "rating_imdb_critic_count": 31,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "The White Tiger",
@@ -203,7 +251,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 615,
+            "rating_imdb": 7.1,
+            "rating_imdb_count": 56000,
+            "rating_imdb_metascore": 76.0,
+            "rating_imdb_critic_count": 169,
+            "rating_rt_audience": 80,
+            "rating_rt_tomatometer": 91
         },
         {
             "title": "Zack Snyder's Justice League",
@@ -231,7 +287,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.4,
+            "rating_tmdb_count": 6933,
+            "rating_imdb": 8.1,
+            "rating_imdb_count": 349000,
+            "rating_imdb_metascore": 54.0,
+            "rating_imdb_critic_count": 296,
+            "rating_rt_audience": 94,
+            "rating_rt_tomatometer": 71
         },
         {
             "title": "Judas and the Black Messiah",
@@ -257,7 +321,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 861,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 65000,
+            "rating_imdb_metascore": 85.0,
+            "rating_imdb_critic_count": 267,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "Below Zero",
@@ -284,7 +356,15 @@
                     "iso_3166_1": "ES",
                     "name": "Spain"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.4,
+            "rating_tmdb_count": 661,
+            "rating_imdb": 6.2,
+            "rating_imdb_count": 17000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 21,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Nomadland",
@@ -310,7 +390,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 1823,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 136000,
+            "rating_imdb_metascore": 93.0,
+            "rating_imdb_critic_count": 381,
+            "rating_rt_audience": 82,
+            "rating_rt_tomatometer": 93
         },
         {
             "title": "Another Round",
@@ -324,7 +412,7 @@
             "trailer": "https://www.youtube.com/watch?v=f_FzLs92YFc",
             "wiki": "https://en.wikipedia.org/wiki/Another_Round_(film)",
             "imdb": "https://www.imdb.com/title/tt10288566/",
-            "rt": "",
+            "rt": "https://www.rottentomatoes.com/m/another_round",
             "netflix": "",
             "justwatch": "https://www.justwatch.com/uk/movie/another-round",
             "comments": "",
@@ -344,7 +432,15 @@
                     "iso_3166_1": "SE",
                     "name": "Sweden"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 1517,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 121000,
+            "rating_imdb_metascore": 79.0,
+            "rating_imdb_critic_count": 265,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 92
         },
         {
             "title": "Tenet",
@@ -375,7 +471,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 6408,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 440000,
+            "rating_imdb_metascore": 69.0,
+            "rating_imdb_critic_count": 499,
+            "rating_rt_audience": 76,
+            "rating_rt_tomatometer": 69
         },
         {
             "title": "Mank",
@@ -401,7 +505,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.9,
+            "rating_tmdb_count": 1104,
+            "rating_imdb": 6.9,
+            "rating_imdb_count": 68000,
+            "rating_imdb_metascore": 79.0,
+            "rating_imdb_critic_count": 323,
+            "rating_rt_audience": 60,
+            "rating_rt_tomatometer": 83
         },
         {
             "title": "Borat Subsequent Moviefilm",
@@ -426,7 +538,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.5,
+            "rating_tmdb_count": 1765,
+            "rating_imdb": 6.6,
+            "rating_imdb_count": 132000,
+            "rating_imdb_metascore": 68.0,
+            "rating_imdb_critic_count": 223,
+            "rating_rt_audience": 62,
+            "rating_rt_tomatometer": 85
         },
         {
             "title": "The Trouble with Being Born",
@@ -442,7 +562,7 @@
             "imdb": "https://www.imdb.com/title/tt9220966/",
             "rt": "https://www.rottentomatoes.com/m/the_trouble_with_being_born",
             "netflix": "",
-            "justwatch": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-trouble-with-being-born",
             "comments": "I had to watch an interview with the director to somehow digest the 'What did I just watch?' moment.",
             "rating_my": 1,
             "tmdb": 664589,
@@ -456,7 +576,15 @@
                     "iso_3166_1": "DE",
                     "name": "Germany"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.8,
+            "rating_tmdb_count": 10,
+            "rating_imdb": 5.5,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": 92
         },
         {
             "title": "Sound of Metal",
@@ -473,7 +601,7 @@
             "rt": "https://www.rottentomatoes.com/m/sound_of_metal",
             "netflix": "",
             "justwatch": "https://www.justwatch.com/uk/movie/sound-of-metal",
-            "comments": "Simply a great story. Love the sound work.",
+            "comments": "Simply, a great story! Love the sound work.",
             "rating_my": 3,
             "tmdb": 502033,
             "watched": "2021-06-17",
@@ -482,7 +610,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.8,
+            "rating_tmdb_count": 1593,
+            "rating_imdb": 7.8,
+            "rating_imdb_count": 110000,
+            "rating_imdb_metascore": 82.0,
+            "rating_imdb_critic_count": 267,
+            "rating_rt_audience": 90,
+            "rating_rt_tomatometer": 97
         },
         {
             "title": "The History of Future Folk",
@@ -509,7 +645,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 41,
+            "rating_imdb": 7.1,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": 67.0,
+            "rating_imdb_critic_count": 47,
+            "rating_rt_audience": 85,
+            "rating_rt_tomatometer": 93
         },
         {
             "title": "A Quiet Place Part II",
@@ -536,7 +680,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.7,
+            "rating_tmdb_count": 3430,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 179000,
+            "rating_imdb_metascore": 71.0,
+            "rating_imdb_critic_count": 370,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 91
         },
         {
             "title": "Memories of My Melancholy Whores",
@@ -574,7 +726,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.7,
+            "rating_tmdb_count": 42,
+            "rating_imdb": 5.9,
+            "rating_imdb_count": 1000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Jumanji: The Next Level",
@@ -601,7 +761,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 6473,
+            "rating_imdb": 6.7,
+            "rating_imdb_count": 225000,
+            "rating_imdb_metascore": 58.0,
+            "rating_imdb_critic_count": 251,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 71
         },
         {
             "title": "Black Widow",
@@ -629,7 +797,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 6253,
+            "rating_imdb": 6.7,
+            "rating_imdb_count": 296000,
+            "rating_imdb_metascore": 67.0,
+            "rating_imdb_critic_count": 366,
+            "rating_rt_audience": 41,
+            "rating_rt_tomatometer": 50
         },
         {
             "title": "Rogue City",
@@ -645,7 +821,7 @@
             "trailer": "https://www.youtube.com/watch?v=w1Ww62eIwOI",
             "wiki": "https://en.wikipedia.org/wiki/Rogue_City",
             "imdb": "https://www.imdb.com/title/tt10127684/",
-            "rt": "",
+            "rt": "https://www.rottentomatoes.com/m/rogue_city",
             "netflix": "http://www.netflix.com/title/81115400",
             "justwatch": "https://www.justwatch.com/uk/movie/rogue-city",
             "comments": "",
@@ -657,7 +833,15 @@
                     "iso_3166_1": "FR",
                     "name": "France"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.9,
+            "rating_tmdb_count": 431,
+            "rating_imdb": 6.1,
+            "rating_imdb_count": 8000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 31,
+            "rating_rt_tomatometer": null
         },
         {
             "title": "Persian Lessons",
@@ -691,7 +875,15 @@
                     "iso_3166_1": "RU",
                     "name": "Russia"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.6,
+            "rating_tmdb_count": 98,
+            "rating_imdb": 7.4,
+            "rating_imdb_count": 5000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 76
         },
         {
             "title": "Riders of Justice",
@@ -722,7 +914,15 @@
                     "iso_3166_1": "SE",
                     "name": "Sweden"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 246,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 34000,
+            "rating_imdb_metascore": 81.0,
+            "rating_imdb_critic_count": 148,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 96
         },
         {
             "title": "The Monk",
@@ -735,7 +935,7 @@
             "trailer": "https://www.youtube.com/watch?v=n1mVqAZiGV4",
             "wiki": "https://en.wikipedia.org/wiki/The_Monk_(2011_film)",
             "imdb": "https://www.imdb.com/title/tt1605769/",
-            "rt": "",
+            "rt": "https://www.rottentomatoes.com/m/the_monk_2011",
             "netflix": "",
             "justwatch": "https://www.justwatch.com/uk/movie/the-monk",
             "comments": "Vincent Cassel vs Devil",
@@ -751,7 +951,15 @@
                     "iso_3166_1": "ES",
                     "name": "Spain"
                 }
-            ]
+            ],
+            "rating_tmdb": 5.4,
+            "rating_tmdb_count": 77,
+            "rating_imdb": 5.8,
+            "rating_imdb_count": 3000,
+            "rating_imdb_metascore": 56.0,
+            "rating_imdb_critic_count": 77,
+            "rating_rt_audience": 40,
+            "rating_rt_tomatometer": 63
         },
         {
             "title": "Gunpowder Milkshake",
@@ -786,7 +994,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.5,
+            "rating_tmdb_count": 413,
+            "rating_imdb": 6.1,
+            "rating_imdb_count": 35000,
+            "rating_imdb_metascore": 47.0,
+            "rating_imdb_critic_count": 148,
+            "rating_rt_audience": 47,
+            "rating_rt_tomatometer": 58
         },
         {
             "title": "Finch",
@@ -817,7 +1033,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.2,
+            "rating_tmdb_count": 1407,
+            "rating_imdb": 6.9,
+            "rating_imdb_count": 53000,
+            "rating_imdb_metascore": 56.0,
+            "rating_imdb_critic_count": 123,
+            "rating_rt_audience": 66,
+            "rating_rt_tomatometer": 73
         },
         {
             "title": "Dune",
@@ -843,7 +1067,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 4678,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 382000,
+            "rating_imdb_metascore": 74.0,
+            "rating_imdb_critic_count": 447,
+            "rating_rt_audience": 65,
+            "rating_rt_tomatometer": 44
         },
         {
             "title": "The French Dispatch",
@@ -874,7 +1106,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.4,
+            "rating_tmdb_count": 683,
+            "rating_imdb": 7.5,
+            "rating_imdb_count": 36000,
+            "rating_imdb_metascore": 74.0,
+            "rating_imdb_critic_count": 206,
+            "rating_rt_audience": 76,
+            "rating_rt_tomatometer": 75
         },
         {
             "title": "Red Notice",
@@ -902,7 +1142,15 @@
                     "name": "United States of America"
                 }
             ],
-            "rating_my": 2
+            "rating_my": 2,
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 1941,
+            "rating_imdb": 6.4,
+            "rating_imdb_count": 167000,
+            "rating_imdb_metascore": 39.0,
+            "rating_imdb_critic_count": 171,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 36
         }
     ]
 }

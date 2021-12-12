@@ -12,9 +12,9 @@
             "trailer": "https://www.youtube.com/watch?v=f99I6e4ABe4",
             "wiki": "https://en.wikipedia.org/wiki/Goto,_Island_of_Love",
             "imdb": "https://www.imdb.com/title/tt0063026/",
-            "rt": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/goto-island-of-love",
+            "rt": "https://www.rottentomatoes.com/m/goto_lile_damour",
             "netflix": "",
-            "justwatch": "",
             "comments": "",
             "tmdb": 105843,
             "watched": "2021-03-21",
@@ -23,7 +23,15 @@
                     "iso_3166_1": "FR",
                     "name": "France"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 13,
+            "rating_imdb": 6.6,
+            "rating_imdb_count": null,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 67,
+            "rating_rt_tomatometer": null
         }
     ]
 }

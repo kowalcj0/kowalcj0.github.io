@@ -30,7 +30,16 @@
                     "iso_3166_1": "LU",
                     "name": "Luxembourg"
                 }
-            ]
+            ],
+            "rating_my": 2,
+            "rating_tmdb": 7.9,
+            "rating_tmdb_count": 568,
+            "rating_imdb": 7.7,
+            "rating_imdb_count": 24000,
+            "rating_imdb_metascore": 78.0,
+            "rating_imdb_critic_count": 121,
+            "rating_rt_audience": 88,
+            "rating_rt_tomatometer": 95
         }
     ]
 }

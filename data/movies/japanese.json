@@ -14,6 +14,7 @@
             "trailer": "https://www.youtube.com/watch?v=mS8YraEXC9c",
             "wiki": "https://en.wikipedia.org/wiki/The_Human_Condition_(film_series)",
             "imdb": "https://www.imdb.com/title/tt0053114/",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-human-condition-i-no-greater-love",
             "rt": "https://www.rottentomatoes.com/m/ningen_no_joken_i",
             "comments": "great story and top-notch camera work",
             "tmdb": 31217,
@@ -22,7 +23,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 142,
+            "rating_imdb": 8.6,
+            "rating_imdb_count": 7000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 95,
+            "rating_rt_tomatometer": 71
         },
         {
             "title": "Tokyo Story",
@@ -35,6 +44,7 @@
             "trailer": "https://www.youtube.com/watch?v=5zEKw4VQIeY",
             "wiki": "https://en.wikipedia.org/wiki/Tokyo_Story",
             "imdb": "https://www.imdb.com/title/tt0046438/",
+            "justwatch": "https://www.justwatch.com/uk/movie/tokyo-story",
             "rt": "https://www.rottentomatoes.com/m/tokyo_story",
             "comments": "it's worth to watch it with the commentary",
             "tmdb": 18148,
@@ -43,7 +53,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.3,
+            "rating_tmdb_count": 705,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 59000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 93,
+            "rating_rt_tomatometer": 100
         },
         {
             "title": "After life",
@@ -57,6 +75,7 @@
             "trailer": "https://www.youtube.com/watch?v=DN9sr5wVkik",
             "wiki": "https://en.wikipedia.org/wiki/After_Life_(film)",
             "imdb": "https://www.imdb.com/title/tt0165078/",
+            "justwatch": "https://www.justwatch.com/uk/movie/after-life-1998",
             "rt": "https://www.rottentomatoes.com/m/after_life",
             "comments": "",
             "tmdb": 17962,
@@ -65,7 +84,15 @@
                     "iso_3166_1": "JP",
                     "name": "Japan"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 130,
+            "rating_imdb": 7.6,
+            "rating_imdb_count": 11000,
+            "rating_imdb_metascore": 91.0,
+            "rating_imdb_critic_count": 97,
+            "rating_rt_audience": 91,
+            "rating_rt_tomatometer": 88
         },
         {
             "title": "Hara-Kiri: Death of a Samurai",
@@ -94,7 +121,15 @@
                     "iso_3166_1": "GB",
                     "name": "United Kingdom"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.2,
+            "rating_tmdb_count": 114,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 8000,
+            "rating_imdb_metascore": 76.0,
+            "rating_imdb_critic_count": 132,
+            "rating_rt_audience": 75,
+            "rating_rt_tomatometer": 76
         }
     ]
 }

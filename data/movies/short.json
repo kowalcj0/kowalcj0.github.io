@@ -23,7 +23,15 @@
                     "iso_3166_1": "ES",
                     "name": "Spain"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 71,
+            "rating_imdb": 6.9,
+            "rating_imdb_count": 4000,
+            "rating_imdb_metascore": 88.0,
+            "rating_imdb_critic_count": 52,
+            "rating_rt_audience": 67,
+            "rating_rt_tomatometer": null
         }
     ]
 }

@@ -11,6 +11,7 @@
             "trailer": "https://www.youtube.com/watch?v=wLzeakKC6fE",
             "wiki": "https://en.wikipedia.org/wiki/The_Red_Pill",
             "imdb": "https://www.imdb.com/title/tt3686998/",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-red-pill",
             "rt": "https://www.rottentomatoes.com/m/the_red_pill_2016",
             "comments": "",
             "rating_my": 3,
@@ -20,7 +21,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 7.5,
+            "rating_tmdb_count": 141,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 11000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 92,
+            "rating_rt_tomatometer": 29
         },
         {
             "title": "The Laundromat",
@@ -34,6 +43,7 @@
             "trailer": "https://www.youtube.com/watch?v=wuBRcfe4bSo",
             "wiki": "https://en.wikipedia.org/wiki/The_Laundromat_(film)",
             "imdb": "https://www.imdb.com/title/tt5865326/",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-laundromat",
             "rt": "https://www.rottentomatoes.com/m/the_laundromat",
             "comments": "System of money laundering explained by J\u00fcrgen Mossack and Ram\u00f3n Fonseca",
             "rating_my": 3,
@@ -43,7 +53,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 6.0,
+            "rating_tmdb_count": 914,
+            "rating_imdb": 6.3,
+            "rating_imdb_count": 48000,
+            "rating_imdb_metascore": 57.0,
+            "rating_imdb_critic_count": 133,
+            "rating_rt_audience": 40,
+            "rating_rt_tomatometer": 40
         },
         {
             "title": "Seaspiracy",
@@ -56,9 +74,9 @@
             "trailer": "https://www.youtube.com/watch?v=1Q5CXN7soQg",
             "wiki": "https://en.wikipedia.org/wiki/Seaspiracy",
             "imdb": "https://www.imdb.com/title/tt14152756/",
+            "justwatch": "https://www.justwatch.com/uk/movie/seaspiracy",
             "rt": "https://www.rottentomatoes.com/m/seaspiracy",
             "netflix": "http://www.netflix.com/title/81014008",
-            "justwatch": "https://www.justwatch.com/uk/movie/seaspiracy",
             "comments": "I think I'm going to stop eating seafood after seeing it. Since a long time I considered fisherman to be poachers, since they only plunder the seas without giving anything back to the nature.",
             "rating_my": 3,
             "tmdb": 801058,
@@ -68,7 +86,15 @@
                     "iso_3166_1": "US",
                     "name": "United States of America"
                 }
-            ]
+            ],
+            "rating_tmdb": 8.0,
+            "rating_tmdb_count": 271,
+            "rating_imdb": 8.2,
+            "rating_imdb_count": 28000,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": 87,
+            "rating_rt_tomatometer": 75
         }
     ]
 }
