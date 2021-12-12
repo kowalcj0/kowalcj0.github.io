@@ -15,7 +15,7 @@ If your MongoDB has a size limit defined, then you can do two things:
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../MongoDB-logo.svg'><meta property='article:section' content='2020'><meta property='article:tag' content='accessibility'><meta property='article:tag' content='heroku'><meta property='article:tag' content='mongodb'><meta property='article:tag' content='pa11y'><meta property='article:published_time' content='2020-06-06T22:56:03&#43;01:00'/><meta property='article:modified_time' content='2020-06-06T22:56:03&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../MongoDB-logo.svg'><meta property='twitter:image:alt' content='SRC Wikipedia https://upload.wikimedia.org/wikipedia/en/4/45/MongoDB-Logo.svg'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Automatically Delete Old Pa11y Results From MongoDB • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/'>
@@ -432,7 +432,7 @@ quota (if you have any).</p>
  since v2.2 (Aug 2012!).
 Such indexes make <code>mongod</code> automatically remove data after a specified number of seconds or at a specific clock time.
 Before we create one, please have a look at existing indexes for <code>Pa11y</code> test results collection:</p>
-<pre><code class="language-mongodb" data-lang="mongodb">db.results.getIndexes()
+<pre tabindex="0"><code class="language-mongodb" data-lang="mongodb">db.results.getIndexes()
 [
     {
         &quot;v&quot; : 2,
@@ -453,12 +453,12 @@ Before we create one, please have a look at existing indexes for <code>Pa11y</co
 ]
 </code></pre><p>There should be two indexes. We&rsquo;re interested in the <code>date_1</code> index.
 We have to remove it before we can add a TTL Index:</p>
-<pre><code class="language-mongodb" data-lang="mongodb">db.results.dropIndex({&quot;date&quot;: 1});
+<pre tabindex="0"><code class="language-mongodb" data-lang="mongodb">db.results.dropIndex({&quot;date&quot;: 1});
 </code></pre><p>In my case I wanted to keep tests results for the last 31 days.<br>
 So TTL value (<code>expireAfterSeconds</code>) should be set to <code>2678400</code> (<code>60*60*24*31</code>).</p>
-<pre><code class="language-mongodb" data-lang="mongodb">db.results.createIndex({&quot;date&quot;: 1}, {expireAfterSeconds: 2678400});
+<pre tabindex="0"><code class="language-mongodb" data-lang="mongodb">db.results.createIndex({&quot;date&quot;: 1}, {expireAfterSeconds: 2678400});
 </code></pre><p>Let&rsquo;s have a look at the indexes:</p>
-<pre><code class="language-mongodb" data-lang="mongodb">db.results.getIndexes()
+<pre tabindex="0"><code class="language-mongodb" data-lang="mongodb">db.results.getIndexes()
 [
     {
         &quot;v&quot; : 2,
@@ -483,7 +483,7 @@ So TTL value (<code>expireAfterSeconds</code>) should be set to <code>2678400</c
 <h3 id="backing-up-the-task">Backing up the task <a tabindex="0" href="#backing-up-the-task" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p>Remember to back-up your Pa11y tasks (and results) before every major upgrade or DB operation.<br>
 It takes few seconds to do it and it can save you a lot of time and stress.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mongoexport <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mongoexport <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    --uri<span style="color:#f92672">=</span>mongodb://username:password@host:61620/heroku_abcdefgh <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    -c tasks <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    -o tasks.json

@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='enumeration'><meta property='article:published_time' content='2018-02-02T19:20:50&#43;01:00'/><meta property='article:modified_time' content='2018-02-02T19:20:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Ethical Hacking - Enumeration - Notes • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2018/02/02/ethical-hackin-enumeration-course-notes/'>
@@ -732,12 +732,12 @@ You can find a lot of MIBs on:</p>
 </ul>
 <h3 id="scanning-snmp-running-on-linux">scanning SNMP running on Linux <a tabindex="0" href="#scanning-snmp-running-on-linux" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p>Once you have a file (e.g. <code>linux.txt</code>) with OIDs specific to your device in a form of:</p>
-<pre><code class="language-csv" data-lang="csv">Linux     RUNNING PROCESSES      1.3.6.1.2.1.25.4.2.1.2
+<pre tabindex="0"><code class="language-csv" data-lang="csv">Linux     RUNNING PROCESSES      1.3.6.1.2.1.25.4.2.1.2
 Linux     SYSTEM INFO            1.3.6.1.2.1.1.1
 ...
 ...
 </code></pre><p>You can use a perl <code>snmpenum.pl</code> script to enumerate host via SNMP.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">perl snmpenum.pl 10.0.2.6 public linux.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">perl snmpenum.pl 10.0.2.6 public linux.txt
 </code></pre></div><h3 id="scanning-snmp-running-on-windows">scanning SNMP running on Windows <a tabindex="0" href="#scanning-snmp-running-on-windows" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p><code>SNMP</code> on Windows is disabled by default.<br>
 You have to turn on a <code>Simple Network Management Protocol (SNMP)</code> &amp;
@@ -747,7 +747,7 @@ In the Security tab on service properties, you can toggle authentication,
 and toggle access from any of from selected hosts and define i.e. <code>READ ONLY</code>
 community string <code>public</code>.</p>
 <p>You can use the same perl script to windows host:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">perl snmpenum.pl 10.0.2.6 public windows.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">perl snmpenum.pl 10.0.2.6 public windows.txt
 </code></pre></div><p>Above script should list:</p>
 <ul>
 <li>listening TCP ports</li>
@@ -913,7 +913,7 @@ Can perform various automatical scans, ports, samba shares, dns scan setc.
 but you can also perform more manual scans against.</p>
 <h2 id="ldap">LDAP <a tabindex="0" href="#ldap" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>LDAP holds data in a tree structure DB, allows for searching for poeple, devices, printers etc. in the organisation</p>
-<pre><code class="language-ascii" data-lang="ascii">       Root
+<pre tabindex="0"><code class="language-ascii" data-lang="ascii">       Root
         |
         ↓
     Country

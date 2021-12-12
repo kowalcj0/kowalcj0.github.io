@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/006/Wireshark_Logo.png'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='sniffers'><meta property='article:published_time' content='2018-02-05T09:22:50&#43;01:00'/><meta property='article:modified_time' content='2018-02-05T09:22:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/006/Wireshark_Logo.png'><meta property='twitter:image:alt' content='Wireshark logo. Source: wikimedia.org'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Ethical Hacking - Sniffers - Notes • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2018/02/05/ethical-hackin-sniffers-course-notes/'>
@@ -673,15 +673,15 @@ accepted</li>
 <ol>
 <li>Enable IP forwarding on your host:</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># echo 1 &gt; /proc/sys/net/ipv4/ip_forward</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># echo 1 &gt; /proc/sys/net/ipv4/ip_forward</span>
 </code></pre></div><ol start="2">
 <li>Spoof the victim that the hacker&rsquo;s MAC address is the gateway</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># arpspoof -t victim gateway</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># arpspoof -t victim gateway</span>
 </code></pre></div><ol start="3">
 <li>Spoof the gateway to believe we&rsquo;re the victim</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># arpspoof -t gateway victim</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># arpspoof -t gateway victim</span>
 </code></pre></div><h1 id="layer-2-attacks">Layer 2 attacks <a tabindex="0" href="#layer-2-attacks" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p>Many of data (2nd) layer attacks involve cisco protocols.</p>
 <p>Example layer 2 attacks:</p>
@@ -769,7 +769,7 @@ switch</li>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">switch<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># switchport mode access</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">switch<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># switchport mode access</span>
 switch<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># switchport port-security</span>
 switch<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># switchport port-security</span>
 mac-address <span style="color:#f92672">{</span> &lt;mac_addr&lt; | sticky <span style="color:#f92672">}</span>  <span style="color:#75715e"># chose sticky</span>
@@ -843,10 +843,10 @@ to clients</li>
 <p><strong>NOTES:</strong><br>
 In <code>Wireshark</code> to view DHCP datagrams use <code>bootp</code> filter.</p>
 <p>To renew IP address lease on Windows, use:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ipconfig /release
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ipconfig /release
 ipconfig /renew
 </code></pre></div><p>To enable DHCP server on a Cisco router:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># enable DHCP server and relay features on the router</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># enable DHCP server and relay features on the router</span>
 R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># service dhcp</span>
 <span style="color:#75715e"># specify which addresses should be excluded from DHCP pool (for devices that</span>
 use static IP addresses, like some printers etc.<span style="color:#f92672">)</span>

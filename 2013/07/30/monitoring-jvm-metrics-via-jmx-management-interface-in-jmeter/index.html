@@ -15,7 +15,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2013'><meta property='article:tag' content='java'><meta property='article:tag' content='jmeter'><meta property='article:published_time' content='2013-07-30T14:31:45Z'/><meta property='article:modified_time' content='2013-07-30T14:31:45Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Monitoring JVM metrics via JMX management interface in JMeter • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2013/07/30/monitoring-jvm-metrics-via-jmx-management-interface-in-jmeter/'>
@@ -423,7 +423,7 @@
 <li>On the box you want to monitor, copy templates: <code>jmxremote.password</code> &amp; <code>jmxremote.access</code> from <code>$JAVA_HOME/lib/management</code> to for example: <code>/srv/play/</code></li>
 <li>edit them according to your liking</li>
 <li>launch your JAVA application with additional parameters:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">java <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">java <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    -jar your_application.jar <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    -Dcom.sun.management.jmxremote <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    -Dcom.sun.management.jmxremote.ssl<span style="color:#f92672">=</span>false <span style="color:#ae81ff">\
@@ -432,15 +432,16 @@
 </span><span style="color:#ae81ff"></span>    -Dcom.sun.management.jmxremote.password.file<span style="color:#f92672">=</span>/srv/play/jmxremote.password <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    -Dcom.sun.management.jmxremote.access.file<span style="color:#f92672">=</span>/srv/play/jmxremote.access
 </code></pre></div></li>
-<li>start a server-agent (<a href="http://jmeter-plugins.org/wiki/PerfMonAgent/">http://jmeter-plugins.org/wiki/PerfMonAgent/</a>) on the host which JVM metrics you want to monitor using command like:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd <span style="color:#e6db74">${</span>jmeter_folder<span style="color:#e6db74">}</span>/lib/ext/
+<li>start a server-agent (<a href="http://jmeter-plugins.org/wiki/PerfMonAgent/" target="_blank">http://jmeter-plugins.org/wiki/PerfMonAgent/</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+) on the host which JVM metrics you want to monitor using command like:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd <span style="color:#e6db74">${</span>jmeter_folder<span style="color:#e6db74">}</span>/lib/ext/
 java <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>   -jar ./CMDRunner.jar <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>   --tool PerfMonAgent <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>   --udp-port <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>   --tcp-port <span style="color:#ae81ff">7777</span>
-</code></pre></div><p>You can also run it as background process and detach from your session, so it will continue to work even if you disconnect from the server.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd <span style="color:#e6db74">${</span>jmeter_folder<span style="color:#e6db74">}</span>/lib/ext/
+</code></pre></div>You can also run it as background process and detach from your session, so it will continue to work even if you disconnect from the server.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd <span style="color:#e6db74">${</span>jmeter_folder<span style="color:#e6db74">}</span>/lib/ext/
 nohup java <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>   -jar ./CMDRunner.jar <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>   --tool PerfMonAgent <span style="color:#ae81ff">\
@@ -452,9 +453,8 @@ nohup java <span style="color:#ae81ff">\
 <li>select JMX as the &ldquo;<code>Metric to collect</code>&rdquo;</li>
 <li>double click on &ldquo;<code>Metric parameter</code>&rdquo; field and then click on the &ldquo;<code>...</code>&rdquo; button to the right</li>
 <li>enter all the credentials that the server-agent will use to connect to the local JVM via JMX port. Here&rsquo;s an example config:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">url<span style="color:#f92672">=</span>localhost<span style="color:#ae81ff">\:</span>10006:user<span style="color:#f92672">=</span>role:password<span style="color:#f92672">=</span>password:gc-time
-</code></pre></div><p>Where role &amp; password are of course defined in the <code>jmxremote.password</code> &amp; <code>jmxremote.access</code> files</p>
-</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">url<span style="color:#f92672">=</span>localhost<span style="color:#ae81ff">\:</span>10006:user<span style="color:#f92672">=</span>role:password<span style="color:#f92672">=</span>password:gc-time
+</code></pre></div>Where role &amp; password are of course defined in the <code>jmxremote.password</code> &amp; <code>jmxremote.access</code> files</li>
 </ol>
 <p>btw. Here&rsquo;s an <a href="../drKingShultz.jmx" download>example test plan</a>
  with preconfigured PerfMon listener.<br>

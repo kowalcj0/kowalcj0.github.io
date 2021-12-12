@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../images/logrotate.png'><meta property='article:section' content='2019'><meta property='article:tag' content='linux'><meta property='article:tag' content='bash'><meta property='article:tag' content='logrotate'><meta property='article:published_time' content='2019-05-13T11:50:50&#43;01:00'/><meta property='article:modified_time' content='2019-05-13T11:50:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../images/logrotate.png'><meta property='twitter:image:alt' content='logrotate ASCII art generated with http://patorjk.com/software/taag/ &amp; colored with http://patorjk.com/text-color-fader/'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Logrotate your bash history file • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2019/05/13/logrotate-bash-history/'>
@@ -423,7 +423,7 @@ this advice <a href="https://unix.stackexchange.com/a/48113" target="_blank">htt
 .</p>
 <p>With time I&rsquo;ve tweaked few settings, like ignore lines that start with space,
 and ignore some of the trivial commands like <code>ls</code>:</p>
-<pre><code>export HISTCONTROL=ignoredups:erasedups:ignorespace     # no duplicate entries &amp; lines starting with space
+<pre tabindex="0"><code>export HISTCONTROL=ignoredups:erasedups:ignorespace     # no duplicate entries &amp; lines starting with space
 export HISTSIZE=99999999                                # big big history
 export HISTFILESIZE=99999999                            # big big history
 shopt -s histappend                                     # append to history, don't overwrite it
@@ -435,7 +435,7 @@ upgrading the distro. I then discovered <a href="https://linux.die.net/man/8/log
 It&rsquo;s a brilliant and easy to use tool for, guess what, log rotation!</p>
 <p>In order to rotate your <code>.bash_history</code> file simply create a new logrotate
 config file: <code>/etc/logrotate.d/bashhistory</code>:</p>
-<pre><code>/home/YOUR_USERNAME/.bash_history {
+<pre tabindex="0"><code>/home/YOUR_USERNAME/.bash_history {
     weekly
     missingok
     rotate 5

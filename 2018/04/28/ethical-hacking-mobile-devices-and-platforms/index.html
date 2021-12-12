@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='mobile'><meta property='article:tag' content='android'><meta property='article:tag' content='iOS'><meta property='article:published_time' content='2018-04-28T10:29:15&#43;01:00'/><meta property='article:modified_time' content='2018-04-28T10:29:15&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Ethical Hacking - Mobile Devices and Platforms - notes • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2018/04/28/ethical-hacking-mobile-devices-and-platforms/'>
@@ -548,12 +548,12 @@ crypto lib</li>
 <p><a href="https://labs.mwrinfosecurity.com/tools/drozer/" target="_blank">drozer</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  - it needs an <code>agent</code>
 app to be pushed to the test device.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">adb install agent.apk   <span style="color:#75715e"># install drozer agent</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">adb install agent.apk   <span style="color:#75715e"># install drozer agent</span>
 adb forward tcp:31415 tcp:31415  <span style="color:#75715e">#we have to forward ports for it to work</span>
 drozer console devices  <span style="color:#75715e"># then start the drozer agent on the app</span>
 drozer console connect  <span style="color:#75715e"># connect server to the agent</span>
 </code></pre></div><p>Once you&rsquo;re in the drozer&rsquo;s shell:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dz&gt; list   <span style="color:#75715e"># list all available drozer modules (plugins)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dz&gt; list   <span style="color:#75715e"># list all available drozer modules (plugins)</span>
 dz&gt; run app.package.list  <span style="color:#75715e"># list all packages (applications) on the devices</span>
 dz&gt; run app.package.info -a com.you.app  <span style="color:#75715e"># app details: perms, uid, gid, ver.</span>
                                          <span style="color:#75715e"># data &amp; apk location etc</span>
@@ -661,7 +661,7 @@ Prevention (<code>DEP</code>), <code>Postion Independent Executable</code> &amp;
 It&rsquo;s good to check for those flags.</p>
 <p>402</p>
 <h1 id="ios-security">iOS Security <a tabindex="0" href="#ios-security" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">   --------        ---------------       ---------       ----------
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">   --------        ---------------       ---------       ----------
    | Boot |        | Low level   |       | iBoot |       | Kernel |
    | rom  |  --&gt;   | Boot loader |  --&gt;  | load  |  --&gt;  | Load   |
    --------        ---------------       ---------       ----------
@@ -745,7 +745,7 @@ application operation.</li>
  - handy disassembler</li>
 </ul>
 <h2 id="extracting-properties-and-class-headers">Extracting properties and class headers <a tabindex="0" href="#extracting-properties-and-class-headers" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># list all encrypted apps</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># list all encrypted apps</span>
 root# Clutch -i
 
 <span style="color:#75715e"># decrypt selected app into an ipa file (which essentially is a zip file)</span>

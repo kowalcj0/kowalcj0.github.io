@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='DoS'><meta property='article:published_time' content='2018-04-23T19:19:15&#43;01:00'/><meta property='article:modified_time' content='2018-04-23T19:19:15&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Ethical Hacking - Denial of Service - notes • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/'>
@@ -444,7 +444,7 @@ dummy accounts, password reset page etc)</li>
 <h1 id="tcp-attacks">TCP attacks <a tabindex="0" href="#tcp-attacks" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p>These are the layer 4 (OSI) attacks</p>
 <p>TCP handshake:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">             SYNchronize
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">             SYNchronize
     ----------------------------→
 
       SYNchronize-ACKnowlegement
@@ -453,7 +453,7 @@ SRC ←---------------------------- TRGT
             ACKnowledge
     ----------------------------→
 </code></pre></div><h2 id="syn-flood-attack">SYN flood attack <a tabindex="0" href="#syn-flood-attack" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">             SYNchronize
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">             SYNchronize
     ----------------------------→
 
       SYNchronize-ACKnowlegement
@@ -461,7 +461,7 @@ SRC ←---------------------------- TRGT
 
     SRC does not respond with ACK
 </code></pre></div><h2 id="syn-flood-attack-with-spoofed-source-ip-address">SYN flood attack with spoofed source IP address <a tabindex="0" href="#syn-flood-attack-with-spoofed-source-ip-address" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    SYNchronize (spoofed src IP address)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    SYNchronize (spoofed src IP address)
 SRC ----------------------------→
 
       SYNchronize-ACKnowlegement
@@ -492,7 +492,7 @@ overlow</li>
 <li>attacker sends a smal request for e.g. all DNS records for particular zone
 which generates a large response</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">           Small spoofed DNS request
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">           Small spoofed DNS request
 Attacker ----------------------------→ DNS Server
                                              Large amplified response
                                           ----------------------------→ Target
@@ -545,7 +545,7 @@ network and send requests to external target.</li>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">          Uncompleted HTTP GET request
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">          Uncompleted HTTP GET request
           ----------------------------→
           Uncompleted HTTP GET request
           ----------------------------→

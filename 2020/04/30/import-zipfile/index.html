@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2020'><meta property='article:tag' content='python'><meta property='article:tag' content='zip'><meta property='article:published_time' content='2020-04-30T20:05:24&#43;01:00'/><meta property='article:modified_time' content='2020-04-30T20:05:24&#43;01:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>import zipfile • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2020/04/30/import-zipfile/'>
@@ -439,7 +439,7 @@ One min read
 It&rsquo;s surprisingly easy to work with.<br>
 Snippets below should give you a rough idea how to use it.</p>
 <h2 id="create-a-zip-file">Create a zip file <a tabindex="0" href="#create-a-zip-file" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zipfile
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zipfile
 
 file_to_compress <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;server.log&#34;</span>
 zip_file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;server.log.zip&#34;</span>
@@ -455,21 +455,21 @@ zip_file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&
 <li>ZIP_LZMA (requires lzma)</li>
 </ul>
 <h3 id="unpack-a-zip-archive">Unpack a zip archive <a tabindex="0" href="#unpack-a-zip-archive" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
     myzip<span style="color:#f92672">.</span>extractall()
 </code></pre></div><h3 id="list-zip-file-details--test-the-archive">List zip file details &amp; test the archive <a tabindex="0" href="#list-zip-file-details--test-the-archive" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
     <span style="color:#75715e"># list archive details</span>
-    <span style="color:#66d9ef">print</span>(myzip<span style="color:#f92672">.</span>infolist()) 
+    print(myzip<span style="color:#f92672">.</span>infolist()) 
     
     <span style="color:#75715e"># list all file inside the zip file</span>
-    <span style="color:#66d9ef">print</span>(myzip<span style="color:#f92672">.</span>namelist())
+    print(myzip<span style="color:#f92672">.</span>namelist())
     
     <span style="color:#75715e"># Read all the files in the archive and check their CRC’s and file headers. </span>
     <span style="color:#75715e"># Return the name of the first bad file, or else return None.</span>
-    <span style="color:#66d9ef">assert</span> myzip<span style="color:#f92672">.</span>testzip() <span style="color:#f92672">is</span> None
+    <span style="color:#66d9ef">assert</span> myzip<span style="color:#f92672">.</span>testzip() <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>
 </code></pre></div><h2 id="create-a-password-protected-zip-file">Create a password protected zip file <a tabindex="0" href="#create-a-password-protected-zip-file" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zipfile
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zipfile
 
 protected_zip_file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;server.log.pass.zip&#34;</span>
 file_to_compress <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;server.log&#34;</span>
@@ -479,23 +479,23 @@ pwd <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;passwo
     myzip<span style="color:#f92672">.</span>setpassword(pwd <span style="color:#f92672">=</span> bytes(pwd, <span style="color:#e6db74">&#34;utf-8&#34;</span>))
     myzip<span style="color:#f92672">.</span>write(file_to_compress)
 </code></pre></div><h3 id="unpack-password-protected-zip-file">Unpack password protected zip file <a tabindex="0" href="#unpack-password-protected-zip-file" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(protected_zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> zipfile<span style="color:#f92672">.</span>ZipFile(protected_zip_file_name, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> myzip:
     file<span style="color:#f92672">.</span>extractall(pwd <span style="color:#f92672">=</span> bytes(pwd, <span style="color:#e6db74">&#34;utf-8&#34;</span>))
 </code></pre></div><h2 id="hashes--checksums">Hashes &amp; Checksums <a tabindex="0" href="#hashes--checksums" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <h3 id="calculate-crc">Calculate CRC <a tabindex="0" href="#calculate-crc" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zlib
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> zlib
 
 <span style="color:#66d9ef">with</span> open(zip_file_name, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> in_file:
-    <span style="color:#66d9ef">print</span>(zlib<span style="color:#f92672">.</span>crc32(in_file<span style="color:#f92672">.</span>read()))
+    print(zlib<span style="color:#f92672">.</span>crc32(in_file<span style="color:#f92672">.</span>read()))
 </code></pre></div><h3 id="calculate-md5">Calculate MD5 <a tabindex="0" href="#calculate-md5" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> hashlib
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> hashlib
 
 hash_md5 <span style="color:#f92672">=</span> hashlib<span style="color:#f92672">.</span>md5()
 
 <span style="color:#66d9ef">with</span> open(zip_file_name, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> in_file:
     <span style="color:#66d9ef">for</span> chunk <span style="color:#f92672">in</span> iter(<span style="color:#66d9ef">lambda</span>: in_file<span style="color:#f92672">.</span>read(<span style="color:#ae81ff">4096</span>), <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;&#34;</span>):
         hash_md5<span style="color:#f92672">.</span>update(chunk)
-    <span style="color:#66d9ef">print</span>(hash_md5<span style="color:#f92672">.</span>hexdigest())
+    print(hash_md5<span style="color:#f92672">.</span>hexdigest())
 </code></pre></div>
 
 </div>

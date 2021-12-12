@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../digikam_oxygen.svg'><meta property='article:section' content='2021'><meta property='article:tag' content='freebsd'><meta property='article:tag' content='trunas'><meta property='article:tag' content='jail'><meta property='article:tag' content='digikam'><meta property='article:published_time' content='2021-06-09T21:52:01&#43;01:00'/><meta property='article:modified_time' content='2021-06-09T21:52:01&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../digikam_oxygen.svg'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Install Digikam in Truenas Jail • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2021/06/09/install-digikam-in-truenas-jail/'>
@@ -437,22 +437,22 @@
 I&rsquo;ll also add a port mapping for ssh from jail&rsquo;s tcp port <code>22</code> to host&rsquo;s <code>22222</code>.</p>
 <h2 id="2---get-ports">2 - Get ports <a tabindex="0" href="#2---get-ports" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Connect to the newly created jail so we can fetch and extract ports:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">iocage console digikam
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">iocage console digikam
 portsnap fetch
 portsnap extract
 </code></pre></div><h2 id="3---install-dependencies">3 - Install dependencies <a tabindex="0" href="#3---install-dependencies" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>At this point, it might be worth to install <code>xauth</code> which will be required to start
 <code>digikam</code> via ssh with X11 Forwarding enabled and <code>vim</code> to edit few config files.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pkg install xauth vim
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pkg install xauth vim
 </code></pre></div><p>Now, the meaty part.<br>
 You can follow the official <a href="https://www.freshports.org/graphics/digikam/" target="_blank">freshports installation instructions for digikam</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd /usr/ports/graphics/digikam/ <span style="color:#f92672">&amp;&amp;</span> make install clean
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd /usr/ports/graphics/digikam/ <span style="color:#f92672">&amp;&amp;</span> make install clean
 </code></pre></div><p>But this process will take ages as you will be prompted multiple times for build options for
 all digikam&rsquo;s dependencies and later on it will take ages to compile all of them.</p>
 <p>To save yourself that trouble you can generate a list of digikam&rsquo;s dependencies and
 install them with <code>pkg</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd /usr/ports/graphics/digikam/
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd /usr/ports/graphics/digikam/
 pkg install <span style="color:#e6db74">`</span>make all-depends-list | cut -d / -f 4,5<span style="color:#e6db74">`</span>
 </code></pre></div><p>If you&rsquo;ll get an error saying that following packages couldn&rsquo;t be found:</p>
 <ul>
@@ -469,18 +469,18 @@ pkg install <span style="color:#e6db74">`</span>make all-depends-list | cut -d /
 <li>math/Imath</li>
 </ul>
 <p>Save the list of all (700+) dependencies in a sorted file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">make all-depends-list | cut -d / -f 4,5 | sort &gt; reqs
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">make all-depends-list | cut -d / -f 4,5 | sort &gt; reqs
 </code></pre></div><p>and remove missing ones from <code>reqs</code> file</p>
 <p>Finally, install the dependencies with:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pkg install <span style="color:#e6db74">`</span>cat reqs<span style="color:#e6db74">`</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pkg install <span style="color:#e6db74">`</span>cat reqs<span style="color:#e6db74">`</span>
 </code></pre></div><h2 id="4---build-and-install-digikam">4 - build and install digikam <a tabindex="0" href="#4---build-and-install-digikam" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>We can finally build and install <code>digikam</code> with:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">make install clean
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">make install clean
 </code></pre></div><h2 id="5---add-digikam-user">5 - Add digikam user <a tabindex="0" href="#5---add-digikam-user" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Create new <code>digikam</code> user with <code>adduser</code>.</p>
 <p>Remember to set <code>GID</code> to same value as the account you normally use to manage your photos.
 In my case it&rsquo;s <code>1001</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># adduser</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># adduser</span>
 Username: digikam
 Full name: digikam
 Uid <span style="color:#f92672">(</span>Leave empty <span style="color:#66d9ef">for</span> default<span style="color:#f92672">)</span>: <span style="color:#ae81ff">1001</span>
@@ -511,15 +511,15 @@ adduser: INFO: Successfully added <span style="color:#f92672">(</span>digikam<sp
 Add another user? <span style="color:#f92672">(</span>yes/no<span style="color:#f92672">)</span>: no
 Goodbye!
 </code></pre></div><p>You can now create a <code>Pictures</code> directory as root:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mkdir /home/digikam/Pictures
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mkdir /home/digikam/Pictures
 chown digigam:digikam /home/digikam/Pictures
 </code></pre></div><p>or do it as <code>digikam</code> user:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">su - digikam
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">su - digikam
 mkdir ~/Pictures
 </code></pre></div><h2 id="6---enable-and-configure-ssh">6 - Enable and configure ssh <a tabindex="0" href="#6---enable-and-configure-ssh" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Let&rsquo;s start with editing <code>ssh</code> daemon configuration <code>/etc/ssh/sshd_config</code>.</p>
 <p>Here&rsquo;s an example config that enables <code>X11 Forwarding</code> and password-less login:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">AcceptEnv LANG LC_*
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">AcceptEnv LANG LC_*
 AllowUsers digikam
 AuthorizedKeysFile      .ssh/authorized_keys
 ChallengeResponseAuthentication no
@@ -537,7 +537,7 @@ directory to newly created <code>~/Pictures</code> which should be located under
 <code>/mnt/jails/iocage/jails/digikam/root/usr/home/digikam/Pictures</code>.</p>
 <h2 id="7---create-a-handy-shortcut-to-remote-digikam">7 - Create a handy shortcut to remote digikam <a tabindex="0" href="#7---create-a-handy-shortcut-to-remote-digikam" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Create a new desktop file: <code>~/.local/share/applications/digikam-nas.desktop</code></p>
-<pre><code>[Desktop Entry]
+<pre tabindex="0"><code>[Desktop Entry]
 Version=1.0
 Type=Application
 Name=Digikam NAS remote

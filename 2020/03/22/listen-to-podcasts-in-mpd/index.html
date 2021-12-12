@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../images/rss_to_mpd.png'><meta property='article:section' content='2020'><meta property='article:tag' content='linux'><meta property='article:tag' content='mpd'><meta property='article:tag' content='rss'><meta property='article:published_time' content='2020-03-22T12:02:34&#43;01:00'/><meta property='article:modified_time' content='2020-03-22T12:02:34&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../images/rss_to_mpd.png'><meta property='twitter:image:alt' content='ASCII art generated with http://patorjk.com/software/taag/ &amp; colored with http://patorjk.com/text-color-fader/'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Listen to podcasts in MPD • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2020/03/22/listen-to-podcasts-in-mpd/'>
@@ -430,12 +430,12 @@ One min read
 
 format.</p>
 <p>You can extract RSS feed links from it with:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">awk -F <span style="color:#e6db74">&#39;&#34;&#39;</span> <span style="color:#e6db74">&#39;{print $6}&#39;</span> podcasts.opml | sed <span style="color:#e6db74">&#39;/^$/d&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">awk -F <span style="color:#e6db74">&#39;&#34;&#39;</span> <span style="color:#e6db74">&#39;{print $6}&#39;</span> podcasts.opml | sed <span style="color:#e6db74">&#39;/^$/d&#39;</span>
 </code></pre></div><h2 id="load-podcast-into-mpd">Load podcast into MPD <a tabindex="0" href="#load-podcast-into-mpd" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Given that you&rsquo;ve saved your podcast feed list in <code>~/Music/podcasts.rss</code>.<br>
 Then with a simple while loop you can load your podcast episodes into mpd.</p>
 <p>Add this to your <code>~/.bashrc</code> or <code>~/.bash_profile</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">alias podcasts<span style="color:#f92672">=</span>fetch_last_n_episodes
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">alias podcasts<span style="color:#f92672">=</span>fetch_last_n_episodes
 
 <span style="color:#66d9ef">function</span> fetch_last_n_episodes<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
     N<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1<span style="color:#66d9ef">:-</span>5<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>  <span style="color:#75715e"># defaults to 5 most recent episodes</span>

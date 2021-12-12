@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../pa11y-logo.svg'><meta property='article:section' content='2020'><meta property='article:tag' content='accessibility'><meta property='article:tag' content='heroku'><meta property='article:tag' content='nodejs'><meta property='article:tag' content='pa11y'><meta property='article:published_time' content='2020-06-04T13:39:45&#43;01:00'/><meta property='article:modified_time' content='2020-06-04T13:39:45&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../pa11y-logo.svg'><meta property='twitter:image:alt' content='Official Pa11y logo https://pa11y.org/resources/brand/logo.svg'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>How to Proxy Requests to Pa11y Webservice Hosted on Heroku • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2020/06/04/how-to-proxy-requests-to-pa11y-webservice-hosted-on-heroku/'>
@@ -426,7 +426,7 @@ Unfortunately Heroku doesn&rsquo;t allow its users to easily expose multiple por
 <p>After a bit of searching I&rsquo;ve found a dedicated proxy module for expressjs called <a href="https://www.npmjs.com/package/express-http-proxy" target="_blank">express-http-proxy</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 .</p>
 <p>Integration is really simple as it&rsquo;s literally 2 lines of code:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#75715e">@@ -23,12 +23,28 @@ const hbs = require(&#39;express-hbs&#39;);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#75715e">@@ -23,12 +23,28 @@ const hbs = require(&#39;express-hbs&#39;);
 </span><span style="color:#75715e"></span> const http = require(&#39;http&#39;);
  const pkg = require(&#39;./package.json&#39;);
 <span style="color:#a6e22e">+
@@ -447,7 +447,7 @@ Unfortunately Heroku doesn&rsquo;t allow its users to easily expose multiple por
 </span><span style="color:#a6e22e">+       app.express.use(&#39;/ws/&#39;, proxy(webserviceUrl));
 </span></code></pre></div><p>Once the change is deployed to Heroku you will be able to access Pa11y Webservice
 via <code>/ws/</code> endpoint, e.g.:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl --user a your-pa11y-app.herokuapp.com/ws/tasks?lastres<span style="color:#f92672">=</span>true
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl --user a your-pa11y-app.herokuapp.com/ws/tasks?lastres<span style="color:#f92672">=</span>true
 </code></pre></div><p>PS. If you followed my earlier <a href="https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/">tutorial on adding basic-auth to Pa11y</a>
 ,
 then you should know that basic-auth will be also added to <code>/ws/</code> endpoint.</p>

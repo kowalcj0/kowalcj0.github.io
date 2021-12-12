@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2021'><meta property='article:tag' content='python'><meta property='article:published_time' content='2021-09-15T17:50:36&#43;01:00'/><meta property='article:modified_time' content='2021-09-15T17:50:36&#43;01:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Use default factory to initialize nested dataclass fields • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2021/09/15/initialize_nested_dataclasses_with_default_factory/'>
@@ -412,7 +412,7 @@ One min read
 an issues with defining field values by creating an instance of some object.</p>
 <p>In the example below, all instances of class <code>Main</code> will point to the same instance
 of class <code>Sub</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass, field
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass, field
 
 <span style="color:#a6e22e">@dataclass</span>
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Sub</span>:
@@ -442,7 +442,7 @@ Out[<span style="color:#ae81ff">2</span>]: <span style="color:#ae81ff">140304748
 </code></pre></div><p>The fix is really easy. Simply provide the name of the class you want to instantiate as
 <code>default_factory</code> argument to the <a href="https://docs.python.org/3/library/dataclasses.html#dataclasses.field" target="_blank">field</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  function:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass, field
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass, field
 
 <span style="color:#a6e22e">@dataclass</span>
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Sub</span>:

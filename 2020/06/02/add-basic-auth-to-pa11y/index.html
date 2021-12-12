@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../pa11y-logo.svg'><meta property='article:section' content='2020'><meta property='article:tag' content='accessibility'><meta property='article:tag' content='nodejs'><meta property='article:tag' content='pa11y'><meta property='article:published_time' content='2020-06-02T16:33:26&#43;01:00'/><meta property='article:modified_time' content='2020-06-02T16:33:26&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../pa11y-logo.svg'><meta property='twitter:image:alt' content='Official Pa11y logo https://pa11y.org/resources/brand/logo.svg'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Add Basic Auth to Pa11y • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2020/06/02/add-basic-auth-to-pa11y/'>
@@ -438,9 +438,9 @@ It means that we have to also include <a href="https://www.npmjs.com/package/htt
 <p>First things first. Pa11y Dashboard requires <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  to store task data &amp; test results.<br>
 Spin it up with docker:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d --name pa11y-mongo -p 27017:27017 mongo:4.2.6
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d --name pa11y-mongo -p 27017:27017 mongo:4.2.6
 </code></pre></div><p>The next step is to add new dependencies to <code>package.json</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">--- a/package.json
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">--- a/package.json
 </span><span style="color:#f92672"></span><span style="color:#a6e22e">+++ b/package.json
 </span><span style="color:#a6e22e"></span><span style="color:#75715e">@@ -30,6 +30,9 @@
 </span><span style="color:#75715e"></span>     &#34;compression&#34;: &#34;~1.7.4&#34;,
@@ -452,11 +452,11 @@ Spin it up with docker:</p>
      &#34;moment&#34;: &#34;~2.24.0&#34;,
      &#34;pa11y-webservice-client-node&#34;: &#34;~2.0.0&#34;,
 </code></pre></div><p>The last steps in this section is to install project dependencies with:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install
 </code></pre></div><h2 id="configuration">Configuration <a tabindex="0" href="#configuration" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Once we&rsquo;re done with dependencies, we have to have a way to specify authentication credentials.<br>
 Let&rsquo;s do that using environment variables. These can be easily defined in <code>config.js</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">--- a/config.js
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">--- a/config.js
 </span><span style="color:#f92672"></span><span style="color:#a6e22e">+++ b/config.js
 </span><span style="color:#a6e22e"></span><span style="color:#75715e">@@ -28,12 +28,19 @@ if (fs.existsSync(jsonPath)) {
 </span><span style="color:#75715e"></span>       port: Number(env(&#39;PORT&#39;, &#39;4000&#39;)),
@@ -466,7 +466,7 @@ Let&rsquo;s do that using environment variables. These can be easily defined in 
 </span><span style="color:#a6e22e">+      password: env(&#39;PASSWORD&#39;, null),
 </span></code></pre></div><h2 id="changes-changes-changes">Changes, changes, changes&hellip; <a tabindex="0" href="#changes-changes-changes" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Finally we have to inialize http-auth modules and plug them in to Pa11y app.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">--- a/app.js
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">--- a/app.js
 </span><span style="color:#f92672"></span><span style="color:#a6e22e">+++ b/app.js
 </span><span style="color:#a6e22e"></span><span style="color:#75715e">@@ -23,12 +23,28 @@ const hbs = require(&#39;express-hbs&#39;);
 </span><span style="color:#75715e"></span> const http = require(&#39;http&#39;);
@@ -505,7 +505,7 @@ Let&rsquo;s do that using environment variables. These can be easily defined in 
 </span></code></pre></div><h2 id="start-the-service">Start the service <a tabindex="0" href="#start-the-service" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>We&rsquo;re now ready to roll!<br>
 Start the dashboard with:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">8888</span> USERNAME<span style="color:#f92672">=</span>a PASSWORD<span style="color:#f92672">=</span>a node index.js
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">8888</span> USERNAME<span style="color:#f92672">=</span>a PASSWORD<span style="color:#f92672">=</span>a node index.js
 
 Pa11y Dashboard started
 mode: undefined

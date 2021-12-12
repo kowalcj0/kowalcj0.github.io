@@ -17,7 +17,7 @@ sudo dpkg -L libnspr4 Then finally configure nspr paths accordingly, compile and
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2013'><meta property='article:tag' content='linux'><meta property='article:tag' content='pidgin'><meta property='article:tag' content='sipe'><meta property='article:published_time' content='2013-10-11T16:37:49Z'/><meta property='article:modified_time' content='2013-10-11T16:37:49Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>How to build pidgin-sipe plugin with audio and video support on ubuntu/linux mint • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2013/10/11/how-to-build-pidgin-sipe-plugin-with-audio-and-video-support-on-ubuntulinux-mint/'>
@@ -414,7 +414,7 @@ One min read
   <p>Tested with <a href="https://sourceforge.net/projects/sipe/files/sipe/" target="_blank">pidgin-sipe-1.17.0</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 </p>
 <p>First of all install dependencies:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    libxml2-dev <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    libnspr4-dev <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    libnss3-dev <span style="color:#ae81ff">\
@@ -424,9 +424,9 @@ One min read
 </span><span style="color:#ae81ff"></span>    libnss3-dev <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    libglib2.0-dev
 </code></pre></div><p>Then check where <code>libnspr4</code> was installed:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo dpkg -L libnspr4
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo dpkg -L libnspr4
 </code></pre></div><p>Then finally configure <code>nspr</code> paths accordingly, compile and install it:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./configure <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./configure <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    --prefix<span style="color:#f92672">=</span>/usr <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    --with-vv <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    --with-nss-includes<span style="color:#f92672">=</span>/usr/include/nss <span style="color:#ae81ff">\

@@ -117,8 +117,8 @@ It allows you to run JMeter tests on:
       <pubDate>Tue, 22 Jan 2013 17:17:29 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/01/22/how-to-selectively-run-stories-tagged-with-multiple-words-in-a-meta-field-with-jbehave/</guid>
-      <description>Prerequisites  a working jBehave based project  This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial.
-To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring, to run the modified story presented below.
+      <description>Prerequisites  a working jBehave based project  This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial  .
+To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring  , to run the modified story presented below.
 Maven  OK, let&amp;rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
 Below is an example story, tagged with multiple categories and features: anExampleStoryWithMultipleWordsInAMetaKeyword.</description>
     </item>

@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2020'><meta property='article:tag' content='signal'><meta property='article:tag' content='sqlie'><meta property='article:tag' content='sqlcipher'><meta property='article:published_time' content='2020-05-03T21:46:49&#43;01:00'/><meta property='article:modified_time' content='2020-05-03T21:46:49&#43;01:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.90.1" />
 
   <title>Decrypt Signal message DB • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2020/05/03/decrypt-signal-message-db/'>
@@ -408,7 +408,8 @@ One min read
 
   <div class='container entry-content'>
   <p>All but the last step are based on this answer on unix.stackexchange:
-<a href="https://unix.stackexchange.com/questions/505008/signal-desktop-how-to-export-messages">https://unix.stackexchange.com/questions/505008/signal-desktop-how-to-export-messages</a></p>
+<a href="https://unix.stackexchange.com/questions/505008/signal-desktop-how-to-export-messages" target="_blank">https://unix.stackexchange.com/questions/505008/signal-desktop-how-to-export-messages</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
 <h2 id="locate-dbsqlite--db-key">Locate db.sqlite &amp; db key <a tabindex="0" href="#locate-dbsqlite--db-key" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Find Signal DB one of these locations:</p>
 <ul>
@@ -422,15 +423,16 @@ One min read
 </ul>
 <h2 id="compile-sqlcipher">Compile sqlcipher <a tabindex="0" href="#compile-sqlcipher" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>As of writing, you&rsquo;ll need sqlcipher v3.30 or newer to decrypt Signal&rsquo;s message DB.</p>
-<p>Get it from <a href="https://github.com/sqlcipher/sqlcipher">https://github.com/sqlcipher/sqlcipher</a></p>
+<p>Get it from <a href="https://github.com/sqlcipher/sqlcipher" target="_blank">https://github.com/sqlcipher/sqlcipher</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
 <p>Then compile it with dynamic linking:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./configure <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./configure <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    --enable-tempstore<span style="color:#f92672">=</span>yes <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    CFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-DSQLITE_HAS_CODEC&#34;</span> <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    LDFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-lcrypto&#34;</span>
 make
 </code></pre></div><h2 id="decrypt-dbsqlite">Decrypt db.sqlite <a tabindex="0" href="#decrypt-dbsqlite" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/path/to/sqlcipher <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/path/to/sqlcipher <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    -list <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    -noheader <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    <span style="color:#e6db74">&#34;db.sqlite&#34;</span> <span style="color:#ae81ff">\
@@ -443,7 +445,7 @@ make
 <li>Add leading <code>[</code></li>
 <li>Add trailing <code>]</code></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tail -n +2 clear_text_msgs &gt; without_ok
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tail -n +2 clear_text_msgs &gt; without_ok
 sed <span style="color:#e6db74">&#39;$!s/$/,/&#39;</span> without_ok &gt; with_commas
 sed <span style="color:#e6db74">&#39;1 s/^/[\n/&#39;</span> with_commas &gt; with_leading_bracket
 echo <span style="color:#e6db74">&#34;]&#34;</span> &gt;&gt; with_leading_bracket

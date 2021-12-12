@@ -112,8 +112,7 @@ sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-
       <pubDate>Thu, 07 Nov 2013 13:59:41 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</guid>
-      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/+archive/stable
-To install latest stable build follow 3 simple steps:
+      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&amp;#43;archive/stable  To install latest stable build follow 3 simple steps:
   add &amp;ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&amp;rdquo; to /etc/apt/sources.list
   add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:
 W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \  --keyserver hkp://keys.gnupg.net:80 \  --recv 5A9BF3BB4E5E17B5 sudo gpg \  --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\  sudo apt-key add - btw.</description>
@@ -170,7 +169,7 @@ date +&amp;#39;%Y-%m-%d_%H_%M-%Z&amp;#39; | xargs -I {} bash -c &amp;#34;sudo tc
       <pubDate>Sat, 11 May 2013 17:08:00 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/05/11/useful-links-to-all-owners-of-a-kindle-or-any-other-ebook-reader/</guid>
-      <description>Send web pages and RSS directly to Kindle  http://www.klip.me/ https://sendtoreader.com/  eBook management  https://calibre-ebook.com/  Free en-pl dictionary  http://www.bumato.pl/  News sites  https://swiatczytnikow.pl/  Free and legit books International  https://www.gutenberg.org/ https://archive.org/details/texts  English  http://www.freekindlebooks.org/ https://www.amazon.com/s/?node=2245146011 https://openlibrary.org/ https://www.openculture.com/free_ebooks  French  https://www.ebooksgratuits.com/ https://beq.ebooksgratuits.com/ http://www.livrespourtous.com/ https://www.amazon.fr/b?ie=UTF8&amp;amp;node=927173031 https://pix-geeks.com/ebook-gratuit/  Polish  https://wolnelektury.pl/  Magiczne katalogi Katalogi legalnych i darmowych książek na kidnle&amp;rsquo;a, które można ściągnąć bezpośrednio na urządzenie, bez potrzeby kopiowania na urządzenie czy wysyłania na maila itp.</description>
+      <description>Send web pages and RSS directly to Kindle  http://www.klip.me/   https://sendtoreader.com/    eBook management  https://calibre-ebook.com/    Free en-pl dictionary  http://www.bumato.pl/    News sites  https://swiatczytnikow.pl/    Free and legit books International  https://www.gutenberg.org/   https://archive.org/details/texts    English  http://www.freekindlebooks.org/   https://www.amazon.com/s/?node=2245146011   https://openlibrary.org/   https://www.openculture.com/free_ebooks    French  https://www.ebooksgratuits.com/   https://beq.</description>
     </item>
     
     <item>
@@ -179,8 +178,8 @@ date +&amp;#39;%Y-%m-%d_%H_%M-%Z&amp;#39; | xargs -I {} bash -c &amp;#34;sudo tc
       <pubDate>Tue, 22 Jan 2013 17:17:29 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/01/22/how-to-selectively-run-stories-tagged-with-multiple-words-in-a-meta-field-with-jbehave/</guid>
-      <description>Prerequisites  a working jBehave based project  This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial.
-To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring, to run the modified story presented below.
+      <description>Prerequisites  a working jBehave based project  This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial  .
+To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring  , to run the modified story presented below.
 Maven  OK, let&amp;rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
 Below is an example story, tagged with multiple categories and features: anExampleStoryWithMultipleWordsInAMetaKeyword.</description>
     </item>
