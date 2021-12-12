@@ -66,6 +66,35 @@
                     "name": "Japan"
                 }
             ]
+        },
+        {
+            "title": "Hara-Kiri: Death of a Samurai",
+            "original_title": "\u4e00\u547d",
+            "director": "Takashi Miike",
+            "genres": [
+                "drama"
+            ],
+            "year": 2011,
+            "trailer": "https://www.youtube.com/watch?v=R-sp6Xw0jJU",
+            "wiki": "https://en.wikipedia.org/wiki/Hara-Kiri:_Death_of_a_Samurai",
+            "imdb": "https://www.imdb.com/title/tt1728196/",
+            "rt": "https://www.rottentomatoes.com/m/hara_kiri_death_of_a_samurai",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/hara-kiri-death-of-a-samurai",
+            "comments": "",
+            "rating_my": 2,
+            "tmdb": 85836,
+            "watched": "2021-12-10",
+            "production_countries": [
+                {
+                    "iso_3166_1": "JP",
+                    "name": "Japan"
+                },
+                {
+                    "iso_3166_1": "GB",
+                    "name": "United Kingdom"
+                }
+            ]
         }
     ]
 }

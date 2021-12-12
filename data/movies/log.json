@@ -692,6 +692,217 @@
                     "name": "Russia"
                 }
             ]
+        },
+        {
+            "title": "Riders of Justice",
+            "original_title": "Retf\u00e6rdighedens ryttere",
+            "director": "Anders Thomas Jensen",
+            "genres": [
+                "action",
+                "comedy",
+                "drama"
+            ],
+            "year": 2020,
+            "trailer": "https://www.youtube.com/watch?v=j9Okx5teGBQ",
+            "wiki": "https://en.wikipedia.org/wiki/Riders_of_Justice",
+            "imdb": "https://www.imdb.com/title/tt11655202/",
+            "rt": "https://www.rottentomatoes.com/m/riders_of_justice",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/riders-of-justice",
+            "comments": "",
+            "rating_my": 2,
+            "tmdb": 663870,
+            "watched": "2021-10-02",
+            "production_countries": [
+                {
+                    "iso_3166_1": "DK",
+                    "name": "Denmark"
+                },
+                {
+                    "iso_3166_1": "SE",
+                    "name": "Sweden"
+                }
+            ]
+        },
+        {
+            "title": "The Monk",
+            "original_title": "Le Moine",
+            "director": "Dominik Moll",
+            "genres": [
+                "thriller"
+            ],
+            "year": 2011,
+            "trailer": "https://www.youtube.com/watch?v=n1mVqAZiGV4",
+            "wiki": "https://en.wikipedia.org/wiki/The_Monk_(2011_film)",
+            "imdb": "https://www.imdb.com/title/tt1605769/",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-monk",
+            "comments": "Vincent Cassel vs Devil",
+            "rating_my": 2,
+            "tmdb": 66120,
+            "watched": "2021-10-02",
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "ES",
+                    "name": "Spain"
+                }
+            ]
+        },
+        {
+            "title": "Gunpowder Milkshake",
+            "original_title": "",
+            "director": "Navot Papushado",
+            "genres": [
+                "action",
+                "thriller",
+                "crime"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=YLMT5uXjFLY",
+            "wiki": "https://en.wikipedia.org/wiki/Gunpowder_Milkshake",
+            "imdb": "https://www.imdb.com/title/tt8368408/",
+            "rt": "https://www.rottentomatoes.com/m/gunpowder_milkshake",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/gunpowder-milkshake",
+            "comments": "One of the worst movies I've seen in long time. It's hard to tell what's bad about it apart from saying everything.",
+            "rating_my": -1,
+            "tmdb": 574060,
+            "watched": "2021-10-02",
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "DE",
+                    "name": "Germany"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
+        },
+        {
+            "title": "Finch",
+            "original_title": "",
+            "director": "Miguel Sapochnik",
+            "genres": [
+                "science fiction",
+                "drama",
+                "adventure"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=-0bYWnP3jH4",
+            "wiki": "https://en.wikipedia.org/wiki/Finch_(film)",
+            "imdb": "https://www.imdb.com/title/tt3420504/",
+            "rt": "https://www.rottentomatoes.com/m/finch",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/finch",
+            "comments": "",
+            "rating_my": 2,
+            "tmdb": 522402,
+            "watched": "2021-12-11",
+            "production_countries": [
+                {
+                    "iso_3166_1": "IN",
+                    "name": "India"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
+        },
+        {
+            "title": "Dune",
+            "original_title": "",
+            "director": "Denis Villeneuve",
+            "genres": [
+                "science fiction",
+                "adventure"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=w0HgHet0sxg",
+            "wiki": "https://en.wikipedia.org/wiki/Dune_(2021_film)",
+            "imdb": "https://www.imdb.com/title/tt1160419/",
+            "rt": "https://www.rottentomatoes.com/m/1006364-dune",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/dune-2020",
+            "comments": "",
+            "rating_my": 3,
+            "tmdb": 438631,
+            "watched": "2021-11-10",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
+        },
+        {
+            "title": "The French Dispatch",
+            "original_title": "",
+            "director": "Wes Anderson",
+            "genres": [
+                "drama",
+                "comedy",
+                "romance"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=TcPk2p0Zaw4",
+            "wiki": "https://en.wikipedia.org/wiki/The_French_Dispatch",
+            "imdb": "https://www.imdb.com/title/tt8847712/",
+            "rt": "https://www.rottentomatoes.com/m/the_french_dispatch",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-french-dispatch",
+            "comments": "",
+            "rating_my": 3,
+            "tmdb": 542178,
+            "watched": "2021-10-30",
+            "production_countries": [
+                {
+                    "iso_3166_1": "DE",
+                    "name": "Germany"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
+        },
+        {
+            "title": "Red Notice",
+            "original_title": "",
+            "director": "Rawson Marshall Thurber",
+            "genres": [
+                "action",
+                "comedy",
+                "crime",
+                "thriller"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=Pj0wz7zu3Ms",
+            "wiki": "https://en.wikipedia.org/wiki/Red_Notice_(film)",
+            "imdb": "https://www.imdb.com/title/tt7991608/",
+            "rt": "https://www.rottentomatoes.com/m/red_notice",
+            "netflix": "http://www.netflix.com/title/81161626",
+            "justwatch": "https://www.justwatch.com/uk/movie/red-notice",
+            "comments": "",
+            "tmdb": 512195,
+            "watched": "2021-12-11",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ],
+            "rating_my": 2
         }
     ]
 }

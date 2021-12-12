@@ -455,6 +455,43 @@
                     "name": "Italy"
                 }
             ]
+        },
+        {
+            "title": "Minamata",
+            "original_title": "",
+            "director": "Andrew Levitas",
+            "genres": [
+                "drama",
+                "history"
+            ],
+            "year": 2020,
+            "trailer": "https://www.youtube.com/watch?v=Hgy3IQkd_dY",
+            "wiki": "https://en.wikipedia.org/wiki/Minamata_(film)",
+            "imdb": "https://www.imdb.com/title/tt9179096/",
+            "rt": "https://www.rottentomatoes.com/m/minamata",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/minamata",
+            "comments": "",
+            "tmdb": 560008,
+            "watched": "2021-10-14",
+            "production_countries": [
+                {
+                    "iso_3166_1": "RS",
+                    "name": "Serbia"
+                },
+                {
+                    "iso_3166_1": "AE",
+                    "name": "United Arab Emirates"
+                },
+                {
+                    "iso_3166_1": "GB",
+                    "name": "United Kingdom"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ]
         }
     ]
 }
