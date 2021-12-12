@@ -400,6 +400,8 @@ def filter_movie_details(movie: tmdb.movies.Movies, watched_date: str) -> dict:
         "tmdb": info["id"],
         "watched": watched_date,
         "production_countries": info["production_countries"],
+        "rating_tmdb": info["vote_average"],
+        "rating_tmdb_count": info["vote_count"],
     }
     pprint(result)
     return result
