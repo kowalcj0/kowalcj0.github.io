@@ -86,6 +86,12 @@ def set_watched_date() -> str:
     return watch_date
 
 
+def set_rating_my() -> str:
+    """Define my rating."""
+    decision = input(f"What's the movie score on a scale from 0 to 3?: ").lower()
+    return int(decision)
+
+
 def find_categories() -> List[str]:
     """Find movie categories"""
     categories = []
@@ -122,7 +128,6 @@ def load_tv_shows() -> dict:
             "movies": [],
         }
     return shows
-
 
 
 def page(query: str) -> Optional[wikipedia.wikipedia.WikipediaPage]:
@@ -569,21 +574,25 @@ def main(title: str):
     Steps:
         1. look for movie details
         2. filter out redundant details
-        3. pick movie category
-        4. add movie to category
-        5. save movie category
+        3. add my rating
+        4. pick movie category
+        5. add movie to category
+        6. save movie category
     """
     search_for = set_what_are_you_looking_for()
     watched_date = set_watched_date()
+    rating_my = set_rating_my()
     if search_for == SearchFor.MOVIE:
         tmdb_movie = search_tmdb_for_movie(title)
         details = filter_movie_details(tmdb_movie, watched_date)
+        details["rating_my"] = rating_my
         category = pick_category()
         updated = add_movie_to_category(details, category)
     elif search_for == SearchFor.TV:
         tmdb_movie = search_tmdb_for_tv_show(title)
         details = filter_tv_show_details(tmdb_movie, watched_date)
         category = "tv_shows"
+        details["rating_my"] = rating_my
         updated = add_tv_show_details(details)
     save(updated, category)
 
