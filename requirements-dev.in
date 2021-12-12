@@ -1,0 +1,5 @@
+-r requirements.in
+black
+pip-tools
+pylint
+mypy
