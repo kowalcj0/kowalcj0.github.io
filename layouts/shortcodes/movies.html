@@ -29,11 +29,20 @@
         {{ if .comments }}
         <li title="Comments" aria-label="Comments" style="list-style-image: url('/img/octicons/note.svg'); margin-left: 0.5rem" id="comments-{{ .title | anchorize }}">Comments: {{ .comments | markdownify }}</li>
         {{ end }}
-        {{ if le .rating_my 0 }}
+        {{ if and (.rating_my) (le .rating_my 0) }}
         <li title="My rating" aria-label="My rating" style="list-style-image: url('/img/octicons/star-fill.svg'); margin-left: 0.5rem" id="rating-my-{{ .title | anchorize }}">My rating: <b>{{ .rating_my }} Stars. DO NOT WATCH IT! You've been warne</b>d</li>
         {{ end }}
-        {{ if .rating_my }}
+        {{ if gt .rating_my 0 }}
         <li title="My rating" aria-label="My rating" style="list-style-image: url('/img/octicons/star-fill.svg'); margin-left: 0.5rem" id="rating-my-{{ .title | anchorize }}">My rating: {{ range (seq .rating_my) }}<img src="/img/octicons/star-fill.svg"/>{{ end }}</li>
+        {{ end }}
+        {{ if .rating_tmdb }}
+        <li title="TMDB rating" aria-label="TMDB rating" style="margin-left: 0.5rem" id="rating-tmdb-{{ .title | anchorize }}"><img src="/img/tmdb.svg" style="width: 64px;"/> User score: <b title="{{ .rating_tmdb_count }} User score" aria-label="{{ .rating_tmdb_count }} User score">{{ mul .rating_tmdb 10 }}%</b></li>
+        {{ end }}
+        {{ if .rating_imdb }}
+        <li title="IMDb ratings" aria-label="IMDb ratings" style="margin-left: 0.5rem" id="rating-imdb-{{ .title | anchorize }}"><img src="/img/imdb-site.svg" style="width: 64px;"/> User reviews: <b title="{{ .rating_imdb_count }} User reviews" aria-label="{{ .rating_imdb_count }} User reviews">{{ .rating_imdb }}<sub>/10</sub></b>{{ if .rating_imdb_metascore }} - Critic metascore: <b title="{{ .rating_imdb_critic_count }} Critic reviews" aria-label="{{ .rating_imdb_critic_count }} Critic reviews">{{ .rating_imdb_metascore }}<sub>/100</sub></b>{{ end }}</li>
+        {{ end }}
+        {{ if or (.rating_rt_audience) (.rating_rt_tomatometer) }}
+        <li title="Rotten Tomatoes ratings" aria-label="Rotten Tomatoes ratings" style="margin-left: 0.5rem" id="rating-imdb-{{ .title | anchorize }}">{{ if .rating_rt_audience }}<img src="/img/rt_audience.svg" style="width: 24px;"/> Audience score: <b>{{ .rating_rt_audience }}%</b>{{ end }}{{ if and (.rating_rt_audience) (.rating_rt_tomatometer) }} - {{ end }}{{ if .rating_rt_tomatometer }}<img src="/img/rt_tomatometer.svg" style="width: 24px;"/> Tomatometer: <b>{{ .rating_rt_tomatometer }}%</b>{{ end }}</li>
         {{ end }}
         {{ if .quotes }}
         <li title="Quotes" aria-label="Quoutes" style="list-style-image: url('/img/octicons/quote.svg'); margin-left: 0.5rem" id="quotes-{{ .title | anchorize }}">Quotes:
