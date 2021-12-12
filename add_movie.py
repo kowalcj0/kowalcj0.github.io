@@ -284,7 +284,7 @@ def search_just_watch(
 
     def look_for_netflix_url(movie: dict) -> Optional[str]:
         netflix_provider_id = 8
-        for offer in movie.get("offers"):
+        for offer in movie.get("offers", []):
             if offer.get("provider_id") == netflix_provider_id:
                 print(
                     f"Found '{movie['title']}' on Netflix {offer['urls']['standard_web']}"
