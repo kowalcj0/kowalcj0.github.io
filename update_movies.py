@@ -44,14 +44,14 @@ else:
 
 
 def rt_scores(url: str):
-    info={}
+    info = {}
     response = requests.get(url)
     soup = bs(response.text, "html.parser")
     rows = soup.select("score-board")
     for row in rows:
         info = {
             "audiencescore": row.get("audiencescore"),
-            "tomatometerscore": row.get("tomatometerscore")
+            "tomatometerscore": row.get("tomatometerscore"),
         }
     return info
 
@@ -123,22 +123,42 @@ def update_ratings(movies: dict) -> dict:
                 imdb_response = imdb_scraper.scrape_movie(movie["imdb"])
                 movie["rating_imdb"] = imdb_response["rating_value"]
                 movie["rating_imdb_count"] = imdb_response["rating_count"]
-                movie["rating_imdb_metascore"] = imdb_response["metascore"] if imdb_response["metascore"] != "N/A" else None
-                movie["rating_imdb_critic_count"] = imdb_response["critic_count"] if imdb_response["critic_count"] != "-" else None
+                movie["rating_imdb_metascore"] = (
+                    imdb_response["metascore"]
+                    if imdb_response["metascore"] != "N/A"
+                    else None
+                )
+                movie["rating_imdb_critic_count"] = (
+                    imdb_response["critic_count"]
+                    if imdb_response["critic_count"] != "-"
+                    else None
+                )
             except Exception as ex:
                 print(f"Failed to get IMDB ratings for {movie['title']}:\n{ex}")
 
             try:
                 if movie["rt"]:
                     rt_response = rt_scores(movie["rt"])
-                    movie["rating_rt_audience"] = int(rt_response["audiencescore"]) if "audiencescore" in rt_response and rt_response["audiencescore"] else None
-                    movie["rating_rt_tomatometer"] = int(rt_response["tomatometerscore"]) if "tomatometerscore" in rt_response and rt_response["tomatometerscore"] else None
+                    movie["rating_rt_audience"] = (
+                        int(rt_response["audiencescore"])
+                        if "audiencescore" in rt_response
+                        and rt_response["audiencescore"]
+                        else None
+                    )
+                    movie["rating_rt_tomatometer"] = (
+                        int(rt_response["tomatometerscore"])
+                        if "tomatometerscore" in rt_response
+                        and rt_response["tomatometerscore"]
+                        else None
+                    )
                 else:
                     print(f"Missing Rotten Tomatoes URL for: {movie['title']}")
                     movie["rating_rt_audience"] = None
                     movie["rating_rt_tomatometer"] = None
             except Exception as ex:
-                print(f"Failed to get Rotten Tomatoes ratings for {movie['title']}:\n{ex}")
+                print(
+                    f"Failed to get Rotten Tomatoes ratings for {movie['title']}:\n{ex}"
+                )
     return movies
 
 
