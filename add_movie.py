@@ -59,7 +59,7 @@ def check_env():
         sys.exit("TMDB_API_KEY env var is not set")
 
 
-def  set_what_are_you_looking_for() -> SearchFor:
+def set_what_are_you_looking_for() -> SearchFor:
     """Define watch date."""
     decision = input(
         f"Did you watch a movie or a TV show? for a movie -> [y/m/Enter]; for a TV -> [t/tv/n]?: "
@@ -141,7 +141,9 @@ def page(query: str) -> Optional[wikipedia.wikipedia.WikipediaPage]:
         return None
 
 
-def find_wiki_page_url(title: str, year: int, *, tv_show: bool = False) -> Optional[str]:
+def find_wiki_page_url(
+    title: str, year: int, *, tv_show: bool = False
+) -> Optional[str]:
     if not tv_show:
         suffix = "Film"
     else:
@@ -244,7 +246,6 @@ def search_tmdb_for_tv_show(title: str) -> dict:
     return tmdb.TV(id=show["id"])
 
 
-
 def search_tmdb_for_movie(title: str) -> dict:
     search = tmdb.Search()
     response = search.movie(query=title)
@@ -298,6 +299,9 @@ def search_just_watch(
         query=title, release_year_from=year, page_size=100
     )
     for movie in results["items"]:
+        if not movie:
+            print("got an empty movie dict from justwatch")
+            continue
         for score in movie.get("scoring", []):
             if score.get("provider_type") == "tmdb:id":
                 if score.get("value") == tmdb_id:
@@ -556,7 +560,9 @@ def filter_tv_show_details(show: tmdb.tv.TV, watched_date: str) -> dict:
         "year": year,
         "trailer": trailer,
         "wiki": wiki or "",
-        "imdb": f"https://www.imdb.com/title/{info['imdb_id']}/" if "imdb_id" in info else "",
+        "imdb": f"https://www.imdb.com/title/{info['imdb_id']}/"
+        if "imdb_id" in info
+        else "",
         "rt": rotten_tomatoes_url or "",
         "netflix": netflix_url or "",
         "justwatch": just_watch_url or "",
