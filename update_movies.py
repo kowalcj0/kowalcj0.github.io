@@ -25,11 +25,14 @@ from typing import Optional
 import tmdbsimple as tmdb
 import wikipedia
 from envparse import env
+from scrapista.imdb import ImdbScraper
 
 env.read_envfile()
 
 WIKIPEDIA_LANG = env.str("WIKIPEDIA_LANG", default="en")
 wikipedia.set_lang(WIKIPEDIA_LANG)
+
+imdb_scraper = ImdbScraper()
 
 TMDB_API_KEY = env.str("TMDB_API_KEY")
 if TMDB_API_KEY:
@@ -85,10 +88,29 @@ def get_tmdb_id(film: dict) -> Optional[int]:
             print(
                 f"IMDB title '{film['title']}' IMDB ID: {imdb_id} wasn't found in TMDB by IMDB ID"
             )
+    if "tmdb" in film and film["tmdb"]:
+        tmdb_id = film["tmdb"]
     return tmdb_id
 
 
-def update(raw_films: dict) -> dict:
+
+def update_ratings(movies: dict) -> dict:
+    for idx, movie in enumerate(movies["movies"]):
+        if movie["tmdb"]:
+            print(f"Updating rating for: {movie['title']}")
+            response = tmdb.Movies(movie["tmdb"])
+            info = response.info()
+            movie["rating_tmdb"] = info["vote_average"]
+            movie["rating_tmdb_count"] = info["vote_count"]
+            imdb_response = imdb_scraper.scrape_movie(movie["imdb"])
+            movie["rating_imdb"] = imdb_response["rating_value"]
+            movie["rating_imdb_count"] = imdb_response["rating_count"]
+            movie["rating_imdb_metascore"] = imdb_response["metascore"] if imdb_response["metascore"] != "N/A" else None
+            movie["rating_imdb_critic_count"] = imdb_response["critic_count"] if imdb_response["critic_count"] != "-" else None
+    return movies
+
+
+def find_film_pages_and_ids(raw_films: dict) -> dict:
     for idx, film in enumerate(raw_films["movies"]):
         if ("wiki" not in film or not film["wiki"]) and film["title"]:
             query = f"{film['title']} (film)"
@@ -136,7 +158,10 @@ def save(films: dict, args: argparse.Namespace):
 
 def main(args: argparse.Namespace):
     films = load_films(args.input)
-    updated = update(films)
+    if args.rating:
+        updated = update_ratings(films)
+    else:
+        updated = find_film_pages_and_ids(films)
     save(updated, args)
 
 
@@ -155,6 +180,12 @@ def _parse_args():
         type=str,
         default="./updated.json",
         help="Output file (default: ./updated.json)",
+    )
+    parser.add_argument(
+        "-r",
+        "--rating",
+        action="store_true",
+        help="Only update external ratings",
     )
     return parser.parse_args()
 
