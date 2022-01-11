@@ -1,6 +1,7 @@
 # Created by https://www.gitignore.io/api/vim,hugo,linux
 
 ### Hugo ###
+.hugo_build.lock
 hugo.exe
 /public/
 ### Linux ###
