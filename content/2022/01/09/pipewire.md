@@ -2,7 +2,7 @@
 title: "Handy Pipewire commands and tools"
 description: ""
 date: 2022-01-09T13:14:44Z
-draft: true
+draft: false
 toc: false
 slug: "handy-pipewire-commands-and-tools"
 categories:
