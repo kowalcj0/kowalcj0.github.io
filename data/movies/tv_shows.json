@@ -23,7 +23,8 @@
                     "iso_3166_1": "PL",
                     "name": "Poland"
                 }
-            ]
+            ],
+            "rating_my": 3
         },
         {
             "title": "Primal",
@@ -50,6 +51,32 @@
                     "name": "France"
                 }
             ]
+        },
+        {
+            "title": "1883",
+            "original_title": "",
+            "director": "Taylor Sheridan",
+            "genres": [
+                "western",
+                "drama"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=ZkbH1zjsM7g",
+            "wiki": "https://en.wikipedia.org/wiki/1883_(TV_series)",
+            "imdb": "https://www.imdb.com/title/tt13991232/",
+            "rt": "https://www.rottentomatoes.com/tv/1883",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/tv-series/1883",
+            "comments": "",
+            "tmdb": 118357,
+            "watched": "2022-03-10",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ],
+            "rating_my": 2
         }
     ]
 }
