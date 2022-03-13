@@ -29,11 +29,14 @@ from pprint import pprint
 from typing import List, Optional, Tuple
 from urllib.parse import urljoin
 
+import requests
 import tmdbsimple as tmdb
 import wikipedia
+from bs4 import BeautifulSoup as bs
 from envparse import env
 from justwatch import JustWatch
 from rotten_tomatoes_client import RottenTomatoesClient
+from scrapista.imdb import ImdbScraper
 
 
 class SearchFor(Enum):
@@ -90,6 +93,19 @@ def set_rating_my() -> str:
     """Define my rating."""
     decision = input(f"What's the movie score on a scale from 0 to 3?: ").lower()
     return int(decision)
+
+
+def rt_scores(url: str):
+    info = {}
+    response = requests.get(url)
+    soup = bs(response.text, "html.parser")
+    rows = soup.select("score-board")
+    for row in rows:
+        info = {
+            "audiencescore": row.get("audiencescore"),
+            "tomatometerscore": row.get("tomatometerscore"),
+        }
+    return info
 
 
 def find_categories() -> List[str]:
@@ -382,6 +398,56 @@ def filter_movie_details(movie: tmdb.movies.Movies, watched_date: str) -> dict:
     just_watch_url, netflix_url = search_just_watch(info["title"], info["id"])
     rotten_tomatoes_url = search_rotten_tomatoes(info["title"])
 
+    try:
+        imdb_scraper = ImdbScraper()
+        imdb_response = imdb_scraper.scrape_movie(url=f"https://www.imdb.com/title/{info['imdb_id']}/")
+        rating_imdb = imdb_response["rating_value"]
+        rating_imdb_count = imdb_response["rating_count"]
+        rating_imdb_metascore = (
+            imdb_response["metascore"]
+            if imdb_response["metascore"] != "N/A"
+            else None
+        )
+        rating_imdb_critic_count = (
+            imdb_response["critic_count"]
+            if imdb_response["critic_count"] != "-"
+            else None
+        )
+        print("Found IMdB ratings")
+    except Exception as ex:
+        print(f"Failed to get IMDB ratings for {info['imdb_id']}:\n{ex}")
+        rating_imdb = None
+        rating_imdb_count = None
+        rating_imdb_metascore = None
+        rating_imdb_critic_count = None
+
+    try:
+        if rotten_tomatoes_url:
+            rt_response = rt_scores(rotten_tomatoes_url)
+            rating_rt_audience = (
+                int(rt_response["audiencescore"])
+                if "audiencescore" in rt_response
+                and rt_response["audiencescore"]
+                else None
+            )
+            rating_rt_tomatometer = (
+                int(rt_response["tomatometerscore"])
+                if "tomatometerscore" in rt_response
+                and rt_response["tomatometerscore"]
+                else None
+            )
+            print("Found Rotten Tomatoes scores")
+        else:
+            print(f"Missing Rotten Tomatoes URL for: {info['title']}")
+            rating_rt_audience = None
+            rating_rt_tomatometer = None
+    except Exception as ex:
+        print(
+            f"Failed to get Rotten Tomatoes ratings for {movie['title']}:\n{ex}"
+        )
+        rating_rt_audience = None
+        rating_rt_tomatometer = None
+
     result = {
         "title": info["title"],
         "original_title": info["original_title"]
@@ -402,6 +468,12 @@ def filter_movie_details(movie: tmdb.movies.Movies, watched_date: str) -> dict:
         "production_countries": info["production_countries"],
         "rating_tmdb": info["vote_average"],
         "rating_tmdb_count": info["vote_count"],
+        "rating_imdb": rating_imdb,
+        "rating_imdb_count": rating_imdb_count,
+        "rating_imdb_metascore": rating_imdb_metascore,
+        "rating_imdb_critic_count": rating_imdb_critic_count,
+        "rating_rt_audience": rating_rt_audience,
+        "rating_rt_tomatometer": rating_rt_tomatometer,
     }
     pprint(result)
     return result
