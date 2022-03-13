@@ -1,3 +1,12 @@
+
+
+/* Change the default width of the theme:
+ * https://github.com/MunifTanjim/minimo/issues/267
+ */
+.container {
+  max-width: 960px;
+}
+
 /* This is for backticked inline code e.g.: `Highlighted sentence` 
  * for all elements without any style class that are not styled by e.g.: Chroma
  * https://stackoverflow.com/a/36355674

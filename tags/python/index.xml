@@ -6,7 +6,18 @@
     <description>Recent content in python on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 15 Sep 2021 17:50:36 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Dec 2021 11:43:28 +0000</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to resolve Pytest: Cell Var From Loop</title>
+      <link>https://kowalcj0.github.io/2021/12/07/how-to-resolve-pytest-cell-var-from-loop/</link>
+      <pubDate>Tue, 07 Dec 2021 11:43:28 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2021/12/07/how-to-resolve-pytest-cell-var-from-loop/</guid>
+      <description>Recently, I came across following pylint warning:
+$ pylint test.py ************* Module test test.py:29:28: W0640: Cell variable sort_key defined in loop (cell-var-from-loop) ------------------------------------------------------------------ Your code has been rated at 9.41/10 (previous run: 9.41/10, +0.00) Here&amp;rsquo;s an example code snippet that triggered such warning:
+&amp;#34;&amp;#34;&amp;#34;Replace lambda with operator.itemgetter to sort List[dict] by dict key.&amp;#34;&amp;#34;&amp;#34; import itertools from typing import Dict, List def parse_raw_message(msg: str) -&amp;gt; Dict[str, str]: &amp;#34;&amp;#34;&amp;#34;Parse a pipe-delimited message into a key:value pairs &amp;amp; skip empty keys.</description>
+    </item>
+    
     <item>
       <title>Use default factory to initialize nested dataclass fields</title>
       <link>https://kowalcj0.github.io/2021/09/15/initialize_nested_dataclasses_with_default_factory/</link>
