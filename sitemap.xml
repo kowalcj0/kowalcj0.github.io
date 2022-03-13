@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kowalcj0.github.io/2021/</loc>
-    <lastmod>2021-12-07T11:43:28+00:00</lastmod>
+    <loc>https://kowalcj0.github.io/2022/</loc>
+    <lastmod>2022-01-09T13:14:44+00:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/categories/</loc>
-    <lastmod>2021-12-07T11:43:28+00:00</lastmod>
+    <lastmod>2022-01-09T13:14:44+00:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/2022/01/09/handy-pipewire-commands-and-tools/</loc>
+    <lastmod>2022-01-09T13:14:44+00:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/</loc>
+    <lastmod>2022-01-09T13:14:44+00:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/pipewire/</loc>
+    <lastmod>2022-01-09T13:14:44+00:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/tags/</loc>
+    <lastmod>2022-01-09T13:14:44+00:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/categories/unix/</loc>
+    <lastmod>2022-01-09T13:14:44+00:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/2021/</loc>
     <lastmod>2021-12-07T11:43:28+00:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/2021/12/07/how-to-resolve-pytest-cell-var-from-loop/</loc>
@@ -18,9 +33,6 @@
     <lastmod>2021-12-07T11:43:28+00:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/python/</loc>
-    <lastmod>2021-12-07T11:43:28+00:00</lastmod>
-  </url><url>
-    <loc>https://kowalcj0.github.io/tags/</loc>
     <lastmod>2021-12-07T11:43:28+00:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/afwall/</loc>
@@ -39,9 +51,6 @@
     <lastmod>2021-09-25T22:09:22+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/iptables/</loc>
-    <lastmod>2021-09-25T22:09:22+01:00</lastmod>
-  </url><url>
-    <loc>https://kowalcj0.github.io/categories/unix/</loc>
     <lastmod>2021-09-25T22:09:22+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/2021/09/15/initialize_nested_dataclasses_with_default_factory/</loc>

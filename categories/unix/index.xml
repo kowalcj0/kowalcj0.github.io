@@ -6,7 +6,17 @@
     <description>Recent content in unix on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 25 Sep 2021 22:09:22 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/categories/unix/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jan 2022 13:14:44 +0000</lastBuildDate><atom:link href="https://kowalcj0.github.io/categories/unix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Handy Pipewire commands and tools</title>
+      <link>https://kowalcj0.github.io/2022/01/09/handy-pipewire-commands-and-tools/</link>
+      <pubDate>Sun, 09 Jan 2022 13:14:44 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/2022/01/09/handy-pipewire-commands-and-tools/</guid>
+      <description>PipeWire provides a nice set of CLI commands and tools to manage and monitor A/V devices on you machine. Here&amp;rsquo;s a list of those commands with some usage examples:
+ pw-cli - The PipeWire Command Line Interface.  Examples: pw-cli dump short Node - list all input/output nodes and their state. pw-cli info 0 - inspect the state of the server.  Lists useful details like: clock-rate and allowed clock-rates     pw-mon dumps and monitors the state of the PipeWire daemon.</description>
+    </item>
+    
     <item>
       <title>Fix an issue with incorrectly transferred files via GSConnect</title>
       <link>https://kowalcj0.github.io/2021/09/25/fix-file-transfers-for-gsconnect/</link>
