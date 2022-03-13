@@ -1223,6 +1223,290 @@
             "rating_imdb_critic_count": 136,
             "rating_rt_audience": 63,
             "rating_rt_tomatometer": 87
+        },
+        {
+            "title": "The Matrix Resurrections",
+            "original_title": "",
+            "director": "Lana Wachowski",
+            "genres": [
+                "science fiction",
+                "action",
+                "adventure"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=nNpvWBuTfrc",
+            "wiki": "https://en.wikipedia.org/wiki/The_Matrix_Resurrections",
+            "imdb": "https://www.imdb.com/title/tt10838180/",
+            "rt": "https://www.rottentomatoes.com/m/the_matrix_resurrections",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-matrix-resurrections",
+            "comments": "",
+            "tmdb": 624860,
+            "watched": "2021-12-27",
+            "production_countries": [
+                {
+                    "iso_3166_1": "DE",
+                    "name": "Germany"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 1995,
+            "rating_imdb": 5.7,
+            "rating_imdb_count": 153000,
+            "rating_imdb_metascore": 63.0,
+            "rating_imdb_critic_count": 284,
+            "rating_rt_audience": 63,
+            "rating_rt_tomatometer": 64,
+            "rating_my": 2
+        },
+        {
+            "title": "Don't Look Up",
+            "original_title": "",
+            "director": "Adam McKay",
+            "genres": [
+                "drama",
+                "comedy",
+                "science fiction"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=RbIxYm3mKzI",
+            "wiki": "https://en.wikipedia.org/wiki/Don%27t_Look_Up_(2021_film)",
+            "imdb": "https://www.imdb.com/title/tt11286314/",
+            "rt": "https://www.rottentomatoes.com/m/dont_look_up",
+            "netflix": "http://www.netflix.com/title/81252357",
+            "justwatch": "https://www.justwatch.com/uk/movie/dont-look-up-2021",
+            "comments": "",
+            "tmdb": 646380,
+            "watched": "2021-12-27",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ],
+            "rating_tmdb": 7.3,
+            "rating_tmdb_count": 3370,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 323000,
+            "rating_imdb_metascore": 49.0,
+            "rating_imdb_critic_count": 225,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null,
+            "rating_my": 2
+        },
+        {
+            "title": "Werewolves Within",
+            "original_title": "",
+            "director": "Josh Ruben",
+            "genres": [
+                "comedy",
+                "horror"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=X0WzPQNIBJ4",
+            "wiki": "https://en.wikipedia.org/wiki/Werewolves_Within_(film)",
+            "imdb": "https://www.imdb.com/title/tt9288692/",
+            "rt": "https://www.rottentomatoes.com/m/werewolves_within",
+            "netflix": "http://www.netflix.com/title/81439246",
+            "justwatch": "https://www.justwatch.com/uk/movie/werewolves-within",
+            "comments": "",
+            "tmdb": 800497,
+            "watched": "2022-01-11",
+            "production_countries": [
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                },
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ],
+            "rating_tmdb": 6.2,
+            "rating_tmdb_count": 228,
+            "rating_imdb": 6.0,
+            "rating_imdb_count": 13000,
+            "rating_imdb_metascore": 66.0,
+            "rating_imdb_critic_count": 136,
+            "rating_rt_audience": 81,
+            "rating_rt_tomatometer": 86,
+            "rating_my": 1
+        },
+        {
+            "title": "The Tsugua Diaries",
+            "original_title": "Di\u00e1rios de Otsoga",
+            "director": "Miguel Gomes, Maureen Fazendeiro",
+            "genres": [
+                "drama"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=IJKLZAytPd0",
+            "wiki": "",
+            "imdb": "https://www.imdb.com/title/tt14812778/",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "",
+            "comments": "",
+            "tmdb": 838146,
+            "watched": "2022-01-29",
+            "production_countries": [
+                {
+                    "iso_3166_1": "PT",
+                    "name": "Portugal"
+                }
+            ],
+            "rating_tmdb": 4.8,
+            "rating_tmdb_count": 6,
+            "rating_imdb": 6.3,
+            "rating_imdb_count": 205,
+            "rating_imdb_metascore": null,
+            "rating_imdb_critic_count": null,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null,
+            "rating_my": 2
+        },
+        {
+            "title": "Dr. Bird's Advice for Sad Poets",
+            "original_title": "",
+            "director": "Yaniv Raz",
+            "genres": [
+                "comedy",
+                "drama"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=IkZ78GAVsno",
+            "wiki": "https://en.wikipedia.org/wiki/Dr._Bird%27s_Advice_for_Sad_Poets",
+            "imdb": "https://www.imdb.com/title/tt3301314/",
+            "rt": "https://www.rottentomatoes.com/m/dr_birds_advice_for_sad_poets",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/dr-birds-advice-for-sad-poets",
+            "comments": "",
+            "tmdb": 533705,
+            "watched": "2022-01-29",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ],
+            "rating_tmdb": 5.8,
+            "rating_tmdb_count": 14,
+            "rating_imdb": 10,
+            "rating_imdb_count": 633,
+            "rating_imdb_metascore": 11,
+            "rating_imdb_critic_count": 33,
+            "rating_rt_audience": 79,
+            "rating_rt_tomatometer": 80,
+            "rating_my": 2
+        },
+        {
+            "title": "Reminiscence",
+            "original_title": "",
+            "director": "Lisa Joy",
+            "genres": [
+                "science fiction",
+                "mystery"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=_wvOX4G6bgQ",
+            "wiki": "https://en.wikipedia.org/wiki/Reminiscence_(2021_film)",
+            "imdb": "https://www.imdb.com/title/tt3272066/",
+            "rt": "https://www.rottentomatoes.com/m/reminiscence_2021",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/reminiscence-2021",
+            "comments": "",
+            "tmdb": 579047,
+            "watched": "2022-01-29",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ],
+            "rating_tmdb": 6.9,
+            "rating_tmdb_count": 1024,
+            "rating_imdb": 5.9,
+            "rating_imdb_count": 45000,
+            "rating_imdb_metascore": 46.0,
+            "rating_imdb_critic_count": 182,
+            "rating_rt_audience": 37,
+            "rating_rt_tomatometer": 37,
+            "rating_my": 2
+        },
+        {
+            "title": "Parallel Mothers",
+            "original_title": "Madres paralelas",
+            "director": "Pedro Almod\u00f3var",
+            "genres": [
+                "drama"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=8JLrrLaf4Xo",
+            "wiki": "https://en.wikipedia.org/wiki/Parallel_Mothers",
+            "imdb": "https://www.imdb.com/title/tt12618926/",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/parallel-mothers",
+            "comments": "",
+            "tmdb": 766798,
+            "watched": "2022-01-30",
+            "production_countries": [
+                {
+                    "iso_3166_1": "ES",
+                    "name": "Spain"
+                }
+            ],
+            "rating_tmdb": 6.8,
+            "rating_tmdb_count": 261,
+            "rating_imdb": 7.1,
+            "rating_imdb_count": 6000,
+            "rating_imdb_metascore": 88.0,
+            "rating_imdb_critic_count": 121,
+            "rating_rt_audience": null,
+            "rating_rt_tomatometer": null,
+            "rating_my": 3
+        },
+        {
+            "title": "The Innocents",
+            "original_title": "Les Innocentes",
+            "director": "Anne Fontaine",
+            "genres": [
+                "drama",
+                "history"
+            ],
+            "year": 2016,
+            "trailer": "https://www.youtube.com/watch?v=vNny_BZ-N9I",
+            "wiki": "https://en.wikipedia.org/wiki/The_Innocents_(2021_film)",
+            "imdb": "https://www.imdb.com/title/tt4370784/",
+            "rt": "https://www.rottentomatoes.com/m/1099622-innocents",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/movie/the-innocents-2016",
+            "comments": "",
+            "tmdb": 364051,
+            "watched": "2022-01-30",
+            "production_countries": [
+                {
+                    "iso_3166_1": "PL",
+                    "name": "Poland"
+                },
+                {
+                    "iso_3166_1": "FR",
+                    "name": "France"
+                }
+            ],
+            "rating_tmdb": 7.1,
+            "rating_tmdb_count": 319,
+            "rating_imdb": 7.3,
+            "rating_imdb_count": 10000,
+            "rating_imdb_metascore": 78.0,
+            "rating_imdb_critic_count": 102,
+            "rating_rt_audience": 86,
+            "rating_rt_tomatometer": 95,
+            "rating_my": 2
         }
     ]
 }
