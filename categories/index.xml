@@ -6,22 +6,31 @@
     <description>Recent content in Categories on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 09 Jan 2022 13:14:44 +0000</lastBuildDate><atom:link href="https://kowalcj0.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Nov 2022 18:07:06 +0000</lastBuildDate><atom:link href="https://kowalcj0.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>unix</title>
-      <link>https://kowalcj0.github.io/categories/unix/</link>
-      <pubDate>Sun, 09 Jan 2022 13:14:44 +0000</pubDate>
+      <title>polityka</title>
+      <link>https://kowalcj0.github.io/categories/polityka/</link>
+      <pubDate>Tue, 01 Nov 2022 18:07:06 +0000</pubDate>
       
-      <guid>https://kowalcj0.github.io/categories/unix/</guid>
+      <guid>https://kowalcj0.github.io/categories/polityka/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programming</title>
       <link>https://kowalcj0.github.io/categories/programming/</link>
-      <pubDate>Tue, 07 Dec 2021 11:43:28 +0000</pubDate>
+      <pubDate>Tue, 27 Sep 2022 15:46:52 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unix</title>
+      <link>https://kowalcj0.github.io/categories/unix/</link>
+      <pubDate>Sun, 09 Jan 2022 13:14:44 +0000</pubDate>
+      
+      <guid>https://kowalcj0.github.io/categories/unix/</guid>
       <description></description>
     </item>
     
