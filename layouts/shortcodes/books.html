@@ -1,11 +1,13 @@
 {{ $category := (.Get "category") }}
+{{ $sort_by := default "completed" (.Get "sort_by") }}
+{{ $order := default "desc" (.Get "order") }}
 {{ with $category }}
 
 <table aria-label="Interesting books: {{ $category }}" style="font-size:80%;width:100%">
   <tbody>
 {{ range $.Site.Data.books }}
     {{ if eq $category .category }}
-        {{ range sort ( where .books "completed" "!=" "" ) "desc" }}
+        {{ range sort ( where .books "completed" "!=" "" ) $sort_by $order }}
             {{ if .title }}
     <tr tabindex="0">
         <h3>{{ .title }} <a class="octicon-link" href="#{{ .title | anchorize }}">{{ partial "svg/octicons/link.svg" }}</a></h3>

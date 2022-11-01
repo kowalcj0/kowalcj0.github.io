@@ -77,18 +77,38 @@
     ]
 },
 {
-    "title": "",
-    "sub_title": "",
+    "title": "The School of Life",
+    "sub_title": "an emotional education",
     "original_title": "",
-    "authors": [],
-    "genres": [],
-    "year": 0,
-    "completed": "",
-    "good_reads": "",
+    "authors": [{"Alain de Botton": "https://en.wikipedia.org/wiki/Alain_de_Botton"}, {"The School of Life": "https://www.theschooloflife.com"}],
+    "genres": ["philosophy", "psychology", "self-help"],
+    "year": 2019,
+    "completed": "2022-10-25",
+    "good_reads": "https://www.goodreads.com/book/show/43264830-the-school-of-life",
     "wiki": "",
-    "quotes": [],
-    "words": [],
-    "comments": ""
+    "quotes": [
+        "but people simply never need to harm others if they are not first tormented themselves.",
+        "One has to feel very small in order to belittle.",
+        "We will still be anxious when we finally have the house, the relationship and the right income.",
+        "Being a good listener is one of the most important and enchanting life skills anyone can have.",
+        "People are bad, always, because they are in difficulty. They slander, gossip, denigrate, and growl because they are not in a good place. Though they may seem strong, though their attacks can place them in an apparently dominant role, their ill intentions are all the proof we require to know as a certainty that they are not well. Contented people have no need to hurt others.",
+        "Anxiety is not a sign of sickness, a weakness of the mind, or an error for which we should always seek a medical solution. It is mostly a hugely reasonable and sensitive response to the genuine strangeness, terror, uncertainty, and riskiness of existence.",
+        "A daily period of philosophical meditation does not so much dissolve problems as create an occasion during which the mind can order and understand itself. Fears, resentments, and hopes become easier to name; we grow less scared of the contents of our own minds—and less resentful, calmer, and clearer about our direction. We start, in faltering steps, to know ourselves slightly better.",
+        "ideas, however noble, tend to require a little help from beauty.",
+        "Paradoxically, it is friendship that often offers us the real route to the pleasures that Romanticism associates with love. That this sounds surprising is only a reflection of how underdeveloped our day-to-day vision of friendship has become. We associate it with a casual acquaintance we see only once in a while to exchange inconsequential and shallow banter. But real friendship is something altogether more profound and worthy of exultation. It is an arena in which two people can get a sense of each other’s vulnerabilities, appreciate each other’s follies without recrimination, reassure each other as to their value and greet the sorrows and tragedies of existence with wit and warmth. Culturally and collectively, we have made a momentous mistake which has left us both lonelier and more disappointed than we ever needed to be. In a better world, our most serious goal would be not to locate one special lover with whom to replace all other humans but to put our intelligence and energy into identifying and nurturing a circle of true friends. At the end of an evening, we would learn to say to certain prospective companions, with an embarrassed smile as we invited them inside – knowing that this would come across as a properly painful rejection – ‘I’m so sorry, couldn’t we just be … lovers?"
+    ],
+    "words": [
+        {"be-all and end-all": "prime cause: essential element"},
+        {"come what may": "regardless of what happens; niech się dzieje, co chce; bez względu na cokolwiek."},
+        {"inchoate": "świeżo zapoczątkowany. An example usage: We could experience this inchoate restlessness when we read an article, hear of colleague's plans or glimpse an idea about next year flit across our mental landscape as we lie in the bath or walk around a park. "},
+        {"putt along": "To move along at a very quick, brisk, or rapid pace, especially on a compact motorized vehicle"},
+        {"recalcitrant": "oporny, krnąbrny. The point of art was to render tough or knotty lessons easier to absorb; to nudge our recalcitrant minds towards accepting ideas that we might nod along to but then ignore if they were not stated in especially varnished and graceful terms."},
+        {"tryst": "schadzka, randka. Definition: a private romantic rendezvous between lovers."}
+    ],
+    "comments": "Ciekawie otwiera oczy na powszechność problemów z którymi wszyscy się borykami. Myślę, że jest to jedna z niewielu książek, które wywarły pozytywny wpływ na moje życie.",
+    "further": [
+        "https://en.wikipedia.org/wiki/The_School_of_Life"
+    ]
 },
 {
     "title": "",
