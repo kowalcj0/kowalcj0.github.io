@@ -1507,6 +1507,74 @@
             "rating_rt_audience": 86,
             "rating_rt_tomatometer": 95,
             "rating_my": 2
+        },
+        {
+            "title": "Black Crab",
+            "original_title": "Svart krabba",
+            "director": "Adam Berg",
+            "genres": [
+                "action",
+                "thriller"
+            ],
+            "year": 2022,
+            "trailer": "https://www.youtube.com/watch?v=fmjKsL_-rfw",
+            "wiki": "https://en.wikipedia.org/wiki/Black_Crab_(film)",
+            "imdb": "https://www.imdb.com/title/tt6708668/",
+            "rt": "https://www.rottentomatoes.com/m/black_crab",
+            "netflix": "http://www.netflix.com/title/80220426",
+            "justwatch": "https://www.justwatch.com/uk/movie/black-crab",
+            "comments": "",
+            "tmdb": 760868,
+            "watched": "2022-04-08",
+            "production_countries": [
+                {
+                    "iso_3166_1": "SE",
+                    "name": "Sweden"
+                }
+            ],
+            "rating_tmdb": 6.2,
+            "rating_tmdb_count": 283,
+            "rating_imdb": "N/A",
+            "rating_imdb_count": "N/A",
+            "rating_imdb_metascore": 54.0,
+            "rating_imdb_critic_count": 50,
+            "rating_rt_audience": 38,
+            "rating_rt_tomatometer": 44,
+            "rating_my": 3
+        },
+        {
+            "title": "Munich: The Edge of War",
+            "original_title": "",
+            "director": "Christian Schwochow",
+            "genres": [
+                "drama",
+                "history"
+            ],
+            "year": 2022,
+            "trailer": "https://www.youtube.com/watch?v=mKI1-yU9838",
+            "wiki": "https://en.wikipedia.org/wiki/Munich_%E2%80%93_The_Edge_of_War",
+            "imdb": "https://www.imdb.com/title/tt7475578/",
+            "rt": "https://www.rottentomatoes.com/m/munich_the_edge_of_war",
+            "netflix": "http://www.netflix.com/title/81144852",
+            "justwatch": "https://www.justwatch.com/uk/movie/munich-the-edge-of-war",
+            "comments": "",
+            "tmdb": 760336,
+            "watched": "2022-04-09",
+            "production_countries": [
+                {
+                    "iso_3166_1": "GB",
+                    "name": "United Kingdom"
+                }
+            ],
+            "rating_tmdb": 7.0,
+            "rating_tmdb_count": 289,
+            "rating_imdb": "N/A",
+            "rating_imdb_count": "N/A",
+            "rating_imdb_metascore": 53.0,
+            "rating_imdb_critic_count": 85,
+            "rating_rt_audience": 77,
+            "rating_rt_tomatometer": 87,
+            "rating_my": 2
         }
     ]
 }

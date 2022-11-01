@@ -77,6 +77,32 @@
                 }
             ],
             "rating_my": 2
+        },
+        {
+            "title": "Loki",
+            "original_title": "",
+            "director": "Michael Waldron",
+            "genres": [
+                "drama",
+                "sci-fi & fantasy"
+            ],
+            "year": 2021,
+            "trailer": "https://www.youtube.com/watch?v=nW948Va-l10",
+            "wiki": "https://en.wikipedia.org/wiki/Loki_(TV_series)",
+            "imdb": "",
+            "rt": "",
+            "netflix": "",
+            "justwatch": "https://www.justwatch.com/uk/tv-series/loki",
+            "comments": "",
+            "tmdb": 84958,
+            "watched": "2022-04-08",
+            "production_countries": [
+                {
+                    "iso_3166_1": "US",
+                    "name": "United States of America"
+                }
+            ],
+            "rating_my": 3
         }
     ]
 }
