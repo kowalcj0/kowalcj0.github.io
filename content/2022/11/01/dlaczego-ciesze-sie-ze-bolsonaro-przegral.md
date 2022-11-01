@@ -1,5 +1,5 @@
 ---
-title: "Dlaczego ciesze się, że Bolsonaro przegral"
+title: "Dlaczego ciesze się, że Bolsonaro przegrał"
 description: "...i mam nadzieje, że już nigdy nie będzie prezydentem niczego"
 date: 2022-11-01T18:07:06Z
 draft: false
