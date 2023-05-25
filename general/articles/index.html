@@ -9,9 +9,11 @@
 <meta property='og:description' content='Asorted articles I&#39;ve amassed in Wallabag'>
 <meta property='og:url' content='https://kowalcj0.github.io/general/articles/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/logo-wallabag-black.svg'><meta property='article:section' content='general'><meta property='article:tag' content='articles'><meta property='article:published_time' content='2020-05-02T16:56:52&#43;01:00'/><meta property='article:modified_time' content='2020-05-02T16:56:52&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/logo-wallabag-black.svg'><meta property='twitter:image:alt' content='SRC: https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/logo-wallabag-black.svg'><meta property='article:section' content='general'><meta property='article:tag' content='articles'><meta property='article:published_time' content='2020-05-02T16:56:52&#43;01:00'/><meta property='article:modified_time' content='2020-05-02T16:56:52&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/logo-wallabag-black.svg'><meta property='twitter:image:alt' content='SRC: https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg 
 
-<meta name="generator" content="Hugo 0.90.1" />
+'>
+
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Articles worth reading • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/general/articles/'>
@@ -429,11 +431,15 @@
 
   <div class='entry-cover'>
   <figure class='container cover-wide'>
-    <img src='/img/logo-wallabag-black.svg' alt='SRC: https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg'/>
+    <img src='/img/logo-wallabag-black.svg' alt='SRC: https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg 
+
+'/>
     
       
       <figcaption class='container'>
-        <span>SRC: <a href="https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg">https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg</a></span>
+        <span><p>SRC: <a href="https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg" target="_blank">https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
+</span>
       </figcaption>
       
     
@@ -458,10 +464,10 @@ And with a help of <a href="https://stedolan.github.io/jq/" target="_blank">jq</
  you can transform it
 into a simple JSON file which you can use to populate a Hugo <a href="https://gohugo.io/templates/data-templates/" target="_blank">Data Templates</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 .</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">http GET https://<span style="color:#f92672">{</span>YOUR_WALLABAG_HOST<span style="color:#f92672">}</span>/api/entries.json?perPage<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span> <span style="color:#e6db74">&#34;Authorization:Bearer {API_TOKEN}&#34;</span> |<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    jq <span style="color:#e6db74">&#39;[._embedded.items[] | {title: .title, url: .url}]&#39;</span> |<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    jq <span style="color:#e6db74">&#39;sort_by(.title)&#39;</span> &gt; entries.json
-</code></pre></div><p>So, without further ado, here&rsquo;s an asorted list of articles I&rsquo;ve amassed in Wallabag.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>http GET https://<span style="color:#f92672">{</span>YOUR_WALLABAG_HOST<span style="color:#f92672">}</span>/api/entries.json?perPage<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span> <span style="color:#e6db74">&#34;Authorization:Bearer {API_TOKEN}&#34;</span> |<span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    jq <span style="color:#e6db74">&#39;[._embedded.items[] | {title: .title, url: .url}]&#39;</span> |<span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    jq <span style="color:#e6db74">&#39;sort_by(.title)&#39;</span> &gt; entries.json
+</span></span></code></pre></div><p>So, without further ado, here&rsquo;s an asorted list of articles I&rsquo;ve amassed in Wallabag.</p>
 <ul>
 
     <li><a target="_blank" rel="external" referrerpolicy="no-referrer" href="https://techcrunch.com/2018/03/19/deletefacebook/">#deletefacebook</a></li>
@@ -2373,7 +2379,7 @@ examples in Java, Racket, Haskell and Python</a></li>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

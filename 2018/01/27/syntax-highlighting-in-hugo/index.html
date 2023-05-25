@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2018'><meta property='article:tag' content='syntax'><meta property='article:published_time' content='2018-01-27T22:28:50&#43;01:00'/><meta property='article:modified_time' content='2018-01-27T22:28:50&#43;01:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.90.1" />
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Syntax Highlighting in Hugo • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2018/01/27/syntax-highlighting-in-hugo/'>
@@ -443,15 +443,15 @@ Because of this I could quickly get rid of a bit bulky <a href="http://prismjs.c
 <p>Start by choosing your Chrome style from gallery available at <a href="https://help.farbox.com/pygments.html" target="_blank">https://help.farbox.com/pygments.html</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 </p>
 <p>Then generate a <code>css</code> file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo gen chromastyles --style<span style="color:#f92672">=</span>pastie &gt; static/css/syntax.css
-</code></pre></div><p>And finally modify your <code>config.toml</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">pygmentsUseClasses</span> = <span style="color:#66d9ef">true</span>
-<span style="color:#a6e22e">pygmentsUseClassic</span> = <span style="color:#66d9ef">false</span>
-<span style="color:#a6e22e">pygmentsCodefences</span> = <span style="color:#66d9ef">true</span>
-
-[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">assets</span>]
-<span style="color:#a6e22e">customCSS</span> = [<span style="color:#e6db74">&#34;css/syntax.css&#34;</span>]
-</code></pre></div><p><em>NOTE:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo gen chromastyles --style<span style="color:#f92672">=</span>pastie &gt; static/css/syntax.css
+</span></span></code></pre></div><p>And finally modify your <code>config.toml</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">pygmentsUseClasses</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pygmentsUseClassic</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pygmentsCodefences</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">assets</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">customCSS</span> = [<span style="color:#e6db74">&#34;css/syntax.css&#34;</span>]
+</span></span></code></pre></div><p><em>NOTE:</em></p>
 <ul>
 <li>Setting <code>pygmentsUseClassic</code> to <code>false</code> will disable old and slower <code>Pygments</code></li>
 </ul>
@@ -467,52 +467,52 @@ two very handy ones:</p>
 In order to force Hugo to correctly render the example snippet below, I placed
 a space &quot; &quot; between first two curly braces <code>{{</code> and lower than sign <code>&lt;</code> in the
 first and the last line of the snippet.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ &lt; <span style="color:#f92672">highlight</span> <span style="color:#a6e22e">python</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">linenos</span><span style="color:#f92672">=</span><span style="color:#e6db74">table,hl_lines=1</span> <span style="color:#a6e22e">4-5</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">linenostart</span><span style="color:#f92672">=</span><span style="color:#e6db74">99&#34;</span> &gt;}}
-from time import time
-
-def since_epoch() -&gt; float :
-    # some comment
-    return time.time()
-{{ &lt; / <span style="color:#f92672">highlight</span> &gt;}}
-</code></pre></div><p>Here&rsquo;s how this snippet renders:<br>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
-</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
-</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ &lt; <span style="color:#f92672">highlight</span> <span style="color:#a6e22e">python</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">linenos</span><span style="color:#f92672">=</span><span style="color:#e6db74">table,hl_lines=1</span> <span style="color:#a6e22e">4-5</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">linenostart</span><span style="color:#f92672">=</span><span style="color:#e6db74">99&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>from time import time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>def since_epoch() -&gt; float :
+</span></span><span style="display:flex;"><span>    # some comment
+</span></span><span style="display:flex;"><span>    return time.time()
+</span></span><span style="display:flex;"><span>{{ &lt; / <span style="color:#f92672">highlight</span> &gt;}}
+</span></span></code></pre></div><p>Here&rsquo;s how this snippet renders:<br>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span></span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
 </span></span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> time
-</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">since_epoch</span>() <span style="color:#f92672">-&gt;</span> float :
-<span style="display:block;width:100%;background-color:#3c3d38">    <span style="color:#75715e"># some comment</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38">    <span style="color:#66d9ef">return</span> time<span style="color:#f92672">.</span>time()</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-python" data-lang="python"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">since_epoch</span>() <span style="color:#f92672">-&gt;</span> float :
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#75715e"># some comment</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    <span style="color:#66d9ef">return</span> time<span style="color:#f92672">.</span>time()</span></span></code></pre></td></tr></table>
 </div>
 </div></p>
 <h2 id="github-fences">Github fences <a tabindex="0" href="#github-fences" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Below is a sample <code>python</code> snippet surrounded with regular Github fences:<br>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#e6db74">```python
-</span><span style="color:#e6db74"></span><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> time
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rettt</span>() <span style="color:#f92672">-&gt;</span> str :
-    <span style="color:#66d9ef">return</span> time<span style="color:#f92672">.</span>time()
-<span style="color:#e6db74">```</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#e6db74">```python
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rettt</span>() <span style="color:#f92672">-&gt;</span> str :
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> time<span style="color:#f92672">.</span>time()
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">```</span></span></span></code></pre></div></p>
 <p>and here&rsquo;s how it looks like after rendering:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> time
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rettt</span>() <span style="color:#f92672">-&gt;</span> str :
-    <span style="color:#66d9ef">return</span> time<span style="color:#f92672">.</span>time()
-</code></pre></div><section class="footnotes" role="doc-endnotes">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rettt</span>() <span style="color:#f92672">-&gt;</span> str :
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> time<span style="color:#f92672">.</span>time()
+</span></span></code></pre></div><div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>more info on <a href="https://gohugo.io/content-management/syntax-highlighting/#configure-syntax-hightlighter" target="_blank">official doc page</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 .&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
 
 </div>
@@ -551,7 +551,7 @@ def since_epoch() -&gt; float :
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/2018/01/23/mutillidae-ii-part-1/'>
+      <a href='/2018/01/mutillidae-ii-part-1/'>
         <span aria-hidden='true'><svg
   class="icon"
   xmlns="http://www.w3.org/2000/svg"
@@ -566,7 +566,7 @@ def since_epoch() -&gt; float :
  Previous</span>
         <span class='screen-reader-text'>Previous post: </span>Learning web app secuiry with OWASP Mutillidae II - part 1</a>
     </div><div class='next-entry sep-before'>
-      <a href='/2018/01/29/human-condition-i-no-greater-love/'>
+      <a href='/2018/01/human-condition-i-no-greater-love/'>
         <span class='screen-reader-text'>Next post: </span>The Human Condition I: No Greater Love<span aria-hidden='true'>Next <svg
   class="icon"
   xmlns="http://www.w3.org/2000/svg"
@@ -630,7 +630,7 @@ def since_epoch() -&gt; float :
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

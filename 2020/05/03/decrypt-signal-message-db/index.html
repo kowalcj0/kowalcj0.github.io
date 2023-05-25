@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2020'><meta property='article:tag' content='signal'><meta property='article:tag' content='sqlie'><meta property='article:tag' content='sqlcipher'><meta property='article:published_time' content='2020-05-03T21:46:49&#43;01:00'/><meta property='article:modified_time' content='2020-05-03T21:46:49&#43;01:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.90.1" />
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Decrypt Signal message DB • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2020/05/03/decrypt-signal-message-db/'>
@@ -450,18 +450,18 @@ One min read
 <p>Get it from <a href="https://github.com/sqlcipher/sqlcipher" target="_blank">https://github.com/sqlcipher/sqlcipher</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 </p>
 <p>Then compile it with dynamic linking:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./configure <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-tempstore<span style="color:#f92672">=</span>yes <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    CFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-DSQLITE_HAS_CODEC&#34;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    LDFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-lcrypto&#34;</span>
-make
-</code></pre></div><h2 id="decrypt-dbsqlite">Decrypt db.sqlite <a tabindex="0" href="#decrypt-dbsqlite" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/path/to/sqlcipher <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    -list <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    -noheader <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    <span style="color:#e6db74">&#34;db.sqlite&#34;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    <span style="color:#e6db74">&#34;PRAGMA key = \&#34;x&#39;&#34;</span><span style="color:#e6db74">${</span>SIGNAL_KEY<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;&#39;\&#34;;select json from messages;&#34;</span> &gt; clear_text_msgs;
-</code></pre></div><h2 id="turn-it-into-a-valid-json-file">Turn it into a valid JSON file <a tabindex="0" href="#turn-it-into-a-valid-json-file" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./configure <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-tempstore<span style="color:#f92672">=</span>yes <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    CFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-DSQLITE_HAS_CODEC&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    LDFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-lcrypto&#34;</span>
+</span></span><span style="display:flex;"><span>make
+</span></span></code></pre></div><h2 id="decrypt-dbsqlite">Decrypt db.sqlite <a tabindex="0" href="#decrypt-dbsqlite" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/path/to/sqlcipher <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -list <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -noheader <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    <span style="color:#e6db74">&#34;db.sqlite&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    <span style="color:#e6db74">&#34;PRAGMA key = \&#34;x&#39;&#34;</span><span style="color:#e6db74">${</span>SIGNAL_KEY<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;&#39;\&#34;;select json from messages;&#34;</span> &gt; clear_text_msgs;
+</span></span></code></pre></div><h2 id="turn-it-into-a-valid-json-file">Turn it into a valid JSON file <a tabindex="0" href="#turn-it-into-a-valid-json-file" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>The file with clear text messages is not a valid JSON, thus we need to:</p>
 <ol>
 <li>Remove first line, that contains word &ldquo;ok&rdquo;</li>
@@ -469,14 +469,14 @@ make
 <li>Add leading <code>[</code></li>
 <li>Add trailing <code>]</code></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tail -n +2 clear_text_msgs &gt; without_ok
-sed <span style="color:#e6db74">&#39;$!s/$/,/&#39;</span> without_ok &gt; with_commas
-sed <span style="color:#e6db74">&#39;1 s/^/[\n/&#39;</span> with_commas &gt; with_leading_bracket
-echo <span style="color:#e6db74">&#34;]&#34;</span> &gt;&gt; with_leading_bracket
-rm without_ok
-rm with_commas
-mv with_leading_bracket valid.json
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tail -n +2 clear_text_msgs &gt; without_ok
+</span></span><span style="display:flex;"><span>sed <span style="color:#e6db74">&#39;$!s/$/,/&#39;</span> without_ok &gt; with_commas
+</span></span><span style="display:flex;"><span>sed <span style="color:#e6db74">&#39;1 s/^/[\n/&#39;</span> with_commas &gt; with_leading_bracket
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;]&#34;</span> &gt;&gt; with_leading_bracket
+</span></span><span style="display:flex;"><span>rm without_ok
+</span></span><span style="display:flex;"><span>rm with_commas
+</span></span><span style="display:flex;"><span>mv with_leading_bracket valid.json
+</span></span></code></pre></div>
 
 </div>
 
@@ -593,7 +593,7 @@ mv with_leading_bracket valid.json
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

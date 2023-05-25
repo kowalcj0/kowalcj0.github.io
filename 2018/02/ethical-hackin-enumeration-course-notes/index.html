@@ -7,14 +7,16 @@
 
 <meta property='og:title' content='Ethical Hacking - Enumeration - Notes • Home'>
 <meta property='og:description' content='Notes from a video course'>
-<meta property='og:url' content='https://kowalcj0.github.io/2018/02/02/ethical-hackin-enumeration-course-notes/'>
+<meta property='og:url' content='https://kowalcj0.github.io/2018/02/ethical-hackin-enumeration-course-notes/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='enumeration'><meta property='article:published_time' content='2018-02-02T19:20:50&#43;01:00'/><meta property='article:modified_time' content='2018-02-02T19:20:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/2018/02/ethical-hackin-enumeration-course-notes/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='enumeration'><meta property='article:published_time' content='2018-02-02T19:20:50&#43;01:00'/><meta property='article:modified_time' content='2018-02-02T19:20:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/2018/02/ethical-hackin-enumeration-course-notes/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org 
 
-<meta name="generator" content="Hugo 0.90.1" />
+'>
+
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Ethical Hacking - Enumeration - Notes • Home</title>
-  <link rel='canonical' href='https://kowalcj0.github.io/2018/02/02/ethical-hackin-enumeration-course-notes/'>
+  <link rel='canonical' href='https://kowalcj0.github.io/2018/02/ethical-hackin-enumeration-course-notes/'>
   
   
   <link rel='icon' href='/img/favicon144.ico'>
@@ -429,11 +431,15 @@
 
   <div class='entry-cover'>
   <figure class='container cover-normal'>
-    <img src='/img/2018/004/ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org'/>
+    <img src='./ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org 
+
+'/>
     
       
       <figcaption class='container'>
-        <span>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg">wikimedia.org</a></span>
+        <span><p>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg" target="_blank">wikimedia.org</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
+</span>
       </figcaption>
       
     
@@ -761,8 +767,8 @@ Linux     SYSTEM INFO            1.3.6.1.2.1.1.1
 ...
 ...
 </code></pre><p>You can use a perl <code>snmpenum.pl</code> script to enumerate host via SNMP.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">perl snmpenum.pl 10.0.2.6 public linux.txt
-</code></pre></div><h3 id="scanning-snmp-running-on-windows">scanning SNMP running on Windows <a tabindex="0" href="#scanning-snmp-running-on-windows" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>perl snmpenum.pl 10.0.2.6 public linux.txt
+</span></span></code></pre></div><h3 id="scanning-snmp-running-on-windows">scanning SNMP running on Windows <a tabindex="0" href="#scanning-snmp-running-on-windows" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p><code>SNMP</code> on Windows is disabled by default.<br>
 You have to turn on a <code>Simple Network Management Protocol (SNMP)</code> &amp;
 <code>WMI SNMP Provider</code> Windows feature via <code>Programs and Features</code> in <code>Control Panel</code>.<br>
@@ -771,8 +777,8 @@ In the Security tab on service properties, you can toggle authentication,
 and toggle access from any of from selected hosts and define i.e. <code>READ ONLY</code>
 community string <code>public</code>.</p>
 <p>You can use the same perl script to windows host:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">perl snmpenum.pl 10.0.2.6 public windows.txt
-</code></pre></div><p>Above script should list:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>perl snmpenum.pl 10.0.2.6 public windows.txt
+</span></span></code></pre></div><p>Above script should list:</p>
 <ul>
 <li>listening TCP ports</li>
 <li>user accounts</li>
@@ -1150,7 +1156,7 @@ The second step is acceptance.&rdquo; - Nathaniel Branden.</p>
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/2018/01/29/human-condition-i-no-greater-love/'>
+      <a href='/2018/01/human-condition-i-no-greater-love/'>
         <span aria-hidden='true'><svg
   class="icon"
   xmlns="http://www.w3.org/2000/svg"
@@ -1229,7 +1235,7 @@ The second step is acceptance.&rdquo; - Nathaniel Branden.</p>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

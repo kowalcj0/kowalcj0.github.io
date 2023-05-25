@@ -24,7 +24,7 @@ The benefit of emdedding a raw files in a DNG file that you can easily extract i
       <pubDate>Sun, 22 Mar 2020 12:02:34 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2020/03/22/listen-to-podcasts-in-mpd/</guid>
-      <description>Requirements  mpd  &amp;amp; mpc   a list of podcast RSS feed links  Example podcast RSS feed links Here&amp;rsquo;s list of my favourite English &amp;amp; Polish podcasts in an OPML format.
+      <description>Requirements mpd &amp;amp; mpc a list of podcast RSS feed links Example podcast RSS feed links Here&amp;rsquo;s list of my favourite English &amp;amp; Polish podcasts in an OPML format.
 You can extract RSS feed links from it with:
 awk -F &amp;#39;&amp;#34;&amp;#39; &amp;#39;{print $6}&amp;#39; podcasts.opml | sed &amp;#39;/^$/d&amp;#39; Load podcast into MPD Given that you&amp;rsquo;ve saved your podcast feed list in ~/Music/podcasts.rss.
 Then with a simple while loop you can load your podcast episodes into mpd.</description>
@@ -36,7 +36,7 @@ Then with a simple while loop you can load your podcast episodes into mpd.</desc
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2020/03/21/convert-mov-to-mp4-or-av1/</guid>
-      <description>Some time ago I&amp;rsquo;ve discovered a bunch of old QuickTime files on my NAS. None of those clips could be played back via NextCloud&amp;rsquo;s browser player as they were encoded with old school mjpeg  video codec &amp;amp; low quality mono pcm_s16be audio.
+      <description>Some time ago I&amp;rsquo;ve discovered a bunch of old QuickTime files on my NAS. None of those clips could be played back via NextCloud&amp;rsquo;s browser player as they were encoded with old school mjpeg video codec &amp;amp; low quality mono pcm_s16be audio.
 This is what mediainfo told me about those files:
 Video Format : JPEG Codec ID : jpeg Bit rate mode : Variable Bit rate : 3 827 kb/s Width : 640 pixels Height : 480 pixels Display aspect ratio : 4:3 Frame rate mode : Constant Frame rate : 30.</description>
     </item>
@@ -47,10 +47,10 @@ Video Format : JPEG Codec ID : jpeg Bit rate mode : Variable Bit rate : 3 827 kb
       <pubDate>Sun, 09 Jun 2019 20:35:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/</guid>
-      <description>According to the official specification  Chromecast (even Ultra version) doesn&amp;rsquo;t support DTS.
-If you can&amp;rsquo;t be bothered to spend few hours to transcode the movie with lets say Handbrake  you can use ver handy CLI casting tool: castnow  .
+      <description>According to the official specification Chromecast (even Ultra version) doesn&amp;rsquo;t support DTS.
+If you can&amp;rsquo;t be bothered to spend few hours to transcode the movie with lets say Handbrake you can use ver handy CLI casting tool: castnow .
 Once installed, simply tell it to use ffmpeg to transcode audio to mp3 (or ac3 or aac).
-castnow your-wonderful-movie.mkv \  --tomp4 \  --ffmpeg-vcodec copy \  --ffmpeg-acodec mp3 \  --ffmpeg-movflags frag_keyframe+empty_moov+faststart    use movflags if you will only hear the audio and you&amp;rsquo;ll see a black screen    The only downside of transcoding is that the play / pause controls are not supported.</description>
+castnow your-wonderful-movie.mkv \ --tomp4 \ --ffmpeg-vcodec copy \ --ffmpeg-acodec mp3 \ --ffmpeg-movflags frag_keyframe+empty_moov+faststart use movflags if you will only hear the audio and you&amp;rsquo;ll see a black screen The only downside of transcoding is that the play / pause controls are not supported.</description>
     </item>
     
     <item>
@@ -59,9 +59,9 @@ castnow your-wonderful-movie.mkv \  --tomp4 \  --ffmpeg-vcodec copy \  --ffmpeg-
       <pubDate>Mon, 13 May 2019 11:50:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2019/05/13/logrotate-bash-history/</guid>
-      <description>A while ago I decided to take more control over my bash history and I followed this advice https://unix.stackexchange.com/a/48113  .
+      <description>A while ago I decided to take more control over my bash history and I followed this advice https://unix.stackexchange.com/a/48113 .
 With time I&amp;rsquo;ve tweaked few settings, like ignore lines that start with space, and ignore some of the trivial commands like ls:
-export HISTCONTROL=ignoredups:erasedups:ignorespace # no duplicate entries &amp;amp; lines starting with space export HISTSIZE=99999999 # big big history export HISTFILESIZE=99999999 # big big history shopt -s histappend # append to history, don&#39;t overwrite it export PROMPT_COMMAND=&amp;quot;history -a; history -c; history -r; $PROMPT_COMMAND&amp;quot; # Save and reload the history after each command finishes HISTIGNORE=&#39;ll *:ls *:l:gs:&#39; # ignore some commands Nevertheless, every now and then I&amp;rsquo;d loose the command history, e.</description>
+export HISTCONTROL=ignoredups:erasedups:ignorespace # no duplicate entries &amp;amp; lines starting with space export HISTSIZE=99999999 # big big history export HISTFILESIZE=99999999 # big big history shopt -s histappend # append to history, don&amp;#39;t overwrite it export PROMPT_COMMAND=&amp;#34;history -a; history -c; history -r; $PROMPT_COMMAND&amp;#34; # Save and reload the history after each command finishes HISTIGNORE=&amp;#39;ll *:ls *:l:gs:&amp;#39; # ignore some commands Nevertheless, every now and then I&amp;rsquo;d loose the command history, e.</description>
     </item>
     
     <item>
@@ -70,8 +70,9 @@ export HISTCONTROL=ignoredups:erasedups:ignorespace # no duplicate entries &amp;
       <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2018/03/29/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</guid>
-      <description>Short demo: Your browser does not support the video tag.  Requirements You&amp;rsquo;ll need:
- python 3.x mpv  video player music player that supports MPRIS2 D-Bus interface   mpd  + mpDris2   deadbeef  + mpris2-plugin     some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel ddgr https://github.com/jarun/ddgr  - a CLI client for DuckDuckGo  System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:</description>
+      <description>Short demo: Your browser does not support the video tag. Requirements You&amp;rsquo;ll need:
+python 3.x mpv video player music player that supports MPRIS2 D-Bus interface mpd + mpDris2 deadbeef + mpris2-plugin some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel ddgr https://github.com/jarun/ddgr - a CLI client for DuckDuckGo System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:
+sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packages Next step is to install python packages.</description>
     </item>
     
     <item>
@@ -83,7 +84,7 @@ export HISTCONTROL=ignoredups:erasedups:ignorespace # no duplicate entries &amp;
       <description>get info about firmware
 modinfo i915 | grep ^fi List all driver parameters
 modinfo -p i915 If find the output of the above command confusing, as you can&amp;rsquo;t see the actual values of every parameter, then use:
-sudo grep -H &#39;&#39; /sys/module/i915//parameters/* If you see error messages like this one:
+sudo grep -H &amp;#39;&amp;#39; /sys/module/i915//parameters/* If you see error messages like this one:
 $ dmesg |tail [ 2360.475430] [drm] not enough stolen space for compressed buffer (need 4325376 bytes), disabling [ 2360.475437] [drm] hint: you may be able to increase stolen memory size in the BIOS to avoid this then you can enable framebuffer compression.</description>
     </item>
     
@@ -126,7 +127,7 @@ OK, I&amp;rsquo;m currently running Mint 17 x64 on Lenovo W530 with Nvidia Quadr
       <pubDate>Sat, 09 Aug 2014 14:24:43 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2014/08/09/create-a-bootable-usb-on-linux-mint-ububtu-pendrive-to-upgrade-lenovo-thinkpad-w530-bios/</guid>
-      <description>Recently I had to update the bios of my laptop from a USB pendrive, because I had no CD/DVD drive around. Cameron Seader&amp;rsquo;s post Lenovo BIOS Update method for Linux and USB thumb drive  came very handy, but used an obsolete tool so I updated his instructions a bit to make them work.
+      <description>Recently I had to update the bios of my laptop from a USB pendrive, because I had no CD/DVD drive around. Cameron Seader&amp;rsquo;s post Lenovo BIOS Update method for Linux and USB thumb drive came very handy, but used an obsolete tool so I updated his instructions a bit to make them work.
 1. Get the machine type and model of your laptop In order to grab this information you can either go to the BIOS or use dmidecode or hwinfo.</description>
     </item>
     
@@ -136,7 +137,7 @@ OK, I&amp;rsquo;m currently running Mint 17 x64 on Lenovo W530 with Nvidia Quadr
       <pubDate>Thu, 28 Nov 2013 11:50:40 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</guid>
-      <description>To make your extra mouse buttons work on Linux Mint (I&amp;rsquo;ve tested it with v15) follow all the steps listed in this tutorial  except the step 4 :)
+      <description>To make your extra mouse buttons work on Linux Mint (I&amp;rsquo;ve tested it with v15) follow all the steps listed in this tutorial except the step 4 :)
 Once you get to step 4, use this key mappings to make the &amp;lsquo;zoom&amp;rsquo; and &amp;lsquo;switch between windows&amp;rsquo; buttons work as on windows.
 vi $HOME/.xbindkeysrc ... # show all windows: Scale &amp;#34;xte &amp;#39;keydown Control_L&amp;#39; &amp;#39;keydown Alt_L&amp;#39; &amp;#39;key Down&amp;#39; &amp;#39;keyup Control_L&amp;#39; &amp;#39;keyup Alt_L&amp;#39;&amp;#34; b:10 + release # Zooming with Logitech Performance MX mouse # thx to: https://www.</description>
     </item>
@@ -149,7 +150,7 @@ vi $HOME/.xbindkeysrc ... # show all windows: Scale &amp;#34;xte &amp;#39;keydow
       <guid>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</guid>
       <description>This was tested with vim 7.4.(1-398) (Update: 2013-12-03 apparently you can&amp;rsquo;t build vim with support for both python 2 and python 3, so I had to update this tutorial a bit :) ) (Update: 2014-08-09 Added three commands: &amp;ldquo;hg pull&amp;rdquo;, &amp;ldquo;hg update&amp;rdquo; and &amp;ldquo;hg status&amp;rdquo; to pull the latest version of the repo)
 First of all install all the dependencies required when compiling Vim with additional options:
-sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-dev \  ruby \  ruby-dev \  libx11-dev \  libxt-dev \  libgtk2.</description>
+sudo apt-get install \ mercurial \ python \ python-dev \ python3 \ python3-dev \ ruby \ ruby-dev \ libx11-dev \ libxt-dev \ libgtk2.</description>
     </item>
     
     <item>
@@ -158,10 +159,10 @@ sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-
       <pubDate>Thu, 07 Nov 2013 13:59:41 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</guid>
-      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&amp;#43;archive/stable  To install latest stable build follow 3 simple steps:
-  add &amp;ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&amp;rdquo; to /etc/apt/sources.list
-  add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:
-W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \  --keyserver hkp://keys.gnupg.net:80 \  --recv 5A9BF3BB4E5E17B5 sudo gpg \  --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\  sudo apt-key add - btw.</description>
+      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&amp;#43;archive/stable To install latest stable build follow 3 simple steps:
+add &amp;ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&amp;rdquo; to /etc/apt/sources.list
+add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:
+W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \ --keyserver hkp://keys.gnupg.net:80 \ --recv 5A9BF3BB4E5E17B5 sudo gpg \ --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\ sudo apt-key add - btw.</description>
     </item>
     
     <item>
@@ -170,10 +171,11 @@ W: GPG error: http://ppa.launchpad.net raring Release: The following signatures 
       <pubDate>Fri, 11 Oct 2013 16:37:49 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/10/11/how-to-build-pidgin-sipe-plugin-with-audio-and-video-support-on-ubuntulinux-mint/</guid>
-      <description>Tested with pidgin-sipe-1.17.0  First of all install dependencies:
-sudo apt-get install \  libxml2-dev \  libnspr4-dev \  libnss3-dev \  libgstreamer0.10-dev \  libnice-dev \  libpurple-dev \  libnss3-dev \  libglib2.0-dev Then check where libnspr4 was installed:
+      <description>Tested with pidgin-sipe-1.17.0 First of all install dependencies:
+sudo apt-get install \ libxml2-dev \ libnspr4-dev \ libnss3-dev \ libgstreamer0.10-dev \ libnice-dev \ libpurple-dev \ libnss3-dev \ libglib2.0-dev Then check where libnspr4 was installed:
 sudo dpkg -L libnspr4 Then finally configure nspr paths accordingly, compile and install it:
-./configure \  --prefix=/usr \  --with-vv \  --with-nss-includes=/usr/include/nss \  --with-nss-libs=/usr/lib/x86_64-linux-gnu \  --with-nspr-includes=/usr/include/nspr \  --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)</description>
+./configure \ --prefix=/usr \ --with-vv \ --with-nss-includes=/usr/include/nss \ --with-nss-libs=/usr/lib/x86_64-linux-gnu \ --with-nspr-includes=/usr/include/nspr \ --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)
+If everything works fine then your Lync contact list should look like this:</description>
     </item>
     
     <item>

@@ -13,7 +13,7 @@ date &#43;&#39;%Y-%m-%d_%H_%M-%Z&#39; | xargs -I {} bash -c &#34;sudo tcpdump -n
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2013'><meta property='article:tag' content='tcpdump'><meta property='article:published_time' content='2013-05-17T15:23:00Z'/><meta property='article:modified_time' content='2013-05-17T15:23:00Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.90.1" />
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Dump network traffic with tcpdump to file with time-stamp in the filename • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2013/05/17/dump-network-traffic-with-tcpdump-to-file-with-time-stamp-in-the-filename/'>
@@ -432,8 +432,8 @@ One min read
 
   <div class='container entry-content'>
   <p>A one-liner that dumps the network traffic into a file with a time-stamp in its name:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">date +<span style="color:#e6db74">&#39;%Y-%m-%d_%H_%M-%Z&#39;</span> | xargs -I <span style="color:#f92672">{}</span> bash -c <span style="color:#e6db74">&#34;sudo tcpdump -nq -s 0 -i eth0 -w ./tcpdump-{}.pcap&#34;</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>date +<span style="color:#e6db74">&#39;%Y-%m-%d_%H_%M-%Z&#39;</span> | xargs -I <span style="color:#f92672">{}</span> bash -c <span style="color:#e6db74">&#34;sudo tcpdump -nq -s 0 -i eth0 -w ./tcpdump-{}.pcap&#34;</span>
+</span></span></code></pre></div>
 
 </div>
 
@@ -550,7 +550,7 @@ One min read
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

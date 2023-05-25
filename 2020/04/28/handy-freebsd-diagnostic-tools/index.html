@@ -9,9 +9,11 @@
 <meta property='og:description' content='A brief overview of various CLI tools that can help you diagnose your FreeBSD system'>
 <meta property='og:url' content='https://kowalcj0.github.io/2020/04/28/handy-freebsd-diagnostic-tools/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'><meta property='article:section' content='2020'><meta property='article:tag' content='freebsd'><meta property='article:tag' content='freenas'><meta property='article:tag' content='cli'><meta property='article:tag' content='zfs'><meta property='article:published_time' content='2020-04-28T22:02:34&#43;01:00'/><meta property='article:modified_time' content='2020-04-28T22:02:34&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'><meta property='twitter:image:alt' content='SRC: https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'><meta property='article:section' content='2020'><meta property='article:tag' content='freebsd'><meta property='article:tag' content='freenas'><meta property='article:tag' content='cli'><meta property='article:tag' content='zfs'><meta property='article:published_time' content='2020-04-28T22:02:34&#43;01:00'/><meta property='article:modified_time' content='2020-04-28T22:02:34&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'><meta property='twitter:image:alt' content='SRC: https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png 
 
-<meta name="generator" content="Hugo 0.90.1" />
+'>
+
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>FreeNas/FreeBSD hardware/diagnostic tools • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2020/04/28/handy-freebsd-diagnostic-tools/'>
@@ -429,11 +431,15 @@
 
   <div class='entry-cover'>
   <figure class='container cover-normal'>
-    <img src='../RGB_FreeNAS_Shark_Logo_Onlight_Lg.png' alt='SRC: https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png'/>
+    <img src='../RGB_FreeNAS_Shark_Logo_Onlight_Lg.png' alt='SRC: https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png 
+
+'/>
     
       
       <figcaption class='container'>
-        <span>SRC: <a href="https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png">https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png</a></span>
+        <span><p>SRC: <a href="https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png" target="_blank">https://www.freebsdnews.com/wp-content/uploads/RGB_FreeNAS_Shark_Logo_Onlight_Lg.png</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
+</span>
       </figcaption>
       
     
@@ -477,78 +483,78 @@ FreeBSD/FreeNAS machine.</p>
 <p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=camcontrol" target="_blank">camcontrol</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  utility is designed to provide a way for users to access
 and control the FreeBSD CAM subsystem.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># camcontrol devlist</span>
-&lt;ST4000VN003-1T5168 SC46&gt;          at scbus0 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass0,ada0<span style="color:#f92672">)</span>
-&lt;ST4000VN003-1T5168 SC46&gt;          at scbus1 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass1,ada1<span style="color:#f92672">)</span>
-&lt;ST4000VN003-1T5168 SC46&gt;          at scbus2 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass2,ada2<span style="color:#f92672">)</span>
-&lt;ST4000VN003-1T5168 SC46&gt;          at scbus2 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass3,ada3<span style="color:#f92672">)</span>
-&lt;ST4000VN003-1T5168 SC46&gt;          at scbus4 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass4,ada4<span style="color:#f92672">)</span>
-&lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass5,ada5<span style="color:#f92672">)</span>
-&lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass6,ada6<span style="color:#f92672">)</span>
-&lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass7,ada7<span style="color:#f92672">)</span>
-&lt;SanDisk Dual Drive 1.00&gt;          at scbus9 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass8,da0<span style="color:#f92672">)</span>
-</code></pre></div><h2 id="dmesg">dmesg <a tabindex="0" href="#dmesg" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># camcontrol devlist</span>
+</span></span><span style="display:flex;"><span>&lt;ST4000VN003-1T5168 SC46&gt;          at scbus0 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass0,ada0<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&lt;ST4000VN003-1T5168 SC46&gt;          at scbus1 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass1,ada1<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&lt;ST4000VN003-1T5168 SC46&gt;          at scbus2 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass2,ada2<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&lt;ST4000VN003-1T5168 SC46&gt;          at scbus2 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass3,ada3<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&lt;ST4000VN003-1T5168 SC46&gt;          at scbus4 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass4,ada4<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass5,ada5<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass6,ada6<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&lt;ST4000VN003-1T5168 SC46&gt;          at scbus5 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass7,ada7<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>&lt;SanDisk Dual Drive 1.00&gt;          at scbus9 target <span style="color:#ae81ff">0</span> lun <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>pass8,da0<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="dmesg">dmesg <a tabindex="0" href="#dmesg" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=dmesg" target="_blank">dmesg</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  utility displays the contents of the system message buffer.</p>
 <p>To show only CPU model &amp; some basic details:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dmesg | grep <span style="color:#e6db74">&#34;^CPU&#34;</span>
-CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
-CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
-CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
-CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
-</code></pre></div><p>For more details use <code>dmesg | grep CPU</code> or <code>dmesg | grep -i cpu</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dmesg | grep CPU
-CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
-FreeBSD/SMP: Multiprocessor System Detected: <span style="color:#ae81ff">4</span> CPUs
-SMP: AP CPU <span style="color:#75715e">#3 Launched!</span>
-SMP: AP CPU <span style="color:#75715e">#2 Launched!</span>
-SMP: AP CPU <span style="color:#75715e">#1 Launched!</span>
-cpu0: &lt;ACPI CPU&gt; on acpi0
-cpu1: &lt;ACPI CPU&gt; on acpi0
-cpu2: &lt;ACPI CPU&gt; on acpi0
-cpu3: &lt;ACPI CPU&gt; on acpi0
-amdtemp0: &lt;AMD CPU On-Die Thermal Sensors&gt; on hostb7
-pmc: Unknown AMD64 CPU.
-pmc: Unknown AMD CPU.
-CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
-CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
-FreeBSD/SMP: Multiprocessor System Detected: <span style="color:#ae81ff">4</span> CPUs
-SMP: AP CPU <span style="color:#75715e">#2 Launched!</span>
-SMP: AP CPU <span style="color:#75715e">#3 Launched!</span>
-SMP: AP CPU <span style="color:#75715e">#1 Launched!</span>
-cpu0: &lt;ACPI CPU&gt; on acpi0
-cpu1: &lt;ACPI CPU&gt; on acpi0
-cpu2: &lt;ACPI CPU&gt; on acpi0
-cpu3: &lt;ACPI CPU&gt; on acpi0
-amdtemp0: &lt;AMD CPU On-Die Thermal Sensors&gt; on hostb7
-pmc: Unknown AMD64 CPU.
-pmc: Unknown AMD CPU.
-CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
-</code></pre></div><p>To find out more about NICs, first list interface names with <code>ifconfig</code>, then
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dmesg | grep <span style="color:#e6db74">&#34;^CPU&#34;</span>
+</span></span><span style="display:flex;"><span>CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>For more details use <code>dmesg | grep CPU</code> or <code>dmesg | grep -i cpu</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dmesg | grep CPU
+</span></span><span style="display:flex;"><span>CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>FreeBSD/SMP: Multiprocessor System Detected: <span style="color:#ae81ff">4</span> CPUs
+</span></span><span style="display:flex;"><span>SMP: AP CPU <span style="color:#75715e">#3 Launched!</span>
+</span></span><span style="display:flex;"><span>SMP: AP CPU <span style="color:#75715e">#2 Launched!</span>
+</span></span><span style="display:flex;"><span>SMP: AP CPU <span style="color:#75715e">#1 Launched!</span>
+</span></span><span style="display:flex;"><span>cpu0: &lt;ACPI CPU&gt; on acpi0
+</span></span><span style="display:flex;"><span>cpu1: &lt;ACPI CPU&gt; on acpi0
+</span></span><span style="display:flex;"><span>cpu2: &lt;ACPI CPU&gt; on acpi0
+</span></span><span style="display:flex;"><span>cpu3: &lt;ACPI CPU&gt; on acpi0
+</span></span><span style="display:flex;"><span>amdtemp0: &lt;AMD CPU On-Die Thermal Sensors&gt; on hostb7
+</span></span><span style="display:flex;"><span>pmc: Unknown AMD64 CPU.
+</span></span><span style="display:flex;"><span>pmc: Unknown AMD CPU.
+</span></span><span style="display:flex;"><span>CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>FreeBSD/SMP: Multiprocessor System Detected: <span style="color:#ae81ff">4</span> CPUs
+</span></span><span style="display:flex;"><span>SMP: AP CPU <span style="color:#75715e">#2 Launched!</span>
+</span></span><span style="display:flex;"><span>SMP: AP CPU <span style="color:#75715e">#3 Launched!</span>
+</span></span><span style="display:flex;"><span>SMP: AP CPU <span style="color:#75715e">#1 Launched!</span>
+</span></span><span style="display:flex;"><span>cpu0: &lt;ACPI CPU&gt; on acpi0
+</span></span><span style="display:flex;"><span>cpu1: &lt;ACPI CPU&gt; on acpi0
+</span></span><span style="display:flex;"><span>cpu2: &lt;ACPI CPU&gt; on acpi0
+</span></span><span style="display:flex;"><span>cpu3: &lt;ACPI CPU&gt; on acpi0
+</span></span><span style="display:flex;"><span>amdtemp0: &lt;AMD CPU On-Die Thermal Sensors&gt; on hostb7
+</span></span><span style="display:flex;"><span>pmc: Unknown AMD64 CPU.
+</span></span><span style="display:flex;"><span>pmc: Unknown AMD CPU.
+</span></span><span style="display:flex;"><span>CPU: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G <span style="color:#f92672">(</span>4189.60-MHz K8-class CPU<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>To find out more about NICs, first list interface names with <code>ifconfig</code>, then
 grep through dmesg out:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dmesg | grep em0
-em0: &lt;Intel<span style="color:#f92672">(</span>R<span style="color:#f92672">)</span> PRO/1000 Legacy Network Connection 1.1.0&gt; port 0xe000-0xe03f mem 0xfea40000-0xfea5ffff,0xfea20000-0xfea3ffff irq <span style="color:#ae81ff">20</span> at device 5.0 on pci2
-...
-</code></pre></div><h2 id="dmidecode">dmidecode <a tabindex="0" href="#dmidecode" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dmesg | grep em0
+</span></span><span style="display:flex;"><span>em0: &lt;Intel<span style="color:#f92672">(</span>R<span style="color:#f92672">)</span> PRO/1000 Legacy Network Connection 1.1.0&gt; port 0xe000-0xe03f mem 0xfea40000-0xfea5ffff,0xfea20000-0xfea3ffff irq <span style="color:#ae81ff">20</span> at device 5.0 on pci2
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><h2 id="dmidecode">dmidecode <a tabindex="0" href="#dmidecode" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p><a href="https://www.freebsd.org/cgi/man.cgi?query=dmidecode" target="_blank">dmidecode</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  is a tool for dumping a computer&rsquo;s DMI (some say SMBIOS) table
 contents in a human-readable format.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dmidecode -h
-Usage: dmidecode <span style="color:#f92672">[</span>OPTIONS<span style="color:#f92672">]</span>
-Options are:
- -d, --dev-mem FILE     Read memory from device FILE <span style="color:#f92672">(</span>default: /dev/mem<span style="color:#f92672">)</span>
- -h, --help             Display this help text and exit
- -q, --quiet            Less verbose output
- -s, --string KEYWORD   Only display the value of the given DMI string
- -t, --type TYPE        Only display the entries of given type
- -H, --handle HANDLE    Only display the entry of given handle
- -u, --dump             Do not decode the entries
-     --dump-bin FILE    Dump the DMI data to a binary file
-     --from-dump FILE   Read the DMI data from a binary file
-     --no-sysfs         Do not attempt to read DMI data from sysfs files
-     --oem-string N     Only display the value of the given OEM string
- -V, --version          Display the version and exit
-</code></pre></div><p>Useful commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dmidecode -h
+</span></span><span style="display:flex;"><span>Usage: dmidecode <span style="color:#f92672">[</span>OPTIONS<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>Options are:
+</span></span><span style="display:flex;"><span> -d, --dev-mem FILE     Read memory from device FILE <span style="color:#f92672">(</span>default: /dev/mem<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> -h, --help             Display this help text and exit
+</span></span><span style="display:flex;"><span> -q, --quiet            Less verbose output
+</span></span><span style="display:flex;"><span> -s, --string KEYWORD   Only display the value of the given DMI string
+</span></span><span style="display:flex;"><span> -t, --type TYPE        Only display the entries of given type
+</span></span><span style="display:flex;"><span> -H, --handle HANDLE    Only display the entry of given handle
+</span></span><span style="display:flex;"><span> -u, --dump             Do not decode the entries
+</span></span><span style="display:flex;"><span>     --dump-bin FILE    Dump the DMI data to a binary file
+</span></span><span style="display:flex;"><span>     --from-dump FILE   Read the DMI data from a binary file
+</span></span><span style="display:flex;"><span>     --no-sysfs         Do not attempt to read DMI data from sysfs files
+</span></span><span style="display:flex;"><span>     --oem-string N     Only display the value of the given OEM string
+</span></span><span style="display:flex;"><span> -V, --version          Display the version and exit
+</span></span></code></pre></div><p>Useful commands:</p>
 <ul>
 <li><code>dmidecode -t processor</code></li>
 <li><code>dmidecode -t memory</code></li>
@@ -558,112 +564,112 @@ Options are:
 <h2 id="freebsd-version">freebsd-version <a tabindex="0" href="#freebsd-version" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p><a href="https://www.freebsd.org/cgi/man.cgi?query=freebsd-version" target="_blank">freebsd-version</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  – print the version and patch level of the installed system.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># freebsd-version</span>
-11.3-RELEASE-p6
-</code></pre></div><h1 id="freenas-debug">freenas-debug <a tabindex="0" href="#freenas-debug" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># freebsd-version</span>
+</span></span><span style="display:flex;"><span>11.3-RELEASE-p6
+</span></span></code></pre></div><h1 id="freenas-debug">freenas-debug <a tabindex="0" href="#freenas-debug" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p><a href="https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html#freenas-debug" target="_blank">freenas-debug</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  is a command line utility to show debugging information.
 It offers a really fine level of details.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># freenas-debug</span>
-Usage: /usr/local/bin/freenas-debug &lt;options&gt;
-Where options are:
-
-    -A	Dump all debug information
-    -B	Dump System Configuration Database
-    -C	Dump SMB Configuration
-    -I	Dump IPMI Configuration
-    -M	Dump SATA DOMs Information
-    -N	Dump NFS Configuration
-    -S	Dump SMART Information
-    -T	Loader Configuration Information
-    -Z  Remove old debug information
-    -a	Dump Active Directory Configuration
-    -e	Email debug log to this comma-delimited list of email addresses
-    -f	Dump AFP Configuration
-    -g	Dump GEOM Configuration
-    -h	Dump Hardware Configuration
-    -i	Dump iSCSI Configuration
-    -j	Dump Jail Information
-    -l	Dump LDAP Configuration
-    -n	Dump Network Configuration
-    -s	Dump SSL Configuration
-    -t	Dump System Information
-    -y	Dump Sysctl Configuration
-    -z	Dump ZFS Configuration
-</code></pre></div><h2 id="gpart">gpart <a tabindex="0" href="#gpart" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># freenas-debug</span>
+</span></span><span style="display:flex;"><span>Usage: /usr/local/bin/freenas-debug &lt;options&gt;
+</span></span><span style="display:flex;"><span>Where options are:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    -A	Dump all debug information
+</span></span><span style="display:flex;"><span>    -B	Dump System Configuration Database
+</span></span><span style="display:flex;"><span>    -C	Dump SMB Configuration
+</span></span><span style="display:flex;"><span>    -I	Dump IPMI Configuration
+</span></span><span style="display:flex;"><span>    -M	Dump SATA DOMs Information
+</span></span><span style="display:flex;"><span>    -N	Dump NFS Configuration
+</span></span><span style="display:flex;"><span>    -S	Dump SMART Information
+</span></span><span style="display:flex;"><span>    -T	Loader Configuration Information
+</span></span><span style="display:flex;"><span>    -Z  Remove old debug information
+</span></span><span style="display:flex;"><span>    -a	Dump Active Directory Configuration
+</span></span><span style="display:flex;"><span>    -e	Email debug log to this comma-delimited list of email addresses
+</span></span><span style="display:flex;"><span>    -f	Dump AFP Configuration
+</span></span><span style="display:flex;"><span>    -g	Dump GEOM Configuration
+</span></span><span style="display:flex;"><span>    -h	Dump Hardware Configuration
+</span></span><span style="display:flex;"><span>    -i	Dump iSCSI Configuration
+</span></span><span style="display:flex;"><span>    -j	Dump Jail Information
+</span></span><span style="display:flex;"><span>    -l	Dump LDAP Configuration
+</span></span><span style="display:flex;"><span>    -n	Dump Network Configuration
+</span></span><span style="display:flex;"><span>    -s	Dump SSL Configuration
+</span></span><span style="display:flex;"><span>    -t	Dump System Information
+</span></span><span style="display:flex;"><span>    -y	Dump Sysctl Configuration
+</span></span><span style="display:flex;"><span>    -z	Dump ZFS Configuration
+</span></span></code></pre></div><h2 id="gpart">gpart <a tabindex="0" href="#gpart" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=gpart" target="_blank">gpart</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  utility is used to partition GEOM providers, normally disks.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># gpart show</span>
-<span style="color:#f92672">=</span>&gt;        <span style="color:#ae81ff">34</span>  <span style="color:#ae81ff">7814037101</span>  ada0  GPT  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
-          <span style="color:#ae81ff">34</span>          <span style="color:#ae81ff">94</span>        - free -  <span style="color:#f92672">(</span>47K<span style="color:#f92672">)</span>
-         <span style="color:#ae81ff">128</span>     <span style="color:#ae81ff">4194304</span>     <span style="color:#ae81ff">1</span>  freebsd-swap  <span style="color:#f92672">(</span>2.0G<span style="color:#f92672">)</span>
-     <span style="color:#ae81ff">4194432</span>  <span style="color:#ae81ff">7809842696</span>     <span style="color:#ae81ff">2</span>  freebsd-zfs  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
-  <span style="color:#ae81ff">7814037128</span>           <span style="color:#ae81ff">7</span>        - free -  <span style="color:#f92672">(</span>3.5K<span style="color:#f92672">)</span>
-
-<span style="color:#f92672">=</span>&gt;        <span style="color:#ae81ff">34</span>  <span style="color:#ae81ff">7814037101</span>  ada1  GPT  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
-          <span style="color:#ae81ff">34</span>          <span style="color:#ae81ff">94</span>        - free -  <span style="color:#f92672">(</span>47K<span style="color:#f92672">)</span>
-         <span style="color:#ae81ff">128</span>     <span style="color:#ae81ff">4194304</span>     <span style="color:#ae81ff">1</span>  freebsd-swap  <span style="color:#f92672">(</span>2.0G<span style="color:#f92672">)</span>
-     <span style="color:#ae81ff">4194432</span>  <span style="color:#ae81ff">7809842696</span>     <span style="color:#ae81ff">2</span>  freebsd-zfs  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
-  <span style="color:#ae81ff">7814037128</span>           <span style="color:#ae81ff">7</span>        - free -  <span style="color:#f92672">(</span>3.5K<span style="color:#f92672">)</span>
-
-<span style="color:#f92672">=</span>&gt;        <span style="color:#ae81ff">34</span>  <span style="color:#ae81ff">7814037101</span>  ada2  GPT  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
-          <span style="color:#ae81ff">34</span>          <span style="color:#ae81ff">94</span>        - free -  <span style="color:#f92672">(</span>47K<span style="color:#f92672">)</span>
-         <span style="color:#ae81ff">128</span>     <span style="color:#ae81ff">4194304</span>     <span style="color:#ae81ff">1</span>  freebsd-swap  <span style="color:#f92672">(</span>2.0G<span style="color:#f92672">)</span>
-     <span style="color:#ae81ff">4194432</span>  <span style="color:#ae81ff">7809842696</span>     <span style="color:#ae81ff">2</span>  freebsd-zfs  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
-  <span style="color:#ae81ff">7814037128</span>           <span style="color:#ae81ff">7</span>        - free -  <span style="color:#f92672">(</span>3.5K<span style="color:#f92672">)</span>
-  ...
-  ...
-</code></pre></div><h2 id="pciconf">pciconf <a tabindex="0" href="#pciconf" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># gpart show</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=</span>&gt;        <span style="color:#ae81ff">34</span>  <span style="color:#ae81ff">7814037101</span>  ada0  GPT  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">34</span>          <span style="color:#ae81ff">94</span>        - free -  <span style="color:#f92672">(</span>47K<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#ae81ff">128</span>     <span style="color:#ae81ff">4194304</span>     <span style="color:#ae81ff">1</span>  freebsd-swap  <span style="color:#f92672">(</span>2.0G<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">4194432</span>  <span style="color:#ae81ff">7809842696</span>     <span style="color:#ae81ff">2</span>  freebsd-zfs  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">7814037128</span>           <span style="color:#ae81ff">7</span>        - free -  <span style="color:#f92672">(</span>3.5K<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=</span>&gt;        <span style="color:#ae81ff">34</span>  <span style="color:#ae81ff">7814037101</span>  ada1  GPT  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">34</span>          <span style="color:#ae81ff">94</span>        - free -  <span style="color:#f92672">(</span>47K<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#ae81ff">128</span>     <span style="color:#ae81ff">4194304</span>     <span style="color:#ae81ff">1</span>  freebsd-swap  <span style="color:#f92672">(</span>2.0G<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">4194432</span>  <span style="color:#ae81ff">7809842696</span>     <span style="color:#ae81ff">2</span>  freebsd-zfs  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">7814037128</span>           <span style="color:#ae81ff">7</span>        - free -  <span style="color:#f92672">(</span>3.5K<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=</span>&gt;        <span style="color:#ae81ff">34</span>  <span style="color:#ae81ff">7814037101</span>  ada2  GPT  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">34</span>          <span style="color:#ae81ff">94</span>        - free -  <span style="color:#f92672">(</span>47K<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#ae81ff">128</span>     <span style="color:#ae81ff">4194304</span>     <span style="color:#ae81ff">1</span>  freebsd-swap  <span style="color:#f92672">(</span>2.0G<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">4194432</span>  <span style="color:#ae81ff">7809842696</span>     <span style="color:#ae81ff">2</span>  freebsd-zfs  <span style="color:#f92672">(</span>3.6T<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">7814037128</span>           <span style="color:#ae81ff">7</span>        - free -  <span style="color:#f92672">(</span>3.5K<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>  ...
+</span></span></code></pre></div><h2 id="pciconf">pciconf <a tabindex="0" href="#pciconf" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=pciconf" target="_blank">pciconf</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  utility provides a command line interface to functionality
 provided by the pci ioctl interface.</p>
 <p>Use <code>pciconf -lv</code> to list all known devices with vendor, device, class
 and subclass identification strings loaded from the vendor/device information
 database.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># pciconf -lv</span>
-hostb0@pci0:0:0:0:	class<span style="color:#f92672">=</span>0x060000 card<span style="color:#f92672">=</span>0x85cb1043 chip<span style="color:#f92672">=</span>0x14221022 rev<span style="color:#f92672">=</span>0x00 hdr<span style="color:#f92672">=</span>0x00
-    vendor     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Advanced Micro Devices, Inc. [AMD]&#39;</span>
-    device     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Family 15h (Models 30h-3fh) Processor Root Complex&#39;</span>
-    class      <span style="color:#f92672">=</span> bridge
-    subclass   <span style="color:#f92672">=</span> HOST-PCI
-
-...
-...
-...
-
-em0@pci0:2:5:0:	class<span style="color:#f92672">=</span>0x020000 card<span style="color:#f92672">=</span>0x13768086 chip<span style="color:#f92672">=</span>0x107c8086 rev<span style="color:#f92672">=</span>0x05 hdr<span style="color:#f92672">=</span>0x00
-    vendor     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Intel Corporation&#39;</span>
-    device     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;82541PI Gigabit Ethernet Controller&#39;</span>
-    class      <span style="color:#f92672">=</span> network
-    subclass   <span style="color:#f92672">=</span> ethernet
-re0@pci0:4:0:0:	class<span style="color:#f92672">=</span>0x020000 card<span style="color:#f92672">=</span>0x85541043 chip<span style="color:#f92672">=</span>0x816810ec rev<span style="color:#f92672">=</span>0x0c hdr<span style="color:#f92672">=</span>0x00
-    vendor     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Realtek Semiconductor Co., Ltd.&#39;</span>
-    device     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller&#39;</span>
-    class      <span style="color:#f92672">=</span> network
-    subclass   <span style="color:#f92672">=</span> ethernet
-</code></pre></div><h2 id="sysctl">sysctl <a tabindex="0" href="#sysctl" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># pciconf -lv</span>
+</span></span><span style="display:flex;"><span>hostb0@pci0:0:0:0:	class<span style="color:#f92672">=</span>0x060000 card<span style="color:#f92672">=</span>0x85cb1043 chip<span style="color:#f92672">=</span>0x14221022 rev<span style="color:#f92672">=</span>0x00 hdr<span style="color:#f92672">=</span>0x00
+</span></span><span style="display:flex;"><span>    vendor     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Advanced Micro Devices, Inc. [AMD]&#39;</span>
+</span></span><span style="display:flex;"><span>    device     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Family 15h (Models 30h-3fh) Processor Root Complex&#39;</span>
+</span></span><span style="display:flex;"><span>    class      <span style="color:#f92672">=</span> bridge
+</span></span><span style="display:flex;"><span>    subclass   <span style="color:#f92672">=</span> HOST-PCI
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>em0@pci0:2:5:0:	class<span style="color:#f92672">=</span>0x020000 card<span style="color:#f92672">=</span>0x13768086 chip<span style="color:#f92672">=</span>0x107c8086 rev<span style="color:#f92672">=</span>0x05 hdr<span style="color:#f92672">=</span>0x00
+</span></span><span style="display:flex;"><span>    vendor     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Intel Corporation&#39;</span>
+</span></span><span style="display:flex;"><span>    device     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;82541PI Gigabit Ethernet Controller&#39;</span>
+</span></span><span style="display:flex;"><span>    class      <span style="color:#f92672">=</span> network
+</span></span><span style="display:flex;"><span>    subclass   <span style="color:#f92672">=</span> ethernet
+</span></span><span style="display:flex;"><span>re0@pci0:4:0:0:	class<span style="color:#f92672">=</span>0x020000 card<span style="color:#f92672">=</span>0x85541043 chip<span style="color:#f92672">=</span>0x816810ec rev<span style="color:#f92672">=</span>0x0c hdr<span style="color:#f92672">=</span>0x00
+</span></span><span style="display:flex;"><span>    vendor     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Realtek Semiconductor Co., Ltd.&#39;</span>
+</span></span><span style="display:flex;"><span>    device     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller&#39;</span>
+</span></span><span style="display:flex;"><span>    class      <span style="color:#f92672">=</span> network
+</span></span><span style="display:flex;"><span>    subclass   <span style="color:#f92672">=</span> ethernet
+</span></span></code></pre></div><h2 id="sysctl">sysctl <a tabindex="0" href="#sysctl" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>The <a href="https://www.freebsd.org/cgi/man.cgi?query=sysctl" target="_blank">sysctl</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  utility retrieves kernel state and allows processes with
 appropriate privilege to set kernel state.</p>
 <p>Basic CPU info:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># sysctl -a hw.model</span>
-hw.model: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G
-</code></pre></div><p>To find out more about CPU:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># sysctl -a | grep -i hw.*cpu</span>
-hw.ncpu: <span style="color:#ae81ff">4</span>
-hw.vmm.bhyve_xcpuids: <span style="color:#ae81ff">0</span>
-hw.vmm.topology.cpuid_leaf_b: <span style="color:#ae81ff">1</span>
-hw.acpi.cpu.cx_lowest: C2
-dev.hwpstate.0.%parent: cpu0
-</code></pre></div><p>And about RAM:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># sysctl -a | grep -i hw.*mem</span>
-hw.physmem: <span style="color:#ae81ff">33179099136</span>
-hw.usermem: <span style="color:#ae81ff">22425677824</span>
-hw.realmem: <span style="color:#ae81ff">34359738368</span>
-hw.pci.host_mem_start: <span style="color:#ae81ff">2147483648</span>
-</code></pre></div><p>Lastly, you can list all the currently available hardware values use:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sysctl -a hw
-</code></pre></div><h2 id="zpool">zpool <a tabindex="0" href="#zpool" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># sysctl -a hw.model</span>
+</span></span><span style="display:flex;"><span>hw.model: AMD A10-7870K Radeon R7, <span style="color:#ae81ff">12</span> Compute Cores 4C+8G
+</span></span></code></pre></div><p>To find out more about CPU:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># sysctl -a | grep -i hw.*cpu</span>
+</span></span><span style="display:flex;"><span>hw.ncpu: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>hw.vmm.bhyve_xcpuids: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>hw.vmm.topology.cpuid_leaf_b: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>hw.acpi.cpu.cx_lowest: C2
+</span></span><span style="display:flex;"><span>dev.hwpstate.0.%parent: cpu0
+</span></span></code></pre></div><p>And about RAM:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># sysctl -a | grep -i hw.*mem</span>
+</span></span><span style="display:flex;"><span>hw.physmem: <span style="color:#ae81ff">33179099136</span>
+</span></span><span style="display:flex;"><span>hw.usermem: <span style="color:#ae81ff">22425677824</span>
+</span></span><span style="display:flex;"><span>hw.realmem: <span style="color:#ae81ff">34359738368</span>
+</span></span><span style="display:flex;"><span>hw.pci.host_mem_start: <span style="color:#ae81ff">2147483648</span>
+</span></span></code></pre></div><p>Lastly, you can list all the currently available hardware values use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sysctl -a hw
+</span></span></code></pre></div><h2 id="zpool">zpool <a tabindex="0" href="#zpool" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p><a href="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/zfs-zpool.html" target="_blank">zpool</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  – is a tool to configure ZFS storage pools.</p>
 <p>For diagnostic purposes it&rsquo;s enough to know: <code>zpool status -v</code> which will show
@@ -785,7 +791,7 @@ the status of all pools in your system.</p>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

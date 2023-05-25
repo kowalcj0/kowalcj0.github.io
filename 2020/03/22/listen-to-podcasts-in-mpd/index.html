@@ -9,9 +9,12 @@
 <meta property='og:description' content='A simple script to load N-recent episodes of your favourite podcasts into MPD'>
 <meta property='og:url' content='https://kowalcj0.github.io/2020/03/22/listen-to-podcasts-in-mpd/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../images/rss_to_mpd.png'><meta property='article:section' content='2020'><meta property='article:tag' content='linux'><meta property='article:tag' content='mpd'><meta property='article:tag' content='rss'><meta property='article:published_time' content='2020-03-22T12:02:34&#43;01:00'/><meta property='article:modified_time' content='2020-03-22T12:02:34&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../images/rss_to_mpd.png'><meta property='twitter:image:alt' content='ASCII art generated with http://patorjk.com/software/taag/ &amp; colored with http://patorjk.com/text-color-fader/'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../images/rss_to_mpd.png'><meta property='article:section' content='2020'><meta property='article:tag' content='linux'><meta property='article:tag' content='mpd'><meta property='article:tag' content='rss'><meta property='article:published_time' content='2020-03-22T12:02:34&#43;01:00'/><meta property='article:modified_time' content='2020-03-22T12:02:34&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../images/rss_to_mpd.png'><meta property='twitter:image:alt' content='ASCII art generated with http://patorjk.com/software/taag/ 
+ &amp; colored with http://patorjk.com/text-color-fader/ 
 
-<meta name="generator" content="Hugo 0.90.1" />
+'>
+
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Listen to podcasts in MPD • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2020/03/22/listen-to-podcasts-in-mpd/'>
@@ -429,11 +432,17 @@ One min read
 
   <div class='entry-cover'>
   <figure class='container cover-normal'>
-    <img src='../images/rss_to_mpd.png' alt='ASCII art generated with http://patorjk.com/software/taag/ &amp; colored with http://patorjk.com/text-color-fader/'/>
+    <img src='../images/rss_to_mpd.png' alt='ASCII art generated with http://patorjk.com/software/taag/ 
+ &amp; colored with http://patorjk.com/text-color-fader/ 
+
+'/>
     
       
       <figcaption class='container'>
-        <span>ASCII art generated with <a href="http://patorjk.com/software/taag/">http://patorjk.com/software/taag/</a> &amp; colored with <a href="http://patorjk.com/text-color-fader/">http://patorjk.com/text-color-fader/</a></span>
+        <span><p>ASCII art generated with <a href="http://patorjk.com/software/taag/" target="_blank">http://patorjk.com/software/taag/</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ &amp; colored with <a href="http://patorjk.com/text-color-fader/" target="_blank">http://patorjk.com/text-color-fader/</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
+</span>
       </figcaption>
       
     
@@ -454,23 +463,23 @@ One min read
 
 format.</p>
 <p>You can extract RSS feed links from it with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">awk -F <span style="color:#e6db74">&#39;&#34;&#39;</span> <span style="color:#e6db74">&#39;{print $6}&#39;</span> podcasts.opml | sed <span style="color:#e6db74">&#39;/^$/d&#39;</span>
-</code></pre></div><h2 id="load-podcast-into-mpd">Load podcast into MPD <a tabindex="0" href="#load-podcast-into-mpd" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>awk -F <span style="color:#e6db74">&#39;&#34;&#39;</span> <span style="color:#e6db74">&#39;{print $6}&#39;</span> podcasts.opml | sed <span style="color:#e6db74">&#39;/^$/d&#39;</span>
+</span></span></code></pre></div><h2 id="load-podcast-into-mpd">Load podcast into MPD <a tabindex="0" href="#load-podcast-into-mpd" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Given that you&rsquo;ve saved your podcast feed list in <code>~/Music/podcasts.rss</code>.<br>
 Then with a simple while loop you can load your podcast episodes into mpd.</p>
 <p>Add this to your <code>~/.bashrc</code> or <code>~/.bash_profile</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">alias podcasts<span style="color:#f92672">=</span>fetch_last_n_episodes
-
-<span style="color:#66d9ef">function</span> fetch_last_n_episodes<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-    N<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1<span style="color:#66d9ef">:-</span>5<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>  <span style="color:#75715e"># defaults to 5 most recent episodes</span>
-    mpc --quiet clear
-    <span style="color:#66d9ef">while</span> read rss; <span style="color:#66d9ef">do</span>
-        mpc load --quiet --wait --range<span style="color:#f92672">=</span>0:<span style="color:#e6db74">${</span>N<span style="color:#e6db74">}</span> <span style="color:#e6db74">${</span>rss<span style="color:#e6db74">}</span>
-    <span style="color:#66d9ef">done</span> &lt;~/Music/podcasts.rss
-    mpc --quiet random
-    mpc --quiet play
-<span style="color:#f92672">}</span>
-</code></pre></div><p>Then run <code>podcasts</code>, wait a bit and enjoy your fav podcasts.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>alias podcasts<span style="color:#f92672">=</span>fetch_last_n_episodes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> fetch_last_n_episodes<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    N<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1<span style="color:#66d9ef">:-</span>5<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>  <span style="color:#75715e"># defaults to 5 most recent episodes</span>
+</span></span><span style="display:flex;"><span>    mpc --quiet clear
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> read rss; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>        mpc load --quiet --wait --range<span style="color:#f92672">=</span>0:<span style="color:#e6db74">${</span>N<span style="color:#e6db74">}</span> <span style="color:#e6db74">${</span>rss<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">done</span> &lt;~/Music/podcasts.rss
+</span></span><span style="display:flex;"><span>    mpc --quiet random
+</span></span><span style="display:flex;"><span>    mpc --quiet play
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Then run <code>podcasts</code>, wait a bit and enjoy your fav podcasts.</p>
 <h3 id="notes">Notes <a tabindex="0" href="#notes" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <ul>
 <li>If you get rid of <code>--range=0:${N}</code> then all episodes from all feeds will be loaded</li>
@@ -593,7 +602,7 @@ Then with a simple while loop you can load your podcast episodes into mpd.</p>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

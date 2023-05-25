@@ -9,9 +9,11 @@
 <meta property='og:description' content='configure puppeteer buildpack'>
 <meta property='og:url' content='https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../pa11y-logo.svg'><meta property='article:section' content='2020'><meta property='article:tag' content='accessibility'><meta property='article:tag' content='heroku'><meta property='article:tag' content='nodejs'><meta property='article:tag' content='pa11y'><meta property='article:published_time' content='2020-06-03T19:57:26&#43;01:00'/><meta property='article:modified_time' content='2020-06-03T19:57:26&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../pa11y-logo.svg'><meta property='twitter:image:alt' content='Official Pa11y logo https://pa11y.org/resources/brand/logo.svg'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../pa11y-logo.svg'><meta property='article:section' content='2020'><meta property='article:tag' content='accessibility'><meta property='article:tag' content='heroku'><meta property='article:tag' content='nodejs'><meta property='article:tag' content='pa11y'><meta property='article:published_time' content='2020-06-03T19:57:26&#43;01:00'/><meta property='article:modified_time' content='2020-06-03T19:57:26&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../pa11y-logo.svg'><meta property='twitter:image:alt' content='Official Pa11y logo https://pa11y.org/resources/brand/logo.svg 
 
-<meta name="generator" content="Hugo 0.90.1" />
+'>
+
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Run Pa11y Dashboard on Heroku • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/'>
@@ -429,11 +431,15 @@ One min read
 
   <div class='entry-cover'>
   <figure class='container cover-normal'>
-    <img src='../pa11y-logo.svg' alt='Official Pa11y logo https://pa11y.org/resources/brand/logo.svg'/>
+    <img src='../pa11y-logo.svg' alt='Official Pa11y logo https://pa11y.org/resources/brand/logo.svg 
+
+'/>
     
       
       <figcaption class='container'>
-        <span>Official Pa11y logo <a href="https://pa11y.org/resources/brand/logo.svg">https://pa11y.org/resources/brand/logo.svg</a></span>
+        <span><p>Official Pa11y logo <a href="https://pa11y.org/resources/brand/logo.svg" target="_blank">https://pa11y.org/resources/brand/logo.svg</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
+</span>
       </figcaption>
       
     
@@ -457,21 +463,21 @@ Update your kernel or see https://chromium.googlesource.com/chromium/src/+/maste
 for more information on developing with the SUID sandbox.
 If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
 </code></pre><p>We like to live dangerously so let&rsquo;s use that argument in <code>config.js</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">--- a/config.js
-</span><span style="color:#f92672"></span><span style="color:#a6e22e">+++ b/config.js
-</span><span style="color:#a6e22e"></span><span style="color:#75715e">@@ -35,7 +35,12 @@ if (fs.existsSync(jsonPath)) {
-</span><span style="color:#75715e"></span>           database: env(&#39;WEBSERVICE_DATABASE&#39;, &#39;mongodb://localhost/pa11y-webservice&#39;),
-           host: env(&#39;WEBSERVICE_HOST&#39;, &#39;0.0.0.0&#39;),
-           port: Number(env(&#39;WEBSERVICE_PORT&#39;, &#39;3000&#39;)),
-<span style="color:#f92672">-          cron: env(&#39;WEBSERVICE_CRON&#39;, false)
-</span><span style="color:#f92672"></span><span style="color:#a6e22e">+          cron: env(&#39;WEBSERVICE_CRON&#39;, false),
-</span><span style="color:#a6e22e">+          chromeLaunchConfig: {
-</span><span style="color:#a6e22e">+                  &#34;args&#34;: [
-</span><span style="color:#a6e22e">+                          &#34;--no-sandbox&#34;
-</span><span style="color:#a6e22e">+                  ]
-</span><span style="color:#a6e22e">+          }
-</span><span style="color:#a6e22e"></span>   })
-</code></pre></div><p>Once redeployed, your tests should work without any problems.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span><span style="color:#f92672">--- a/config.js
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672"></span><span style="color:#a6e22e">+++ b/config.js
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e"></span><span style="color:#75715e">@@ -35,7 +35,12 @@ if (fs.existsSync(jsonPath)) {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>           database: env(&#39;WEBSERVICE_DATABASE&#39;, &#39;mongodb://localhost/pa11y-webservice&#39;),
+</span></span><span style="display:flex;"><span>           host: env(&#39;WEBSERVICE_HOST&#39;, &#39;0.0.0.0&#39;),
+</span></span><span style="display:flex;"><span>           port: Number(env(&#39;WEBSERVICE_PORT&#39;, &#39;3000&#39;)),
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-          cron: env(&#39;WEBSERVICE_CRON&#39;, false)
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672"></span><span style="color:#a6e22e">+          cron: env(&#39;WEBSERVICE_CRON&#39;, false),
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+          chromeLaunchConfig: {
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+                  &#34;args&#34;: [
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+                          &#34;--no-sandbox&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+                  ]
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+          }
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e"></span>   })
+</span></span></code></pre></div><p>Once redeployed, your tests should work without any problems.</p>
 <p>PS. If you&rsquo;d like to learn more about &ldquo;No usable sandbox!&rdquo; error, please have a look at:</p>
 <ul>
 <li><a href="https://github.com/pa11y/pa11y/issues/411" target="_blank">https://github.com/pa11y/pa11y/issues/411</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
@@ -596,7 +602,7 @@ If you want to live dangerously and need an immediate workaround, you can try us
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

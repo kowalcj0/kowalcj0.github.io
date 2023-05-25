@@ -24,8 +24,8 @@ $ pylint test.py ************* Module test test.py:29:28: W0640: Cell variable s
       <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2021/09/25/fix-file-transfers-for-gsconnect/</guid>
-      <description>I&amp;rsquo;ve recently flashed LingeageOS 18.1 onto my phone. After rooting it, I&amp;rsquo;ve installed my fav firewall app AFWall&amp;#43;  . But since then I was having problems with sending files to my pc or other phones via (GSConnect app)[https://github.com/GSConnect/gnome-shell-extension-gsconnect]. All sent files had different size than the original file on my phone. I&amp;rsquo;ve described it in this bug report comment  .
-After a bit of reading I realised that I have to add some extra iptables rules described in GSConnect&amp;amp;rsquo;s Wiki  ,</description>
+      <description>I&amp;rsquo;ve recently flashed LingeageOS 18.1 onto my phone. After rooting it, I&amp;rsquo;ve installed my fav firewall app AFWall&amp;#43; . But since then I was having problems with sending files to my pc or other phones via (GSConnect app)[https://github.com/GSConnect/gnome-shell-extension-gsconnect]. All sent files had different size than the original file on my phone. I&amp;rsquo;ve described it in this bug report comment .
+After a bit of reading I realised that I have to add some extra iptables rules described in GSConnect&amp;amp;rsquo;s Wiki ,</description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@ After a bit of reading I realised that I have to add some extra iptables rules d
       <pubDate>Wed, 15 Sep 2021 17:50:36 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2021/09/15/initialize_nested_dataclasses_with_default_factory/</guid>
-      <description>I you happen to work with nested Python dataclasses  , then maybe you&amp;rsquo;ve noticed an issues with defining field values by creating an instance of some object.
+      <description>I you happen to work with nested Python dataclasses , then maybe you&amp;rsquo;ve noticed an issues with defining field values by creating an instance of some object.
 In the example below, all instances of class Main will point to the same instance of class Sub:
 from dataclasses import dataclass, field @dataclass class Sub: prop: str = field(default=&amp;#34;some value&amp;#34;) @dataclass class Main: sub: Sub = Sub() m1 = Main() m2 = Main() id(m1) Out[1]: 140304747921264 id(m2) Out[2]: 140304748528400 assert id(m1.</description>
     </item>
@@ -60,9 +60,9 @@ iocage console digikam portsnap fetch portsnap extract 3 - Install dependencies 
       <guid>https://kowalcj0.github.io/2021/06/05/install-photoprism-in-truenas-jail/</guid>
       <description>For quite a while I&amp;rsquo;ve been looking for a self-hosted photo &amp;amp; video gallery.
 I tried things like:
- NextCloud   OwnCloud   Piwigo   Lychee    Yet, none of them made the cut.
-Then, I came across this Ask HN: Alternatives to Google Photos?  thread on Hacker News. I checked out self-hosted projects mentioned in this comment  .
-Photoprism  got my attention as it offers automatic image classification based on Google TensorFlow.</description>
+NextCloud OwnCloud Piwigo Lychee Yet, none of them made the cut.
+Then, I came across this Ask HN: Alternatives to Google Photos? thread on Hacker News. I checked out self-hosted projects mentioned in this comment .
+Photoprism got my attention as it offers automatic image classification based on Google TensorFlow. I gave it a spin by following Getting started instructions for Docker Compose .</description>
     </item>
     
     <item>

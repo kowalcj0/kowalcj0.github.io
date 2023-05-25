@@ -13,12 +13,12 @@
       <pubDate>Thu, 30 Apr 2020 20:05:24 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2020/04/30/import-zipfile/</guid>
-      <description>Recently, I had a look at zipfile  module.
+      <description>Recently, I had a look at zipfile module.
 It&amp;rsquo;s surprisingly easy to work with.
 Snippets below should give you a rough idea how to use it.
 Create a zip file import zipfile file_to_compress = &amp;#34;server.log&amp;#34; zip_file_name = &amp;#34;server.log.zip&amp;#34; with zipfile.ZipFile(zip_file_name, &amp;#34;w&amp;#34;, zipfile.ZIP_DEFLATED) as myzip: myzip.write(file_to_compress) NOTE: 3rd argument defines the compression type.
 Choose from:
- ZIP_STORED (no compression) ZIP_DEFLATED (requires zlib) ZIP_BZIP2 (requires bz2) ZIP_LZMA (requires lzma)  Unpack a zip archive with zipfile.</description>
+ZIP_STORED (no compression) ZIP_DEFLATED (requires zlib) ZIP_BZIP2 (requires bz2) ZIP_LZMA (requires lzma) Unpack a zip archive with zipfile.</description>
     </item>
     
   </channel>

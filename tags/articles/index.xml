@@ -13,8 +13,8 @@
       <pubDate>Sat, 02 May 2020 16:56:52 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/general/articles/</guid>
-      <description>A while ago I&amp;rsquo;ve discovered Wallabag  . It&amp;rsquo;s a self hostable application for saving web pages. It extracts the article&amp;rsquo;s content and can automatically tag it with matching label. Basically it&amp;rsquo;s an open-source competitor of Pocket  , Instapaper  or Evernote  .
-Fetching a list of all entries via Wallabag&amp;amp;rsquo;s API  is very easy. And with a help of jq  you can transform it into a simple JSON file which you can use to populate a Hugo Data Templates  .</description>
+      <description>A while ago I&amp;rsquo;ve discovered Wallabag . It&amp;rsquo;s a self hostable application for saving web pages. It extracts the article&amp;rsquo;s content and can automatically tag it with matching label. Basically it&amp;rsquo;s an open-source competitor of Pocket , Instapaper or Evernote .
+Fetching a list of all entries via Wallabag&amp;amp;rsquo;s API is very easy. And with a help of jq you can transform it into a simple JSON file which you can use to populate a Hugo Data Templates .</description>
     </item>
     
   </channel>

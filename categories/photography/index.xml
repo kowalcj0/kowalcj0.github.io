@@ -28,9 +28,9 @@ iocage console digikam portsnap fetch portsnap extract 3 - Install dependencies 
       <guid>https://kowalcj0.github.io/2021/06/05/install-photoprism-in-truenas-jail/</guid>
       <description>For quite a while I&amp;rsquo;ve been looking for a self-hosted photo &amp;amp; video gallery.
 I tried things like:
- NextCloud   OwnCloud   Piwigo   Lychee    Yet, none of them made the cut.
-Then, I came across this Ask HN: Alternatives to Google Photos?  thread on Hacker News. I checked out self-hosted projects mentioned in this comment  .
-Photoprism  got my attention as it offers automatic image classification based on Google TensorFlow.</description>
+NextCloud OwnCloud Piwigo Lychee Yet, none of them made the cut.
+Then, I came across this Ask HN: Alternatives to Google Photos? thread on Hacker News. I checked out self-hosted projects mentioned in this comment .
+Photoprism got my attention as it offers automatic image classification based on Google TensorFlow. I gave it a spin by following Getting started instructions for Docker Compose .</description>
     </item>
     
     <item>

@@ -9,9 +9,11 @@
 <meta property='og:description' content='by adding custom iptables rules to your Android firewall app'>
 <meta property='og:url' content='https://kowalcj0.github.io/2021/09/25/fix-file-transfers-for-gsconnect/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../afwall.png'><meta property='article:section' content='2021'><meta property='article:tag' content='gsconnect'><meta property='article:tag' content='afwall'><meta property='article:tag' content='firewall'><meta property='article:tag' content='iptables'><meta property='article:published_time' content='2021-09-25T22:09:22&#43;01:00'/><meta property='article:modified_time' content='2021-09-25T22:09:22&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../afwall.png'><meta property='twitter:image:alt' content='SRC: https://github.com/ukanth/afwall/blob/beta/playstore/playstore.png'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../afwall.png'><meta property='article:section' content='2021'><meta property='article:tag' content='gsconnect'><meta property='article:tag' content='afwall'><meta property='article:tag' content='firewall'><meta property='article:tag' content='iptables'><meta property='article:published_time' content='2021-09-25T22:09:22&#43;01:00'/><meta property='article:modified_time' content='2021-09-25T22:09:22&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../afwall.png'><meta property='twitter:image:alt' content='SRC: https://github.com/ukanth/afwall/blob/beta/playstore/playstore.png 
 
-<meta name="generator" content="Hugo 0.90.1" />
+'>
+
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Fix an issue with incorrectly transferred files via GSConnect • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2021/09/25/fix-file-transfers-for-gsconnect/'>
@@ -429,11 +431,15 @@
 
   <div class='entry-cover'>
   <figure class='container cover-normal'>
-    <img src='../afwall.png' alt='SRC: https://github.com/ukanth/afwall/blob/beta/playstore/playstore.png'/>
+    <img src='../afwall.png' alt='SRC: https://github.com/ukanth/afwall/blob/beta/playstore/playstore.png 
+
+'/>
     
       
       <figcaption class='container'>
-        <span>SRC: <a href="https://github.com/ukanth/afwall/blob/beta/playstore/playstore.png">https://github.com/ukanth/afwall/blob/beta/playstore/playstore.png</a></span>
+        <span><p>SRC: <a href="https://github.com/ukanth/afwall/blob/beta/playstore/playstore.png" target="_blank">https://github.com/ukanth/afwall/blob/beta/playstore/playstore.png</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
+</span>
       </figcaption>
       
     
@@ -458,18 +464,18 @@ described in <a href="https://github.com/GSConnect/gnome-shell-extension-gsconne
 tutorial on <a href="https://github.com/ukanth/afwall/wiki/CustomScripts#loading-scripts-from-files" target="_blank">Loading scripts from files</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  first.</p>
 <p>In my case, I&rsquo;ve created a script called <code>gsconnect-iptables.sh</code> with following rules:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Necessary at the beginning of each script!</span>
-IP6TABLES<span style="color:#f92672">=</span>/system/bin/ip6tables
-IPTABLES<span style="color:#f92672">=</span>/system/bin/iptables
-<span style="color:#75715e"># Open port 1714 to 1764 for GSConnect</span>
-$IPTABLES -I <span style="color:#e6db74">&#34;afwall-wifi&#34;</span> -p udp --dport 1714:1764 -m state --state NEW,ESTABLISHED -j ACCEPT
-$IPTABLES -I <span style="color:#e6db74">&#34;afwall-wifi&#34;</span> -p tcp --dport 1714:1764 -m state --state NEW,ESTABLISHED -j ACCEPT
-$IPTABLES -A <span style="color:#e6db74">&#34;afwall-wifi&#34;</span> -p tcp --sport 1714:1764 -m state --state NEW,ESTABLISHED -j ACCEPT
-$IPTABLES -A <span style="color:#e6db74">&#34;afwall-wifi&#34;</span> -p udp --sport 1714:1764 -m state --state NEW,ESTABLISHED -j ACCEPT
-</code></pre></div><p>Then in the &ldquo;<strong>Set custom script</strong>&rdquo; menu option I specified the path to the script
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Necessary at the beginning of each script!</span>
+</span></span><span style="display:flex;"><span>IP6TABLES<span style="color:#f92672">=</span>/system/bin/ip6tables
+</span></span><span style="display:flex;"><span>IPTABLES<span style="color:#f92672">=</span>/system/bin/iptables
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Open port 1714 to 1764 for GSConnect</span>
+</span></span><span style="display:flex;"><span>$IPTABLES -I <span style="color:#e6db74">&#34;afwall-wifi&#34;</span> -p udp --dport 1714:1764 -m state --state NEW,ESTABLISHED -j ACCEPT
+</span></span><span style="display:flex;"><span>$IPTABLES -I <span style="color:#e6db74">&#34;afwall-wifi&#34;</span> -p tcp --dport 1714:1764 -m state --state NEW,ESTABLISHED -j ACCEPT
+</span></span><span style="display:flex;"><span>$IPTABLES -A <span style="color:#e6db74">&#34;afwall-wifi&#34;</span> -p tcp --sport 1714:1764 -m state --state NEW,ESTABLISHED -j ACCEPT
+</span></span><span style="display:flex;"><span>$IPTABLES -A <span style="color:#e6db74">&#34;afwall-wifi&#34;</span> -p udp --sport 1714:1764 -m state --state NEW,ESTABLISHED -j ACCEPT
+</span></span></code></pre></div><p>Then in the &ldquo;<strong>Set custom script</strong>&rdquo; menu option I specified the path to the script
 preceded by a dot command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">. /path/to/gsconnect-iptables.sh
-</code></pre></div><p>After going to airplane mode, I re-applied the firewall rules and turned the airplane
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>. /path/to/gsconnect-iptables.sh
+</span></span></code></pre></div><p>After going to airplane mode, I re-applied the firewall rules and turned the airplane
 mode off.<br>
 Since then, I haven&rsquo;t had any issues with file transfers :)</p>
 
@@ -589,7 +595,7 @@ Since then, I haven&rsquo;t had any issues with file transfers :)</p>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

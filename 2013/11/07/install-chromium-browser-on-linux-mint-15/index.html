@@ -2,22 +2,22 @@
 <html lang='en' dir='auto'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Here&rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&#43;archive/stable  To install latest stable build follow 3 simple steps:
-  add &ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&rdquo; to /etc/apt/sources.list
-  add repo&rsquo;s pub key so that we can avoid problems like the one below:
-W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \  --keyserver hkp://keys.gnupg.net:80 \  --recv 5A9BF3BB4E5E17B5 sudo gpg \  --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\  sudo apt-key add - btw.'>
+<meta name='description' content='Here&rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&#43;archive/stable To install latest stable build follow 3 simple steps:
+add &ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&rdquo; to /etc/apt/sources.list
+add repo&rsquo;s pub key so that we can avoid problems like the one below:
+W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \ --keyserver hkp://keys.gnupg.net:80 \ --recv 5A9BF3BB4E5E17B5 sudo gpg \ --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\ sudo apt-key add - btw.'>
 <meta name='theme-color' content='#ffcd00'>
 
 <meta property='og:title' content='How to add official Chromium-browser PPA repository to Linux Mint 15 and install the latest stable build • Home'>
-<meta property='og:description' content='Here&rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&#43;archive/stable  To install latest stable build follow 3 simple steps:
-  add &ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&rdquo; to /etc/apt/sources.list
-  add repo&rsquo;s pub key so that we can avoid problems like the one below:
-W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \  --keyserver hkp://keys.gnupg.net:80 \  --recv 5A9BF3BB4E5E17B5 sudo gpg \  --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\  sudo apt-key add - btw.'>
+<meta property='og:description' content='Here&rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&#43;archive/stable To install latest stable build follow 3 simple steps:
+add &ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&rdquo; to /etc/apt/sources.list
+add repo&rsquo;s pub key so that we can avoid problems like the one below:
+W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \ --keyserver hkp://keys.gnupg.net:80 \ --recv 5A9BF3BB4E5E17B5 sudo gpg \ --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\ sudo apt-key add - btw.'>
 <meta property='og:url' content='https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/'>
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2013'><meta property='article:tag' content='linux'><meta property='article:tag' content='chromium'><meta property='article:published_time' content='2013-11-07T13:59:41Z'/><meta property='article:modified_time' content='2013-11-07T13:59:41Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.90.1" />
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>How to add official Chromium-browser PPA repository to Linux Mint 15 and install the latest stable build • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/'>
@@ -444,21 +444,21 @@ One min read
 </li>
 <li>
 <p>add repo&rsquo;s pub key so that we can avoid problems like the one below:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">W: GPG error: http://ppa.launchpad.net raring 
-Release: The following signatures couldn<span style="color:#960050;background-color:#1e0010">&#39;</span>t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo gpg <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --keyserver hkp://keys.gnupg.net:80 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --recv 5A9BF3BB4E5E17B5
-sudo gpg <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |<span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>        sudo apt-key add -
-</code></pre></div><p>btw. using <code>hkp://keys.gnupg.net:80</code> will work even if you&rsquo;re behind a firewall or proxy :)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>W: GPG error: http://ppa.launchpad.net raring 
+</span></span><span style="display:flex;"><span>Release: The following signatures couldn<span style="color:#960050;background-color:#1e0010">&#39;</span>t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo gpg <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --keyserver hkp://keys.gnupg.net:80 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --recv 5A9BF3BB4E5E17B5
+</span></span><span style="display:flex;"><span>sudo gpg <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |<span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>        sudo apt-key add -
+</span></span></code></pre></div><p>btw. using <code>hkp://keys.gnupg.net:80</code> will work even if you&rsquo;re behind a firewall or proxy :)</p>
 </li>
 <li>
 <p>Update package list and install Chromium</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get update
-sudo apt-get install chromium-browser
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get install chromium-browser
+</span></span></code></pre></div></li>
 </ol>
 <p>Happy browsing :)</p>
 
@@ -578,7 +578,7 @@ sudo apt-get install chromium-browser
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

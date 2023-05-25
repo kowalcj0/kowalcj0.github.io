@@ -5,19 +5,19 @@
 <meta name='description' content='Let&rsquo;s assume than the URL pattern to your Function Based View is defined like that:
 _urls.py_
 urlpatterns = patterns( ..., url(r&#39;^$&#39;, views.index, name=&#39;index&#39;), ... ) and your function based view looks like this: _views.py_
-@api_view([&#39;GET&#39;]) @permission_classes((AllowAny,)) def index(request): data = { &#39;field&#39;: &#39;value&#39; } return Response(data) Then you can unit test such view by creating a minimal instance of the HttpRequest and pass it to that view. I tried to mock to test such view with the Mock  library, by with no luck!'>
+@api_view([&#39;GET&#39;]) @permission_classes((AllowAny,)) def index(request): data = { &#39;field&#39;: &#39;value&#39; } return Response(data) Then you can unit test such view by creating a minimal instance of the HttpRequest and pass it to that view. I tried to mock to test such view with the Mock library, by with no luck!'>
 <meta name='theme-color' content='#ffcd00'>
 
 <meta property='og:title' content='How to unit test Django&#39;s Function Based Views • Home'>
 <meta property='og:description' content='Let&rsquo;s assume than the URL pattern to your Function Based View is defined like that:
 _urls.py_
 urlpatterns = patterns( ..., url(r&#39;^$&#39;, views.index, name=&#39;index&#39;), ... ) and your function based view looks like this: _views.py_
-@api_view([&#39;GET&#39;]) @permission_classes((AllowAny,)) def index(request): data = { &#39;field&#39;: &#39;value&#39; } return Response(data) Then you can unit test such view by creating a minimal instance of the HttpRequest and pass it to that view. I tried to mock to test such view with the Mock  library, by with no luck!'>
+@api_view([&#39;GET&#39;]) @permission_classes((AllowAny,)) def index(request): data = { &#39;field&#39;: &#39;value&#39; } return Response(data) Then you can unit test such view by creating a minimal instance of the HttpRequest and pass it to that view. I tried to mock to test such view with the Mock library, by with no luck!'>
 <meta property='og:url' content='https://kowalcj0.github.io/2014/07/31/how-to-unit-test-djangos-function-based-views/'>
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2014'><meta property='article:tag' content='python'><meta property='article:published_time' content='2014-07-31T13:27:58Z'/><meta property='article:modified_time' content='2014-07-31T13:27:58Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.90.1" />
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>How to unit test Django&#39;s Function Based Views • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2014/07/31/how-to-unit-test-djangos-function-based-views/'>
@@ -437,28 +437,28 @@ One min read
   <div class='container entry-content'>
   <p>Let&rsquo;s assume than the URL pattern to your Function Based View is defined like that:</p>
 <p><code>_urls.py_</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">urlpatterns <span style="color:#f92672">=</span> patterns(
-    <span style="color:#f92672">...</span>, 
-    url(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;^$&#39;</span>, views<span style="color:#f92672">.</span>index, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;index&#39;</span>), 
-    <span style="color:#f92672">...</span>
-) 
-</code></pre></div><p>and your function based view looks like this:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>urlpatterns <span style="color:#f92672">=</span> patterns(
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>, 
+</span></span><span style="display:flex;"><span>    url(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;^$&#39;</span>, views<span style="color:#f92672">.</span>index, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;index&#39;</span>), 
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>) 
+</span></span></code></pre></div><p>and your function based view looks like this:
 <code>_views.py_</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@api_view</span>([<span style="color:#e6db74">&#39;GET&#39;</span>]) <span style="color:#a6e22e">@permission_classes</span>((AllowAny,))
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>(request): 
-    data <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#39;field&#39;</span>: <span style="color:#e6db74">&#39;value&#39;</span> } 
-    <span style="color:#66d9ef">return</span> Response(data) 
-</code></pre></div><p>Then you can unit test such view by creating a minimal instance of the <code>HttpRequest</code>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@api_view</span>([<span style="color:#e6db74">&#39;GET&#39;</span>]) <span style="color:#a6e22e">@permission_classes</span>((AllowAny,))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>(request): 
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#39;field&#39;</span>: <span style="color:#e6db74">&#39;value&#39;</span> } 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Response(data) 
+</span></span></code></pre></div><p>Then you can unit test such view by creating a minimal instance of the <code>HttpRequest</code>
 and pass it to that view. I tried to mock to test such view with the <a href="https://docs.python.org/3/library/unittest.mock.html" target="_blank">Mock</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  library,
 by with no luck!!! If case you know how to do it with Mock, then let me know!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_index_function_based_view</span>(): 
-    _request <span style="color:#f92672">=</span> HttpRequest() 
-    _request<span style="color:#f92672">.</span>method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;GET&#39;</span> 
-    request <span style="color:#f92672">=</span> Request(_request) 
-    response <span style="color:#f92672">=</span> index(request) 
-    <span style="color:#66d9ef">assert</span> response<span style="color:#f92672">.</span>data[<span style="color:#e6db74">&#39;field&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;value&#39;</span> 
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_index_function_based_view</span>(): 
+</span></span><span style="display:flex;"><span>    _request <span style="color:#f92672">=</span> HttpRequest() 
+</span></span><span style="display:flex;"><span>    _request<span style="color:#f92672">.</span>method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;GET&#39;</span> 
+</span></span><span style="display:flex;"><span>    request <span style="color:#f92672">=</span> Request(_request) 
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> index(request) 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">assert</span> response<span style="color:#f92672">.</span>data[<span style="color:#e6db74">&#39;field&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;value&#39;</span> 
+</span></span></code></pre></div>
 
 </div>
 
@@ -575,7 +575,7 @@ by with no luck!!! If case you know how to do it with Mock, then let me know!</p
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

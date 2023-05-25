@@ -9,13 +9,13 @@
     <lastBuildDate>Tue, 20 Mar 2018 19:20:10 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/bof/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ethical Hacking - Buffer Overflow - notes</title>
-      <link>https://kowalcj0.github.io/2018/03/20/ethical-hackin-buffer-iverflow/</link>
+      <link>https://kowalcj0.github.io/2018/03/ethical-hackin-buffer-iverflow/</link>
       <pubDate>Tue, 20 Mar 2018 19:20:10 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2018/03/20/ethical-hackin-buffer-iverflow/</guid>
+      <guid>https://kowalcj0.github.io/2018/03/ethical-hackin-buffer-iverflow/</guid>
       <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Buffer Overflows&amp;rdquo; by James Murray.
 Stack pointers Types of stack pointers:
- SP → Stack Pointer  keeps track where the next element will be pushe to or poppef off of the stack   FP → Frame Pointer  points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed   BP → Base Pointer (different name for FP) IP → Instruction Pointer  points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
+SP → Stack Pointer keeps track where the next element will be pushe to or poppef off of the stack FP → Frame Pointer points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed BP → Base Pointer (different name for FP) IP → Instruction Pointer points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
     </item>
     
   </channel>

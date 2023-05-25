@@ -9,9 +9,11 @@
 <meta property='og:description' content='Install Photoprism in Truenas Jail'>
 <meta property='og:url' content='https://kowalcj0.github.io/2021/06/05/install-photoprism-in-truenas-jail/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../preview.jpg'><meta property='article:section' content='2021'><meta property='article:tag' content='truenas'><meta property='article:tag' content='photoprism'><meta property='article:tag' content='freebsd'><meta property='article:published_time' content='2021-06-05T17:18:24&#43;01:00'/><meta property='article:modified_time' content='2021-06-05T17:18:24&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../preview.jpg'><meta property='twitter:image:alt' content='SRC: https://github.com/photoprism/photoprism/blob/develop/assets/static/img/preview.jpg'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../preview.jpg'><meta property='article:section' content='2021'><meta property='article:tag' content='truenas'><meta property='article:tag' content='photoprism'><meta property='article:tag' content='freebsd'><meta property='article:published_time' content='2021-06-05T17:18:24&#43;01:00'/><meta property='article:modified_time' content='2021-06-05T17:18:24&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../preview.jpg'><meta property='twitter:image:alt' content='SRC: https://github.com/photoprism/photoprism/blob/develop/assets/static/img/preview.jpg 
 
-<meta name="generator" content="Hugo 0.90.1" />
+'>
+
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Install Photoprism in Truenas Jail • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2021/06/05/install-photoprism-in-truenas-jail/'>
@@ -429,11 +431,15 @@
 
   <div class='entry-cover'>
   <figure class='container cover-normal'>
-    <img src='../preview.jpg' alt='SRC: https://github.com/photoprism/photoprism/blob/develop/assets/static/img/preview.jpg'/>
+    <img src='../preview.jpg' alt='SRC: https://github.com/photoprism/photoprism/blob/develop/assets/static/img/preview.jpg 
+
+'/>
     
       
       <figcaption class='container'>
-        <span>SRC: <a href="https://github.com/photoprism/photoprism/blob/develop/assets/static/img/preview.jpg">https://github.com/photoprism/photoprism/blob/develop/assets/static/img/preview.jpg</a></span>
+        <span><p>SRC: <a href="https://github.com/photoprism/photoprism/blob/develop/assets/static/img/preview.jpg" target="_blank">https://github.com/photoprism/photoprism/blob/develop/assets/static/img/preview.jpg</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
+</span>
       </figcaption>
       
     
@@ -476,7 +482,7 @@ This was to match them with the account I use to manage my photos.</p>
 <h2 id="2-apply-patch-1">2. Apply patch #1 <a tabindex="0" href="#2-apply-patch-1" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>When I ran <code>make config-recursive &amp;&amp; make install</code>, I got a &ldquo;duplicate zlib symbol&rdquo; error:</p>
 <pre tabindex="0"><code class="language-log" data-lang="log">bazel-out/freebsd-opt/bin/external/com_google_protobuf/src: warning: directory does not exist.
-ERROR: /root/photoprism-freebsd-port/work/photoprism-b1856b9d45502ba1a35e1d2ae6ca12fd17223895/docker/tensorflow/tensorflow-1.15.2/tensorflow/BUILD:563:1: Linking of rule '//tensorflow:libtensorflow_framework.so.1.15.2' failed (Exit 1)
+ERROR: /root/photoprism-freebsd-port/work/photoprism-b1856b9d45502ba1a35e1d2ae6ca12fd17223895/docker/tensorflow/tensorflow-1.15.2/tensorflow/BUILD:563:1: Linking of rule &#39;//tensorflow:libtensorflow_framework.so.1.15.2&#39; failed (Exit 1)
 ld: error: duplicate symbol: adler32
 &gt;&gt;&gt; defined at adler32.c
 &gt;&gt;&gt;            adler32.pic.o:(adler32) in archive bazel-out/host/bin/external/zlib/libzlib.pic.a
@@ -487,43 +493,43 @@ ld: error: duplicate symbol: adler32
 
 to <code>~/photoprism-freebsd-port/work/.bazel/dc2e79cdf405c755f2f8c97eebbe740f/external/com_google_protobuf/BUILD</code></p>
 <p>Basically, I&rsquo;ve changed:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-make" data-lang="make">ZLIB_DEPS <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;@zlib//:zlib&#34;</span><span style="color:#f92672">]</span>
-</code></pre></div><p>to:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-make" data-lang="make">ZLIB_DEPS <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;@zlib_archive//:zlib&#34;</span><span style="color:#f92672">]</span>
-</code></pre></div><p>and</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-make" data-lang="make"><span style="color:#960050;background-color:#1e0010">cc_library(</span>
-    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;protobuf_headers&#34;</span>,
-    hdrs <span style="color:#f92672">=</span> glob<span style="color:#f92672">([</span><span style="color:#e6db74">&#34;src/**/*.h&#34;&#34;]),
-</span><span style="color:#e6db74">    includes = [&#34;</span>src/<span style="color:#e6db74">&#34;],
-</span><span style="color:#e6db74">    visibility = [&#34;</span>//visibility:public<span style="color:#e6db74">&#34;],
-</span><span style="color:#e6db74"></span><span style="color:#960050;background-color:#1e0010">)</span>
-</code></pre></div><p>to:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-make" data-lang="make"><span style="color:#960050;background-color:#1e0010">cc_library(</span>
-    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;protobuf_headers&#34;</span>,
-    hdrs <span style="color:#f92672">=</span> glob<span style="color:#f92672">([</span><span style="color:#e6db74">&#34;src/**/*.h&#34;</span>, <span style="color:#e6db74">&#34;src/**/*.inc&#34;</span><span style="color:#f92672">])</span>,
-    includes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;src/&#34;</span><span style="color:#f92672">]</span>,
-    visibility <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;//visibility:public&#34;</span><span style="color:#f92672">]</span>,
-<span style="color:#960050;background-color:#1e0010">)</span>
-</code></pre></div><h2 id="3-apply-patch-2">3. Apply patch #2 <a tabindex="0" href="#3-apply-patch-2" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span>ZLIB_DEPS <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;@zlib//:zlib&#34;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span>ZLIB_DEPS <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;@zlib_archive//:zlib&#34;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>and</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">cc_library(</span>
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;protobuf_headers&#34;</span>,
+</span></span><span style="display:flex;"><span>    hdrs <span style="color:#f92672">=</span> glob<span style="color:#f92672">([</span><span style="color:#e6db74">&#34;src/**/*.h&#34;&#34;]),
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    includes = [&#34;</span>src/<span style="color:#e6db74">&#34;],
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    visibility = [&#34;</span>//visibility:public<span style="color:#e6db74">&#34;],
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span><span style="color:#960050;background-color:#1e0010">)</span>
+</span></span></code></pre></div><p>to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">cc_library(</span>
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;protobuf_headers&#34;</span>,
+</span></span><span style="display:flex;"><span>    hdrs <span style="color:#f92672">=</span> glob<span style="color:#f92672">([</span><span style="color:#e6db74">&#34;src/**/*.h&#34;</span>, <span style="color:#e6db74">&#34;src/**/*.inc&#34;</span><span style="color:#f92672">])</span>,
+</span></span><span style="display:flex;"><span>    includes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;src/&#34;</span><span style="color:#f92672">]</span>,
+</span></span><span style="display:flex;"><span>    visibility <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;//visibility:public&#34;</span><span style="color:#f92672">]</span>,
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">)</span>
+</span></span></code></pre></div><h2 id="3-apply-patch-2">3. Apply patch #2 <a tabindex="0" href="#3-apply-patch-2" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Then, I&rsquo;ve applied a second patch described in <a href="https://github.com/tensorflow/tensorflow/issues/31196#issue-475147706" target="_blank">this tensoflow issue</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 .</p>
 <p>The <code>repo.bzl</code> file was located <code>~/photoprism-freebsd-port/work/photoprism-b1856b9d45502ba1a35e1d2ae6ca12fd17223895/docker/tensorflow/tensorflow-1.15.2/third_party/repo.bzl</code></p>
 <p>I&rsquo;ve replaced:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-make" data-lang="make"><span style="color:#a6e22e">def _apply_patch(ctx, patch_file)</span><span style="color:#f92672">:</span>
-    <span style="color:#66d9ef">if</span> _is_windows<span style="color:#f92672">(</span>ctx<span style="color:#f92672">)</span>:
-        patch_command <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;patch&#34;</span>, <span style="color:#e6db74">&#34;-p1&#34;</span>, <span style="color:#e6db74">&#34;-d&#34;</span>, ctx.path<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">)</span>, <span style="color:#e6db74">&#34;-i&#34;</span>, ctx.path<span style="color:#f92672">(</span>patch_file<span style="color:#f92672">)]</span>
-    <span style="color:#66d9ef">else</span>:
-        patch_command <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;git&#34;</span>, <span style="color:#e6db74">&#34;apply&#34;</span>, <span style="color:#e6db74">&#34;-v&#34;</span>, ctx.path<span style="color:#f92672">(</span>patch_file<span style="color:#f92672">)]</span>
-    cmd <span style="color:#f92672">=</span> _wrap_bash_cmd<span style="color:#f92672">(</span>ctx, patch_command<span style="color:#f92672">)</span>
-</code></pre></div><p>with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-make" data-lang="make"><span style="color:#a6e22e">def _apply_patch(ctx, patch_file)</span><span style="color:#f92672">:</span>
-    <span style="color:#66d9ef">if</span> not _is_windows<span style="color:#f92672">(</span>ctx<span style="color:#f92672">)</span> and not ctx.which<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;patch&#34;</span><span style="color:#f92672">)</span>:
-        fail<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;patch command is not found, please install it&#34;</span><span style="color:#f92672">)</span>
-    cmd <span style="color:#f92672">=</span> _wrap_bash_cmd<span style="color:#f92672">(</span>
-        ctx,
-        <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;patch&#34;</span>, <span style="color:#e6db74">&#34;-p1&#34;</span>, <span style="color:#e6db74">&#34;-d&#34;</span>, ctx.path<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">)</span>, <span style="color:#e6db74">&#34;-i&#34;</span>, ctx.path<span style="color:#f92672">(</span>patch_file<span style="color:#f92672">)]</span>,
-    <span style="color:#f92672">)</span>
-</code></pre></div><h2 id="success-">Success 🎉 <a tabindex="0" href="#success-" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#a6e22e">def _apply_patch(ctx, patch_file)</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> _is_windows<span style="color:#f92672">(</span>ctx<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>        patch_command <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;patch&#34;</span>, <span style="color:#e6db74">&#34;-p1&#34;</span>, <span style="color:#e6db74">&#34;-d&#34;</span>, ctx.path<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">)</span>, <span style="color:#e6db74">&#34;-i&#34;</span>, ctx.path<span style="color:#f92672">(</span>patch_file<span style="color:#f92672">)]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        patch_command <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;git&#34;</span>, <span style="color:#e6db74">&#34;apply&#34;</span>, <span style="color:#e6db74">&#34;-v&#34;</span>, ctx.path<span style="color:#f92672">(</span>patch_file<span style="color:#f92672">)]</span>
+</span></span><span style="display:flex;"><span>    cmd <span style="color:#f92672">=</span> _wrap_bash_cmd<span style="color:#f92672">(</span>ctx, patch_command<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#a6e22e">def _apply_patch(ctx, patch_file)</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> not _is_windows<span style="color:#f92672">(</span>ctx<span style="color:#f92672">)</span> and not ctx.which<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;patch&#34;</span><span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>        fail<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;patch command is not found, please install it&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    cmd <span style="color:#f92672">=</span> _wrap_bash_cmd<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>        ctx,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;patch&#34;</span>, <span style="color:#e6db74">&#34;-p1&#34;</span>, <span style="color:#e6db74">&#34;-d&#34;</span>, ctx.path<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">)</span>, <span style="color:#e6db74">&#34;-i&#34;</span>, ctx.path<span style="color:#f92672">(</span>patch_file<span style="color:#f92672">)]</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="success-">Success 🎉 <a tabindex="0" href="#success-" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Once patching was done, I re-ran <code>make install</code> and after a looooong while the build finished successfully.<br>
 I had further issues with finishing off the installation.</p>
 
@@ -643,7 +649,7 @@ I had further issues with finishing off the installation.</p>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

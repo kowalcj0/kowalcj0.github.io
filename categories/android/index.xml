@@ -13,8 +13,8 @@
       <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2021/09/25/fix-file-transfers-for-gsconnect/</guid>
-      <description>I&amp;rsquo;ve recently flashed LingeageOS 18.1 onto my phone. After rooting it, I&amp;rsquo;ve installed my fav firewall app AFWall&amp;#43;  . But since then I was having problems with sending files to my pc or other phones via (GSConnect app)[https://github.com/GSConnect/gnome-shell-extension-gsconnect]. All sent files had different size than the original file on my phone. I&amp;rsquo;ve described it in this bug report comment  .
-After a bit of reading I realised that I have to add some extra iptables rules described in GSConnect&amp;amp;rsquo;s Wiki  ,</description>
+      <description>I&amp;rsquo;ve recently flashed LingeageOS 18.1 onto my phone. After rooting it, I&amp;rsquo;ve installed my fav firewall app AFWall&amp;#43; . But since then I was having problems with sending files to my pc or other phones via (GSConnect app)[https://github.com/GSConnect/gnome-shell-extension-gsconnect]. All sent files had different size than the original file on my phone. I&amp;rsquo;ve described it in this bug report comment .
+After a bit of reading I realised that I have to add some extra iptables rules described in GSConnect&amp;amp;rsquo;s Wiki ,</description>
     </item>
     
   </channel>

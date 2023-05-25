@@ -13,7 +13,7 @@
       <pubDate>Fri, 28 Mar 2014 20:47:02 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2014/03/28/run-your-selenium-driven-tests-in-parallel-using-testng/</guid>
-      <description>Sometime ago, I came across this post: Parallel WebDriver executions using TestNG  .
+      <description>Sometime ago, I came across this post: Parallel WebDriver executions using TestNG .
 I thought it&amp;rsquo;d be good to have it in a repo to save you time setting up your own project. Basically this example project runs JUnit tests in parallel using TestNG. Tests are grouped by the browser in which they&amp;rsquo;re going to be executed (have a look at the TestNG XML Suite files in src/test/resources). As you might have guessed to drive the browsers we use Selenium WebDriver :) And of course you can run your tests locally or remotely using Selenium GRID.</description>
     </item>
     
@@ -24,8 +24,8 @@ I thought it&amp;rsquo;d be good to have it in a repo to save you time setting u
       
       <guid>https://kowalcj0.github.io/2013/07/30/monitoring-jvm-metrics-via-jmx-management-interface-in-jmeter/</guid>
       <description>What do we need:
- any java application (doesn&amp;rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent   Apache JMeter  wiith jmeter-plugins  installed  Once you have plugins installed them in the jMeter&amp;rsquo;s lib/ext folder, then:
- On the box you want to monitor, copy templates: jmxremote.password &amp;amp; jmxremote.access from $JAVA_HOME/lib/management to for example: /srv/play/ edit them according to your liking launch your JAVA application with additional parameters: java \  -jar your_application.</description>
+any java application (doesn&amp;rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent Apache JMeter wiith jmeter-plugins installed Once you have plugins installed them in the jMeter&amp;rsquo;s lib/ext folder, then:
+On the box you want to monitor, copy templates: jmxremote.password &amp;amp; jmxremote.access from $JAVA_HOME/lib/management to for example: /srv/play/ edit them according to your liking launch your JAVA application with additional parameters: java \ -jar your_application.</description>
     </item>
     
     <item>
@@ -34,9 +34,9 @@ I thought it&amp;rsquo;d be good to have it in a repo to save you time setting u
       <pubDate>Tue, 22 Jan 2013 17:17:29 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/01/22/how-to-selectively-run-stories-tagged-with-multiple-words-in-a-meta-field-with-jbehave/</guid>
-      <description>Prerequisites  a working jBehave based project  This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial  .
-To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring  , to run the modified story presented below.
-Maven  OK, let&amp;rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
+      <description>Prerequisites a working jBehave based project This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial .
+To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring , to run the modified story presented below.
+Maven OK, let&amp;rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
 Below is an example story, tagged with multiple categories and features: anExampleStoryWithMultipleWordsInAMetaKeyword.</description>
     </item>
     

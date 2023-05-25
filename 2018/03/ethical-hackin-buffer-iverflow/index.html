@@ -7,14 +7,16 @@
 
 <meta property='og:title' content='Ethical Hacking - Buffer Overflow - notes • Home'>
 <meta property='og:description' content='Notes from a video course'>
-<meta property='og:url' content='https://kowalcj0.github.io/2018/03/20/ethical-hackin-buffer-iverflow/'>
+<meta property='og:url' content='https://kowalcj0.github.io/2018/03/ethical-hackin-buffer-iverflow/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='BoF'><meta property='article:published_time' content='2018-03-20T19:20:10&#43;01:00'/><meta property='article:modified_time' content='2018-03-20T19:20:10&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/2018/03/ethical-hackin-buffer-iverflow/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='BoF'><meta property='article:published_time' content='2018-03-20T19:20:10&#43;01:00'/><meta property='article:modified_time' content='2018-03-20T19:20:10&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/2018/03/ethical-hackin-buffer-iverflow/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org 
 
-<meta name="generator" content="Hugo 0.90.1" />
+'>
+
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Ethical Hacking - Buffer Overflow - notes • Home</title>
-  <link rel='canonical' href='https://kowalcj0.github.io/2018/03/20/ethical-hackin-buffer-iverflow/'>
+  <link rel='canonical' href='https://kowalcj0.github.io/2018/03/ethical-hackin-buffer-iverflow/'>
   
   
   <link rel='icon' href='/img/favicon144.ico'>
@@ -429,11 +431,15 @@
 
   <div class='entry-cover'>
   <figure class='container cover-normal'>
-    <img src='/img/2018/004/ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org'/>
+    <img src='./ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org 
+
+'/>
     
       
       <figcaption class='container'>
-        <span>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg">wikimedia.org</a></span>
+        <span><p>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg" target="_blank">wikimedia.org</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
+</span>
       </figcaption>
       
     
@@ -582,21 +588,21 @@ monitor (sniffer, keylogger etc.)</li>
 <li>assemble &amp; link the assembly code to create machine code (compile)</li>
 <li>convert the machine code to an escaped-byte text format</li>
 </ol>
-<p>Example <code>c</code> program with a shellcode that print out &ldquo;Hello, World!&quot;:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> shellcode[] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xe9\x1e\x00\x00\x00\xb8\x04\x00\x00\x00\xbb\x01\x00\x00\x00\x59\xba\x0f\x00\x00\x00\xcd\x80\xb8\x01\x00\x00\x00\xbb\x00\x00\x00\x00\xcd\x80\xe8\xdd\xff\xff\xff\x48\x65\x6c\x6c\x6f\x2c\x20\x57\x6f\x72\x6c\x64\x21\x0d\x0a</span><span style="color:#e6db74">\x0&#34;</span>;
-
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
-{
-    <span style="color:#66d9ef">void</span> (<span style="color:#f92672">*</span>func)();
-    func <span style="color:#f92672">=</span> (<span style="color:#66d9ef">void</span> (<span style="color:#f92672">*</span>)())shellcode;
-    (<span style="color:#f92672">*</span>func)();
-}
-</code></pre></div><p>Compile the <code>C</code> program:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gcc -g -Wall -fno-stack-protector -z execstack shelltest.c -o shelltest
-</code></pre></div><p>when executed, the <code>shelltest</code> will print <code>Hello, World!</code> :)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ./shelltest 
-Hello, World!
-</code></pre></div><h1 id="the-heap">The Heap <a tabindex="0" href="#the-heap" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
+<p>Example <code>c</code> program with a shellcode that print out &ldquo;Hello, World!&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> shellcode[] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xe9\x1e\x00\x00\x00\xb8\x04\x00\x00\x00\xbb\x01\x00\x00\x00\x59\xba\x0f\x00\x00\x00\xcd\x80\xb8\x01\x00\x00\x00\xbb\x00\x00\x00\x00\xcd\x80\xe8\xdd\xff\xff\xff\x48\x65\x6c\x6c\x6f\x2c\x20\x57\x6f\x72\x6c\x64\x21\x0d\x0a</span><span style="color:#e6db74">\x0&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> (<span style="color:#f92672">*</span>func)();
+</span></span><span style="display:flex;"><span>    func <span style="color:#f92672">=</span> (<span style="color:#66d9ef">void</span> (<span style="color:#f92672">*</span>)())shellcode;
+</span></span><span style="display:flex;"><span>    (<span style="color:#f92672">*</span>func)();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Compile the <code>C</code> program:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gcc -g -Wall -fno-stack-protector -z execstack shelltest.c -o shelltest
+</span></span></code></pre></div><p>when executed, the <code>shelltest</code> will print <code>Hello, World!</code> :)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ./shelltest 
+</span></span><span style="display:flex;"><span>Hello, World!
+</span></span></code></pre></div><h1 id="the-heap">The Heap <a tabindex="0" href="#the-heap" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <ul>
 <li>Heap stores program data</li>
 <li>The stack is fixed in size, but the heap can grop and shrink as needed</li>
@@ -684,13 +690,13 @@ code analysis.</li>
 </li>
 </ul>
 <p>Example heap overflow <code>c</code> code:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">mai</span> (in argc, <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>argv[])
-{
-    <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>buffer <span style="color:#f92672">=</span> (<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span>)malloc(<span style="color:#ae81ff">16</span>);
-    strcpy(buffer, argv[<span style="color:#ae81ff">1</span>]);  <span style="color:#75715e">// strcpy copies the string without checking how
-</span><span style="color:#75715e"></span>    free(buffer);             <span style="color:#75715e">// long the string is or even if it exists
-</span><span style="color:#75715e"></span>}
-</code></pre></div><h1 id="heap-spray">Heap Spray <a tabindex="0" href="#heap-spray" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">mai</span> (in argc, <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>argv[])
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>buffer <span style="color:#f92672">=</span> (<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span>)<span style="color:#a6e22e">malloc</span>(<span style="color:#ae81ff">16</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">strcpy</span>(buffer, argv[<span style="color:#ae81ff">1</span>]);  <span style="color:#75715e">// strcpy copies the string without checking how
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">free</span>(buffer);             <span style="color:#75715e">// long the string is or even if it exists
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h1 id="heap-spray">Heap Spray <a tabindex="0" href="#heap-spray" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p>A technique is used to make it easier to locate &amp; execute exploit code written
 (overflowed into memory) to a heap buffer.<br>
 <code>Heap spray</code> fill the process heap with identical blocks of NOP sleds and
@@ -714,20 +720,20 @@ its name</li>
 <li>and we don&rsquo;t have to hardcode the function name when the software is written</li>
 </ul>
 <p>Example of a <code>Function poitner</code> (aka function callback)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">function_callback</span>(<span style="color:#66d9ef">int</span> param1)
-{
-    <span style="color:#66d9ef">return</span> param1;
-}
-
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
-{
-    <span style="color:#66d9ef">int</span> (<span style="color:#f92672">*</span>callbackfunc)(<span style="color:#66d9ef">int</span>);
-    callbackfunc <span style="color:#f92672">=</span> (<span style="color:#66d9ef">int</span> (<span style="color:#f92672">*</span>)())function_callback; <span style="color:#75715e">// name of this var doesn&#39;t
-</span><span style="color:#75715e"></span>                                                 <span style="color:#75715e">// have to be same as the 
-</span><span style="color:#75715e"></span>                                                 <span style="color:#75715e">// called function
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> result <span style="color:#f92672">=</span> (<span style="color:#f92672">*</span>callbackfunc)(<span style="color:#ae81ff">55</span>);
-}
-</code></pre></div><p>The example above depicts that a function can be called using a memory pointer
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">function_callback</span>(<span style="color:#66d9ef">int</span> param1)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> param1;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> (<span style="color:#f92672">*</span>callbackfunc)(<span style="color:#66d9ef">int</span>);
+</span></span><span style="display:flex;"><span>    callbackfunc <span style="color:#f92672">=</span> (<span style="color:#66d9ef">int</span> (<span style="color:#f92672">*</span>)())function_callback; <span style="color:#75715e">// name of this var doesn&#39;t
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                                                 <span style="color:#75715e">// have to be same as the 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                                                 <span style="color:#75715e">// called function
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> result <span style="color:#f92672">=</span> (<span style="color:#f92672">*</span>callbackfunc)(<span style="color:#ae81ff">55</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The example above depicts that a function can be called using a memory pointer
 rather than the name of the function itself.</p>
 <h1 id="other-exploitable-items">Other Exploitable items <a tabindex="0" href="#other-exploitable-items" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p>Apart from Heap or Stack other items, like the ones listed below, can be
@@ -769,13 +775,13 @@ present in the <code>SEH</code> block in the function stack frame.</p>
 <h2 id="exploiting-seh">Exploiting SEH <a tabindex="0" href="#exploiting-seh" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p><strong>CodeRed&rsquo;s <code>SEH</code> Exploit</strong>:
 was a BoF exploit in Microsoft Index Server used by IIS written in 2001.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">GET/default.ida?NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN%u9090%u6858%ucb
-d3%u7801%u9090%u6858%ucbd3%u7801%u9090%u6858%ucbd3%u7801%u9090%u
-9090%u8190%u00c3%u0003%u8b00%u531b%u53ff%u0078%u0000%u00=a HTTP/1.0
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>GET/default.ida?NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+</span></span><span style="display:flex;"><span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+</span></span><span style="display:flex;"><span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+</span></span><span style="display:flex;"><span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN%u9090%u6858%ucb
+</span></span><span style="display:flex;"><span>d3%u7801%u9090%u6858%ucbd3%u7801%u9090%u6858%ucbd3%u7801%u9090%u
+</span></span><span style="display:flex;"><span>9090%u8190%u00c3%u0003%u8b00%u531b%u53ff%u0078%u0000%u00=a HTTP/1.0
+</span></span></code></pre></div><ul>
 <li>Long string of <code>Ns</code> is used to position the exploit code within the stack to
 overwrite the instruction pointer and call a function in the system
 library.</li>
@@ -871,11 +877,11 @@ harm caused by an active threat</li>
 <li><code>NIDS</code> can also be placed out-of-band, where the firewall sends a copy of
 the network traffic to the <code>NIDS</code> for the inspection and reporting.</li>
 <li><code>NIDS</code> should never interfere with the flow of the network traffic</li>
-<li><a href="www.snort.org">SNORT</a>
+<li><a href="https://www.snort.org" target="_blank">SNORT</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  is an <code>NIDS</code> that incorporates signatures into
 the rules it uses to detect and react to attack traffic</li>
 <li>If a <code>NIDS</code> detects a potential attack then it notifies <code>SIEM</code> [Security
-Information Event Management] system, like <a href="www.splunk.com">splunk&amp;gt;</a>
+Information Event Management] system, like <a href="https://www.splunk.com" target="_blank">splunk&amp;gt;</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 </li>
 </ul>
 </li>
@@ -896,7 +902,7 @@ Information Event Management] system, like <a href="www.splunk.com">splunk&amp;g
 <li>malware running in memory</li>
 </ul>
 </li>
-<li><a href="www.clamav.net">ClamAV</a>
+<li><a href="https://www.clamav.net" target="_blank">ClamAV</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  → is a freee AV for variours OSes, that can detect
 potential BoF tools and possible attacks.</li>
 </ul>
@@ -909,7 +915,7 @@ potential BoF tools and possible attacks.</li>
 <li>system file changes monitoring</li>
 <li>periperal device monitoring</li>
 <li>application montoring</li>
-<li><a href="ossec.github.io">OSSEC</a>
+<li><a href="https://www.ossec.net" target="_blank">OSSEC</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  is a good open-source HIDS tool for many OSes</li>
 </ul>
 <p><strong>System Event logs:</strong></p>
@@ -965,18 +971,18 @@ enoug to perform it</li>
 </li>
 </ul>
 <h2 id="set-dep-in-windows-7810-cli">Set DEP in Windows 7/8/10 CLI <a tabindex="0" href="#set-dep-in-windows-7810-cli" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">C:<span style="color:#ae81ff">\&gt;</span> bcdedit.exe /set <span style="color:#f92672">{</span>current<span style="color:#f92672">}</span> nx OptIn  <span style="color:#75715e"># default value</span>
-C:<span style="color:#ae81ff">\&gt;</span> bcdedit.exe /set <span style="color:#f92672">{</span>current<span style="color:#f92672">}</span> nx OptOut <span style="color:#75715e"># enable DEP for whole OS, all</span>
-                                          <span style="color:#75715e"># processes (including kernel &amp;</span>
-                                          <span style="color:#75715e"># drivers)</span>
-C:<span style="color:#ae81ff">\&gt;</span> bcdedit.exe /set <span style="color:#f92672">{</span>current<span style="color:#f92672">}</span> nx AlwaysOn  <span style="color:#75715e"># same as OptOut but applies to</span>
-                                             <span style="color:#75715e"># all running processes and all </span>
-                                             <span style="color:#75715e"># attempts to disable it on any </span>
-                                             <span style="color:#75715e"># executable will be ignored</span>
-C:<span style="color:#ae81ff">\&gt;</span> bcdedit.exe /set <span style="color:#f92672">{</span>current<span style="color:#f92672">}</span> nx AlwaysOff <span style="color:#75715e"># disable DEP and ignore attempts</span>
-                                             <span style="color:#75715e"># to enable it for any executable</span>
-C:<span style="color:#ae81ff">\&gt;</span> bcdedit.exe /enum                    <span style="color:#75715e"># check current DEP setting</span>
-</code></pre></div><p><strong>NOTES:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>C:<span style="color:#ae81ff">\&gt;</span> bcdedit.exe /set <span style="color:#f92672">{</span>current<span style="color:#f92672">}</span> nx OptIn  <span style="color:#75715e"># default value</span>
+</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\&gt;</span> bcdedit.exe /set <span style="color:#f92672">{</span>current<span style="color:#f92672">}</span> nx OptOut <span style="color:#75715e"># enable DEP for whole OS, all</span>
+</span></span><span style="display:flex;"><span>                                          <span style="color:#75715e"># processes (including kernel &amp;</span>
+</span></span><span style="display:flex;"><span>                                          <span style="color:#75715e"># drivers)</span>
+</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\&gt;</span> bcdedit.exe /set <span style="color:#f92672">{</span>current<span style="color:#f92672">}</span> nx AlwaysOn  <span style="color:#75715e"># same as OptOut but applies to</span>
+</span></span><span style="display:flex;"><span>                                             <span style="color:#75715e"># all running processes and all </span>
+</span></span><span style="display:flex;"><span>                                             <span style="color:#75715e"># attempts to disable it on any </span>
+</span></span><span style="display:flex;"><span>                                             <span style="color:#75715e"># executable will be ignored</span>
+</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\&gt;</span> bcdedit.exe /set <span style="color:#f92672">{</span>current<span style="color:#f92672">}</span> nx AlwaysOff <span style="color:#75715e"># disable DEP and ignore attempts</span>
+</span></span><span style="display:flex;"><span>                                             <span style="color:#75715e"># to enable it for any executable</span>
+</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\&gt;</span> bcdedit.exe /enum                    <span style="color:#75715e"># check current DEP setting</span>
+</span></span></code></pre></div><p><strong>NOTES:</strong></p>
 <ul>
 <li>any changes made via <code>bcdedit</code> will take effect after next reboot.</li>
 <li><code>MS</code> provides a GUI app called <code>EMET</code> (Enhanced Mitigation Experience Toolkit)
@@ -984,17 +990,17 @@ to manage DEP settings</li>
 </ul>
 <h2 id="set-dep-in-linux">Set DEP in Linux <a tabindex="0" href="#set-dep-in-linux" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>To check is DEP is enabled or disable run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># dmesg | grep NX</span>
-</code></pre></div><p>To disable software DEP emulation you&rsquo;ll need to set <code>noexec</code> &amp; <code>noexec32</code>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># dmesg | grep NX</span>
+</span></span></code></pre></div><p>To disable software DEP emulation you&rsquo;ll need to set <code>noexec</code> &amp; <code>noexec32</code>
 flags in Grub&rsquo;s <code>GRUB_CMDLINE_LINUX_DEFAULT</code>, e.g.:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># vim /etc/default/grub</span>
-
-GRUB_CMDLINE_LINUX_DEFAULT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;quiet noexec noexec32&#34;</span>
-</code></pre></div><p>To set DEP per executable file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># execstack -s myprogram  # set the DEP bit</span>
-<span style="color:#75715e"># execstack -1 myprogram  # check the DEP bit value</span>
-<span style="color:#75715e"># execstack -c myprogram  # turn off DEP</span>
-</code></pre></div><h1 id="aslr---address-space-layout-randomization">ASLR - Address Space Layout Randomization <a tabindex="0" href="#aslr---address-space-layout-randomization" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># vim /etc/default/grub</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GRUB_CMDLINE_LINUX_DEFAULT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;quiet noexec noexec32&#34;</span>
+</span></span></code></pre></div><p>To set DEP per executable file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># execstack -s myprogram  # set the DEP bit</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># execstack -1 myprogram  # check the DEP bit value</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># execstack -c myprogram  # turn off DEP</span>
+</span></span></code></pre></div><h1 id="aslr---address-space-layout-randomization">ASLR - Address Space Layout Randomization <a tabindex="0" href="#aslr---address-space-layout-randomization" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p><code>ASLR</code> technique randomizes the position of the stack, heap and system
 resources in process memory. It makes for a BoF exploits to both find system
 resources and process memory and execute the exploit code it injects by
@@ -1008,22 +1014,22 @@ location.<br>
 <p><code>ALSR</code> can be easily enabled with <code>EMET</code> on Windows Vista, 7, 8, 10 &amp; Server
 2008 and later.</p>
 <p>On <code>Linux</code> you can check it like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># sysctl -a | grep &#34;kernel.randomize_va_space&#34;</span>
-kernel.randomize_va_space <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-</code></pre></div><p>To disable it, you&rsquo;ll need to change that value to <code>0</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># sysctl -w kernel.randomize_va_space=0</span>
-</code></pre></div><p>This change is only in memory, and will go back to <code>2</code> after the reboot.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># sysctl -a | grep &#34;kernel.randomize_va_space&#34;</span>
+</span></span><span style="display:flex;"><span>kernel.randomize_va_space <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><p>To disable it, you&rsquo;ll need to change that value to <code>0</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># sysctl -w kernel.randomize_va_space=0</span>
+</span></span></code></pre></div><p>This change is only in memory, and will go back to <code>2</code> after the reboot.</p>
 <p>To disable it permanently you&rsquo;ll need to edit <code>/etc/sysctl.conf</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># vim /etc/sysctl.conf </span>
-
-kernel.randomize_va_space <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-
-<span style="color:#75715e"># then reload that file with</span>
-<span style="color:#75715e"># sysctl -p</span>
-
-<span style="color:#75715e"># to disable ALSR for only that shell instance</span>
-<span style="color:#75715e"># setarch `uname -m` -R /bin/bash</span>
-</code></pre></div><h2 id="defeating-aslr">Defeating ASLR <a tabindex="0" href="#defeating-aslr" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># vim /etc/sysctl.conf </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>kernel.randomize_va_space <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># then reload that file with</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sysctl -p</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># to disable ALSR for only that shell instance</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># setarch `uname -m` -R /bin/bash</span>
+</span></span></code></pre></div><h2 id="defeating-aslr">Defeating ASLR <a tabindex="0" href="#defeating-aslr" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <ul>
 <li>ASLR renadomization occurs only at system startup</li>
 <li>identical randomized location applied to all process</li>
@@ -1211,7 +1217,7 @@ stack</li>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

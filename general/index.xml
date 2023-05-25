@@ -15,7 +15,7 @@
       <guid>https://kowalcj0.github.io/general/books/</guid>
       <description>Book reading stats In May 2020, I&amp;rsquo;ve decided to keep track of my reading habits.
 Below are simple reading stats.
- Completed per year:   2020: 4  2022: 1  Total number of completed books: 5  In English  The School of Life  by: Alain de Botton  The School of Life   meta     published: 2019  genres: philosophy, psychology, self-help Completed on 2022-10-25 Completed on 2022-10-25   completed: 2022-10-25  links:     Comments: Ciekawie otwiera oczy na powszechność problemów z którymi wszyscy się borykami.</description>
+Completed per year: 2020: 4 2022: 1 Total number of completed books: 5 In English The School of Life by: Alain de Botton The School of Life meta published: 2019 genres: philosophy, psychology, self-help Completed on 2022-10-25 Completed on 2022-10-25 completed: 2022-10-25 links: Comments: Ciekawie otwiera oczy na powszechność problemów z którymi wszyscy się borykami.</description>
     </item>
     
     <item>
@@ -24,8 +24,8 @@ Below are simple reading stats.
       <pubDate>Sat, 02 May 2020 16:56:52 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/general/articles/</guid>
-      <description>A while ago I&amp;rsquo;ve discovered Wallabag  . It&amp;rsquo;s a self hostable application for saving web pages. It extracts the article&amp;rsquo;s content and can automatically tag it with matching label. Basically it&amp;rsquo;s an open-source competitor of Pocket  , Instapaper  or Evernote  .
-Fetching a list of all entries via Wallabag&amp;amp;rsquo;s API  is very easy. And with a help of jq  you can transform it into a simple JSON file which you can use to populate a Hugo Data Templates  .</description>
+      <description>A while ago I&amp;rsquo;ve discovered Wallabag . It&amp;rsquo;s a self hostable application for saving web pages. It extracts the article&amp;rsquo;s content and can automatically tag it with matching label. Basically it&amp;rsquo;s an open-source competitor of Pocket , Instapaper or Evernote .
+Fetching a list of all entries via Wallabag&amp;amp;rsquo;s API is very easy. And with a help of jq you can transform it into a simple JSON file which you can use to populate a Hugo Data Templates .</description>
     </item>
     
     <item>
@@ -34,10 +34,10 @@ Fetching a list of all entries via Wallabag&amp;amp;rsquo;s API  is very easy. A
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/general/movies/</guid>
-      <description>Below you&amp;rsquo;ll find some movies that I particularly like. Some of the them are available on Amazon Prime Video  or mubi.com  .
+      <description>Below you&amp;rsquo;ll find some movies that I particularly like. Some of the them are available on Amazon Prime Video or mubi.com .
 AFAIK most of the titles below are not available on Netflix.
 Great movie lists If you looking for something interesting to watch have a look at those lists:
- iMDB: Top 250   iMDB: Top 100 Greatest Movies of All Time (The Ultimate List)   iMDB: Top 50 spanish movies   MUBI: Top 1000   MUBI: 30 must see Japanese film classics   MUBI: Top 50 Japanese films   MUBI: Top Indian films    Movie log  Munich: The Edge of War, by Christian Schwochow, 2022   drama, history United Kingdom         My rating:  User score: 70% User reviews: N/A/10 - Critic metascore: 53/100 Audience score: 77% - Tomatometer: 87%     Black Crab, by Adam Berg (orig.</description>
+iMDB: Top 250 iMDB: Top 100 Greatest Movies of All Time (The Ultimate List) iMDB: Top 50 spanish movies MUBI: Top 1000 MUBI: 30 must see Japanese film classics MUBI: Top 50 Japanese films MUBI: Top Indian films Movie log TÁR, by Todd Field, 2022 drama, music United States of America My rating: User score: 72% Shoplifters, by Hirokazu Kore-eda (orig.</description>
     </item>
     
   </channel>

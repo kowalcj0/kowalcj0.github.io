@@ -4,18 +4,18 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='This was tested with vim 7.4.(1-398) (Update: 2013-12-03 apparently you can&rsquo;t build vim with support for both python 2 and python 3, so I had to update this tutorial a bit :) ) (Update: 2014-08-09 Added three commands: &ldquo;hg pull&rdquo;, &ldquo;hg update&rdquo; and &ldquo;hg status&rdquo; to pull the latest version of the repo)
 First of all install all the dependencies required when compiling Vim with additional options:
-sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-dev \  ruby \  ruby-dev \  libx11-dev \  libxt-dev \  libgtk2.'>
+sudo apt-get install \ mercurial \ python \ python-dev \ python3 \ python3-dev \ ruby \ ruby-dev \ libx11-dev \ libxt-dev \ libgtk2.'>
 <meta name='theme-color' content='#ffcd00'>
 
 <meta property='og:title' content='How to compile and install latest version of Vim with support for: X11 clipboard, ruby, python 2 or python 3 • Home'>
 <meta property='og:description' content='This was tested with vim 7.4.(1-398) (Update: 2013-12-03 apparently you can&rsquo;t build vim with support for both python 2 and python 3, so I had to update this tutorial a bit :) ) (Update: 2014-08-09 Added three commands: &ldquo;hg pull&rdquo;, &ldquo;hg update&rdquo; and &ldquo;hg status&rdquo; to pull the latest version of the repo)
 First of all install all the dependencies required when compiling Vim with additional options:
-sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-dev \  ruby \  ruby-dev \  libx11-dev \  libxt-dev \  libgtk2.'>
+sudo apt-get install \ mercurial \ python \ python-dev \ python3 \ python3-dev \ ruby \ ruby-dev \ libx11-dev \ libxt-dev \ libgtk2.'>
 <meta property='og:url' content='https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/'>
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2013'><meta property='article:tag' content='linux'><meta property='article:tag' content='vim'><meta property='article:published_time' content='2013-11-19T14:19:12Z'/><meta property='article:modified_time' content='2013-11-19T14:19:12Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.90.1" />
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>How to compile and install latest version of Vim with support for: X11 clipboard, ruby, python 2 or python 3 • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/'>
@@ -437,151 +437,151 @@ sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-
 (Update: 2013-12-03 apparently you can&rsquo;t build vim with support for both python 2 and python 3, so I had to update this tutorial a bit :) )
 (Update: 2014-08-09 Added three commands: &ldquo;hg pull&rdquo;, &ldquo;hg update&rdquo; and &ldquo;hg status&rdquo; to pull the latest version of the repo)</p>
 <p>First of all install all the dependencies required when compiling Vim with additional options:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    mercurial <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    python <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    python-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    python3 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    python3-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    ruby <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    ruby-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libx11-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libxt-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libgtk2.0-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libncurses5 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    ncurses-dev
-</code></pre></div><p>Then clone official vim repo, configure it with support for: X11 clipboard, ruby, python 2 or 3 and few other cool options :)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hg clone https://vim.googlecode.com/hg/ vim
-<span style="color:#75715e">## if you already had this repo cloned, then update it: </span>
-hg pull 
-hg update
-<span style="color:#75715e">## and then check if you definitely have the latest version: </span>
-hg summary
-parent: 6121:913d16b4904c
- Added tag v7-4-398 <span style="color:#66d9ef">for</span> changeset f62b2e76dd80 
-branch: default 
-commit: <span style="color:#f92672">(</span>clean<span style="color:#f92672">)</span> 
-update: <span style="color:#ae81ff">52</span> new changesets <span style="color:#f92672">(</span>update<span style="color:#f92672">)</span> 
-cd vim/src
-<span style="color:#75715e">##</span>
-<span style="color:#75715e">## this will configure it with python 2 support</span>
-<span style="color:#75715e">## </span>
-./configure <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-perlinterp <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-pythoninterp <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-rubyinterp <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-cscope <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-gui<span style="color:#f92672">=</span>auto <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-gtk2-check <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    -enable-gnome-check <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-features<span style="color:#f92672">=</span>huge <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-multibyte <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-x <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-compiledby<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Senor QA &lt;senor@qa&gt;&#34;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-python-config-dir<span style="color:#f92672">=</span>/usr/lib/python2.7/config-x86_64-linux-gnu
-<span style="color:#75715e">## </span>
-<span style="color:#75715e">## and this with python 3 support</span>
-<span style="color:#75715e">## </span>
-./configure <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-perlinterp <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-python3interp <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-rubyinterp <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-cscope <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-gui<span style="color:#f92672">=</span>auto <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-gtk2-check <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-gnome-check <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-features<span style="color:#f92672">=</span>huge <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --enable-multibyte <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-x <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-compiledby<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Senor QA &lt;senor@qa&gt;&#34;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-python3-config-dir<span style="color:#f92672">=</span>/usr/lib/python3.3/config-3.3m-x86_64-linux-gnu
-</code></pre></div><p>Next step is to compile our setup:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">make
-</code></pre></div><p>Then if you want you can check if all the features were compiled properly:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">VIM - Vi IMproved 7.4 <span style="color:#f92672">(</span><span style="color:#ae81ff">2013</span> Aug 10, compiled Aug <span style="color:#ae81ff">9</span> <span style="color:#ae81ff">2014</span> 15:37:52<span style="color:#f92672">)</span> 
-Included patches: 1-398 
-Compiled by Me &lt;senor@qa&gt; 
-Huge version with GTK2 GUI. 
-Features included <span style="color:#f92672">(</span>+<span style="color:#f92672">)</span> or not <span style="color:#f92672">(</span>-<span style="color:#f92672">)</span>:
-+acl             +farsi          +mouse_netterm    +syntax
-+arabic          +file_in_path   +mouse_sgr        +tag_binary
-+autocmd         +find_in_path   -mouse_sysmouse   +tag_old_static
-+balloon_eval    +float          +mouse_urxvt      -tag_any_white
-+browse          +folding        +mouse_xterm      -tcl
-++builtin_terms  -footer         +multi_byte       +terminfo
-+byte_offset     +fork<span style="color:#f92672">()</span>         +multi_lang       +termresponse
-+cindent         +gettext        -mzscheme         +textobjects
-+clientserver    -hangul_input   +netbeans_intg    +title
-+clipboard       +iconv          +path_extra       +toolbar
-+cmdline_compl   +insert_expand  -perl             +user_commands
-+cmdline_hist    +jumplist       +persistent_undo  +vertsplit
-+cmdline_info    +keymap         +postscript       +virtualedit
-+comments        +langmap        +printer          +visual
-+conceal         +libcall        +profile          +visualextra
-+cryptv          +linebreak      +python           +viminfo
-+cscope          +lispindent     -python3          +vreplace
-+cursorbind      +listcmds       +quickfix         +wildignore
-+cursorshape     +localmap       +reltime          +wildmenu
-+dialog_con_gui  -lua            +rightleft        +windows
-+diff            +menu           +ruby             +writebackup
-+digraphs        +mksession      +scrollbind       +X11
-+dnd             +modify_fname   +signs            -xfontset
--ebcdic          +mouse          +smartindent      +xim
-+emacs_tags      +mouseshape     -sniff            +xsmp_interact
-+eval            +mouse_dec      +startuptime      +xterm_clipboard
-+ex_extra        -mouse_gpm      +statusline       -xterm_save
-+extra_search    -mouse_jsbterm  -sun_workshop     -xpm
-   system vimrc file: <span style="color:#e6db74">&#34;</span>$VIM<span style="color:#e6db74">/vimrc&#34;</span>
-     user vimrc file: <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.vimrc&#34;</span>
- 2nd user vimrc file: <span style="color:#e6db74">&#34;~/.vim/vimrc&#34;</span>
-      user exrc file: <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.exrc&#34;</span>
-  system gvimrc file: <span style="color:#e6db74">&#34;</span>$VIM<span style="color:#e6db74">/gvimrc&#34;</span>
-    user gvimrc file: <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.gvimrc&#34;</span>
-2nd user gvimrc file: <span style="color:#e6db74">&#34;~/.vim/gvimrc&#34;</span>
-    system menu file: <span style="color:#e6db74">&#34;</span>$VIMRUNTIME<span style="color:#e6db74">/menu.vim&#34;</span>
-  fall-back <span style="color:#66d9ef">for</span> $VIM: <span style="color:#e6db74">&#34;/usr/local/share/vim&#34;</span>
-Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H -DFEAT_GUI_GTK -pthread -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -g -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-Linking: gcc -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -L/build/buildd/ruby1.9.1-1.9.3.484/debian/lib -rdynamic -Wl,-export-dynamic -L/usr/local/lib -Wl,--as-needed -o vim -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lSM -lICE -lXt -lX11 -lXdmcp -lSM -lICE -lm -ltinfo -lnsl -ldl -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions -lruby-1.9.1 -lpthread -lrt -ldl -lcrypt -lm -L/usr/lib
-</code></pre></div><p>Just to make sure it works as it should, launch newly compiled ./vim, and type: <code>:echo has(&quot;python&quot;)</code><br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    mercurial <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    python <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    python-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    python3 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    python3-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    ruby <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    ruby-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libx11-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libxt-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libgtk2.0-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libncurses5 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    ncurses-dev
+</span></span></code></pre></div><p>Then clone official vim repo, configure it with support for: X11 clipboard, ruby, python 2 or 3 and few other cool options :)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hg clone https://vim.googlecode.com/hg/ vim
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## if you already had this repo cloned, then update it: </span>
+</span></span><span style="display:flex;"><span>hg pull 
+</span></span><span style="display:flex;"><span>hg update
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## and then check if you definitely have the latest version: </span>
+</span></span><span style="display:flex;"><span>hg summary
+</span></span><span style="display:flex;"><span>parent: 6121:913d16b4904c
+</span></span><span style="display:flex;"><span> Added tag v7-4-398 <span style="color:#66d9ef">for</span> changeset f62b2e76dd80 
+</span></span><span style="display:flex;"><span>branch: default 
+</span></span><span style="display:flex;"><span>commit: <span style="color:#f92672">(</span>clean<span style="color:#f92672">)</span> 
+</span></span><span style="display:flex;"><span>update: <span style="color:#ae81ff">52</span> new changesets <span style="color:#f92672">(</span>update<span style="color:#f92672">)</span> 
+</span></span><span style="display:flex;"><span>cd vim/src
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## this will configure it with python 2 support</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## </span>
+</span></span><span style="display:flex;"><span>./configure <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-perlinterp <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-pythoninterp <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-rubyinterp <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-cscope <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-gui<span style="color:#f92672">=</span>auto <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-gtk2-check <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -enable-gnome-check <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-features<span style="color:#f92672">=</span>huge <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-multibyte <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-x <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-compiledby<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Senor QA &lt;senor@qa&gt;&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-python-config-dir<span style="color:#f92672">=</span>/usr/lib/python2.7/config-x86_64-linux-gnu
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## and this with python 3 support</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## </span>
+</span></span><span style="display:flex;"><span>./configure <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-perlinterp <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-python3interp <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-rubyinterp <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-cscope <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-gui<span style="color:#f92672">=</span>auto <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-gtk2-check <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-gnome-check <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-features<span style="color:#f92672">=</span>huge <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --enable-multibyte <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-x <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-compiledby<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Senor QA &lt;senor@qa&gt;&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-python3-config-dir<span style="color:#f92672">=</span>/usr/lib/python3.3/config-3.3m-x86_64-linux-gnu
+</span></span></code></pre></div><p>Next step is to compile our setup:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make
+</span></span></code></pre></div><p>Then if you want you can check if all the features were compiled properly:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>VIM - Vi IMproved 7.4 <span style="color:#f92672">(</span><span style="color:#ae81ff">2013</span> Aug 10, compiled Aug <span style="color:#ae81ff">9</span> <span style="color:#ae81ff">2014</span> 15:37:52<span style="color:#f92672">)</span> 
+</span></span><span style="display:flex;"><span>Included patches: 1-398 
+</span></span><span style="display:flex;"><span>Compiled by Me &lt;senor@qa&gt; 
+</span></span><span style="display:flex;"><span>Huge version with GTK2 GUI. 
+</span></span><span style="display:flex;"><span>Features included <span style="color:#f92672">(</span>+<span style="color:#f92672">)</span> or not <span style="color:#f92672">(</span>-<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>+acl             +farsi          +mouse_netterm    +syntax
+</span></span><span style="display:flex;"><span>+arabic          +file_in_path   +mouse_sgr        +tag_binary
+</span></span><span style="display:flex;"><span>+autocmd         +find_in_path   -mouse_sysmouse   +tag_old_static
+</span></span><span style="display:flex;"><span>+balloon_eval    +float          +mouse_urxvt      -tag_any_white
+</span></span><span style="display:flex;"><span>+browse          +folding        +mouse_xterm      -tcl
+</span></span><span style="display:flex;"><span>++builtin_terms  -footer         +multi_byte       +terminfo
+</span></span><span style="display:flex;"><span>+byte_offset     +fork<span style="color:#f92672">()</span>         +multi_lang       +termresponse
+</span></span><span style="display:flex;"><span>+cindent         +gettext        -mzscheme         +textobjects
+</span></span><span style="display:flex;"><span>+clientserver    -hangul_input   +netbeans_intg    +title
+</span></span><span style="display:flex;"><span>+clipboard       +iconv          +path_extra       +toolbar
+</span></span><span style="display:flex;"><span>+cmdline_compl   +insert_expand  -perl             +user_commands
+</span></span><span style="display:flex;"><span>+cmdline_hist    +jumplist       +persistent_undo  +vertsplit
+</span></span><span style="display:flex;"><span>+cmdline_info    +keymap         +postscript       +virtualedit
+</span></span><span style="display:flex;"><span>+comments        +langmap        +printer          +visual
+</span></span><span style="display:flex;"><span>+conceal         +libcall        +profile          +visualextra
+</span></span><span style="display:flex;"><span>+cryptv          +linebreak      +python           +viminfo
+</span></span><span style="display:flex;"><span>+cscope          +lispindent     -python3          +vreplace
+</span></span><span style="display:flex;"><span>+cursorbind      +listcmds       +quickfix         +wildignore
+</span></span><span style="display:flex;"><span>+cursorshape     +localmap       +reltime          +wildmenu
+</span></span><span style="display:flex;"><span>+dialog_con_gui  -lua            +rightleft        +windows
+</span></span><span style="display:flex;"><span>+diff            +menu           +ruby             +writebackup
+</span></span><span style="display:flex;"><span>+digraphs        +mksession      +scrollbind       +X11
+</span></span><span style="display:flex;"><span>+dnd             +modify_fname   +signs            -xfontset
+</span></span><span style="display:flex;"><span>-ebcdic          +mouse          +smartindent      +xim
+</span></span><span style="display:flex;"><span>+emacs_tags      +mouseshape     -sniff            +xsmp_interact
+</span></span><span style="display:flex;"><span>+eval            +mouse_dec      +startuptime      +xterm_clipboard
+</span></span><span style="display:flex;"><span>+ex_extra        -mouse_gpm      +statusline       -xterm_save
+</span></span><span style="display:flex;"><span>+extra_search    -mouse_jsbterm  -sun_workshop     -xpm
+</span></span><span style="display:flex;"><span>   system vimrc file: <span style="color:#e6db74">&#34;</span>$VIM<span style="color:#e6db74">/vimrc&#34;</span>
+</span></span><span style="display:flex;"><span>     user vimrc file: <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.vimrc&#34;</span>
+</span></span><span style="display:flex;"><span> 2nd user vimrc file: <span style="color:#e6db74">&#34;~/.vim/vimrc&#34;</span>
+</span></span><span style="display:flex;"><span>      user exrc file: <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.exrc&#34;</span>
+</span></span><span style="display:flex;"><span>  system gvimrc file: <span style="color:#e6db74">&#34;</span>$VIM<span style="color:#e6db74">/gvimrc&#34;</span>
+</span></span><span style="display:flex;"><span>    user gvimrc file: <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.gvimrc&#34;</span>
+</span></span><span style="display:flex;"><span>2nd user gvimrc file: <span style="color:#e6db74">&#34;~/.vim/gvimrc&#34;</span>
+</span></span><span style="display:flex;"><span>    system menu file: <span style="color:#e6db74">&#34;</span>$VIMRUNTIME<span style="color:#e6db74">/menu.vim&#34;</span>
+</span></span><span style="display:flex;"><span>  fall-back <span style="color:#66d9ef">for</span> $VIM: <span style="color:#e6db74">&#34;/usr/local/share/vim&#34;</span>
+</span></span><span style="display:flex;"><span>Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H -DFEAT_GUI_GTK -pthread -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -g -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>Linking: gcc -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -L/build/buildd/ruby1.9.1-1.9.3.484/debian/lib -rdynamic -Wl,-export-dynamic -L/usr/local/lib -Wl,--as-needed -o vim -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lSM -lICE -lXt -lX11 -lXdmcp -lSM -lICE -lm -ltinfo -lnsl -ldl -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions -lruby-1.9.1 -lpthread -lrt -ldl -lcrypt -lm -L/usr/lib
+</span></span></code></pre></div><p>Just to make sure it works as it should, launch newly compiled ./vim, and type: <code>:echo has(&quot;python&quot;)</code><br>
 It should return <code>1</code> if it was compiled properly :)
 If you&rsquo;re happy with this then install it :)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo make install
-</code></pre></div><p>Then locate the vim command</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">which vim vim is /usr/local/bin/vim vim is /usr/bin/vim
-</code></pre></div><p>As you can see, there are two installed on my system.<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo make install
+</span></span></code></pre></div><p>Then locate the vim command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>which vim vim is /usr/local/bin/vim vim is /usr/bin/vim
+</span></span></code></pre></div><p>As you can see, there are two installed on my system.<br>
 To make newly installed version &ldquo;<code>/usr/local/bin/vim</code>&rdquo; the default one, we&rsquo;ll use &ldquo;<code>update-alternatives</code>&rdquo;.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo update-alternatives <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --install <span style="color:#e6db74">&#34;/usr/bin/vim&#34;</span> <span style="color:#e6db74">&#34;vim&#34;</span> <span style="color:#e6db74">&#34;/usr/local/bin/vim&#34;</span> <span style="color:#ae81ff">1</span> 
-sudo update-alternatives <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --install <span style="color:#e6db74">&#34;/usr/bin/vi&#34;</span> <span style="color:#e6db74">&#34;vi&#34;</span> <span style="color:#e6db74">&#34;/usr/local/bin/vim&#34;</span> <span style="color:#ae81ff">1</span>
-</code></pre></div><p>Then use &ldquo;update-alternatives&rdquo; to switch between installed versions :)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo update-alternatives --config vim
-There are <span style="color:#ae81ff">2</span> choices <span style="color:#66d9ef">for</span> the alternative vim <span style="color:#f92672">(</span>providing /usr/bin/vim<span style="color:#f92672">)</span>. 
-
-Selection Path Priority Status
-------------------------------------------------------------
- * <span style="color:#ae81ff">0</span> /usr/bin/vim.basic <span style="color:#ae81ff">30</span> auto mode
-   <span style="color:#ae81ff">1</span> /usr/bin/vim.basic <span style="color:#ae81ff">30</span> manual mode
-   <span style="color:#ae81ff">2</span> /usr/local/bin/vim <span style="color:#ae81ff">1</span> manual mode
-Press enter to keep the current choice<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>, or type selection number: <span style="color:#ae81ff">2</span> 
-</code></pre></div><p>Now let&rsquo;s change symbolic link for vi:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo update-alternatives --config vi
-There are <span style="color:#ae81ff">3</span> choices <span style="color:#66d9ef">for</span> the alternative vi <span style="color:#f92672">(</span>providing /usr/bin/vi<span style="color:#f92672">)</span>.
-
-Selection Path Priority Status
-------------------------------------------------------------
- * <span style="color:#ae81ff">0</span> /usr/bin/vim.basic <span style="color:#ae81ff">30</span> auto mode
-   <span style="color:#ae81ff">1</span> /usr/bin/vim.basic <span style="color:#ae81ff">30</span> manual mode
-   <span style="color:#ae81ff">2</span> /usr/bin/vim.tiny <span style="color:#ae81ff">10</span> manual mode
-   <span style="color:#ae81ff">3</span> /usr/local/bin/vim <span style="color:#ae81ff">1</span> manual mode
-Press enter to keep the current choice<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>, or type selection number: <span style="color:#ae81ff">3</span>
-update-alternatives: using /usr/local/bin/vim to provide /usr/bin/vi <span style="color:#f92672">(</span>vi<span style="color:#f92672">)</span> in manual mode
-</code></pre></div><p>Last thing to do is to check where the /usr/bin/vim points at:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ll /usr/bin/vim lrwxrwxrwx <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">21</span> Jun <span style="color:#ae81ff">7</span> 11:29 /usr/bin/vim -&gt; /etc/alternatives/vim*
-</code></pre></div><p>Then check where the <code>/etc/alternatives/vim</code> points at.<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo update-alternatives <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --install <span style="color:#e6db74">&#34;/usr/bin/vim&#34;</span> <span style="color:#e6db74">&#34;vim&#34;</span> <span style="color:#e6db74">&#34;/usr/local/bin/vim&#34;</span> <span style="color:#ae81ff">1</span> 
+</span></span><span style="display:flex;"><span>sudo update-alternatives <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --install <span style="color:#e6db74">&#34;/usr/bin/vi&#34;</span> <span style="color:#e6db74">&#34;vi&#34;</span> <span style="color:#e6db74">&#34;/usr/local/bin/vim&#34;</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>Then use &ldquo;update-alternatives&rdquo; to switch between installed versions :)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo update-alternatives --config vim
+</span></span><span style="display:flex;"><span>There are <span style="color:#ae81ff">2</span> choices <span style="color:#66d9ef">for</span> the alternative vim <span style="color:#f92672">(</span>providing /usr/bin/vim<span style="color:#f92672">)</span>. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Selection Path Priority Status
+</span></span><span style="display:flex;"><span>------------------------------------------------------------
+</span></span><span style="display:flex;"><span> * <span style="color:#ae81ff">0</span> /usr/bin/vim.basic <span style="color:#ae81ff">30</span> auto mode
+</span></span><span style="display:flex;"><span>   <span style="color:#ae81ff">1</span> /usr/bin/vim.basic <span style="color:#ae81ff">30</span> manual mode
+</span></span><span style="display:flex;"><span>   <span style="color:#ae81ff">2</span> /usr/local/bin/vim <span style="color:#ae81ff">1</span> manual mode
+</span></span><span style="display:flex;"><span>Press enter to keep the current choice<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>, or type selection number: <span style="color:#ae81ff">2</span> 
+</span></span></code></pre></div><p>Now let&rsquo;s change symbolic link for vi:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo update-alternatives --config vi
+</span></span><span style="display:flex;"><span>There are <span style="color:#ae81ff">3</span> choices <span style="color:#66d9ef">for</span> the alternative vi <span style="color:#f92672">(</span>providing /usr/bin/vi<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Selection Path Priority Status
+</span></span><span style="display:flex;"><span>------------------------------------------------------------
+</span></span><span style="display:flex;"><span> * <span style="color:#ae81ff">0</span> /usr/bin/vim.basic <span style="color:#ae81ff">30</span> auto mode
+</span></span><span style="display:flex;"><span>   <span style="color:#ae81ff">1</span> /usr/bin/vim.basic <span style="color:#ae81ff">30</span> manual mode
+</span></span><span style="display:flex;"><span>   <span style="color:#ae81ff">2</span> /usr/bin/vim.tiny <span style="color:#ae81ff">10</span> manual mode
+</span></span><span style="display:flex;"><span>   <span style="color:#ae81ff">3</span> /usr/local/bin/vim <span style="color:#ae81ff">1</span> manual mode
+</span></span><span style="display:flex;"><span>Press enter to keep the current choice<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>, or type selection number: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>update-alternatives: using /usr/local/bin/vim to provide /usr/bin/vi <span style="color:#f92672">(</span>vi<span style="color:#f92672">)</span> in manual mode
+</span></span></code></pre></div><p>Last thing to do is to check where the /usr/bin/vim points at:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ll /usr/bin/vim lrwxrwxrwx <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">21</span> Jun <span style="color:#ae81ff">7</span> 11:29 /usr/bin/vim -&gt; /etc/alternatives/vim*
+</span></span></code></pre></div><p>Then check where the <code>/etc/alternatives/vim</code> points at.<br>
 If everything went fine, it should be pointing at: <code>/usr/local/bin/vim</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ll /etc/alternatives/vim
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ll /etc/alternatives/vim
+</span></span></code></pre></div>
 
 </div>
 
@@ -698,7 +698,7 @@ If everything went fine, it should be pointing at: <code>/usr/local/bin/vim</cod
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

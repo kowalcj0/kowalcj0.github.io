@@ -13,7 +13,7 @@
       <pubDate>Thu, 28 Nov 2013 11:50:40 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</guid>
-      <description>To make your extra mouse buttons work on Linux Mint (I&amp;rsquo;ve tested it with v15) follow all the steps listed in this tutorial  except the step 4 :)
+      <description>To make your extra mouse buttons work on Linux Mint (I&amp;rsquo;ve tested it with v15) follow all the steps listed in this tutorial except the step 4 :)
 Once you get to step 4, use this key mappings to make the &amp;lsquo;zoom&amp;rsquo; and &amp;lsquo;switch between windows&amp;rsquo; buttons work as on windows.
 vi $HOME/.xbindkeysrc ... # show all windows: Scale &amp;#34;xte &amp;#39;keydown Control_L&amp;#39; &amp;#39;keydown Alt_L&amp;#39; &amp;#39;key Down&amp;#39; &amp;#39;keyup Control_L&amp;#39; &amp;#39;keyup Alt_L&amp;#39;&amp;#34; b:10 + release # Zooming with Logitech Performance MX mouse # thx to: https://www.</description>
     </item>

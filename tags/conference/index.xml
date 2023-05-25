@@ -9,11 +9,11 @@
     <lastBuildDate>Tue, 15 Oct 2019 20:41:50 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/conference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security BSides Warszawa 2019</title>
-      <link>https://kowalcj0.github.io/2019/10/15/security-bsides-warszawa-2019/</link>
+      <link>https://kowalcj0.github.io/2019/10/security-bsides-warszawa-2019/</link>
       <pubDate>Tue, 15 Oct 2019 20:41:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2019/10/15/security-bsides-warszawa-2019/</guid>
-      <description>Linki do różnych narzędzi, artykułów, blogów itp o których dowiedziałem się podczas konferencji Security BSides Warsaw 2019  Nagrania  dzień pierwszy https://www.youtube.com/watch?v=BoR119sLN6s   dzień drugi https://www.youtube.com/watch?v=bTU-22DtYBc    Slajdy  http://frankowicz.me/sbs2019  Trzy lata fuzzingu&amp;hellip; I czy coś to zmieniło? https://aptmasterclass.com/bsides19/  Nietrywialna komunikacja C2 - jakie to proste! https://www.slideshare.net/wojdwo/budowanie-i-hakowanie-nowoczesnych-aplikacji-ios  Budowanie i hakowanie nowoczesnych aplikacji iOS  Narzędzia  AFL&amp;#43;&amp;#43;  American Fuzzy Lop plus plus bandit  A tool designed to find common security issues in Python code.</description>
+      <guid>https://kowalcj0.github.io/2019/10/security-bsides-warszawa-2019/</guid>
+      <description>Linki do różnych narzędzi, artykułów, blogów itp o których dowiedziałem się podczas konferencji Security BSides Warsaw 2019 Nagrania dzień pierwszy https://www.youtube.com/watch?v=BoR119sLN6s dzień drugi https://www.youtube.com/watch?v=bTU-22DtYBc Slajdy http://frankowicz.me/sbs2019 Trzy lata fuzzingu&amp;hellip; I czy coś to zmieniło? https://aptmasterclass.com/bsides19/ Nietrywialna komunikacja C2 - jakie to proste! https://www.slideshare.net/wojdwo/budowanie-i-hakowanie-nowoczesnych-aplikacji-ios Budowanie i hakowanie nowoczesnych aplikacji iOS Narzędzia AFL&amp;#43;&amp;#43; American Fuzzy Lop plus plus bandit A tool designed to find common security issues in Python code. A.K.A.: security linter for Python CRITs Collaborative Research Into Threats CyberChef The Cyber Swiss Army Knife DynamoRIO a runtime code manipulation system that supports code transformations on any part of a program, while it executes Google dorks Google Hacking Database by exploit-db mimikatz A little tool to play with Windows security Powershell Kung Fu scripts by APT Master Class socat A more complex variant of netcat OppSec buckets by Gray Hat Warfare Open Amazon s3 Buckets and their contents CertStream Real-time certificate transparency log update stream DNSdumpster.</description>
     </item>
     
   </channel>

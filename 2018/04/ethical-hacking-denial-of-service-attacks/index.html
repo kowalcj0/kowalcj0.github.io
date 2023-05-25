@@ -7,14 +7,16 @@
 
 <meta property='og:title' content='Ethical Hacking - Denial of Service - notes • Home'>
 <meta property='og:description' content='Notes from a video course'>
-<meta property='og:url' content='https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/'>
+<meta property='og:url' content='https://kowalcj0.github.io/2018/04/ethical-hacking-denial-of-service-attacks/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='DoS'><meta property='article:published_time' content='2018-04-23T19:19:15&#43;01:00'/><meta property='article:modified_time' content='2018-04-23T19:19:15&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/img/2018/004/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/2018/04/ethical-hacking-denial-of-service-attacks/ethical-hacking-wikimedia.jpg'><meta property='article:section' content='2018'><meta property='article:tag' content='notes'><meta property='article:tag' content='security'><meta property='article:tag' content='ethical hacking'><meta property='article:tag' content='pentesting'><meta property='article:tag' content='DoS'><meta property='article:published_time' content='2018-04-23T19:19:15&#43;01:00'/><meta property='article:modified_time' content='2018-04-23T19:19:15&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/2018/04/ethical-hacking-denial-of-service-attacks/ethical-hacking-wikimedia.jpg'><meta property='twitter:image:alt' content='Source: wikimedia.org 
 
-<meta name="generator" content="Hugo 0.90.1" />
+'>
+
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Ethical Hacking - Denial of Service - notes • Home</title>
-  <link rel='canonical' href='https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/'>
+  <link rel='canonical' href='https://kowalcj0.github.io/2018/04/ethical-hacking-denial-of-service-attacks/'>
   
   
   <link rel='icon' href='/img/favicon144.ico'>
@@ -429,11 +431,15 @@
 
   <div class='entry-cover'>
   <figure class='container cover-wide'>
-    <img src='/img/2018/004/ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org'/>
+    <img src='./ethical-hacking-wikimedia.jpg' alt='Source: wikimedia.org 
+
+'/>
     
       
       <figcaption class='container'>
-        <span>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg">wikimedia.org</a></span>
+        <span><p>Source: <a href="https://commons.wikimedia.org/wiki/File:Ethical-hacking.jpg" target="_blank">wikimedia.org</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
+</span>
       </figcaption>
       
     
@@ -468,30 +474,30 @@ dummy accounts, password reset page etc)</li>
 <h1 id="tcp-attacks">TCP attacks <a tabindex="0" href="#tcp-attacks" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <p>These are the layer 4 (OSI) attacks</p>
 <p>TCP handshake:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">             SYNchronize
-    ----------------------------→
-
-      SYNchronize-ACKnowlegement
-SRC ←---------------------------- TRGT
-
-            ACKnowledge
-    ----------------------------→
-</code></pre></div><h2 id="syn-flood-attack">SYN flood attack <a tabindex="0" href="#syn-flood-attack" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">             SYNchronize
-    ----------------------------→
-
-      SYNchronize-ACKnowlegement
-SRC ←---------------------------- TRGT
-
-    SRC does not respond with ACK
-</code></pre></div><h2 id="syn-flood-attack-with-spoofed-source-ip-address">SYN flood attack with spoofed source IP address <a tabindex="0" href="#syn-flood-attack-with-spoofed-source-ip-address" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    SYNchronize (spoofed src IP address)
-SRC ----------------------------→
-
-      SYNchronize-ACKnowlegement
-3rd ←---------------------------- TRGT
-party
-</code></pre></div><h1 id="udp-and-icmp-attacks">UDP and ICMP attacks <a tabindex="0" href="#udp-and-icmp-attacks" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>             SYNchronize
+</span></span><span style="display:flex;"><span>    ----------------------------→
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      SYNchronize-ACKnowlegement
+</span></span><span style="display:flex;"><span>SRC ←---------------------------- TRGT
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            ACKnowledge
+</span></span><span style="display:flex;"><span>    ----------------------------→
+</span></span></code></pre></div><h2 id="syn-flood-attack">SYN flood attack <a tabindex="0" href="#syn-flood-attack" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>             SYNchronize
+</span></span><span style="display:flex;"><span>    ----------------------------→
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      SYNchronize-ACKnowlegement
+</span></span><span style="display:flex;"><span>SRC ←---------------------------- TRGT
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    SRC does not respond with ACK
+</span></span></code></pre></div><h2 id="syn-flood-attack-with-spoofed-source-ip-address">SYN flood attack with spoofed source IP address <a tabindex="0" href="#syn-flood-attack-with-spoofed-source-ip-address" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>    SYNchronize (spoofed src IP address)
+</span></span><span style="display:flex;"><span>SRC ----------------------------→
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      SYNchronize-ACKnowlegement
+</span></span><span style="display:flex;"><span>3rd ←---------------------------- TRGT
+</span></span><span style="display:flex;"><span>party
+</span></span></code></pre></div><h1 id="udp-and-icmp-attacks">UDP and ICMP attacks <a tabindex="0" href="#udp-and-icmp-attacks" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <ul>
 <li><code>UDP</code> (User Datagram Protocol)
 <ul>
@@ -516,12 +522,11 @@ overlow</li>
 <li>attacker sends a smal request for e.g. all DNS records for particular zone
 which generates a large response</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">           Small spoofed DNS request
-Attacker ----------------------------→ DNS Server
-                                             Large amplified response
-                                          ----------------------------→ Target
-
-</code></pre></div><h1 id="other-forms-of-amplification-attack">Other forms of amplification attack <a tabindex="0" href="#other-forms-of-amplification-attack" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>           Small spoofed DNS request
+</span></span><span style="display:flex;"><span>Attacker ----------------------------→ DNS Server
+</span></span><span style="display:flex;"><span>                                             Large amplified response
+</span></span><span style="display:flex;"><span>                                          ----------------------------→ Target
+</span></span></code></pre></div><h1 id="other-forms-of-amplification-attack">Other forms of amplification attack <a tabindex="0" href="#other-forms-of-amplification-attack" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <ul>
 <li><code>SNMP</code> (Simple Network Management Protocol)
 <ul>
@@ -569,15 +574,15 @@ network and send requests to external target.</li>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">          Uncompleted HTTP GET request
-          ----------------------------→
-          Uncompleted HTTP GET request
-          ----------------------------→
-Attacker  Uncompleted HTTP GET request    Target
-          ----------------------------→
-          Uncompleted HTTP GET request
-          ----------------------------→
-</code></pre></div><h1 id="permanent-dos-and-phlashing">Permanent DoS and Phlashing <a tabindex="0" href="#permanent-dos-and-phlashing" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>          Uncompleted HTTP GET request
+</span></span><span style="display:flex;"><span>          ----------------------------→
+</span></span><span style="display:flex;"><span>          Uncompleted HTTP GET request
+</span></span><span style="display:flex;"><span>          ----------------------------→
+</span></span><span style="display:flex;"><span>Attacker  Uncompleted HTTP GET request    Target
+</span></span><span style="display:flex;"><span>          ----------------------------→
+</span></span><span style="display:flex;"><span>          Uncompleted HTTP GET request
+</span></span><span style="display:flex;"><span>          ----------------------------→
+</span></span></code></pre></div><h1 id="permanent-dos-and-phlashing">Permanent DoS and Phlashing <a tabindex="0" href="#permanent-dos-and-phlashing" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <ul>
 <li><code>PDoS</code> attack renders a device unusable, usually by replacing firmware
 (flashing)</li>
@@ -587,7 +592,7 @@ Attacker  Uncompleted HTTP GET request    Target
 <p><strong>Interesting attacks:</strong></p>
 <ul>
 <li>GitHub&rsquo;s Man on the Side Attack</li>
-<li>Incapsula Client&rsquo;s DDoS attack by botnet called &ldquo;<code>Cutwail</code>&quot;/&quot;<code>PushDo</code>&rdquo;</li>
+<li>Incapsula Client&rsquo;s DDoS attack by botnet called &ldquo;<code>Cutwail</code>&rdquo;/&quot;<code>PushDo</code>&quot;</li>
 </ul>
 <h1 id="tools">Tools <a tabindex="0" href="#tools" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h1>
 <ul>
@@ -782,7 +787,7 @@ unavailable and remaining modules work fine.</li>
  Previous</span>
         <span class='screen-reader-text'>Previous post: </span>Play videoclip for currently playing song in mpv</a>
     </div><div class='next-entry sep-before'>
-      <a href='/2018/04/28/ethical-hacking-mobile-devices-and-platforms/'>
+      <a href='/2018/04/ethical-hacking-mobile-devices-and-platforms/'>
         <span class='screen-reader-text'>Next post: </span>Ethical Hacking - Mobile Devices and Platforms - notes<span aria-hidden='true'>Next <svg
   class="icon"
   xmlns="http://www.w3.org/2000/svg"
@@ -846,7 +851,7 @@ unavailable and remaining modules work fine.</li>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

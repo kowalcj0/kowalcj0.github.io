@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../digikam_oxygen.svg'><meta property='article:section' content='2021'><meta property='article:tag' content='freebsd'><meta property='article:tag' content='trunas'><meta property='article:tag' content='jail'><meta property='article:tag' content='digikam'><meta property='article:published_time' content='2021-06-09T21:52:01&#43;01:00'/><meta property='article:modified_time' content='2021-06-09T21:52:01&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../digikam_oxygen.svg'>
 
-<meta name="generator" content="Hugo 0.90.1" />
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Install Digikam in Truenas Jail • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2021/06/09/install-digikam-in-truenas-jail/'>
@@ -461,24 +461,24 @@
 I&rsquo;ll also add a port mapping for ssh from jail&rsquo;s tcp port <code>22</code> to host&rsquo;s <code>22222</code>.</p>
 <h2 id="2---get-ports">2 - Get ports <a tabindex="0" href="#2---get-ports" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Connect to the newly created jail so we can fetch and extract ports:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">iocage console digikam
-portsnap fetch
-portsnap extract
-</code></pre></div><h2 id="3---install-dependencies">3 - Install dependencies <a tabindex="0" href="#3---install-dependencies" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>iocage console digikam
+</span></span><span style="display:flex;"><span>portsnap fetch
+</span></span><span style="display:flex;"><span>portsnap extract
+</span></span></code></pre></div><h2 id="3---install-dependencies">3 - Install dependencies <a tabindex="0" href="#3---install-dependencies" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>At this point, it might be worth to install <code>xauth</code> which will be required to start
 <code>digikam</code> via ssh with X11 Forwarding enabled and <code>vim</code> to edit few config files.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pkg install xauth vim
-</code></pre></div><p>Now, the meaty part.<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pkg install xauth vim
+</span></span></code></pre></div><p>Now, the meaty part.<br>
 You can follow the official <a href="https://www.freshports.org/graphics/digikam/" target="_blank">freshports installation instructions for digikam</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd /usr/ports/graphics/digikam/ <span style="color:#f92672">&amp;&amp;</span> make install clean
-</code></pre></div><p>But this process will take ages as you will be prompted multiple times for build options for
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /usr/ports/graphics/digikam/ <span style="color:#f92672">&amp;&amp;</span> make install clean
+</span></span></code></pre></div><p>But this process will take ages as you will be prompted multiple times for build options for
 all digikam&rsquo;s dependencies and later on it will take ages to compile all of them.</p>
 <p>To save yourself that trouble you can generate a list of digikam&rsquo;s dependencies and
 install them with <code>pkg</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd /usr/ports/graphics/digikam/
-pkg install <span style="color:#e6db74">`</span>make all-depends-list | cut -d / -f 4,5<span style="color:#e6db74">`</span>
-</code></pre></div><p>If you&rsquo;ll get an error saying that following packages couldn&rsquo;t be found:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /usr/ports/graphics/digikam/
+</span></span><span style="display:flex;"><span>pkg install <span style="color:#e6db74">`</span>make all-depends-list | cut -d / -f 4,5<span style="color:#e6db74">`</span>
+</span></span></code></pre></div><p>If you&rsquo;ll get an error saying that following packages couldn&rsquo;t be found:</p>
 <ul>
 <li>math/suitesparse-umfpack</li>
 <li>math/suitesparse-amd</li>
@@ -493,67 +493,67 @@ pkg install <span style="color:#e6db74">`</span>make all-depends-list | cut -d /
 <li>math/Imath</li>
 </ul>
 <p>Save the list of all (700+) dependencies in a sorted file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">make all-depends-list | cut -d / -f 4,5 | sort &gt; reqs
-</code></pre></div><p>and remove missing ones from <code>reqs</code> file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make all-depends-list | cut -d / -f 4,5 | sort &gt; reqs
+</span></span></code></pre></div><p>and remove missing ones from <code>reqs</code> file</p>
 <p>Finally, install the dependencies with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pkg install <span style="color:#e6db74">`</span>cat reqs<span style="color:#e6db74">`</span>
-</code></pre></div><h2 id="4---build-and-install-digikam">4 - build and install digikam <a tabindex="0" href="#4---build-and-install-digikam" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pkg install <span style="color:#e6db74">`</span>cat reqs<span style="color:#e6db74">`</span>
+</span></span></code></pre></div><h2 id="4---build-and-install-digikam">4 - build and install digikam <a tabindex="0" href="#4---build-and-install-digikam" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>We can finally build and install <code>digikam</code> with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">make install clean
-</code></pre></div><h2 id="5---add-digikam-user">5 - Add digikam user <a tabindex="0" href="#5---add-digikam-user" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make install clean
+</span></span></code></pre></div><h2 id="5---add-digikam-user">5 - Add digikam user <a tabindex="0" href="#5---add-digikam-user" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Create new <code>digikam</code> user with <code>adduser</code>.</p>
 <p>Remember to set <code>GID</code> to same value as the account you normally use to manage your photos.
 In my case it&rsquo;s <code>1001</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># adduser</span>
-Username: digikam
-Full name: digikam
-Uid <span style="color:#f92672">(</span>Leave empty <span style="color:#66d9ef">for</span> default<span style="color:#f92672">)</span>: <span style="color:#ae81ff">1001</span>
-Login group <span style="color:#f92672">[</span>digikam<span style="color:#f92672">]</span>:
-Login group is digikam. Invite digikam into other groups? <span style="color:#f92672">[]</span>:
-Login class <span style="color:#f92672">[</span>default<span style="color:#f92672">]</span>:
-Shell <span style="color:#f92672">(</span>sh csh tcsh bash rbash git-shell nologin<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>sh<span style="color:#f92672">]</span>: bash
-Home directory <span style="color:#f92672">[</span>/home/digikam<span style="color:#f92672">]</span>:
-Home directory permissions <span style="color:#f92672">(</span>Leave empty <span style="color:#66d9ef">for</span> default<span style="color:#f92672">)</span>:
-Use password-based authentication? <span style="color:#f92672">[</span>yes<span style="color:#f92672">]</span>:
-Use an empty password? <span style="color:#f92672">(</span>yes/no<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>no<span style="color:#f92672">]</span>:
-Use a random password? <span style="color:#f92672">(</span>yes/no<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>no<span style="color:#f92672">]</span>:
-Enter password:
-Enter password again:
-Lock out the account after creation? <span style="color:#f92672">[</span>no<span style="color:#f92672">]</span>:
-Username   : digikam
-Password   : *****
-Full Name  : digikam
-Uid        : <span style="color:#ae81ff">1001</span>
-Class      :
-Groups     : digikam
-Home       : /home/digikam
-Home Mode  :
-Shell      : /usr/local/bin/bash
-Locked     : no
-OK? <span style="color:#f92672">(</span>yes/no<span style="color:#f92672">)</span>: yes
-adduser: INFO: Successfully added <span style="color:#f92672">(</span>digikam<span style="color:#f92672">)</span> to the user database.
-Add another user? <span style="color:#f92672">(</span>yes/no<span style="color:#f92672">)</span>: no
-Goodbye!
-</code></pre></div><p>You can now create a <code>Pictures</code> directory as root:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mkdir /home/digikam/Pictures
-chown digigam:digikam /home/digikam/Pictures
-</code></pre></div><p>or do it as <code>digikam</code> user:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">su - digikam
-mkdir ~/Pictures
-</code></pre></div><h2 id="6---enable-and-configure-ssh">6 - Enable and configure ssh <a tabindex="0" href="#6---enable-and-configure-ssh" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># adduser</span>
+</span></span><span style="display:flex;"><span>Username: digikam
+</span></span><span style="display:flex;"><span>Full name: digikam
+</span></span><span style="display:flex;"><span>Uid <span style="color:#f92672">(</span>Leave empty <span style="color:#66d9ef">for</span> default<span style="color:#f92672">)</span>: <span style="color:#ae81ff">1001</span>
+</span></span><span style="display:flex;"><span>Login group <span style="color:#f92672">[</span>digikam<span style="color:#f92672">]</span>:
+</span></span><span style="display:flex;"><span>Login group is digikam. Invite digikam into other groups? <span style="color:#f92672">[]</span>:
+</span></span><span style="display:flex;"><span>Login class <span style="color:#f92672">[</span>default<span style="color:#f92672">]</span>:
+</span></span><span style="display:flex;"><span>Shell <span style="color:#f92672">(</span>sh csh tcsh bash rbash git-shell nologin<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>sh<span style="color:#f92672">]</span>: bash
+</span></span><span style="display:flex;"><span>Home directory <span style="color:#f92672">[</span>/home/digikam<span style="color:#f92672">]</span>:
+</span></span><span style="display:flex;"><span>Home directory permissions <span style="color:#f92672">(</span>Leave empty <span style="color:#66d9ef">for</span> default<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>Use password-based authentication? <span style="color:#f92672">[</span>yes<span style="color:#f92672">]</span>:
+</span></span><span style="display:flex;"><span>Use an empty password? <span style="color:#f92672">(</span>yes/no<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>no<span style="color:#f92672">]</span>:
+</span></span><span style="display:flex;"><span>Use a random password? <span style="color:#f92672">(</span>yes/no<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>no<span style="color:#f92672">]</span>:
+</span></span><span style="display:flex;"><span>Enter password:
+</span></span><span style="display:flex;"><span>Enter password again:
+</span></span><span style="display:flex;"><span>Lock out the account after creation? <span style="color:#f92672">[</span>no<span style="color:#f92672">]</span>:
+</span></span><span style="display:flex;"><span>Username   : digikam
+</span></span><span style="display:flex;"><span>Password   : *****
+</span></span><span style="display:flex;"><span>Full Name  : digikam
+</span></span><span style="display:flex;"><span>Uid        : <span style="color:#ae81ff">1001</span>
+</span></span><span style="display:flex;"><span>Class      :
+</span></span><span style="display:flex;"><span>Groups     : digikam
+</span></span><span style="display:flex;"><span>Home       : /home/digikam
+</span></span><span style="display:flex;"><span>Home Mode  :
+</span></span><span style="display:flex;"><span>Shell      : /usr/local/bin/bash
+</span></span><span style="display:flex;"><span>Locked     : no
+</span></span><span style="display:flex;"><span>OK? <span style="color:#f92672">(</span>yes/no<span style="color:#f92672">)</span>: yes
+</span></span><span style="display:flex;"><span>adduser: INFO: Successfully added <span style="color:#f92672">(</span>digikam<span style="color:#f92672">)</span> to the user database.
+</span></span><span style="display:flex;"><span>Add another user? <span style="color:#f92672">(</span>yes/no<span style="color:#f92672">)</span>: no
+</span></span><span style="display:flex;"><span>Goodbye!
+</span></span></code></pre></div><p>You can now create a <code>Pictures</code> directory as root:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir /home/digikam/Pictures
+</span></span><span style="display:flex;"><span>chown digigam:digikam /home/digikam/Pictures
+</span></span></code></pre></div><p>or do it as <code>digikam</code> user:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>su - digikam
+</span></span><span style="display:flex;"><span>mkdir ~/Pictures
+</span></span></code></pre></div><h2 id="6---enable-and-configure-ssh">6 - Enable and configure ssh <a tabindex="0" href="#6---enable-and-configure-ssh" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Let&rsquo;s start with editing <code>ssh</code> daemon configuration <code>/etc/ssh/sshd_config</code>.</p>
 <p>Here&rsquo;s an example config that enables <code>X11 Forwarding</code> and password-less login:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">AcceptEnv LANG LC_*
-AllowUsers digikam
-AuthorizedKeysFile      .ssh/authorized_keys
-ChallengeResponseAuthentication no
-PermitRootLogin no
-Port <span style="color:#ae81ff">22</span>
-PrintMotd yes
-Subsystem       sftp    /usr/libexec/sftp-server
-UsePAM yes
-X11Forwarding yes
-</code></pre></div><p>We can now enable <code>ssh</code> by adding <code>sshd_enable=&quot;YES&quot;</code> to <code>/etc/rc.conf</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>AcceptEnv LANG LC_*
+</span></span><span style="display:flex;"><span>AllowUsers digikam
+</span></span><span style="display:flex;"><span>AuthorizedKeysFile      .ssh/authorized_keys
+</span></span><span style="display:flex;"><span>ChallengeResponseAuthentication no
+</span></span><span style="display:flex;"><span>PermitRootLogin no
+</span></span><span style="display:flex;"><span>Port <span style="color:#ae81ff">22</span>
+</span></span><span style="display:flex;"><span>PrintMotd yes
+</span></span><span style="display:flex;"><span>Subsystem       sftp    /usr/libexec/sftp-server
+</span></span><span style="display:flex;"><span>UsePAM yes
+</span></span><span style="display:flex;"><span>X11Forwarding yes
+</span></span></code></pre></div><p>We can now enable <code>ssh</code> by adding <code>sshd_enable=&quot;YES&quot;</code> to <code>/etc/rc.conf</code></p>
 <p>PS. if you don&rsquo;t like IPv6 like me, turn it off: <code>ipv6_activate_all_interfaces=&quot;NO&quot;</code></p>
 <p>Once done, switch to <code>digikam</code> user with <code>su - digikam</code> and add you public key to <code>~/.ssh/authorized_keys</code>.</p>
 <p>Finally, exit and stop the jail so you can add a mount point via WEB GUI from your pictures
@@ -691,7 +691,7 @@ Terminal=false
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

@@ -13,70 +13,72 @@
       <pubDate>Sun, 03 May 2020 21:46:49 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2020/05/03/decrypt-signal-message-db/</guid>
-      <description>All but the last step are based on this answer on unix.stackexchange: https://unix.stackexchange.com/questions/505008/signal-desktop-how-to-export-messages  Locate db.sqlite &amp;amp; db key Find Signal DB one of these locations:
- ~/.config/Signal/sql/db.sqlite ~/.var/app/org.signal.Signal/config/Signal/sql/db.sqlite  The decryption key is in config.json which is located in one thes location:
- ~/.config/Signal/config.json ~/.var/app/org.signal.Signal/config/Signal/config.json  Compile sqlcipher As of writing, you&amp;rsquo;ll need sqlcipher v3.30 or newer to decrypt Signal&amp;rsquo;s message DB.
-Get it from https://github.com/sqlcipher/sqlcipher  Then compile it with dynamic linking:</description>
+      <description>All but the last step are based on this answer on unix.stackexchange: https://unix.stackexchange.com/questions/505008/signal-desktop-how-to-export-messages Locate db.sqlite &amp;amp; db key Find Signal DB one of these locations:
+~/.config/Signal/sql/db.sqlite ~/.var/app/org.signal.Signal/config/Signal/sql/db.sqlite The decryption key is in config.json which is located in one thes location:
+~/.config/Signal/config.json ~/.var/app/org.signal.Signal/config/Signal/config.json Compile sqlcipher As of writing, you&amp;rsquo;ll need sqlcipher v3.30 or newer to decrypt Signal&amp;rsquo;s message DB.
+Get it from https://github.com/sqlcipher/sqlcipher Then compile it with dynamic linking:
+./configure \ --enable-tempstore=yes \ CFLAGS=&amp;#34;-DSQLITE_HAS_CODEC&amp;#34; \ LDFLAGS=&amp;#34;-lcrypto&amp;#34; make Decrypt db.</description>
     </item>
     
     <item>
       <title>Security BSides Warszawa 2019</title>
-      <link>https://kowalcj0.github.io/2019/10/15/security-bsides-warszawa-2019/</link>
+      <link>https://kowalcj0.github.io/2019/10/security-bsides-warszawa-2019/</link>
       <pubDate>Tue, 15 Oct 2019 20:41:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2019/10/15/security-bsides-warszawa-2019/</guid>
-      <description>Linki do różnych narzędzi, artykułów, blogów itp o których dowiedziałem się podczas konferencji Security BSides Warsaw 2019  Nagrania  dzień pierwszy https://www.youtube.com/watch?v=BoR119sLN6s   dzień drugi https://www.youtube.com/watch?v=bTU-22DtYBc    Slajdy  http://frankowicz.me/sbs2019  Trzy lata fuzzingu&amp;hellip; I czy coś to zmieniło? https://aptmasterclass.com/bsides19/  Nietrywialna komunikacja C2 - jakie to proste! https://www.slideshare.net/wojdwo/budowanie-i-hakowanie-nowoczesnych-aplikacji-ios  Budowanie i hakowanie nowoczesnych aplikacji iOS  Narzędzia  AFL&amp;#43;&amp;#43;  American Fuzzy Lop plus plus bandit  A tool designed to find common security issues in Python code.</description>
+      <guid>https://kowalcj0.github.io/2019/10/security-bsides-warszawa-2019/</guid>
+      <description>Linki do różnych narzędzi, artykułów, blogów itp o których dowiedziałem się podczas konferencji Security BSides Warsaw 2019 Nagrania dzień pierwszy https://www.youtube.com/watch?v=BoR119sLN6s dzień drugi https://www.youtube.com/watch?v=bTU-22DtYBc Slajdy http://frankowicz.me/sbs2019 Trzy lata fuzzingu&amp;hellip; I czy coś to zmieniło? https://aptmasterclass.com/bsides19/ Nietrywialna komunikacja C2 - jakie to proste! https://www.slideshare.net/wojdwo/budowanie-i-hakowanie-nowoczesnych-aplikacji-ios Budowanie i hakowanie nowoczesnych aplikacji iOS Narzędzia AFL&amp;#43;&amp;#43; American Fuzzy Lop plus plus bandit A tool designed to find common security issues in Python code. A.K.A.: security linter for Python CRITs Collaborative Research Into Threats CyberChef The Cyber Swiss Army Knife DynamoRIO a runtime code manipulation system that supports code transformations on any part of a program, while it executes Google dorks Google Hacking Database by exploit-db mimikatz A little tool to play with Windows security Powershell Kung Fu scripts by APT Master Class socat A more complex variant of netcat OppSec buckets by Gray Hat Warfare Open Amazon s3 Buckets and their contents CertStream Real-time certificate transparency log update stream DNSdumpster.</description>
     </item>
     
     <item>
       <title>Ethical Hacking - Wireless Networks - notes</title>
-      <link>https://kowalcj0.github.io/2018/05/14/ethical-hacking-wireless-networks-notes/</link>
+      <link>https://kowalcj0.github.io/2018/05/ethical-hacking-wireless-networks-notes/</link>
       <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2018/05/14/ethical-hacking-wireless-networks-notes/</guid>
-      <description>Cain - wireless scanner, cracker etc.  WEP  build to prevent eavesdropping ensures integrity of transmitted data is a lightweight solution (does not require a lot of CPU power) is not very secure as it doesn&amp;rsquo;t allow to distribute keys at scale uses weak encryption key recovery is possible through sniffing!!! uses 40-bit keys &amp;amp; 24-bit initialization vectors (IVs too small) frequently used poor implementations of random number generators prone to DoS attacks through use of associate &amp;amp; disassociate messages  WPA  Wi-Fi Protected Access (WPA) was introduced to replace WEP uses TKIP (Temporal Key Integrity Protocol) which changes the key for every frame that is transmitted.</description>
+      <guid>https://kowalcj0.github.io/2018/05/ethical-hacking-wireless-networks-notes/</guid>
+      <description>Cain - wireless scanner, cracker etc. WEP build to prevent eavesdropping ensures integrity of transmitted data is a lightweight solution (does not require a lot of CPU power) is not very secure as it doesn&amp;rsquo;t allow to distribute keys at scale uses weak encryption key recovery is possible through sniffing!!! uses 40-bit keys &amp;amp; 24-bit initialization vectors (IVs too small) frequently used poor implementations of random number generators prone to DoS attacks through use of associate &amp;amp; disassociate messages WPA Wi-Fi Protected Access (WPA) was introduced to replace WEP uses TKIP (Temporal Key Integrity Protocol) which changes the key for every frame that is transmitted.</description>
     </item>
     
     <item>
       <title>Ethical Hacking - Mobile Devices and Platforms - notes</title>
-      <link>https://kowalcj0.github.io/2018/04/28/ethical-hacking-mobile-devices-and-platforms/</link>
+      <link>https://kowalcj0.github.io/2018/04/ethical-hacking-mobile-devices-and-platforms/</link>
       <pubDate>Sat, 28 Apr 2018 10:29:15 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2018/04/28/ethical-hacking-mobile-devices-and-platforms/</guid>
+      <guid>https://kowalcj0.github.io/2018/04/ethical-hacking-mobile-devices-and-platforms/</guid>
       <description>Good sources of knowledge:
- OWASP Testing guide - book OWASP Pinning cheat sheet  Android Application  Executes as:  application service   Helpers  Broadcast receiver (allows app to register for specifi events which will be then passed to it for action) content provider (it interfaces between app and file storage and provide sql-like interface to read/write/modify/delete data). SQLite is a common DB service access via content provider.</description>
+OWASP Testing guide - book OWASP Pinning cheat sheet Android Application Executes as: application service Helpers Broadcast receiver (allows app to register for specifi events which will be then passed to it for action) content provider (it interfaces between app and file storage and provide sql-like interface to read/write/modify/delete data). SQLite is a common DB service access via content provider. Android Intents these are objects used to manage requests.</description>
     </item>
     
     <item>
       <title>Ethical Hacking - Denial of Service - notes</title>
-      <link>https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/</link>
+      <link>https://kowalcj0.github.io/2018/04/ethical-hacking-denial-of-service-attacks/</link>
       <pubDate>Mon, 23 Apr 2018 19:19:15 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/</guid>
+      <guid>https://kowalcj0.github.io/2018/04/ethical-hacking-denial-of-service-attacks/</guid>
       <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Denial of Service&amp;rdquo; by Troy Hunt.
-HTTP flood attack  HTTP flood attack  it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;) can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;)   Attack effectives can be amplified via certain app features:  They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth   Requests can adhere to legitimate patterns which makes defence difficult  TCP attacks These are the layer 4 (OSI) attacks</description>
+HTTP flood attack HTTP flood attack it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;) can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;) Attack effectives can be amplified via certain app features: They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth Requests can adhere to legitimate patterns which makes defence difficult TCP attacks These are the layer 4 (OSI) attacks</description>
     </item>
     
     <item>
       <title>Ethical Hacking - Buffer Overflow - notes</title>
-      <link>https://kowalcj0.github.io/2018/03/20/ethical-hackin-buffer-iverflow/</link>
+      <link>https://kowalcj0.github.io/2018/03/ethical-hackin-buffer-iverflow/</link>
       <pubDate>Tue, 20 Mar 2018 19:20:10 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2018/03/20/ethical-hackin-buffer-iverflow/</guid>
+      <guid>https://kowalcj0.github.io/2018/03/ethical-hackin-buffer-iverflow/</guid>
       <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Buffer Overflows&amp;rdquo; by James Murray.
 Stack pointers Types of stack pointers:
- SP → Stack Pointer  keeps track where the next element will be pushe to or poppef off of the stack   FP → Frame Pointer  points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed   BP → Base Pointer (different name for FP) IP → Instruction Pointer  points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
+SP → Stack Pointer keeps track where the next element will be pushe to or poppef off of the stack FP → Frame Pointer points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed BP → Base Pointer (different name for FP) IP → Instruction Pointer points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
     </item>
     
     <item>
       <title>Ethical Hacking - Hacking Exposed - Notes</title>
-      <link>https://kowalcj0.github.io/2018/02/26/ethical-hackin-hacking-exposed/</link>
+      <link>https://kowalcj0.github.io/2018/02/ethical-hackin-hacking-exposed/</link>
       <pubDate>Mon, 26 Feb 2018 21:20:12 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2018/02/26/ethical-hackin-hacking-exposed/</guid>
+      <guid>https://kowalcj0.github.io/2018/02/ethical-hackin-hacking-exposed/</guid>
       <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Hacking Exposed&amp;rdquo; by Troy Hunt.
 Intro Questions to ask and answer when deciding on levels of security:
- What is most confidential to you? What can&amp;rsquo;t you afford to lose? What is irreplaceable? What could cause the most damage? What might impact your reputation?  The answers to those question will specify your security assets that you will protect.</description>
+What is most confidential to you? What can&amp;rsquo;t you afford to lose? What is irreplaceable? What could cause the most damage? What might impact your reputation? The answers to those question will specify your security assets that you will protect.
+Privacy vs Anonimity Privacy -&amp;gt; is when someone potentially know who you are, but they don&amp;rsquo;t know what are you doing or with whom you&amp;rsquo;re talking.</description>
     </item>
     
     <item>
@@ -88,29 +90,29 @@ Intro Questions to ask and answer when deciding on levels of security:
       <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Sniffers&amp;rdquo;.
 Sniffing overview IPS (Intrusion Prevention System) / IDS (Intrusion Detection System) monitor the networks for threats, intrusions and allowed protocols.
 Network admins should monitor network traffic for few minutes a day.
-Phases of Packet Analysis  Gather Decode Display Analyze  Note:
+Phases of Packet Analysis Gather Decode Display Analyze Note:
 epan - Ethereal Packet Analyzer - it&amp;rsquo;s the packet-analyzing engine for Etheral/Wireshark.
-OSI Model    Layer Name Role Protocols PDU Address     7 Application Initiate contact with the network HTTP, FTP, SMTP DATA    6 Presentation Format data , optional compression and encapsulation  Data    5 Session Initiates, maintains and tear down session  Data    4 Transport Transport data TCP, UDP Segment Port   3 Network Addressing and routing IP, ICMP (ARP) Packet IP   2 Data link Frame formation Ethernet II (ARP) Frame MAC   1 Physical Data is transmitter on the media  Bits     IPv4 structure    IPv4 headers                                 Passive vs Active attacks Two types of attacks:</description>
+OSI Model Layer Name Role Protocols PDU Address 7 Application Initiate contact with the network HTTP, FTP, SMTP DATA 6 Presentation Format data , optional compression and encapsulation Data 5 Session Initiates, maintains and tear down session Data 4 Transport Transport data TCP, UDP Segment Port 3 Network Addressing and routing IP, ICMP (ARP) Packet IP 2 Data link Frame formation Ethernet II (ARP) Frame MAC 1 Physical Data is transmitter on the media Bits IPv4 structure IPv4 headers Passive vs Active attacks Two types of attacks:</description>
     </item>
     
     <item>
       <title>Ethical Hacking - Enumeration - Notes</title>
-      <link>https://kowalcj0.github.io/2018/02/02/ethical-hackin-enumeration-course-notes/</link>
+      <link>https://kowalcj0.github.io/2018/02/ethical-hackin-enumeration-course-notes/</link>
       <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2018/02/02/ethical-hackin-enumeration-course-notes/</guid>
+      <guid>https://kowalcj0.github.io/2018/02/ethical-hackin-enumeration-course-notes/</guid>
       <description>These are just my notes from the video course: &amp;ldquo;Ethical Hacking: Enumeration&amp;rdquo;.
-Introduction Protocols/Technologies used in Enumeration  DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444)  Protection Rings Every OS has it&amp;rsquo;s own set of Protection Rings -&amp;gt; for more see wiki  Windows Kernel Protection rings  Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode  OpenVMS has 4 rings:</description>
+Introduction Protocols/Technologies used in Enumeration DNS (port 21) SMTP (port 161) RPC NetBIOS (port 139) SMB (port 444) Protection Rings Every OS has it&amp;rsquo;s own set of Protection Rings -&amp;gt; for more see wiki Windows Kernel Protection rings Ring 0 - kernel mode Ring 1 &amp;amp; 2 - in windows it&amp;rsquo;s traditionally unused now it\s used for virtualization like Intel VtX Ring 3 - user mode OpenVMS has 4 rings:</description>
     </item>
     
     <item>
       <title>Learning web app secuiry with OWASP Mutillidae II - part 1</title>
-      <link>https://kowalcj0.github.io/2018/01/23/mutillidae-ii-part-1/</link>
+      <link>https://kowalcj0.github.io/2018/01/mutillidae-ii-part-1/</link>
       <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2018/01/23/mutillidae-ii-part-1/</guid>
+      <guid>https://kowalcj0.github.io/2018/01/mutillidae-ii-part-1/</guid>
       <description>iNSTALLATION Run nowasp container:
-docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp Go to http://localhost:8888/  , and build the DB.
+docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp Go to http://localhost:8888/ , and build the DB.
 eXCERCICES: OWASP 2013 A1 - Injection (SQL) - SQLi Extract data - User info Submit the form with such query in the Name field:
 admin&amp;#39;-- AND &amp;#39;password=&amp;#39;password&amp;#39; Response should contain:
 Username=admin Password=adminpass Signature=g0t r00t? A1 - Injection (SQL) - SQLi Bypass authentication - Login You can use the same query in the Name field:</description>

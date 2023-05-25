@@ -13,11 +13,12 @@
       <pubDate>Thu, 04 Jun 2020 13:39:45 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2020/06/04/how-to-proxy-requests-to-pa11y-webservice-hosted-on-heroku/</guid>
-      <description>Pa11y-Dashboard runs of top of Pa11y Webservice  (WS).
+      <description>Pa11y-Dashboard runs of top of Pa11y Webservice (WS).
 By default Pa11y WS listens on port 3000 and Pa11y Dashboard listens on port 4000.
 Unfortunately Heroku doesn&amp;rsquo;t allow its users to easily expose multiple ports per application.
 To overcome this limitation, I&amp;rsquo;ve decided to make Pa11y-Dashboard proxy requests to WS via /ws/ endpoint.
-After a bit of searching I&amp;rsquo;ve found a dedicated proxy module for expressjs called express-http-proxy  .</description>
+After a bit of searching I&amp;rsquo;ve found a dedicated proxy module for expressjs called express-http-proxy .
+Integration is really simple as it&amp;rsquo;s literally 2 lines of code:</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@ After a bit of searching I&amp;rsquo;ve found a dedicated proxy module for expre
       
       <guid>https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/</guid>
       <description>To run Pa11y Dashboard on Heroku, you&amp;rsquo;ll need to:
- add puppeteer buildpack  to your dyno pass --no-sandbox argument to Chrome  Puppeteer buildpack will install Chrome and all dependencies required to run it in headless mode.
+add puppeteer buildpack to your dyno pass --no-sandbox argument to Chrome Puppeteer buildpack will install Chrome and all dependencies required to run it in headless mode.
 Second step is only necessary if you&amp;rsquo;re going to see following error when running Pa11y tests on Heroku:
 Failed to launch chrome! No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox.</description>
     </item>
@@ -38,11 +39,11 @@ Failed to launch chrome! No usable sandbox! Update your kernel or see https://ch
       <pubDate>Tue, 02 Jun 2020 16:33:26 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2020/06/02/add-basic-auth-to-pa11y/</guid>
-      <description>Pa11y  is a great open sourced automated accessibility testing tool.
-It uses headless Chrome browser and HTML_CodeSniffer  as test runner.
-Unfortunately out of the box Pa11y Dashboard  doesn&amp;rsquo;t come with any form of authentication. This might be OK for some people, but in our case we&amp;rsquo;re going to add basic-auth to it.
+      <description>Pa11y is a great open sourced automated accessibility testing tool.
+It uses headless Chrome browser and HTML_CodeSniffer as test runner.
+Unfortunately out of the box Pa11y Dashboard doesn&amp;rsquo;t come with any form of authentication. This might be OK for some people, but in our case we&amp;rsquo;re going to add basic-auth to it.
 This short tutorial is based on pa11y-dashboard v3.1.0.
-Enter http-auth I&amp;rsquo;ve selected http-auth  package to do the job as it&amp;rsquo;s a popular and actively maintained package.</description>
+Enter http-auth I&amp;rsquo;ve selected http-auth package to do the job as it&amp;rsquo;s a popular and actively maintained package.</description>
     </item>
     
   </channel>

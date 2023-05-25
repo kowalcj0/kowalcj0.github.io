@@ -2,22 +2,22 @@
 <html lang='en' dir='auto'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Prerequisites  a working jBehave based project  This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial  .
-To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring  , to run the modified story presented below.
-Maven  OK, let&rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
+<meta name='description' content='Prerequisites a working jBehave based project This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial .
+To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring , to run the modified story presented below.
+Maven OK, let&rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
 Below is an example story, tagged with multiple categories and features: anExampleStoryWithMultipleWordsInAMetaKeyword.'>
 <meta name='theme-color' content='#ffcd00'>
 
 <meta property='og:title' content='How to selectively run stories tagged with multiple words in a meta field with jBehave • Home'>
-<meta property='og:description' content='Prerequisites  a working jBehave based project  This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial  .
-To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring  , to run the modified story presented below.
-Maven  OK, let&rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
+<meta property='og:description' content='Prerequisites a working jBehave based project This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial .
+To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring , to run the modified story presented below.
+Maven OK, let&rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
 Below is an example story, tagged with multiple categories and features: anExampleStoryWithMultipleWordsInAMetaKeyword.'>
 <meta property='og:url' content='https://kowalcj0.github.io/2013/01/22/how-to-selectively-run-stories-tagged-with-multiple-words-in-a-meta-field-with-jbehave/'>
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2013'><meta property='article:tag' content='java'><meta property='article:tag' content='jbehvae'><meta property='article:tag' content='bdd'><meta property='article:tag' content='mvn'><meta property='article:tag' content='gherkin'><meta property='article:published_time' content='2013-01-22T17:17:29Z'/><meta property='article:modified_time' content='2013-01-22T17:17:29Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.90.1" />
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>How to selectively run stories tagged with multiple words in a meta field with jBehave • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2013/01/22/how-to-selectively-run-stories-tagged-with-multiple-words-in-a-meta-field-with-jbehave/'>
@@ -453,19 +453,19 @@ to run the modified story presented below.</p>
 Below is an example story, tagged with multiple categories and features: <code>anExampleStoryWithMultipleWordsInAMetaKeyword.story</code></p>
 <pre tabindex="0"><code>Meta: @categories category1 category2 category3
 @features feature1 feature2 feature3 feature_4 
-Scenario: scenario description Given I'm on the homepage ....
+Scenario: scenario description Given I&#39;m on the homepage ....
 </code></pre><p>Now, we&rsquo;d like to run stories only for a selected category or a feature.
 To accomplish this we&rsquo;ll use the value pattern matching mechanism implemented
 in the jBehave meta matcher and described on <a href="https://jbehave.org/reference/stable/meta-filtering.html" target="_blank">jBehave Meta Matchers</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  reference page.</p>
 <h2 id="usage-examples">Usage examples <a tabindex="0" href="#usage-examples" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Run stories covering only <code>category3</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mvn clean install -Dmeta.filter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+categories *category3*&#34;</span>
-</code></pre></div><p>Run stories covering only <code>feature_4</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mvn clean install -Dmeta.filter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+features *feature_4*&#34;</span>
-</code></pre></div><p>And finally, run stories matching <code>feature2</code> and <code>category1</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mvn clean install -Dmeta.filter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+features *feature2* +categories *category1*&#34;</span>
-</code></pre></div><h2 id="notice">Notice <a tabindex="0" href="#notice" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn clean install -Dmeta.filter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+categories *category3*&#34;</span>
+</span></span></code></pre></div><p>Run stories covering only <code>feature_4</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn clean install -Dmeta.filter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+features *feature_4*&#34;</span>
+</span></span></code></pre></div><p>And finally, run stories matching <code>feature2</code> and <code>category1</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn clean install -Dmeta.filter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+features *feature2* +categories *category1*&#34;</span>
+</span></span></code></pre></div><h2 id="notice">Notice <a tabindex="0" href="#notice" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>It seems that jBehave is not handling <code>-</code> hyphens in the keyword value properly,
 but it works fine with <code>_</code> underscores, separate words and camelCase notation :)</p>
 
@@ -570,7 +570,7 @@ but it works fine with <code>_</code> underscores, separate words and camelCase 
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

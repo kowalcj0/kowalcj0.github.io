@@ -9,12 +9,12 @@
     <lastBuildDate>Mon, 23 Apr 2018 19:19:15 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/dos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ethical Hacking - Denial of Service - notes</title>
-      <link>https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/</link>
+      <link>https://kowalcj0.github.io/2018/04/ethical-hacking-denial-of-service-attacks/</link>
       <pubDate>Mon, 23 Apr 2018 19:19:15 +0100</pubDate>
       
-      <guid>https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/</guid>
+      <guid>https://kowalcj0.github.io/2018/04/ethical-hacking-denial-of-service-attacks/</guid>
       <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Denial of Service&amp;rdquo; by Troy Hunt.
-HTTP flood attack  HTTP flood attack  it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;) can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;)   Attack effectives can be amplified via certain app features:  They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth   Requests can adhere to legitimate patterns which makes defence difficult  TCP attacks These are the layer 4 (OSI) attacks</description>
+HTTP flood attack HTTP flood attack it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;) can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;) Attack effectives can be amplified via certain app features: They use resources (login page, api endpoint) that takes a lot of resources or time to process (like slow hashing function on login page) requests that result in SMTP connections (sending email after registering dummy accounts, password reset page etc) long-running requests (like DB heavy requests) download of large files to flood bandwidth Requests can adhere to legitimate patterns which makes defence difficult TCP attacks These are the layer 4 (OSI) attacks</description>
     </item>
     
   </channel>

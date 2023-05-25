@@ -14,9 +14,9 @@
       
       <guid>https://kowalcj0.github.io/2013/11/25/vim-tips-and-tricks/</guid>
       <description>Record a macro that will delete everything after matching character and repeat it N-times. In this example we&amp;rsquo;re going to use = as the matching character.
- qaf=D⏎q
- Where:
- qa - to start recording and save it under &amp;lsquo;a&amp;rsquo; buffer f= - find &amp;lsquo;=&amp;rsquo; character D - Delete everything to the EOL ⏎ - press &amp;lsquo;enter&amp;rsquo; to go to the beginning of next line q - to stop recording the macro then to repeat the macro N-times, i.</description>
+qaf=D⏎q
+Where:
+qa - to start recording and save it under &amp;lsquo;a&amp;rsquo; buffer f= - find &amp;lsquo;=&amp;rsquo; character D - Delete everything to the EOL ⏎ - press &amp;rsquo;enter&amp;rsquo; to go to the beginning of next line q - to stop recording the macro then to repeat the macro N-times, i.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <guid>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</guid>
       <description>This was tested with vim 7.4.(1-398) (Update: 2013-12-03 apparently you can&amp;rsquo;t build vim with support for both python 2 and python 3, so I had to update this tutorial a bit :) ) (Update: 2014-08-09 Added three commands: &amp;ldquo;hg pull&amp;rdquo;, &amp;ldquo;hg update&amp;rdquo; and &amp;ldquo;hg status&amp;rdquo; to pull the latest version of the repo)
 First of all install all the dependencies required when compiling Vim with additional options:
-sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-dev \  ruby \  ruby-dev \  libx11-dev \  libxt-dev \  libgtk2.</description>
+sudo apt-get install \ mercurial \ python \ python-dev \ python3 \ python3-dev \ ruby \ ruby-dev \ libx11-dev \ libxt-dev \ libgtk2.</description>
     </item>
     
   </channel>

@@ -24,7 +24,7 @@ OK, I&amp;rsquo;m currently running Mint 17 x64 on Lenovo W530 with Nvidia Quadr
       <pubDate>Sat, 09 Aug 2014 14:24:43 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2014/08/09/create-a-bootable-usb-on-linux-mint-ububtu-pendrive-to-upgrade-lenovo-thinkpad-w530-bios/</guid>
-      <description>Recently I had to update the bios of my laptop from a USB pendrive, because I had no CD/DVD drive around. Cameron Seader&amp;rsquo;s post Lenovo BIOS Update method for Linux and USB thumb drive  came very handy, but used an obsolete tool so I updated his instructions a bit to make them work.
+      <description>Recently I had to update the bios of my laptop from a USB pendrive, because I had no CD/DVD drive around. Cameron Seader&amp;rsquo;s post Lenovo BIOS Update method for Linux and USB thumb drive came very handy, but used an obsolete tool so I updated his instructions a bit to make them work.
 1. Get the machine type and model of your laptop In order to grab this information you can either go to the BIOS or use dmidecode or hwinfo.</description>
     </item>
     

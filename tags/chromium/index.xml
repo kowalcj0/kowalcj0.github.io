@@ -13,10 +13,10 @@
       <pubDate>Thu, 07 Nov 2013 13:59:41 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</guid>
-      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&amp;#43;archive/stable  To install latest stable build follow 3 simple steps:
-  add &amp;ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&amp;rdquo; to /etc/apt/sources.list
-  add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:
-W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \  --keyserver hkp://keys.gnupg.net:80 \  --recv 5A9BF3BB4E5E17B5 sudo gpg \  --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\  sudo apt-key add - btw.</description>
+      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&amp;#43;archive/stable To install latest stable build follow 3 simple steps:
+add &amp;ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&amp;rdquo; to /etc/apt/sources.list
+add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:
+W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \ --keyserver hkp://keys.gnupg.net:80 \ --recv 5A9BF3BB4E5E17B5 sudo gpg \ --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\ sudo apt-key add - btw.</description>
     </item>
     
   </channel>

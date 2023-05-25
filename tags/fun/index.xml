@@ -13,8 +13,9 @@
       <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2018/03/29/get-song-title-from-dbus-via-mpris2-find-videoclip-with-ddgr-on-youtube-and-play-it-with-mpv/</guid>
-      <description>Short demo: Your browser does not support the video tag.  Requirements You&amp;rsquo;ll need:
- python 3.x mpv  video player music player that supports MPRIS2 D-Bus interface   mpd  + mpDris2   deadbeef  + mpris2-plugin     some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel ddgr https://github.com/jarun/ddgr  - a CLI client for DuckDuckGo  System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:</description>
+      <description>Short demo: Your browser does not support the video tag. Requirements You&amp;rsquo;ll need:
+python 3.x mpv video player music player that supports MPRIS2 D-Bus interface mpd + mpDris2 deadbeef + mpris2-plugin some D-Bus packages -&amp;gt; dbus-devel dbus-python-devel dbus-glib-devel ddgr https://github.com/jarun/ddgr - a CLI client for DuckDuckGo System packages Once you have your player &amp;amp; MPRIS2 installed &amp;amp; configured, install:
+sudo dnf install dbus-devel dbus-python-devel dbus-glib-devel ddgr Python packages Next step is to install python packages.</description>
     </item>
     
   </channel>

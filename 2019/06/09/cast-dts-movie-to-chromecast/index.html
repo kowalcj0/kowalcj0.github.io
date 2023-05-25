@@ -9,9 +9,11 @@
 <meta property='og:description' content='Never give up'>
 <meta property='og:url' content='https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/'>
 <meta property='og:site_name' content='Home'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../images/FFmpeg-Logo.svg'><meta property='article:section' content='2019'><meta property='article:tag' content='linux'><meta property='article:tag' content='castnow'><meta property='article:tag' content='ffmpeg'><meta property='article:published_time' content='2019-06-09T20:35:50&#43;01:00'/><meta property='article:modified_time' content='2019-06-09T20:35:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../images/FFmpeg-Logo.svg'><meta property='twitter:image:alt' content='FFmpeg-Logo by Wikimedia https://commons.wikimedia.org/wiki/File:FFmpeg-Logo.svg'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/../images/FFmpeg-Logo.svg'><meta property='article:section' content='2019'><meta property='article:tag' content='linux'><meta property='article:tag' content='castnow'><meta property='article:tag' content='ffmpeg'><meta property='article:published_time' content='2019-06-09T20:35:50&#43;01:00'/><meta property='article:modified_time' content='2019-06-09T20:35:50&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/../images/FFmpeg-Logo.svg'><meta property='twitter:image:alt' content='FFmpeg-Logo by Wikimedia https://commons.wikimedia.org/wiki/File:FFmpeg-Logo.svg 
 
-<meta name="generator" content="Hugo 0.90.1" />
+'>
+
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Play moview with DTS audio on Chromecast • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/'>
@@ -429,11 +431,15 @@ One min read
 
   <div class='entry-cover'>
   <figure class='container cover-wide'>
-    <img src='../images/FFmpeg-Logo.svg' alt='FFmpeg-Logo by Wikimedia https://commons.wikimedia.org/wiki/File:FFmpeg-Logo.svg'/>
+    <img src='../images/FFmpeg-Logo.svg' alt='FFmpeg-Logo by Wikimedia https://commons.wikimedia.org/wiki/File:FFmpeg-Logo.svg 
+
+'/>
     
       
       <figcaption class='container'>
-        <span>FFmpeg-Logo by Wikimedia <a href="https://commons.wikimedia.org/wiki/File:FFmpeg-Logo.svg">https://commons.wikimedia.org/wiki/File:FFmpeg-Logo.svg</a></span>
+        <span><p>FFmpeg-Logo by Wikimedia <a href="https://commons.wikimedia.org/wiki/File:FFmpeg-Logo.svg" target="_blank">https://commons.wikimedia.org/wiki/File:FFmpeg-Logo.svg</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</p>
+</span>
       </figcaption>
       
     
@@ -451,12 +457,12 @@ say <a href="https://handbrake.fr/" target="_blank">Handbrake</a> <svg xmlns="ht
 .</p>
 <p>Once installed, simply tell it to use ffmpeg to transcode audio to mp3 (or ac3
 or aac).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">castnow your-wonderful-movie.mkv <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --tomp4 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --ffmpeg-vcodec copy <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --ffmpeg-acodec mp3 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --ffmpeg-movflags frag_keyframe+empty_moov+faststart
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>castnow your-wonderful-movie.mkv <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --tomp4 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --ffmpeg-vcodec copy <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --ffmpeg-acodec mp3 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --ffmpeg-movflags frag_keyframe+empty_moov+faststart
+</span></span></code></pre></div><ul>
 <li>
 <ul>
 <li>use <code>movflags</code> if you will only hear the audio and you&rsquo;ll see a black screen</li>
@@ -517,7 +523,7 @@ or aac).</p>
  Previous</span>
         <span class='screen-reader-text'>Previous post: </span>Tasty smoothie - no. 1</a>
     </div><div class='next-entry sep-before'>
-      <a href='/2019/10/15/security-bsides-warszawa-2019/'>
+      <a href='/2019/10/security-bsides-warszawa-2019/'>
         <span class='screen-reader-text'>Next post: </span>Security BSides Warszawa 2019<span aria-hidden='true'>Next <svg
   class="icon"
   xmlns="http://www.w3.org/2000/svg"
@@ -581,7 +587,7 @@ or aac).</p>
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

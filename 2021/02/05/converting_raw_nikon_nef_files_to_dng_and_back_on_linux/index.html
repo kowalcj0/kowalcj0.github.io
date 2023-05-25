@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2021'><meta property='article:tag' content='linux'><meta property='article:tag' content='raw'><meta property='article:tag' content='nef'><meta property='article:tag' content='dng'><meta property='article:tag' content='convert'><meta property='article:published_time' content='2021-02-05T09:33:00Z'/><meta property='article:modified_time' content='2021-02-05T09:33:00Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.90.1" />
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>Converting raw Nikon NEF files to DNG and back on Linux • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2021/02/05/converting_raw_nikon_nef_files_to_dng_and_back_on_linux/'>
@@ -443,17 +443,17 @@ it later on.</p>
 RawTherapee&rsquo;s website: <a href="https://rawpedia.rawtherapee.com/How_to_convert_raw_formats_to_DNG#Installing_Adobe_DNG_Converter_in_Linux" target="_blank">https://rawpedia.rawtherapee.com/How_to_convert_raw_formats_to_DNG#Installing_Adobe_DNG_Converter_in_Linux</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 </p>
 <p>Once DNG Converter is installed, create a <code>dng</code> alias to start it from CLI:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">alias dng<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;WINEPREFIX=&#34;$HOME/WinePrefixes/DNGConverter&#34; wine &#34;$HOME/WinePrefixes/DNGConverter/drive_c/Program Files/Adobe/Adobe DNG Converter/Adobe DNG Converter.exe&#34;&#39;</span>
-</code></pre></div><h2 id="step-2---convert-nef-files-to-dng">Step 2 - Convert NEF files to DNG <a tabindex="0" href="#step-2---convert-nef-files-to-dng" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>alias dng<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;WINEPREFIX=&#34;$HOME/WinePrefixes/DNGConverter&#34; wine &#34;$HOME/WinePrefixes/DNGConverter/drive_c/Program Files/Adobe/Adobe DNG Converter/Adobe DNG Converter.exe&#34;&#39;</span>
+</span></span></code></pre></div><h2 id="step-2---convert-nef-files-to-dng">Step 2 - Convert NEF files to DNG <a tabindex="0" href="#step-2---convert-nef-files-to-dng" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p><code>cd</code> to a directory with your <code>NEF</code> files and simply execute:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dng ./
-</code></pre></div><p>It will bring the DNG Converter window up:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>dng ./
+</span></span></code></pre></div><p>It will bring the DNG Converter window up:
 <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
 <figure  itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
-    <a href="/img/2021/02/05/01-dng_converter.png" data-size="604x660" itemprop="contentUrl"> 
+    <a href="../01-dng_converter.png" data-size="604x660" itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/2021/02/05/01-dng_converter-thumb.png"
+             src="../01-dng_converter-thumb.png"
             alt="Adobe DNG Converter main window"
             />
     </a>
@@ -479,9 +479,9 @@ RawTherapee&rsquo;s website: <a href="https://rawpedia.rawtherapee.com/How_to_co
 <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
 <figure  itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
-    <a href="/img/2021/02/05/02-dng_converter_preferences.png" data-size="598x697" itemprop="contentUrl"> 
+    <a href="../02-dng_converter_preferences.png" data-size="598x697" itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/2021/02/05/02-dng_converter_preferences-thumb.png"
+             src="../02-dng_converter_preferences-thumb.png"
             alt="Adobe DNG Converter preferences window"
             />
     </a>
@@ -508,9 +508,9 @@ RawTherapee&rsquo;s website: <a href="https://rawpedia.rawtherapee.com/How_to_co
 <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
 <figure  itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
-    <a href="/img/2021/02/05/03-dng_converter_conversion_status.png" data-size="548x401" itemprop="contentUrl"> 
+    <a href="../03-dng_converter_conversion_status.png" data-size="548x401" itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/2021/02/05/03-dng_converter_conversion_status-thumb.png"
+             src="../03-dng_converter_conversion_status-thumb.png"
             alt="Adobe DNG Converter conversion status window"
             />
     </a>
@@ -532,15 +532,71 @@ RawTherapee&rsquo;s website: <a href="https://rawpedia.rawtherapee.com/How_to_co
 </div>
 <link rel="stylesheet" href="/css/pswp-gallery.css" />
 </p>
+
+<link rel="stylesheet" href="/css/photoswipe.min.css" integrity="sha256-rlldBDOCxqXAE1fRopHG2SqpgWisq17/3Oleo+1CBKo=">
+<link rel="stylesheet" href="/css/photoswipe-default-skin.min.css" integrity="sha256-kQW7k22C0skJMSPxgEI2VHR0LPHeygi8SRYNvV/DB2w=">
+<script src="/js/photoswipe.min.js" integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="></script>
+<script src="/js/photoswipe-ui-default.min.js" integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<script src="/js/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="></script>
+<script src="/js/pswp-init.js"></script>
+
+
 <h2 id="step-3---extract-embeded-raw-nef-file-from-dng">Step 3 - Extract embeded RAW NEF file from DNG <a tabindex="0" href="#step-3---extract-embeded-raw-nef-file-from-dng" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>To extract an emdedded RAW NEF file from a DNG file, we&rsquo;ll use the amazing <a href="https://exiftool.org" target="_blank">ExifTool</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
  by Phil Harvey.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">exiftool -b -originalrawimage DSC_0001-original.dng &gt; DSC_0001-extracted.nef
-</code></pre></div><h2 id="step-4---compare-extracted-file-with-the-original">Step 4 - Compare extracted file with the original <a tabindex="0" href="#step-4---compare-extracted-file-with-the-original" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>exiftool -b -originalrawimage DSC_0001-original.dng &gt; DSC_0001-extracted.nef
+</span></span></code></pre></div><h2 id="step-4---compare-extracted-file-with-the-original">Step 4 - Compare extracted file with the original <a tabindex="0" href="#step-4---compare-extracted-file-with-the-original" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>To ensure that both files are identicall, run a simple diff:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ diff --report-identical-files DSC_0001-original.nef DSC_0001-extracted.nef
-Files DSC_0001-original.nef and DSC_0001-extracted.nef are identical
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ diff --report-identical-files DSC_0001-original.nef DSC_0001-extracted.nef
+</span></span><span style="display:flex;"><span>Files DSC_0001-original.nef and DSC_0001-extracted.nef are identical
+</span></span></code></pre></div>
 
 </div>
 
@@ -642,7 +698,7 @@ Files DSC_0001-original.nef and DSC_0001-extracted.nef are identical
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

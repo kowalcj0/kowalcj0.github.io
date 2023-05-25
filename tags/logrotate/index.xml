@@ -13,9 +13,9 @@
       <pubDate>Mon, 13 May 2019 11:50:50 +0100</pubDate>
       
       <guid>https://kowalcj0.github.io/2019/05/13/logrotate-bash-history/</guid>
-      <description>A while ago I decided to take more control over my bash history and I followed this advice https://unix.stackexchange.com/a/48113  .
+      <description>A while ago I decided to take more control over my bash history and I followed this advice https://unix.stackexchange.com/a/48113 .
 With time I&amp;rsquo;ve tweaked few settings, like ignore lines that start with space, and ignore some of the trivial commands like ls:
-export HISTCONTROL=ignoredups:erasedups:ignorespace # no duplicate entries &amp;amp; lines starting with space export HISTSIZE=99999999 # big big history export HISTFILESIZE=99999999 # big big history shopt -s histappend # append to history, don&#39;t overwrite it export PROMPT_COMMAND=&amp;quot;history -a; history -c; history -r; $PROMPT_COMMAND&amp;quot; # Save and reload the history after each command finishes HISTIGNORE=&#39;ll *:ls *:l:gs:&#39; # ignore some commands Nevertheless, every now and then I&amp;rsquo;d loose the command history, e.</description>
+export HISTCONTROL=ignoredups:erasedups:ignorespace # no duplicate entries &amp;amp; lines starting with space export HISTSIZE=99999999 # big big history export HISTFILESIZE=99999999 # big big history shopt -s histappend # append to history, don&amp;#39;t overwrite it export PROMPT_COMMAND=&amp;#34;history -a; history -c; history -r; $PROMPT_COMMAND&amp;#34; # Save and reload the history after each command finishes HISTIGNORE=&amp;#39;ll *:ls *:l:gs:&amp;#39; # ignore some commands Nevertheless, every now and then I&amp;rsquo;d loose the command history, e.</description>
     </item>
     
   </channel>

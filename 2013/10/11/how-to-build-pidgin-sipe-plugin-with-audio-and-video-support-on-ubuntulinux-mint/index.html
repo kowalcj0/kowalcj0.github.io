@@ -2,22 +2,24 @@
 <html lang='en' dir='auto'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Tested with pidgin-sipe-1.17.0  First of all install dependencies:
-sudo apt-get install \  libxml2-dev \  libnspr4-dev \  libnss3-dev \  libgstreamer0.10-dev \  libnice-dev \  libpurple-dev \  libnss3-dev \  libglib2.0-dev Then check where libnspr4 was installed:
+<meta name='description' content='Tested with pidgin-sipe-1.17.0 First of all install dependencies:
+sudo apt-get install \ libxml2-dev \ libnspr4-dev \ libnss3-dev \ libgstreamer0.10-dev \ libnice-dev \ libpurple-dev \ libnss3-dev \ libglib2.0-dev Then check where libnspr4 was installed:
 sudo dpkg -L libnspr4 Then finally configure nspr paths accordingly, compile and install it:
-./configure \  --prefix=/usr \  --with-vv \  --with-nss-includes=/usr/include/nss \  --with-nss-libs=/usr/lib/x86_64-linux-gnu \  --with-nspr-includes=/usr/include/nspr \  --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)'>
+./configure \ --prefix=/usr \ --with-vv \ --with-nss-includes=/usr/include/nss \ --with-nss-libs=/usr/lib/x86_64-linux-gnu \ --with-nspr-includes=/usr/include/nspr \ --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)
+If everything works fine then your Lync contact list should look like this:'>
 <meta name='theme-color' content='#ffcd00'>
 
 <meta property='og:title' content='How to build pidgin-sipe plugin with audio and video support on ubuntu/linux mint • Home'>
-<meta property='og:description' content='Tested with pidgin-sipe-1.17.0  First of all install dependencies:
-sudo apt-get install \  libxml2-dev \  libnspr4-dev \  libnss3-dev \  libgstreamer0.10-dev \  libnice-dev \  libpurple-dev \  libnss3-dev \  libglib2.0-dev Then check where libnspr4 was installed:
+<meta property='og:description' content='Tested with pidgin-sipe-1.17.0 First of all install dependencies:
+sudo apt-get install \ libxml2-dev \ libnspr4-dev \ libnss3-dev \ libgstreamer0.10-dev \ libnice-dev \ libpurple-dev \ libnss3-dev \ libglib2.0-dev Then check where libnspr4 was installed:
 sudo dpkg -L libnspr4 Then finally configure nspr paths accordingly, compile and install it:
-./configure \  --prefix=/usr \  --with-vv \  --with-nss-includes=/usr/include/nss \  --with-nss-libs=/usr/lib/x86_64-linux-gnu \  --with-nspr-includes=/usr/include/nspr \  --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)'>
+./configure \ --prefix=/usr \ --with-vv \ --with-nss-includes=/usr/include/nss \ --with-nss-libs=/usr/lib/x86_64-linux-gnu \ --with-nspr-includes=/usr/include/nspr \ --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)
+If everything works fine then your Lync contact list should look like this:'>
 <meta property='og:url' content='https://kowalcj0.github.io/2013/10/11/how-to-build-pidgin-sipe-plugin-with-audio-and-video-support-on-ubuntulinux-mint/'>
 <meta property='og:site_name' content='Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='2013'><meta property='article:tag' content='linux'><meta property='article:tag' content='pidgin'><meta property='article:tag' content='sipe'><meta property='article:published_time' content='2013-10-11T16:37:49Z'/><meta property='article:modified_time' content='2013-10-11T16:37:49Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.90.1" />
+<meta name="generator" content="Hugo 0.108.0">
 
   <title>How to build pidgin-sipe plugin with audio and video support on ubuntu/linux mint • Home</title>
   <link rel='canonical' href='https://kowalcj0.github.io/2013/10/11/how-to-build-pidgin-sipe-plugin-with-audio-and-video-support-on-ubuntulinux-mint/'>
@@ -438,33 +440,33 @@ One min read
   <p>Tested with <a href="https://sourceforge.net/projects/sipe/files/sipe/" target="_blank">pidgin-sipe-1.17.0</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
 </p>
 <p>First of all install dependencies:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libxml2-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libnspr4-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libnss3-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libgstreamer0.10-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libnice-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libpurple-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libnss3-dev <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    libglib2.0-dev
-</code></pre></div><p>Then check where <code>libnspr4</code> was installed:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo dpkg -L libnspr4
-</code></pre></div><p>Then finally configure <code>nspr</code> paths accordingly, compile and install it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./configure <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --prefix<span style="color:#f92672">=</span>/usr <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-vv <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-nss-includes<span style="color:#f92672">=</span>/usr/include/nss <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-nss-libs<span style="color:#f92672">=</span>/usr/lib/x86_64-linux-gnu <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-nspr-includes<span style="color:#f92672">=</span>/usr/include/nspr <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --with-nspr-libs<span style="color:#f92672">=</span>/usr/lib/x86_64-linux-gnu 
-make 
-sudo make install
-</code></pre></div><p>Hope it helps :)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libxml2-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libnspr4-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libnss3-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libgstreamer0.10-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libnice-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libpurple-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libnss3-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    libglib2.0-dev
+</span></span></code></pre></div><p>Then check where <code>libnspr4</code> was installed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dpkg -L libnspr4
+</span></span></code></pre></div><p>Then finally configure <code>nspr</code> paths accordingly, compile and install it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./configure <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --prefix<span style="color:#f92672">=</span>/usr <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-vv <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-nss-includes<span style="color:#f92672">=</span>/usr/include/nss <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-nss-libs<span style="color:#f92672">=</span>/usr/lib/x86_64-linux-gnu <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-nspr-includes<span style="color:#f92672">=</span>/usr/include/nspr <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-nspr-libs<span style="color:#f92672">=</span>/usr/lib/x86_64-linux-gnu 
+</span></span><span style="display:flex;"><span>make 
+</span></span><span style="display:flex;"><span>sudo make install
+</span></span></code></pre></div><p>Hope it helps :)</p>
 <p>If everything works fine then your <code>Lync</code> contact list should look like this:</p>
 <figure  itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
     <a href="../pidgin-sipe-1-17-0.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="../pidgin-sipe-1-17-0.png"
+             src="../pidgin-sipe-1-17-0.png"
             
             />
     </a>
@@ -593,7 +595,7 @@ sudo make install
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2010-2022 kowalcj0 </p>
+  <p> &copy; 2010-2023 kowalcj0 </p>
 </div>
 
         </div>

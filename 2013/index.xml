@@ -13,7 +13,7 @@
       <pubDate>Thu, 28 Nov 2013 11:50:40 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</guid>
-      <description>To make your extra mouse buttons work on Linux Mint (I&amp;rsquo;ve tested it with v15) follow all the steps listed in this tutorial  except the step 4 :)
+      <description>To make your extra mouse buttons work on Linux Mint (I&amp;rsquo;ve tested it with v15) follow all the steps listed in this tutorial except the step 4 :)
 Once you get to step 4, use this key mappings to make the &amp;lsquo;zoom&amp;rsquo; and &amp;lsquo;switch between windows&amp;rsquo; buttons work as on windows.
 vi $HOME/.xbindkeysrc ... # show all windows: Scale &amp;#34;xte &amp;#39;keydown Control_L&amp;#39; &amp;#39;keydown Alt_L&amp;#39; &amp;#39;key Down&amp;#39; &amp;#39;keyup Control_L&amp;#39; &amp;#39;keyup Alt_L&amp;#39;&amp;#34; b:10 + release # Zooming with Logitech Performance MX mouse # thx to: https://www.</description>
     </item>
@@ -25,9 +25,9 @@ vi $HOME/.xbindkeysrc ... # show all windows: Scale &amp;#34;xte &amp;#39;keydow
       
       <guid>https://kowalcj0.github.io/2013/11/25/vim-tips-and-tricks/</guid>
       <description>Record a macro that will delete everything after matching character and repeat it N-times. In this example we&amp;rsquo;re going to use = as the matching character.
- qaf=D⏎q
- Where:
- qa - to start recording and save it under &amp;lsquo;a&amp;rsquo; buffer f= - find &amp;lsquo;=&amp;rsquo; character D - Delete everything to the EOL ⏎ - press &amp;lsquo;enter&amp;rsquo; to go to the beginning of next line q - to stop recording the macro then to repeat the macro N-times, i.</description>
+qaf=D⏎q
+Where:
+qa - to start recording and save it under &amp;lsquo;a&amp;rsquo; buffer f= - find &amp;lsquo;=&amp;rsquo; character D - Delete everything to the EOL ⏎ - press &amp;rsquo;enter&amp;rsquo; to go to the beginning of next line q - to stop recording the macro then to repeat the macro N-times, i.</description>
     </item>
     
     <item>
@@ -36,10 +36,11 @@ vi $HOME/.xbindkeysrc ... # show all windows: Scale &amp;#34;xte &amp;#39;keydow
       <pubDate>Fri, 22 Nov 2013 17:33:00 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</guid>
-      <description>I finally started recording videos explaining how to use Gee  .
-Gee is a tool based on a JMeter-EC2  project by Oliver Lloyd.
+      <description>I finally started recording videos explaining how to use Gee .
+Gee is a tool based on a JMeter-EC2 project by Oliver Lloyd.
 It allows you to run JMeter tests on:
- Amazon EC2 Vagrant boxes Linux hosts  Running your tests using this tool is better than using the standard distributed mode in Jmeter, because it doesn&amp;rsquo;t require constant communication between the master node and slave nodes.</description>
+Amazon EC2 Vagrant boxes Linux hosts Running your tests using this tool is better than using the standard distributed mode in Jmeter, because it doesn&amp;rsquo;t require constant communication between the master node and slave nodes.
+Here are first few videos explaining how to clone the project, spawn new vagrant box and finally how to run an example project on that virtual box.</description>
     </item>
     
     <item>
@@ -50,7 +51,7 @@ It allows you to run JMeter tests on:
       <guid>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</guid>
       <description>This was tested with vim 7.4.(1-398) (Update: 2013-12-03 apparently you can&amp;rsquo;t build vim with support for both python 2 and python 3, so I had to update this tutorial a bit :) ) (Update: 2014-08-09 Added three commands: &amp;ldquo;hg pull&amp;rdquo;, &amp;ldquo;hg update&amp;rdquo; and &amp;ldquo;hg status&amp;rdquo; to pull the latest version of the repo)
 First of all install all the dependencies required when compiling Vim with additional options:
-sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-dev \  ruby \  ruby-dev \  libx11-dev \  libxt-dev \  libgtk2.</description>
+sudo apt-get install \ mercurial \ python \ python-dev \ python3 \ python3-dev \ ruby \ ruby-dev \ libx11-dev \ libxt-dev \ libgtk2.</description>
     </item>
     
     <item>
@@ -59,10 +60,10 @@ sudo apt-get install \  mercurial \  python \  python-dev \  python3 \  python3-
       <pubDate>Thu, 07 Nov 2013 13:59:41 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</guid>
-      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&amp;#43;archive/stable  To install latest stable build follow 3 simple steps:
-  add &amp;ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&amp;rdquo; to /etc/apt/sources.list
-  add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:
-W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \  --keyserver hkp://keys.gnupg.net:80 \  --recv 5A9BF3BB4E5E17B5 sudo gpg \  --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\  sudo apt-key add - btw.</description>
+      <description>Here&amp;rsquo;s the official Chromium-browser PPA: https://launchpad.net/~chromium-daily/&amp;#43;archive/stable To install latest stable build follow 3 simple steps:
+add &amp;ldquo;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&amp;rdquo; to /etc/apt/sources.list
+add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:
+W: GPG error: http://ppa.launchpad.net raring Release: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5 sudo gpg \ --keyserver hkp://keys.gnupg.net:80 \ --recv 5A9BF3BB4E5E17B5 sudo gpg \ --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |\ sudo apt-key add - btw.</description>
     </item>
     
     <item>
@@ -71,10 +72,11 @@ W: GPG error: http://ppa.launchpad.net raring Release: The following signatures 
       <pubDate>Fri, 11 Oct 2013 16:37:49 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/10/11/how-to-build-pidgin-sipe-plugin-with-audio-and-video-support-on-ubuntulinux-mint/</guid>
-      <description>Tested with pidgin-sipe-1.17.0  First of all install dependencies:
-sudo apt-get install \  libxml2-dev \  libnspr4-dev \  libnss3-dev \  libgstreamer0.10-dev \  libnice-dev \  libpurple-dev \  libnss3-dev \  libglib2.0-dev Then check where libnspr4 was installed:
+      <description>Tested with pidgin-sipe-1.17.0 First of all install dependencies:
+sudo apt-get install \ libxml2-dev \ libnspr4-dev \ libnss3-dev \ libgstreamer0.10-dev \ libnice-dev \ libpurple-dev \ libnss3-dev \ libglib2.0-dev Then check where libnspr4 was installed:
 sudo dpkg -L libnspr4 Then finally configure nspr paths accordingly, compile and install it:
-./configure \  --prefix=/usr \  --with-vv \  --with-nss-includes=/usr/include/nss \  --with-nss-libs=/usr/lib/x86_64-linux-gnu \  --with-nspr-includes=/usr/include/nspr \  --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)</description>
+./configure \ --prefix=/usr \ --with-vv \ --with-nss-includes=/usr/include/nss \ --with-nss-libs=/usr/lib/x86_64-linux-gnu \ --with-nspr-includes=/usr/include/nspr \ --with-nspr-libs=/usr/lib/x86_64-linux-gnu make sudo make install Hope it helps :)
+If everything works fine then your Lync contact list should look like this:</description>
     </item>
     
     <item>
@@ -96,8 +98,8 @@ Then what you have to do is to change the default port used for obtaining pgp ke
       
       <guid>https://kowalcj0.github.io/2013/07/30/monitoring-jvm-metrics-via-jmx-management-interface-in-jmeter/</guid>
       <description>What do we need:
- any java application (doesn&amp;rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent   Apache JMeter  wiith jmeter-plugins  installed  Once you have plugins installed them in the jMeter&amp;rsquo;s lib/ext folder, then:
- On the box you want to monitor, copy templates: jmxremote.password &amp;amp; jmxremote.access from $JAVA_HOME/lib/management to for example: /srv/play/ edit them according to your liking launch your JAVA application with additional parameters: java \  -jar your_application.</description>
+any java application (doesn&amp;rsquo;t matter whether it was written in Java/Play/Groovy/JPython etc) PerfMon Server Agent Apache JMeter wiith jmeter-plugins installed Once you have plugins installed them in the jMeter&amp;rsquo;s lib/ext folder, then:
+On the box you want to monitor, copy templates: jmxremote.password &amp;amp; jmxremote.access from $JAVA_HOME/lib/management to for example: /srv/play/ edit them according to your liking launch your JAVA application with additional parameters: java \ -jar your_application.</description>
     </item>
     
     <item>
@@ -116,7 +118,7 @@ date +&amp;#39;%Y-%m-%d_%H_%M-%Z&amp;#39; | xargs -I {} bash -c &amp;#34;sudo tc
       <pubDate>Sat, 11 May 2013 17:08:00 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/05/11/useful-links-to-all-owners-of-a-kindle-or-any-other-ebook-reader/</guid>
-      <description>Send web pages and RSS directly to Kindle  http://www.klip.me/   https://sendtoreader.com/    eBook management  https://calibre-ebook.com/    Free en-pl dictionary  http://www.bumato.pl/    News sites  https://swiatczytnikow.pl/    Free and legit books International  https://www.gutenberg.org/   https://archive.org/details/texts    English  http://www.freekindlebooks.org/   https://www.amazon.com/s/?node=2245146011   https://openlibrary.org/   https://www.openculture.com/free_ebooks    French  https://www.ebooksgratuits.com/   https://beq.</description>
+      <description>Send web pages and RSS directly to Kindle http://www.klip.me/ https://sendtoreader.com/ eBook management https://calibre-ebook.com/ Free en-pl dictionary http://www.bumato.pl/ News sites https://swiatczytnikow.pl/ Free and legit books International https://www.gutenberg.org/ https://archive.org/details/texts English http://www.freekindlebooks.org/ https://www.amazon.com/s/?node=2245146011 https://openlibrary.org/ https://www.openculture.com/free_ebooks French https://www.ebooksgratuits.com/ https://beq.ebooksgratuits.com/ http://www.livrespourtous.com/ https://www.amazon.fr/b?ie=UTF8&amp;amp;node=927173031 https://pix-geeks.com/ebook-gratuit/ Polish https://wolnelektury.pl/ Magiczne katalogi Katalogi legalnych i darmowych książek na kidnle&amp;rsquo;a, które można ściągnąć bezpośrednio na urządzenie, bez potrzeby kopiowania na urządzenie czy wysyłania na maila itp. Wystarczy je zapisać na urządzenie w katalogu documents, potem właczyć wifi, otworzyć wybrany katalog, wybrać sobie jakąś pozycję do czytania, potwierdzić chęć ściągnięcia i ta-dam, książka jest już dostępna na ekranie głównym :)</description>
     </item>
     
     <item>
@@ -125,9 +127,9 @@ date +&amp;#39;%Y-%m-%d_%H_%M-%Z&amp;#39; | xargs -I {} bash -c &amp;#34;sudo tc
       <pubDate>Tue, 22 Jan 2013 17:17:29 +0000</pubDate>
       
       <guid>https://kowalcj0.github.io/2013/01/22/how-to-selectively-run-stories-tagged-with-multiple-words-in-a-meta-field-with-jbehave/</guid>
-      <description>Prerequisites  a working jBehave based project  This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial  .
-To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring  , to run the modified story presented below.
-Maven  OK, let&amp;rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
+      <description>Prerequisites a working jBehave based project This short tutorial is based on an jbehave-tutorial project available on github: https://github.com/jbehave/jbehave-tutorial .
+To be precise I used the java-spring submodule from the etsy-selenium module, available here: https://github.com/jbehave/jbehave-tutorial/tree/master/etsy-selenium/java-spring , to run the modified story presented below.
+Maven OK, let&amp;rsquo;s consider a situation when we have stories belonging to multiple features, categories etc.
 Below is an example story, tagged with multiple categories and features: anExampleStoryWithMultipleWordsInAMetaKeyword.</description>
     </item>
     
