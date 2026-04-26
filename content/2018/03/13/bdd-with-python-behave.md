@@ -44,7 +44,7 @@ Maintainability best practices:
 - flaky tests
     - Avoid -> Control -> Isolate
 
-<pre>
+```html
          +-----------+
          |           |
          | Scenarios |
@@ -74,4 +74,5 @@ Maintainability best practices:
 | Page/Screen/Endpoint Objects +---------+
 |                              |
 +------------------------------+
-</pre>
+
+```
