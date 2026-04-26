@@ -5,7 +5,7 @@ languageCode = "en-gb"
 enableEmoji=true
 enableRobotsTXT = true  # generate robots.txt
 footnoteReturnLinkContents = "↩"
-newContentEditor = "vimx"
+newContentEditor = "nvim"
 paginate = 20
 pluralizelisttitles = false  # Don't pluralize titles in lists
 theme = "minimo"
@@ -37,6 +37,10 @@ title = "Home"
 [permalinks]
   posts = "/:year/:month/:day/:title/"
   page = "/:slug/"
+
+[security]
+  [security.exec]
+    allow = ['^nvim$']
 
 # https://gohugo.io/getting-started/configuration-markup
 [markup]
