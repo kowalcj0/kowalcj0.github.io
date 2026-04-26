@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>intel on Home</title>
+    <title>Intel on Home</title>
     <link>https://kowalcj0.github.io/tags/intel/</link>
-    <description>Recent content in intel on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Intel on Home</description>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 15 Mar 2018 08:46:10 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/intel/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Mar 2018 08:46:10 +0100</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/tags/intel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tweaking Intel graphics on Linux</title>
       <link>https://kowalcj0.github.io/2018/03/15/tweaking-intel-graphics-on-linux/</link>
       <pubDate>Thu, 15 Mar 2018 08:46:10 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/2018/03/15/tweaking-intel-graphics-on-linux/</guid>
-      <description>get info about firmware
-modinfo i915 | grep ^fi List all driver parameters
-modinfo -p i915 If find the output of the above command confusing, as you can&amp;rsquo;t see the actual values of every parameter, then use:
-sudo grep -H &amp;#39;&amp;#39; /sys/module/i915//parameters/* If you see error messages like this one:
-$ dmesg |tail [ 2360.475430] [drm] not enough stolen space for compressed buffer (need 4325376 bytes), disabling [ 2360.475437] [drm] hint: you may be able to increase stolen memory size in the BIOS to avoid this then you can enable framebuffer compression.</description>
+      <description>&lt;p&gt;get info about firmware&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;modinfo i915 | grep ^fi&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;List all driver parameters&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;modinfo -p i915&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If find the output of the above command confusing, as you can&amp;rsquo;t see the actual&#xA;values of every parameter, then use:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo grep -H &amp;#39;&amp;#39; /sys/module/i915//parameters/*&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you see error messages like this one:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ dmesg |tail&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; 2360.475430&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;drm&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; not enough stolen space &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; compressed buffer &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;need &lt;span style=&#34;color:#ae81ff&#34;&gt;4325376&lt;/span&gt; bytes&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;, disabling&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; 2360.475437&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;drm&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; hint: you may be able to increase stolen memory size in the BIOS to avoid this&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;then you can enable framebuffer compression. This should also save your laptop&#xA;some energy:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

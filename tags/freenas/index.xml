@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>freenas on Home</title>
+    <title>Freenas on Home</title>
     <link>https://kowalcj0.github.io/tags/freenas/</link>
-    <description>Recent content in freenas on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Freenas on Home</description>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 28 Apr 2020 22:02:34 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/freenas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Apr 2020 22:02:34 +0100</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/tags/freenas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FreeNas/FreeBSD hardware/diagnostic tools</title>
       <link>https://kowalcj0.github.io/2020/04/28/handy-freebsd-diagnostic-tools/</link>
       <pubDate>Tue, 28 Apr 2020 22:02:34 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/2020/04/28/handy-freebsd-diagnostic-tools/</guid>
-      <description>Handy CLI tools that might help your with diagnosing/debugging issues on your FreeBSD/FreeNAS machine.
-Recommended reading FreeNAS documentation on CLI tools: https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html FreeBSD Display Information About The System Hardware: https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html camcontrol The camcontrol utility is designed to provide a way for users to access and control the FreeBSD CAM subsystem.
-# camcontrol devlist &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus0 target 0 lun 0 (pass0,ada0) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus1 target 0 lun 0 (pass1,ada1) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass2,ada2) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus2 target 0 lun 0 (pass3,ada3) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus4 target 0 lun 0 (pass4,ada4) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass5,ada5) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass6,ada6) &amp;lt;ST4000VN003-1T5168 SC46&amp;gt; at scbus5 target 0 lun 0 (pass7,ada7) &amp;lt;SanDisk Dual Drive 1.</description>
+      <description>&lt;p&gt;Handy CLI tools that might help your with diagnosing/debugging issues on your&#xA;FreeBSD/FreeNAS machine.&lt;/p&gt;&#xA;&lt;h2 id=&#34;recommended-reading&#34;&gt;Recommended reading&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;FreeNAS documentation on CLI tools: &lt;a href=&#34;https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html&#34; target=&#34;_blank&#34;&gt;https://www.ixsystems.com/documentation/freenas/11.3-U2/cli.html&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;FreeBSD Display Information About The System Hardware: &lt;a href=&#34;https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html&#34; target=&#34;_blank&#34;&gt;https://www.cyberciti.biz/tips/freebsd-display-information-about-the-system.html&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;camcontrol&#34;&gt;camcontrol&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;https://www.freebsd.org/cgi/man.cgi?query=camcontrol&#34; target=&#34;_blank&#34;&gt;camcontrol&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; utility is designed to provide a way for users to access&#xA;and control the FreeBSD CAM subsystem.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

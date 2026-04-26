@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>articles on Home</title>
+    <title>Articles on Home</title>
     <link>https://kowalcj0.github.io/tags/articles/</link>
-    <description>Recent content in articles on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Articles on Home</description>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 02 May 2020 16:56:52 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 May 2020 16:56:52 +0100</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/tags/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Articles worth reading</title>
       <link>https://kowalcj0.github.io/general/articles/</link>
       <pubDate>Sat, 02 May 2020 16:56:52 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/general/articles/</guid>
-      <description>A while ago I&amp;rsquo;ve discovered Wallabag . It&amp;rsquo;s a self hostable application for saving web pages. It extracts the article&amp;rsquo;s content and can automatically tag it with matching label. Basically it&amp;rsquo;s an open-source competitor of Pocket , Instapaper or Evernote .
-Fetching a list of all entries via Wallabag&amp;amp;rsquo;s API is very easy. And with a help of jq you can transform it into a simple JSON file which you can use to populate a Hugo Data Templates .</description>
+      <description>&lt;p&gt;A while ago I&amp;rsquo;ve discovered &lt;a href=&#34;https://wallabag.org/en&#34; target=&#34;_blank&#34;&gt;Wallabag&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;. It&amp;rsquo;s a self&#xA;hostable application for saving web pages.&#xA;It extracts the article&amp;rsquo;s content and can automatically tag it with matching&#xA;label.&#xA;Basically it&amp;rsquo;s an open-source competitor of &lt;a href=&#34;https://getpocket.com/&#34; target=&#34;_blank&#34;&gt;Pocket&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;,&#xA;&lt;a href=&#34;https://www.instapaper.com/&#34; target=&#34;_blank&#34;&gt;Instapaper&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; or &lt;a href=&#34;https://evernote.com/&#34; target=&#34;_blank&#34;&gt;Evernote&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

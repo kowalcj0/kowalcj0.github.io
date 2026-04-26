@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>castnow on Home</title>
+    <title>Castnow on Home</title>
     <link>https://kowalcj0.github.io/tags/castnow/</link>
-    <description>Recent content in castnow on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Castnow on Home</description>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 09 Jun 2019 20:35:50 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/castnow/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jun 2019 20:35:50 +0100</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/tags/castnow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Play moview with DTS audio on Chromecast</title>
       <link>https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/</link>
       <pubDate>Sun, 09 Jun 2019 20:35:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/2019/06/09/cast-dts-movie-to-chromecast/</guid>
-      <description>According to the official specification Chromecast (even Ultra version) doesn&amp;rsquo;t support DTS.
-If you can&amp;rsquo;t be bothered to spend few hours to transcode the movie with lets say Handbrake you can use ver handy CLI casting tool: castnow .
-Once installed, simply tell it to use ffmpeg to transcode audio to mp3 (or ac3 or aac).
-castnow your-wonderful-movie.mkv \ --tomp4 \ --ffmpeg-vcodec copy \ --ffmpeg-acodec mp3 \ --ffmpeg-movflags frag_keyframe+empty_moov+faststart use movflags if you will only hear the audio and you&amp;rsquo;ll see a black screen The only downside of transcoding is that the play / pause controls are not supported.</description>
+      <description>&lt;p&gt;According to the official &lt;a href=&#34;https://developers.google.com/cast/docs/media&#34; target=&#34;_blank&#34;&gt;specification&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&#xA;Chromecast (even Ultra version) doesn&amp;rsquo;t support DTS.&lt;/p&gt;&#xA;&lt;p&gt;If you can&amp;rsquo;t be bothered to spend few hours to transcode the movie with lets&#xA;say &lt;a href=&#34;https://handbrake.fr/&#34; target=&#34;_blank&#34;&gt;Handbrake&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; you can use ver handy CLI casting tool: &lt;a href=&#34;https://github.com/xat/castnow&#34; target=&#34;_blank&#34;&gt;castnow&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>aws on Home</title>
+    <title>Aws on Home</title>
     <link>https://kowalcj0.github.io/tags/aws/</link>
-    <description>Recent content in aws on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Aws on Home</description>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 03 Jan 2014 10:02:26 +0000</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Jan 2014 10:02:26 +0000</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GEE [Jmeter-ec2] - video tutorials part 2</title>
       <link>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</link>
       <pubDate>Fri, 03 Jan 2014 10:02:26 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</guid>
-      <description>Hi All, I just added few more videos showing how to configure your test environment to run your JMeter tests:
-locally on a Vagrant box using remote machines and on Amazon EC2 04 - Create a first test plan and run it using Gee and a vagrant box Shows how to create a new test plan from a template project. Then how to run it using GEE on our local vagrant box.</description>
+      <description>&lt;p&gt;Hi All, I just added few more videos showing how to configure your test environment to run your JMeter tests:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;locally on a Vagrant box&lt;/li&gt;&#xA;&lt;li&gt;using remote machines&lt;/li&gt;&#xA;&lt;li&gt;and on Amazon EC2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;04---create-a-first-test-plan-and-run-it-using-gee-and-a-vagrant-box&#34;&gt;04 - Create a first test plan and run it using Gee and a vagrant box&lt;/h2&gt;&#xA;&lt;p&gt;Shows how to create a new test plan from a template project.&#xA;Then how to run it using GEE on our local vagrant box.&#xA;&lt;iframe width=&#34;720&#34; height=&#34;410&#34; src=&#34;https://www.youtube-nocookie.com/embed/b4aSFCRY_hs&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

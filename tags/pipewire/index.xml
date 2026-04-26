@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pipewire on Home</title>
+    <title>Pipewire on Home</title>
     <link>https://kowalcj0.github.io/tags/pipewire/</link>
-    <description>Recent content in pipewire on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Pipewire on Home</description>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 09 Jan 2022 13:14:44 +0000</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/pipewire/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jan 2022 13:14:44 +0000</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/tags/pipewire/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Handy Pipewire commands and tools</title>
       <link>https://kowalcj0.github.io/2022/01/09/handy-pipewire-commands-and-tools/</link>
       <pubDate>Sun, 09 Jan 2022 13:14:44 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/2022/01/09/handy-pipewire-commands-and-tools/</guid>
-      <description>PipeWire provides a nice set of CLI commands and tools to manage and monitor A/V devices on you machine. Here&amp;rsquo;s a list of those commands with some usage examples:
-pw-cli - The PipeWire Command Line Interface. Examples: pw-cli dump short Node - list all input/output nodes and their state. pw-cli info 0 - inspect the state of the server. Lists useful details like: clock-rate and allowed clock-rates pw-mon dumps and monitors the state of the PipeWire daemon.</description>
+      <description>&lt;p&gt;PipeWire provides a nice set of CLI commands and tools to manage and monitor A/V&#xA;devices on you machine.&#xA;Here&amp;rsquo;s a list of those commands with some usage examples:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-cli&lt;/code&gt; - The PipeWire Command Line Interface.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Examples:&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-cli dump short Node&lt;/code&gt; - list all input/output nodes and their state.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-cli info 0&lt;/code&gt; - inspect the state of the server.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lists useful details like: clock-rate and allowed clock-rates&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-mon&lt;/code&gt; dumps and monitors the state of the PipeWire daemon.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-metadata&lt;/code&gt; - Monitor, set and delete metadata on PipeWire objects.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-metadata -n settings&lt;/code&gt; - list the current settings.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-dot&lt;/code&gt; can dump a graph of the pipeline, check out the help for how to do this.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-top&lt;/code&gt; monitors the real-time status of the graph. This is handy to find out what clients are running and how much DSP resources they use.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-dump&lt;/code&gt; dumps the state of the PipeWire daemon in JSON format. This can be used to find out the properties and parameters of the objects in the PipeWire daemon.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-link&lt;/code&gt; - List, monitor or link input or output ports, e.g.:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-link --input&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pw-link --output&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;BTW. you can still use &lt;code&gt;pactl&lt;/code&gt; command to control &amp;ldquo;PulseAudio&amp;rdquo; sound server, e.g.:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

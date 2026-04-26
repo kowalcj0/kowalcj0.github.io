@@ -4,908 +4,723 @@
     <title>Tags on Home</title>
     <link>https://kowalcj0.github.io/tags/</link>
     <description>Recent content in Tags on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 01 Nov 2022 18:07:06 +0000</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Apr 2026 23:38:07 +0100</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>brazylia</title>
-      <link>https://kowalcj0.github.io/tags/brazylia/</link>
-      <pubDate>Tue, 01 Nov 2022 18:07:06 +0000</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/brazylia/</guid>
+      <title>Docker</title>
+      <link>https://kowalcj0.github.io/tags/docker/</link>
+      <pubDate>Sun, 26 Apr 2026 23:38:07 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/docker/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>django</title>
-      <link>https://kowalcj0.github.io/tags/django/</link>
-      <pubDate>Tue, 27 Sep 2022 15:46:52 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/django/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://kowalcj0.github.io/tags/python/</link>
-      <pubDate>Tue, 27 Sep 2022 15:46:52 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pipewire</title>
-      <link>https://kowalcj0.github.io/tags/pipewire/</link>
-      <pubDate>Sun, 09 Jan 2022 13:14:44 +0000</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/pipewire/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>afwall</title>
-      <link>https://kowalcj0.github.io/tags/afwall/</link>
-      <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/afwall/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>firewall</title>
-      <link>https://kowalcj0.github.io/tags/firewall/</link>
-      <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/firewall/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gsconnect</title>
-      <link>https://kowalcj0.github.io/tags/gsconnect/</link>
-      <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/gsconnect/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iptables</title>
-      <link>https://kowalcj0.github.io/tags/iptables/</link>
-      <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/iptables/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>digikam</title>
-      <link>https://kowalcj0.github.io/tags/digikam/</link>
-      <pubDate>Wed, 09 Jun 2021 21:52:01 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/digikam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>freebsd</title>
-      <link>https://kowalcj0.github.io/tags/freebsd/</link>
-      <pubDate>Wed, 09 Jun 2021 21:52:01 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/freebsd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jail</title>
-      <link>https://kowalcj0.github.io/tags/jail/</link>
-      <pubDate>Wed, 09 Jun 2021 21:52:01 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/jail/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>trunas</title>
-      <link>https://kowalcj0.github.io/tags/trunas/</link>
-      <pubDate>Wed, 09 Jun 2021 21:52:01 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/trunas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>photoprism</title>
-      <link>https://kowalcj0.github.io/tags/photoprism/</link>
-      <pubDate>Sat, 05 Jun 2021 17:18:24 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/photoprism/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>truenas</title>
-      <link>https://kowalcj0.github.io/tags/truenas/</link>
-      <pubDate>Sat, 05 Jun 2021 17:18:24 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/truenas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>convert</title>
-      <link>https://kowalcj0.github.io/tags/convert/</link>
-      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/convert/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dng</title>
-      <link>https://kowalcj0.github.io/tags/dng/</link>
-      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
-      
-      <guid>https://kowalcj0.github.io/tags/dng/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
+      <title>Linux</title>
       <link>https://kowalcj0.github.io/tags/linux/</link>
-      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
-      
+      <pubDate>Sun, 26 Apr 2026 23:38:07 +0100</pubDate>
       <guid>https://kowalcj0.github.io/tags/linux/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nef</title>
+      <title>Syncthing</title>
+      <link>https://kowalcj0.github.io/tags/syncthing/</link>
+      <pubDate>Sun, 26 Apr 2026 23:38:07 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/syncthing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Brazylia</title>
+      <link>https://kowalcj0.github.io/tags/brazylia/</link>
+      <pubDate>Tue, 01 Nov 2022 18:07:06 +0000</pubDate>
+      <guid>https://kowalcj0.github.io/tags/brazylia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Django</title>
+      <link>https://kowalcj0.github.io/tags/django/</link>
+      <pubDate>Tue, 27 Sep 2022 15:46:52 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://kowalcj0.github.io/tags/python/</link>
+      <pubDate>Tue, 27 Sep 2022 15:46:52 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pipewire</title>
+      <link>https://kowalcj0.github.io/tags/pipewire/</link>
+      <pubDate>Sun, 09 Jan 2022 13:14:44 +0000</pubDate>
+      <guid>https://kowalcj0.github.io/tags/pipewire/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Afwall</title>
+      <link>https://kowalcj0.github.io/tags/afwall/</link>
+      <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/afwall/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Firewall</title>
+      <link>https://kowalcj0.github.io/tags/firewall/</link>
+      <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/firewall/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gsconnect</title>
+      <link>https://kowalcj0.github.io/tags/gsconnect/</link>
+      <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/gsconnect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iptables</title>
+      <link>https://kowalcj0.github.io/tags/iptables/</link>
+      <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/iptables/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digikam</title>
+      <link>https://kowalcj0.github.io/tags/digikam/</link>
+      <pubDate>Wed, 09 Jun 2021 21:52:01 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/digikam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Freebsd</title>
+      <link>https://kowalcj0.github.io/tags/freebsd/</link>
+      <pubDate>Wed, 09 Jun 2021 21:52:01 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/freebsd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jail</title>
+      <link>https://kowalcj0.github.io/tags/jail/</link>
+      <pubDate>Wed, 09 Jun 2021 21:52:01 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/jail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trunas</title>
+      <link>https://kowalcj0.github.io/tags/trunas/</link>
+      <pubDate>Wed, 09 Jun 2021 21:52:01 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/trunas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Photoprism</title>
+      <link>https://kowalcj0.github.io/tags/photoprism/</link>
+      <pubDate>Sat, 05 Jun 2021 17:18:24 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/photoprism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Truenas</title>
+      <link>https://kowalcj0.github.io/tags/truenas/</link>
+      <pubDate>Sat, 05 Jun 2021 17:18:24 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/tags/truenas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Convert</title>
+      <link>https://kowalcj0.github.io/tags/convert/</link>
+      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
+      <guid>https://kowalcj0.github.io/tags/convert/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dng</title>
+      <link>https://kowalcj0.github.io/tags/dng/</link>
+      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
+      <guid>https://kowalcj0.github.io/tags/dng/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nef</title>
       <link>https://kowalcj0.github.io/tags/nef/</link>
       <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/nef/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>raw</title>
+      <title>Raw</title>
       <link>https://kowalcj0.github.io/tags/raw/</link>
       <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/raw/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cytaty</title>
+      <title>Cytaty</title>
       <link>https://kowalcj0.github.io/tags/cytaty/</link>
       <pubDate>Mon, 05 Oct 2020 19:54:20 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/cytaty/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>quotes</title>
+      <title>Quotes</title>
       <link>https://kowalcj0.github.io/tags/quotes/</link>
       <pubDate>Mon, 05 Oct 2020 19:54:20 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/quotes/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>books</title>
+      <title>Books</title>
       <link>https://kowalcj0.github.io/tags/books/</link>
       <pubDate>Sun, 07 Jun 2020 18:08:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/books/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>accessibility</title>
+      <title>Accessibility</title>
       <link>https://kowalcj0.github.io/tags/accessibility/</link>
       <pubDate>Sat, 06 Jun 2020 22:56:03 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/accessibility/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>heroku</title>
+      <title>Heroku</title>
       <link>https://kowalcj0.github.io/tags/heroku/</link>
       <pubDate>Sat, 06 Jun 2020 22:56:03 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/heroku/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mongodb</title>
+      <title>Mongodb</title>
       <link>https://kowalcj0.github.io/tags/mongodb/</link>
       <pubDate>Sat, 06 Jun 2020 22:56:03 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/mongodb/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>pa11y</title>
+      <title>Pa11y</title>
       <link>https://kowalcj0.github.io/tags/pa11y/</link>
       <pubDate>Sat, 06 Jun 2020 22:56:03 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/pa11y/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nodejs</title>
+      <title>Nodejs</title>
       <link>https://kowalcj0.github.io/tags/nodejs/</link>
       <pubDate>Thu, 04 Jun 2020 13:39:45 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/nodejs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>signal</title>
+      <title>Signal</title>
       <link>https://kowalcj0.github.io/tags/signal/</link>
       <pubDate>Sun, 03 May 2020 21:46:49 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/signal/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sqlcipher</title>
+      <title>Sqlcipher</title>
       <link>https://kowalcj0.github.io/tags/sqlcipher/</link>
       <pubDate>Sun, 03 May 2020 21:46:49 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/sqlcipher/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sqlie</title>
+      <title>Sqlie</title>
       <link>https://kowalcj0.github.io/tags/sqlie/</link>
       <pubDate>Sun, 03 May 2020 21:46:49 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/sqlie/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>articles</title>
+      <title>Articles</title>
       <link>https://kowalcj0.github.io/tags/articles/</link>
       <pubDate>Sat, 02 May 2020 16:56:52 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/articles/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>zip</title>
+      <title>Zip</title>
       <link>https://kowalcj0.github.io/tags/zip/</link>
       <pubDate>Thu, 30 Apr 2020 20:05:24 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/zip/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cli</title>
+      <title>Cli</title>
       <link>https://kowalcj0.github.io/tags/cli/</link>
       <pubDate>Tue, 28 Apr 2020 22:02:34 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/cli/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>freenas</title>
+      <title>Freenas</title>
       <link>https://kowalcj0.github.io/tags/freenas/</link>
       <pubDate>Tue, 28 Apr 2020 22:02:34 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/freenas/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>zfs</title>
+      <title>Zfs</title>
       <link>https://kowalcj0.github.io/tags/zfs/</link>
       <pubDate>Tue, 28 Apr 2020 22:02:34 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/zfs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mpd</title>
+      <title>Mpd</title>
       <link>https://kowalcj0.github.io/tags/mpd/</link>
       <pubDate>Sun, 22 Mar 2020 12:02:34 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/mpd/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>rss</title>
+      <title>Rss</title>
       <link>https://kowalcj0.github.io/tags/rss/</link>
       <pubDate>Sun, 22 Mar 2020 12:02:34 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/rss/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>codecs</title>
+      <title>Codecs</title>
       <link>https://kowalcj0.github.io/tags/codecs/</link>
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/codecs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ffmpeg</title>
+      <title>Ffmpeg</title>
       <link>https://kowalcj0.github.io/tags/ffmpeg/</link>
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/ffmpeg/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>movies</title>
+      <title>Movies</title>
       <link>https://kowalcj0.github.io/tags/movies/</link>
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/movies/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>conference</title>
+      <title>Conference</title>
       <link>https://kowalcj0.github.io/tags/conference/</link>
       <pubDate>Tue, 15 Oct 2019 20:41:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/conference/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>castnow</title>
+      <title>Castnow</title>
       <link>https://kowalcj0.github.io/tags/castnow/</link>
       <pubDate>Sun, 09 Jun 2019 20:35:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/castnow/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>smoothie</title>
+      <title>Smoothie</title>
       <link>https://kowalcj0.github.io/tags/smoothie/</link>
       <pubDate>Sat, 18 May 2019 19:44:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/smoothie/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>bash</title>
+      <title>Bash</title>
       <link>https://kowalcj0.github.io/tags/bash/</link>
       <pubDate>Mon, 13 May 2019 11:50:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/bash/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>logrotate</title>
+      <title>Logrotate</title>
       <link>https://kowalcj0.github.io/tags/logrotate/</link>
       <pubDate>Mon, 13 May 2019 11:50:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/logrotate/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>seo</title>
+      <title>Seo</title>
       <link>https://kowalcj0.github.io/tags/seo/</link>
       <pubDate>Mon, 20 Aug 2018 18:41:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/seo/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ethical hacking</title>
+      <title>Ethical Hacking</title>
       <link>https://kowalcj0.github.io/tags/ethical-hacking/</link>
       <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/ethical-hacking/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>notes</title>
+      <title>Notes</title>
       <link>https://kowalcj0.github.io/tags/notes/</link>
       <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/notes/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>pentesting</title>
+      <title>Pentesting</title>
       <link>https://kowalcj0.github.io/tags/pentesting/</link>
       <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/pentesting/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>security</title>
+      <title>Security</title>
       <link>https://kowalcj0.github.io/tags/security/</link>
       <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/security/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>wifi</title>
+      <title>Wifi</title>
       <link>https://kowalcj0.github.io/tags/wifi/</link>
       <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/wifi/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>android</title>
+      <title>Android</title>
       <link>https://kowalcj0.github.io/tags/android/</link>
       <pubDate>Sat, 28 Apr 2018 10:29:15 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/android/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>iOS</title>
+      <title>IOS</title>
       <link>https://kowalcj0.github.io/tags/ios/</link>
       <pubDate>Sat, 28 Apr 2018 10:29:15 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/ios/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mobile</title>
+      <title>Mobile</title>
       <link>https://kowalcj0.github.io/tags/mobile/</link>
       <pubDate>Sat, 28 Apr 2018 10:29:15 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/mobile/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>DoS</title>
       <link>https://kowalcj0.github.io/tags/dos/</link>
       <pubDate>Mon, 23 Apr 2018 19:19:15 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/dos/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>dbus</title>
+      <title>Dbus</title>
       <link>https://kowalcj0.github.io/tags/dbus/</link>
       <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/dbus/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>fun</title>
+      <title>Fun</title>
       <link>https://kowalcj0.github.io/tags/fun/</link>
       <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/fun/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mpv</title>
+      <title>Mpv</title>
       <link>https://kowalcj0.github.io/tags/mpv/</link>
       <pubDate>Thu, 29 Mar 2018 15:15:14 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/mpv/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>BoF</title>
       <link>https://kowalcj0.github.io/tags/bof/</link>
       <pubDate>Tue, 20 Mar 2018 19:20:10 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/bof/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>driver</title>
+      <title>Driver</title>
       <link>https://kowalcj0.github.io/tags/driver/</link>
       <pubDate>Thu, 15 Mar 2018 08:46:10 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/driver/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>intel</title>
+      <title>Intel</title>
       <link>https://kowalcj0.github.io/tags/intel/</link>
       <pubDate>Thu, 15 Mar 2018 08:46:10 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/intel/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>qt</title>
+      <title>Qt</title>
       <link>https://kowalcj0.github.io/tags/qt/</link>
       <pubDate>Sun, 11 Feb 2018 22:40:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/qt/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>vlc</title>
+      <title>Vlc</title>
       <link>https://kowalcj0.github.io/tags/vlc/</link>
       <pubDate>Sun, 11 Feb 2018 22:40:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/vlc/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sniffers</title>
+      <title>Sniffers</title>
       <link>https://kowalcj0.github.io/tags/sniffers/</link>
       <pubDate>Mon, 05 Feb 2018 09:22:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/sniffers/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>fedora</title>
+      <title>Fedora</title>
       <link>https://kowalcj0.github.io/tags/fedora/</link>
       <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/fedora/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>gnome</title>
+      <title>Gnome</title>
       <link>https://kowalcj0.github.io/tags/gnome/</link>
       <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/gnome/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>root</title>
+      <title>Root</title>
       <link>https://kowalcj0.github.io/tags/root/</link>
       <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/root/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>wayland</title>
+      <title>Wayland</title>
       <link>https://kowalcj0.github.io/tags/wayland/</link>
       <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/wayland/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>enumeration</title>
+      <title>Enumeration</title>
       <link>https://kowalcj0.github.io/tags/enumeration/</link>
       <pubDate>Fri, 02 Feb 2018 19:20:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/enumeration/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>1959</title>
       <link>https://kowalcj0.github.io/tags/1959/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/1959/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>criterion collection</title>
+      <title>Criterion Collection</title>
       <link>https://kowalcj0.github.io/tags/criterion-collection/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/criterion-collection/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>drama</title>
+      <title>Drama</title>
       <link>https://kowalcj0.github.io/tags/drama/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/drama/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>japanese</title>
+      <title>Japanese</title>
       <link>https://kowalcj0.github.io/tags/japanese/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/japanese/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>war</title>
+      <title>War</title>
       <link>https://kowalcj0.github.io/tags/war/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/war/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>syntax</title>
+      <title>Syntax</title>
       <link>https://kowalcj0.github.io/tags/syntax/</link>
       <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/syntax/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mutillidae</title>
+      <title>Mutillidae</title>
       <link>https://kowalcj0.github.io/tags/mutillidae/</link>
       <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/mutillidae/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>owasp</title>
+      <title>Owasp</title>
       <link>https://kowalcj0.github.io/tags/owasp/</link>
       <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/owasp/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>bios</title>
+      <title>Bios</title>
       <link>https://kowalcj0.github.io/tags/bios/</link>
       <pubDate>Sun, 10 Aug 2014 10:03:30 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/bios/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>grub</title>
+      <title>Grub</title>
       <link>https://kowalcj0.github.io/tags/grub/</link>
       <pubDate>Sun, 10 Aug 2014 10:03:30 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/grub/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nvidia</title>
+      <title>Nvidia</title>
       <link>https://kowalcj0.github.io/tags/nvidia/</link>
       <pubDate>Sun, 10 Aug 2014 10:03:30 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/nvidia/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>X11</title>
       <link>https://kowalcj0.github.io/tags/x11/</link>
       <pubDate>Sun, 10 Aug 2014 10:03:30 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/x11/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>java</title>
+      <title>Java</title>
       <link>https://kowalcj0.github.io/tags/java/</link>
       <pubDate>Fri, 28 Mar 2014 20:47:02 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/java/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>selenium</title>
+      <title>Selenium</title>
       <link>https://kowalcj0.github.io/tags/selenium/</link>
       <pubDate>Fri, 28 Mar 2014 20:47:02 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/selenium/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>testng</title>
+      <title>Testng</title>
       <link>https://kowalcj0.github.io/tags/testng/</link>
       <pubDate>Fri, 28 Mar 2014 20:47:02 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/testng/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>aws</title>
+      <title>Aws</title>
       <link>https://kowalcj0.github.io/tags/aws/</link>
       <pubDate>Fri, 03 Jan 2014 10:02:26 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/aws/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>gee</title>
+      <title>Gee</title>
       <link>https://kowalcj0.github.io/tags/gee/</link>
       <pubDate>Fri, 03 Jan 2014 10:02:26 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/gee/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>jmeter</title>
+      <title>Jmeter</title>
       <link>https://kowalcj0.github.io/tags/jmeter/</link>
       <pubDate>Fri, 03 Jan 2014 10:02:26 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/jmeter/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>vagrant</title>
+      <title>Vagrant</title>
       <link>https://kowalcj0.github.io/tags/vagrant/</link>
       <pubDate>Fri, 03 Jan 2014 10:02:26 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/vagrant/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>xbindkeys</title>
+      <title>Xbindkeys</title>
       <link>https://kowalcj0.github.io/tags/xbindkeys/</link>
       <pubDate>Thu, 28 Nov 2013 11:50:40 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/xbindkeys/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>vim</title>
+      <title>Vim</title>
       <link>https://kowalcj0.github.io/tags/vim/</link>
       <pubDate>Mon, 25 Nov 2013 13:04:27 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/vim/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>chromium</title>
+      <title>Chromium</title>
       <link>https://kowalcj0.github.io/tags/chromium/</link>
       <pubDate>Thu, 07 Nov 2013 13:59:41 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/chromium/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>pidgin</title>
+      <title>Pidgin</title>
       <link>https://kowalcj0.github.io/tags/pidgin/</link>
       <pubDate>Fri, 11 Oct 2013 16:37:49 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/pidgin/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sipe</title>
+      <title>Sipe</title>
       <link>https://kowalcj0.github.io/tags/sipe/</link>
       <pubDate>Fri, 11 Oct 2013 16:37:49 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/sipe/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>apt</title>
+      <title>Apt</title>
       <link>https://kowalcj0.github.io/tags/apt/</link>
       <pubDate>Fri, 13 Sep 2013 13:55:52 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/apt/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tcpdump</title>
+      <title>Tcpdump</title>
       <link>https://kowalcj0.github.io/tags/tcpdump/</link>
       <pubDate>Fri, 17 May 2013 15:23:00 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/tcpdump/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kindle</title>
+      <title>Kindle</title>
       <link>https://kowalcj0.github.io/tags/kindle/</link>
       <pubDate>Sat, 11 May 2013 17:08:00 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/kindle/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>bdd</title>
+      <title>Bdd</title>
       <link>https://kowalcj0.github.io/tags/bdd/</link>
       <pubDate>Tue, 22 Jan 2013 17:17:29 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/bdd/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>gherkin</title>
+      <title>Gherkin</title>
       <link>https://kowalcj0.github.io/tags/gherkin/</link>
       <pubDate>Tue, 22 Jan 2013 17:17:29 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/gherkin/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>jbehvae</title>
+      <title>Jbehvae</title>
       <link>https://kowalcj0.github.io/tags/jbehvae/</link>
       <pubDate>Tue, 22 Jan 2013 17:17:29 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/jbehvae/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mvn</title>
+      <title>Mvn</title>
       <link>https://kowalcj0.github.io/tags/mvn/</link>
       <pubDate>Tue, 22 Jan 2013 17:17:29 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/tags/mvn/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

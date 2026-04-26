@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>owasp on Home</title>
+    <title>Owasp on Home</title>
     <link>https://kowalcj0.github.io/tags/owasp/</link>
-    <description>Recent content in owasp on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Owasp on Home</description>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 23 Jan 2018 14:41:50 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/owasp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Jan 2018 14:41:50 +0100</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/tags/owasp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning web app secuiry with OWASP Mutillidae II - part 1</title>
-      <link>https://kowalcj0.github.io/2018/01/mutillidae-ii-part-1/</link>
+      <link>https://kowalcj0.github.io/2018/01/23/mutillidae-ii-part-1/</link>
       <pubDate>Tue, 23 Jan 2018 14:41:50 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/2018/01/mutillidae-ii-part-1/</guid>
-      <description>iNSTALLATION Run nowasp container:
-docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp Go to http://localhost:8888/ , and build the DB.
-eXCERCICES: OWASP 2013 A1 - Injection (SQL) - SQLi Extract data - User info Submit the form with such query in the Name field:
-admin&amp;#39;-- AND &amp;#39;password=&amp;#39;password&amp;#39; Response should contain:
-Username=admin Password=adminpass Signature=g0t r00t? A1 - Injection (SQL) - SQLi Bypass authentication - Login You can use the same query in the Name field:</description>
+      <guid>https://kowalcj0.github.io/2018/01/23/mutillidae-ii-part-1/</guid>
+      <description>&lt;h1 id=&#34;installation&#34;&gt;iNSTALLATION&lt;/h1&gt;&#xA;&lt;p&gt;Run &lt;code&gt;nowasp&lt;/code&gt; container:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -p 8888:80 -p 3306:3306 citizenstig/nowasp&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Go to &lt;a href=&#34;http://localhost:8888/&#34; target=&#34;_blank&#34;&gt;http://localhost:8888/&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;, and build the DB.&lt;/p&gt;&#xA;&lt;h1 id=&#34;excercices&#34;&gt;eXCERCICES:&lt;/h1&gt;&#xA;&lt;h2 id=&#34;owasp-2013&#34;&gt;OWASP 2013&lt;/h2&gt;&#xA;&lt;h3 id=&#34;a1---injection-sql---sqli-extract-data---user-info&#34;&gt;A1 - Injection (SQL) - SQLi Extract data - User info&lt;/h3&gt;&#xA;&lt;p&gt;Submit the form with such query in the &lt;code&gt;Name&lt;/code&gt; field:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;admin&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;-- AND &amp;#39;&lt;/span&gt;password&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Response should contain:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Username=admin&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Password=adminpass&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Signature=g0t r00t?&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;a1---injection-sql---sqli-bypass-authentication---login&#34;&gt;A1 - Injection (SQL) - SQLi Bypass authentication - Login&lt;/h3&gt;&#xA;&lt;p&gt;You can use the same query in the &lt;code&gt;Name&lt;/code&gt; field:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

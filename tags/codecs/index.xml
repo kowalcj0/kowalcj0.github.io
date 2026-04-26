@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>codecs on Home</title>
+    <title>Codecs on Home</title>
     <link>https://kowalcj0.github.io/tags/codecs/</link>
-    <description>Recent content in codecs on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Codecs on Home</description>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 21 Mar 2020 11:59:50 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/codecs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Mar 2020 11:59:50 +0100</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/tags/codecs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Convert old mov files to more modern mp4 x264 or AV1</title>
       <link>https://kowalcj0.github.io/2020/03/21/convert-mov-to-mp4-or-av1/</link>
       <pubDate>Sat, 21 Mar 2020 11:59:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/2020/03/21/convert-mov-to-mp4-or-av1/</guid>
-      <description>Some time ago I&amp;rsquo;ve discovered a bunch of old QuickTime files on my NAS. None of those clips could be played back via NextCloud&amp;rsquo;s browser player as they were encoded with old school mjpeg video codec &amp;amp; low quality mono pcm_s16be audio.
-This is what mediainfo told me about those files:
-Video Format : JPEG Codec ID : jpeg Bit rate mode : Variable Bit rate : 3 827 kb/s Width : 640 pixels Height : 480 pixels Display aspect ratio : 4:3 Frame rate mode : Constant Frame rate : 30.</description>
+      <description>&lt;p&gt;Some time ago I&amp;rsquo;ve discovered a bunch of old QuickTime files on my NAS.&#xA;None of those clips could be played back via NextCloud&amp;rsquo;s browser player&#xA;as they were encoded with old school&#xA;&lt;a href=&#34;https://en.wikipedia.org/wiki/Motion_JPEG&#34; target=&#34;_blank&#34;&gt;mjpeg&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; video codec &amp;amp; low quality&#xA;mono pcm_s16be audio.&lt;/p&gt;&#xA;&lt;p&gt;This is what &lt;code&gt;mediainfo&lt;/code&gt; told me about those files:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Video&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Format                 : JPEG&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Codec ID               : jpeg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bit rate mode          : Variable&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bit rate               : 3 827 kb/s&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Width                  : 640 pixels&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Height                 : 480 pixels&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Display aspect ratio   : 4:3&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Frame rate mode        : Constant&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Frame rate             : 30.000 FPS&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Color space            : YUV&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Chroma subsampling     : 4:2:2&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bit depth              : 8 bits&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Compression mode       : Lossy&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bits/(Pixel*Frame)     : 0.415&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Audio&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bit rate mode          : Constant&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bit rate               : 128 kb/s&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Channel(s)             : 1 channel&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Sampling rate          : 7 840 Hz&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bit depth              : 16 bits&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I&amp;rsquo;ve decided to transcode them to hopefully a future-proof format.&#xA;After a bit of testing I&amp;rsquo;ve decided to stick with x264 and Opus @ cfr 18 as it:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

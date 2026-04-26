@@ -4,134 +4,107 @@
     <title>Categories on Home</title>
     <link>https://kowalcj0.github.io/categories/</link>
     <description>Recent content in Categories on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 01 Nov 2022 18:07:06 +0000</lastBuildDate><atom:link href="https://kowalcj0.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Apr 2026 23:38:07 +0100</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>polityka</title>
-      <link>https://kowalcj0.github.io/categories/polityka/</link>
-      <pubDate>Tue, 01 Nov 2022 18:07:06 +0000</pubDate>
-      
-      <guid>https://kowalcj0.github.io/categories/polityka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://kowalcj0.github.io/categories/programming/</link>
-      <pubDate>Tue, 27 Sep 2022 15:46:52 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unix</title>
+      <title>Unix</title>
       <link>https://kowalcj0.github.io/categories/unix/</link>
-      <pubDate>Sun, 09 Jan 2022 13:14:44 +0000</pubDate>
-      
+      <pubDate>Sun, 26 Apr 2026 23:38:07 +0100</pubDate>
       <guid>https://kowalcj0.github.io/categories/unix/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>android</title>
+      <title>Polityka</title>
+      <link>https://kowalcj0.github.io/categories/polityka/</link>
+      <pubDate>Tue, 01 Nov 2022 18:07:06 +0000</pubDate>
+      <guid>https://kowalcj0.github.io/categories/polityka/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://kowalcj0.github.io/categories/programming/</link>
+      <pubDate>Tue, 27 Sep 2022 15:46:52 +0100</pubDate>
+      <guid>https://kowalcj0.github.io/categories/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android</title>
       <link>https://kowalcj0.github.io/categories/android/</link>
       <pubDate>Sat, 25 Sep 2021 22:09:22 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/android/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>photography</title>
+      <title>Photography</title>
       <link>https://kowalcj0.github.io/categories/photography/</link>
       <pubDate>Wed, 09 Jun 2021 21:52:01 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/photography/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>general</title>
+      <title>General</title>
       <link>https://kowalcj0.github.io/categories/general/</link>
       <pubDate>Mon, 05 Oct 2020 19:54:20 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/general/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>testing</title>
+      <title>Testing</title>
       <link>https://kowalcj0.github.io/categories/testing/</link>
       <pubDate>Sat, 06 Jun 2020 22:56:03 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/testing/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>security</title>
+      <title>Security</title>
       <link>https://kowalcj0.github.io/categories/security/</link>
       <pubDate>Sun, 03 May 2020 21:46:49 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/security/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>food</title>
+      <title>Food</title>
       <link>https://kowalcj0.github.io/categories/food/</link>
       <pubDate>Sat, 18 May 2019 19:44:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/food/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>web</title>
+      <title>Web</title>
       <link>https://kowalcj0.github.io/categories/web/</link>
       <pubDate>Mon, 20 Aug 2018 18:41:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/web/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>learning</title>
+      <title>Learning</title>
       <link>https://kowalcj0.github.io/categories/learning/</link>
       <pubDate>Mon, 14 May 2018 19:35:30 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/learning/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>movies</title>
+      <title>Movies</title>
       <link>https://kowalcj0.github.io/categories/movies/</link>
       <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/movies/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hugo</title>
+      <title>Hugo</title>
       <link>https://kowalcj0.github.io/categories/hugo/</link>
       <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/hugo/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>wordpress</title>
+      <title>Wordpress</title>
       <link>https://kowalcj0.github.io/categories/wordpress/</link>
       <pubDate>Sun, 10 Aug 2014 10:03:30 +0000</pubDate>
-      
       <guid>https://kowalcj0.github.io/categories/wordpress/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

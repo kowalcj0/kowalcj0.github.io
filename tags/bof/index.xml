@@ -4,19 +4,16 @@
     <title>BoF on Home</title>
     <link>https://kowalcj0.github.io/tags/bof/</link>
     <description>Recent content in BoF on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 20 Mar 2018 19:20:10 +0100</lastBuildDate><atom:link href="https://kowalcj0.github.io/tags/bof/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Mar 2018 19:20:10 +0100</lastBuildDate>
+    <atom:link href="https://kowalcj0.github.io/tags/bof/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ethical Hacking - Buffer Overflow - notes</title>
-      <link>https://kowalcj0.github.io/2018/03/ethical-hackin-buffer-iverflow/</link>
+      <link>https://kowalcj0.github.io/2018/03/20/ethical-hackin-buffer-iverflow/</link>
       <pubDate>Tue, 20 Mar 2018 19:20:10 +0100</pubDate>
-      
-      <guid>https://kowalcj0.github.io/2018/03/ethical-hackin-buffer-iverflow/</guid>
-      <description>These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Buffer Overflows&amp;rdquo; by James Murray.
-Stack pointers Types of stack pointers:
-SP → Stack Pointer keeps track where the next element will be pushe to or poppef off of the stack FP → Frame Pointer points to the beginning of the stack frame for the current function call used to easily find inf. associated with the fucntion being executed BP → Base Pointer (different name for FP) IP → Instruction Pointer points to the location in the memory that contains next machine language instruction that is to be executed by the CPU.</description>
+      <guid>https://kowalcj0.github.io/2018/03/20/ethical-hackin-buffer-iverflow/</guid>
+      <description>&lt;p&gt;These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Buffer&#xA;Overflows&amp;rdquo; by James Murray.&lt;/p&gt;&#xA;&lt;h1 id=&#34;stack-pointers&#34;&gt;Stack pointers&lt;/h1&gt;&#xA;&lt;p&gt;Types of stack pointers:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;SP&lt;/code&gt; → &lt;code&gt;Stack Pointer&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;keeps track where the next element will be pushe to or poppef off of the stack&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;FP&lt;/code&gt; → &lt;code&gt;Frame Pointer&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;points to the beginning of the stack frame for the current function call&lt;/li&gt;&#xA;&lt;li&gt;used to easily find inf. associated with the fucntion being executed&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;BP&lt;/code&gt; → Base Pointer (different name for FP)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;IP&lt;/code&gt; → &lt;code&gt;Instruction Pointer&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;points to the location in the memory that contains next machine language&#xA;instruction that is to be executed by the CPU. It steps through the&#xA;program code in an incremental fashion. Causing one instruction to be&#xA;executed at a time.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Instruction Counter or Program Counter&#xA;&lt;ul&gt;&#xA;&lt;li&gt;it points to the code segment of process memory, and usually steps&#xA;through the program code sequentially. One instruction at a time.&#xA;Yet, when the it&amp;rsquo;s set to a non-sequential memory address, then we a&#xA;&lt;code&gt;jump&lt;/code&gt; happens (caused by conditional branching, e.g.: if-else, etc.).&#xA;For a function call to return, the IP is set to the return address of&#xA;the funciton stack frame. This address is the location of the code&#xA;segment that follows the function call in the previously called&#xA;function.&#xA;The key to advanced buffer overflow techninuqes is the manipulation of&#xA;the IP. When you can set the value of the IP, then you can control what&#xA;program instructions are executed by the CPU. And those instructions&#xA;don&amp;rsquo;t have to be in the program code segment!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Registers&lt;/code&gt; → are dedicated areas of CPU memory&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;what-can-you-do-with-a-buffer-overflow-condition&#34;&gt;What can you do with a buffer overflow condition?&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Access memory-resident resources&lt;/li&gt;&#xA;&lt;li&gt;Run installed programs&lt;/li&gt;&#xA;&lt;li&gt;Inject and run exploit code on the computer&lt;/li&gt;&#xA;&lt;li&gt;Cause program instability and abormal termination&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;code&gt;Arbitrary code execution&lt;/code&gt; -&amp;gt; is a condition when any executable ecode that is&#xA;injected into a program&amp;rsquo;s buffer causes the buffer to overflow and forces the&#xA;program to run the injected code.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
