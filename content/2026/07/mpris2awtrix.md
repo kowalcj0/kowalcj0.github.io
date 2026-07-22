@@ -2,8 +2,8 @@
 title: "Mpris2awtrix"
 description: "display DBus/MPRIS track details on Ulanzi/Awtrix 3 display Home Assistant automation"
 date: 2026-07-21T23:32:02+01:00
-draft: true
-toc: false
+draft: false
+toc: true
 slug: "mpris2awtrix"
 categories:
   - unix
