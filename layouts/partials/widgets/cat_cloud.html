@@ -1,5 +1,5 @@
-{{- $defaultConfig := .Site.Data.config.default.widgets.cat_cloud -}}
-{{- $configData := ( or .Site.Data.config.widgets.cat_cloud $defaultConfig ) -}}
+{{- $defaultConfig := hugo.Data.config.default.widgets.cat_cloud -}}
+{{- $configData := ( or hugo.Data.config.widgets.cat_cloud $defaultConfig ) -}}
 {{- $lang := .Site.Language.Lang -}}
 {{- $config := ( ( index $configData $lang ) | default $configData ) -}}
 

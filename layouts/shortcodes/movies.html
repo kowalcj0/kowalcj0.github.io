@@ -5,7 +5,7 @@
 {{ with $category }}
 <table aria-label="Interesting {{ $category }} movies" style="font-size:80%;width:100%">
   <tbody>
-{{ range $.Site.Data.movies }}
+{{ range hugo.Data.movies }}
     {{ if eq $category .category }}
         {{ range sort .movies $sort_by $order }}
             {{ if .title }}

@@ -1,3 +1,3 @@
-[submodule "themes/minimo"]
-	path = themes/minimo
-	url = https://github.com/MunifTanjim/minimo
+[submodule "themes/minimo-next"]
+	path = themes/minimo-next
+	url = git@github.com:kowalcj0/minimo-next.git

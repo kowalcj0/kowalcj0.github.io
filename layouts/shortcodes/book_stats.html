@@ -1,6 +1,6 @@
 {{ $.Scratch.Set "completed_by_year" dict }}
 {{ $completed_books := slice }}
-{{ range $.Site.Data.books }}
+{{ range hugo.Data.books }}
     {{ $completed_in_category := ( where .books "completed" "!=" "" ) }}
     {{ range $completed_in_category }}
         {{ $completion_year := index (split .completed "-" | first 1) 0 }}

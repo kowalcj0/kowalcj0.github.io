@@ -5,7 +5,7 @@
 
 <table aria-label="Interesting books: {{ $category }}" style="font-size:80%;width:100%">
   <tbody>
-{{ range $.Site.Data.books }}
+{{ range hugo.Data.books }}
     {{ if eq $category .category }}
         {{ range sort ( where .books "completed" "!=" "" ) $sort_by $order }}
             {{ if .title }}

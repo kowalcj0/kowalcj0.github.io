@@ -1,15 +1,21 @@
 baseURL = "https://kowalcj0.github.io"
 copyright = ""  # for smart copyright line, leave this blank and check [params.copyright]
 defaultContentLanguage = "en"
-languageCode = "en-gb"
 enableEmoji=true
 enableRobotsTXT = true  # generate robots.txt
 footnoteReturnLinkContents = "↩"
 newContentEditor = "nvim"
 paginate = 20
 pluralizelisttitles = false  # Don't pluralize titles in lists
-theme = "minimo"
+theme = "minimo-next"
 title = "Home"
+
+[languages]
+  [languages.en]
+    direction = 'ltr'
+    label = 'English'
+    locale = 'en-GB'
+    weight = 1
 
 [menu]
   [[menu.main]]
