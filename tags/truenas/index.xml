@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Truenas on Home</title>
-    <link>https://kowalcj0.github.io/tags/truenas/</link>
-    <description>Recent content in Truenas on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Sat, 05 Jun 2021 17:18:24 +0100</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/truenas/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Install Photoprism in Truenas Jail</title>
-      <link>https://kowalcj0.github.io/2021/06/05/install-photoprism-in-truenas-jail/</link>
-      <pubDate>Sat, 05 Jun 2021 17:18:24 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2021/06/05/install-photoprism-in-truenas-jail/</guid>
-      <description>&lt;p&gt;For quite a while I&amp;rsquo;ve been looking for a self-hosted photo &amp;amp; video gallery.&lt;br&gt;&#xA;I tried things like:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://nextcloud.com&#34; target=&#34;_blank&#34;&gt;NextCloud&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://owncloud.com&#34; target=&#34;_blank&#34;&gt;OwnCloud&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://piwigo.org&#34; target=&#34;_blank&#34;&gt;Piwigo&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://lychee.electerious.com&#34; target=&#34;_blank&#34;&gt;Lychee&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Yet, none of them made the cut.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Truenas on Home</title>
+		<link>https://kowalcj0.github.io/tags/truenas/</link>
+		<description>Recent content in Truenas on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 05 Jun 2021 17:18:24 +0100</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/truenas/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Install Photoprism in Truenas Jail</title>
+				<link>https://kowalcj0.github.io/2021/06/05/install-photoprism-in-truenas-jail/</link>
+				<pubDate>Sat, 05 Jun 2021 17:18:24 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2021/06/05/install-photoprism-in-truenas-jail/</guid>
+				<description>&lt;p&gt;For quite a while I&amp;rsquo;ve been looking for a self-hosted photo &amp;amp; video gallery.&lt;br&gt;&#xA;I tried things like:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://nextcloud.com&#34; target=&#34;_blank&#34;&gt;NextCloud&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://owncloud.com&#34; target=&#34;_blank&#34;&gt;OwnCloud&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://piwigo.org&#34; target=&#34;_blank&#34;&gt;Piwigo&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://lychee.electerious.com&#34; target=&#34;_blank&#34;&gt;Lychee&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Yet, none of them made the cut.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

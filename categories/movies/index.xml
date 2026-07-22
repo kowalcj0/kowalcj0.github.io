@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Movies on Home</title>
-    <link>https://kowalcj0.github.io/categories/movies/</link>
-    <description>Recent content in Movies on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Mon, 29 Jan 2018 10:40:50 +0100</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/categories/movies/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Human Condition I: No Greater Love</title>
-      <link>https://kowalcj0.github.io/2018/01/29/human-condition-i-no-greater-love/</link>
-      <pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2018/01/29/human-condition-i-no-greater-love/</guid>
-      <description>&lt;h3 id=&#34;ratings--further-reading&#34;&gt;Ratings &amp;amp; further reading&lt;/h3&gt;&#xA;&lt;p&gt;Runtime: &lt;code&gt;208&lt;/code&gt; minutes&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.imdb.com/title/tt0053114/&#34; target=&#34;_blank&#34;&gt;IMDb&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  8.6 / 10&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.rottentomatoes.com/m/ningen_no_joken_i/&#34; target=&#34;_blank&#34;&gt;Rotten Tomatoes&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; 89% - avg. rating 7.7 / 10&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Human_Condition_%28film_series%29#No_Greater_Love&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;plot&#34;&gt;Plot&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A Japanese pacifist, unable to face the dire consequences of conscientious&#xA;objection, is transformed by his attempts to compromise with the demands of&#xA;war-time Japan. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Movies on Home</title>
+		<link>https://kowalcj0.github.io/categories/movies/</link>
+		<description>Recent content in Movies on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 29 Jan 2018 10:40:50 +0100</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/categories/movies/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Human Condition I: No Greater Love</title>
+				<link>https://kowalcj0.github.io/2018/01/29/human-condition-i-no-greater-love/</link>
+				<pubDate>Mon, 29 Jan 2018 10:40:50 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2018/01/29/human-condition-i-no-greater-love/</guid>
+				<description>&lt;h3 id=&#34;ratings--further-reading&#34;&gt;Ratings &amp;amp; further reading&lt;/h3&gt;&#xA;&lt;p&gt;Runtime: &lt;code&gt;208&lt;/code&gt; minutes&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.imdb.com/title/tt0053114/&#34; target=&#34;_blank&#34;&gt;IMDb&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  8.6 / 10&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.rottentomatoes.com/m/ningen_no_joken_i/&#34; target=&#34;_blank&#34;&gt;Rotten Tomatoes&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; 89% - avg. rating 7.7 / 10&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Human_Condition_%28film_series%29#No_Greater_Love&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;plot&#34;&gt;Plot&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A Japanese pacifist, unable to face the dire consequences of conscientious&#xA;objection, is transformed by his attempts to compromise with the demands of&#xA;war-time Japan. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Vim on Home</title>
-    <link>https://kowalcj0.github.io/tags/vim/</link>
-    <description>Recent content in Vim on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Mon, 25 Nov 2013 13:04:27 +0000</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Vim - tips and tricks</title>
-      <link>https://kowalcj0.github.io/2013/11/25/vim-tips-and-tricks/</link>
-      <pubDate>Mon, 25 Nov 2013 13:04:27 +0000</pubDate>
-      <guid>https://kowalcj0.github.io/2013/11/25/vim-tips-and-tricks/</guid>
-      <description>&lt;p&gt;Record a macro that will delete everything after matching character and repeat it N-times.&#xA;In this example we&amp;rsquo;re going to use &lt;code&gt;=&lt;/code&gt; as the matching character.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;qaf=D⏎q&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;qa&lt;/code&gt; - to start recording and save it under &amp;lsquo;a&amp;rsquo; buffer&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;f=&lt;/code&gt; - find &amp;lsquo;=&amp;rsquo; character&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;D&lt;/code&gt; - Delete everything to the EOL&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;⏎&lt;/code&gt; - press &amp;rsquo;enter&amp;rsquo; to go to the beginning of next line&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;q&lt;/code&gt; - to stop recording the macro then to repeat the macro N-times, i.e. repeat it 5 times:&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;5@a&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to compile and install latest version of Vim with support for: X11 clipboard, ruby, python 2 or python 3</title>
-      <link>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</link>
-      <pubDate>Tue, 19 Nov 2013 14:19:12 +0000</pubDate>
-      <guid>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</guid>
-      <description>&lt;p&gt;This was tested with vim 7.4.(1-398)&#xA;(Update: 2013-12-03 apparently you can&amp;rsquo;t build vim with support for both python 2 and python 3, so I had to update this tutorial a bit :) )&#xA;(Update: 2014-08-09 Added three commands: &amp;ldquo;hg pull&amp;rdquo;, &amp;ldquo;hg update&amp;rdquo; and &amp;ldquo;hg status&amp;rdquo; to pull the latest version of the repo)&lt;/p&gt;&#xA;&lt;p&gt;First of all install all the dependencies required when compiling Vim with additional options:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    mercurial &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    python &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    python-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    python3 &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    python3-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ruby &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ruby-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    libx11-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    libxt-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    libgtk2.0-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    libncurses5 &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ncurses-dev&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then clone official vim repo, configure it with support for: X11 clipboard, ruby, python 2 or 3 and few other cool options :)&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Vim on Home</title>
+		<link>https://kowalcj0.github.io/tags/vim/</link>
+		<description>Recent content in Vim on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 25 Nov 2013 13:04:27 +0000</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Vim - tips and tricks</title>
+				<link>https://kowalcj0.github.io/2013/11/25/vim-tips-and-tricks/</link>
+				<pubDate>Mon, 25 Nov 2013 13:04:27 +0000</pubDate>
+				<guid>https://kowalcj0.github.io/2013/11/25/vim-tips-and-tricks/</guid>
+				<description>&lt;p&gt;Record a macro that will delete everything after matching character and repeat it N-times.&#xA;In this example we&amp;rsquo;re going to use &lt;code&gt;=&lt;/code&gt; as the matching character.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;qaf=D⏎q&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;qa&lt;/code&gt; - to start recording and save it under &amp;lsquo;a&amp;rsquo; buffer&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;f=&lt;/code&gt; - find &amp;lsquo;=&amp;rsquo; character&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;D&lt;/code&gt; - Delete everything to the EOL&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;⏎&lt;/code&gt; - press &amp;rsquo;enter&amp;rsquo; to go to the beginning of next line&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;q&lt;/code&gt; - to stop recording the macro then to repeat the macro N-times, i.e. repeat it 5 times:&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;5@a&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>How to compile and install latest version of Vim with support for: X11 clipboard, ruby, python 2 or python 3</title>
+				<link>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</link>
+				<pubDate>Tue, 19 Nov 2013 14:19:12 +0000</pubDate>
+				<guid>https://kowalcj0.github.io/2013/11/19/how-to-compile-and-install-latest-version-of-vim-with-support-for-x11-clipboard-ruby-python-2-3/</guid>
+				<description>&lt;p&gt;This was tested with vim 7.4.(1-398)&#xA;(Update: 2013-12-03 apparently you can&amp;rsquo;t build vim with support for both python 2 and python 3, so I had to update this tutorial a bit :) )&#xA;(Update: 2014-08-09 Added three commands: &amp;ldquo;hg pull&amp;rdquo;, &amp;ldquo;hg update&amp;rdquo; and &amp;ldquo;hg status&amp;rdquo; to pull the latest version of the repo)&lt;/p&gt;&#xA;&lt;p&gt;First of all install all the dependencies required when compiling Vim with additional options:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    mercurial &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    python &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    python-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    python3 &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    python3-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ruby &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ruby-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    libx11-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    libxt-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    libgtk2.0-dev &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    libncurses5 &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ncurses-dev&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then clone official vim repo, configure it with support for: X11 clipboard, ruby, python 2 or 3 and few other cool options :)&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

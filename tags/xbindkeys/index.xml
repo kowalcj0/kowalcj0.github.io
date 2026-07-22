@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Xbindkeys on Home</title>
-    <link>https://kowalcj0.github.io/tags/xbindkeys/</link>
-    <description>Recent content in Xbindkeys on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Thu, 28 Nov 2013 11:50:40 +0000</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/xbindkeys/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Configure your Logitech Performance MX Mouse buttons to work with Linux Mint</title>
-      <link>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</link>
-      <pubDate>Thu, 28 Nov 2013 11:50:40 +0000</pubDate>
-      <guid>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</guid>
-      <description>&lt;p&gt;To make your extra mouse buttons work on Linux Mint (I&amp;rsquo;ve tested it with v15) follow all the steps listed in this &lt;a href=&#34;http://lotphelp.com/lotp/lotp-guide-logitech-mx-mouse-ubuntu&#34; title=&#34;Using Your Logitech MX Mouse with Ubuntu&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; except the step 4 :)&lt;/p&gt;&#xA;&lt;p&gt;Once you get to step 4, use this key mappings to make the &amp;lsquo;zoom&amp;rsquo; and &amp;lsquo;switch between windows&amp;rsquo; buttons work as on windows.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Xbindkeys on Home</title>
+		<link>https://kowalcj0.github.io/tags/xbindkeys/</link>
+		<description>Recent content in Xbindkeys on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 28 Nov 2013 11:50:40 +0000</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/xbindkeys/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Configure your Logitech Performance MX Mouse buttons to work with Linux Mint</title>
+				<link>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</link>
+				<pubDate>Thu, 28 Nov 2013 11:50:40 +0000</pubDate>
+				<guid>https://kowalcj0.github.io/2013/11/28/configure-your-logitech-performance-mx-mouse-buttons-to-work-with-linux-mint/</guid>
+				<description>&lt;p&gt;To make your extra mouse buttons work on Linux Mint (I&amp;rsquo;ve tested it with v15) follow all the steps listed in this &lt;a href=&#34;http://lotphelp.com/lotp/lotp-guide-logitech-mx-mouse-ubuntu&#34; title=&#34;Using Your Logitech MX Mouse with Ubuntu&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; except the step 4 :)&lt;/p&gt;&#xA;&lt;p&gt;Once you get to step 4, use this key mappings to make the &amp;lsquo;zoom&amp;rsquo; and &amp;lsquo;switch between windows&amp;rsquo; buttons work as on windows.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

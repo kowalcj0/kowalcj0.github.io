@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Apt on Home</title>
-    <link>https://kowalcj0.github.io/tags/apt/</link>
-    <description>Recent content in Apt on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Fri, 13 Sep 2013 13:55:52 +0000</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/apt/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to change the default keyserver used by add-apt-repository</title>
-      <link>https://kowalcj0.github.io/2013/09/13/how-to-change-the-default-keyserver-used-by-the-command-sudo-add-apt-repository/</link>
-      <pubDate>Fri, 13 Sep 2013 13:55:52 +0000</pubDate>
-      <guid>https://kowalcj0.github.io/2013/09/13/how-to-change-the-default-keyserver-used-by-the-command-sudo-add-apt-repository/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;ve encountered problems with connecting to &lt;code&gt;keyserver.ubuntu.com&lt;/code&gt; like:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.... &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Executing: &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.UsuIhHAgLO --trustdb-name /etc/apt//trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver keyserver.ubuntu.com --recv-keys CFCA9579 &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gpg: requesting key CFCA9579 from hkp server keyserver.ubuntu.com &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gpg: keyserver timed out &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gpg: keyserver receive failed: keyserver error&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Which might show up after you&amp;rsquo;ve added a new ppa to your list of repositories using &lt;code&gt;add-apt-repository&lt;/code&gt;&lt;br&gt;&#xA;i.e.: &amp;ldquo;&lt;code&gt;sudo add-apt-repository ppa:jon-severinsson/ffmpeg&lt;/code&gt;&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Then what you have to do is to change the default port used for obtaining pgp keys from &lt;code&gt;11371&lt;/code&gt; to &lt;code&gt;80&lt;/code&gt;.&lt;br&gt;&#xA;To do this, edit &lt;code&gt;/usr/lib/linuxmint/mintSources/mintSources.py&lt;/code&gt; and replace all the occurrences of &amp;ldquo;&lt;code&gt;keyserver.ubuntu.com&lt;/code&gt;&amp;rdquo; with &lt;code&gt;hkp://keyserver.ubuntu.com:80&lt;/code&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Apt on Home</title>
+		<link>https://kowalcj0.github.io/tags/apt/</link>
+		<description>Recent content in Apt on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 13 Sep 2013 13:55:52 +0000</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/apt/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How to change the default keyserver used by add-apt-repository</title>
+				<link>https://kowalcj0.github.io/2013/09/13/how-to-change-the-default-keyserver-used-by-the-command-sudo-add-apt-repository/</link>
+				<pubDate>Fri, 13 Sep 2013 13:55:52 +0000</pubDate>
+				<guid>https://kowalcj0.github.io/2013/09/13/how-to-change-the-default-keyserver-used-by-the-command-sudo-add-apt-repository/</guid>
+				<description>&lt;p&gt;If you&amp;rsquo;ve encountered problems with connecting to &lt;code&gt;keyserver.ubuntu.com&lt;/code&gt; like:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.... &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Executing: &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.UsuIhHAgLO --trustdb-name /etc/apt//trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver keyserver.ubuntu.com --recv-keys CFCA9579 &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gpg: requesting key CFCA9579 from hkp server keyserver.ubuntu.com &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gpg: keyserver timed out &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gpg: keyserver receive failed: keyserver error&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Which might show up after you&amp;rsquo;ve added a new ppa to your list of repositories using &lt;code&gt;add-apt-repository&lt;/code&gt;&lt;br&gt;&#xA;i.e.: &amp;ldquo;&lt;code&gt;sudo add-apt-repository ppa:jon-severinsson/ffmpeg&lt;/code&gt;&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Then what you have to do is to change the default port used for obtaining pgp keys from &lt;code&gt;11371&lt;/code&gt; to &lt;code&gt;80&lt;/code&gt;.&lt;br&gt;&#xA;To do this, edit &lt;code&gt;/usr/lib/linuxmint/mintSources/mintSources.py&lt;/code&gt; and replace all the occurrences of &amp;ldquo;&lt;code&gt;keyserver.ubuntu.com&lt;/code&gt;&amp;rdquo; with &lt;code&gt;hkp://keyserver.ubuntu.com:80&lt;/code&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

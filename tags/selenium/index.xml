@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Selenium on Home</title>
-    <link>https://kowalcj0.github.io/tags/selenium/</link>
-    <description>Recent content in Selenium on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Fri, 28 Mar 2014 20:47:02 +0000</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/selenium/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Run your Selenium driven tests in parallel using TestNG.</title>
-      <link>https://kowalcj0.github.io/2014/03/28/run-your-selenium-driven-tests-in-parallel-using-testng/</link>
-      <pubDate>Fri, 28 Mar 2014 20:47:02 +0000</pubDate>
-      <guid>https://kowalcj0.github.io/2014/03/28/run-your-selenium-driven-tests-in-parallel-using-testng/</guid>
-      <description>&lt;p&gt;Sometime ago, I came across this post: &lt;a href=&#34;https://rationaleemotions.wordpress.com/2013/07/31/parallel-webdriver-executions-using-testng/&#34; target=&#34;_blank&#34;&gt;Parallel WebDriver executions using TestNG&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;I thought it&amp;rsquo;d be good to have it in a repo to save you time setting up your own project.&#xA;Basically this example project runs JUnit tests in parallel using TestNG.&#xA;Tests are grouped by the browser in which they&amp;rsquo;re going to be executed (have a look at the TestNG XML Suite files in &lt;code&gt;src/test/resources&lt;/code&gt;).&#xA;As you might have guessed to drive the browsers we use Selenium WebDriver :)&#xA;And of course you can run your tests locally or remotely using Selenium GRID.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Selenium on Home</title>
+		<link>https://kowalcj0.github.io/tags/selenium/</link>
+		<description>Recent content in Selenium on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 28 Mar 2014 20:47:02 +0000</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/selenium/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Run your Selenium driven tests in parallel using TestNG.</title>
+				<link>https://kowalcj0.github.io/2014/03/28/run-your-selenium-driven-tests-in-parallel-using-testng/</link>
+				<pubDate>Fri, 28 Mar 2014 20:47:02 +0000</pubDate>
+				<guid>https://kowalcj0.github.io/2014/03/28/run-your-selenium-driven-tests-in-parallel-using-testng/</guid>
+				<description>&lt;p&gt;Sometime ago, I came across this post: &lt;a href=&#34;https://rationaleemotions.wordpress.com/2013/07/31/parallel-webdriver-executions-using-testng/&#34; target=&#34;_blank&#34;&gt;Parallel WebDriver executions using TestNG&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;I thought it&amp;rsquo;d be good to have it in a repo to save you time setting up your own project.&#xA;Basically this example project runs JUnit tests in parallel using TestNG.&#xA;Tests are grouped by the browser in which they&amp;rsquo;re going to be executed (have a look at the TestNG XML Suite files in &lt;code&gt;src/test/resources&lt;/code&gt;).&#xA;As you might have guessed to drive the browsers we use Selenium WebDriver :)&#xA;And of course you can run your tests locally or remotely using Selenium GRID.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

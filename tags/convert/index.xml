@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Convert on Home</title>
-    <link>https://kowalcj0.github.io/tags/convert/</link>
-    <description>Recent content in Convert on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Fri, 05 Feb 2021 09:33:00 +0000</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/convert/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Converting raw Nikon NEF files to DNG and back on Linux</title>
-      <link>https://kowalcj0.github.io/2021/02/05/converting_raw_nikon_nef_files_to_dng_and_back_on_linux/</link>
-      <pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
-      <guid>https://kowalcj0.github.io/2021/02/05/converting_raw_nikon_nef_files_to_dng_and_back_on_linux/</guid>
-      <description>&lt;p&gt;Regardless of whether it makes sense or not to convert raw files to DNG, you&#xA;might choose a middleground solution and embed the original raw file in a DNG&#xA;file.&lt;br&gt;&#xA;The major drawback to this solution is that the resulting DNG file will&#xA;be roughly double in size when compared with the original raw file.&lt;br&gt;&#xA;The benefit of emdedding a raw files in a DNG file that you can easily extract&#xA;it later on.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Convert on Home</title>
+		<link>https://kowalcj0.github.io/tags/convert/</link>
+		<description>Recent content in Convert on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 05 Feb 2021 09:33:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/convert/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Converting raw Nikon NEF files to DNG and back on Linux</title>
+				<link>https://kowalcj0.github.io/2021/02/05/converting_raw_nikon_nef_files_to_dng_and_back_on_linux/</link>
+				<pubDate>Fri, 05 Feb 2021 09:33:00 +0000</pubDate>
+				<guid>https://kowalcj0.github.io/2021/02/05/converting_raw_nikon_nef_files_to_dng_and_back_on_linux/</guid>
+				<description>&lt;p&gt;Regardless of whether it makes sense or not to convert raw files to DNG, you&#xA;might choose a middleground solution and embed the original raw file in a DNG&#xA;file.&lt;br&gt;&#xA;The major drawback to this solution is that the resulting DNG file will&#xA;be roughly double in size when compared with the original raw file.&lt;br&gt;&#xA;The benefit of emdedding a raw files in a DNG file that you can easily extract&#xA;it later on.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

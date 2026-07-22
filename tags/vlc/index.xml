@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Vlc on Home</title>
-    <link>https://kowalcj0.github.io/tags/vlc/</link>
-    <description>Recent content in Vlc on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Sun, 11 Feb 2018 22:40:50 +0100</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/vlc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fix &#39;X11 connection broke&#39; issue in QT based GUI applications like VLC</title>
-      <link>https://kowalcj0.github.io/2018/02/11/vlc-auto-screen-scale-factor-issue/</link>
-      <pubDate>Sun, 11 Feb 2018 22:40:50 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2018/02/11/vlc-auto-screen-scale-factor-issue/</guid>
-      <description>&lt;p&gt;If you ever encountered error like this when starting vlc:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ vlc&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;VLC media player 3.0.0-rc5 Vetinari &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;revision 3.0.0-rc5-0-gf53236af09&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;0000560cfbe38410&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; main libvlc: Running vlc with the default interface. Use &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cvlc&amp;#39;&lt;/span&gt; to use vlc without interface.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;The X11 connection broke: Maximum allowed requested length exceeded &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;code 4&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;XIO:  fatal IO error &lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Invalid argument&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; on X server &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:0&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      after &lt;span style=&#34;color:#ae81ff&#34;&gt;447&lt;/span&gt; requests &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;447&lt;/span&gt; known processed&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; with &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; events remaining.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;QMutex: destroying locked mutex&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then you can fix it by setting the &lt;code&gt;QT_AUTO_SCREEN_SCALE_FACTOR&lt;/code&gt; env variable to &lt;code&gt;0&lt;/code&gt;, i.e.:&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Vlc on Home</title>
+		<link>https://kowalcj0.github.io/tags/vlc/</link>
+		<description>Recent content in Vlc on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 11 Feb 2018 22:40:50 +0100</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/vlc/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Fix &#39;X11 connection broke&#39; issue in QT based GUI applications like VLC</title>
+				<link>https://kowalcj0.github.io/2018/02/11/vlc-auto-screen-scale-factor-issue/</link>
+				<pubDate>Sun, 11 Feb 2018 22:40:50 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2018/02/11/vlc-auto-screen-scale-factor-issue/</guid>
+				<description>&lt;p&gt;If you ever encountered error like this when starting vlc:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ vlc&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;VLC media player 3.0.0-rc5 Vetinari &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;revision 3.0.0-rc5-0-gf53236af09&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;0000560cfbe38410&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; main libvlc: Running vlc with the default interface. Use &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cvlc&amp;#39;&lt;/span&gt; to use vlc without interface.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;The X11 connection broke: Maximum allowed requested length exceeded &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;code 4&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;XIO:  fatal IO error &lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Invalid argument&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; on X server &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:0&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      after &lt;span style=&#34;color:#ae81ff&#34;&gt;447&lt;/span&gt; requests &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;447&lt;/span&gt; known processed&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; with &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; events remaining.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;QMutex: destroying locked mutex&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then you can fix it by setting the &lt;code&gt;QT_AUTO_SCREEN_SCALE_FACTOR&lt;/code&gt; env variable to &lt;code&gt;0&lt;/code&gt;, i.e.:&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

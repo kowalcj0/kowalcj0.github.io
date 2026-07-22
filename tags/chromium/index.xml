@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Chromium on Home</title>
-    <link>https://kowalcj0.github.io/tags/chromium/</link>
-    <description>Recent content in Chromium on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Thu, 07 Nov 2013 13:59:41 +0000</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to add official Chromium-browser PPA repository to Linux Mint 15 and install the latest stable build</title>
-      <link>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</link>
-      <pubDate>Thu, 07 Nov 2013 13:59:41 +0000</pubDate>
-      <guid>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s the official Chromium-browser PPA: &lt;a href=&#34;https://launchpad.net/~chromium-daily/&amp;#43;archive/stable&#34; target=&#34;_blank&#34;&gt;https://launchpad.net/~chromium-daily/+archive/stable&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;To install latest stable build follow 3 simple steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;add &amp;ldquo;&lt;code&gt;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&lt;/code&gt;&amp;rdquo; to &lt;code&gt;/etc/apt/sources.list&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;W: GPG error: http://ppa.launchpad.net raring &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Release: The following signatures couldn&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo gpg &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --keyserver hkp://keys.gnupg.net:80 &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --recv 5A9BF3BB4E5E17B5&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo gpg &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |&lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        sudo apt-key add -&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;btw. using &lt;code&gt;hkp://keys.gnupg.net:80&lt;/code&gt; will work even if you&amp;rsquo;re behind a firewall or proxy :)&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Chromium on Home</title>
+		<link>https://kowalcj0.github.io/tags/chromium/</link>
+		<description>Recent content in Chromium on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 07 Nov 2013 13:59:41 +0000</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How to add official Chromium-browser PPA repository to Linux Mint 15 and install the latest stable build</title>
+				<link>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</link>
+				<pubDate>Thu, 07 Nov 2013 13:59:41 +0000</pubDate>
+				<guid>https://kowalcj0.github.io/2013/11/07/install-chromium-browser-on-linux-mint-15/</guid>
+				<description>&lt;p&gt;Here&amp;rsquo;s the official Chromium-browser PPA: &lt;a href=&#34;https://launchpad.net/~chromium-daily/&amp;#43;archive/stable&#34; target=&#34;_blank&#34;&gt;https://launchpad.net/~chromium-daily/+archive/stable&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;To install latest stable build follow 3 simple steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;add &amp;ldquo;&lt;code&gt;deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu raring main&lt;/code&gt;&amp;rdquo; to &lt;code&gt;/etc/apt/sources.list&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;add repo&amp;rsquo;s pub key so that we can avoid problems like the one below:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;W: GPG error: http://ppa.launchpad.net raring &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Release: The following signatures couldn&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt;t be verified because the public key is not available: NO_PUBKEY 5A9BF3BB4E5E17B5&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo gpg &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --keyserver hkp://keys.gnupg.net:80 &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --recv 5A9BF3BB4E5E17B5&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo gpg &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --export FBEF0D696DE1C72BA5A835FE5A9BF3BB4E5E17B5 |&lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        sudo apt-key add -&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;btw. using &lt;code&gt;hkp://keys.gnupg.net:80&lt;/code&gt; will work even if you&amp;rsquo;re behind a firewall or proxy :)&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

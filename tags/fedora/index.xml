@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Fedora on Home</title>
-    <link>https://kowalcj0.github.io/tags/fedora/</link>
-    <description>Recent content in Fedora on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Sun, 04 Feb 2018 13:46:30 +0100</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Allow GUI applications run by root user to connect to X server</title>
-      <link>https://kowalcj0.github.io/2018/02/04/allow-application-run-by-root-to-connect-to-x-server/</link>
-      <pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2018/02/04/allow-application-run-by-root-to-connect-to-x-server/</guid>
-      <description>&lt;p&gt;Recently I had an annoying problem running Wireshark as root user on Fedora 27&#xA;(Wayland + Gnome 3.26).&lt;br&gt;&#xA;I was getting following error:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo wireshark&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/tmp/runtime-root&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;QXcbConnection: Could not connect to display&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Aborted &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;core dumped&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To fix this, you need to add &lt;code&gt;root&lt;/code&gt; user to the list of users allowed to make&#xA;connections to the X server.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xhost si:localuser:root&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That&amp;rsquo;s it. From now on, you shouldn&amp;rsquo;t have any problems running GUI&#xA;applications by root user.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Fedora on Home</title>
+		<link>https://kowalcj0.github.io/tags/fedora/</link>
+		<description>Recent content in Fedora on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 04 Feb 2018 13:46:30 +0100</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Allow GUI applications run by root user to connect to X server</title>
+				<link>https://kowalcj0.github.io/2018/02/04/allow-application-run-by-root-to-connect-to-x-server/</link>
+				<pubDate>Sun, 04 Feb 2018 13:46:30 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2018/02/04/allow-application-run-by-root-to-connect-to-x-server/</guid>
+				<description>&lt;p&gt;Recently I had an annoying problem running Wireshark as root user on Fedora 27&#xA;(Wayland + Gnome 3.26).&lt;br&gt;&#xA;I was getting following error:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo wireshark&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/tmp/runtime-root&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;QXcbConnection: Could not connect to display&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Aborted &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;core dumped&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To fix this, you need to add &lt;code&gt;root&lt;/code&gt; user to the list of users allowed to make&#xA;connections to the X server.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xhost si:localuser:root&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That&amp;rsquo;s it. From now on, you shouldn&amp;rsquo;t have any problems running GUI&#xA;applications by root user.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

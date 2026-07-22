@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Seo on Home</title>
-    <link>https://kowalcj0.github.io/tags/seo/</link>
-    <description>Recent content in Seo on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Mon, 20 Aug 2018 18:41:50 +0100</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/seo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Stop using URL shorteners</title>
-      <link>https://kowalcj0.github.io/2018/08/20/stop-using-url-shortners/</link>
-      <pubDate>Mon, 20 Aug 2018 18:41:50 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2018/08/20/stop-using-url-shortners/</guid>
-      <description>&lt;p&gt;Why do people use URL shorteners?&lt;/p&gt;&#xA;&lt;p&gt;They&amp;rsquo;re simply unreliable and bad for privacy.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve already encountered quite a few dead short URLs because the URL shortener&#xA;service was closed down and it was rather painfull waste of time to find&#xA;the original link.&lt;/p&gt;&#xA;&lt;p&gt;They&amp;rsquo;re bad for privacy because the shortener service knows what are you browsing.&lt;/p&gt;&#xA;&lt;p&gt;Why would give away such important meta data about your readers to someone else?&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Seo on Home</title>
+		<link>https://kowalcj0.github.io/tags/seo/</link>
+		<description>Recent content in Seo on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 20 Aug 2018 18:41:50 +0100</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Stop using URL shorteners</title>
+				<link>https://kowalcj0.github.io/2018/08/20/stop-using-url-shortners/</link>
+				<pubDate>Mon, 20 Aug 2018 18:41:50 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2018/08/20/stop-using-url-shortners/</guid>
+				<description>&lt;p&gt;Why do people use URL shorteners?&lt;/p&gt;&#xA;&lt;p&gt;They&amp;rsquo;re simply unreliable and bad for privacy.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve already encountered quite a few dead short URLs because the URL shortener&#xA;service was closed down and it was rather painfull waste of time to find&#xA;the original link.&lt;/p&gt;&#xA;&lt;p&gt;They&amp;rsquo;re bad for privacy because the shortener service knows what are you browsing.&lt;/p&gt;&#xA;&lt;p&gt;Why would give away such important meta data about your readers to someone else?&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

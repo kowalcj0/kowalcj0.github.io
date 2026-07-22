@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Smoothie on Home</title>
-    <link>https://kowalcj0.github.io/tags/smoothie/</link>
-    <description>Recent content in Smoothie on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Sat, 18 May 2019 19:44:50 +0100</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/smoothie/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tasty smoothie - no. 1</title>
-      <link>https://kowalcj0.github.io/2019/05/18/tasty-smothie-no-1/</link>
-      <pubDate>Sat, 18 May 2019 19:44:50 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2019/05/18/tasty-smothie-no-1/</guid>
-      <description>&lt;p&gt;A simple recipe for a delicious smoothie.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ingredients&#34;&gt;Ingredients:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;50-80g yoghurt&lt;/li&gt;&#xA;&lt;li&gt;100ml milk (regular, soy or oat etc.)&lt;/li&gt;&#xA;&lt;li&gt;1 medium banana&lt;/li&gt;&#xA;&lt;li&gt;1 passion fruit&lt;/li&gt;&#xA;&lt;li&gt;1 small lime&lt;/li&gt;&#xA;&lt;li&gt;few raspberries&lt;/li&gt;&#xA;&lt;li&gt;few blueberries&lt;/li&gt;&#xA;&lt;li&gt;2-4 strawberries&lt;/li&gt;&#xA;&lt;li&gt;water to top it up&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;extras&#34;&gt;Extras:&lt;/h2&gt;&#xA;&lt;p&gt;You might add:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;jam (for some extra flavour)&lt;/li&gt;&#xA;&lt;li&gt;ispaghula husk (e.g &lt;a href=&#34;https://www.boots.com/fybogel-hi-fibre-orange-30-sachets-10052725&#34; target=&#34;_blank&#34;&gt;Fybogel orange flavour&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;) - for those with IBS&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Smoothie on Home</title>
+		<link>https://kowalcj0.github.io/tags/smoothie/</link>
+		<description>Recent content in Smoothie on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 18 May 2019 19:44:50 +0100</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/smoothie/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Tasty smoothie - no. 1</title>
+				<link>https://kowalcj0.github.io/2019/05/18/tasty-smothie-no-1/</link>
+				<pubDate>Sat, 18 May 2019 19:44:50 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2019/05/18/tasty-smothie-no-1/</guid>
+				<description>&lt;p&gt;A simple recipe for a delicious smoothie.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ingredients&#34;&gt;Ingredients:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;50-80g yoghurt&lt;/li&gt;&#xA;&lt;li&gt;100ml milk (regular, soy or oat etc.)&lt;/li&gt;&#xA;&lt;li&gt;1 medium banana&lt;/li&gt;&#xA;&lt;li&gt;1 passion fruit&lt;/li&gt;&#xA;&lt;li&gt;1 small lime&lt;/li&gt;&#xA;&lt;li&gt;few raspberries&lt;/li&gt;&#xA;&lt;li&gt;few blueberries&lt;/li&gt;&#xA;&lt;li&gt;2-4 strawberries&lt;/li&gt;&#xA;&lt;li&gt;water to top it up&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;extras&#34;&gt;Extras:&lt;/h2&gt;&#xA;&lt;p&gt;You might add:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;jam (for some extra flavour)&lt;/li&gt;&#xA;&lt;li&gt;ispaghula husk (e.g &lt;a href=&#34;https://www.boots.com/fybogel-hi-fibre-orange-30-sachets-10052725&#34; target=&#34;_blank&#34;&gt;Fybogel orange flavour&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;) - for those with IBS&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+	</channel>
 </rss>

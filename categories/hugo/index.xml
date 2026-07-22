@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hugo on Home</title>
-    <link>https://kowalcj0.github.io/categories/hugo/</link>
-    <description>Recent content in Hugo on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Sat, 27 Jan 2018 22:28:50 +0100</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Syntax Highlighting in Hugo</title>
-      <link>https://kowalcj0.github.io/2018/01/27/syntax-highlighting-in-hugo/</link>
-      <pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2018/01/27/syntax-highlighting-in-hugo/</guid>
-      <description>&lt;h1 id=&#34;bye-bye-prism-welcome-chroma&#34;&gt;Bye bye Prism. Welcome Chroma.&lt;/h1&gt;&#xA;&lt;p&gt;I just learnt that from version 0.28 Hugo comes with a built-in syntax&#xA;highlighter called &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34; target=&#34;_blank&#34;&gt;Chroma&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;It supports syntax highlighting with GitHub flavoured code fences!&lt;br&gt;&#xA;This is more than great!&lt;br&gt;&#xA;Because of this I could quickly get rid of a bit bulky &lt;a href=&#34;http://prismjs.com/&#34; target=&#34;_blank&#34;&gt;Prism&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; JS syntax highlighter.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Hugo on Home</title>
+		<link>https://kowalcj0.github.io/categories/hugo/</link>
+		<description>Recent content in Hugo on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 27 Jan 2018 22:28:50 +0100</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Syntax Highlighting in Hugo</title>
+				<link>https://kowalcj0.github.io/2018/01/27/syntax-highlighting-in-hugo/</link>
+				<pubDate>Sat, 27 Jan 2018 22:28:50 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2018/01/27/syntax-highlighting-in-hugo/</guid>
+				<description>&lt;h1 id=&#34;bye-bye-prism-welcome-chroma&#34;&gt;Bye bye Prism. Welcome Chroma.&lt;/h1&gt;&#xA;&lt;p&gt;I just learnt that from version 0.28 Hugo comes with a built-in syntax&#xA;highlighter called &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34; target=&#34;_blank&#34;&gt;Chroma&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;It supports syntax highlighting with GitHub flavoured code fences!&lt;br&gt;&#xA;This is more than great!&lt;br&gt;&#xA;Because of this I could quickly get rid of a bit bulky &lt;a href=&#34;http://prismjs.com/&#34; target=&#34;_blank&#34;&gt;Prism&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; JS syntax highlighter.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

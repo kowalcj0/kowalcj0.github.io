@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Gee on Home</title>
-    <link>https://kowalcj0.github.io/tags/gee/</link>
-    <description>Recent content in Gee on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Fri, 03 Jan 2014 10:02:26 +0000</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/gee/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>GEE [Jmeter-ec2] - video tutorials part 2</title>
-      <link>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</link>
-      <pubDate>Fri, 03 Jan 2014 10:02:26 +0000</pubDate>
-      <guid>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</guid>
-      <description>&lt;p&gt;Hi All, I just added few more videos showing how to configure your test environment to run your JMeter tests:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;locally on a Vagrant box&lt;/li&gt;&#xA;&lt;li&gt;using remote machines&lt;/li&gt;&#xA;&lt;li&gt;and on Amazon EC2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;04---create-a-first-test-plan-and-run-it-using-gee-and-a-vagrant-box&#34;&gt;04 - Create a first test plan and run it using Gee and a vagrant box&lt;/h2&gt;&#xA;&lt;p&gt;Shows how to create a new test plan from a template project.&#xA;Then how to run it using GEE on our local vagrant box.&#xA;&lt;iframe width=&#34;720&#34; height=&#34;410&#34; src=&#34;https://www.youtube-nocookie.com/embed/b4aSFCRY_hs&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>GEE [Jmeter-ec2] - video tutorials part 1</title>
-      <link>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</link>
-      <pubDate>Fri, 22 Nov 2013 17:33:00 +0000</pubDate>
-      <guid>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</guid>
-      <description>&lt;p&gt;I finally started recording videos explaining how to use &lt;a href=&#34;https://github.com/kowalcj0/gee&#34; target=&#34;_blank&#34;&gt;Gee&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;br&gt;&#xA;Gee is a tool based on a &lt;a href=&#34;https://github.com/oliverlloyd/jmeter-ec2&#34; target=&#34;_blank&#34;&gt;JMeter-EC2&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; project by Oliver Lloyd.&lt;br&gt;&#xA;It allows you to run JMeter tests on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Amazon EC2&lt;/li&gt;&#xA;&lt;li&gt;Vagrant boxes&lt;/li&gt;&#xA;&lt;li&gt;Linux hosts&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Running your tests using this tool is better than using the standard distributed mode in Jmeter,&#xA;because it doesn&amp;rsquo;t require constant communication between the master node and slave nodes.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Gee on Home</title>
+		<link>https://kowalcj0.github.io/tags/gee/</link>
+		<description>Recent content in Gee on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 03 Jan 2014 10:02:26 +0000</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/gee/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>GEE [Jmeter-ec2] - video tutorials part 2</title>
+				<link>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</link>
+				<pubDate>Fri, 03 Jan 2014 10:02:26 +0000</pubDate>
+				<guid>https://kowalcj0.github.io/2014/01/03/gee-jmeter-ec2-video-tutorials-part-2/</guid>
+				<description>&lt;p&gt;Hi All, I just added few more videos showing how to configure your test environment to run your JMeter tests:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;locally on a Vagrant box&lt;/li&gt;&#xA;&lt;li&gt;using remote machines&lt;/li&gt;&#xA;&lt;li&gt;and on Amazon EC2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;04---create-a-first-test-plan-and-run-it-using-gee-and-a-vagrant-box&#34;&gt;04 - Create a first test plan and run it using Gee and a vagrant box&lt;/h2&gt;&#xA;&lt;p&gt;Shows how to create a new test plan from a template project.&#xA;Then how to run it using GEE on our local vagrant box.&#xA;&lt;iframe width=&#34;720&#34; height=&#34;410&#34; src=&#34;https://www.youtube-nocookie.com/embed/b4aSFCRY_hs&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>GEE [Jmeter-ec2] - video tutorials part 1</title>
+				<link>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</link>
+				<pubDate>Fri, 22 Nov 2013 17:33:00 +0000</pubDate>
+				<guid>https://kowalcj0.github.io/2013/11/22/gee-jmeter-ec2-video-tutorials-part-1/</guid>
+				<description>&lt;p&gt;I finally started recording videos explaining how to use &lt;a href=&#34;https://github.com/kowalcj0/gee&#34; target=&#34;_blank&#34;&gt;Gee&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;br&gt;&#xA;Gee is a tool based on a &lt;a href=&#34;https://github.com/oliverlloyd/jmeter-ec2&#34; target=&#34;_blank&#34;&gt;JMeter-EC2&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; project by Oliver Lloyd.&lt;br&gt;&#xA;It allows you to run JMeter tests on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Amazon EC2&lt;/li&gt;&#xA;&lt;li&gt;Vagrant boxes&lt;/li&gt;&#xA;&lt;li&gt;Linux hosts&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Running your tests using this tool is better than using the standard distributed mode in Jmeter,&#xA;because it doesn&amp;rsquo;t require constant communication between the master node and slave nodes.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>DoS on Home</title>
-    <link>https://kowalcj0.github.io/tags/dos/</link>
-    <description>Recent content in DoS on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Mon, 23 Apr 2018 19:19:15 +0100</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/dos/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ethical Hacking - Denial of Service - notes</title>
-      <link>https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/</link>
-      <pubDate>Mon, 23 Apr 2018 19:19:15 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/</guid>
-      <description>&lt;p&gt;These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Denial&#xA;of Service&amp;rdquo; by Troy Hunt.&lt;/p&gt;&#xA;&lt;h1 id=&#34;http-flood-attack&#34;&gt;HTTP flood attack&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HTTP flood attack&#xA;&lt;ul&gt;&#xA;&lt;li&gt;it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests&lt;/li&gt;&#xA;&lt;li&gt;it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;)&lt;/li&gt;&#xA;&lt;li&gt;can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Attack effectives can be amplified via certain app features:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;They use resources (login page, api endpoint) that takes a lot of&#xA;resources or time to process (like slow hashing function on login page)&lt;/li&gt;&#xA;&lt;li&gt;requests that result in SMTP connections (sending email after registering&#xA;dummy accounts, password reset page etc)&lt;/li&gt;&#xA;&lt;li&gt;long-running requests (like DB heavy requests)&lt;/li&gt;&#xA;&lt;li&gt;download of large files to flood bandwidth&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Requests can adhere to legitimate patterns which makes defence difficult&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;tcp-attacks&#34;&gt;TCP attacks&lt;/h1&gt;&#xA;&lt;p&gt;These are the layer 4 (OSI) attacks&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>DoS on Home</title>
+		<link>https://kowalcj0.github.io/tags/dos/</link>
+		<description>Recent content in DoS on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 23 Apr 2018 19:19:15 +0100</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/dos/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Ethical Hacking - Denial of Service - notes</title>
+				<link>https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/</link>
+				<pubDate>Mon, 23 Apr 2018 19:19:15 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2018/04/23/ethical-hacking-denial-of-service-attacks/</guid>
+				<description>&lt;p&gt;These are just my notes from the Pluralsight course: &amp;ldquo;Ethical Hacking: Denial&#xA;of Service&amp;rdquo; by Troy Hunt.&lt;/p&gt;&#xA;&lt;h1 id=&#34;http-flood-attack&#34;&gt;HTTP flood attack&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HTTP flood attack&#xA;&lt;ul&gt;&#xA;&lt;li&gt;it&amp;rsquo;s a &amp;ldquo;volumetric&amp;rdquo; attack - they&amp;rsquo;re normal HTTP requests&lt;/li&gt;&#xA;&lt;li&gt;it can saturate web server resources (&amp;ldquo;service request flood&amp;rdquo;)&lt;/li&gt;&#xA;&lt;li&gt;can saturate bandwidth (&amp;ldquo;bandwidth attack&amp;rdquo;)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Attack effectives can be amplified via certain app features:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;They use resources (login page, api endpoint) that takes a lot of&#xA;resources or time to process (like slow hashing function on login page)&lt;/li&gt;&#xA;&lt;li&gt;requests that result in SMTP connections (sending email after registering&#xA;dummy accounts, password reset page etc)&lt;/li&gt;&#xA;&lt;li&gt;long-running requests (like DB heavy requests)&lt;/li&gt;&#xA;&lt;li&gt;download of large files to flood bandwidth&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Requests can adhere to legitimate patterns which makes defence difficult&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;tcp-attacks&#34;&gt;TCP attacks&lt;/h1&gt;&#xA;&lt;p&gt;These are the layer 4 (OSI) attacks&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Heroku on Home</title>
-    <link>https://kowalcj0.github.io/tags/heroku/</link>
-    <description>Recent content in Heroku on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Sat, 06 Jun 2020 22:56:03 +0100</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Automatically Delete Old Pa11y Results From MongoDB</title>
-      <link>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</link>
-      <pubDate>Sat, 06 Jun 2020 22:56:03 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</guid>
-      <description>&lt;p&gt;You&amp;rsquo;ve probably already noticed that Pa11y-Dashboard runs all the tasks on a daily basis.&#xA;If you have a lot of tasks (e.g. 100+) then the test results can fairly quickly gobble up your MongoDB&#xA;quota (if you have any).&lt;/p&gt;&#xA;&lt;p&gt;If your MongoDB has a size limit defined, then you can do two things:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;manually delete old test results&lt;/li&gt;&#xA;&lt;li&gt;or use &lt;code&gt;TTL Index&lt;/code&gt; to do it for you automagically&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;MongoDB supports &lt;a href=&#34;https://docs.mongodb.com/manual/tutorial/expire-data/&#34; target=&#34;_blank&#34;&gt;TTL indexes&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; since v2.2 (Aug 2012!).&#xA;Such indexes make &lt;code&gt;mongod&lt;/code&gt; automatically remove data after a specified number of seconds or at a specific clock time.&#xA;Before we create one, please have a look at existing indexes for &lt;code&gt;Pa11y&lt;/code&gt; test results collection:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Proxy Requests to Pa11y Webservice Hosted on Heroku</title>
-      <link>https://kowalcj0.github.io/2020/06/04/how-to-proxy-requests-to-pa11y-webservice-hosted-on-heroku/</link>
-      <pubDate>Thu, 04 Jun 2020 13:39:45 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2020/06/04/how-to-proxy-requests-to-pa11y-webservice-hosted-on-heroku/</guid>
-      <description>&lt;p&gt;Pa11y-Dashboard runs of top of &lt;a href=&#34;https://github.com/pa11y/pa11y-webservice&#34; target=&#34;_blank&#34;&gt;Pa11y Webservice&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; (WS).&lt;br&gt;&#xA;By default Pa11y WS listens on port 3000 and Pa11y Dashboard listens on port 4000.&lt;br&gt;&#xA;Unfortunately Heroku doesn&amp;rsquo;t allow its users to easily expose multiple ports per application.&lt;/p&gt;&#xA;&lt;p&gt;To overcome this limitation, I&amp;rsquo;ve decided to make Pa11y-Dashboard proxy requests to WS via &lt;code&gt;/ws/&lt;/code&gt; endpoint.&lt;/p&gt;&#xA;&lt;p&gt;After a bit of searching I&amp;rsquo;ve found a dedicated proxy module for expressjs called &lt;a href=&#34;https://www.npmjs.com/package/express-http-proxy&#34; target=&#34;_blank&#34;&gt;express-http-proxy&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Run Pa11y Dashboard on Heroku</title>
-      <link>https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/</link>
-      <pubDate>Wed, 03 Jun 2020 19:57:26 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/</guid>
-      <description>&lt;p&gt;To run Pa11y Dashboard on Heroku, you&amp;rsquo;ll need to:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;add &lt;a href=&#34;https://github.com/jontewks/puppeteer-heroku-buildpack&#34; target=&#34;_blank&#34;&gt;puppeteer buildpack&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; to your dyno&lt;/li&gt;&#xA;&lt;li&gt;pass &lt;code&gt;--no-sandbox&lt;/code&gt; argument to Chrome&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Puppeteer buildpack will install Chrome and all dependencies required to run it&#xA;in headless mode.&lt;/p&gt;&#xA;&lt;p&gt;Second step is only necessary if you&amp;rsquo;re going to see following error when&#xA;running Pa11y tests on Heroku:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-error&#34; data-lang=&#34;error&#34;&gt;Failed to launch chrome!  No usable sandbox!&#xA;Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md&#xA;for more information on developing with the SUID sandbox.&#xA;If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We like to live dangerously so let&amp;rsquo;s use that argument in &lt;code&gt;config.js&lt;/code&gt;:&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Heroku on Home</title>
+		<link>https://kowalcj0.github.io/tags/heroku/</link>
+		<description>Recent content in Heroku on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 06 Jun 2020 22:56:03 +0100</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Automatically Delete Old Pa11y Results From MongoDB</title>
+				<link>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</link>
+				<pubDate>Sat, 06 Jun 2020 22:56:03 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2020/06/06/automatically-delete-old-pa11y-results-from-mongodb/</guid>
+				<description>&lt;p&gt;You&amp;rsquo;ve probably already noticed that Pa11y-Dashboard runs all the tasks on a daily basis.&#xA;If you have a lot of tasks (e.g. 100+) then the test results can fairly quickly gobble up your MongoDB&#xA;quota (if you have any).&lt;/p&gt;&#xA;&lt;p&gt;If your MongoDB has a size limit defined, then you can do two things:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;manually delete old test results&lt;/li&gt;&#xA;&lt;li&gt;or use &lt;code&gt;TTL Index&lt;/code&gt; to do it for you automagically&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;MongoDB supports &lt;a href=&#34;https://docs.mongodb.com/manual/tutorial/expire-data/&#34; target=&#34;_blank&#34;&gt;TTL indexes&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; since v2.2 (Aug 2012!).&#xA;Such indexes make &lt;code&gt;mongod&lt;/code&gt; automatically remove data after a specified number of seconds or at a specific clock time.&#xA;Before we create one, please have a look at existing indexes for &lt;code&gt;Pa11y&lt;/code&gt; test results collection:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>How to Proxy Requests to Pa11y Webservice Hosted on Heroku</title>
+				<link>https://kowalcj0.github.io/2020/06/04/how-to-proxy-requests-to-pa11y-webservice-hosted-on-heroku/</link>
+				<pubDate>Thu, 04 Jun 2020 13:39:45 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2020/06/04/how-to-proxy-requests-to-pa11y-webservice-hosted-on-heroku/</guid>
+				<description>&lt;p&gt;Pa11y-Dashboard runs of top of &lt;a href=&#34;https://github.com/pa11y/pa11y-webservice&#34; target=&#34;_blank&#34;&gt;Pa11y Webservice&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; (WS).&lt;br&gt;&#xA;By default Pa11y WS listens on port 3000 and Pa11y Dashboard listens on port 4000.&lt;br&gt;&#xA;Unfortunately Heroku doesn&amp;rsquo;t allow its users to easily expose multiple ports per application.&lt;/p&gt;&#xA;&lt;p&gt;To overcome this limitation, I&amp;rsquo;ve decided to make Pa11y-Dashboard proxy requests to WS via &lt;code&gt;/ws/&lt;/code&gt; endpoint.&lt;/p&gt;&#xA;&lt;p&gt;After a bit of searching I&amp;rsquo;ve found a dedicated proxy module for expressjs called &lt;a href=&#34;https://www.npmjs.com/package/express-http-proxy&#34; target=&#34;_blank&#34;&gt;express-http-proxy&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Run Pa11y Dashboard on Heroku</title>
+				<link>https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/</link>
+				<pubDate>Wed, 03 Jun 2020 19:57:26 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2020/06/03/run-pa11y-on-heroku/</guid>
+				<description>&lt;p&gt;To run Pa11y Dashboard on Heroku, you&amp;rsquo;ll need to:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;add &lt;a href=&#34;https://github.com/jontewks/puppeteer-heroku-buildpack&#34; target=&#34;_blank&#34;&gt;puppeteer buildpack&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA; to your dyno&lt;/li&gt;&#xA;&lt;li&gt;pass &lt;code&gt;--no-sandbox&lt;/code&gt; argument to Chrome&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Puppeteer buildpack will install Chrome and all dependencies required to run it&#xA;in headless mode.&lt;/p&gt;&#xA;&lt;p&gt;Second step is only necessary if you&amp;rsquo;re going to see following error when&#xA;running Pa11y tests on Heroku:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-error&#34; data-lang=&#34;error&#34;&gt;Failed to launch chrome!  No usable sandbox!&#xA;Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md&#xA;for more information on developing with the SUID sandbox.&#xA;If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We like to live dangerously so let&amp;rsquo;s use that argument in &lt;code&gt;config.js&lt;/code&gt;:&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Logrotate on Home</title>
-    <link>https://kowalcj0.github.io/tags/logrotate/</link>
-    <description>Recent content in Logrotate on Home</description>
-    <generator>Hugo</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Mon, 13 May 2019 11:50:50 +0100</lastBuildDate>
-    <atom:link href="https://kowalcj0.github.io/tags/logrotate/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Logrotate your bash history file</title>
-      <link>https://kowalcj0.github.io/2019/05/13/logrotate-bash-history/</link>
-      <pubDate>Mon, 13 May 2019 11:50:50 +0100</pubDate>
-      <guid>https://kowalcj0.github.io/2019/05/13/logrotate-bash-history/</guid>
-      <description>&lt;p&gt;A while ago I decided to take more control over my bash history and I followed&#xA;this advice &lt;a href=&#34;https://unix.stackexchange.com/a/48113&#34; target=&#34;_blank&#34;&gt;https://unix.stackexchange.com/a/48113&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;With time I&amp;rsquo;ve tweaked few settings, like ignore lines that start with space,&#xA;and ignore some of the trivial commands like &lt;code&gt;ls&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export HISTCONTROL=ignoredups:erasedups:ignorespace     # no duplicate entries &amp;amp; lines starting with space&#xA;export HISTSIZE=99999999                                # big big history&#xA;export HISTFILESIZE=99999999                            # big big history&#xA;shopt -s histappend                                     # append to history, don&amp;#39;t overwrite it&#xA;export PROMPT_COMMAND=&amp;#34;history -a; history -c; history -r; $PROMPT_COMMAND&amp;#34;  # Save and reload the history after each command finishes&#xA;HISTIGNORE=&amp;#39;ll *:ls *:l:gs:&amp;#39;                            # ignore some commands&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Nevertheless, every now and then I&amp;rsquo;d loose the command history, e.g. when&#xA;upgrading the distro. I then discovered &lt;a href=&#34;https://linux.die.net/man/8/logrotate&#34; target=&#34;_blank&#34;&gt;logrotate&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&#xA;It&amp;rsquo;s a brilliant and easy to use tool for, guess what, log rotation!&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Logrotate on Home</title>
+		<link>https://kowalcj0.github.io/tags/logrotate/</link>
+		<description>Recent content in Logrotate on Home</description>
+		<generator>Hugo</generator>
+		<language>en-gb</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 13 May 2019 11:50:50 +0100</lastBuildDate>
+		
+			<atom:link href="https://kowalcj0.github.io/tags/logrotate/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Logrotate your bash history file</title>
+				<link>https://kowalcj0.github.io/2019/05/13/logrotate-bash-history/</link>
+				<pubDate>Mon, 13 May 2019 11:50:50 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2019/05/13/logrotate-bash-history/</guid>
+				<description>&lt;p&gt;A while ago I decided to take more control over my bash history and I followed&#xA;this advice &lt;a href=&#34;https://unix.stackexchange.com/a/48113&#34; target=&#34;_blank&#34;&gt;https://unix.stackexchange.com/a/48113&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;With time I&amp;rsquo;ve tweaked few settings, like ignore lines that start with space,&#xA;and ignore some of the trivial commands like &lt;code&gt;ls&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export HISTCONTROL=ignoredups:erasedups:ignorespace     # no duplicate entries &amp;amp; lines starting with space&#xA;export HISTSIZE=99999999                                # big big history&#xA;export HISTFILESIZE=99999999                            # big big history&#xA;shopt -s histappend                                     # append to history, don&amp;#39;t overwrite it&#xA;export PROMPT_COMMAND=&amp;#34;history -a; history -c; history -r; $PROMPT_COMMAND&amp;#34;  # Save and reload the history after each command finishes&#xA;HISTIGNORE=&amp;#39;ll *:ls *:l:gs:&amp;#39;                            # ignore some commands&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Nevertheless, every now and then I&amp;rsquo;d loose the command history, e.g. when&#xA;upgrading the distro. I then discovered &lt;a href=&#34;https://linux.die.net/man/8/logrotate&#34; target=&#34;_blank&#34;&gt;logrotate&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;.&#xA;It&amp;rsquo;s a brilliant and easy to use tool for, guess what, log rotation!&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
