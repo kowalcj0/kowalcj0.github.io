@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sun, 26 Apr 2026 23:38:07 +0100</lastBuildDate>
+			<lastBuildDate>Tue, 21 Jul 2026 23:32:02 +0100</lastBuildDate>
 		
 			<atom:link href="https://kowalcj0.github.io/2026/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Mpris2awtrix</title>
+				<link>https://kowalcj0.github.io/2026/07/mpris2awtrix/</link>
+				<pubDate>Tue, 21 Jul 2026 23:32:02 +0100</pubDate>
+				<guid>https://kowalcj0.github.io/2026/07/mpris2awtrix/</guid>
+				<description>&lt;p&gt;This guide configures your Ulanzi/Awtrix 3 display to show notifications with the currently playing track&amp;rsquo;s artist and title whenever a new song starts on any MPRIS-compatible media player (&lt;a href=&#34;https://github.com/jeffvli/feishin&#34; target=&#34;_blank&#34;&gt;Feishin&lt;/a&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 12 16&#34; width=&#34;12&#34; height=&#34;16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;, Spotify, Firefox, VLC, etc.) on your Linux machine. It uses &lt;code&gt;dbus2mqtt&lt;/code&gt; to forward media player events over MQTT, which are then picked up by Home Assistant and sent to the Awtrix display.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Hosting Syncthing services</title>
 				<link>https://kowalcj0.github.io/2026/04/syncthing-services/</link>
