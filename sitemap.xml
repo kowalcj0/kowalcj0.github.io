@@ -3,15 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kowalcj0.github.io/2026/</loc>
-    <lastmod>2026-07-21T23:32:02+01:00</lastmod>
+    <lastmod>2026-07-31T18:43:31+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/</loc>
+    <lastmod>2026-07-31T18:43:31+01:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/2026/07/31/tinymediamanager-rename-episode-titles/</loc>
+    <lastmod>2026-07-31T18:43:31+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/categories/</loc>
     <lastmod>2026-07-21T23:32:02+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/dbus/</loc>
-    <lastmod>2026-07-21T23:32:02+01:00</lastmod>
-  </url><url>
-    <loc>https://kowalcj0.github.io/</loc>
     <lastmod>2026-07-21T23:32:02+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/home-assistant/</loc>
@@ -23,7 +26,7 @@
     <loc>https://kowalcj0.github.io/tags/mpris/</loc>
     <lastmod>2026-07-21T23:32:02+01:00</lastmod>
   </url><url>
-    <loc>https://kowalcj0.github.io/2026/07/mpris2awtrix/</loc>
+    <loc>https://kowalcj0.github.io/2026/07/21/mpris2awtrix/</loc>
     <lastmod>2026-07-21T23:32:02+01:00</lastmod>
   </url><url>
     <loc>https://kowalcj0.github.io/tags/mqtt/</loc>
@@ -580,5 +583,7 @@
   </url><url>
     <loc>https://kowalcj0.github.io/tags/mvn/</loc>
     <lastmod>2013-01-22T17:17:29+00:00</lastmod>
+  </url><url>
+    <loc>https://kowalcj0.github.io/search/</loc>
   </url>
 </urlset>

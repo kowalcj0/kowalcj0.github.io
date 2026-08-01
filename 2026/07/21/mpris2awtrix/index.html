@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='display DBus/MPRIS track details on Ulanzi/Awtrix 3 display Home Assistant automation'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Mpris2awtrix • Home'>
+<meta property='og:description' content='display DBus/MPRIS track details on Ulanzi/Awtrix 3 display Home Assistant automation'>
+<meta property='og:url' content='https://kowalcj0.github.io/2026/07/21/mpris2awtrix/'>
+<meta property='og:site_name' content='Home'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://kowalcj0.github.io/awtrix_3_mpris_notification.jpg'><meta property='article:section' content='2026'><meta property='article:tag' content='home-assistant'><meta property='article:tag' content='mqtt'><meta property='article:tag' content='mpris'><meta property='article:tag' content='dbus'><meta property='article:tag' content='linux'><meta property='article:published_time' content='2026-07-21T23:32:02&#43;01:00'/><meta property='article:modified_time' content='2026-07-21T23:32:02&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://kowalcj0.github.io/awtrix_3_mpris_notification.jpg'><meta property='twitter:image:alt' content='Ulanzi/Awtrix 3 display showing Home Assistant notification with artist and track name'>
+
+<meta name="generator" content="Hugo 0.164.0">
+
+  <title>Mpris2awtrix • Home</title>
+  <link rel='canonical' href='https://kowalcj0.github.io/2026/07/21/mpris2awtrix/'>
+  
+  
+  <link rel='icon' href='/img/favicon144.ico'>
+<link rel='stylesheet' href='/assets/css/main.bc280058.css'><link rel='stylesheet' href='/css/syntax.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+  
+
+</head>
+<body class='page type-2026 has-cover has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/img/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+      <a href='/'>
+      Free yourself, help to free me, free us
+      </a>
+    </h2>
+    <div class='desc'>
+    notes, scribbles, thoughts etc.
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>Search</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Categories</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/categories/android/' style='font-size:1em'>Android</a>
+      </li><li>
+        <a href='/categories/food/' style='font-size:1em'>Food</a>
+      </li><li>
+        <a href='/categories/general/' style='font-size:1.1363636363636362em'>General</a>
+      </li><li>
+        <a href='/categories/hugo/' style='font-size:1em'>Hugo</a>
+      </li><li>
+        <a href='/categories/learning/' style='font-size:1.3181818181818181em'>Learning</a>
+      </li><li>
+        <a href='/categories/movies/' style='font-size:1em'>Movies</a>
+      </li><li>
+        <a href='/categories/photography/' style='font-size:1.0909090909090908em'>Photography</a>
+      </li><li>
+        <a href='/categories/polityka/' style='font-size:1em'>Polityka</a>
+      </li><li>
+        <a href='/categories/programming/' style='font-size:1.2272727272727273em'>Programming</a>
+      </li><li>
+        <a href='/categories/security/' style='font-size:1.4090909090909092em'>Security</a>
+      </li><li>
+        <a href='/categories/testing/' style='font-size:1.4090909090909092em'>Testing</a>
+      </li><li>
+        <a href='/categories/unix/' style='font-size:2em'>Unix</a>
+      </li><li>
+        <a href='/categories/web/' style='font-size:1.0454545454545454em'>Web</a>
+      </li><li>
+        <a href='/categories/wordpress/' style='font-size:1.6818181818181819em'>Wordpress</a>
+      </li></ul>
+</div>
+
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/tags/1959/' style='font-size:1em'>1959</a>
+      </li><li>
+        <a href='/tags/accessibility/' style='font-size:1.1764705882352942em'>Accessibility</a>
+      </li><li>
+        <a href='/tags/afwall/' style='font-size:1em'>Afwall</a>
+      </li><li>
+        <a href='/tags/android/' style='font-size:1em'>Android</a>
+      </li><li>
+        <a href='/tags/apt/' style='font-size:1em'>Apt</a>
+      </li><li>
+        <a href='/tags/articles/' style='font-size:1em'>Articles</a>
+      </li><li>
+        <a href='/tags/aws/' style='font-size:1em'>Aws</a>
+      </li><li>
+        <a href='/tags/bash/' style='font-size:1em'>Bash</a>
+      </li><li>
+        <a href='/tags/bdd/' style='font-size:1em'>Bdd</a>
+      </li><li>
+        <a href='/tags/bios/' style='font-size:1.0588235294117647em'>Bios</a>
+      </li><li>
+        <a href='/tags/bof/' style='font-size:1em'>BoF</a>
+      </li><li>
+        <a href='/tags/books/' style='font-size:1em'>Books</a>
+      </li><li>
+        <a href='/tags/brazylia/' style='font-size:1em'>Brazylia</a>
+      </li><li>
+        <a href='/tags/castnow/' style='font-size:1em'>Castnow</a>
+      </li><li>
+        <a href='/tags/chromium/' style='font-size:1em'>Chromium</a>
+      </li><li>
+        <a href='/tags/cli/' style='font-size:1em'>Cli</a>
+      </li><li>
+        <a href='/tags/codecs/' style='font-size:1em'>Codecs</a>
+      </li><li>
+        <a href='/tags/conference/' style='font-size:1em'>Conference</a>
+      </li><li>
+        <a href='/tags/convert/' style='font-size:1em'>Convert</a>
+      </li><li>
+        <a href='/tags/criterion-collection/' style='font-size:1em'>Criterion Collection</a>
+      </li><li>
+        <a href='/tags/cytaty/' style='font-size:1em'>Cytaty</a>
+      </li><li>
+        <a href='/tags/dbus/' style='font-size:1.0588235294117647em'>Dbus</a>
+      </li><li>
+        <a href='/tags/digikam/' style='font-size:1em'>Digikam</a>
+      </li><li>
+        <a href='/tags/django/' style='font-size:1em'>Django</a>
+      </li><li>
+        <a href='/tags/dng/' style='font-size:1em'>Dng</a>
+      </li><li>
+        <a href='/tags/docker/' style='font-size:1em'>Docker</a>
+      </li><li>
+        <a href='/tags/dos/' style='font-size:1em'>DoS</a>
+      </li><li>
+        <a href='/tags/drama/' style='font-size:1em'>Drama</a>
+      </li><li>
+        <a href='/tags/driver/' style='font-size:1em'>Driver</a>
+      </li><li>
+        <a href='/tags/enumeration/' style='font-size:1em'>Enumeration</a>
+      </li><li>
+        <a href='/tags/ethical-hacking/' style='font-size:1.3529411764705883em'>Ethical Hacking</a>
+      </li><li>
+        <a href='/tags/fedora/' style='font-size:1em'>Fedora</a>
+      </li><li>
+        <a href='/tags/ffmpeg/' style='font-size:1.0588235294117647em'>Ffmpeg</a>
+      </li><li>
+        <a href='/tags/firewall/' style='font-size:1em'>Firewall</a>
+      </li><li>
+        <a href='/tags/freebsd/' style='font-size:1.1176470588235294em'>Freebsd</a>
+      </li><li>
+        <a href='/tags/freenas/' style='font-size:1em'>Freenas</a>
+      </li><li>
+        <a href='/tags/fun/' style='font-size:1em'>Fun</a>
+      </li><li>
+        <a href='/tags/gee/' style='font-size:1.0588235294117647em'>Gee</a>
+      </li><li>
+        <a href='/tags/gherkin/' style='font-size:1em'>Gherkin</a>
+      </li><li>
+        <a href='/tags/gnome/' style='font-size:1em'>Gnome</a>
+      </li><li>
+        <a href='/tags/grub/' style='font-size:1em'>Grub</a>
+      </li><li>
+        <a href='/tags/gsconnect/' style='font-size:1em'>Gsconnect</a>
+      </li><li>
+        <a href='/tags/heroku/' style='font-size:1.1176470588235294em'>Heroku</a>
+      </li><li>
+        <a href='/tags/home-assistant/' style='font-size:1em'>Home-Assistant</a>
+      </li><li>
+        <a href='/tags/intel/' style='font-size:1em'>Intel</a>
+      </li><li>
+        <a href='/tags/ios/' style='font-size:1em'>IOS</a>
+      </li><li>
+        <a href='/tags/iptables/' style='font-size:1em'>Iptables</a>
+      </li><li>
+        <a href='/tags/jail/' style='font-size:1em'>Jail</a>
+      </li><li>
+        <a href='/tags/japanese/' style='font-size:1em'>Japanese</a>
+      </li><li>
+        <a href='/tags/java/' style='font-size:1.1176470588235294em'>Java</a>
+      </li><li>
+        <a href='/tags/jbehvae/' style='font-size:1em'>Jbehvae</a>
+      </li><li>
+        <a href='/tags/jmeter/' style='font-size:1.1176470588235294em'>Jmeter</a>
+      </li><li>
+        <a href='/tags/kindle/' style='font-size:1em'>Kindle</a>
+      </li><li>
+        <a href='/tags/linux/' style='font-size:2em'>Linux</a>
+      </li><li>
+        <a href='/tags/logrotate/' style='font-size:1em'>Logrotate</a>
+      </li><li>
+        <a href='/tags/mobile/' style='font-size:1em'>Mobile</a>
+      </li><li>
+        <a href='/tags/mongodb/' style='font-size:1em'>Mongodb</a>
+      </li><li>
+        <a href='/tags/movies/' style='font-size:1em'>Movies</a>
+      </li><li>
+        <a href='/tags/mpd/' style='font-size:1em'>Mpd</a>
+      </li><li>
+        <a href='/tags/mpris/' style='font-size:1em'>Mpris</a>
+      </li><li>
+        <a href='/tags/mpv/' style='font-size:1em'>Mpv</a>
+      </li><li>
+        <a href='/tags/mqtt/' style='font-size:1em'>Mqtt</a>
+      </li><li>
+        <a href='/tags/mutillidae/' style='font-size:1em'>Mutillidae</a>
+      </li><li>
+        <a href='/tags/mvn/' style='font-size:1em'>Mvn</a>
+      </li><li>
+        <a href='/tags/nef/' style='font-size:1em'>Nef</a>
+      </li><li>
+        <a href='/tags/nodejs/' style='font-size:1.1176470588235294em'>Nodejs</a>
+      </li><li>
+        <a href='/tags/notes/' style='font-size:1.3529411764705883em'>Notes</a>
+      </li><li>
+        <a href='/tags/nvidia/' style='font-size:1em'>Nvidia</a>
+      </li><li>
+        <a href='/tags/owasp/' style='font-size:1em'>Owasp</a>
+      </li><li>
+        <a href='/tags/pa11y/' style='font-size:1.1764705882352942em'>Pa11y</a>
+      </li><li>
+        <a href='/tags/pentesting/' style='font-size:1.4117647058823528em'>Pentesting</a>
+      </li><li>
+        <a href='/tags/photoprism/' style='font-size:1em'>Photoprism</a>
+      </li><li>
+        <a href='/tags/pidgin/' style='font-size:1em'>Pidgin</a>
+      </li><li>
+        <a href='/tags/pipewire/' style='font-size:1em'>Pipewire</a>
+      </li><li>
+        <a href='/tags/python/' style='font-size:1.3529411764705883em'>Python</a>
+      </li><li>
+        <a href='/tags/qt/' style='font-size:1em'>Qt</a>
+      </li><li>
+        <a href='/tags/quotes/' style='font-size:1em'>Quotes</a>
+      </li><li>
+        <a href='/tags/raw/' style='font-size:1em'>Raw</a>
+      </li><li>
+        <a href='/tags/root/' style='font-size:1em'>Root</a>
+      </li><li>
+        <a href='/tags/rss/' style='font-size:1em'>Rss</a>
+      </li><li>
+        <a href='/tags/security/' style='font-size:1.4117647058823528em'>Security</a>
+      </li><li>
+        <a href='/tags/selenium/' style='font-size:1em'>Selenium</a>
+      </li><li>
+        <a href='/tags/seo/' style='font-size:1em'>Seo</a>
+      </li><li>
+        <a href='/tags/signal/' style='font-size:1em'>Signal</a>
+      </li><li>
+        <a href='/tags/sipe/' style='font-size:1em'>Sipe</a>
+      </li><li>
+        <a href='/tags/smoothie/' style='font-size:1em'>Smoothie</a>
+      </li><li>
+        <a href='/tags/sniffers/' style='font-size:1em'>Sniffers</a>
+      </li><li>
+        <a href='/tags/sqlcipher/' style='font-size:1em'>Sqlcipher</a>
+      </li><li>
+        <a href='/tags/sqlie/' style='font-size:1em'>Sqlie</a>
+      </li><li>
+        <a href='/tags/syncthing/' style='font-size:1em'>Syncthing</a>
+      </li><li>
+        <a href='/tags/syntax/' style='font-size:1em'>Syntax</a>
+      </li><li>
+        <a href='/tags/tcpdump/' style='font-size:1em'>Tcpdump</a>
+      </li><li>
+        <a href='/tags/testng/' style='font-size:1em'>Testng</a>
+      </li><li>
+        <a href='/tags/truenas/' style='font-size:1em'>Truenas</a>
+      </li><li>
+        <a href='/tags/trunas/' style='font-size:1em'>Trunas</a>
+      </li><li>
+        <a href='/tags/vagrant/' style='font-size:1em'>Vagrant</a>
+      </li><li>
+        <a href='/tags/vim/' style='font-size:1.0588235294117647em'>Vim</a>
+      </li><li>
+        <a href='/tags/vlc/' style='font-size:1em'>Vlc</a>
+      </li><li>
+        <a href='/tags/war/' style='font-size:1em'>War</a>
+      </li><li>
+        <a href='/tags/wayland/' style='font-size:1em'>Wayland</a>
+      </li><li>
+        <a href='/tags/wifi/' style='font-size:1em'>Wifi</a>
+      </li><li>
+        <a href='/tags/x11/' style='font-size:1em'>X11</a>
+      </li><li>
+        <a href='/tags/xbindkeys/' style='font-size:1em'>Xbindkeys</a>
+      </li><li>
+        <a href='/tags/zfs/' style='font-size:1em'>Zfs</a>
+      </li><li>
+        <a href='/tags/zip/' style='font-size:1em'>Zip</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="3" y1="12" x2="21" y2="12" />
+<line x1="3" y1="6" x2="21" y2="6" />
+<line x1="3" y1="18" x2="21" y2="18" />
+</svg>
+</span>
+  <span class='close'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="18" y1="6" x2="6" y2="18" />
+<line x1="6" y1="6" x2="18" y2="18" />
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/general/articles/'>Articles</a>
+      </li><li class='item'>
+        <a href='/general/books/'>Books</a>
+      </li><li class='item'>
+        <a href='/general/movies/'>Movies</a>
+      </li></ul>
+  </div>
+</nav><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/2026/'>2026</a></li><li><span>Mpris2awtrix</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Home</p><p class='desc site-desc'>notes, scribbles, thoughts etc.</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Mpris2awtrix</h1>
+      
+<p class='desc'>display DBus/MPRIS track details on Ulanzi/Awtrix 3 display Home Assistant automation</p>
+
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+<line x1="16" y1="2" x2="16" y2="6" />
+<line x1="8" y1="2" x2="8" y2="6" />
+<line x1="3" y1="10" x2="21" y2="10" />
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2026-07-21T23:32:02&#43;01:00'>2026-07-21</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><circle cx="12" cy="12" r="10" />
+<polyline points="12 6 12 12 15 15" />
+</svg>
+2 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  <div class='entry-cover'>
+  <figure class='container cover-normal'>
+    <img src='../awtrix_3_mpris_notification.jpg' alt='Ulanzi/Awtrix 3 display showing Home Assistant notification with artist and track name'/>
+    
+      
+      <figcaption class='container'>
+        <span>Ulanzi/Awtrix 3 display showing Home Assistant notification with artist and track name</span>
+      </figcaption>
+      
+    
+  </figure>
+</div>
+  
+<details class='container entry-toc'>
+  <summary class='title'>
+    <span>Table of Contents</span>
+  </summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#configure-dbus2mqtt">Configure dbus2mqtt</a>
+      <ul>
+        <li><a href="#enable-mpris2awtrix-service">Enable mpris2awtrix service</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-home-assistant-automation">Create Home Assistant automation</a>
+      <ul>
+        <li><a href="#test-it">Test it</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</details>
+
+
+  <div class='container entry-content'>
+  
+<link rel="stylesheet" href="/css/photoswipe.min.css" integrity="sha256-rlldBDOCxqXAE1fRopHG2SqpgWisq17/3Oleo+1CBKo=">
+<link rel="stylesheet" href="/css/photoswipe-default-skin.min.css" integrity="sha256-kQW7k22C0skJMSPxgEI2VHR0LPHeygi8SRYNvV/DB2w=">
+<script src="/js/photoswipe.min.js" integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="></script>
+<script src="/js/photoswipe-ui-default.min.js" integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<script src="/js/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="></script>
+<script src="/js/pswp-init.js"></script>
+
+
+<p>This guide configures your Ulanzi/Awtrix 3 display to show notifications with the currently playing track&rsquo;s artist and title whenever a new song starts on any MPRIS-compatible media player (<a href="https://github.com/jeffvli/feishin" target="_blank">Feishin</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+, Spotify, Firefox, VLC, etc.) on your Linux machine. It uses <code>dbus2mqtt</code> to forward media player events over MQTT, which are then picked up by Home Assistant and sent to the Awtrix display.</p>
+<h2 id="prerequisites">Prerequisites <a tabindex="0" href="#prerequisites" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<ul>
+<li>Install <a href="https://blueforcer.github.io/awtrix3/#/?id=awtrix-3" target="_blank">Awtrix 3</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ firmware on your <a href="https://www.ulanzi.com/en-gb/products/ulanzi-pixel-smart-clock-2882" target="_blank">Ulanzi Smart Pixel clock</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ (<a href="https://www.amazon.com/dp/B0CXX91TY5" target="_blank">Amazon</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+)</li>
+<li>Create a user (preferably a local access only) in Home Assistant for Awtrix</li>
+<li>Configure MQTT in Awtrix
+<div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+  <figure  itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+      <a href="../awtrix_3_mqtt_config.png" data-size="1275x1113" itemprop="contentUrl"> 
+          <img itemprop="thumbnail"
+              src="../awtrix_3_mqtt_config-thumb.png"
+              
+              width="358"height="625"/>
+      </a>
+      
+  </figure>
+
+
+<div class="title"></div>
+</div>
+<link rel="stylesheet" href="/css/pswp-gallery.css" />
+</li>
+<li>Install <a href="https://github.com/jwnmulder/dbus2mqtt" target="_blank">dbus2mqtt</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ with <code>uv tool install dbus2mqtt</code></li>
+<li>Install <a href="https://github.com/MiguelAngelLV/ha-awtrix" target="_blank">HA Awtrix</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ component for <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=miguelangellv&amp;repository=ha-awtrix&amp;category=integration" target="_blank">Home Assistant</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+</li>
+</ul>
+<h2 id="configure-dbus2mqtt">Configure dbus2mqtt <a tabindex="0" href="#configure-dbus2mqtt" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<p>Download the <a href="https://github.com/jwnmulder/dbus2mqtt/blob/main/docs/examples/home_assistant_media_player/mqtt_mediaplayer.yaml" target="_blank">example mqtt mediaplayer config</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
+ and save it as <code>~/.config/dbus2mqtt/config.yaml</code>. You can customize this file to filter specific media players if needed.</p>
+<p>Create a new <code>systemd</code> service unit: <code>~/.local/share/systemd/user/mpris2awtrix.service</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-systemd" data-lang="systemd"><span style="display:flex;"><span><span style="color:#66d9ef">[Unit]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Description</span><span style="color:#f92672">=</span><span style="color:#e6db74">Send notification to Awtrix display via HA MQTT</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">[Service]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Type</span><span style="color:#f92672">=</span><span style="color:#e6db74">simple</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ExecStart</span><span style="color:#f92672">=</span><span style="color:#e6db74">/home/&lt;YOUR_USERNAME&gt;/.local/bin/dbus2mqtt --config /home/&lt;YOUR_USERNAME&gt;/.config/dbus2mqtt/config.yaml</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">User</span><span style="color:#f92672">=</span><span style="color:#e6db74">&lt;YOUR_USERNAME&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">StandardOutput</span><span style="color:#f92672">=</span><span style="color:#e6db74">journal</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">StandardError</span><span style="color:#f92672">=</span><span style="color:#e6db74">journal</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">[Install]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">WantedBy</span><span style="color:#f92672">=</span><span style="color:#e6db74">default.target</span>
+</span></span></code></pre></div><h3 id="enable-mpris2awtrix-service">Enable mpris2awtrix service <a tabindex="0" href="#enable-mpris2awtrix-service" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>systemctl --user daemon-reload
+</span></span><span style="display:flex;"><span>systemctl --user enable mpris2awtrix.service
+</span></span><span style="display:flex;"><span>systemctl --user start mpris2awtrix.service
+</span></span><span style="display:flex;"><span>systemctl --user status mpris2awtrix.service
+</span></span></code></pre></div><h2 id="create-home-assistant-automation">Create Home Assistant automation <a tabindex="0" href="#create-home-assistant-automation" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<p>Here&rsquo;s a raw YAML Home Assistant automation which sends a notification to Awtrix display only when a new track starts playing.<br>
+The <code>Position == 0</code> condition ensures it triggers only at the beginning of a track (not on resume or seek), while <code>PlaybackStatus == 'Playing'</code> confirms the media is actively playing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">alias</span>: <span style="color:#ae81ff">Show track name on Awtrix</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">triggers</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">trigger</span>: <span style="color:#ae81ff">mqtt</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">options</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">topic</span>: <span style="color:#ae81ff">dbus2mqtt/org.mpris.MediaPlayer2/state</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">conditions</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">condition</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">value_template</span>: <span style="color:#e6db74">&#34;{{ trigger.payload_json.Position == 0 }}&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">condition</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">value_template</span>: <span style="color:#e6db74">&#34;{{ trigger.payload_json.PlaybackStatus == &#39;Playing&#39; }}&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">actions</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">action</span>: <span style="color:#ae81ff">awtrix.notification</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>: {}
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">device</span>: <span style="color:#ae81ff">&lt;REPLACE_WITH_YOUR_AWTRIX_DEVICE_ID&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">text</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">t</span>: &gt;-<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            {{ trigger.payload_json.Metadata.get(&#39;xesam:artist&#39;, [&#39;Unknown
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Artist&#39;])[0] }}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">c</span>: <span style="color:#ae81ff">FF0000</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">t</span>: <span style="color:#e6db74">&#34; - &#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">c</span>: <span style="color:#ae81ff">AAFFBB</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">t</span>: &gt;-<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            {{ trigger.payload_json.Metadata.get(&#39;xesam:title&#39;, &#39;Unknown Track&#39;)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            }}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">c</span>: <span style="color:#ae81ff">00FF00</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">duration</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">rainbow</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">wakeup</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">effect</span>: <span style="color:#ae81ff">Ripple</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">mode</span>: <span style="color:#ae81ff">single</span>
+</span></span></code></pre></div><h3 id="test-it">Test it <a tabindex="0" href="#test-it" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
+<p>Play a track in your media player. The Awtrix display should show a notification with the artist and track name.</p>
+<p>Check the logs with <code>journalctl --user -u mpris2awtrix.service -f</code> if it doesn&rsquo;t work.</p>
+
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z" />
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/unix/'>Unix</a></div>
+<div class='tags'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z" />
+<line x1="7" y1="7" x2="7" y2="7" />
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/home-assistant/'>Home-Assistant</a>, <a class='tag' href='/tags/mqtt/'>Mqtt</a>, <a class='tag' href='/tags/mpris/'>Mpris</a>, <a class='tag' href='/tags/dbus/'>Dbus</a>, <a class='tag' href='/tags/linux/'>Linux</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/2026/04/syncthing-services/'>
+        <span aria-hidden='true'><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="20" y1="12" x2="4" y2="12" />
+<polyline points="10 18 4 12 10 6" />
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Hosting Syncthing services</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/2026/07/31/tinymediamanager-rename-episode-titles/'>
+        <span class='screen-reader-text'>Next post: </span>Rename episode titles in tinyMediaManager<span aria-hidden='true'>Next <svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><line x1="4" y1="12" x2="20" y2="12" />
+<polyline points="14 6 20 12 14 18" />
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+<section id='comments' class='comments'>
+  <div class='container sep-before'>
+    <div class='comments-area'><script src='https://utteranc.es/client.js'
+  repo='kowalcj0/kowalcj0.github.io'
+  issue-term='pathname'
+  theme='github-light'
+  crossorigin='anonymous'
+  async>
+</script>
+</div>
+  </div>
+</section>
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/kowalcj0' target='_blank' rel='noopener me'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/januszkowalczyk' target='_blank' rel='noopener me'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg
+  class="icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  aria-hidden="true"
+><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2010-2026 kowalcj0 </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
+
+<script src='/assets/js/main.442ec8d0.js'></script>
+
+</body>
+
+</html>
+
