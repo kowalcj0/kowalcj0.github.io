@@ -476,13 +476,11 @@
 .</p>
 <h2 id="example-case">Example Case <a tabindex="0" href="#example-case" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>Let’s assume we have the following files:</p>
-<ul>
-<li><code>Some.cool.series.S01E01.Into.1080p.x264.mkv</code></li>
-<li><code>Some.cool.series.S01E02.Cool.Episode.1080p.x264.mkv</code></li>
-<li><code>Some.cool.series.S01E03.Even.Cooler.episode.1080p.x264.mkv</code></li>
-<li><code>Some.cool.series.S01E04.Season.Finale.1080p.x264.mkv</code></li>
-</ul>
-<p>Our goal is to extract and set the episode titles to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c0caf5;background-color:#1a1b26;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Some.cool.series.S01E01.Into.1080p.x264.mkv
+</span></span><span style="display:flex;"><span>Some.cool.series.S01E02.Cool.Episode.1080p.x264.mkv
+</span></span><span style="display:flex;"><span>Some.cool.series.S01E03.Even.Cooler.episode.1080p.x264.mkv
+</span></span><span style="display:flex;"><span>Some.cool.series.S01E04.Season.Finale.1080p.x264.mkv
+</span></span></code></pre></div><p>Our goal is to extract and set the episode titles to:</p>
 <ul>
 <li>Into</li>
 <li>Cool Episode</li>
@@ -614,18 +612,18 @@
 
 <h3 id="remove-fixed-portions-prefix--suffix">Remove Fixed Portions (Prefix &amp; Suffix) <a tabindex="0" href="#remove-fixed-portions-prefix--suffix" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p>In <code>tMM</code>, you can chain multiple helper functions to strip the prefix, suffix, and replace dots with spaces in one expression:</p>
-<pre tabindex="0"><code>${episode.originalFilename;chain(replace(Some.cool.series.S01E,);replace(.1080p.x264.mkv,);replace(., ))}
-</code></pre><p><em>(Note: In tMM, passing an empty second argument to <code>replace()</code> deletes the matched text.)</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">$</span>{<span style="color:#a6e22e">episode</span>.<span style="color:#a6e22e">originalFilename</span>;<span style="color:#a6e22e">chain</span>(<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">Some</span>.<span style="color:#a6e22e">cool</span>.<span style="color:#a6e22e">series</span>.<span style="color:#a6e22e">S01E</span>,);<span style="color:#a6e22e">replace</span>(.<span style="color:#ae81ff">1080</span><span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">x264</span>.<span style="color:#a6e22e">mkv</span>,);<span style="color:#a6e22e">replace</span>(., ))}
+</span></span></code></pre></div><p><em>(Note: In tMM, passing an empty second argument to <code>replace()</code> deletes the matched text.)</em></p>
 <p>After applying this, the titles become:</p>
-<pre tabindex="0"><code>01 Into
-02 Cool Episode
-03 Even Cooler episode
-04 Season Finale
-</code></pre><h3 id="strip-leading-digits-via-chained-replacements">Strip Leading Digits via Chained Replacements <a tabindex="0" href="#strip-leading-digits-via-chained-replacements" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>01 Into
+</span></span><span style="display:flex;"><span>02 Cool Episode
+</span></span><span style="display:flex;"><span>03 Even Cooler episode
+</span></span><span style="display:flex;"><span>04 Season Finale
+</span></span></code></pre></div><h3 id="strip-leading-digits-via-chained-replacements">Strip Leading Digits via Chained Replacements <a tabindex="0" href="#strip-leading-digits-via-chained-replacements" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h3>
 <p>Since tMM doesn&rsquo;t support regexp or substr we have to use a &lsquo;brute-force&rsquo; approach. It&rsquo;s ugly but it gets the job done.
 To clean up the remaining episode numbers, we chain 9 <code>replace()</code> calls to remove leading digits:</p>
-<pre tabindex="0"><code>${episode.title;chain(replace(0,);replace(1,);replace(2,);replace(3,);replace(4,);replace(5,);replace(6,);replace(7,);replace(8,);replace(9,))}
-</code></pre><h2 id="reference-nfo-documentation">Reference: NFO Documentation <a tabindex="0" href="#reference-nfo-documentation" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">$</span>{<span style="color:#a6e22e">episode</span>.<span style="color:#a6e22e">title</span>;<span style="color:#a6e22e">chain</span>(<span style="color:#a6e22e">replace</span>(<span style="color:#ae81ff">0</span>,);<span style="color:#a6e22e">replace</span>(<span style="color:#ae81ff">1</span>,);<span style="color:#a6e22e">replace</span>(<span style="color:#ae81ff">2</span>,);<span style="color:#a6e22e">replace</span>(<span style="color:#ae81ff">3</span>,);<span style="color:#a6e22e">replace</span>(<span style="color:#ae81ff">4</span>,);<span style="color:#a6e22e">replace</span>(<span style="color:#ae81ff">5</span>,);<span style="color:#a6e22e">replace</span>(<span style="color:#ae81ff">6</span>,);<span style="color:#a6e22e">replace</span>(<span style="color:#ae81ff">7</span>,);<span style="color:#a6e22e">replace</span>(<span style="color:#ae81ff">8</span>,);<span style="color:#a6e22e">replace</span>(<span style="color:#ae81ff">9</span>,))}
+</span></span></code></pre></div><h2 id="reference-nfo-documentation">Reference: NFO Documentation <a tabindex="0" href="#reference-nfo-documentation" class="octicon-link" ariaLabel="Anchor"><img src="/img/octicon-link.svg"/></a></h2>
 <p>For more details on NFO files, check the official resources:</p>
 <ul>
 <li><a href="https://jellyfin.org/docs/general/server/metadata/nfo/" target="_blank">Jellyfin NFO Guide</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path fill-rule="evenodd" d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"></path></svg>
